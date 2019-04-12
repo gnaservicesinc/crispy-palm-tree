@@ -2,13 +2,8 @@
 state={
 	id=803
 	name="STATE_803"
-	manpower = 471201
-	
-	
-	state_category = town
-	
 	resources={
-		oil=1024 # was: 580
+		oil=1024.000
 		aluminium=55.000
 		steel=60.000
 		tungsten=50.000
@@ -17,25 +12,36 @@ state={
 		oil=85.000
 	}
 
-
 	history={
 		owner = UTX
 		buildings = {
-			2082 = {infrastructure = 2
-				}
-			1954 = {infrastructure = 3
-				}
-			10894 = {infrastructure = 4
-				}
-			10740 = {infrastructure = 3
-				}
+			2082 = {
+				infrastructure = 2
+
 			}
+			1954 = {
+				infrastructure = 3
+
+			}
+			10894 = {
+				infrastructure = 4
+
+			}
+			10740 = {
+				infrastructure = 3
+
+			}
+
+		}
 		add_core_of = USA
 		add_core_of = UTX
-		
-		
+
 	}
+
 	provinces={
-		4955 2082 1954 10894 10740
+		1954 4955 10740 10894 
 	}
+	manpower=471201
+	buildings_max_level_factor=1.000
+	state_category=town
 }
