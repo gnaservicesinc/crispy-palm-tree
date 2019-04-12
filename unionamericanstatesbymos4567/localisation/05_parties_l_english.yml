@@ -1,4 +1,6 @@
 l_english:
+ alabaman_desc:0 "The good people from Alabama."
+ americanism_desc:0 "The opening of a grand scene and design in Providence for the illumination of the ignorant, and the emancipation of the slavish part of mankind all over the earth"
  american_isolationism:0 "American Isolationist"
  american_isolationism_noun:0 "American Isolationism"
  american_isolationism_desc:0 "Nothing compels the United States to ensure border contiguity or political independence of any nation, to interfere in foreign domestic disputes regardless of their status in the League, or to command troops or ships without Congressional declaration of war."
@@ -16,6 +18,4 @@ l_english:
  american_globalism_desc:0 "All free men, wherever they may live, are citizens of Berlin, and therefore, as a free man, I take pride in the words, Ich bin ein Berliner."
  american_isolationism_noun:0 "American Isolationism"
  americanism:0 "Americanism"
- americanism_desc:0 "The opening of a grand scene and design in Providence for the illumination of the ignorant, and the emancipation of the slavish part of mankind all over the earth"
- alabaman:0 "Alabaman"
- alabaman_desc:0 "The good people from Alabama."
+ 
