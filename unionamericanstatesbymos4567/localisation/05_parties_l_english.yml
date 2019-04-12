@@ -4,13 +4,10 @@ l_english:
  american_isolationism_desc:0 "Nothing compels the United States to ensure border contiguity or political independence of any nation, to interfere in foreign domestic disputes regardless of their status in the League, or to command troops or ships without Congressional declaration of war."
  USA_american_isolationism_party:0 "AFC"
  USA_american_isolationism_party:0 "America First Committee"
- americanism:0 "The opening of a grand scene and design in Providence for the illumination of the ignorant, and the emancipation of the slavish part of mankind all over the earth"
  USA_american_isolationism:0 "the weak Union of powerful and independent American states"
  USA_american_isolationism_noun:0 "American Isolationism"
  USA_american_isolationism_desc:0 "Nothing compels the United States to ensure border contiguity or political independence of any nation, to interfere in foreign domestic disputes regardless of their status in the League, or to command troops or ships without Congressional declaration of war."
  american_globalism:0 "American Style Globalism"
-
-
  USA_american_globalism:0 "US Globalist"
  USA_american_globalism_noun:0 "US Globalism"
  USA_american_globalism_desc:0 "All free men, wherever they may live, are citizens of Berlin, and therefore, as a free man, I take pride in the words, Ich bin ein Berliner."
@@ -18,3 +15,7 @@ l_english:
  american_globalism_noun:0 "US Globalism"
  american_globalism_desc:0 "All free men, wherever they may live, are citizens of Berlin, and therefore, as a free man, I take pride in the words, Ich bin ein Berliner."
  american_isolationism_noun:0 "American Isolationism"
+ americanism:0 "Americanism"
+ americanism_desc:0 "The opening of a grand scene and design in Providence for the illumination of the ignorant, and the emancipation of the slavish part of mankind all over the earth"
+ alabaman:0 "Alabaman"
+ alabaman_desc:0 "The good people from Alabama."
