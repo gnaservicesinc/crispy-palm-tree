@@ -1,0 +1,27 @@
+
+state={
+	id=394
+	name="STATE_394"
+	manpower = 893904
+	state_category = city
+	
+	resources={
+		steel=530 # was: 84
+	}
+
+	history={
+		owner = UWI
+	
+		add_core_of = UWI
+		add_core_of = UMI
+		add_core_of = USA		
+		victory_points = {
+			12357 5 
+		}
+
+	}
+
+	provinces={
+		703 926 1560 1760 1849 3699 4029 4166 4738 4834 7776 7829 9657 9678 10341 10526 12357 12456 
+	}
+}

@@ -1,0 +1,26 @@
+
+state={
+	id=370
+	name="STATE_370"
+	manpower = 2009820
+	
+	state_category = city
+	resources={
+		steel=77 # was: 24
+		oil=45 # was: 10
+	}
+	history={
+		owner = UMS
+		victory_points = {
+			4464 1 
+		}
+		add_core_of = USA
+		add_core_of = UMS
+		add_core_of = UMI
+	}
+
+	provinces={
+		1615 4464 4510 4565 4650 7464 7668 8110 10410 10449 10753 11717 12328 12429 
+	}
+	
+}

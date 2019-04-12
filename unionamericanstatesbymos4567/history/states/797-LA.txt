@@ -1,0 +1,33 @@
+
+state={
+	id=797
+	name="STATE_797"
+	manpower = 967748
+	
+	state_category = megalopolis
+	
+	resources={
+		oil=980 # was: 350
+		steel=213 # was: 24.000
+		aluminium = 500
+		tungsten = 500
+		rubber = 875
+		chromium = 985
+	}
+
+	history={
+		owner = UCA
+		buildings = {
+			infrastructure = 10
+			air_base = 10
+		}
+		add_core_of = USA
+		add_core_of = UCA
+		
+	
+	}
+
+	provinces={
+		9814
+	}
+}

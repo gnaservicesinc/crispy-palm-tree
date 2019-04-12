@@ -1,0 +1,38 @@
+state = {
+    id = 789
+    name = STATE_789
+    manpower = 4278244
+    state_category = megalopolis
+   
+    provinces = {
+        11656 6710
+    }
+    
+    resources = {
+  
+		steel=260 # was: 24.000
+		aluminium = 150
+		tungsten = 150
+		rubber = 187
+		chromium = 198
+		oil = 185
+		
+	
+    }
+    
+    history = {
+     		owner = UMI
+	
+		victory_points = {
+			3957 40 
+		}
+		victory_points = {
+			6984 5 
+		}
+	add_core_of = UMI        
+	add_core_of = USA
+        }
+    }
+
+
+

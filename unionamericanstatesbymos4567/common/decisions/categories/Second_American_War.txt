@@ -1,0 +1,17 @@
+re_conquest_america = {
+icon = GFX_decision_category_military_operation
+	visible = {
+	OR = {
+		tag  = USA
+		tag  = UCA
+		tag  = UTX
+		tag  = UMI
+		tag  = UAL
+		is_subject_of = USA
+		is_subject_of = UCA
+		is_subject_of = UAL
+		is_subject_of = UTX
+		is_subject_of = UMI
+	}
+
+}	}

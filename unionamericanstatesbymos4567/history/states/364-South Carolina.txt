@@ -1,0 +1,30 @@
+
+state={
+	id=364
+	name="STATE_364"
+	manpower = 9738764
+	
+	state_category = city
+
+	history={
+		owner = UCI
+		buildings = {
+			infrastructure = 15
+			industrial_complex = 12
+			7202 = {
+				naval_base = 12
+
+			}
+		}
+		add_core_of = USA
+		add_core_of = UCI
+		victory_points = {
+			9202 1 
+		}
+
+	}
+
+	provinces={
+		1485 1547 3994 4491 4653 7012 7134 7202 7527 10029 10047 11927 
+	}
+}

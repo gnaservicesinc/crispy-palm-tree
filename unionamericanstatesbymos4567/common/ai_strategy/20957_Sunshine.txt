@@ -1,0 +1,185 @@
+
+operation_Sunshine = {
+
+	enable = {
+      		is_in_faction_with = UCA
+	}
+
+about = {
+		NOT = { is_in_faction_with = UCA }
+	 
+	}
+    ai_strategy = {
+		type = conquer
+		id = "UMI"			
+		value = 250
+	}
+    ai_strategy = {
+		type = conquer
+		id = "UTX"			
+		value = 200
+	}
+    ai_strategy = {
+		type = conquer
+		id = "UAL"			
+		value = 200
+	}
+	    ai_strategy = {
+		type = conquer
+		id = "USA"			
+		value = 200
+	}
+    ai_strategy = {
+		type = invade
+		id = "UMI"			
+		value = 250
+	}
+    ai_strategy = {
+		type = protect
+		id = "UCA"			
+		value = 250
+	}
+
+
+    ai_strategy = {
+		type = invade
+		id = "UTX"			
+		value = 200
+	}
+    ai_strategy = {
+		type = invade
+		id = "UAL"			
+		value = 200
+	}
+	    ai_strategy = {
+		type = invade
+		id = "USA"			
+		value = 200
+	}
+    ai_strategy = {
+		type = contain
+		id = "ENG"			
+		value = 2000
+	}
+    ai_strategy = {
+		type = contain
+		id = "CHI"			
+		value = 500
+	}
+    ai_strategy = {
+		type = contain
+		id = "POL"			
+		value = 500
+	}
+   ai_strategy = {
+		type = antagonize
+		id = "ENG"			
+		value = 2000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = "CHI"			
+		value = 500
+	}
+    ai_strategy = {
+		type = antagonize
+		id = "GER"			
+		value = 500
+	}
+    ai_strategy = {
+		type = antagonize
+		id = "JAP"			
+		value = 500
+	}
+    ai_strategy = {
+		type = antagonize
+		id = "POL"			
+		value = 500
+	}
+  ai_strategy = {
+		type = befriend
+		id = "SOV"			
+		value = 2000
+	}
+  ai_strategy = {
+		type = befriend
+		id = "PRC"			
+		value = 2000
+	}
+  ai_strategy = {
+		type = befriend
+		id = "SIK"			
+		value = 2000
+	}
+  ai_strategy = {
+		type = befriend
+		id = "MON"			
+		value = 2000
+	}
+  ai_strategy = {
+		type = befriend
+		id = "TUN"			
+		value = 2000
+	}
+	    ai_strategy = {
+		type = influence
+		id = "UMI"			
+		value = 250
+	}
+	    ai_strategy = {
+		type = influence
+		id = "UTX"			
+		value = 250
+	}
+	    ai_strategy = {
+		type = influence
+		id = "UAL"			
+		value = 250
+	}
+	    ai_strategy = {
+		type = influence
+		id = "USA"			
+		value = 250
+	}
+	    ai_strategy = {
+		type = influence
+		id = "UID"			
+		value = 250
+	}
+	    ai_strategy = {
+		type = influence
+		id = "UMN"			
+		value = 250
+	}
+}
+
+take_ca_sunshine = {
+    # Applied to other countries for main country
+     reversed = yes
+
+    # When to apply the strategy
+    enable = {
+
+			is_in_faction_with = USA
+			original_tag = UCA
+
+      		        
+    }
+
+	abort =  {
+		 NOT = { is_in_faction_with = USA }
+
+	}
+
+	ai_strategy = {
+		type = invade
+		id = "UCA"			
+		value = 5000
+	}
+	ai_strategy = {
+		type = conquer
+		id = "UCA"			
+		value = 5000
+	}
+
+}

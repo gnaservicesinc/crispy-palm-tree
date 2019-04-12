@@ -1,0 +1,274 @@
+operation_eagle_strike = {
+
+	enable = {
+		# Special Strategy for proper states in the faction.
+		# So will only apply to US States in the faction
+		# US this approach for each of the state factions
+
+		for_each_loop = {
+		array = Loyal_American_States
+		 original_tag = v
+			}
+		country_exists = USA
+      		is_in_faction_with = USA
+	}
+
+about = {
+		NOT = { is_in_faction_with = USA }
+	 
+	}
+
+  ai_strategy = {
+		type = befriend
+		id = "ENG"			
+		value = 200
+	}
+  ai_strategy = {
+		type = befriend
+		id = "FRA"			
+		value = 200
+	}
+  ai_strategy = {
+		type = befriend
+		id = "POL"			
+		value = 200
+	}
+
+  ai_strategy = {
+		type = befriend
+		id = "CHI"			
+		value = 200
+	}
+
+  ai_strategy = {
+		type = befriend
+		id = "UMI"			
+		value = 300
+	}
+  ai_strategy = {
+		type = protect
+		id = "UMI"			
+		value = 400
+	}
+  ai_strategy = {
+		type = alliance
+		id = "UMI"			
+		value = 500
+	}
+    ai_strategy = {
+		type = befriend
+		id = "CAN"			
+		value = 325
+	}
+    ai_strategy = {
+		type = befriend
+		id = "CHI"			
+		value = 225
+	}
+    ai_strategy = {
+		type = alliance
+		id = "CAN"			
+		value = 200
+	}
+    ai_strategy = {
+		type = befriend
+		id = "CUB"			
+		value = 225
+	}
+    ai_strategy = {
+		type = alliance
+		id = "MEX"			
+		value = 300
+	}
+    ai_strategy = {
+		type = befriend
+		id = "MEX"			
+		value = 300
+	}
+    ai_strategy = {
+		type = befriend
+		id = "ENG"			
+		value = 100
+	}
+
+
+	    ai_strategy = {
+		type = influence
+		id = "UMI"			
+		value = 650
+	}
+	    ai_strategy = {
+		type = influence
+		id = "UTX"			
+		value = 250
+	}
+	    ai_strategy = {
+		type = influence
+		id = "UAL"			
+		value = 2500
+	}
+	    ai_strategy = {
+		type = influence
+		id = "UCA"			
+		value = 250
+	}
+	    ai_strategy = {
+		type = influence
+		id = "UID"			
+		value = 250
+	}
+	    ai_strategy = {
+		type = influence
+		id = "UMN"			
+		value = 250
+	}
+    ai_strategy = {
+		type = alliance
+		id = "CUB"			
+		value = 200
+	}
+	    ai_strategy = {
+		type = conquer
+		id = "UCA"			
+		value = 200
+	}
+	    ai_strategy = {
+		type = conquer
+		id = "UAL"			
+		value = 200
+	}
+	    ai_strategy = {
+		type = conquer
+		id = "UTX"			
+		value = 200
+	}
+}
+
+
+operation_UnifiedNation = {
+
+	enable = {
+		# Special Strategy for proper states in the faction.
+		# So will only apply to US States in the faction
+		# US this approach for each of the state factions
+
+		for_each_loop = {
+		array = Loyal_American_States
+		 original_tag = v
+			}
+		     		        country_exists = UTX
+			country_exists = UMI
+			country_exists = UCA
+			country_exists = UAL
+			country_exists = USA
+			
+      		        is_in_faction_with = UTX
+			is_in_faction_with = UMI
+			is_in_faction_with = UCA
+			is_in_faction_with = UAL
+			is_in_faction_with = USA
+
+		
+	}
+
+about = {
+				OR = {
+			NOT = { country_exists = USA }
+			NOT = { country_exists = UCA }
+			NOT = { country_exists = UTX }
+			NOT = { country_exists = UAL }
+			NOT = { country_exists = UMI }
+			
+			NOT = { is_in_faction_with = UTX }
+			NOT = { is_in_faction_with = UMI }
+			NOT = { is_in_faction_with = UCA }
+			NOT = { is_in_faction_with = USA }
+			NOT = { is_in_faction_with = UAL }
+			
+
+			}
+   ai_strategy = {
+		type = invade
+		id = "SOV"			
+		value = 200
+	}
+    ai_strategy = {
+		type = invade
+		id = "ITA"			
+		value = 200
+	}
+    ai_strategy = {
+		type = invade
+		id = "JAP"			
+		value = 200
+	}
+    ai_strategy = {
+		type = invade
+		id = "GER"			
+		value = 250
+	}
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = 200
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = asia
+		value = 200
+	}
+		
+	ai_strategy = {
+		type = area_priority
+		id = scandinavia
+		value = 100
+	}
+	ai_strategy = {
+		type = area_priority
+		id = pacific
+		value = 300
+	}
+		ai_strategy = {
+		type = area_priority
+		id = oceania
+		value = 180
+	}
+ai_strategy = {
+		type = area_priority
+		id = south_america
+		value = 50
+	}
+ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = 100
+	}
+ ai_strategy = {
+		type = contain
+		id = "SOV"			
+		value = 300
+	}
+    ai_strategy = {
+		type = contain
+		id = "ITA"			
+		value = 300
+	}
+    ai_strategy = {
+		type = contain
+		id = "JAP"			
+		value = 300
+	}
+    ai_strategy = {
+		type = contain
+		id = "GER"			
+		value = 350
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = USA
+		value = 275
+	}
+
+	 
+	}

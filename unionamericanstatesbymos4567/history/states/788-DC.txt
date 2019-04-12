@@ -1,0 +1,34 @@
+state = {
+    id = 788
+    name = STATE_788
+    manpower = 1713244
+    state_category = megalopolis
+   
+    provinces = {
+        3957
+    }
+    
+    resources = {
+  
+		steel=213 # was: 24.000
+		aluminium = 500
+		tungsten = 500
+		rubber = 875
+		chromium = 985
+		oil = 857
+		
+	
+    }
+    
+    history = {
+     		owner = USA
+		victory_points = {
+			3957 40 
+		}
+		victory_points = {
+			6984 5 
+		}
+        add_core_of = USA
+
+        }
+    }

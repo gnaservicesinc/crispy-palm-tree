@@ -1,0 +1,36 @@
+
+state={
+	id=358
+	name="STATE_358"
+	resources={
+		steel=213 # was: 24.000
+		aluminium = 500
+		tungsten = 500
+		rubber = 875
+		chromium = 985
+		oil = 857
+		
+	}
+	
+	state_category = megalopolis
+
+	history={
+		owner = UNY
+		add_core_of = USA
+		add_core_of = UNY
+		
+		victory_points = {
+			3878 30.0 
+		}
+		victory_points = {
+			1654 3 
+		}
+
+	}
+
+	provinces={
+		598 706 734 859 1436 3602 3702 3733 3747 3806 3878 3894 6707 6717 6778 6795 6911 6916 9664 9673 9693 9708 9721 9754 9774 10381 11650 11654 11660 11662 11665 11680 11722 13157 
+	}
+	manpower=928061
+	buildings_max_level_factor=1.000
+}

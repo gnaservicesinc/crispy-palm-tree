@@ -1,0 +1,25 @@
+state = {
+    id = 790
+    name = STATE_790
+    manpower = 30287
+    state_category = city
+   
+    provinces = {
+        751
+    }
+    
+    resources = {
+  
+		steel=26 # was: 24.000
+		aluminium = 35
+		oil = 95
+		
+	
+    }
+    
+    history = {
+     		owner = UMI
+	add_core_of = UMI        
+	add_core_of = USA
+        }
+    }

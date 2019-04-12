@@ -1,0 +1,26 @@
+state = {
+    id = 791
+    name = STATE_791
+    manpower = 93244
+    state_category = rural
+   
+    provinces = {
+        10599 4854 709
+    }
+    
+    resources = {
+  
+		steel=46 # was: 24.000
+		aluminium = 15
+		oil = 950
+		
+	
+    }
+    
+    history = {
+     		owner = UMI
+
+	add_core_of = UMI        
+	add_core_of = USA
+        }
+    }

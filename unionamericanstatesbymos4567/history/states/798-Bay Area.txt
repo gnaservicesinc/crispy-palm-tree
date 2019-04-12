@@ -1,0 +1,42 @@
+
+state={
+	id=798
+	name="STATE_798"
+	resources={
+		oil=80.000
+		steel=213.000
+		aluminium=50.000
+		tungsten=5.000
+		rubber=75.000
+		chromium=85.000
+	}
+
+	history={
+		owner = UCA
+		buildings = {
+			air_base = 10
+		}
+		add_core_of = USA
+		add_core_of = UCA
+		victory_points = {
+			9814 30 
+		}
+		victory_points = {
+			1562 15 
+		}
+		victory_points = {
+			9671 25 
+		}
+		victory_points = {
+			9713 1 
+		}
+
+	}
+
+	provinces={
+		677 3678 6681 6699 6745 6757 9671 9713 11658 
+	}
+	manpower=75248
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

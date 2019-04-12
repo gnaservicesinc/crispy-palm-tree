@@ -1,0 +1,53 @@
+ideologies = {
+
+	american_isolationism = {
+		types = {
+			americanism = {
+			}
+				isolationist = {
+			}
+				alabaman = {
+			}
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+		
+		color = { 225 9 13 }
+		
+		war_impact_on_world_tension = -1
+		faction_impact_on_world_tension = -1
+		can_host_government_in_exile = yes
+
+		rules = {
+			can_declare_war_on_same_ideology = no
+			can_force_government = no
+			can_send_volunteers = no
+			can_puppet = no
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = no
+		}
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.95
+		}
+		modifiers = {
+			join_faction_tension = 1.0
+			annex_cost_factor = 1.0
+			trade_opinion_factor = 1.0
+			lend_lease_tension = 1.00
+			send_volunteers_tension = 1.00
+			take_states_cost_factor = 1.00
+
+
+		}
+		ai_democratic = yes 
+		
+	}
+}
+

@@ -1,0 +1,34 @@
+
+state={
+	id=800
+	name="STATE_800"
+	resources={
+		steel=50.000
+		oil=60.000
+		aluminium=20.000
+		tungsten=20.000
+		rubber=17.000
+		chromium=28.000
+		oil=25.000
+	}
+
+	history={
+		owner = UMI
+		add_core_of = UMI
+		add_core_of = USA
+		victory_points = {
+			1710 20 
+		}
+
+
+		
+
+	}
+
+	provinces={
+		691 695 3766 6769 9684 13155 13199 13200 13201 
+	}
+	manpower=842323
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

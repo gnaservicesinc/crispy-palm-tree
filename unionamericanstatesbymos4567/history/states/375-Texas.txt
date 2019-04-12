@@ -1,0 +1,32 @@
+
+state={
+	id=375
+	name="STATE_375"
+	manpower = 6476712
+	
+	
+	state_category = metropolis
+	
+	resources={
+		oil=600 # was: 580
+		aluminium=97 # was: 96
+		steel=60.000
+		tungsten=5.000
+		rubber=7.000
+		chromium=8.000
+		oil=50.000
+	}
+
+
+	history={
+		owner = UTX
+		add_core_of = USA
+		add_core_of = UTX	
+		
+
+	}
+
+	provinces={
+		805 1500 1915 1998 3875 4577 4884 5001 5085 6968 7628 7836 9773 9829 10504 10778 12301 12341 12410 10337 12486 12848 12875 3960 10861 5022 7981 9920 2082 4955 5038 1954 10894 10740 9908 2055 3972 12893 12369 6785 5061 6987 2042 2019 12782 1927 2019 12728 6798 8064 
+	}
+}

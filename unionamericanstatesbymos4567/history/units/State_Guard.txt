@@ -1,0 +1,102 @@
+start_equipment_factor = 0.1
+##### Division Templates #####
+division_template = {
+	name = "Infantry Division"  	# Standard formation for frontline divisions
+division_names_group = State_Guard
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+		infantry = { x = 2 y = 4 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		infantry = { x = 3 y = 3 }
+		infantry = { x = 3 y = 4 }
+		infantry = { x = 4 y = 1 }
+		infantry = { x = 4 y = 2 }
+		infantry = { x = 4 y = 3 }
+		infantry = { x = 4 y = 0 }
+		infantry = { x = 4 y = 4 }
+
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
+		engineer = { x = 0 y = 1 }   # US Eng Rgt consisted of 2 Bns
+	}
+}
+
+
+units = {
+	division= {
+division_template = "Infantry Division"			# Still forming and under-strength with reserve equipment
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+
+	max_organisation = 50
+	reliability =  1.00
+	suppression_factor = .75
+	reliability_factor = 1	
+	initiative = 1
+	casualty_trickleback = .9
+	division_names_group = State_Guard
+	movement = 1.0
+}
+}
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+		division= {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "UMI"
+		}
+		requested_factories = 6
+		progress = 0.4
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "UMI" 
+		}
+		requested_factories = 2
+		progress = 0.8
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "UMI" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = cv_fighter_equipment_1
+			creator = "UMI" 
+		}
+		requested_factories = 1
+		progress = 0.6
+		efficiency = 100
+	}
+}
+#####################

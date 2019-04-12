@@ -1,0 +1,12 @@
+ l_english:
+ USA_american_isolationism:0 "United States of America"
+ USA_american_isolationism_DEF:0 "the weak Union of powerful and independent American states"
+ USA_american_isolationism_ADJ:0 "American Constitutionalist"
+ USA_subject:0 "$OVERLORDADJ$ Indipendent States of America"
+ USA_REBEL_american_isolationism_ADJ:0 "American Constitutionalist"
+ USA_CSA_american_isolationism:0 "American Union of Independent and Free States"
+ USA_CSA_american_isolationism_DEF:0 "the weak Union of powerful and independent American states"
+ american_globalism:0 "US Globalist"
+ american_globalism_noun:0 "US Globalism"
+ american_globalism_desc:0 "All free men, wherever they may live, are citizens of Berlin, and therefore, as a free man, I take pride in the words, Ich bin ein Berliner."
+ american_isolationism_noun:0 "American Isolationism"

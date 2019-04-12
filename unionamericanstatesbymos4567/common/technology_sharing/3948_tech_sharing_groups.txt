@@ -1,0 +1,77 @@
+ 
+
+
+ technology_sharing_group = {
+
+	id = usa_investigators
+	name = usa_investigators_name
+	desc = usa_investigators_desc
+	picture = GFX_commonwealth_research
+    
+	research_sharing_per_country_bonus = 1.0
+
+    available = {
+        is_in_faction_with = USA
+    }
+
+}
+
+ technology_sharing_group = {
+
+	id = umi_investigators
+	name = umi_investigators_name
+	desc = umi_investigators_desc
+	picture = GFX_commonwealth_research
+    
+	research_sharing_per_country_bonus = 1.0
+
+    available = {
+        is_in_faction_with = UMI
+    }
+
+}
+
+ technology_sharing_group = {
+
+	id = uca_investigators
+	name = uca_investigators_name
+	desc = uca_investigators_desc
+	picture = GFX_commonwealth_research
+    
+	research_sharing_per_country_bonus = 1.0
+
+    available = {
+        is_in_faction_with = UCA
+    }
+
+}
+
+ technology_sharing_group = {
+
+	id = utx_investigators
+	name = utx_investigators_name
+	desc = utx_investigators_desc
+	picture = GFX_commonwealth_research
+    
+	research_sharing_per_country_bonus = 1.0
+
+    available = {
+        is_in_faction_with = UTX
+    }
+
+}
+
+ technology_sharing_group = {
+
+	id = ual_investigators
+	name = ual_investigators_name
+	desc = ual_investigators_desc
+	picture = GFX_commonwealth_research
+    
+	research_sharing_per_country_bonus = 1.0
+
+    available = {
+        is_in_faction_with = UAL
+    }
+
+}

@@ -1,0 +1,22 @@
+
+state={
+	id=396
+	name="STATE_396"
+	manpower = 923501
+	state_category = large_city
+
+	history={
+		owner = UIN
+		add_core_of = USA
+		add_core_of = UIN
+		add_core_of = UMI
+		victory_points = {
+			1595 5 
+		}
+
+	}
+
+	provinces={
+		870 1595 1881 4437 4527 4531 6713 7551 9653 9654 9796 9810 10448 11621 11635 11637 12437 
+	}
+}

@@ -1,0 +1,28 @@
+
+state={
+	id=799
+	name="STATE_799"
+	resources={
+		oil=9.000
+		steel=3.000
+		aluminium=5.000
+		tungsten=5.000
+		rubber=7.000
+		chromium=8.000
+	}
+
+	history={
+		owner = UCA
+		add_core_of = USA
+		add_core_of = UCA
+
+
+	}
+
+	provinces={
+		6881
+	}
+	manpower=248
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,25 @@
+
+state={
+	id=361
+	name="STATE_361"
+	manpower = 218394
+	
+	state_category = city
+
+	history={
+		owner = UML
+		victory_points = {
+			3957 40 
+		}
+		victory_points = {
+			6984 5 
+		}
+		add_core_of = USA
+		add_core_of = UML
+
+	}
+
+	provinces={
+	 6823 6892 6929 6984 9758 9786 11892 
+	}
+}

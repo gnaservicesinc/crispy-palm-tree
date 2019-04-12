@@ -1,0 +1,29 @@
+
+state={
+	id=796
+	name="STATE_796"
+	manpower = 67748
+	
+	state_category = rural
+	
+	resources={
+		oil=980 # was: 35
+		steel=27 # was: 24.000
+		aluminium = 50
+		tungsten = 50
+		rubber = 87
+		chromium = 98
+	}
+
+	history={
+		owner = UCA
+		add_core_of = USA
+		add_core_of = UCA
+		
+		}
+	
+
+	provinces={
+		3644 6482 6665 4331 610 781 3588 10159 11698 766 9697 768 6772 9730
+	}
+}
