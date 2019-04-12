@@ -1,0 +1,38 @@
+
+state={
+	id=805
+	name="STATE_805"
+	manpower =471204
+	
+	
+	state_category = metropolis
+	
+	resources={
+		oil=581 # was: 580
+		aluminium=97 # was: 96
+		steel=60.000
+		tungsten=50.000
+		rubber=47.000
+		chromium=38.000
+		oil=15.000
+	}
+
+
+	history={
+		owner = UTX
+		buildings = {
+			infrastructure = 10
+			industrial_complex = 20
+			air_base = 10
+	
+		}
+		add_core_of = USA
+		add_core_of = UTX	
+
+
+	}
+
+	provinces={
+		12369 6785 5061 6987 2042 2019 12782 1927 2019 12728 6798 8064
+	}
+}
