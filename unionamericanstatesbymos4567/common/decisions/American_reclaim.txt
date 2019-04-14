@@ -5,7 +5,6 @@ re_conquest_america = {
 			visible = {
 				NOT = { is_subject_of = USA } 
 				NOT = { tag = USA } 
-				has_government = democratic 
 			}
 		 cost = 500
 		days_remove = 1
@@ -14,11 +13,11 @@ re_conquest_america = {
 			factor = 1
 		}
 		   remove_effect = {
-		add_to_tech_sharing_group = usa_investigators
+		ROOT = { add_to_tech_sharing_group = usa_investigators }
 		USA = {
 			if = { limit = { has_dlc = "Together for Victory"}
-			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state }
-			}
+			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
+			} else = { puppet =ROOT }
 		}
 		
           }
@@ -29,6 +28,7 @@ re_conquest_america = {
 		 
 			visible = {
 				has_government = communism
+				NOT = { is_subject_of = UCA } 
 				NOT = { is_subject_of = USA } 
 				NOT = { tag = USA } 
 				NOT = { tag = UCA }
@@ -44,12 +44,12 @@ re_conquest_america = {
 		}
 remove_effect = {
 		
-		add_to_tech_sharing_group = uca_investigators
+		ROOT = { add_to_tech_sharing_group = uca_investigators }
 		UCA = {
 			exists = yes
 			if = { limit = { has_dlc = "Together for Victory"}
-			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state }
-			}
+			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
+			} else = { puppet =ROOT }
 		}
 		
           }
@@ -58,8 +58,9 @@ remove_effect = {
 re_conquest_join_texas = {
 		 
 			visible = {
-
+		
 				NOT = { is_subject_of = USA } 
+				NOT = { is_subject_of = UTX }  
 				NOT = { tag = USA } 
 				NOT = { tag = UTX }
 				has_government = american_globalism
@@ -73,12 +74,12 @@ re_conquest_join_texas = {
 		}
 remove_effect = {
 
-		add_to_tech_sharing_group = utx_investigators
+		ROOT = { add_to_tech_sharing_group = utx_investigators }
 		UTX = {
 			exists = yes
 			if = { limit = { has_dlc = "Together for Victory"}
-			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state }
-			}
+			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
+			} else = { puppet =ROOT }
 		}
 		
           }
@@ -87,9 +88,10 @@ remove_effect = {
 re_conquest_join_the_south  = {
 		 
 			visible = {
-									NOT = { is_subject_of = USA } 
+				NOT = { is_subject_of = USA } 
+				NOT = { is_subject_of = UAL } 
 				NOT = { tag = USA } 
-			NOT = { tag = UAL }
+				NOT = { tag = UAL }
 			has_government = american_isolationism
 			}
 		 cost = 25
@@ -105,11 +107,11 @@ remove_effect = {
 			
 			exists = yes
 			if = { limit = { has_dlc = "Together for Victory"}
-			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state }
-			}
+			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
+			} else = { puppet =ROOT }
 			
 		}
-		add_to_tech_sharing_group = ual_investigators
+		ROOT = { add_to_tech_sharing_group = ual_investigators }
 		
           }
 			
@@ -117,9 +119,9 @@ remove_effect = {
 re_conquest_join_michigan  = {
 		 
 			visible = {
-												NOT = { is_subject_of = USA } 
-				NOT = { tag = USA } 
-							
+				NOT = { is_subject_of = UMI } 
+				NOT = { is_subject_of = USA } 
+				NOT = { tag = USA } 		
 				NOT = { tag = UMI } 
 				has_government = democratic 
 			}
@@ -137,17 +139,21 @@ remove_effect = {
 			exists = yes
 			if = { limit = { has_dlc = "Together for Victory"}
 			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state }
-			}
+			} else = { puppet =ROOT }
 			
 		}
-		add_to_tech_sharing_group = umi_investigators
+		ROOT = { add_to_tech_sharing_group = umi_investigators }
 		
           }
 			
 	}
 re_conquest_support_communism = {
 		visible = {
-				always = yes
+				NOT = { is_subject_of = USA } 
+				NOT = { tag = USA } 
+				NOT = { tag = UMI }
+				NOT = { tag = UAL }
+				NOT = { tag = UTX }
 			}
 ai_will_do = {
 			factor = 1
@@ -156,15 +162,49 @@ ai_will_do = {
 		days_remove = 1
 		days_re_enable = 30
 	remove_effect = {
-	communism_drift = .15
+		ROOT = { set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 0
+			banned = yes
+		}
+
+		fascism = {
+			popularity = 0
+			banned = yes
+		}
+		
+		communism = {
+			popularity = 100
+			 #default is no
+		}
+		american_globalism = {
+			popularity = 0
+			banned = yes
+		}
+		american_isolationism= {
+			popularity = 0
+			banned = yes
+		}
+
+	}
+	
+	ruling_party = communism
+	elections_allowed = no
+}}
 	}
 
 }
 re_conquest_support_american_isolationism = {
+
 		visible = {
-				always = yes
+				NOT = { is_subject_of = USA } 
+				NOT = { tag = USA } 
+				NOT = { tag = UMI }
+				NOT = { tag = UCA }
+				NOT = { tag = UTX }
 			}
-	
 ai_will_do = {
 			factor = 1
 		}
@@ -172,15 +212,52 @@ ai_will_do = {
 		days_remove = 1
 		days_re_enable = 30
 	remove_effect = {
-	american_isolationism_drift = .15
+		ROOT = { set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 0
+			banned = yes
+		}
+
+		fascism = {
+			popularity = 0
+			banned = yes
+		}
+		
+		communism = {
+			popularity = 0
+			banned = yes
+		}
+		american_globalism = {
+			popularity = 0
+			banned = yes
+		}
+		american_isolationism= {
+			popularity = 100
+			
+		}
+
+	}
+	
+	ruling_party = american_isolationism
+	elections_allowed = yes
+}}
 	}
 
 }
+
+
+
+
 re_conquest_support_american_globalism = {
 		visible = {
-				NOT = { tag = USA }
+				NOT = { is_subject_of = USA } 
+				NOT = { tag = USA } 
+				NOT = { tag = UMI }
+				NOT = { tag = UCA }
+				NOT = { tag = UAL }
 			}
-	
 ai_will_do = {
 			factor = 1
 		}
@@ -188,161 +265,89 @@ ai_will_do = {
 		days_remove = 1
 		days_re_enable = 30
 	remove_effect = {
-	american_globalism_drift = .15
-	}
+		ROOT = { set_politics = {
 
+	parties = {
+		democratic = { 
+			popularity = 0
+			banned = yes
+		}
+
+		fascism = {
+			popularity = 0
+			banned = yes
+		}
+		
+		communism = {
+			popularity = 0
+			banned = yes
+		}
+		american_globalism = {
+			popularity = 100
+			
+		}
+		american_isolationism= {
+			popularity = 0
+			banned = yes
+		}
+
+	}
+	
+	ruling_party = american_globalism
+	elections_allowed = yes
+}}
+	}		
 }
 
-re_conquest_spread_american_globalism = {
 
-			visible = {
-				has_government = american_globalism
-			}
-          target_trigger = {  FROM = {
-		NOT = { is_subject_of = USA }
-		NOT = { tag = USA }
-               } }
-
-		ai_will_do = {
-			factor = 1
-		}
-		cost = 50
-		days_re_enable = 30
-		complete_effect = {
-  			FROM = {
-				american_globalism_drift = .10
-			}
-        	}
-	
-	}
-
-re_conquest_spread_american_isolationism = {
-			visible = {
-				has_government = american_isolationism
-			}
-    target_trigger = {
-		
-
-		 FROM = {
-                    OR = {
-		tag  = UCA
-		tag  = UTX
-		tag  = UMI
-		tag  = UAL			
-		is_subject_of = UCA
-		is_subject_of = UAL
-		is_subject_of = UTX
-		is_subject_of = UMI
-			}
-		NOT = { is_subject_of = USA }
-		NOT = { tag = USA }
-			}
-			
-		
-		
-               }
-		ai_will_do = {
-			factor = 1
-		}
-		cost = 50
-		days_re_enable = 30
-		complete_effect = {
-  			FROM = {
-				american_isolationism_drift = .10
-			}
-        	}
-	
-	}
-re_conquest_spread_communism = {
-			visible = {
-				has_government = communism
-			}
-    target_trigger = {
-		
-
-		 FROM = {
-                    OR = {
-		tag  = UCA
-		tag  = UTX
-		tag  = UMI
-		tag  = UAL			
-		is_subject_of = UCA
-		is_subject_of = UAL
-		is_subject_of = UTX
-		is_subject_of = UMI
-			}
-		NOT = { is_subject_of = USA }
-		NOT = { tag = USA }
-			}
-			
-		
-		
-               }
-		ai_will_do = {
-			factor = 1
-		}
-		cost = 50
-		days_re_enable = 30
-		complete_effect = {
-  			FROM = {
-				communism_drift = .10
-			}
-        	}
-	
-	}
 
 re_conquest_support_democracy = {
 		visible = {
-has_government = democratic 
+				NOT = { tag = UCA }
+				NOT = { tag = UAL }
+				NOT = { tag = UTX }
 			}
 ai_will_do = {
 			factor = 1
 		}
-		cost = 25
+		cost = 50
 		days_remove = 1
-		days_re_enable = 15
+		days_re_enable = 30
 	remove_effect = {
-	democratic_drift = .30
+		ROOT = { set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 100
+			
+		}
+
+		fascism = {
+			popularity = 0
+			banned = yes
+		}
+		
+		communism = {
+			popularity = 0
+			banned = yes
+		}
+		american_globalism = {
+			popularity = 0
+			banned = yes
+		}
+		american_isolationism= {
+			popularity = 0
+			banned = yes
+		}
+
 	}
+	
+	ruling_party = democratic
+	elections_allowed = yes
+}}
+	}		
 
 }	
-re_conquest_spread_democracy = {
-			visible = {
-				has_government = democratic 
-				}			
-    target_trigger = {
-		
-
-		 FROM = {
-                    OR = {
-		tag  = UCA
-		tag  = UTX
-		tag  = UMI
-		tag  = UAL			
-		is_subject_of = UCA
-		is_subject_of = UAL
-		is_subject_of = UTX
-		is_subject_of = UMI
-			}
-		NOT = { is_subject_of = USA }
-		NOT = { tag = USA }
-			}
-			
-		
-		
-               }
-		ai_will_do = {
-			factor = 1
-		}
-		cost = 25
-		days_re_enable = 15
-		complete_effect = {
-  			FROM = {
-				democratic_drift = .20
-			}
-        	}
-	
-	}
 
 re_conquest_army_recuitment = {
 		visible = {
@@ -357,9 +362,10 @@ re_conquest_army_recuitment = {
 			factor = 1
 		}
 remove_effect = {
-	attack_bonus_against = 0.1
+	ROOT = { attack_bonus_against = 0.1
 weekly_manpower  = 1000
 stability_factor = 0.10
+}
 
 }
 
@@ -382,10 +388,10 @@ re_conquest_prepare_to_retake_the_homeland = {
 
 			for_each_loop = {
                   	array = American_States
-			targeted_modifier = { tag = v attack_bonus_against = 0.9 }
-			targeted_modifier = { tag = v defense_bonus_against = 0.9 }
+			ROOT = { targeted_modifier = { tag = v attack_bonus_against = 0.9 } }
+			ROOT = { targeted_modifier = { tag = v defense_bonus_against = 0.9 } }
 			}
-		mobilization_speed = 0.9
+		ROOT = { mobilization_speed = 0.9 }
 	}
 
 }
@@ -422,10 +428,8 @@ re_conquest_retake_the_homeland = {
 		cost = 50
 		fire_only_once = yes
 		complete_effect = {
-			create_wargoal = { target =     FROM	 type = annex_everything } 
-  			FROM = {
-				create_wargoal = { target =     ROOT	 type = annex_everything } 
-			}
+			ROOT = { create_wargoal = { target =     FROM	 type = annex_everything } }
+  			FROM = { create_wargoal = { target =     ROOT	 type = annex_everything } }
         	}
 
 }
@@ -441,10 +445,10 @@ re_conquest_retake_the_homeland = {
 	ai_will_do = {
 			factor = 1
 		}
-		   remove_effect = {
+		   remove_effect = { ROOT = {
 		fuel_gain_factor = .45
 fuel_gain_factor_from_states =.47	
-
+}
 		
           }
 			
@@ -467,4 +471,4 @@ fuel_gain_factor_from_states =.47
 
 
 
-}
+} #########

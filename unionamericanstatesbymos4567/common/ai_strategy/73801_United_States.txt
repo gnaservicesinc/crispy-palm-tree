@@ -48,7 +48,7 @@ about = {
   ai_strategy = {
 		type = protect
 		id = "UMI"			
-		value = 400
+		value = 1000
 	}
   ai_strategy = {
 		type = alliance
@@ -125,6 +125,22 @@ about = {
     ai_strategy = {
 		type = alliance
 		id = "CUB"			
+		value = 200
+	}
+
+ ai_strategy = {
+		type = invade
+		id = "UCA"			
+		value = 200
+	}
+	    ai_strategy = {
+		type = invade
+		id = "UAL"			
+		value = 200
+	}
+	    ai_strategy = {
+		type = invade
+		id = "UTX"			
 		value = 200
 	}
 	    ai_strategy = {

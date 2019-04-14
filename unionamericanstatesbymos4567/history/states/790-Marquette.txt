@@ -22,4 +22,11 @@ state = {
 	add_core_of = UMI        
 	add_core_of = USA
         }
+	buildings = {
+			infrastructure = 7
+			industrial_complex = 3
+			air_base = 1
+		
+
+		}
     }

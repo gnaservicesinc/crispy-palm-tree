@@ -98,6 +98,11 @@ about = {
 		value = 450
 	}
 
+	    ai_strategy = {
+		type = befriend
+		id = "CHI"			
+		value = 150
+	}
 
 	    ai_strategy = {
 		type = befriend

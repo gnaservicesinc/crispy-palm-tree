@@ -9,6 +9,13 @@ state={
 		add_core_of = USA
 		add_core_of = UIL
 		add_core_of = UMI
+	buildings = {
+			infrastructure = 7
+			industrial_complex = 10
+			air_base = 10
+		
+
+		}
 		victory_points = {
 			1450 30.0
 		}

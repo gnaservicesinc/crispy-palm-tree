@@ -15,22 +15,10 @@ state={
 	history={
 		owner = UTX
 		buildings = {
-			2082 = {
-				infrastructure = 2
-
-			}
-			1954 = {
-				infrastructure = 3
-
-			}
-			10894 = {
-				infrastructure = 4
-
-			}
-			10740 = {
-				infrastructure = 3
-
-			}
+			infrastructure = 7
+			industrial_complex = 3
+			air_base = 1
+		
 
 		}
 		add_core_of = USA

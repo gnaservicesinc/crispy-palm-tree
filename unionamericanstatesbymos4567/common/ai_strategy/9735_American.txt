@@ -29,31 +29,7 @@ free_agent_american = {
 	is_in_faction_with = UTX
 	}
     }
-    ai_strategy = {
-		type = befriend
-		id = "UMI"			
-		value = 2000
-	}
-    ai_strategy = {
-		type = befriend
-		id = "UTX"			
-		value = 2000
-	}
-    ai_strategy = {
-		type = befriend
-		id = "UAL"			
-		value = 2000
-	}
-    ai_strategy = {
-		type = befriend
-		id = "UCA"			
-		value = 2000
-	}
-    ai_strategy = {
-		type = befriend
-		id = "USA"			
-		value = 2000
-	}
+
     ai_strategy = {
 		type = befriend
 		id = "ENG"			
@@ -69,31 +45,7 @@ free_agent_american = {
 		id = "POL"			
 		value = 200
 	}
-    ai_strategy = {
-		type = alliance
-		id = "UMI"			
-		value = 200
-	}
-    ai_strategy = {
-		type = alliance
-		id = "UTX"			
-		value = 200
-	}
-    ai_strategy = {
-		type = alliance
-		id = "UAL"			
-		value = 200
-	}
-    ai_strategy = {
-		type = alliance
-		id = "UCA"			
-		value = 200
-	}
-    ai_strategy = {
-		type = alliance
-		id = "USA"			
-		value = 5000
-	}
+    
     ai_strategy = {
 		type = alliance
 		id = "CAN"			
@@ -192,12 +144,266 @@ free_agent_american = {
 	ai_strategy = {
 		type = area_priority
 		id = north_america
-		value = 2000
+		value = 200
 	}
 
 }
 
+free_democratic_agent_american = {
+    # Applied to other countries for main country
+    # reversed = yes
 
+    # When to apply the strategy
+    enable = {
+	for_each_loop = {
+		array = American_States
+		 original_tag = v
+			}
+		has_government = democratic 
+		NOT = { is_in_faction_with = USA }
+		NOT = { is_in_faction_with = UCA }
+		NOT = { is_in_faction_with = UAL }
+		NOT = { is_in_faction_with = UTX }
+		NOT = { is_in_faction_with = UMI }
+		NOT = { original_tag = USA } NOT = { original_tag = UMI } NOT = { original_tag = UAL } NOT = { original_tag = UTX } NOT = { original_tag = UCA }
+	
+		
+		
+    }
+    
+    # When to abort the strategy
+    abort = {
+	OR = {
+     	is_in_faction_with = USA
+	is_in_faction_with = UAL
+	is_in_faction_with = UCA
+	is_in_faction_with = UMI
+	is_in_faction_with = UTX
+	}
+    }
+      ai_strategy = {
+		type = befriend
+		id = "UMI"			
+		value = 2000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "UMI"			
+		value = 2000
+	}
+      ai_strategy = {
+		type = befriend
+		id = "USA"			
+		value = 2000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "USA"			
+		value = 2000
+	}
+}
+free_communism_agent_american = {
+    # Applied to other countries for main country
+    # reversed = yes
+
+    # When to apply the strategy
+    enable = {
+	for_each_loop = {
+		array = American_States
+		 original_tag = v
+			}
+		has_government = communism 
+		NOT = { is_in_faction_with = USA }
+		NOT = { is_in_faction_with = UCA }
+		NOT = { is_in_faction_with = UAL }
+		NOT = { is_in_faction_with = UTX }
+		NOT = { is_in_faction_with = UMI }
+		NOT = { original_tag = USA } NOT = { original_tag = UMI } NOT = { original_tag = UAL } NOT = { original_tag = UTX } NOT = { original_tag = UCA }
+	
+		
+		
+    }
+    
+    # When to abort the strategy
+    abort = {
+	OR = {
+     	is_in_faction_with = USA
+	is_in_faction_with = UAL
+	is_in_faction_with = UCA
+	is_in_faction_with = UMI
+	is_in_faction_with = UTX
+	}
+    }
+      ai_strategy = {
+		type = befriend
+		id = "UCA"			
+		value = 2000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "UCA"			
+		value = 2000
+	}
+      ai_strategy = {
+		type = befriend
+		id = "SOV"			
+		value = 5000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "SOV"			
+		value = 1000
+	}
+}
+free_american_globalism_agent_american = {
+    # Applied to other countries for main country
+    # reversed = yes
+
+    # When to apply the strategy
+    enable = {
+	for_each_loop = {
+		array = American_States
+		 original_tag = v
+			}
+		has_government = american_globalism
+		NOT = { is_in_faction_with = USA }
+		NOT = { is_in_faction_with = UCA }
+		NOT = { is_in_faction_with = UAL }
+		NOT = { is_in_faction_with = UTX }
+		NOT = { is_in_faction_with = UMI }
+		NOT = { original_tag = USA } NOT = { original_tag = UMI } NOT = { original_tag = UAL } NOT = { original_tag = UTX } NOT = { original_tag = UCA }
+	
+		
+		
+    }
+    
+    # When to abort the strategy
+    abort = {
+	OR = {
+     	is_in_faction_with = USA
+	is_in_faction_with = UAL
+	is_in_faction_with = UCA
+	is_in_faction_with = UMI
+	is_in_faction_with = UTX
+	}
+    }
+      ai_strategy = {
+		type = befriend
+		id = "UTX"			
+		value = 2000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "UTX"			
+		value = 2000
+	}
+      ai_strategy = {
+		type = befriend
+		id = "GER"			
+		value = 5000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "GER"			
+		value = 1000
+	}
+}
+
+free_american_isolationism_agent_american = {
+    # Applied to other countries for main country
+    # reversed = yes
+
+    # When to apply the strategy
+    enable = {
+	for_each_loop = {
+		array = American_States
+		 original_tag = v
+			}
+		has_government = american_isolationism
+		NOT = { is_in_faction_with = USA }
+		NOT = { is_in_faction_with = UCA }
+		NOT = { is_in_faction_with = UAL }
+		NOT = { is_in_faction_with = UTX }
+		NOT = { is_in_faction_with = UMI }
+		NOT = { original_tag = USA } NOT = { original_tag = UMI } NOT = { original_tag = UAL } NOT = { original_tag = UTX } NOT = { original_tag = UCA }
+	
+		
+		
+    }
+    
+    # When to abort the strategy
+    abort = {
+	OR = {
+     	is_in_faction_with = USA
+	is_in_faction_with = UAL
+	is_in_faction_with = UCA
+	is_in_faction_with = UMI
+	is_in_faction_with = UTX
+	}
+    }
+      ai_strategy = {
+		type = befriend
+		id = "UAL"			
+		value = 2000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "UAL"			
+		value = 2000
+	}
+      ai_strategy = {
+		type = befriend
+		id = "CHI"			
+		value = 5000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "CHI"			
+		value = 1000
+	}
+}
+fascism_traitor_american = {
+    # Applied to other countries for main country
+     reversed = yes
+
+    # When to apply the strategy
+    enable = {
+	for_each_loop = {
+		array = American_States
+		 original_tag = v
+			}
+		has_government = fascism
+		
+	
+		
+		
+    }
+    
+    # When to abort the strategy
+    abort = {
+	 NOT = { has_government = fascism } }
+    }
+      ai_strategy = {
+		type = conquer
+		id = ROOT			
+		value = 9000
+	}
+	ai_strategy = {
+		type = invade
+		id = ROOT			
+		value = 9000
+	}
+      ai_strategy = {
+		type = contain
+		id = ROOT			
+		value = 9000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = ROOT			
+		value = 9000
+	}
+}
 
 united_stated_of_america = {
     # Applied to other countries for main country
@@ -230,7 +436,7 @@ united_stated_of_america = {
   ai_strategy = {
 		type = protect
 		id = "UMI"			
-		value = 400
+		value = 4000
 	}
 
  ai_strategy = {

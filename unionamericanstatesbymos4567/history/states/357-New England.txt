@@ -12,9 +12,19 @@ state={
 	history={
 		add_core_of = UEN
 		owner = UEN
-		add_core_of = USA
 		add_core_of = UEN
 		add_core_of = UMI
+		add_core_of = USA
+		add_core_of = UAL
+		add_core_of = UTX
+		add_core_of = UCA
+			buildings = {
+			infrastructure = 7
+			industrial_complex = 10
+			air_base = 10
+		
+
+		}
 		victory_points = {
 			732 20 
 		}
