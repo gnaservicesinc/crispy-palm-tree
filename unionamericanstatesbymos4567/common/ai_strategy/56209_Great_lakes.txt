@@ -223,9 +223,9 @@ operation_loose_lakes = {
 
     # When to apply the strategy
     enable = {
-
+		UMI = {
 			is_in_faction_with = USA
-			original_tag = UMI
+			}
 
       		        
     }

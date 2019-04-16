@@ -1,0 +1,179 @@
+ideas = {
+
+	 country = {
+	
+		midwest_to_arms = {
+					picture = generic_war_preparation
+					allowed = {
+						always = no
+					}
+					allowed_civil_war = {
+				always = no
+			}
+removal_cost = -1
+
+modifier = {
+				planning_speed = 0.50
+				command_power_gain_mult = 0.15
+				conscription = 0.08
+				consumer_goods_factor = 0.07
+				stability_factor = 0.13
+				mobilization_speed = 0.75
+				production_speed_industrial_complex_factor = 0.18
+				production_speed_arms_factory_factor = 0.14
+				production_factory_efficiency_gain_factor = 0.13
+				defensive_war_stability_factor = 0.25
+				offensive_war_stability_factor = 0.25
+				equipment_bonus = {capital_ship = {attack = .11}
+     				submarine = {attack = .61 }}
+
+				}
+
+		
+		}
+		midwest_to_arms_two = {
+					picture = generic_goods_red_bonus
+					allowed = {
+						always = no
+					}
+					allowed_civil_war = {
+				always = no
+			}
+removal_cost = -1
+
+modifier = {
+				planning_speed = 0.50
+				command_power_gain_mult = 0.16
+				conscription = 0.08
+				consumer_goods_factor = 0.08
+				stability_factor = 0.04
+				production_speed_industrial_complex_factor = 0.14
+				production_speed_arms_factory_factor = 0.11
+				production_factory_efficiency_gain_factor = 0.24
+				decryption_tech = 0.95
+				encryption_tech = 0.95
+				drift_defense_factor = 0.2
+					send_volunteers_tension = -0.20
+				send_volunteer_divisions_required = -0.25
+				
+				}
+
+		
+		}
+		midwest_to_arms_three = {
+					picture = generic_volunteer_expedition_bonus
+					allowed = {
+						always = no
+					}
+					allowed_civil_war = {
+				always = yes
+			}
+removal_cost = -1
+
+modifier = {
+
+production_speed_infrastructure_factor = 0.1
+				army_core_attack_factor = 0.25
+				army_core_defense_factor = 0.25
+				training_time_factor = -0.15
+				equipment_capture = 0.225	
+				conscription_factor = 0.15
+				justify_war_goal_time = -0.21
+				}
+
+		
+		}
+		sunshine_delegate = {
+					picture = generic_volunteer_expedition_bonus
+					allowed = {
+						always = no
+					}
+					allowed_civil_war = {
+				always = yes
+			}
+removal_cost = -1
+
+modifier = {
+
+production_speed_infrastructure_factor = 0.1
+					political_power_gain	= 0.3
+			communism_drift = .3
+				}
+
+		
+		}
+		southern_delegate = {
+					picture = generic_volunteer_expedition_bonus
+					allowed = {
+						always = no
+					}
+					allowed_civil_war = {
+				always = yes
+			}
+removal_cost = -1
+
+modifier = {
+
+american_isolationism_drift = .3
+				army_core_attack_factor = 0.15
+				army_core_defense_factor = 0.15
+				training_time_factor = -0.15
+				equipment_capture = 0.125	
+				conscription_factor = 0.15
+				
+				}
+
+		
+		}
+		texan_delegate = {
+					picture = generic_volunteer_expedition_bonus
+					allowed = {
+						always = no
+					}
+					allowed_civil_war = {
+				always = yes
+			}
+removal_cost = -1
+
+modifier = {
+american_globalism_drift = .3 
+production_speed_infrastructure_factor = 0.1
+				army_core_attack_factor = 0.25
+				army_core_defence_factor = 0.25
+				training_time_factor = -0.15
+				equipment_capture = 0.225	
+				conscription_factor = 0.15
+				justify_war_goal_time = -0.29
+				}
+
+		
+		}
+
+		michigan_delegate = {
+					picture = generic_volunteer_expedition_bonus
+					allowed = {
+						always = no
+					}
+					allowed_civil_war = {
+				always = yes
+			}
+removal_cost = -1
+			modifier = {
+				democratic_drift = .3 
+				production_speed_infrastructure_factor = 0.1
+				army_core_attack_factor = 0.25
+				army_core_defence_factor = 0.25
+				training_time_factor = -0.15
+				equipment_capture = 0.225	
+				conscription_factor = 0.15
+				justify_war_goal_time = -0.29
+				}
+
+		
+		}
+
+
+	} ### Country
+
+} #### Idea
+				

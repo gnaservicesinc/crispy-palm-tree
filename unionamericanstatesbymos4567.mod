@@ -6,4 +6,5 @@ tags={
 	"Ideologies"
 	"Gameplay"
 }
+remote_file_id="1712173861"
 supported_version="1.6.2"
