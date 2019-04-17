@@ -10,7 +10,21 @@ if = {
 }
 
 
+create_country_leader = {
+	name = "General Secretary George WP Hunt"
+	desc = "POLITICS_UPTON_BEALL_DESC"
+	picture = "gfx/leaders/UAZ/George_WP_Hunt.dds"
+	expire = "1975.1.1"
+	ideology = stalinism
+	traits = {
+		socialite_connections 
+		headstrong
+		political_dancer
+		triumphant_revolutionary
+		staunch_stalinist
 
+	}
+}
 set_research_slots = 4
 set_stability = 0.95
 set_war_support = 15
