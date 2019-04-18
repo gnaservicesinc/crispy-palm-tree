@@ -1,4 +1,5 @@
-﻿oob = "State_Guard"
+﻿capital = 395
+oob = "State_Guard"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "USA_1936_naval_mtg"
@@ -7,8 +8,22 @@ if = {
 	}
 }
 
-capital = 395
 
+create_country_leader = {
+	name = "Len Small"
+	desc = "POLITICS_LEN_SMALL_DESC"
+	picture = "gfx/leaders/UIL/Len_Small.dds"
+	expire = "1975.1.1"
+	ideology = liberalism
+	traits = {
+		compassionate_gentleman
+		staunch_constitutionalist
+		smooth_talking_charmer 
+		financial_expert
+		economist
+
+	}
+}
 set_research_slots = 4
 set_stability = 0.95
 set_war_support = 15

@@ -40,6 +40,7 @@ set_politics = {
 
 add_ideas = {
 	free_trade
+	home_of_the_free
 }
 create_faction = "Great Lakes Treaty Organization"
 
