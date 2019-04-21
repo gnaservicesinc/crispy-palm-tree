@@ -1,6 +1,6 @@
 spriteTypes = {	
 
-	#### Generic continuous goal icons
+
 
 ###	SpriteType = {
 ###	name = "GFX_expand_ru_eco_partnetship"
@@ -12,11 +12,33 @@ SpriteType = {
 	name = "GFX_expand_ru_eco_partnetship"
 	texturefile = "gfx/interface/goals/gfx_expand_ru_eco_partnetship.dds"
 }
+SpriteType = {
+	name = "GFX_russian_security_aid"
+	texturefile = "gfx/interface/goals/gfx_russian_security_aid.dds"
+}
+SpriteType = {
+	name = "GFX_russian_security_aid2"
+	texturefile = "gfx/interface/goals/gfx_russian_security_aid2.dds"
+}
+SpriteType = {
+	name = "GFX_russian_security_aid3"
+	texturefile = "gfx/interface/goals/gfx_russian_security_aid3.dds"
+}
+SpriteType = {
+	name = "GFX_russian_security_aid4"
+	texturefile = "gfx/interface/goals/gfx_russian_security_aid4.dds"
+}
 
 SpriteType = {
 	name = "GFX_UPTON_BEALL"
 	texturefile = "gfx/leaders/UCA/Upton_Beall_SinclairJr.dds"
 }
-
-
+SpriteType = {
+	name = "GFX_ru_mil_train_joint"
+	texturefile = "gfx/interface/goals/gfx_ru_mil_train_joint.dds"
+}
+SpriteType = {
+	name = "GFX_ru_mil_train_joint2"
+	texturefile = "gfx/interface/goals/gfx_ru_mil_train_joint2.dds"
+}
 }####################

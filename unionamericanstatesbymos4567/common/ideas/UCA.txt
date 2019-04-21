@@ -97,20 +97,6 @@ ideas = {
 	
 		}
 
-	russian_security_aid1 = {
-		picture = generic_war_preparation
-		allowed = {always = no}
-		allowed_civil_war = {always = no}
-		removal_cost = -1
-
-		modifier = {
-			decryption_factor = 0.25
-			encryption_factor = 0.25
-			enemy_partisan_effect = -0.25
-			political_power_gain = 0.25
-			}
-	
-		}
 	russian_military_training = {
 		picture = generic_war_preparation
 		allowed = {always = no}
@@ -118,8 +104,8 @@ ideas = {
 		removal_cost = -1
 
 		modifier = {
-			offence = 0.15
-			defence = 0.15
+			offence = 0.25
+			defence = 0.25
 			land_reinforce_rate = 0.42
 			training_time_factor = -0.30
 			training_time_army_factor = -0.30
@@ -128,8 +114,24 @@ ideas = {
 			supply_consumption_factor = -0.26
 			experience_loss_factor = -0.15
 
-
 	
+			}
+	russian_military_training2 = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			offence = 0.25
+			defence = 0.25
+			land_reinforce_rate = 0.52
+			training_time_factor = -0.45
+			training_time_army_factor = -0.40
+			out_of_supply_factor = -0.5
+			supply_consumption_factor = -0.36
+			experience_loss_factor = -0.35
+
 	
 			}
 	

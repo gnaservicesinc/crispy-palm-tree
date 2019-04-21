@@ -28,7 +28,10 @@ country = {
 		ai_will_do = {
 			factor = 1
 		}
-
+available = {
+      ROOT = { has_government = communism }
+ROOT = { NOT = { is_in_faction_with = USA }}
+    }
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -37,6 +40,307 @@ country = {
 	}
 
 
+	focus = {
+		id = UCA_russian_security_partnership 
+		icon = GFX_russian_security_aid
+		relative_position_id = UCA_form_the_california_soviet_economic_partnership
+		prerequisite = { focus = UCA_form_the_california_soviet_economic_partnership  }
+		x = 0
+		y = -2
+		dynamic =  yes
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+available = {
+      ROOT = { has_government = communism }
+ROOT = { NOT = { is_in_faction_with = USA }}
+    }
+    
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = { add_ideas = { russian_security_aid1  } }
+	}
+
+	focus = {
+		id = UCA_russian_security_partnership2 
+		icon = GFX_russian_security_aid2
+		relative_position_id = UCA_form_the_california_soviet_economic_partnership
+		prerequisite = { focus = UCA_russian_security_partnership  }
+		x = 0
+		y = -4
+		dynamic =  yes
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+available = {
+      ROOT = { has_government = communism }
+ROOT = { NOT = { is_in_faction_with = USA }}
+    }
+    
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = { add_ideas = { russian_security_aid2  } }
+	}
+
+
+	focus = {
+		id = UCA_russian_security_partnership3 
+		icon = GFX_russian_security_aid3
+		relative_position_id = UCA_form_the_california_soviet_economic_partnership
+		prerequisite = { focus = UCA_russian_security_partnership2  }
+		x = 0
+		y = -6
+		dynamic =  yes
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+available = {
+      ROOT = { has_government = communism }
+ROOT = { NOT = { is_in_faction_with = USA }}
+    }
+    
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = { add_ideas = { russian_security_aid3  } }
+	}
+
+
+	focus = {
+		id = UCA_russian_security_partnership4 
+		icon = GFX_russian_security_aid4
+		relative_position_id = UCA_form_the_california_soviet_economic_partnership
+		prerequisite = { focus = UCA_russian_security_partnership3  }
+		x = 0
+		y = -8
+		dynamic =  yes
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+available = {
+      ROOT = { has_government = communism }
+ROOT = { NOT = { is_in_faction_with = USA }}
+    }
+    
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = { add_ideas = { russian_security_aid3  } }
+	}
+
+
+	focus = {
+		id = UCA_joint_russian_military_training 
+		icon = GFX_ru_mil_train_joint
+		relative_position_id = UCA_form_the_california_soviet_economic_partnership 
+		prerequisite = { focus =UCA_form_the_california_soviet_economic_partnership  }
+		x = 0
+		y = 2
+		dynamic =  yes
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+available = {
+      ROOT = { has_government = communism }
+ROOT = { NOT = { is_in_faction_with = USA }}
+    }
+    
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = { add_ideas = { russian_military_training } }
+	}
+	focus = {
+		id = UCA_joint_russian_military_training2 
+		icon = GFX_ru_mil_train_joint2
+		relative_position_id = UCA_form_the_california_soviet_economic_partnership 
+		prerequisite = { focus =UCA_joint_russian_military_training   }
+		x = 0
+		y = 4
+		dynamic =  yes
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+available = {
+      ROOT = { has_government = communism }
+ROOT = { NOT = { is_in_faction_with = USA }}
+    }
+    
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = { add_ideas = { russian_military_training2 } }
+	}
+
+focus = {
+		id = UCA_american_war_prep
+		icon = GFX_ru_mil_train_joint
+		relative_position_id = UCA_form_the_california_soviet_economic_partnership 
+		prerequisite = { focus =UCA_joint_russian_military_training2 }
+		x = 0
+		y = 6
+		dynamic =  yes
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+available = {
+	
+        ROOT = { has_government = communism }
+	ROOT = { NOT = { is_in_faction_with = USA }}
+    }
+    
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+
+		for_each_loop = {
+		array = American_States
+		ROOT={ add_core_of= original_tag = v}
+			}
+ }
+	}
+
+
+focus = {
+		id = UCA_American_Wargoals
+		icon = GFX_goal_generic_major_war
+		relative_position_id = UCA_form_the_california_soviet_economic_partnership 
+		prerequisite = { focus =UCA_joint_russian_military_training   }
+		x = 0
+		y = 8
+		dynamic =  yes
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+available = {
+        ROOT = { has_government = communism }
+	ROOT = { NOT = { is_in_faction_with = USA }}
+    }
+    
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+every_country = {
+			if = { 
+				limit = {
+						is_in_array = {
+   							 array = American_State
+						value = THIS }
+						THIS = { NOT = { is_in_faction_with = ROOT }}
+					
+		}
+				
+				create_wargoal = { target =     ROOT	 type = annex_everything } 
+			
+	ROOT = {	
+				if = { 
+				limit = {
+						is_in_array = {
+   							 array = American_States
+						value = PREV }
+						PREV = { NOT = { is_in_faction_with = ROOT }}
+		}
+ create_wargoal = { target =   PREV	type = annex_everything } 
+		}
+}
+
+
+
+}}
+}}
+focus = {
+		id = UCA_American_globalwar
+		icon = GFX_goal_generic_major_war
+		relative_position_id = UCA_form_the_california_soviet_economic_partnership 
+		prerequisite = { focus =UCA_joint_russian_military_training   }
+		x = 2
+		y = 8
+		dynamic =  yes
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+available = {
+        ROOT = { has_government = communism }
+	ROOT = { NOT = { is_in_faction_with = USA }}
+    }
+    
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+	every_country = {
+			if = { 
+				limit = {
+
+					 NOT= {
+						is_in_array = {
+   							 array = American_States
+						value = THIS }
+		}
+		THIS = { NOT = { has_government = communism }}
+		THIS = { NOT = { is_in_faction_with = ROOT }}
+}
+				
+				create_wargoal = { target =     ROOT	 type = annex_everything } 
+			
+	ROOT = {	
+				if = { 
+				limit = {
+
+					 NOT= {
+						is_in_array = {
+   							 array = American_States
+						value = PREV }
+		}
+		PREV = { NOT = { has_government = communism }}
+		PREV = { NOT = { is_in_faction_with = ROOT }}
+}
+ create_wargoal = { target =   PREV	type = annex_everything } 
+		}
+}}
+}
+}}
 
 
 focus = {
@@ -50,10 +354,14 @@ focus = {
 		ai_will_do = { factor = 1}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
+		
+		
+	available = { has_country_leader = { ruling_only = yes name ="Chairperson Upton Beall Sinclair Jr." } }
+
 		completion_reward = {
 			create_field_marshal = {
-				name = [Root.Owner.GetLeader]
+				name = "Chairperson Upton Beall Sinclair Jr."
 				gfx = GFX_UPTON_BEALL
 				skill = 8
 				attack_skill = 8
@@ -64,9 +372,7 @@ focus = {
 
 			}
 		}
-
-
-
+	
 }
 
 
