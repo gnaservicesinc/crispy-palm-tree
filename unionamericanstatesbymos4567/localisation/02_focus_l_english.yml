@@ -76,4 +76,16 @@ UCA_american_war_prep_desc:0 "If we want to not just annex the rest of the count
  is the history of class struggles..."
  UCA_American_globalwar:0 "The Global Revolution!"
  UCA_American_globalwar_desc:0 "We shall lead the Global Revolution!"
+ UCA_industrial_effort:0 "Industrial Effort"
+ UCA_industrial_effort_desc:0 "Build for the glory"
+ UCA_focus_on_infrastructure_four:0 "Somehow Building More Infrastructure"
+ UCA_focus_on_infrastructure_four_desc:0 "I don't care if nobody has driver on that road for 50 years, pave it, eight lanes!"
+ UCA_focus_on_infrastructure_three:0 "Build Even More Infrastructure"
+ UCA_focus_on_infrastructure_three_desc:0 "Give them people more highways and rails roads!"
+ UCA_focus_on_infrastructure_two:0 "Build More Infrastructure"
+ UCA_focus_on_infrastructure_two_desc:0 "Let's pave our roads!"
+ UCA_focus_on_infrastructure:0 "Build Infrastructure"
+ UCA_focus_on_infrastructure_desc:0 "Bridges and roads may seem dull but its the fundamental backbone of our nation!"
+
+
 

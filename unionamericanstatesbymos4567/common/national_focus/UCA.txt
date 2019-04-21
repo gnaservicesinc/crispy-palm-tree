@@ -20,7 +20,7 @@ country = {
 	focus = {
 		id = UCA_form_the_california_soviet_economic_partnership 
 		icon = GFX_expand_ru_eco_partnetship
-		x = 14
+		x = 10
 		y = 0
 		dynamic =  yes
 		cost = 10
@@ -341,6 +341,176 @@ available = {
 }}
 }
 }}
+
+focus = {
+		id = UCA_focus_on_infrastructure 
+		icon = GFX_goal_generic_production
+		
+		x = 2
+		y = 0
+
+		cost = 10
+ai_will_do = {
+			factor = 100
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+					completion_reward = {
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+			
+		
+		}
+	}
+
+
+focus = {
+		id = UCA_focus_on_infrastructure_two 
+		icon = GFX_goal_generic_production
+		prerequisite = { focus =UCA_focus_on_infrastructure  }
+		relative_position_id = UCA_focus_on_infrastructure 
+		x = 0
+		y = -1
+
+		cost = 10
+ai_will_do = {
+			factor = 100
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+					completion_reward = {
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+			
+		
+		}
+	}
+focus = {
+		id = UCA_focus_on_infrastructure_three 
+		icon = GFX_goal_generic_production
+		prerequisite = { focus =UCA_focus_on_infrastructure_two  }
+		relative_position_id = UCA_focus_on_infrastructure_two 
+		x = 0
+		y = -1
+
+		cost = 10
+ai_will_do = {
+			factor = 100
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+					completion_reward = {
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+			
+		
+		}
+	}
+focus = {
+		id = UCA_focus_on_infrastructure_four
+		icon = GFX_goal_generic_production
+		prerequisite = { focus =UCA_focus_on_infrastructure_three   }
+		relative_position_id = UCA_focus_on_infrastructure_three  
+		x = 0
+		y = -1
+
+		cost = 10
+ai_will_do = {
+			factor = 100
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+					completion_reward = {
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+			
+		
+		}
+	}
+
+	focus = {
+		id = UCA_industrial_effort
+		icon = GFX_goal_generic_production
+		relative_position_id = UCA_focus_on_infrastructure
+		x = 0
+		y = 1
+		cost = 10
+ 
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
 
 
 focus = {
