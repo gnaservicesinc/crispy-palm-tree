@@ -1,0 +1,138 @@
+ideas = {
+
+	 country = {
+
+	california_soviet_partnership = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			production_speed_arms_factory_factor = 0.20
+			production_factory_efficiency_gain_factor = 0.20
+			communism_drift = .30 
+			communism_acceptance = 90
+			drift_defence_factor = 0.25
+			weekly_manpower = 1000
+			MONTHLY_POPULATION = 0.5
+			opinion_gain_monthly_same_ideology_factor = 0.5
+			ai_badass_factor = 0.15
+			ai_focus_defense_factor = 0.5
+			
+			}
+	
+		}
+	california_recuitment_drive  = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+				non_core_manpower = 0.08
+				army_org_factor = 0.15
+				planning_speed = 0.23
+				conscription = 0.2
+				training_time_factor = -0.15
+				conscription_factor = 0.15
+				ai_focus_aggressive_factor = 0.5
+			}
+	
+		}
+	russian_security_aid1 = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			decryption_factor = 0.25
+			encryption_factor = 0.25
+			enemy_partisan_effect = -0.25
+			political_power_gain = 0.25
+			}
+	
+		}
+	russian_security_aid2 = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			decryption_factor = 0.25
+			encryption_factor = 0.25
+			enemy_partisan_effect = -0.25
+			political_power_gain = 0.25
+			}
+	
+		}
+	russian_security_aid3 = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			decryption_factor = 0.25
+			encryption_factor = 0.25
+			enemy_partisan_effect = -0.25
+			political_power_gain = 0.25
+			}
+	
+		}
+	russian_security_aid4 = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			decryption_factor = 0.25
+			encryption_factor = 0.25
+			enemy_partisan_effect = -0.25
+			political_power_gain = 0.25
+			}
+	
+		}
+
+	russian_security_aid1 = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			decryption_factor = 0.25
+			encryption_factor = 0.25
+			enemy_partisan_effect = -0.25
+			political_power_gain = 0.25
+			}
+	
+		}
+	russian_military_training = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			offence = 0.15
+			defence = 0.15
+			land_reinforce_rate = 0.42
+			training_time_factor = -0.30
+			training_time_army_factor = -0.30
+			max_dig_in = 1
+			out_of_supply_factor = -0.5
+			supply_consumption_factor = -0.26
+			experience_loss_factor = -0.15
+
+
+	
+	
+			}
+	
+		}
+	}
+}

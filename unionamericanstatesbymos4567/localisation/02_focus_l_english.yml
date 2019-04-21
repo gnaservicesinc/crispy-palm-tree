@@ -52,3 +52,8 @@ USA_join_the_soviets:0 "Join the Soviets"
 USA_join_the_soviets_desc:0 "Join our soviet comrades in a greater global movement as coordinated by Moscow."  
 USA_breakup:0 "Failed Union"
 USA_breakup_desc:0 "We tried it, its just not gonna work."
+UCA_form_the_california_soviet_economic_partnership:0 "[SOV.Capital.GetName] - [ROOT.Capital.GetName] Economic Partnership."
+UCA_form_the_california_soviet_economic_partnership_desc:0 "[SOV.Owner.GetName] wants to establish a direct economic relationship between [SOV.Capital.GetName] and [Root.Capital.GetName]. It would take some time to put together on our side but we could use the additional aid." 
+UCA_take_direct_command:0 "[Root.Owner.GetLeader] Takes Direct Command"
+UCA_take_direct_command_desc:0 "[ROOT.Owner.GetLeader] shall assume direct command of the military."
+

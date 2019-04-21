@@ -18,7 +18,8 @@ re_conquest_america = {
 			if = { limit = { has_dlc = "Together for Victory"}
 			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
 			} else = { puppet =ROOT }
-		}
+		ROOT = { hidden_effect = { news_event = { id = AmericanStates.0  days = 1 } } }}
+
 		
           }
 			

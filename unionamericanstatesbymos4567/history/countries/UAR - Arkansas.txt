@@ -1,4 +1,5 @@
-﻿oob = "State_Guard"
+﻿capital = 373
+oob = "State_Guard"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "USA_1936_naval_mtg"
@@ -7,7 +8,7 @@ if = {
 	}
 }
 
-capital = 373
+
 
 set_research_slots = 4
 set_stability = 0.95

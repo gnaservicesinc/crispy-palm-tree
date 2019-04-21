@@ -1,0 +1,119 @@
+focus_tree = {
+ id = UCA_california_focus
+country = {
+        factor = 0 
+        modifier = {
+            add = 100    
+            
+           	tag  =  UCA
+		modifier = {
+			add = 100
+			original_tag   =  UCA
+			}
+        }
+    }
+
+	continuous_focus_position = { x = 50 y = 1600 }
+	default = no
+
+
+	focus = {
+		id = UCA_form_the_california_soviet_economic_partnership 
+		icon = GFX_expand_ru_eco_partnetship
+		x = 14
+		y = 0
+		dynamic =  yes
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = { add_ideas = { california_soviet_partnership  } }
+	}
+
+
+
+
+focus = {
+		id = UCA_take_direct_command 
+		icon = GFX_goal_generic_production
+		 dynamic = yes
+		x = 5
+		y = 0
+
+		cost = 10
+		ai_will_do = { factor = 1}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			create_field_marshal = {
+				name = [Root.Owner.GetLeader]
+				gfx = GFX_UPTON_BEALL
+				skill = 8
+				attack_skill = 8
+				defense_skill = 8
+				planning_skill = 8
+				logistics_skill = 8
+				traits = { naval_invader }
+
+			}
+		}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
