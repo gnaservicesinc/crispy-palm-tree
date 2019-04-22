@@ -15,7 +15,8 @@ ideas = {
 			communism_acceptance = 90
 			drift_defence_factor = 0.25
 			weekly_manpower = 1000
-			MONTHLY_POPULATION = 0.5
+			MONTHLY_POPULATION = 0.75
+			conscription = 0.25
 			opinion_gain_monthly_same_ideology_factor = 0.5
 			ai_badass_factor = 0.15
 			ai_focus_defense_factor = 0.5
@@ -51,6 +52,8 @@ ideas = {
 			encryption_factor = 0.25
 			enemy_partisan_effect = -0.25
 			political_power_gain = 0.25
+			MONTHLY_POPULATION = 0.05
+			conscription = 0.05
 			}
 	
 		}
@@ -65,6 +68,8 @@ ideas = {
 			encryption_factor = 0.25
 			enemy_partisan_effect = -0.25
 			political_power_gain = 0.25
+			MONTHLY_POPULATION = 0.05
+			conscription = 0.05
 			}
 	
 		}
@@ -79,6 +84,8 @@ ideas = {
 			encryption_factor = 0.25
 			enemy_partisan_effect = -0.25
 			political_power_gain = 0.25
+			MONTHLY_POPULATION = 0.05
+			conscription = 0.05
 			}
 	
 		}
@@ -93,6 +100,8 @@ ideas = {
 			encryption_factor = 0.25
 			enemy_partisan_effect = -0.25
 			political_power_gain = 0.25
+			MONTHLY_POPULATION = 0.05
+			conscription = 0.05
 			}
 	
 		}
@@ -113,6 +122,8 @@ ideas = {
 			out_of_supply_factor = -0.5
 			supply_consumption_factor = -0.26
 			experience_loss_factor = -0.15
+			MONTHLY_POPULATION = 0.10
+			conscription = 0.35
 
 	
 			}
@@ -131,6 +142,8 @@ ideas = {
 			out_of_supply_factor = -0.5
 			supply_consumption_factor = -0.36
 			experience_loss_factor = -0.35
+			conscription = 0.55
+			MONTHLY_POPULATION = 0.15
 
 	
 			}

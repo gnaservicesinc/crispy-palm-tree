@@ -1,21 +1,372 @@
 focus_tree = {
  id = UCA_california_focus
 country = {
-        factor = 0 
-        modifier = {
-            add = 100    
-            
-           	tag  =  UCA
+		factor = 0
+		
 		modifier = {
 			add = 100
-			original_tag   =  UCA
-			}
-        }
-    }
+	OR={
+				tag  =  UMI
+		tag  =  UIL
+		tag  =  UNY
+		tag  =  UAL
+		tag  =  UCA
+		tag  =  UTX
+		tag  =  UIN
+		tag  =  UCI
+		tag  =  UDK
+		tag  =  UMN
+		tag  =  UEN
+		tag  =  UKY
+		tag  =  UTN
+		tag  =  UMS
+		tag  =  UFL
+		tag  =  UGO
+		tag  =  UVA
+		tag  =  UNE
+		tag  =  UME
+		tag  =  UAR
+		tag  =  ULA
+		tag  =  UWI
+		tag  =  UOK
+		tag  =  UIA
+		tag  =  UKA
+		tag  =  UOH
+		tag  =  UPE
+		tag  =  UML
+		tag  =  UNJ
+		tag  =  UWA
+		tag  =  UID
+		tag  =  UAZ
+		tag  =  UUT
+		tag  =  UNV
+		tag  =  UOR
+		tag  =  UMO
+		tag  =  UCO
+		tag  =  UMX
+		tag  =  UWY}
+		}
+		
+		modifier = {
+		add = 100 OR = {
+		original_tag   =  UIL
+		original_tag   =  UNY
+		original_tag   =  UAL
+		original_tag   =  UCA
+		original_tag   =  UTX
+		original_tag   =  UIN
+		original_tag   =  UCI
+		original_tag   =  UDK
+		original_tag   =  UMN
+		original_tag   =  UEN
+		original_tag   =  UKY
+		original_tag   =  UTN
+		original_tag   =  UMS
+		original_tag   =  UFL
+		original_tag   =  UGO
+		original_tag   =  UVA
+		original_tag   =  UNE
+		original_tag   =  UME
+		original_tag   =  UAR
+		original_tag   =  ULA
+		original_tag   =  UWI
+		original_tag   =  UOK
+		original_tag   =  UIA
+		original_tag   =  UKA
+		original_tag   =  UOH
+		original_tag   =  UPE
+		original_tag   =  UML
+		original_tag   =  UNJ
+		original_tag   =  UWA
+		original_tag   =  UID
+		original_tag   =  UAZ
+		original_tag   =  UUT
+		original_tag   =  UNV
+		original_tag   =  UOR
+		original_tag   =  UMO
+		original_tag   =  UCO
+		original_tag   =  UMX
+		original_tag   =  UWY
+		}}
+	}
 
 	continuous_focus_position = { x = 50 y = 1600 }
 	default = no
+	focus = {
+		id = UCA_build_infiltrate_michigan
+		icon = GFX_expand_ru_eco_partnetship
+		x = 15
+		y = 0
+		dynamic =  yes
+		cost = 20
 
+		ai_will_do = {
+			factor = 1
+		}
+available = {
+ ROOT = { NOT = { has_government = democratic }}
+ROOT = { NOT = { is_in_faction_with = USA }}
+ROOT = { NOT = { is_in_faction_with = UMI }}
+ROOT = { NOT = { has_war_with = UMI }}
+    }
+    cancel = {
+   has_war_with = UMI 
+   is_in_faction_with = USA
+   is_in_faction_with = UMI
+}
+ allow_branch = { ROOT = {  NOT = { TAG = UMI }}}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+
+			 add_political_power = 250
+			hidden_effect = { USA= { create_wargoal = { target =     ROOT	 type = annex_everything } }} 
+			 }
+	}
+	focus = {
+		id = UCA_build_destabilize_michigan
+		icon = GFX_expand_ru_eco_partnetship
+		relative_position_id = UCA_build_infiltrate_michigan
+		prerequisite = { focus = UCA_build_infiltrate_michigan  }
+		x = 0
+		y = -2
+	
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+available = {
+ ROOT = { NOT = { has_government = democratic }}
+ROOT = { NOT = { is_in_faction_with = USA }}
+ROOT = { NOT = { is_in_faction_with = UMI }}
+ROOT = { NOT = { has_war_with = UMI }}
+    }
+ allow_branch = { ROOT = {  NOT = { TAG = UMI }}}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = { 
+			for_each_scope_loop = {
+				add_political_power = 250
+				array = American_States
+				if ={ limit ={ NOT = { has_government = democratic }}
+				   add_ideas = {_disruption_problem } 
+				hidden_effect = { create_wargoal = { target =     ROOT	 type = annex_everything } } 
+			}
+			
+ 		}
+	}
+}
+focus = {
+		id = UCA_build_infiltrate_alabama
+		icon = GFX_expand_ru_eco_partnetship
+		x = 17
+		y = 0
+		dynamic =  yes
+		cost = 20
+
+		ai_will_do = {
+			factor = 1
+		}
+available = {
+ ROOT = { NOT = { has_government = american_isolationism }}
+ROOT = { NOT = { is_in_faction_with = USA }}
+ROOT = { NOT = { is_in_faction_with = UAL }}
+ROOT = { NOT = { has_war_with = UAL }}
+    }
+    cancel = {
+   has_war_with = UAL 
+   is_in_faction_with = USA
+   is_in_faction_with = UAL
+}
+ allow_branch = { ROOT = {  NOT = { TAG = UAL }}}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+
+			 add_political_power = 250
+			hidden_effect = { USA= { create_wargoal = { target =     ROOT	 type = annex_everything } }} 
+			 }
+	}
+	focus = {
+		id = UCA_build_destabilize_alabama
+		icon = GFX_expand_ru_eco_partnetship
+		relative_position_id = UCA_build_infiltrate_alabama
+		prerequisite = { focus = UCA_build_infiltrate_alabama  }
+		x = 0
+		y = -2
+	
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+available = {
+ROOT = {  NOT = { has_government = american_isolationism }}
+ROOT = { NOT = { is_in_faction_with = USA }}
+ROOT = { NOT = { is_in_faction_with = UAL }}
+ROOT = { NOT = { has_war_with = UAL }}
+    }
+ allow_branch = { ROOT = {  NOT = { TAG = UAL }}}
+
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = { 
+			for_each_scope_loop = {
+				add_political_power = 250
+				array = American_States
+				   add_ideas = {_disruption_problem } 
+				if ={ limit ={ NOT = { has_government = american_isolationism }}
+				hidden_effect = { create_wargoal = { target =     ROOT	 type = annex_everything } } }
+			}
+			
+ 		}
+	}
+focus = {
+		id = UCA_build_infiltrate_texas 
+		icon = GFX_expand_ru_eco_partnetship
+		x = 19
+		y = 0
+		dynamic =  yes
+		cost = 20
+
+		ai_will_do = {
+			factor = 1
+		}
+available = {
+ ROOT = { NOT = { has_government = american_globalism}}
+ROOT = { NOT = { is_in_faction_with = USA }}
+ROOT = { NOT = { is_in_faction_with = UTX }}
+ROOT = { NOT = { has_war_with = UTX }}
+    }
+    cancel = {
+   has_war_with = UTX 
+   is_in_faction_with = USA
+   is_in_faction_with = UTX
+}
+ allow_branch = { ROOT = {  NOT = { TAG = UTX }}}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+
+			 add_political_power = 250
+			hidden_effect = { USA= { create_wargoal = { target =     ROOT	 type = annex_everything } }} 
+			 }
+	}
+	focus = {
+		id = UCA_build_destabilize_texas
+		icon = GFX_expand_ru_eco_partnetship
+		relative_position_id = UCA_build_infiltrate_texas 
+		prerequisite = { focus = UCA_build_infiltrate_texas   }
+		x = 0
+		y = -2
+	
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+available = {
+ROOT = {  NOT = { has_government = american_globalism }}
+ROOT = { NOT = { is_in_faction_with = USA }}
+ROOT = { NOT = { is_in_faction_with = UTX }}
+ROOT = { NOT = { has_war_with = UTX }}
+    }
+ allow_branch = { ROOT = {  NOT = { TAG = UTX }}}
+
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = { 
+			for_each_scope_loop = {
+				add_political_power = 250
+				array = American_States
+				   add_ideas = {_disruption_problem } 
+				if ={ limit ={ NOT = { has_government = american_globalism }}
+				hidden_effect = { create_wargoal = { target =     ROOT	 type = annex_everything } } }
+			}
+			
+ 		}
+	}
+
+focus = {
+		id = UCA_build_infiltrate_california 
+		icon = GFX_expand_ru_eco_partnetship
+		x = 21
+		y = 0
+		dynamic =  yes
+		cost = 20
+
+		ai_will_do = {
+			factor = 1
+		}
+available = { 
+ ROOT = { NOT = { has_government = communism}}
+ROOT = { NOT = { is_in_faction_with = USA }}
+ROOT = { NOT = { is_in_faction_with = UCA }}
+ROOT = { NOT = { has_war_with = UCA }}
+    }
+    cancel = {
+   has_war_with = UCA 
+   is_in_faction_with = USA
+   is_in_faction_with = UCA
+}
+ allow_branch = { ROOT = {  NOT = { TAG = UCA }}}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+
+			 add_political_power = 250
+			hidden_effect = { USA= { create_wargoal = { target =     ROOT	 type = annex_everything } }} 
+			 }
+	}
+	focus = {
+		id = UCA_build_destabilize_california
+		icon = GFX_expand_ru_eco_partnetship
+		relative_position_id = UCA_build_infiltrate_california 
+		prerequisite = { focus = UCA_build_infiltrate_california   }
+		x = 0
+		y = -2
+	
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+available = {
+ROOT = {  NOT = { has_government = communism }}
+ROOT = { NOT = { is_in_faction_with = USA }}
+ROOT = { NOT = { is_in_faction_with = UCA }}
+ROOT = { NOT = { has_war_with = UCA }}
+    }
+ allow_branch = { ROOT = {  NOT = { TAG = UCA }}}
+
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = { 
+			for_each_scope_loop = {
+				add_political_power = 250
+				array = American_States
+				   add_ideas = {_disruption_problem } 
+				if ={ limit ={ NOT = { has_government = communism }}
+				hidden_effect = { create_wargoal = { target =     ROOT	 type = annex_everything } } }
+			}
+			
+ 		}
+	}
 
 	focus = {
 		id = UCA_form_the_california_soviet_economic_partnership 
@@ -63,9 +414,43 @@ ROOT = { NOT = { is_in_faction_with = USA }}
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		completion_reward = { add_ideas = { russian_security_aid1  } }
-	}
+		completion_reward = { add_ideas = { russian_security_aid1  }
 
+	 add_political_power = 250
+				add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+			army_experience = 15
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+				add_ideas = special_forces
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.0
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+				technology = marines
+				technology = marines2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+			}
+}
+}
 	focus = {
 		id = UCA_russian_security_partnership2 
 		icon = GFX_russian_security_aid2
@@ -89,7 +474,40 @@ ROOT = { NOT = { is_in_faction_with = USA }}
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		completion_reward = { add_ideas = { russian_security_aid2  } }
+		completion_reward = { add_ideas = { russian_security_aid2  } add_political_power = 250
+
+		completion_reward = {
+		air_experience = 35
+			add_tech_bonus = {
+				name = motorized_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = motorized_equipment
+			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}		
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+
+}
+
+}
 	}
 
 
@@ -116,8 +534,139 @@ ROOT = { NOT = { is_in_faction_with = USA }}
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		completion_reward = { add_ideas = { russian_security_aid3  } }
-	}
+		completion_reward = { add_ideas = { russian_security_aid3  } add_political_power = 250
+		add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 3.0
+				technology = motorised_infantry
+			}
+
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+
+
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+			add_tech_bonus = {
+				name = jet_rocket_bonus
+				ahead_reduction = 2
+				uses = 2
+				category = rocketry
+				category = jet_technology
+			}
+if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = { tag = ROOT }
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+		}			
+}
 
 
 	focus = {
@@ -143,7 +692,29 @@ ROOT = { NOT = { is_in_faction_with = USA }}
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		completion_reward = { add_ideas = { russian_security_aid3  } }
+		completion_reward = { add_ideas = { russian_security_aid3  } add_political_power = 250
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+		}
+	completion_reward = {
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = dd_tech
+			}
+		}
+
+}
 	}
 
 
@@ -170,7 +741,26 @@ ROOT = { NOT = { is_in_faction_with = USA }}
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		completion_reward = { add_ideas = { russian_military_training } }
+		completion_reward = { add_ideas = { russian_military_training 
+paramilitarism_focus
+foreign_expeditions_focus} 
+
+add_political_power = 250
+
+
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 1.0
+				uses = 4
+				category = electronics
+				category = nuclear
+				category = rocketry
+			}
+		
+
+
+
+}
 	}
 	focus = {
 		id = UCA_joint_russian_military_training2 
@@ -195,7 +785,35 @@ ROOT = { NOT = { is_in_faction_with = USA }}
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		completion_reward = { add_ideas = { russian_military_training2 } }
+		completion_reward = { add_ideas = { russian_military_training2 }
+
+				add_tech_bonus = {
+					name = electronics_bonus
+					bonus = 1.0
+					uses = 1
+					category = electronics
+				}
+				add_tech_bonus = {
+					name = industrial_bonus
+					bonus = 1.0
+					uses = 1
+					category = industry
+				}	
+				add_tech_bonus = {
+					name = infantry_artillery_bonus #@#
+					bonus = 1.0
+					uses = 1
+					category = infantry_weapons
+					category = artillery
+				}
+
+		hidden_effect = {
+				set_rule = { can_use_kamikaze_pilots = yes }
+			}
+			custom_effect_tooltip = kamikaze_focus_tooltip
+
+
+ }
 	}
 
 focus = {
@@ -223,11 +841,11 @@ available = {
 		available_if_capitulated = no
 
 		completion_reward = {
-
+			add_political_power = 250
 
 		for_each_loop = {
 		array = American_States
-		ROOT={ add_core_of= original_tag = v}
+		ROOT={ add_core_of= v}
 			}
  }
 	}
@@ -244,61 +862,75 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			factor = 0
+			modifier = {
+				factor = 1000
+		
+				alliance_strength_ratio > 0.51	
+			}
 		}
 available = {
         ROOT = { has_government = communism }
 	ROOT = { NOT = { is_in_faction_with = USA }}
+	ROOT = { has_war = no }
     }
-    
+    cancel = {
+	ROOT = { NOT = { has_government = communism }}
+	ROOT = {  is_in_faction_with = USA }
+	ROOT = { has_war = yes }
+    }
 
+		will_lead_to_war_with = USA
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-every_country = {
-			if = { 
-				limit = {
-						is_in_array = {
-   							 array = American_State
-						value = THIS }
-						THIS = { NOT = { is_in_faction_with = ROOT }}
-					
-		}
-				
-				create_wargoal = { target =     ROOT	 type = annex_everything } 
-			
-	ROOT = {	
-				if = { 
-				limit = {
-						is_in_array = {
-   							 array = American_States
-						value = PREV }
-						PREV = { NOT = { is_in_faction_with = ROOT }}
-		}
- create_wargoal = { target =   PREV	type = annex_everything } 
-		}
+
+			for_each_loop = {
+				array = American_States
+				v={ if = { limit = { NOT = {
+								 is_in_faction_with = ROOT
+								 has_government = communism
+								 }}
+				hidden_effect = {create_wargoal = { target =     ROOT	 type = annex_everything }  
+		declare_war_on = {
+    target = ROOT
+    type = annex_everything
 }
+		}	
+				ROOT = {create_wargoal = { target =   PREV	type = annex_everything }  }
+			}}
 
-
-
-}}
-}}
+		}
+   	}
+}
 focus = {
 		id = UCA_American_globalwar
 		icon = GFX_goal_generic_major_war
 		relative_position_id = UCA_form_the_california_soviet_economic_partnership 
 		prerequisite = { focus =UCA_joint_russian_military_training   }
-		x = 2
+		x = 0
 		y = 8
 		dynamic =  yes
 		cost = 10
-
+		 will_lead_to_war_with = ALL
 		ai_will_do = {
-			factor = 1
+			factor = 0
+			modifier = {
+				factor = 10
+				alliance_strength_ratio > 0.51
+				}
+			modifier = {
+				factor = 100
+				NOT = { country_exists = USA }
+				}
+
+			
 		}
 available = {
+	
+has_war_support > 0.75
         ROOT = { has_government = communism }
 	ROOT = { NOT = { is_in_faction_with = USA }}
     }
@@ -309,45 +941,54 @@ available = {
 		available_if_capitulated = no
 
 		completion_reward = {
-	every_country = {
-			if = { 
-				limit = {
-
+	every_country = { if = { limit = {
+					country_exists = THIS
 					 NOT= {
 						is_in_array = {
    							 array = American_States
-						value = THIS }
-		}
+							value = THIS }
+							}
+		
 		THIS = { NOT = { has_government = communism }}
-		THIS = { NOT = { is_in_faction_with = ROOT }}
+		THIS = { NOT = { is_in_faction_with = ROOT }}	
+		}
+	create_wargoal = { target =     ROOT	 type = annex_everything } 			
+	declare_war_on = { target = ROOT  type = annex_everything}
+				}}
+	}
 }
-				
-				create_wargoal = { target =     ROOT	 type = annex_everything } 
-			
-	ROOT = {	
-				if = { 
-				limit = {
 
-					 NOT= {
-						is_in_array = {
-   							 array = American_States
-						value = PREV }
+	focus = {
+		id = UCA_industrial_effort
+		icon = GFX_goal_generic_production
+
+		x = 2
+		y = 0
+		cost = 10
+ 
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
 		}
-		PREV = { NOT = { has_government = communism }}
-		PREV = { NOT = { is_in_faction_with = ROOT }}
-}
- create_wargoal = { target =   PREV	type = annex_everything } 
+
+		ai_will_do = {
+			factor = 5
 		}
-}}
-}
-}}
+	}
 
 focus = {
 		id = UCA_focus_on_infrastructure 
 		icon = GFX_goal_generic_production
-		
-		x = 2
-		y = 0
+				relative_position_id = UCA_industrial_effort
+		prerequisite = { focus =UCA_industrial_effort  }
+		x = 0
+		y = -2
 
 		cost = 10
 ai_will_do = {
@@ -360,7 +1001,7 @@ ai_will_do = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-					completion_reward = {
+				
 			every_state = {
 				limit = {
 					is_owned_by = ROOT
@@ -372,11 +1013,12 @@ ai_will_do = {
 					instant_build = yes
 				}
 			}
-		}
+		
 			
 		
 		}
 	}
+
 
 
 focus = {
@@ -389,7 +1031,7 @@ focus = {
 
 		cost = 10
 ai_will_do = {
-			factor = 100
+			factor = 10
 		}
 
 
@@ -425,7 +1067,7 @@ focus = {
 
 		cost = 10
 ai_will_do = {
-			factor = 100
+			factor = 10
 		}
 
 
@@ -461,7 +1103,7 @@ focus = {
 
 		cost = 10
 ai_will_do = {
-			factor = 100
+			factor = 10
 		}
 
 
@@ -488,29 +1130,6 @@ ai_will_do = {
 		}
 	}
 
-	focus = {
-		id = UCA_industrial_effort
-		icon = GFX_goal_generic_production
-		relative_position_id = UCA_focus_on_infrastructure
-		x = 0
-		y = 1
-		cost = 10
- 
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = industrial_bonus
-				bonus = 1.0
-				uses = 1
-				category = industry
-			}
-		}
-
-		ai_will_do = {
-			factor = 3
-		}
-	}
 
 
 focus = {
@@ -519,20 +1138,23 @@ focus = {
 		 dynamic = yes
 		x = 5
 		y = 0
-
+		allow_branch = { ROOT = { NOT = { tag = UCA }} }
 		cost = 10
-		ai_will_do = { factor = 1}
+		ai_will_do = { 
+			factor = 1
+			modifier = {
+				factor = 100
+				has_war
+			}
+			}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
-		
-	available = { has_country_leader = { ruling_only = yes name ="Chairperson Upton Beall Sinclair Jr." } }
 
 		completion_reward = {
-			create_field_marshal = {
-				name = "Chairperson Upton Beall Sinclair Jr."
-				gfx = GFX_UPTON_BEALL
+			ROOT = { create_field_marshal = {
+				name="[?[Root.Owner.GetName]]"
+				gfx = "gfx/leaders/USA/Portrait_USA_Generic_land_2.dds"
 				skill = 8
 				attack_skill = 8
 				defense_skill = 8
@@ -540,7 +1162,7 @@ focus = {
 				logistics_skill = 8
 				traits = { naval_invader }
 
-			}
+			}}
 		}
 	
 }
@@ -550,7 +1172,38 @@ focus = {
 
 
 
+focus = {
+		id = UCA_take_direct_command2 
+		icon = GFX_goal_generic_production
+		 dynamic = yes
+		x = 7
+		y = 0
 
+		cost = 10
+		ai_will_do = { factor = 1}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+	allow_branch = { tag = UCA }
+	
+	available = { has_country_leader = { ruling_only = yes name ="Chairperson Upton Beall Sinclair Jr." } }
+
+		completion_reward = {
+				ROOT = { create_field_marshal = {
+				name = "Chairperson Upton Beall Sinclair Jr."
+				gfx = GFX_UPTON_BEALL
+				skill = 8
+				attack_skill = 8
+				defense_skill = 8
+				planning_skill = 8
+				logistics_skill = 8
+				traits = { naval_invader }
+
+			}}
+		}
+	
+}
 
 
 

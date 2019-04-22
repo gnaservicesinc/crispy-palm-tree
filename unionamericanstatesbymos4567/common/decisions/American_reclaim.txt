@@ -5,6 +5,7 @@ re_conquest_america = {
 			visible = {
 				NOT = { is_subject_of = USA } 
 				NOT = { tag = USA } 
+				country_exists = USA
 			}
 		 cost = 500
 		days_remove = 1
@@ -13,8 +14,13 @@ re_conquest_america = {
 			factor = 1
 		}
 		   remove_effect = {
-		ROOT = { add_to_tech_sharing_group = usa_investigators }
+		ROOT = { add_to_tech_sharing_group = usa_investigators 
+			inherit_technology = USA }
 		USA = {
+			
+			if = { limit = { has_dlc = "Man the Guns"}
+				inherit_technology = ROOT }
+	
 			if = { limit = { has_dlc = "Together for Victory"}
 			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
 			} else = { puppet =ROOT }
@@ -33,6 +39,7 @@ re_conquest_america = {
 				NOT = { is_subject_of = USA } 
 				NOT = { tag = USA } 
 				NOT = { tag = UCA }
+				country_exists = UCA
 				
 				
 			}
@@ -47,7 +54,9 @@ remove_effect = {
 		
 		ROOT = { add_to_tech_sharing_group = uca_investigators }
 		UCA = {
-			exists = yes
+			if = { limit = { has_dlc = "Man the Guns"}
+				inherit_technology = ROOT }
+
 			if = { limit = { has_dlc = "Together for Victory"}
 			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
 			} else = { puppet =ROOT }
@@ -64,6 +73,7 @@ re_conquest_join_texas = {
 				NOT = { is_subject_of = UTX }  
 				NOT = { tag = USA } 
 				NOT = { tag = UTX }
+				country_exists = UTX
 				has_government = american_globalism
 			}
 		 cost = 25
@@ -77,7 +87,8 @@ remove_effect = {
 
 		ROOT = { add_to_tech_sharing_group = utx_investigators }
 		UTX = {
-			exists = yes
+			if = { limit = { has_dlc = "Man the Guns"}
+				inherit_technology = ROOT }
 			if = { limit = { has_dlc = "Together for Victory"}
 			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
 			} else = { puppet =ROOT }
@@ -93,6 +104,7 @@ re_conquest_join_the_south  = {
 				NOT = { is_subject_of = UAL } 
 				NOT = { tag = USA } 
 				NOT = { tag = UAL }
+				country_exists = UAL
 			has_government = american_isolationism
 			}
 		 cost = 25
@@ -106,7 +118,9 @@ remove_effect = {
 
 		UAL = {
 			
-			exists = yes
+			if = { limit = { has_dlc = "Man the Guns"}
+				inherit_technology = ROOT }
+
 			if = { limit = { has_dlc = "Together for Victory"}
 			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
 			} else = { puppet =ROOT }
@@ -155,6 +169,7 @@ re_conquest_support_communism = {
 				NOT = { tag = UMI }
 				NOT = { tag = UAL }
 				NOT = { tag = UTX }
+				country_exists = UCA
 			}
 ai_will_do = {
 			factor = 1
@@ -205,11 +220,12 @@ re_conquest_support_american_isolationism = {
 				NOT = { tag = UMI }
 				NOT = { tag = UCA }
 				NOT = { tag = UTX }
+				country_exists = UAL
 			}
 ai_will_do = {
 			factor = 1
 		}
-		cost = 50
+		cost = 150
 		days_remove = 1
 		days_re_enable = 30
 	remove_effect = {
@@ -258,11 +274,12 @@ re_conquest_support_american_globalism = {
 				NOT = { tag = UMI }
 				NOT = { tag = UCA }
 				NOT = { tag = UAL }
+				country_exists = UTX
 			}
 ai_will_do = {
 			factor = 1
 		}
-		cost = 50
+		cost = 150
 		days_remove = 1
 		days_re_enable = 30
 	remove_effect = {
@@ -307,11 +324,12 @@ re_conquest_support_democracy = {
 				NOT = { tag = UCA }
 				NOT = { tag = UAL }
 				NOT = { tag = UTX }
+				country_exists = USA
 			}
 ai_will_do = {
 			factor = 1
 		}
-		cost = 50
+		cost = 150
 		days_remove = 1
 		days_re_enable = 30
 	remove_effect = {

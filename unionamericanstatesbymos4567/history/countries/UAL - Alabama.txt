@@ -8,7 +8,8 @@ if = {
 		set_naval_oob = "USA_1936_naval_legacy"
 	}
 }
-
+	
+set_major = yes
 create_country_leader = {
 	name = "Govoner Jim Folsom"
 	desc = "POLITICS_JIM_FOLSOM_DESC"

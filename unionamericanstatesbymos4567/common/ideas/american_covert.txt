@@ -1,0 +1,8 @@
+hidden_ideas = {
+      _disruption_problem = {
+           modifier = {
+               stability_weekly = -0.25
+           }
+      }
+ }
+

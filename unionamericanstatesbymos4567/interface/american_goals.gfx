@@ -41,4 +41,8 @@ SpriteType = {
 	name = "GFX_ru_mil_train_joint2"
 	texturefile = "gfx/interface/goals/gfx_ru_mil_train_joint2.dds"
 }
+SpriteType = {
+	name = "GFX_amer_sw_generic_lead"
+	texturefile = "gfx/leaders/AMERICAN/generic_southwest_lead.dds"
+}
 }####################

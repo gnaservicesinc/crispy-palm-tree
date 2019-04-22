@@ -10,7 +10,7 @@ if = {
 
 
 create_country_leader = {
-	name = "Führer Bib Graves"
+	name = "Führer Bibb Graves"
 	desc = "POLITICS_BIB_GRAVES_DESC"
 	picture = "gfx/leaders/UTX/Bibb_Graves.dds"
 	expire = "1975.1.1"
@@ -22,6 +22,8 @@ create_country_leader = {
 		baron_of_terror
 	}
 }
+	
+set_major = yes
 set_research_slots = 4
 set_stability = 0.95
 set_war_support = 100

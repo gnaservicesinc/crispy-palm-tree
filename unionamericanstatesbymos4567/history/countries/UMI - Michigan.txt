@@ -10,6 +10,8 @@ if = {
 	}
 }
 ﻿capital = 393
+	
+set_major = yes
 set_research_slots = 4
 set_stability = 0.95
 set_war_support = 15
