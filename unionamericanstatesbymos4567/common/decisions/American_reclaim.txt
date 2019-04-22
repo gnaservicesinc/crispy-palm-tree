@@ -89,6 +89,8 @@ remove_effect = {
 		UTX = {
 			if = { limit = { has_dlc = "Man the Guns"}
 				inherit_technology = ROOT }
+
+
 			if = { limit = { has_dlc = "Together for Victory"}
 			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
 			} else = { puppet =ROOT }
@@ -151,7 +153,10 @@ remove_effect = {
 
 		UMI = {
 			
-			exists = yes
+			if = { limit = { has_dlc = "Man the Guns"}
+				inherit_technology = ROOT }
+
+
 			if = { limit = { has_dlc = "Together for Victory"}
 			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state }
 			} else = { puppet =ROOT }
