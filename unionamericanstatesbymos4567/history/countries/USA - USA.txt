@@ -51,12 +51,18 @@ add_to_faction = v
 add_to_array = { array = American_States value= v }
 if = { limit = { has_dlc = "Together for Victory"}
 set_autonomy = {target = v autonomous_state = autonomy_united_states_state }
-}
 else = {
 puppet =v
-} # it is done! Whaahahahaahah!
+} 
 }
-
+set_country_flag
+set_variable = { var_this_country = v.id }
+var:var_this_country = {
+    set_variable = { is_an_american_state = 1 }
+}
+}
+# it is done! Whaahahahaahah!
+	
 
 
 

@@ -34,6 +34,10 @@ SpriteType = {
 	texturefile = "gfx/leaders/UCA/Upton_Beall_SinclairJr.dds"
 }
 SpriteType = {
+	name = "Upton_Beall_SinclairJr.dds"
+	texturefile = "gfx/leaders/UCA/Upton_Beall_SinclairJr.dds"
+}
+SpriteType = {
 	name = "GFX_ru_mil_train_joint"
 	texturefile = "gfx/interface/goals/gfx_ru_mil_train_joint.dds"
 }

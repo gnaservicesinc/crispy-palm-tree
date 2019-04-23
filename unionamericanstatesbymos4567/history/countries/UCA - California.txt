@@ -627,4 +627,37 @@ if = {
 	}
 }
 
+create_navy_leader = {
+	traits = { gunnery_expert superior_tactician spotter }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+create_navy_leader = {
+	traits = { bold aviation_enthusiast superior_tactician spotter }
+	skill = 4
+	attack_skill = 5
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
 
+create_navy_leader = {
+	traits = { gunnery_expert superior_tactician spotter }
+	skill = 8
+	attack_skill = 8
+	defense_skill = 8
+	maneuvering_skill = 8
+	coordination_skill = 8
+}
+
+create_navy_leader = {
+	traits = { navy_career_officer gentlemanly superior_tactician }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 3
+}

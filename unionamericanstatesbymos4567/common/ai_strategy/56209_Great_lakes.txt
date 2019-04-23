@@ -1,16 +1,17 @@
 operation_LakeStrike = {
 
 	enable = {
-		# Special Strategy for proper states in the faction.
-		# So will only apply to US States in the faction
-		# US this approach for each of the state factions
-
+		country_exists = UMI
+	
+		OR = {
 		for_each_loop = {
 		array = Michigan_States
 		 original_tag = v
 			}
-		country_exists = UMI
+		
+		
       		is_in_faction_with = UMI
+		}
 	}
 
 about = {
