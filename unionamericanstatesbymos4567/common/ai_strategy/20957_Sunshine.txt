@@ -10,6 +10,26 @@ about = {
 	 
 	}
     ai_strategy = {
+		type = declare_war
+		id = "UMI"			
+		value = 250
+	}
+    ai_strategy = {
+		type = declare_war
+		id = "UTX"			
+		value = 200
+	}
+    ai_strategy = {
+		type = declare_war
+		id = "UAL"			
+		value = 200
+	}
+	    ai_strategy = {
+		type = declare_war
+		id = "USA"			
+		value = 200
+	}
+    ai_strategy = {
 		type = conquer
 		id = "UMI"			
 		value = 250

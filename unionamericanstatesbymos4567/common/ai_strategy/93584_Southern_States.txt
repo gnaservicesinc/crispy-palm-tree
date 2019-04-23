@@ -18,6 +18,17 @@ about = {
 	 
 	}
 
+
+    ai_strategy = {
+		type = dont_join_wars_with
+		id = "UMI"			
+		value = 550
+	}
+    ai_strategy = {
+		type = dont_join_wars_with
+		id = "USA"			
+		value = 550
+	}
     ai_strategy = {
 		type = protect
 		id = "UAL"			

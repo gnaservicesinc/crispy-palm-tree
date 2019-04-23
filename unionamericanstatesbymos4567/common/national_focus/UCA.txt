@@ -92,10 +92,13 @@ country = {
 
 	continuous_focus_position = { x = 50 y = 1600 }
 	default = no
+
+
+
 	focus = {
 		id = UCA_build_infiltrate_michigan
 		icon = GFX_expand_ru_eco_partnetship
-		x = 15
+		x = 13
 		y = 0
 		dynamic =  yes
 		cost = 20
@@ -175,7 +178,7 @@ ROOT = { NOT = { has_war_with = UMI }}
 focus = {
 		id = UCA_build_infiltrate_alabama
 		icon = GFX_expand_ru_eco_partnetship
-		x = 17
+		x = 15
 		y = 0
 		dynamic =  yes
 		cost = 20
@@ -257,7 +260,7 @@ ROOT = { NOT = { has_war_with = UAL }}
 focus = {
 		id = UCA_build_infiltrate_texas 
 		icon = GFX_expand_ru_eco_partnetship
-		x = 19
+		x = 17
 		y = 0
 		dynamic =  yes
 		cost = 20
@@ -340,7 +343,7 @@ ROOT = { NOT = { has_war_with = UTX }}
 focus = {
 		id = UCA_build_infiltrate_california 
 		icon = GFX_expand_ru_eco_partnetship
-		x = 21
+		x = 19
 		y = 0
 		dynamic =  yes
 		cost = 20
@@ -423,7 +426,7 @@ ROOT = { NOT = { has_war_with = UCA }}
 	focus = {
 		id = UCA_form_the_california_soviet_economic_partnership 
 		icon = GFX_expand_ru_eco_partnetship
-		x = 10
+		x = 7
 		y = 0
 		dynamic =  yes
 		cost = 10
@@ -784,7 +787,7 @@ ROOT = { NOT = { is_in_faction_with = USA }}
 		prerequisite = { focus =UCA_form_the_california_soviet_economic_partnership  }
 
 		x = 0
-		y = 2
+		y = 1
 		dynamic =  yes
 		cost = 10
 
@@ -1220,11 +1223,11 @@ focus = {
 		set_variable = { var_planning_skill = random }
 		set_variable = { var_logistics_skill = random }
 
-		multiply_temp_variable = { var_skill = 10 }
-		multiply_temp_variable = { var_attack_skill = 10 }
-		multiply_temp_variable = { var_defense_skill = 10 }
-		multiply_temp_variable = { var_planning_skill = 10 }
-		multiply_temp_variable = { var_logistics_skill = 10 }
+		multiply_temp_variable = { var_skill = 100 }
+		multiply_temp_variable = { var_attack_skill = 100 }
+		multiply_temp_variable = { var_defense_skill = 100 }
+		multiply_temp_variable = { var_planning_skill = 100 }
+		multiply_temp_variable = { var_logistics_skill = 100 }
 		
 		round_variable = var_skill 
 		round_variable =  var_attack_skill
@@ -1248,11 +1251,11 @@ focus = {
 		set_variable = { var_planning_skill = random }
 		set_variable = { var_logistics_skill = random }
 
-		multiply_temp_variable = { var_skill = 10 }
-		multiply_temp_variable = { var_attack_skill = 10 }
-		multiply_temp_variable = { var_defense_skill = 10 }
-		multiply_temp_variable = { var_planning_skill = 10 }
-		multiply_temp_variable = { var_logistics_skill = 10 }
+		multiply_temp_variable = { var_skill = 100 }
+		multiply_temp_variable = { var_attack_skill = 100 }
+		multiply_temp_variable = { var_defense_skill = 100 }
+		multiply_temp_variable = { var_planning_skill = 100 }
+		multiply_temp_variable = { var_logistics_skill = 100 }
 		
 		round_variable = var_skill 
 		round_variable =  var_attack_skill
@@ -1276,11 +1279,11 @@ focus = {
 		set_variable = { var_planning_skill = random }
 		set_variable = { var_logistics_skill = random }
 
-		multiply_temp_variable = { var_skill = 10 }
-		multiply_temp_variable = { var_attack_skill = 10 }
-		multiply_temp_variable = { var_defense_skill = 10 }
-		multiply_temp_variable = { var_planning_skill = 10 }
-		multiply_temp_variable = { var_logistics_skill = 10 }
+		multiply_temp_variable = { var_skill = 100 }
+		multiply_temp_variable = { var_attack_skill = 100 }
+		multiply_temp_variable = { var_defense_skill = 100 }
+		multiply_temp_variable = { var_planning_skill = 100 }
+		multiply_temp_variable = { var_logistics_skill = 100 }
 		
 		round_variable = var_skill 
 		round_variable =  var_attack_skill
@@ -1304,11 +1307,11 @@ focus = {
 		set_variable = { var_planning_skill = random }
 		set_variable = { var_logistics_skill = random }
 
-		multiply_temp_variable = { var_skill = 10 }
-		multiply_temp_variable = { var_attack_skill = 10 }
-		multiply_temp_variable = { var_defense_skill = 10 }
-		multiply_temp_variable = { var_planning_skill = 10 }
-		multiply_temp_variable = { var_logistics_skill = 10 }
+		multiply_temp_variable = { var_skill = 100 }
+		multiply_temp_variable = { var_attack_skill = 100 }
+		multiply_temp_variable = { var_defense_skill = 100 }
+		multiply_temp_variable = { var_planning_skill = 100 }
+		multiply_temp_variable = { var_logistics_skill = 100 }
 		
 		round_variable = var_skill 
 		round_variable =  var_attack_skill
@@ -1332,11 +1335,11 @@ focus = {
 		set_variable = { var_planning_skill = random }
 		set_variable = { var_logistics_skill = random }
 
-		multiply_temp_variable = { var_skill = 10 }
-		multiply_temp_variable = { var_attack_skill = 10 }
-		multiply_temp_variable = { var_defense_skill = 10 }
-		multiply_temp_variable = { var_planning_skill = 10 }
-		multiply_temp_variable = { var_logistics_skill = 10 }
+		multiply_temp_variable = { var_skill = 100 }
+		multiply_temp_variable = { var_attack_skill = 100 }
+		multiply_temp_variable = { var_defense_skill = 100 }
+		multiply_temp_variable = { var_planning_skill = 100 }
+		multiply_temp_variable = { var_logistics_skill = 100 }
 		
 		round_variable = var_skill 
 		round_variable =  var_attack_skill
@@ -1360,11 +1363,11 @@ focus = {
 		set_variable = { var_planning_skill = random }
 		set_variable = { var_logistics_skill = random }
 
-		multiply_temp_variable = { var_skill = 10 }
-		multiply_temp_variable = { var_attack_skill = 10 }
-		multiply_temp_variable = { var_defense_skill = 10 }
-		multiply_temp_variable = { var_planning_skill = 10 }
-		multiply_temp_variable = { var_logistics_skill = 10 }
+		multiply_temp_variable = { var_skill = 100 }
+		multiply_temp_variable = { var_attack_skill = 100 }
+		multiply_temp_variable = { var_defense_skill = 100 }
+		multiply_temp_variable = { var_planning_skill = 100 }
+		multiply_temp_variable = { var_logistics_skill = 100 }
 		
 		round_variable = var_skill 
 		round_variable =  var_attack_skill
@@ -1388,11 +1391,11 @@ focus = {
 		set_variable = { var_planning_skill = random }
 		set_variable = { var_logistics_skill = random }
 
-		multiply_temp_variable = { var_skill = 10 }
-		multiply_temp_variable = { var_attack_skill = 10 }
-		multiply_temp_variable = { var_defense_skill = 10 }
-		multiply_temp_variable = { var_planning_skill = 10 }
-		multiply_temp_variable = { var_logistics_skill = 10 }
+		multiply_temp_variable = { var_skill = 100 }
+		multiply_temp_variable = { var_attack_skill = 100 }
+		multiply_temp_variable = { var_defense_skill = 100 }
+		multiply_temp_variable = { var_planning_skill = 100 }
+		multiply_temp_variable = { var_logistics_skill = 100 }
 		
 		round_variable = var_skill 
 		round_variable =  var_attack_skill
@@ -1443,7 +1446,7 @@ create_corps_commander = {
 	traits = {  trait_engineer trait_cautious brilliant_strategist harsh_leader }
 	skill = 6
 
-	attack_skill = 3
+	attack_skill = 7
 	defense_skill = 5
 	planning_skill = 4
 	logistics_skill = 6
@@ -1453,8 +1456,8 @@ create_field_marshal = {
 	traits = { logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected }
 	skill = 5
 	id = 602
-	attack_skill = 3
-	defense_skill = 3
+	attack_skill = 5
+	defense_skill = 4
 	planning_skill = 6
 	logistics_skill = 5
 }
@@ -1487,7 +1490,7 @@ focus = {
 
 		create_field_marshal = {
 				name = "Chairperson Upton Beall Sinclair Jr."
-				picture = "gfx/leaders/UCA/Upton_Beall_SinclairJr.dds"
+				picture = GFX_UPTON_BEALL
 				skill = 8
 				attack_skill = 8
 				defense_skill = 8
@@ -1500,7 +1503,7 @@ focus = {
 		
 create_field_marshal = {
 				name="[?[Root.Owner.GetName]]"
-				picture = "gfx/leaders/USA/Portrait_USA_Generic_land_2.dds"
+				picture = GFX_amer_sw_generic_lead
 				skill = 8
 				attack_skill = 8
 				defense_skill = 8
@@ -1515,6 +1518,478 @@ create_field_marshal = {
 
 
 
+focus = {
+		id = UCA_form_the_german_partnership 
+		icon = GFX_expand_ru_eco_partnetship
+		x = 9
+		y = 0
+		dynamic =  yes
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+available = {
+	ROOT = { has_government = fascism }
+	GER = { has_government = fascism }
+	ROOT = { NOT = { is_in_faction_with = USA }}
+    }
+      allow_branch = { 
+		for_each_loop = {
+		array = Southern_States
+		ROOT = {  TAG  = v }}
+		for_each_loop = {
+		array = Texan_States
+		ROOT = { TAG  = v }}
+		}
+ 
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = { add_ideas = { global_foregin_intrest_partnership  } }
+	}
+
+
+	focus = {
+		id = UCA_german_security_partnership 
+		icon = GFX_german_security_aid
+		relative_position_id = UCA_form_the_german_partnership 
+		prerequisite = { focus = UCA_form_the_german_partnership   }
+		x = 0
+		y = -2
+		dynamic =  yes
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+available = {
+      ROOT = { has_government = fascism }
+	GER = { has_government = fascism }
+	ROOT = { NOT = { is_in_faction_with = USA }}
+    }
+    
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = { add_ideas = { german_security_aid1  }
+
+	 add_political_power = 250
+				add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+			army_experience = 15
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+				add_ideas = special_forces
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.0
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+				technology = marines
+				technology = marines2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+			}
+}
+}
+	focus = {
+		id = UCA_german_security_partnership2 
+		icon = GFX_german_security_aid2
+		relative_position_id = UCA_form_the_german_partnership 
+		prerequisite = { focus = UCA_german_security_partnership  }
+		x = 0
+		y = -4
+		dynamic =  yes
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+available = {
+      ROOT = { has_government = fascism }
+ROOT = { NOT = { is_in_faction_with = USA }}
+	GER = { has_government = fascism }
+    }
+    
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = { add_ideas = { german_security_aid2  } add_political_power = 250
+
+		completion_reward = {
+		air_experience = 35
+			add_tech_bonus = {
+				name = motorized_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = motorized_equipment
+			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}		
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+
+}
+
+}
+	}
+
+
+	focus = {
+		id = UCA_german_security_partnership3 
+		icon = GFX_german_security_aid3
+		relative_position_id = UCA_form_the_german_partnership 
+		prerequisite = { focus = UCA_german_security_partnership2  }
+		x = 0
+		y = -6
+		dynamic =  yes
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+available = {
+      ROOT = { has_government = fascism }
+ROOT = { NOT = { is_in_faction_with = USA }}
+	GER = { has_government = fascism }
+    }
+    
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = { add_ideas = { german_security_aid3  } add_political_power = 250
+		add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 3.0
+				technology = motorised_infantry
+			}
+
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+
+
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+			add_tech_bonus = {
+				name = jet_rocket_bonus
+				ahead_reduction = 2
+				uses = 2
+				category = rocketry
+				category = jet_technology
+			}
+if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = { tag = ROOT }
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+		}			
+}
+
+
+	focus = {
+		id = UCA_german_security_partnership4 
+		icon = GFX_german_security_aid4
+		relative_position_id = UCA_form_the_german_partnership 
+		prerequisite = { focus = UCA_german_security_partnership3  }
+		x = 0
+		y = -8
+		dynamic =  yes
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+available = {
+      ROOT = { has_government = fascism }
+ROOT = { NOT = { is_in_faction_with = USA }}
+	GER = { has_government = fascism }
+    }
+    
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = { add_ideas = { german_security_aid3  } add_political_power = 250
+
+	
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+		
+
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = dd_tech
+			}
+		
+
+}
+	}
+
+
+	focus = {
+		id = UCA_joint_german_military_training 
+		icon = GFX_ru_mil_train_joint
+		relative_position_id = UCA_form_the_german_partnership  
+		prerequisite = { focus =UCA_form_the_german_partnership   }
+
+		x = 0
+		y = 1
+		dynamic =  yes
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+available = {
+	GER = { has_government = fascism }
+      ROOT = { has_government = fascism }
+ROOT = { NOT = { is_in_faction_with = USA }}
+    }
+    
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = { add_ideas = {german_military_training
+paramilitarism_focus
+foreign_expeditions_focus} 
+
+add_political_power = 250
+
+
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 1.0
+				uses = 4
+				category = electronics
+				category = nuclear
+				category = rocketry
+			}
+		
+
+
+
+}
+	}
+	focus = {
+		id = UCA_joint_german_military_training2 
+		icon = GFX_ru_mil_train_joint2
+		relative_position_id = UCA_form_the_german_partnership  
+		prerequisite = { focus =UCA_joint_german_military_training   }
+		x = 0
+		y = 4
+		dynamic =  yes
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+available = {
+	GER = { has_government = fascism }
+      ROOT = { has_government = fascism }
+ROOT = { NOT = { is_in_faction_with = USA }}
+    }
+      allow_branch = { 
+		for_each_loop = {
+		array = Southern_States
+		ROOT = {  TAG  = v }}
+		for_each_loop = {
+		array = Texan_States
+		ROOT = { TAG  = v }}
+		}
+			
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = { add_ideas = { german_military_training2}
+
+				add_tech_bonus = {
+					name = electronics_bonus
+					bonus = 1.0
+					uses = 1
+					category = electronics
+				}
+				add_tech_bonus = {
+					name = industrial_bonus
+					bonus = 1.0
+					uses = 1
+					category = industry
+				}	
+				add_tech_bonus = {
+					name = infantry_artillery_bonus #@#
+					bonus = 1.0
+					uses = 1
+					category = infantry_weapons
+					category = artillery
+				}
+
+		hidden_effect = {
+				set_rule = { can_use_kamikaze_pilots = yes }
+			}
+			custom_effect_tooltip = kamikaze_focus_tooltip
+
+
+ }
+	}
 
 
 

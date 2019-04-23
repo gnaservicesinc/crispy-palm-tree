@@ -1,0 +1,209 @@
+sov_invested_in_american = {
+ enable = {
+	
+	original_tag = SOV
+	NOT = { is_in_faction_with = USA }
+	UCA =  { 
+		has_government = communism
+		NOT = { is_in_faction_with = USA }
+		 } 
+		
+	}
+
+	abort =  {
+		UCA =  { NOT = { has_government = communism } }
+		 is_in_faction_with = USA 
+
+	}
+	    ai_strategy = {
+		type = befriend
+		id = "UCA"			
+		value = 2000
+	}
+	    ai_strategy = {
+		type = protect
+		id = "UCA"			
+		value = 2000
+	}
+	    ai_strategy = {
+		type = support
+		id = "UCA"			
+		value = 2000
+	}
+	    ai_strategy = {
+		type = garrison
+		id = "UCA"			
+		value = 2000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = UCA
+		value = 275
+	}
+ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = 500
+	}
+}
+
+sov_invested_in_american = {
+ enable = {
+	
+	original_tag = SOV
+	country_exists = USA
+}
+
+abort =  {
+	NOT = { country_exists = USA }
+}
+	ai_strategy = {
+		type = contain
+		id = "USA"			
+		value = 500
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "USA"			
+		value = 500
+	}
+ai_strategy = {
+		type = conquer
+		id = "USA"			
+		value = 650
+	}
+
+ai_strategy = {
+		type = declare_war
+		id = "USA"			
+		value = 700
+	}
+
+ai_strategy = {
+		type = invade
+		id = "USA"			
+		value = 700
+	}
+
+}
+
+sov_invested_in_american_mi = {
+ enable = {
+	
+	original_tag = SOV
+	country_exists = UMI
+}
+
+abort =  {
+	NOT = { country_exists = UMI }
+}
+	ai_strategy = {
+		type = contain
+		id = "UMI"			
+		value = 500
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "UMI"			
+		value = 500
+	}
+ai_strategy = {
+		type = conquer
+		id = "UMI"			
+		value = 650
+	}
+
+ai_strategy = {
+		type = declare_war
+		id = "UMI"			
+		value = 700
+	}
+
+ai_strategy = {
+		type = invade
+		id = "UMI"			
+		value = 700
+	}
+
+}
+
+
+sov_invested_in_american_al = {
+ enable = {
+	
+	original_tag = SOV
+	country_exists = UAL
+}
+
+abort =  {
+	NOT = { country_exists = UAL }
+}
+	ai_strategy = {
+		type = contain
+		id = "UAL"			
+		value = 500
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "UAL"			
+		value = 500
+	}
+ai_strategy = {
+		type = conquer
+		id = "UAL"			
+		value = 650
+	}
+
+ai_strategy = {
+		type = declare_war
+		id = "UAL"			
+		value = 700
+	}
+
+ai_strategy = {
+		type = invade
+		id = "UAL"			
+		value = 700
+	}
+
+}
+
+sov_invested_in_american_tx = {
+ enable = {
+	
+	original_tag = SOV
+	country_exists = UTX
+}
+
+abort =  {
+	NOT = { country_exists = UTX }
+}
+	ai_strategy = {
+		type = contain
+		id = "UTX"			
+		value = 500
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "UTX"			
+		value = 500
+	}
+ai_strategy = {
+		type = conquer
+		id = "UTX"			
+		value = 650
+	}
+
+ai_strategy = {
+		type = declare_war
+		id = "UTX"			
+		value = 700
+	}
+
+ai_strategy = {
+		type = invade
+		id = "UTX"			
+		value = 700
+	}
+
+}

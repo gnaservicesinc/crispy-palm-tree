@@ -1,7 +1,136 @@
 ideas = {
 
 	 country = {
+	german_military_training = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
 
+		modifier = {
+			offence = 0.50
+			defence = 0.35
+			land_reinforce_rate = 0.52
+			training_time_factor = -0.60
+			training_time_army_factor = -0.40
+			max_dig_in = 1
+			out_of_supply_factor = -0.5
+			supply_consumption_factor = -0.26
+			experience_loss_factor = -0.15
+			MONTHLY_POPULATION = 0.35
+			conscription = 0.65
+
+	
+			}
+	german_military_training2 = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			offence = 0.50
+			defence = 0.35
+			land_reinforce_rate = 0.52
+			training_time_factor = -0.50
+			training_time_army_factor = -0.40
+			max_dig_in = 1
+			out_of_supply_factor = -0.5
+			supply_consumption_factor = -0.26
+			experience_loss_factor = -0.15
+			MONTHLY_POPULATION = 0.35
+			conscription = 0.65
+
+	
+			}
+}
+
+	german_security_aid1 = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			decryption_factor = 0.25
+			encryption_factor = 0.25
+			enemy_partisan_effect = -0.25
+			political_power_gain = 0.25
+			MONTHLY_POPULATION = 0.15
+			conscription = 0.15
+			}
+	
+		}
+	german_security_aid2 = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			decryption_factor = 0.25
+			encryption_factor = 0.25
+			enemy_partisan_effect = -0.25
+			political_power_gain = 0.25
+			MONTHLY_POPULATION = 0.15
+			conscription = 0.15
+			}
+	
+		}
+	german_security_aid3 = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			decryption_factor = 0.25
+			encryption_factor = 0.25
+			enemy_partisan_effect = -0.25
+			political_power_gain = 0.25
+			MONTHLY_POPULATION = 0.15
+			conscription = 0.15
+			}
+	
+		}
+	german_security_aid4 = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			decryption_factor = 0.25
+			encryption_factor = 0.25
+			enemy_partisan_effect = -0.25
+			political_power_gain = 0.25
+			MONTHLY_POPULATION = 0.15
+			conscription = 0.15
+			}
+	
+		}
+	global_foregin_intrest_partnership = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			production_speed_arms_factory_factor = 0.20
+			production_factory_efficiency_gain_factor = 0.20
+			communism_drift = .30 
+			communism_acceptance = 90
+			drift_defence_factor = 0.25
+			weekly_manpower = 1000
+			MONTHLY_POPULATION = 0.75
+			conscription = 0.25
+			opinion_gain_monthly_same_ideology_factor = 0.5
+			ai_badass_factor = 0.15
+			ai_focus_defense_factor = 0.5
+			
+			}
+	
+		}
 	california_soviet_partnership = {
 		picture = generic_war_preparation
 		allowed = {always = no}
