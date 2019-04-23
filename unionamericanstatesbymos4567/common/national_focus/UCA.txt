@@ -119,7 +119,7 @@ ROOT = { NOT = { has_war_with = UMI }}
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-
+		
 			 add_political_power = 250
 			hidden_effect = { USA= { create_wargoal = { target =     ROOT	 type = annex_everything } }} 
 			 }
@@ -131,7 +131,7 @@ ROOT = { NOT = { has_war_with = UMI }}
 		prerequisite = { focus = UCA_build_infiltrate_michigan  }
 		x = 0
 		y = -2
-	
+	dynamic =  yes
 		cost = 10
 
 		ai_will_do = {
@@ -198,7 +198,7 @@ ROOT = { NOT = { has_war_with = UAL }}
 		prerequisite = { focus = UCA_build_infiltrate_alabama  }
 		x = 0
 		y = -2
-	
+	dynamic =  yes
 		cost = 10
 
 		ai_will_do = {
@@ -267,7 +267,7 @@ ROOT = { NOT = { has_war_with = UTX }}
 		prerequisite = { focus = UCA_build_infiltrate_texas   }
 		x = 0
 		y = -2
-	
+	dynamic =  yes
 		cost = 10
 
 		ai_will_do = {
@@ -337,7 +337,7 @@ ROOT = { NOT = { has_war_with = UCA }}
 		prerequisite = { focus = UCA_build_infiltrate_california   }
 		x = 0
 		y = -2
-	
+	dynamic =  yes
 		cost = 10
 
 		ai_will_do = {
@@ -852,7 +852,7 @@ available = {
 
 
 focus = {
-		id = UCA_American_Wargoals
+		id = UCA_american_wargoals
 		icon = GFX_goal_generic_major_war
 		relative_position_id = UCA_form_the_california_soviet_economic_partnership 
 		prerequisite = { focus =UCA_joint_russian_military_training   }
@@ -906,7 +906,7 @@ available = {
    	}
 }
 focus = {
-		id = UCA_American_globalwar
+		id = UCA_american_globalwar
 		icon = GFX_goal_generic_major_war
 		relative_position_id = UCA_form_the_california_soviet_economic_partnership 
 		prerequisite = { focus =UCA_joint_russian_military_training   }
@@ -1064,7 +1064,7 @@ focus = {
 		relative_position_id = UCA_focus_on_infrastructure_two 
 		x = 0
 		y = -1
-
+dynamic =  yes
 		cost = 10
 ai_will_do = {
 			factor = 10
