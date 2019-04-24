@@ -11,7 +11,7 @@ if = {
 	
 set_major = yes
 create_country_leader = {
-	name = "Govoner Jim Folsom"
+	name = "Governor Jim Folsom"
 	desc = "POLITICS_JIM_FOLSOM_DESC"
 	picture = "gfx/leaders/UAL/Jim_Folsom.dds"
 	expire = "1975.1.1"

@@ -6,10 +6,36 @@ ideas = {
 hidden_ideas = {
       _disruption_problem = {
            modifier = {
+
                stability_weekly = -0.25
            }
       }
  }
+
+infiltration_by_spies {
+	picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+		modifier = {
+		[?[ROOT.Owner.GetRulingIdeology]]_acceptance=.10
+		ROOT.var_infiltrator_destabilization
+		set_variable = {
+    			var = ROOT.var_dest_level
+    			value = ROOT.var_infiltrator_destabilization
+		}
+		multiply_variable = {
+			var = ROOT.var_dest_level
+			value = -.01
+			}
+		clamp_variable = {
+    			var = ROOT.var_dest_level
+   			 min = -1
+   			 max = 0
+			}
+		stability_weekly = ROOT.var_dest_level
+		}
+}
 	english_military_training = {
 		picture = generic_war_preparation
 		allowed = {always = no}
