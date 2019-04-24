@@ -1,0 +1,209 @@
+ger_protect_american_allies = {
+reversed = yes
+	 enable = {
+		ROOT = {has_idea = commonwealth_special_partnership}
+		ROOT = { NOT = { is_in_faction_with = USA  }}
+		ROOT = { NOT = { has_war_with = ENG  }}
+		}
+abort =  {
+ROOT = { NOT = { has_idea = commonwealth_special_partnership}}
+ROOT = { is_in_faction_with = USA  }
+ROOT = { has_war_with = ENG }
+
+}
+	    ai_strategy = {
+		type = befriend
+		id = "ENG"			
+		value = 500
+	}
+	    ai_strategy = {
+		type = protect
+		id = "ENG"			
+		value = 500
+	}
+	    ai_strategy = {
+		type = support
+		id = "ENG"			
+		value = 500
+	}
+	    ai_strategy = {
+		type = garrison
+		id = "ENG"			
+		value = 500
+	}
+	    ai_strategy = {
+		type = alliance
+		id = "ENG"			
+		value = 500
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ENG"
+		value = 500
+	}		
+}
+ger_harass_american_commies = {
+
+reversed = yes
+	 enable = { 
+		ROOT = {has_idea = california_soviet_partnership}
+		}
+abort =  {
+ROOT = { NOT ={has_idea = california_soviet_partnership}}
+}
+
+
+ ai_strategy = {
+		type = antagonize
+		id = "GER"			
+		value = 250
+	}
+    ai_strategy = {
+		type = contain
+		id = "GER"			
+		value = 250
+	}
+	ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = 250
+	}
+}
+
+eng_harass_american_commies = {
+
+reversed = yes
+	 enable = { 
+		ROOT = {has_idea = california_soviet_partnership}
+		}
+abort =  {
+ROOT = { NOT ={has_idea = california_soviet_partnership}}
+}
+
+
+ ai_strategy = {
+		type = antagonize
+		id = "ENG"			
+		value = 250
+	}
+    ai_strategy = {
+		type = contain
+		id = "ENG"			
+		value = 250
+	}
+	ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = ENG
+	}
+}
+
+eng_dealwtih_american_commies = {
+reversed = yes
+	 enable = { 
+		ROOT = {has_idea = california_soviet_partnership}
+		ENG = { has_war_with = SOV }
+		}
+abort =  {
+ROOT = { NOT ={has_idea = california_soviet_partnership}}
+}
+
+   
+ai_strategy = {
+		type = declare_war
+		id = "ENG"			
+		value = 300
+	}
+	    ai_strategy = {
+		type = conquer
+		id = "ENG"			
+		value = 300
+	}
+    ai_strategy = {
+		type = invade
+		id = "ENG"			
+		value = 300
+	}
+
+
+	ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = 300
+	}
+}
+
+eng_harass_american_enemies = {
+reversed = yes
+	 enable = { 
+		ROOT = {has_idea = global_foregin_intrest_partnership}
+		}
+abort =  {
+ROOT = { NOT ={has_idea = global_foregin_intrest_partnership}}
+}
+
+
+ ai_strategy = {
+		type = antagonize
+		id = "ENG"			
+		value = 200
+	}
+    ai_strategy = {
+		type = contain
+		id = "ENG"			
+		value = 200
+	}
+	ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = 200
+	}
+}
+
+eng_dealwtih_american_enemies = {
+reversed = yes
+	 enable = { 
+		ROOT = {has_idea = global_foregin_intrest_partnership}
+		ENG = { has_war_with = GER }
+		}
+abort =  {
+ROOT = { NOT ={has_idea = global_foregin_intrest_partnership}}
+}
+
+   
+ai_strategy = {
+		type = declare_war
+		id = "ENG"			
+		value = 200
+	}
+	    ai_strategy = {
+		type = conquer
+		id = "ENG"			
+		value = 200
+	}
+    ai_strategy = {
+		type = invade
+		id = "ENG"			
+		value = 200
+	}
+
+
+	ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = 200
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

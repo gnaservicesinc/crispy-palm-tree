@@ -1,0 +1,424 @@
+
+ideas = {
+
+	 country = {
+
+hidden_ideas = {
+      _disruption_problem = {
+           modifier = {
+               stability_weekly = -0.25
+           }
+      }
+ }
+	english_military_training = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			offence = 0.70
+			defence = 0.65
+			land_reinforce_rate = 0.62
+			training_time_factor = -0.66
+			training_time_army_factor = -0.50
+			max_dig_in = 1
+			out_of_supply_factor = -0.5
+			supply_consumption_factor = -0.46
+			experience_loss_factor = -0.35
+			MONTHLY_POPULATION = 0.45
+			conscription = 0.75
+
+	
+			}
+}
+	english_military_training2 = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			offence = 0.80
+			defence = 0.75
+			land_reinforce_rate = 0.74
+			training_time_factor = -0.70
+			training_time_army_factor = -0.60
+			max_dig_in = 1
+			out_of_supply_factor = -0.5
+			supply_consumption_factor = -0.56
+			experience_loss_factor = -0.65
+			MONTHLY_POPULATION = 0.65
+			conscription = 0.75
+
+	
+			}
+}
+
+	english_security_aid1 = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			decryption_factor = 0.25
+			encryption_factor = 0.25
+			enemy_partisan_effect = -0.25
+			political_power_gain = 0.25
+			MONTHLY_POPULATION = 0.15
+			conscription = 0.15
+			}
+	
+		}
+	english_security_aid2 = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			decryption_factor = 0.25
+			encryption_factor = 0.25
+			enemy_partisan_effect = -0.25
+			political_power_gain = 0.25
+			MONTHLY_POPULATION = 0.15
+			conscription = 0.15
+			}
+	
+		}
+	english_security_aid3 = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			decryption_factor = 0.25
+			encryption_factor = 0.25
+			enemy_partisan_effect = -0.25
+			political_power_gain = 0.25
+			MONTHLY_POPULATION = 0.25
+			conscription = 0.15
+			}
+	
+		}
+	english_security_aid4 = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			decryption_factor = 0.25
+			encryption_factor = 0.25
+			enemy_partisan_effect = -0.25
+			political_power_gain = 0.25
+			MONTHLY_POPULATION = 0.25
+			conscription = 0.15
+			}
+	
+		}
+	commonwealth_special_partnership = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			production_speed_arms_factory_factor = 0.20
+			production_factory_efficiency_gain_factor = 0.20
+			democratic_drift = .80 
+			democratic_acceptance = 90
+			drift_defence_factor = 0.25
+			weekly_manpower = 1000
+			MONTHLY_POPULATION = 0.75
+			conscription = 0.25
+			opinion_gain_monthly_same_ideology_factor = 0.7
+			ai_badass_factor = 0.15
+			ai_focus_defense_factor = 0.7
+			
+			}
+	
+		}
+	german_military_training = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			offence = 0.50
+			defence = 0.35
+			land_reinforce_rate = 0.52
+			training_time_factor = -0.60
+			training_time_army_factor = -0.40
+			max_dig_in = 1
+			out_of_supply_factor = -0.5
+			supply_consumption_factor = -0.26
+			experience_loss_factor = -0.15
+			MONTHLY_POPULATION = 0.35
+			conscription = 0.65
+
+	
+			}
+}
+	german_military_training2 = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			offence = 0.50
+			defence = 0.35
+			land_reinforce_rate = 0.52
+			training_time_factor = -0.50
+			training_time_army_factor = -0.40
+			max_dig_in = 1
+			out_of_supply_factor = -0.5
+			supply_consumption_factor = -0.26
+			experience_loss_factor = -0.15
+			MONTHLY_POPULATION = 0.35
+			conscription = 0.65
+
+	
+			}
+}
+
+	german_security_aid1 = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			decryption_factor = 0.25
+			encryption_factor = 0.25
+			enemy_partisan_effect = -0.25
+			political_power_gain = 0.25
+			MONTHLY_POPULATION = 0.15
+			conscription = 0.15
+			}
+	
+		}
+	german_security_aid2 = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			decryption_factor = 0.25
+			encryption_factor = 0.25
+			enemy_partisan_effect = -0.25
+			political_power_gain = 0.25
+			MONTHLY_POPULATION = 0.15
+			conscription = 0.15
+			}
+	
+		}
+	german_security_aid3 = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			decryption_factor = 0.25
+			encryption_factor = 0.25
+			enemy_partisan_effect = -0.25
+			political_power_gain = 0.25
+			MONTHLY_POPULATION = 0.15
+			conscription = 0.15
+			}
+	
+		}
+	german_security_aid4 = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			decryption_factor = 0.25
+			encryption_factor = 0.25
+			enemy_partisan_effect = -0.25
+			political_power_gain = 0.25
+			MONTHLY_POPULATION = 0.15
+			conscription = 0.15
+			}
+	
+		}
+	global_foregin_intrest_partnership = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			production_speed_arms_factory_factor = 0.20
+			production_factory_efficiency_gain_factor = 0.20
+			communism_drift = .30 
+			communism_acceptance = 90
+			drift_defence_factor = 0.25
+			weekly_manpower = 1000
+			MONTHLY_POPULATION = 0.75
+			conscription = 0.25
+			opinion_gain_monthly_same_ideology_factor = 0.5
+			ai_badass_factor = 0.15
+			ai_focus_defense_factor = 0.5
+			
+			}
+	
+		}
+	california_soviet_partnership = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			production_speed_arms_factory_factor = 0.20
+			production_factory_efficiency_gain_factor = 0.20
+			communism_drift = .30 
+			communism_acceptance = 90
+			drift_defence_factor = 0.25
+			weekly_manpower = 1000
+			MONTHLY_POPULATION = 0.75
+			conscription = 0.25
+			opinion_gain_monthly_same_ideology_factor = 0.5
+			ai_badass_factor = 0.15
+			ai_focus_defense_factor = 0.5
+			
+			}
+	
+		}
+	california_recuitment_drive  = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+				non_core_manpower = 0.08
+				army_org_factor = 0.15
+				planning_speed = 0.23
+				conscription = 0.2
+				training_time_factor = -0.15
+				conscription_factor = 0.15
+				ai_focus_aggressive_factor = 0.5
+			}
+	
+		}
+	russian_security_aid1 = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			decryption_factor = 0.25
+			encryption_factor = 0.25
+			enemy_partisan_effect = -0.25
+			political_power_gain = 0.25
+			MONTHLY_POPULATION = 0.05
+			conscription = 0.05
+			}
+	
+		}
+	russian_security_aid2 = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			decryption_factor = 0.25
+			encryption_factor = 0.25
+			enemy_partisan_effect = -0.25
+			political_power_gain = 0.25
+			MONTHLY_POPULATION = 0.05
+			conscription = 0.05
+			}
+	
+		}
+	russian_security_aid3 = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			decryption_factor = 0.25
+			encryption_factor = 0.25
+			enemy_partisan_effect = -0.25
+			political_power_gain = 0.25
+			MONTHLY_POPULATION = 0.05
+			conscription = 0.05
+			}
+	
+		}
+	russian_security_aid4 = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			decryption_factor = 0.25
+			encryption_factor = 0.25
+			enemy_partisan_effect = -0.25
+			political_power_gain = 0.25
+			MONTHLY_POPULATION = 0.05
+			conscription = 0.05
+			}
+	
+		}
+
+	russian_military_training = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			offence = 0.25
+			defence = 0.25
+			land_reinforce_rate = 0.42
+			training_time_factor = -0.30
+			training_time_army_factor = -0.30
+			max_dig_in = 1
+			out_of_supply_factor = -0.5
+			supply_consumption_factor = -0.26
+			experience_loss_factor = -0.15
+			MONTHLY_POPULATION = 0.10
+			conscription = 0.35
+
+	
+			}
+			}
+	russian_military_training2 = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			offence = 0.25
+			defence = 0.25
+			land_reinforce_rate = 0.52
+			training_time_factor = -0.45
+			training_time_army_factor = -0.40
+			out_of_supply_factor = -0.5
+			supply_consumption_factor = -0.36
+			experience_loss_factor = -0.35
+			conscription = 0.55
+			MONTHLY_POPULATION = 0.15
+
+	
+			}
+	
+		}
+	}
+}

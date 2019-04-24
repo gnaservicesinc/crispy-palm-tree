@@ -79,22 +79,22 @@ about = {
     ai_strategy = {
 		type = contain
 		id = "ENG"			
-		value = 2000
+		value = 200
 	}
     ai_strategy = {
 		type = contain
 		id = "CHI"			
-		value = 500
+		value = 200
 	}
     ai_strategy = {
 		type = contain
 		id = "POL"			
-		value = 500
+		value = 200
 	}
    ai_strategy = {
 		type = antagonize
 		id = "ENG"			
-		value = 2000
+		value = 200
 	}
     ai_strategy = {
 		type = antagonize

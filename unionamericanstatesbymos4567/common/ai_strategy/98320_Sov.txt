@@ -1,4 +1,51 @@
+sov_protect_american_allies = {
+reversed = yes
+	 enable = {
+		ROOT = {has_idea = california_soviet_partnership}
+		ROOT = { NOT = { is_in_faction_with = USA  }}
+		ROOT = { NOT = { has_war_with = SOV  }}
+		}
+abort =  {
+ROOT = { NOT = { has_idea = california_soviet_partnership}}
+ROOT = { is_in_faction_with = USA  }
+ROOT = { has_war_with = SOV }
+
+}
+	    ai_strategy = {
+		type = befriend
+		id = "SOV"			
+		value = 500
+	}
+	    ai_strategy = {
+		type = protect
+		id = "SOV"			
+		value = 500
+	}
+	    ai_strategy = {
+		type = support
+		id = "SOV"			
+		value = 500
+	}
+	    ai_strategy = {
+		type = garrison
+		id = "SOV"			
+		value = 500
+	}
+	    ai_strategy = {
+		type = alliance
+		id = "SOV"			
+		value = 500
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SOV
+		value = 500
+	}		
+}
+
+	
 sov_invested_in_american = {
+
  enable = {
 	
 	original_tag = SOV
