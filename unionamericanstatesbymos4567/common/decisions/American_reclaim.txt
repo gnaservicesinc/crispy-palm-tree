@@ -159,9 +159,9 @@ remove_effect = {
 
 			if = { limit = { has_dlc = "Together for Victory"}
 			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state }
-			} else = { puppet =ROOT }
+			else = { puppet =ROOT }
 			
-		}
+		}}
 		ROOT = { add_to_tech_sharing_group = umi_investigators }
 		
           }
