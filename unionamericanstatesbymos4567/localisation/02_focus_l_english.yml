@@ -138,8 +138,7 @@
  UCA_american_war_prep:0 "Prepare to liberate America" 
  UCA_american_war_prep_desc:0 "If we want to not just annex the rest of the [USA.Owner.GetName] but be seen as ligament, internationally, we need to start the legal groundwork now."
  UCA_american_wargoals:0 "Justify the Revolution"
- UCA_american_wargoals_desc:0 "The history of all hitherto existing society
- is the history of class struggles..."
+ UCA_american_wargoals_desc:0 "The history of all hitherto existing society is the history of class struggles..."
  UCA_american_globalwar:0 "The Global Revolution!"
  UCA_american_globalwar_desc:0 "We shall lead the Global Revolution!"
 

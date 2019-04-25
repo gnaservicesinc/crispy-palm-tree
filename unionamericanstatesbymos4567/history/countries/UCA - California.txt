@@ -55,21 +55,42 @@ add_ideas = {
 	free_trade
 }
 
-add_to_array = { array = cali_States value= UWA }
-add_to_array = { array = cali_States value= UOR }
-add_to_array = { array = cali_States value= UNV }
-add_to_array = { array = cali_States value= UMO }
-add_to_array = { array = cali_States value= UWY }
-add_to_array = { array = cali_States value= UID }
-add_to_array = { array = cali_States value= UAZ }
-add_to_array = { array = cali_States value= UUT }
+set_variable = { var_American_States = 1 }
+set_variable = { var_Cali_States = 1 }
+
+UWA = { set_variable = { var_American_States = 1 }  }
+UOR = { set_variable = { var_American_States = 1 }  }
+UNV = { set_variable = { var_American_States = 1 }  }
+UMO = { set_variable = { var_American_States = 1 }  }
+UWY = { set_variable = { var_American_States = 1 }  }
+UID = { set_variable = { var_American_States = 1 }  }
+UAZ = { set_variable = { var_American_States = 1 }  }
+UUT = { set_variable = { var_American_States = 1 }  }
+
+UWA = { set_variable = { var_Cali_States = 1 }  }
+UOR = { set_variable = { var_Cali_States = 1 }  }
+UNV = { set_variable = { var_Cali_States = 1 }  }
+UMO = { set_variable = { var_Cali_States = 1 }  }
+UWY = { set_variable = { var_Cali_States = 1 }  }
+UID = { set_variable = { var_Cali_States = 1 }  }
+UAZ = { set_variable = { var_Cali_States = 1 }  }
+UUT = { set_variable = { var_Cali_States = 1 }  }
+
+add_to_array = { array = USA.cali_States value= UWA }
+add_to_array = { array = USA.cali_States value= UOR }
+add_to_array = { array = USA.cali_States value= UNV }
+add_to_array = { array = USA.cali_States value= UMO }
+add_to_array = { array = USA.cali_States value= UWY }
+add_to_array = { array = USA.cali_States value= UID }
+add_to_array = { array = USA.cali_States value= UAZ }
+add_to_array = { array = USA.cali_States value= UUT }
 create_faction = "The Sunshine Block"
 
 for_each_loop = {
-array = cali_States
+array = USA.cali_States
 give_guarantee = v
 add_to_faction = v
-add_to_array = { array = American_States value= v }
+add_to_array = { array = USA.American_States value= v }
 if = { limit = { has_dlc = "Together for Victory"}
 set_autonomy = {target = v autonomous_state = autonomy_united_states_state }
 }
@@ -77,7 +98,7 @@ else = {
 puppet =v
 }
 }
-add_to_array = { array = American_States value= UCA }
+add_to_array = { array = USA.American_States value= UCA }
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -328,7 +349,9 @@ if = {
 			rear_1_custom_slot = empty
 		}
 		obsolete = yes
-	}
+	}}
+if = {
+	limit = { has_dlc = "Man the Guns" }
 	create_equipment_variant = {
 		name = "Barracuda Class"			# represents Barracuda, Dolphin, Cachalot classes
 		type = ship_hull_submarine_2
@@ -340,7 +363,9 @@ if = {
 			rear_1_custom_slot = empty
 		}
 		obsolete = yes
-	}
+	}}
+if = {
+	limit = { has_dlc = "Man the Guns" }
 	create_equipment_variant = {
 		name = "Porpoise Class"				# represents Porpoise, Shark, and Perch classes
 		type = ship_hull_submarine_2
@@ -351,7 +376,9 @@ if = {
 			fixed_ship_engine_slot = sub_ship_engine_2
 			rear_1_custom_slot = empty
 		}
-	}
+	}}
+if = {
+	limit = { has_dlc = "Man the Guns" }
 	# Destroyers #
 	create_equipment_variant = {
 		name = "Clemson Class"				# represents Sampson, Caldwell, Clemson, and Wickes classes
@@ -369,7 +396,10 @@ if = {
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 		obsolete = yes
-	}
+	}}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
 	create_equipment_variant = {
 		name = "Farragut Class"				# represents Farragut, Porter, Mahan classes
 		type = ship_hull_light_1
@@ -386,6 +416,8 @@ if = {
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
+}if = {
+	limit = { has_dlc = "Man the Guns" }
 	# Light Cruisers #
 	create_equipment_variant = {
 		name = "Omaha Class"
@@ -404,7 +436,9 @@ if = {
 			rear_1_custom_slot = ship_light_medium_battery_1
 		}
 		obsolete = yes
-	}
+	}}
+if = {
+	limit = { has_dlc = "Man the Guns" }
 	create_equipment_variant = {
 		name = "Brooklyn Class"
 		type = ship_hull_cruiser_2
@@ -423,7 +457,9 @@ if = {
 			mid_2_custom_slot = ship_anti_air_1
 			rear_1_custom_slot = ship_light_medium_battery_2
 		}
-	}
+	}}
+if = {
+	limit = { has_dlc = "Man the Guns" }
 	create_equipment_variant = {
 		name = "Oglala Class"				#cruiser minelayers
 		type = ship_hull_cruiser_1
@@ -440,7 +476,9 @@ if = {
 			mid_2_custom_slot = empty
 			rear_1_custom_slot = ship_mine_layer_1
 		}
-	}
+	}}
+if = {
+	limit = { has_dlc = "Man the Guns" }
 	# Heavy Cruisers #
 	create_equipment_variant = {
 		name = "Pensacola Class"			# Pensacola and Northampton classes
@@ -460,7 +498,9 @@ if = {
 			rear_1_custom_slot = ship_airplane_launcher_1
 		}
 		obsolete = yes
-	}
+	}}
+if = {
+	limit = { has_dlc = "Man the Guns" }
 	create_equipment_variant = {
 		name = "Portland Class"				# Portland and New Orleans classes
 		type = ship_hull_cruiser_2
@@ -479,7 +519,9 @@ if = {
 			rear_1_custom_slot = ship_medium_battery_1
 		}
 		obsolete = yes
-	}
+	}}
+if = {
+	limit = { has_dlc = "Man the Guns" }
 	create_equipment_variant = {
 		name = "New Orleans Class"
 		type = ship_hull_cruiser_2
@@ -497,7 +539,9 @@ if = {
 			mid_2_custom_slot = ship_anti_air_1
 			rear_1_custom_slot = ship_medium_battery_2
 		}
-	}
+	}}
+if = {
+	limit = { has_dlc = "Man the Guns" }
 	# Heavy Cruisers #
 		create_equipment_variant = {
 			name = "Wichita Class"
@@ -515,7 +559,9 @@ if = {
 				mid_2_custom_slot = ship_anti_air_1
 				rear_1_custom_slot = ship_medium_battery_2
 			}
-		}
+		}}
+if = {
+	limit = { has_dlc = "Man the Guns" }
 	# Battleships #
 	create_equipment_variant = {
 		name = "New York Class"					# represents Wyoming (Arkansas) and New York classes
@@ -536,7 +582,9 @@ if = {
 			rear_1_custom_slot = ship_heavy_battery_1
 		}
 		obsolete = yes
-	}
+	}}
+if = {
+	limit = { has_dlc = "Man the Guns" }
 	create_equipment_variant = {
 		name = "Pennsylvania Class"				# represents Pennsylvania, Nevada, Tennessee, and New Mexico classes
 		type = ship_hull_heavy_1
@@ -625,39 +673,5 @@ if = {
 			front_1_custom_slot = ship_deck_space
 		}
 	}
-}
 
-create_navy_leader = {
-	traits = { gunnery_expert superior_tactician spotter }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 2
-	maneuvering_skill = 3
-	coordination_skill = 3
-}
-create_navy_leader = {
-	traits = { bold aviation_enthusiast superior_tactician spotter }
-	skill = 4
-	attack_skill = 5
-	defense_skill = 3
-	maneuvering_skill = 3
-	coordination_skill = 2
-}
-
-create_navy_leader = {
-	traits = { gunnery_expert superior_tactician spotter }
-	skill = 8
-	attack_skill = 8
-	defense_skill = 8
-	maneuvering_skill = 8
-	coordination_skill = 8
-}
-
-create_navy_leader = {
-	traits = { navy_career_officer gentlemanly superior_tactician }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 3
-	maneuvering_skill = 3
-	coordination_skill = 3
 }

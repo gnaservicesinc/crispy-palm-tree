@@ -7,7 +7,9 @@ continuous_focus_palette = {
 		modifier = {
 			add = 100
 	OR={
-				tag  =  UMI
+
+		has_variable =  var_American_States
+				
 		tag  =  UIL
 		tag  =  UNY
 		tag  =  UAL

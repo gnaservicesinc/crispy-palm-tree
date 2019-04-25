@@ -8,15 +8,21 @@ spriteTypes = {
 ###	}	
 
 SpriteType = {
-	name = "GFX_FRED_WARREN_GREEN"
+	name = "FRED_WARREN_GREEN"
 	texturefile = "gfx/leaders/UMI/portrait_umi_fred_warren_green.dds"
 }
+
 SpriteType = {
-	name = "GFX_BIBB_GRAVES"
+	name = "BookMarkStartGFX"
+	texturefile = "gfx/interface/load_1.dds"
+}
+
+SpriteType = {
+	name = "BIBB_GRAVES"
 	texturefile = "gfx/leaders/UTX/Bibb_Graves.dds"
 }
 SpriteType = {
-	name = "GFX_J_FOLSOM"
+	name = "J_FOLSOM"
 	texturefile = "gfx/leaders/UAL/Jim_Folsom.dds"
 }
 

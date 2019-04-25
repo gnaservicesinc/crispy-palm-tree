@@ -2,21 +2,12 @@ bookmarks = {
 	bookmark = {
 		name = "UNION_OF_STATES_NAME"
 		desc = "UNION_OF_STATES_DESC"
-		date = 1936.1.1.10
-		picture = "GFX_select_date_1936"
+		date = 1936.1.1.12
+		picture = "BookMarkStartGFX"
 		default_country = "USA"
 		default = yes
 		
-		"UMI"={
-			history = UMI_UNION_OF_STATES_DESC
-			ideology = democratic
-			ideas = {
-			
-			}
-			focuses = {
-			
-			}
-		}
+
 		"USA"={
 			history = "USA_UNION_OF_STATES_DESC"
 			ideology = democratic
@@ -31,10 +22,20 @@ bookmarks = {
 				USA_reestablish_the_gold_standard
 			}
 		}
+		"UMI"={
+			history = "UMI_UNION_OF_STATES_DESC"
+			ideology = democratic
+			ideas = {
+				free_trade
+				home_of_the_free
+			}
+			focuses = {
+			
+			}
+		}
 		"UCA"={
 			history = "UCA_UNION_OF_STATES_DESC"
 			ideology = communism
-			available = { has_dlc = "Man the Guns" }
 			ideas = {
 	
 			}
@@ -71,20 +72,7 @@ bookmarks = {
 
 		# minor
 
-	####	"CAN"={
-	####		minor = yes
-	####		history = "CAN_UNION_OF_STATES_DESC"
-	####		ideology = democratic
-	####		ideas = {
-	####			CAN_great_depression_1
-	####			CAN_conscription_crisis
-	####		}
-	####		focuses = {
-	####			CAN_skewer_the_eagle
-	####			CAN_north_american_alliance
-	####			CAN_join_comintern
-	####		}
-		}
+
 
 		
 		effect = {

@@ -3,19 +3,15 @@ operation_LakeStrike = {
 	enable = {
 		country_exists = UMI
 	
-		OR = {
-		for_each_loop = {
-		array = Michigan_States
-		 original_tag = v
-			}
-		
+		has_variable = var_Michigan_States
 		
       		is_in_faction_with = UMI
 		}
-	}
+
 
 about = {
 		NOT = { is_in_faction_with = UMI }
+		NOT = {has_variable =var_Michigan_States}
 	 
 	}
 
@@ -96,12 +92,9 @@ operation_UnifiedLake = {
 		# Special Strategy for proper states in the faction.
 		# So will only apply to US States in the faction
 		# US this approach for each of the state factions
-
-		for_each_loop = {
-		array = Michigan_States
-		 original_tag = v
-			}
-		     		        country_exists = UTX
+		has_variable =var_Michigan_States
+			
+		     	country_exists = UTX
 			country_exists = UMI
 			country_exists = UCA
 			country_exists = UAL
@@ -112,9 +105,10 @@ operation_UnifiedLake = {
 			is_in_faction_with = UCA
 			is_in_faction_with = UAL
 			is_in_faction_with = USA
+		}
 
 		
-	}
+	
 
 about = {
 				OR = {
@@ -132,6 +126,7 @@ about = {
 			
 
 			}
+}
    ai_strategy = {
 		type = invade
 		id = "SOV"			
@@ -224,18 +219,20 @@ operation_loose_lakes = {
 
     # When to apply the strategy
     enable = {
-		UMI = {
-			is_in_faction_with = USA
-			}
 
-      		        
+		has_government = communism
+		NOT = { TAG = USA}
+		NOT  = {is_in_faction_with =UMI}
+		NOT  = {is_in_faction_with = USA }
+      		 NOT = {has_variable =var_Michigan_States}    	   
     }
 
 	abort =  {
-		 NOT = { is_in_faction_with = USA }
+		 is_in_faction_with = USA 
+		 is_in_faction_with =UMI	
 
 	}
-
+has_government = a
 	ai_strategy = {
 		type = invade
 		id = "UMI"			
@@ -243,6 +240,11 @@ operation_loose_lakes = {
 	}
 	ai_strategy = {
 		type = conquer
+		id = "UMI"			
+		value = 5000
+	}
+	    ai_strategy = {
+		type = declare_war
 		id = "UMI"			
 		value = 5000
 	}

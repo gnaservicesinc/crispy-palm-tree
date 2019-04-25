@@ -4,10 +4,8 @@ free_agent_american = {
 
     # When to apply the strategy
     enable = {
-	for_each_loop = {
-		array = American_States
-		 original_tag = v
-			}
+		
+			has_variable =var_American_States
 		NOT = { is_in_faction_with = USA }
 		NOT = { is_in_faction_with = UCA }
 		NOT = { is_in_faction_with = UAL }
@@ -135,11 +133,7 @@ free_agent_american = {
 		id = "SOV"			
 		value = 150
 	}
-    ai_strategy = {
-		type = protect
-		id = north_america			
-		value = 150
-	}
+ 
 
 	ai_strategy = {
 		type = area_priority
@@ -155,10 +149,7 @@ free_democratic_agent_american = {
 
     # When to apply the strategy
     enable = {
-	for_each_loop = {
-		array = American_States
-		 original_tag = v
-			}
+	has_variable =var_American_States
 		has_government = democratic 
 		NOT = { is_in_faction_with = USA }
 		NOT = { is_in_faction_with = UCA }
@@ -208,10 +199,7 @@ free_communism_agent_american = {
 
     # When to apply the strategy
     enable = {
-	for_each_loop = {
-		array = American_States
-		 original_tag = v
-			}
+	has_variable =var_American_States
 		has_government = communism 
 		NOT = { is_in_faction_with = USA }
 		NOT = { is_in_faction_with = UCA }
@@ -261,10 +249,7 @@ free_american_globalism_agent_american = {
 
     # When to apply the strategy
     enable = {
-	for_each_loop = {
-		array = American_States
-		 original_tag = v
-			}
+	has_variable =var_American_States
 		has_government = american_globalism
 		NOT = { is_in_faction_with = USA }
 		NOT = { is_in_faction_with = UCA }
@@ -315,10 +300,7 @@ free_american_isolationism_agent_american = {
 
     # When to apply the strategy
     enable = {
-	for_each_loop = {
-		array = American_States
-		 original_tag = v
-			}
+	has_variable =var_American_States
 		has_government = american_isolationism
 		NOT = { is_in_faction_with = USA }
 		NOT = { is_in_faction_with = UCA }
@@ -368,15 +350,8 @@ fascism_traitor_american = {
 
     # When to apply the strategy
     enable = {
-	for_each_loop = {
-		array = American_States
-		 original_tag = v
-			}
-		has_government = fascism
-		
-	
-		
-		
+	has_variable =var_American_States
+		has_government = fascis	
     }
     
     # When to abort the strategy
@@ -400,6 +375,11 @@ fascism_traitor_american = {
 	}
 	ai_strategy = {
 		type = antagonize
+		id = ROOT			
+		value = 9000
+	}
+	ai_strategy = {
+		type = declare_war
 		id = ROOT			
 		value = 9000
 	}

@@ -419,7 +419,7 @@ re_conquest_prepare_to_retake_the_homeland = {
 	}
 
 }
-
+}
 re_conquest_retake_the_homeland = {
 		visible = {
 				tag = USA				

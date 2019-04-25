@@ -7,12 +7,12 @@ if = {
 	}
 }
 
-capital = 363
+capital = 390
 
 set_research_slots = 4
 set_stability = 0.95
 set_war_support = 15
-add_to_tech_sharing_group = ual_investigators
+add_to_tech_sharing_group = umi_investigators
 set_convoys = 4000
 set_politics = {
 

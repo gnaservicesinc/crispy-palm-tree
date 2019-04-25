@@ -1,4 +1,4 @@
-start_equipment_factor = 0.1
+﻿start_equipment_factor = 0.1
 ##### Division Templates #####
 division_template = {
 	name = "Infantry Division"  	# Standard formation for frontline divisions
@@ -146,16 +146,7 @@ division_names_group = State_Police
 }
 units = {
 	division= {
-division_template = "Infantry Division"			# Still forming and under-strength with reserve equipment
-		start_experience_factor = 0.9
-		start_equipment_factor = 0.9
-
-	max_organisation = 50
-	reliability =  1.00
-	suppression_factor = .75
-	reliability_factor = 1	
-	initiative = 1
-	casualty_trickleback = .9
+division_template = "Infantry Division"			# Still forming 
 	division_names_group = State_Guard
 	movement = 1.0
 }

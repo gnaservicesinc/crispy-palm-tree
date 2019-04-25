@@ -6,7 +6,7 @@ country = {
 		modifier = {
 			add = 100
 	OR={
-				tag  =  UMI
+		
 		tag  =  UIL
 		tag  =  UNY
 		tag  =  UAL
@@ -44,6 +44,7 @@ country = {
 		tag  =  UMO
 		tag  =  UCO
 		tag  =  UMX
+		tag  =  UMI
 		tag  =  UWY}
 		}
 		
@@ -123,13 +124,7 @@ ROOT = { NOT = { has_war_with = UMI }}
    is_in_faction_with = USA
    is_in_faction_with = UMI
 }
- allow_branch = { ROOT = {  NOT = {
-			 TAG = UMI  } }
-		for_each_loop = {
-		array = Michigan_States
-		ROOT = {  NOT = { TAG  = v }}
-			}
-}
+ allow_branch = { ROOT = {  NOT = { has_variable =var_Michigan_States }}}		
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -161,13 +156,7 @@ ROOT = { NOT = { is_in_faction_with = USA }}
 ROOT = { NOT = { is_in_faction_with = UMI }}
 ROOT = { NOT = { has_war_with = UMI }}
     }
- allow_branch = { ROOT = {  NOT = {
-			 TAG = UMI  } }
-		for_each_loop = {
-		array = Michigan_States
-		ROOT = {  NOT = { TAG  = v }}
-			}
-}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -177,7 +166,7 @@ ROOT = { NOT = { has_war_with = UMI }}
 				UMI = {    add_ideas = {_disruption_problem } }
 
 			for_each_scope_loop = {
-				array = American_States
+				array = USA.American_States
 				if ={ limit ={ NOT = { has_government = democratic }}
 			 
 				hidden_effect = { create_wargoal = { target =     ROOT	 type = annex_everything } } 
@@ -332,13 +321,8 @@ ROOT = { NOT = { has_war_with = UAL }}
    is_in_faction_with = USA
    is_in_faction_with = UAL
 }
-  allow_branch = { ROOT = {  NOT = {
-			 TAG = UAL  } }
-		for_each_loop = {
-		array = Southern_States
-		ROOT = {  NOT = { TAG  = v }}
-			}
-}
+ allow_branch = { ROOT = {  NOT = { has_variable =var_Southern_States }}}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -368,13 +352,7 @@ ROOT = { NOT = { is_in_faction_with = USA }}
 ROOT = { NOT = { is_in_faction_with = UAL }}
 ROOT = { NOT = { has_war_with = UAL }}
     }
-  allow_branch = { ROOT = {  NOT = {
-			 TAG = UAL  } }
-		for_each_loop = {
-		array = Southern_States
-		ROOT = {  NOT = { TAG  = v }}
-			}
-}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -383,7 +361,7 @@ ROOT = { NOT = { has_war_with = UAL }}
 		UAL = { add_ideas = {_disruption_problem } } 
 		ROOT = { add_political_power = 250 }
 			for_each_scope_loop = {
-				array = American_States
+				array = USA.American_States
 				if ={ limit ={ NOT = { has_government = american_isolationism }}
 				hidden_effect = { create_wargoal = { target =     ROOT	 type = annex_everything } } }
 			}
@@ -530,13 +508,7 @@ ROOT = { NOT = { has_war_with = UTX }}
    is_in_faction_with = USA
    is_in_faction_with = UTX
 }
-  allow_branch = { ROOT = {  NOT = {
-			 TAG = UTX  } }
-		for_each_loop = {
-		array = Texan_States
-		ROOT = {  NOT = { TAG  = v }}
-			}
-}
+ allow_branch = { ROOT = {  NOT = { has_variable =var_Texan_States}}}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -580,7 +552,7 @@ add_political_power = 250
 UTX = { add_ideas = {_disruption_problem } } 
 
 			for_each_scope_loop = {
-				array = American_States
+				array = USA.American_States
 				if ={ limit ={ NOT = { has_government = american_globalism }}
 				hidden_effect = { create_wargoal = { target =     ROOT	 type = annex_everything } } }
 			}
@@ -737,13 +709,7 @@ ROOT = { NOT = { has_war_with = UCA }}
    is_in_faction_with = USA
    is_in_faction_with = UCA
 }
-  allow_branch = { ROOT = {  NOT = {
-			 TAG = UCA  } }
-		for_each_loop = {
-		array = cali_States
-		ROOT = {  NOT = { TAG  = v }}
-			}
-}
+ allow_branch = { ROOT = {  NOT = { has_variable =var_Cali_States }}}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -786,7 +752,7 @@ ROOT = { NOT = { has_war_with = UCA }}
 		UCA = { add_ideas = {_disruption_problem } } 
 		ROOT = { add_political_power = 250 }
 			for_each_scope_loop = {
-				array = American_States
+				array = USA.American_States
 				if ={ limit ={ NOT = { has_government = communism }}
 				hidden_effect = { create_wargoal = { target =     ROOT	 type = annex_everything } } }
 			}
@@ -2427,7 +2393,7 @@ available = {
 			add_political_power = 250
 
 		for_each_scope_loop = {
-		array = American_States
+		array = USA.American_States
 
 			all_owned_state = {
 
@@ -2475,7 +2441,7 @@ available = {
 		completion_reward = {
 
 			for_each_loop = {
-				array = American_States
+				array = USA.American_States
 				v={ if = { limit = { NOT = {
 								 is_in_faction_with = ROOT
 								 has_government = communism
@@ -2532,7 +2498,7 @@ has_war_support > 0.75
 					country_exists = THIS
 					 NOT= {
 						is_in_array = {
-   							 array = American_States
+   							 array = USA.American_States
 							value = THIS }
 							}
 		

@@ -1,20 +1,27 @@
+﻿﻿﻿capital = 393
+oob = "UMI_INF_01"
 
 
-##oob = "UMI_INF_01"
-﻿oob = "State_Guard"
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "USA_1936_naval_mtg"
-	else = {
-		set_naval_oob = "USA_1936_naval_legacy"
+
+create_country_leader = {
+	name = "Fred W. Green"
+	desc = "POLITICS_FRED_W_GREEN_DESC"
+	picture = "gfx/leaders/UMI/portrait_umi_fred_warren_green.dds"
+	expire = "1975.1.1"
+	ideology = liberalism
+	traits = {
+		dislikes_germany
+		staunch_constitutionalist
+		political_dancer
+		dealbroker
+		anti_communist
+
 	}
 }
-﻿capital = 393
-	
 set_major = yes
 set_research_slots = 4
-set_stability = 0.95
-set_war_support = 15
+set_stability = 1
+set_war_support = 1
 add_to_tech_sharing_group = umi_investigators
 set_convoys = 4000
 set_politics = {
@@ -37,7 +44,7 @@ set_politics = {
 	}
 	
 	ruling_party = democratic
-	last_election = "1932.11.8"
+	last_election = "1936.8.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
@@ -48,21 +55,39 @@ add_ideas = {
 }
 create_faction = "Great Lakes Treaty Organization"
 
- 
-add_to_array = { array = Michigan_States value= UWI }
-add_to_array = { array = Michigan_States value= UOH }
-add_to_array = { array = Michigan_States value= UIL }
-add_to_array = { array = Michigan_States value= UIN }
-add_to_array = { array = Michigan_States value= UMN }
-add_to_array = { array = Michigan_States value= UDK }
-add_to_array = { array = Michigan_States value= UNE }
-add_to_array = { array = Michigan_States value= UIA }
+ set_variable = { var_Michigan_States = 1 } 
+UWI  = { set_variable = { var_Michigan_States = 1 }  }
+UOH  = { set_variable = { var_Michigan_States = 1 }  }
+UIL  = { set_variable = { var_Michigan_States = 1 }  }
+UIN  = { set_variable = { var_Michigan_States = 1 }  }
+UMN  = { set_variable = { var_Michigan_States = 1 }  }
+UDK  = { set_variable = { var_Michigan_States = 1 }  }
+UNE  = { set_variable = { var_Michigan_States = 1 }  }
+UIA  = { set_variable = { var_Michigan_States = 1 }  }
+
+ set_variable = { var_American_States = 1 } 
+UWI  = { set_variable = { var_American_States = 1 }  }
+UOH  = { set_variable = { var_American_States = 1 }  }
+UIL  = { set_variable = { var_American_States = 1 }  }
+UIN  = { set_variable = { var_American_States = 1 }  }
+UMN  = { set_variable = { var_American_States = 1 }  }
+UDK  = { set_variable = { var_American_States = 1 }  }
+UNE  = { set_variable = { var_American_States = 1 }  }
+UIA  = { set_variable = { var_American_States = 1 }  }
+add_to_array = { array = USA.Michigan_States value= UWI }
+add_to_array = { array = USA.Michigan_States value= UOH }
+add_to_array = { array = USA.Michigan_States value= UIL }
+add_to_array = { array = USA.Michigan_States value= UIN }
+add_to_array = { array = USA.Michigan_States value= UMN }
+add_to_array = { array = USA.Michigan_States value= UDK }
+add_to_array = { array = USA.Michigan_States value= UNE }
+add_to_array = { array = USA.Michigan_States value= UIA }
 
 for_each_loop = {
-array = Michigan_States
+array = USA.Michigan_States
 give_guarantee = v
 add_to_faction = v
-add_to_array = { array = American_States value= v }
+add_to_array = { array = USA.American_States value= v }
 if = { limit = { has_dlc = "Together for Victory"}
 set_autonomy = {target = v autonomous_state = autonomy_united_states_state }
 }
@@ -70,7 +95,7 @@ else = {
 puppet =v
 }
 }
-add_to_array = { array = American_States value= UMI }
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -191,54 +216,5 @@ if = {
 		dispersed_industry2 = 1
 		dispersed_industry3 = 1
 	}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-			improved_submarine = 1
-			basic_destroyer = 1
-			basic_heavy_cruiser = 1
-			basic_battlecruiser = 1
-		}
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-			improved_ship_hull_light = 1
-			basic_ship_hull_heavy = 1
-			improved_ship_hull_heavy = 1
-			improved_sonar = 1
-			improved_ship_torpedo_launcher = 1
-			improved_cruiser_armor_scheme = 1
-			improved_heavy_battery = 1
-			dp_secondary_battery = 1
-		}
-		remove_ideas = MTG_naval_treaty_adherent
-		add_ideas = MTG_naval_treaty_adherent_reduced
-	}
-	create_equipment_variant = {
-		name = "Martin M166"
-		type = tac_bomber_equipment_0
-		upgrades = {
-			plane_tac_bomb_upgrade = 2
-			plane_range_upgrade = 1
-			plane_engine_upgrade = 2
-			plane_reliability_upgrade = 3
-		}
-	}
 
-create_country_leader = {
-	name = "Fred W. Green"
-	desc = "POLITICS_FRED_W_GREEN_DESC"
-	picture = "gfx/leaders/UMI/portrait_umi_fred_warren_green.dds"
-	expire = "1975.1.1"
-	ideology = liberalism
-	traits = {
-		dislikes_germany
-		staunch_constitutionalist
-		political_dancer
-		dealbroker
-		anti_communist
-
-	}
-}
-
+	

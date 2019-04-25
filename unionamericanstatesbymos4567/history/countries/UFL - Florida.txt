@@ -7,7 +7,7 @@ if = {
 	}
 }
 
-capital = 370
+capital = 366
 
 set_research_slots = 4
 set_stability = 0.95
