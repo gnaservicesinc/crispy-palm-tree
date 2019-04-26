@@ -163,7 +163,10 @@ ROOT = { NOT = { has_war_with = UMI }}
 		completion_reward = { 
 				ROOT = { add_political_power = 250}
 				UMI = { add_to_variable = { var_infiltrator_destabilization = 1 } }
-				UMI = {    add_ideas = {_disruption_problem } }
+				UMI = {
+
+	if = { NOT = {  has_idea= state_disruption_problem} add_ideas = {state_disruption_problem} }
+	}
 
 			for_each_scope_loop = {
 				array = USA.American_States
@@ -358,7 +361,7 @@ ROOT = { NOT = { has_war_with = UAL }}
 		available_if_capitulated = no
 		completion_reward = { 
 		UAL = { add_to_variable = { var_infiltrator_destabilization = 1 } }
-		UAL = { add_ideas = {_disruption_problem } } 
+		UAL = {	if = { NOT = {  has_idea= state_disruption_problem} add_ideas = {state_disruption_problem} }} 
 		ROOT = { add_political_power = 250 }
 			for_each_scope_loop = {
 				array = USA.American_States
@@ -549,7 +552,7 @@ ROOT = { NOT = { has_war_with = UTX }}
 		completion_reward = { 
 UTX = { add_to_variable = { var_infiltrator_destabilization = 1 } }
 add_political_power = 250
-UTX = { add_ideas = {_disruption_problem } } 
+UTX = { 	if = { NOT = {  has_idea= state_disruption_problem} add_ideas = {state_disruption_problem} } } 
 
 			for_each_scope_loop = {
 				array = USA.American_States
@@ -749,7 +752,7 @@ ROOT = { NOT = { has_war_with = UCA }}
 		available_if_capitulated = no
 		completion_reward = { 
 			UCA = { add_to_variable = { var_infiltrator_destabilization = 1 } }
-		UCA = { add_ideas = {_disruption_problem } } 
+		UCA = { 	if = { NOT = {  has_idea= state_disruption_problem} add_ideas = {state_disruption_problem} } } 
 		ROOT = { add_political_power = 250 }
 			for_each_scope_loop = {
 				array = USA.American_States

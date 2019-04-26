@@ -1,0 +1,47 @@
+blame_war_american = {
+    # Applied to other countries for main country
+     reversed = yes
+
+    # When to apply the strategy
+    enable = {
+		has_variable =var_American_States
+		has_offensive_war = yes
+		NOT = { has_war_together_with = USA }
+		NOT = { tag = USA }
+		NOT = { is_in_faction_with = USA }	
+    }
+    
+    # When to abort the strategy
+    abort = { 	OR  = { 
+ 	NOT = { has_war = yes }
+	 has_war_together_with = USA 
+	is_in_faction_with = USA
+	}
+}
+  
+      ai_strategy = {
+		type = conquer
+		id = USA			
+		value = 9000
+	}
+	ai_strategy = {
+		type = invade
+		id = USA			
+		value = 9000
+	}
+      ai_strategy = {
+		type = contain
+		id = USA			
+		value = 9000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = USA			
+		value = 9000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = USA			
+		value = 9000
+	}
+}

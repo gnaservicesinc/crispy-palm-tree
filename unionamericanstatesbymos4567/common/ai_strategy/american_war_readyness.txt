@@ -1,0 +1,13 @@
+american_war_readyness  = {
+reversed = yes
+    enable = {
+	country_exists = USA
+	has_variable =var_American_States
+	}
+    abort = {OR = { NOT = { country_exists = USA }}}
+	ai_strategy = {
+		type = force_build_armies
+		id = "USA"			
+		value = 3210
+	}
+}

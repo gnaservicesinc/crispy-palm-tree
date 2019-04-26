@@ -4,7 +4,7 @@ ideas = {
 	 country = {
 
 hidden_ideas = {
-      _disruption_problem = {
+      state_disruption_problem = {
            modifier = {
 
                stability_weekly = -0.25

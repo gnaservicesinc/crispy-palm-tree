@@ -1,14 +1,96 @@
-operation_eagle_strike = {
-
+operation_fallen_eagle = {
+	reversed = yes
 	enable = {
-		# Special Strategy for proper states in the faction.
-		# So will only apply to US States in the faction
-		# US this approach for each of the state factions
+		has_variable =var_Loyal_American_States
+		NOT = { is_in_faction_with = USA }
+		}
 
-		for_each_loop = {
-		array = Loyal_American_States
-		 original_tag = v
+ai_strategy = {
+		type = declare_war
+		id = USA			
+		value = 9000
+	}
+     ai_strategy = {
+		type = conquer
+		id = USA			
+		value = 9000
+	}
+	ai_strategy = {
+		type = invade
+		id = USA			
+		value = 9000
+	}
+      ai_strategy = {
+		type = contain
+		id = USA			
+		value = 9000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = USA			
+		value = 9000
+	}
+}
+operation_stolen_eagle = {
+		reversed = yes
+	enable = {
+		has_variable =var_American_States 
+		NOT = {has_variable =var_Loyal_American_States }
+		NOT = { is_in_faction_with = USA }
+	}
+
+      ai_strategy = {
+		type = contain
+		id = USA			
+		value = 9000
+	}
+}
+operation_guardian_eagle = {
+	reversed = yes
+			enable = {
+			has_variable =var_American_States 
+      			is_in_faction_with = USA
 			}
+
+	about = {
+		NOT = { is_in_faction_with = USA } 
+	}
+
+
+      ai_strategy = {
+		type = protect
+		id = USA			
+		value = 1000
+	}
+      ai_strategy = {
+		type = support
+		id = USA			
+		value = 1000
+	}
+      ai_strategy = {
+		type = garrison
+		id = USA			
+		value = 1000
+	}
+      ai_strategy = {
+		type = befriend
+		id = USA			
+		value = 1000
+	} 
+      ai_strategy = {
+		type = consider_weak
+		id = USA			
+		value = 1000
+	}	
+
+ 
+
+
+}
+operation_eagle_strike = {
+#Not reversed (default)
+	enable = {
+		has_variable =var_American_States
 		country_exists = USA
       		is_in_faction_with = USA
 	}
@@ -17,7 +99,11 @@ about = {
 		NOT = { is_in_faction_with = USA }
 	 
 	}
-
+    ai_strategy = {
+		type = send_volunteers_desire	
+		id = USA			
+		value = 1000
+	}
   ai_strategy = {
 		type = befriend
 		id = "ENG"			
@@ -39,21 +125,20 @@ about = {
 		id = "CHI"			
 		value = 200
 	}
-
+  ai_strategy = {
+		type = befriend
+		id = "USA"			
+		value = 1000
+	}
   ai_strategy = {
 		type = befriend
 		id = "UMI"			
 		value = 300
 	}
   ai_strategy = {
-		type = protect
-		id = "UMI"			
+		type = support
+		id = "USA"			
 		value = 1000
-	}
-  ai_strategy = {
-		type = alliance
-		id = "UMI"			
-		value = 500
 	}
     ai_strategy = {
 		type = befriend
@@ -122,42 +207,7 @@ about = {
 		id = "UMN"			
 		value = 250
 	}
-    ai_strategy = {
-		type = alliance
-		id = "CUB"			
-		value = 200
-	}
 
- ai_strategy = {
-		type = invade
-		id = "UCA"			
-		value = 200
-	}
-	    ai_strategy = {
-		type = invade
-		id = "UAL"			
-		value = 200
-	}
-	    ai_strategy = {
-		type = invade
-		id = "UTX"			
-		value = 200
-	}
-	    ai_strategy = {
-		type = conquer
-		id = "UCA"			
-		value = 200
-	}
-	    ai_strategy = {
-		type = conquer
-		id = "UAL"			
-		value = 200
-	}
-	    ai_strategy = {
-		type = conquer
-		id = "UTX"			
-		value = 200
-	}
 }
 
 
@@ -201,7 +251,7 @@ about = {
 			NOT = { is_in_faction_with = USA }
 			NOT = { is_in_faction_with = UAL }
 			
-
+			}
 			}
    ai_strategy = {
 		type = invade

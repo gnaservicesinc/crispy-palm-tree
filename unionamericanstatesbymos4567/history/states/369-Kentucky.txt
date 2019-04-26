@@ -5,13 +5,22 @@ state={
 	manpower = 6614588
 	
 	state_category = city
+	resources={
+		oil=300 
+		aluminium=197 # was: 96
+		steel=60.000
+		tungsten=50.000
+		rubber=70.000
+		chromium=8.000
+		
+	}
 
 	history={
 		owner = UKY
 		buildings = {
 			infrastructure = 5
-			industrial_complex = 3
-			air_base = 4
+			industrial_complex = 4
+			air_base = 6
 		}
 		add_core_of = USA
 		add_core_of = UKY

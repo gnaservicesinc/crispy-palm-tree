@@ -2,15 +2,24 @@
 state={
 	id=366
 	name="STATE_366"
-	manpower = 6468210
+	manpower = 7468210
 	
 	state_category = city
+	resources={
+		oil=60.000
+		aluminium=30.000
+		steel=60.000
+		tungsten=25.000
+		rubber=27.000
+		chromium=8.000
+		
+	}
 
 	history={
 		owner = UFL
 		buildings = {
-			infrastructure = 40
-			industrial_complex = 30
+			infrastructure = 10
+			industrial_complex = 10
 			air_base = 10
 			1572 = {
 				naval_base = 2

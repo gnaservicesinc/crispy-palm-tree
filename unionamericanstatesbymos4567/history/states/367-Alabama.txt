@@ -3,7 +3,15 @@ state={
 	id=367
 	name="STATE_367"
 	manpower = 3646247
-	
+		resources={
+		oil=6.00
+		aluminium=7.00
+		steel=6.000
+		tungsten=5.000
+		rubber=7.000
+		chromium=8.000
+	}
+
 	state_category = city
 
 	history={

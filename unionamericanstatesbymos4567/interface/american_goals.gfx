@@ -1,12 +1,5 @@
 spriteTypes = {	
 
-
-
-###	SpriteType = {
-###	name = "GFX_expand_ru_eco_partnetship"
-###	texturefile = "gfx/interface/goals/gfx_expand_ru_eco_partnetship.dds"			
-###	}	
-
 SpriteType = {
 	name = "FRED_WARREN_GREEN"
 	texturefile = "gfx/leaders/UMI/portrait_umi_fred_warren_green.dds"
