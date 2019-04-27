@@ -23,6 +23,20 @@ re_conquest_america = {
 	
 		}
 		   remove_effect = {
+		if = { limit = { has_government = american_isolationism} become_exiled_in = { target = IRE legitimacy = 1  }}
+
+if = { limit = { has_government = american_globalism } become_exiled_in = { target = SUA legitimacy = 1 }}
+
+if = { limit = { has_government = fascism } become_exiled_in = { target = ger legitimacy = 1}}
+
+if = { limit = { has_government = democratic } become_exiled_in = { target = ENG legitimacy = 1}}
+
+if = { limit = { has_government = communism } become_exiled_in = { target = SOV legitimacy = 1}}
+
+if = { limit = { has_government = neutrality } become_exiled_in = { target = BRA legitimacy = 1}}
+
+
+		add_legitimacy = 100	
 		ROOT = { add_to_tech_sharing_group = usa_investigators 
 			inherit_technology = USA }
 		USA = {

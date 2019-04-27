@@ -1,8 +1,8 @@
 supply_area={
 	id=360
 	name="SUPPLYAREA_360"
-	value=0
+	value=19
 	states={
-		800 794 792 393 793 789 790 795 791 
+		393 
 	}
 }

@@ -65,6 +65,11 @@ for_each_loop = {
 array = Loyal_American_States
 give_guarantee = v
 add_to_faction = v
+set_rule = {
+   units_deployed_to_overlord  = yes
+ can_generate_female_aces = yes
+
+}
 add_to_array = { array = American_States value= v }
 if = { limit = { has_dlc = "Together for Victory"}
 set_autonomy = {target = v autonomous_state = autonomy_united_states_state }
