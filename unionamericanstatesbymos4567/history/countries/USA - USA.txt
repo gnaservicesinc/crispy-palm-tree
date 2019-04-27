@@ -72,11 +72,6 @@ else = {
 puppet =v
 } 
 }
-set_country_flag
-set_variable = { var_this_country = v.id }
-var:var_this_country = {
-    set_variable = { is_an_american_state = 1 }
-}
 }
 # it is done! Whaahahahaahah!
 	

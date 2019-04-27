@@ -1,16 +1,7 @@
 operation_SouthRises = {
 
 	enable = {
-		# Special Strategy for proper states in the faction.
-		# So will only apply to US States in the faction
-		# US this approach for each of the state factions
-
-		for_each_loop = {
-		array = Southern_States
-		 original_tag = v
-			}
-		country_exists = UAL
-      		is_in_faction_with = UAL
+		is_in_faction_with = UAL
 	}
 
 about = {
@@ -31,8 +22,8 @@ about = {
 	}
     ai_strategy = {
 		type = protect
-		id = "UAL"			
-		value = 550
+		id = "UTX"			
+		value = 2550
 	}
 	    ai_strategy = {
 		type = conquer
@@ -44,63 +35,33 @@ about = {
 		id = "UTX"			
 		value = 1550
 	}
-	    ai_strategy = {
-		type = conquer
-		id = "UMI"			
-		value = 750
-	}
 
-	    ai_strategy = {
-		type = conquer
-		id = "USA"			
-		value = 550
-	}
 
-	    ai_strategy = {
-		type = invade
-		id = "UCA"			
-		value = 450
-	}
 	    ai_strategy = {
 		type = alliance
 		id = "UTX"			
 		value = 450
 	}
-	    ai_strategy = {
-		type = invade
-		id = "USA"			
-		value = 450
-	}
-	    ai_strategy = {
-		type = invade
-		id = "UMI"			
-		value = 250
-	}
-	    ai_strategy = {
-		type = invade
-		id = "UTX"			
-		value = 450
-	}
 
 
 	    ai_strategy = {
 		type = antagonize
-		id = "UCA"			
+		id = "CAN"			
 		value = 450
 	}
 	    ai_strategy = {
 		type = send_volunteers_desire
 		id = "UTX"			
+		value = 4500
+	}
+	    ai_strategy = {
+		type = antagonize
+		id = "MEX"			
 		value = 450
 	}
 	    ai_strategy = {
 		type = antagonize
-		id = "USA"			
-		value = 450
-	}
-	    ai_strategy = {
-		type = antagonize
-		id = "UMI"			
+		id = "ENG"			
 		value = 250
 	}
 	    ai_strategy = {
@@ -115,6 +76,11 @@ about = {
 		value = 150
 	}
 
+	    ai_strategy = {
+		type = befriend
+		id = "GER"			
+		value = 1850
+	}
 	    ai_strategy = {
 		type = befriend
 		id = "UAL"			
@@ -145,16 +111,31 @@ free_for_all_down_south = {
 
 	}
 
+      ai_strategy = {
+		type = conquer
+		id = USA			
+		value = 9000
+	}
 	ai_strategy = {
 		type = invade
-		id = "UAL"			
-		value = 5000
+		id = USA			
+		value = 9000
+	}
+      ai_strategy = {
+		type = contain
+		id = USA			
+		value = 9000
 	}
 	ai_strategy = {
-		type = conquer
-		id = "UAL"			
-		value = 5000
+		type = antagonize
+		id = USA			
+		value = 9000
 	}
+	ai_strategy = {
+		type = declare_war
+		id = USA			
+		value = 9000
+	
 
 }
 

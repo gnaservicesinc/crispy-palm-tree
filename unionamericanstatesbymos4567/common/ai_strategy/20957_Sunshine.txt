@@ -1,14 +1,17 @@
 
 operation_Sunshine = {
 
+	name = "Operation Sunshine"
+	desc = "You will comply"
 	enable = {
       		is_in_faction_with = UCA
 	}
 
-about = {
-		NOT = { is_in_faction_with = UCA }
+abort = {
+ 		NOT = { is_in_faction_with = UCA }
 	 
 	}
+
     ai_strategy = {
 		type = declare_war
 		id = "UMI"			
@@ -181,7 +184,41 @@ take_ca_sunshine = {
     enable = {
 
 			is_in_faction_with = USA
-			original_tag = UCA
+			original_tag = USA
+
+      		          
+    }
+
+	abort =  {
+		 NOT = { is_in_faction_with = USA }
+
+	}
+  ai_strategy = {
+		type = declare_war
+		id = "UCA"			
+		value = 250
+	}
+	ai_strategy = {
+		type = invade
+		id = "UCA"			
+		value = 5000
+	}
+	ai_strategy = {
+		type = conquer
+		id = "UCA"			
+		value = 5000
+	}
+
+}
+take_ca_sunshine2 = {
+    # Applied to other countries for main country
+    # reversed = yes
+
+    # When to apply the strategy
+    enable = {
+
+			is_in_faction_with = USA
+			original_tag = USA
 
       		        
     }
@@ -190,7 +227,11 @@ take_ca_sunshine = {
 		 NOT = { is_in_faction_with = USA }
 
 	}
-
+  ai_strategy = {
+		type = declare_war
+		id = "UCA"			
+		value = 250
+	}
 	ai_strategy = {
 		type = invade
 		id = "UCA"			

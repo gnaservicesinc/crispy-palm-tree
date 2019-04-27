@@ -909,8 +909,6 @@ ROOT = { NOT = { is_in_faction_with = USA }}
 		available_if_capitulated = no
 
 		completion_reward = { add_ideas = { russian_security_aid2  } add_political_power = 250
-
-		completion_reward = {
 		air_experience = 35
 			add_tech_bonus = {
 				name = motorized_bonus
@@ -942,7 +940,7 @@ ROOT = { NOT = { is_in_faction_with = USA }}
 }
 
 }
-	}
+	
 
 
 	focus = {
@@ -1328,11 +1326,10 @@ ROOT = { NOT = { is_in_faction_with = USA }}
 	completion_reward = {
 	
 	if = { limit = { country_exists	= SOV }
-			SOV = { 
-	leave_faction	= yes
-	}
-	}
-	}}
+			ROOT = { leave_faction	= yes}
+	SOV = { add_to_faction	= ROOT }
+ROOT = { add_to_tech_sharing_group = commonwealth_research}
+	}}}
 ####################################################################
 #
 #	Foreign Partners End of Section 1. 
@@ -1370,13 +1367,11 @@ available = {
 	ROOT = { NOT = { is_in_faction_with = USA }}
     }
       allow_branch = { 
-		for_each_loop = {
-		array = Southern_States
-		  TAG  = v }
-		for_each_loop = {
-		array = Texan_States
-		TAG  = v }
-		}
+ROOT = {   OR = {
+		has_variable =Southern_States 
+		has_variable =Texan_States
+	}	
+	}}
  
 
 		cancel_if_invalid = yes
@@ -1474,8 +1469,6 @@ ROOT = { NOT = { is_in_faction_with = USA }}
 		available_if_capitulated = no
 
 		completion_reward = { add_ideas = { german_security_aid2  } add_political_power = 250
-
-		completion_reward = {
 		air_experience = 35
 			add_tech_bonus = {
 				name = motorized_bonus
@@ -1507,7 +1500,7 @@ ROOT = { NOT = { is_in_faction_with = USA }}
 }
 
 }
-	}
+	
 
 
 	focus = {
@@ -1822,9 +1815,78 @@ ROOT = { NOT = { is_in_faction_with = USA }}
 
  }
 	}
+focus = {
+		id = UCA_joint_german_state 
+		icon = GFX_ru_mil_train_joint2
+		relative_position_id = UCA_joint_german_military_training2 
+		prerequisite = { 
+			focus =UCA_joint_german_military_training 
+			focus =UCA_german_security_partnership4 
+			  }
+		mutually_exclusive = {focus = UCA_joint_german_movement }
+		x = 0
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		dynamic =  yes
+		cost = 10
+		 available_if_capitulated = yes	
+		ai_will_do = {
+			factor = 1
+		}
+		 available = {
+			GER = { has_government = fascism }
+			ROOT = { has_government = fascism }
+
+		}
+		completion_reward = {
+			if = { limit = { country_exists	= GER }
+			GER = { 
+				if = { limit = { has_dlc = "Man the Guns"}
+				inherit_technology = ROOT }
+
+				if = { limit = { has_dlc = "Together for Victory"}
+			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
+			} else = { puppet =ROOT }	
+
+     			}
+		}
+		}
 
 
+	}
+	focus = {
+		id = UCA_joint_german_movement
+		icon = GFX_ru_mil_train_joint2
+		relative_position_id = UCA_joint_german_state
+	prerequisite = { 
+			focus =UCA_joint_german_military_training 
+			focus =UCA_german_security_partnership4 
+			  }
+		mutually_exclusive = {focus = UCA_joint_german_state }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no	
+		x = 0
+		y = -2
+		dynamic =  yes
+		cost = 10
+			 available = {
+			GER = { has_government = fascism }
+			ROOT = { has_government = fascism }
 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+completion_reward = {
+	
+	if = { limit = { country_exists	= GER }
+			ROOT = { leave_faction	= yes}
+	GER = { add_to_faction	= ROOT }
+ROOT = { add_to_tech_sharing_group = commonwealth_research}
+	}}}
 ####################################################################
 #
 #	 Foreign Partners End of Section 2.
@@ -1864,10 +1926,7 @@ available = {
 	ROOT = { NOT = { is_in_faction_with = USA }}
     }
       allow_branch = { 
-		for_each_loop = {
-		array = Michigan_States
-		 original_tag = v
-			}	
+	ROOT = {   has_variable =var_Michigan_States }	
 		}
  
 
@@ -1967,7 +2026,6 @@ ROOT = { NOT = { is_in_faction_with = USA }}
 
 		completion_reward = { add_ideas = { english_security_aid2  } add_political_power = 250
 
-		completion_reward = {
 		air_experience = 35
 			add_tech_bonus = {
 				name = motorized_bonus
@@ -1999,7 +2057,7 @@ ROOT = { NOT = { is_in_faction_with = USA }}
 }
 
 }
-	}
+	
 
 
 	focus = {
@@ -2321,7 +2379,78 @@ focus =UCA_joint_russian_military_training2
 
  }
 	}
+focus = {
+		id = UCA_joint_english_state 
+		icon = GFX_ru_mil_train_joint2
+		relative_position_id = UCA_joint_english_military_training2 
+		prerequisite = { 
+			focus =UCA_joint_english_military_training 
+			focus =UCA_english_security_partnership4 
+			  }
+		mutually_exclusive = {focus = UCA_joint_english_movement }
+		x = 0
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		dynamic =  yes
+		cost = 10
+		 available_if_capitulated = yes	
+		ai_will_do = {
+			factor = 1
+		}
+		 available = {
+			ENG = { has_government = democratic }
+			ROOT = { has_government = democratic }
 
+		}
+		completion_reward = {
+			if = { limit = { country_exists	= ENG }
+			ENG = { 
+				if = { limit = { has_dlc = "Man the Guns"}
+				inherit_technology = ROOT }
+
+				if = { limit = { has_dlc = "Together for Victory"}
+			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
+			} else = { puppet =ROOT }	
+
+     			}
+		}
+		}
+
+
+	}
+	focus = {
+		id = UCA_joint_english_movement
+		icon = GFX_ru_mil_train_joint2
+		relative_position_id = UCA_joint_english_state
+	prerequisite = { 
+			focus =UCA_joint_english_military_training 
+			focus =UCA_english_security_partnership4 
+			  }
+		mutually_exclusive = {focus = UCA_joint_english_state }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no	
+		x = 2
+		y = 0
+		dynamic =  yes
+		cost = 10
+			 available = {
+			ENG = { has_government = democratic }
+			ROOT = { has_government = democratic }
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+	
+	if = { limit = { country_exists	= ENG }
+			ROOT = { leave_faction	= yes}
+	ENG = { add_to_faction	= ROOT }
+ROOT = { add_to_tech_sharing_group = commonwealth_research}
+	}}}
 ####################################################################
 #
 #	 Foreign Partners End of Section 3.
@@ -2356,16 +2485,12 @@ available = {
 
 		for_each_scope_loop = {
 		array = USA.American_States
-
-			all_owned_state = {
-
 				ROOT={ add_core_of= PREV}
 			}
 
 		
 			}
  }
-	}
 
 
 focus = {
@@ -2402,9 +2527,9 @@ available = {
 
 		completion_reward = {
 
-			for_each_loop = {
-				array = USA.American_States
-				v={ if = { limit = { NOT = {
+			for_each_scope_loop = {
+		array = USA.American_States
+		if = { limit = { NOT = {
 								 is_in_faction_with = ROOT
 								 has_government = communism
 								 }}
@@ -2419,7 +2544,7 @@ available = {
 
 		}
    	}
-}
+
 focus = {
 		id = UCA_american_globalwar
 		icon = GFX_goal_generic_major_war
@@ -2882,6 +3007,75 @@ ai_will_do = {
 #
 ####################################################################
 focus = {
+		id = UCA_apoint_officers
+		icon = GFX_goal_generic_production
+		 dynamic = yes
+		x = 5
+		y = 0
+		cost = 10
+		ai_will_do = { 
+			factor = 10
+			modifier = {
+				factor = 100
+				has_war = yes
+			}
+			}
+	
+		available_if_capitulated = no
+
+		completion_reward = {
+create_field_marshal = {
+	female = yes
+	traits = {  trickster armor_officer panzer_leader war_hero trait_reckless }
+	skill = 7
+	attack_skill = 7 
+	defense_skill = 7
+	planning_skill = 7
+	logistics_skill = 7
+}
+
+create_field_marshal = {
+	female = no
+	traits = {  trait_engineer trait_cautious brilliant_strategist harsh_leader }
+	skill = 6
+	attack_skill = 7
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 6
+}
+
+create_field_marshal = {
+	female = yes
+	traits = { logistics_wizard panzer_leader war_hero organizer offensive_doctrine trait_cautious armor_officer politically_connected }
+	skill = 8
+	attack_skill = 8
+	defense_skill = 8
+	planning_skill = 8
+	logistics_skill = 8
+}
+create_field_marshal = {
+	female = no
+	traits = { logistics_wizard organizer offensive_doctrine brilliant_strategist armor_officer politically_connected }
+	skill = 8
+	attack_skill = 8
+	defense_skill = 8
+	planning_skill = 8
+	logistics_skill = 8
+}
+create_field_marshal = {
+	female = yes
+	traits = { logistics_wizard organizer offensive_doctrine brilliant_strategist armor_officer war_hero }
+	skill = 8
+	attack_skill = 8
+	defense_skill = 8
+	planning_skill = 8
+	logistics_skill = 8
+}
+}
+
+
+}
+focus = {
 		id = UCA_apoint_jr_officers
 		icon = GFX_goal_generic_production
 		 dynamic = yes
@@ -2922,12 +3116,12 @@ focus = {
 
 	create_corps_commander = {
 	traits = {  offensive_doctrine brilliant_strategist career_officer media_personality politically_connected }
-	skill = var_skill 
-
-	attack_skill = var_attack_skill
-	defense_skill = var_defense_skill
-	planning_skill = var_planning_skill
-	logistics_skill = var_logistics_skill
+	skill = 8
+	
+	attack_skill = "[?var_attack_skill]"
+	defense_skill = "[?var_defense_skill]"
+	planning_skill = "[?var_planning_skill]"
+	logistics_skill = "[?var_logistics_skill]"
 		}
 
 		set_variable = { var_skill = random }
@@ -2948,14 +3142,14 @@ focus = {
 		round_variable =  var_planning_skill
 		round_variable =  var_logistics_skill
 
-	create_corps_commander = {
+			create_corps_commander = {
 	traits = {  offensive_doctrine brilliant_strategist career_officer media_personality politically_connected }
-	skill = var_skill 
-
-	attack_skill = var_attack_skill
-	defense_skill = var_defense_skill
-	planning_skill = var_planning_skill
-	logistics_skill = var_logistics_skill
+	skill = 8
+	
+	attack_skill = "[?var_attack_skill]"
+	defense_skill = "[?var_defense_skill]"
+	planning_skill = "[?var_planning_skill]"
+	logistics_skill = "[?var_logistics_skill]"
 		}
 
 		set_variable = { var_skill = random }
@@ -2976,14 +3170,99 @@ focus = {
 		round_variable =  var_planning_skill
 		round_variable =  var_logistics_skill
 
-	create_corps_commander = {
+			create_corps_commander = {
 	traits = {  offensive_doctrine brilliant_strategist career_officer media_personality politically_connected }
-	skill = var_skill 
+	skill = 8
+	
+	attack_skill = "[?var_attack_skill]"
+	defense_skill = "[?var_defense_skill]"
+	planning_skill = "[?var_planning_skill]"
+	logistics_skill = "[?var_logistics_skill]"
+		}
+		
 
-	attack_skill = var_attack_skill
-	defense_skill = var_defense_skill
-	planning_skill = var_planning_skill
-	logistics_skill = var_logistics_skill
+		set_variable = { var_skill = random }
+		set_variable = { var_attack_skill = random }
+		set_variable = { var_defense_skill = random }
+		set_variable = { var_planning_skill = random }
+		set_variable = { var_logistics_skill = random }
+
+		multiply_temp_variable = { var_skill = 100 }
+		multiply_temp_variable = { var_attack_skill = 100 }
+		multiply_temp_variable = { var_defense_skill = 100 }
+		multiply_temp_variable = { var_planning_skill = 100 }
+		multiply_temp_variable = { var_logistics_skill = 100 }
+		
+		round_variable = var_skill 
+		round_variable =  var_attack_skill
+		round_variable = var_defense_skill
+		round_variable =  var_planning_skill
+		round_variable =  var_logistics_skill
+	
+		create_corps_commander = {
+	traits = {  offensive_doctrine brilliant_strategist career_officer media_personality politically_connected }
+	skill = 8
+	
+	attack_skill = "[?var_attack_skill]"
+	defense_skill = "[?var_defense_skill]"
+	planning_skill = "[?var_planning_skill]"
+	logistics_skill = "[?var_logistics_skill]"
+		}
+		
+
+		set_variable = { var_skill = random }
+		set_variable = { var_attack_skill = random }
+		set_variable = { var_defense_skill = random }
+		set_variable = { var_planning_skill = random }
+		set_variable = { var_logistics_skill = random }
+
+		multiply_temp_variable = { var_skill = 100 }
+		multiply_temp_variable = { var_attack_skill = 100 }
+		multiply_temp_variable = { var_defense_skill = 100 }
+		multiply_temp_variable = { var_planning_skill = 100 }
+		multiply_temp_variable = { var_logistics_skill = 100 }
+		
+		round_variable = var_skill 
+		round_variable =  var_attack_skill
+		round_variable = var_defense_skill
+		round_variable =  var_planning_skill
+		round_variable =  var_logistics_skill
+	
+			create_corps_commander = {
+	traits = {  offensive_doctrine brilliant_strategist career_officer media_personality politically_connected }
+	skill = 8
+	
+	attack_skill = "[?var_attack_skill]"
+	defense_skill = "[?var_defense_skill]"
+	planning_skill = "[?var_planning_skill]"
+	logistics_skill = "[?var_logistics_skill]"
+		}
+		set_variable = { var_skill = random }
+		set_variable = { var_attack_skill = random }
+		set_variable = { var_defense_skill = random }
+		set_variable = { var_planning_skill = random }
+		set_variable = { var_logistics_skill = random }
+
+		multiply_temp_variable = { var_skill = 100 }
+		multiply_temp_variable = { var_attack_skill = 100 }
+		multiply_temp_variable = { var_defense_skill = 100 }
+		multiply_temp_variable = { var_planning_skill = 100 }
+		multiply_temp_variable = { var_logistics_skill = 100 }
+		
+		round_variable = var_skill 
+		round_variable =  var_attack_skill
+		round_variable = var_defense_skill
+		round_variable =  var_planning_skill
+		round_variable =  var_logistics_skill
+	
+			create_corps_commander = {
+	traits = {  offensive_doctrine brilliant_strategist career_officer media_personality politically_connected }
+	skill = 8
+	
+	attack_skill = "[?var_attack_skill]"
+	defense_skill = "[?var_defense_skill]"
+	planning_skill = "[?var_planning_skill]"
+	logistics_skill = "[?var_logistics_skill]"
 		}
 
 		set_variable = { var_skill = random }
@@ -3003,17 +3282,16 @@ focus = {
 		round_variable = var_defense_skill
 		round_variable =  var_planning_skill
 		round_variable =  var_logistics_skill
-
-	create_corps_commander = {
+	
+		create_corps_commander = {
 	traits = {  offensive_doctrine brilliant_strategist career_officer media_personality politically_connected }
-	skill = var_skill 
-
-	attack_skill = var_attack_skill
-	defense_skill = var_defense_skill
-	planning_skill = var_planning_skill
-	logistics_skill = var_logistics_skill
+	skill = 8
+	
+	attack_skill = "[?var_attack_skill]"
+	defense_skill = "[?var_defense_skill]"
+	planning_skill = "[?var_planning_skill]"
+	logistics_skill = "[?var_logistics_skill]"
 		}
-
 		set_variable = { var_skill = random }
 		set_variable = { var_attack_skill = random }
 		set_variable = { var_defense_skill = random }
@@ -3031,81 +3309,28 @@ focus = {
 		round_variable = var_defense_skill
 		round_variable =  var_planning_skill
 		round_variable =  var_logistics_skill
-
-	create_corps_commander = {
+			create_corps_commander = {
 	traits = {  offensive_doctrine brilliant_strategist career_officer media_personality politically_connected }
-	skill = var_skill 
-
-	attack_skill = var_attack_skill
-	defense_skill = var_defense_skill
-	planning_skill = var_planning_skill
-	logistics_skill = var_logistics_skill
+	skill = 8
+	
+	attack_skill = "[?var_attack_skill]"
+	defense_skill = "[?var_defense_skill]"
+	planning_skill = "[?var_planning_skill]"
+	logistics_skill = "[?var_logistics_skill]"
 		}
 
-		set_variable = { var_skill = random }
-		set_variable = { var_attack_skill = random }
-		set_variable = { var_defense_skill = random }
-		set_variable = { var_planning_skill = random }
-		set_variable = { var_logistics_skill = random }
 
-		multiply_temp_variable = { var_skill = 100 }
-		multiply_temp_variable = { var_attack_skill = 100 }
-		multiply_temp_variable = { var_defense_skill = 100 }
-		multiply_temp_variable = { var_planning_skill = 100 }
-		multiply_temp_variable = { var_logistics_skill = 100 }
-		
-		round_variable = var_skill 
-		round_variable =  var_attack_skill
-		round_variable = var_defense_skill
-		round_variable =  var_planning_skill
-		round_variable =  var_logistics_skill
-
-	create_corps_commander = {
-	traits = {  offensive_doctrine brilliant_strategist career_officer media_personality politically_connected }
-	skill = var_skill 
-
-	attack_skill = var_attack_skill
-	defense_skill = var_defense_skill
-	planning_skill = var_planning_skill
-	logistics_skill = var_logistics_skill
-		}
-
-		set_variable = { var_skill = random }
-		set_variable = { var_attack_skill = random }
-		set_variable = { var_defense_skill = random }
-		set_variable = { var_planning_skill = random }
-		set_variable = { var_logistics_skill = random }
-
-		multiply_temp_variable = { var_skill = 100 }
-		multiply_temp_variable = { var_attack_skill = 100 }
-		multiply_temp_variable = { var_defense_skill = 100 }
-		multiply_temp_variable = { var_planning_skill = 100 }
-		multiply_temp_variable = { var_logistics_skill = 100 }
-		
-		round_variable = var_skill 
-		round_variable =  var_attack_skill
-		round_variable = var_defense_skill
-		round_variable =  var_planning_skill
-		round_variable =  var_logistics_skill
-
-	create_corps_commander = {
-	traits = {  offensive_doctrine brilliant_strategist career_officer media_personality politically_connected }
-	skill = var_skill 
-
-	attack_skill = var_attack_skill
-	defense_skill = var_defense_skill
-	planning_skill = var_planning_skill
-	logistics_skill = var_logistics_skill
-		}
+}
 }
 
-}
 focus = {
-		id = UCA_apoint_officers
+		id = UCA_one_for_all_and_all_for_one
 		icon = GFX_goal_generic_production
 		 dynamic = yes
-		x = 5
-		y = 0
+		relative_position_id = UCA_apoint_officers 
+		prerequisite = { focus =UCA_apoint_officers   }
+		x = 0
+		y = 2
 		cost = 10
 		ai_will_do = { 
 			factor = 10
@@ -3117,37 +3342,11 @@ focus = {
 	
 		available_if_capitulated = no
 
-		completion_reward = {
-create_field_marshal = {
-	traits = {  trickster armor_officer panzer_leader war_hero trait_reckless }
-	skill = 7
-	attack_skill = 7 
-	defense_skill = 7
-	planning_skill = 7
-	logistics_skill = 7
-}
-
-create_field_marshal = {
-	traits = {  trait_engineer trait_cautious brilliant_strategist harsh_leader }
-	skill = 6
-	attack_skill = 7
-	defense_skill = 5
-	planning_skill = 4
-	logistics_skill = 6
-}
-
-create_field_marshal = {
-	traits = { logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected }
-	skill = 8
-	attack_skill = 8
-	defense_skill = 8
-	planning_skill = 8
-	logistics_skill = 8
+		completion_reward = { 
+add_manpower = 10000000
 }
 }
 
-
-}
 focus = {
 		id = UCA_take_direct_command 
 		icon = GFX_goal_generic_production

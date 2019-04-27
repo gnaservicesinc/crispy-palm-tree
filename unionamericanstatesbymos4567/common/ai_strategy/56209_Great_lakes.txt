@@ -9,7 +9,7 @@ operation_LakeStrike = {
 		}
 
 
-about = {
+abort = {
 		NOT = { is_in_faction_with = UMI }
 		NOT = {has_variable =var_Michigan_States}
 	 
@@ -110,7 +110,7 @@ operation_UnifiedLake = {
 		
 	
 
-about = {
+abort = {
 				OR = {
 			NOT = { country_exists = USA }
 			NOT = { country_exists = UCA }

@@ -1,4 +1,4 @@
-oob = "State_Guard"
+﻿oob = "State_Guard"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "USA_1936_naval_mtg"
@@ -22,7 +22,7 @@ create_country_leader = {
 	}
 }
 ﻿capital = 393
-
+set_major = yes
 set_research_slots = 4
 set_stability = 0.95
 set_war_support = 15
@@ -32,24 +32,25 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 0
-			banned = yes
+			popularity = 92
+			
 		}
 
 		fascism = {
-			popularity = 25
-			
+			popularity = 2
+			banned = yes
 		}
 
 		american_isolationism = {
-			popularity = 70
-			
+			popularity = 2
+			banned = yes	
 		}
 		american_globalism = {
-			popularity = 5
+			popularity = 2
+			banned = yes
 			}
 		communism = {
-			popularity = 0
+			popularity = 2
 			banned = yes
 		}
 	}
@@ -92,7 +93,7 @@ add_to_array = { array = USA.Michigan_States value= UMN }
 add_to_array = { array = USA.Michigan_States value= UDK }
 add_to_array = { array = USA.Michigan_States value= UNE }
 add_to_array = { array = USA.Michigan_States value= UIA }
-USA {
+USA = {
 add_to_array = { array = Michigan_States value= UWI }
 add_to_array = { array = Michigan_States value= UOH }
 add_to_array = { array = Michigan_States value= UIL }

@@ -1,0 +1,40 @@
+operation_evil_hen = {
+ reversed = yes
+    enable = {
+		has_variable =var_American_States
+		NOT = { tag = USA }
+		NOT = { country_exists	 = UCA }
+		NOT = { country_exists	 = UTX }
+		NOT = { country_exists	 = UAL }
+		NOT = { is_in_faction_with = USA }	
+}
+abort = { 
+OR  = {
+is_in_faction_with = USA
+}}
+    ai_strategy = {
+		type = conquer
+		id = USA			
+		value = 9000
+	}
+	ai_strategy = {
+		type = invade
+		id = USA			
+		value = 9000
+	}
+      ai_strategy = {
+		type = contain
+		id = USA			
+		value = 9000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = USA			
+		value = 9000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = USA			
+		value = 9000
+	}
+}
