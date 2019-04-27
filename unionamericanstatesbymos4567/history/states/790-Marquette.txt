@@ -4,29 +4,31 @@ state = {
     manpower = 30287
     state_category = city
    
-    provinces = {
-        751
-    }
-    
+   
     resources = {
   
-		steel=26 # was: 24.000
-		aluminium = 35
-		oil = 95
+		steel=26.000
+		aluminium = 3.000
+		oil = 19.000
 		
 	
     }
     
     history = {
-     		owner = UMI
+     	owner = UMI
 	add_core_of = UMI        
 	add_core_of = USA
         }
 	buildings = {
-			infrastructure = 7
-			industrial_complex = 3
-			air_base = 1
+			infrastructure = 5
+			industrial_complex = 4
+			air_base = 2
 		
 
 		}
+
+	 provinces = {
+        751
+    }
+    
     }

@@ -6,6 +6,10 @@ re_conquest_america = {
 			visible = {
 				NOT = { is_subject_of = USA } 
 				NOT = { tag = USA } 
+				NOT = { tag = UCA } 
+				NOT = { tag = UMI } 
+				NOT = { tag = UAL } 
+				NOT = { tag = UTX } 
 				country_exists = USA
 			}
 		 cost = 500
@@ -44,8 +48,10 @@ re_conquest_america = {
 				NOT = { is_subject_of = USA } 
 				NOT = { tag = USA } 
 				NOT = { tag = UCA }
-				country_exists = UCA
-				
+				NOT = { tag = UMI } 
+				NOT = { tag = UAL } 
+				NOT = { tag = UTX }
+			
 				
 			}
 		 cost = 25
@@ -78,6 +84,10 @@ re_conquest_join_texas = {
 				NOT = { is_subject_of = UTX }  
 				NOT = { tag = USA } 
 				NOT = { tag = UTX }
+				NOT = { tag = UCA } 
+				NOT = { tag = UMI } 
+				NOT = { tag = UAL } 
+				
 				country_exists = UTX
 				has_government = american_globalism
 			}
@@ -111,6 +121,10 @@ re_conquest_join_the_south  = {
 				NOT = { is_subject_of = UAL } 
 				NOT = { tag = USA } 
 				NOT = { tag = UAL }
+				NOT = { tag = UCA } 
+				NOT = { tag = UMI } 
+				NOT = { tag = UAL } 
+				NOT = { tag = UTX }
 				country_exists = UAL
 			has_government = american_isolationism
 
@@ -146,8 +160,11 @@ re_conquest_join_michigan  = {
 				NOT = { is_subject_of = USA } 
 				NOT = { tag = USA } 		
 				NOT = { tag = UMI } 
+				NOT = { tag = UCA } 
+				NOT = { tag = UAL } 
+				NOT = { tag = UTX }
 				has_government = democratic
-				UMI = { check_variable = { var_infiltrator_destabilization > 1 }} 
+				 check_variable = { UMI.var_infiltrator_destabilization > 2 }
 			}
 		 cost = 25
 		days_remove = 10
@@ -158,11 +175,11 @@ re_conquest_join_michigan  = {
 			modifier = {	 add = [?UMI.var_infiltration_level] }
 		}
 remove_effect = {
-
+	if = { limit = { check_variable = { UMI.var_infiltrator_destabilization > 0 } }
 		UMI = {
 			
 			if = { limit = { has_dlc = "Man the Guns"}
-				inherit_technology = ROOT }
+				inherit_technology = ROOT 
 
 
 			if = { limit = { has_dlc = "Together for Victory"}
@@ -175,6 +192,9 @@ remove_effect = {
           }
 			
 	}
+
+}
+}
 re_conquest_support_communism = {
 		visible = {
 				NOT = { is_subject_of = USA } 
@@ -182,8 +202,9 @@ re_conquest_support_communism = {
 				NOT = { tag = UMI }
 				NOT = { tag = UAL }
 				NOT = { tag = UTX }
+				
 				country_exists = UCA
-				UCA = { check_variable = { var_infiltrator_destabilization > 1 }}
+				 check_variable = { UCA.var_infiltrator_destabilization > 2 }
 			}
 ai_will_do = {
 			factor = 1
@@ -193,7 +214,7 @@ ai_will_do = {
 		days_remove = 1
 		days_re_enable = 30
 	remove_effect = {
-		UCA = { subtract_from_variable = { var_infiltrator_destabilization = 1}}
+		 subtract_from_variable = { UCA. var_infiltrator_destabilization = 1}
 		ROOT = { set_politics = { 
 
 	parties = {
@@ -237,7 +258,7 @@ re_conquest_support_american_isolationism = {
 				NOT = { tag = UCA }
 				NOT = { tag = UTX }
 				country_exists = UAL
-				UAL = { check_variable = { var_infiltrator_destabilization > 1 }}
+				UAL = { check_variable = { var_infiltrator_destabilization > 2 }}
 			}
 ai_will_do = {
 
@@ -248,7 +269,7 @@ ai_will_do = {
 		days_remove = 1
 		days_re_enable = 30
 	remove_effect = {
-	UAL = { subtract_from_variable = { var_infiltrator_destabilization = 1}}
+	subtract_from_variable = { UAL.var_infiltrator_destabilization = 1}
 		ROOT = { set_politics = {
 
 	parties = {
@@ -295,7 +316,7 @@ re_conquest_support_american_globalism = {
 				NOT = { tag = UCA }
 				NOT = { tag = UAL }
 				country_exists = UTX
-				UTX = { check_variable = { var_infiltrator_destabilization > 1 }}
+				UTX = { check_variable = { var_infiltrator_destabilization > 2 }}
 				}
 ai_will_do = {
 			factor = 1
@@ -357,8 +378,8 @@ ai_will_do = {
 		days_remove = 1
 		days_re_enable = 30
 	remove_effect = {
-		ROOT = { set_politics = {
 		UMI = { subtract_from_variable = { var_infiltrator_destabilization = 1}}
+		ROOT = { set_politics = {
 	parties = {
 		democratic = { 
 			popularity = 100
@@ -392,7 +413,7 @@ ai_will_do = {
 
 }	
 
-re_conquest_army_recuitment = {
+re_conquest_army_recruitment = {
 		visible = {
 				tag = USA				
  
@@ -405,19 +426,15 @@ re_conquest_army_recuitment = {
 			factor = 1
 		}
 remove_effect = {
-	ROOT = { attack_bonus_against = 0.1
-weekly_manpower  = 1000
-stability_factor = 0.10
+	if={limit={NOT={has_idea = military_advertising_and_pr_campaign}}
+		 add_ideas = { military_advertising_and_pr_campaign}
+}	
 }
-
-}
-
-
-
 
 }
 
 re_conquest_prepare_to_retake_the_homeland = {
+
 		visible = {
 				tag = USA				
  
@@ -426,19 +443,13 @@ re_conquest_prepare_to_retake_the_homeland = {
 		days_remove = 30
 		fire_only_once = yes
 	remove_effect = {
-
-	every_country = {
-
-			for_each_loop = {
-                  	array = American_States
-			ROOT = { targeted_modifier = { tag = v attack_bonus_against = 0.9 } }
-			ROOT = { targeted_modifier = { tag = v defense_bonus_against = 0.9 } }
-			}
-		ROOT = { mobilization_speed = 0.9 }
+	if={limit={NOT={has_idea = american_states_military_industrial_complex}}
+		 add_ideas = { american_states_military_industrial_complex}
+}
 	}
 
 }
-}
+
 re_conquest_retake_the_homeland = {
 		visible = {
 				tag = USA				
@@ -482,15 +493,37 @@ re_conquest_retake_the_homeland = {
 	ai_will_do = {
 			factor = 1
 		}
-		   remove_effect = { ROOT = {
-		fuel_gain_factor = .45
-fuel_gain_factor_from_states =.47	
+		 
+			remove_effect = {
+	if={limit={NOT={has_idea = american_states_goverment_industrial_wellfare}}
+		 add_ideas = {american_states_goverment_industrial_wellfare}
+}
+	}	
+}
+	
+	re_conquest_department_of_energy = {
+		 
+			visible = {
+				tag = USA 
+			}
+		 cost = 500
+		days_remove = 1
+		fire_only_once = yes
+	ai_will_do = {
+			factor = 1
+		}
+		 
+			remove_effect = {
+	if={limit={NOT={has_idea = american_states_department_of_energy}}
+		 add_ideas = { american_states_department_of_energy}
+}
+	}	
 }
 		
-          }
+          
 			
 	
-	}
+	
 
 
 

@@ -1,7 +1,7 @@
 state = {
     id = 788
     name = STATE_788
-    manpower = 1713244
+    manpower = 58713244
     state_category = megalopolis
    
     provinces = {
@@ -10,12 +10,12 @@ state = {
     
     resources = {
   
-		steel=213 # was: 24.000
-		aluminium = 500
-		tungsten = 500
-		rubber = 875
-		chromium = 985
-		oil = 857
+		steel=413.000 
+		aluminium = 700.000
+		tungsten = 700.000
+		rubber = 975.000
+		chromium = 985.000
+		oil = 957.000
 		
 	
     }
@@ -28,13 +28,48 @@ state = {
 		victory_points = {
 			6984 5 
 		}
-		add_core_of = UMI
 		add_core_of = USA
-		add_core_of = UAL
-		add_core_of = UTX
-		add_core_of = UCA
+		add_core_of =  UIL
+		add_core_of =  UNY
+		add_core_of =  UAL
+		add_core_of =  UCA
+		add_core_of =  UTX
+		add_core_of =  UIN
+		add_core_of =  UCI
+		add_core_of =  UDK
+		add_core_of =  UMN
+		add_core_of =  UEN
+		add_core_of =  UKY
+		add_core_of =  UTN
+		add_core_of =  UMS
+		add_core_of =  UFL
+		add_core_of =  UGO
+		add_core_of =  UVA
+		add_core_of =  UNE
+		add_core_of =  UME
+		add_core_of =  UAR
+		add_core_of =  ULA
+		add_core_of =  UWI
+		add_core_of =  UOK
+		add_core_of =  UIA
+		add_core_of =  UKA
+		add_core_of =  UOH
+		add_core_of =  UPE
+		add_core_of =  UML
+		add_core_of =  UNJ
+		add_core_of =  UWA
+		add_core_of =  UID
+		add_core_of =  UAZ
+		add_core_of =  UUT
+		add_core_of =  UNV
+		add_core_of =  UOR
+		add_core_of =  UMO
+		add_core_of =  UCO
+		add_core_of =  UMX
+		add_core_of =  UMI
+		add_core_of =  UWY
 			buildings = {
-			infrastructure = 7
+			infrastructure = 10
 			industrial_complex = 10
 			air_base = 10
 		

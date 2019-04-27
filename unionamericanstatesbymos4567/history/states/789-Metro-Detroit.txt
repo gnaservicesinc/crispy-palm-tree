@@ -1,7 +1,7 @@
 state = {
     id = 789
     name = STATE_789
-    manpower = 4278244
+    manpower = 7278244
     state_category = megalopolis
    
     provinces = {
@@ -10,12 +10,12 @@ state = {
     
     resources = {
   
-		steel=260 # was: 24.000
-		aluminium = 150
-		tungsten = 150
-		rubber = 187
-		chromium = 198
-		oil = 185
+		steel=260.000
+		aluminium = 150.000
+		tungsten = 150.000
+		rubber = 187.000
+		chromium = 198.000
+		oil = 185.000
 		
 	
     }

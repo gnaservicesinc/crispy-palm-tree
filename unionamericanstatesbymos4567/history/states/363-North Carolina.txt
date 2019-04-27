@@ -9,9 +9,9 @@ state={
 	history={
 		owner = UCI
 		buildings = {
-			infrastructure = 60
-			industrial_complex = 30
-			air_base = 30
+			infrastructure = 10
+			industrial_complex = 10
+			air_base = 10
 			1132 = {
 				naval_base = 10
 			}

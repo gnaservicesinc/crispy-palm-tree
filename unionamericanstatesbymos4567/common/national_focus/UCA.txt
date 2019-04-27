@@ -1281,6 +1281,8 @@ ROOT = { NOT = { is_in_faction_with = USA }}
 			factor = 1
 		}
 		 available = {
+			SOV = { has_government = communism }
+			ROOT = { has_government = communism }
 
 		}
 		completion_reward = {
@@ -1311,16 +1313,26 @@ ROOT = { NOT = { is_in_faction_with = USA }}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no	
-		x = 2
+		x = -2
 		y = 0
 		dynamic =  yes
 		cost = 10
+			 available = {
+			SOV = { has_government = communism }
+			ROOT = { has_government = communism }
 
+		}
 		ai_will_do = {
 			factor = 1
 		}
-
+	completion_reward = {
+	
+	if = { limit = { country_exists	= SOV }
+			SOV = { 
+	leave_faction	= yes
 	}
+	}
+	}}
 ####################################################################
 #
 #	Foreign Partners End of Section 1. 
@@ -3175,7 +3187,7 @@ focus = {
 
 create_field_marshal = {
 				name = "Governor Jim Folsom"
-				picture = GFX_J_FOLSOM
+				picture = J_FOLSOM
 				skill = 8
 				attack_skill = 8
 				defense_skill = 8
@@ -3188,7 +3200,7 @@ create_field_marshal = {
 
 create_field_marshal = {
 				name = "Führer Bibb Graves"
-				picture = GFX_BIBB_GRAVES
+				picture = BIBB_GRAVES
 				skill = 8
 				attack_skill = 8
 				defense_skill = 8
@@ -3201,7 +3213,7 @@ if = { limit = { has_country_leader = { ruling_only = yes name = "Fred W. Green"
 
 create_field_marshal = {
 				name = "Fred W. Green"
-				picture = GFX_FRED_WARREN_GREEN
+				picture = FRED_WARREN_GREEN
 				skill = 8
 				attack_skill = 8
 				defense_skill = 8

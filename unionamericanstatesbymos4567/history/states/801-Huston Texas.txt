@@ -9,7 +9,7 @@ state={
 	
 	resources={
 		
-		aluminium=98 # was: 96
+		aluminium=98.000
 		steel=60.000
 		tungsten=15.000
 		rubber=17.000
@@ -25,8 +25,10 @@ state={
 	}
 
 		
+		add_core_of = UTX
 		add_core_of = USA
-		add_core_of = UTX	
+		add_core_of = MEX
+	
 		
 		}
 

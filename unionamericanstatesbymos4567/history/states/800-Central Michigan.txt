@@ -17,7 +17,7 @@ state={
 		add_core_of = UMI
 		add_core_of = USA
 		victory_points = {
-			1710 20 
+			13155 20 
 		}
 
 

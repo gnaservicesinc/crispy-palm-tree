@@ -42,8 +42,10 @@ state={
 			}
 
 		}
-		add_core_of = USA
 		add_core_of = UTX
+		add_core_of = USA
+		add_core_of = MEX
+
 
 	}
 

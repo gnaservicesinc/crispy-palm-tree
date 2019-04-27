@@ -2,17 +2,17 @@
 state={
 	id=797
 	name="STATE_797"
-	manpower = 967748
+	manpower = 9687748
 	
 	state_category = megalopolis
 	
 	resources={
-		oil=980 # was: 350
+		oil=980 # was: 350.000
 		steel=213 # was: 24.000
-		aluminium = 500
-		tungsten = 500
-		rubber = 875
-		chromium = 985
+		aluminium = 500.000
+		tungsten = 500.000
+		rubber = 875.000
+		chromium = 985.000
 	}
 
 	history={

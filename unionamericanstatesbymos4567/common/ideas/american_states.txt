@@ -3,16 +3,72 @@ ideas = {
 
 	 country = {
 
-hidden_ideas = {
-      state_disruption_problem = {
-           modifier = {
 
-               stability_weekly = -0.25
-           }
-      }
- }
+military_advertising_and_pr_campaign={
+	picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+	weekly_manpower	 = 10000
+	war_support_weekly = 0.13	
+	non_core_manpower = 0.50
+	training_time_factor= -0.50
+	conscription = 1.0
+        planning_speed = 0.5
+	war_support_weekly = 0.50
+	stability_weekly = 0.10
+	}
+			
+}
+american_states_military_industrial_complex ={
+	picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+	weekly_manpower	 = 10000
+	war_support_weekly = 0.20	
+	training_time_factor= -0.10
+	defence = 1.0
+	offence = 1.0
+	}
 
-infiltration_by_spies {
+			
+}
+
+american_states_goverment_industrial_wellfare = {
+	picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+modifier = {
+	industrial_capacity_factory=0.50
+	production_oil_factor = 0.25
+	local_resources_factor = 0.25
+	consumer_goods_factor = 0.25
+	production_factory_max_efficiency_factor = 0.25
+	industrial_capacity_dockyard = 0.25
+	industrial_capacity_factory = 0.25
+
+
+}
+}
+american_states_department_of_energy = {
+	picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+modifier = {
+	production_oil_factor = 0.5
+fuel_gain_factor =0.45
+fuel_gain_factor_from_states = 0.47
+	local_resources_factor = 0.10
+		consumer_goods_factor = 0.05
+}
+}
+
+infiltration_by_spies = {
 	picture = generic_war_preparation
 		allowed = {always = no}
 		allowed_civil_war = {always = no}
@@ -139,7 +195,7 @@ infiltration_by_spies {
 		modifier = {
 			production_speed_arms_factory_factor = 0.20
 			production_factory_efficiency_gain_factor = 0.20
-			democratic_drift = .80 
+			democratic_drift = 0.80 
 			democratic_acceptance = 90
 			drift_defence_factor = 0.25
 			weekly_manpower = 1000
@@ -270,7 +326,7 @@ infiltration_by_spies {
 		modifier = {
 			production_speed_arms_factory_factor = 0.20
 			production_factory_efficiency_gain_factor = 0.20
-			communism_drift = .30 
+			communism_drift = 0.30 
 			communism_acceptance = 90
 			drift_defence_factor = 0.25
 			weekly_manpower = 1000
@@ -292,7 +348,7 @@ infiltration_by_spies {
 		modifier = {
 			production_speed_arms_factory_factor = 0.20
 			production_factory_efficiency_gain_factor = 0.20
-			communism_drift = .30 
+			communism_drift = 0.30 
 			communism_acceptance = 90
 			drift_defence_factor = 0.25
 			weekly_manpower = 1000
