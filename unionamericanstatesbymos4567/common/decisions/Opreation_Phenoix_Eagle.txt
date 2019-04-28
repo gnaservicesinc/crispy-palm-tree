@@ -1,0 +1,112 @@
+Phenoix_Eagle = {
+
+re_conquest_army_recruitment = {
+		visible = {
+				tag = USA				
+ 
+		}
+		 cost = 150
+		days_remove = 1
+		days_re_enable = 90
+	
+	ai_will_do = {
+			factor = 1
+		}
+remove_effect = {
+	if={limit={NOT={has_idea = military_advertising_and_pr_campaign}}
+		 add_ideas = { military_advertising_and_pr_campaign}
+}	
+}
+
+}
+
+re_conquest_prepare_to_retake_the_homeland = {
+
+		visible = {
+				tag = USA				
+ 
+		}
+	 cost = 250
+		days_remove = 30
+		fire_only_once = yes
+	remove_effect = {
+	if={limit={NOT={has_idea = american_states_military_industrial_complex}}
+		 add_ideas = { american_states_military_industrial_complex}
+}
+	}
+
+}
+
+re_conquest_retake_the_homeland = {
+		visible = {
+				tag = USA				
+ 
+		}
+          target_trigger = {
+		
+
+		 FROM = {
+                 has_variable =var_American_States
+		NOT = { has_government = democratic }
+		NOT = { is_subject_of = USA }
+		NOT = { tag = USA }
+		NOT = { is_in_faction_with = USA }	
+		NOT = { has_war_together_with = USA }
+			}
+			
+		
+		
+               }
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 1000
+		fire_only_once = yes
+		complete_effect = {
+			ROOT = { create_wargoal = { target =     FROM	 type = annex_everything } }
+  			FROM = { create_wargoal = { target =     ROOT	 type = annex_everything } }
+        	}
+
+}
+
+	re_conquest_support_industry = {
+		 
+			visible = {
+				tag = USA 
+			}
+		 cost = 500
+		days_remove = 1
+		fire_only_once = yes
+	ai_will_do = {
+			factor = 1
+		}
+		 
+			remove_effect = {
+	if={limit={NOT={has_idea = american_states_goverment_industrial_wellfare}}
+		 add_ideas = {american_states_goverment_industrial_wellfare}
+}
+	}	
+}
+	
+	re_conquest_department_of_energy = {
+		 
+			visible = {
+				tag = USA 
+			}
+		 cost = 500
+		days_remove = 1
+		fire_only_once = yes
+	ai_will_do = {
+			factor = 1
+		}
+		 
+			remove_effect = {
+	if={limit={NOT={has_idea = american_states_department_of_energy}}
+		 add_ideas = { american_states_department_of_energy}
+}
+	}	
+}
+		
+          
+		
+}

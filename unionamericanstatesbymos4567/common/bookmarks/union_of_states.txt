@@ -3,7 +3,7 @@ bookmarks = {
 		name = "UNION_OF_STATES_NAME"
 		desc = "UNION_OF_STATES_DESC"
 		date = 1936.1.1.12
-		picture = "BookMarkStartGFX"
+		picture = "GFX_select_date_UnionofAmericanStates"
 		default_country = "USA"
 		default = yes
 		

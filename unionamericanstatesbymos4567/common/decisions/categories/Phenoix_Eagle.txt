@@ -1,0 +1,3 @@
+Phenoix_Eagle = {
+	visible = { tag  =  USA}
+}

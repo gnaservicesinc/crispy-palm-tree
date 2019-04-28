@@ -60,15 +60,81 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = yes
 }
-
 add_ideas = {
 	free_trade
 	home_of_the_free
 }
 create_faction = "Great Lakes Treaty Organization"
-
  set_variable = { var_Michigan_States = 1 }
  set_variable = { var_American_States = 1 }
+
+effect = {add_dynamic_modifier = { state_swing_modifier}}
+
+UWI  = { 
+
+set_variable = { amer_state_swing_resistance = random}
+set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_number_of_swings = 0}
+effect = {add_dynamic_modifier = { state_swing_modifier}}
+}
+
+UOH  = { 
+
+set_variable = { amer_state_swing_resistance = random}
+set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_number_of_swings = 0}
+effect = {add_dynamic_modifier = { state_swing_modifier}}
+}
+
+UIL  = { 
+
+set_variable = { amer_state_swing_resistance = random}
+set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_number_of_swings = 0}
+effect = {add_dynamic_modifier = { state_swing_modifier}}
+}
+
+UIN  = { 
+
+set_variable = { amer_state_swing_resistance = random}
+set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_number_of_swings = 0}
+effect = {add_dynamic_modifier = { state_swing_modifier}}
+}
+
+UMN  = { 
+
+set_variable = { amer_state_swing_resistance = random}
+set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_number_of_swings = 0}
+effect = {add_dynamic_modifier = { state_swing_modifier}}
+}
+
+UDK  = { 
+
+set_variable = { amer_state_swing_resistance = random}
+set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_number_of_swings = 0}
+effect = {add_dynamic_modifier = { state_swing_modifier}}
+}
+
+UNE  = { 
+
+set_variable = { amer_state_swing_resistance = random}
+set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_number_of_swings = 0}
+effect = {add_dynamic_modifier = { state_swing_modifier}}
+}
+
+UIA  = { 
+
+set_variable = { amer_state_swing_resistance = random}
+set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_number_of_swings = 0}
+effect = {add_dynamic_modifier = { state_swing_modifier}}
+}
+ 
+
 UWI  = { set_variable = { var_Michigan_States = 1 }  }
 UOH  = { set_variable = { var_Michigan_States = 1 }  }
 UIL  = { set_variable = { var_Michigan_States = 1 }  }
@@ -77,6 +143,8 @@ UMN  = { set_variable = { var_Michigan_States = 1 }  }
 UDK  = { set_variable = { var_Michigan_States = 1 }  }
 UNE  = { set_variable = { var_Michigan_States = 1 }  }
 UIA  = { set_variable = { var_Michigan_States = 1 }  } 
+
+
 UWI  = { set_variable = { var_American_States = 1 }  }
 UOH  = { set_variable = { var_American_States = 1 }  }
 UIL  = { set_variable = { var_American_States = 1 }  }
@@ -85,6 +153,8 @@ UMN  = { set_variable = { var_American_States = 1 }  }
 UDK  = { set_variable = { var_American_States = 1 }  }
 UNE  = { set_variable = { var_American_States = 1 }  }
 UIA  = { set_variable = { var_American_States = 1 }  }
+
+
 add_to_array = { array = USA.Michigan_States value= UWI }
 add_to_array = { array = USA.Michigan_States value= UOH }
 add_to_array = { array = USA.Michigan_States value= UIL }
@@ -93,6 +163,7 @@ add_to_array = { array = USA.Michigan_States value= UMN }
 add_to_array = { array = USA.Michigan_States value= UDK }
 add_to_array = { array = USA.Michigan_States value= UNE }
 add_to_array = { array = USA.Michigan_States value= UIA }
+
 USA = {
 add_to_array = { array = Michigan_States value= UWI }
 add_to_array = { array = Michigan_States value= UOH }
@@ -270,3 +341,4 @@ if = {
 			plane_reliability_upgrade = 3
 		}
 	}
+	

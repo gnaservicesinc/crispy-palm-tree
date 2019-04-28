@@ -1,0 +1,4 @@
+spriteType = {
+    name = "GFX_select_date_UnionofAmericanStates"
+    texturefile = "gfx/interface/UnionofAmericanStates_bookmark.dds"
+}

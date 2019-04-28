@@ -67,6 +67,64 @@ add_ideas = {
 }
 set_variable = { var_American_States = 1 } 
 set_variable = { var_Southern_States = 1 } 
+effect = {add_dynamic_modifier = { state_swing_modifier}}
+
+ UCI  = { 
+
+set_variable = { amer_state_swing_resistance = random}
+set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_number_of_swings = 0}
+effect = {add_dynamic_modifier = { state_swing_modifier}}
+}
+
+ UME  = { 
+
+set_variable = { amer_state_swing_resistance = random}
+set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_number_of_swings = 0}
+effect = {add_dynamic_modifier = { state_swing_modifier}}
+}
+
+ UTN  = { 
+
+set_variable = { amer_state_swing_resistance = random}
+set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_number_of_swings = 0}
+effect = {add_dynamic_modifier = { state_swing_modifier}}
+}
+
+ UKY  = { 
+
+set_variable = { amer_state_swing_resistance = random}
+set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_number_of_swings = 0}
+effect = {add_dynamic_modifier = { state_swing_modifier}}
+}
+
+ UMS  = { 
+
+set_variable = { amer_state_swing_resistance = random}
+set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_number_of_swings = 0}
+effect = {add_dynamic_modifier = { state_swing_modifier}}
+}
+
+ UFL  = { 
+
+set_variable = { amer_state_swing_resistance = random}
+set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_number_of_swings = 0}
+effect = {add_dynamic_modifier = { state_swing_modifier}}
+}
+
+ UGO  = { 
+
+set_variable = { amer_state_swing_resistance = random}
+set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_number_of_swings = 0}
+effect = {add_dynamic_modifier = { state_swing_modifier}}
+}
+
 
  UCI  = { set_variable = { var_Southern_States = 1 }  }
  UME  = { set_variable = { var_Southern_States = 1 }  }

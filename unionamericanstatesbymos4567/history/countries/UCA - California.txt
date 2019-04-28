@@ -57,6 +57,70 @@ add_ideas = {
 
 set_variable = { var_American_States = 1 }
 set_variable = { var_Cali_States = 1 }
+effect = {add_dynamic_modifier = { state_swing_modifier}}
+UWA = { 
+set_variable = { amer_state_swing_resistance = random}
+set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_number_of_swings = 0}
+effect = {add_dynamic_modifier = { state_swing_modifier}}
+}
+
+UOR = { 
+
+set_variable = { amer_state_swing_resistance = random}
+set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_number_of_swings = 0}
+effect = {add_dynamic_modifier = { state_swing_modifier}}
+}
+
+UNV = { 
+
+set_variable = { amer_state_swing_resistance = random}
+set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_number_of_swings = 0}
+effect = {add_dynamic_modifier = { state_swing_modifier}}
+}
+
+UMO = { 
+
+set_variable = { amer_state_swing_resistance = random}
+set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_number_of_swings = 0}
+effect = {add_dynamic_modifier = { state_swing_modifier}}
+}
+
+UWY = { 
+
+set_variable = { amer_state_swing_resistance = random}
+set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_number_of_swings = 0}
+effect = {add_dynamic_modifier = { state_swing_modifier}}
+}
+
+UID = { 
+
+set_variable = { amer_state_swing_resistance = random}
+set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_number_of_swings = 0}
+effect = {add_dynamic_modifier = { state_swing_modifier}}
+}
+
+UAZ = { 
+
+set_variable = { amer_state_swing_resistance = random}
+set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_number_of_swings = 0}
+effect = {add_dynamic_modifier = { state_swing_modifier}}
+}
+
+UUT = { 
+
+set_variable = { amer_state_swing_resistance = random}
+set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_number_of_swings = 0}
+effect = {add_dynamic_modifier = { state_swing_modifier}}
+}
+
 
 UWA = { set_variable = { var_American_States = 1 }  }
 UOR = { set_variable = { var_American_States = 1 }  }

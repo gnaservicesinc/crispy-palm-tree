@@ -1,0 +1,99 @@
+Eaglet_Strike= {
+
+	eaglet_send_1kmanpower_to_help_american_army = {
+         	 target_trigger = { FROM = { tag = USA }}
+		cost = 1
+		days_remove = 1
+		days_re_enable = 1
+		visible = {
+               has_manpower > 0
+          }
+		 available = {
+               has_manpower > 1000
+          }
+		  complete_effect = {
+               FROM = {
+			add_manpower = 1000	
+		}
+		add_manpower = -1000	
+		}
+	}
+
+	eaglet_send_5kmanpower_to_help_american_army = {
+         	 target_trigger = { FROM = { tag = USA }}
+		cost = 1
+		days_remove = 1
+		days_re_enable = 1
+		visible = {
+               has_manpower > 0
+          }
+		 available = {
+               has_manpower > 5000
+          }
+		  complete_effect = {
+               FROM = {
+			add_manpower = 5000	
+		}
+		add_manpower = -5000	
+		}
+	}
+
+	eaglet_send_10kmanpower_to_help_american_army = {
+         	 target_trigger = { FROM = { tag = USA }}
+		cost = 1
+		days_remove = 1
+		days_re_enable = 1
+		visible = {
+               has_manpower > 0
+          }
+		 available = {
+               has_manpower > 10000
+          }
+		  complete_effect = {
+               FROM = {
+			add_manpower = 10000	
+		}
+		add_manpower = -10000	
+		}
+	}
+
+	eaglet_send_100kmanpower_to_help_american_army = {
+         	 target_trigger = { FROM = { tag = USA }}
+		cost = 1
+		days_remove = 1
+		days_re_enable = 1
+		visible = {
+               has_manpower > 0
+          }
+		 available = {
+               has_manpower > 100000
+          }
+		  complete_effect = {
+               FROM = {
+			add_manpower = 100000	
+		}
+		add_manpower = -100000	
+		}
+	}
+
+	eaglet_send_1Mmanpower_to_help_american_army = {
+         	 target_trigger = { FROM = { tag = USA }}
+		cost = 1
+		days_remove = 1
+		days_re_enable = 1
+		visible = {
+               has_manpower > 0
+          }
+		 available = {
+               has_manpower > 1000000
+          }
+		  complete_effect = {
+               FROM = {
+			add_manpower = 1000000	
+		}
+		add_manpower = -1000000	
+		}
+	}
+
+
+}#################

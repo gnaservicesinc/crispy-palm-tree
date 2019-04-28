@@ -64,6 +64,56 @@ add_ideas = {
 }
 set_variable = { var_American_States = 1 } 
 set_variable = { var_Texan_States = 1 } 
+effect = {add_dynamic_modifier = { state_swing_modifier}}
+UMX = { 
+
+set_variable = { amer_state_swing_resistance = random}
+set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_number_of_swings = 0}
+effect = {add_dynamic_modifier = { state_swing_modifier}}
+}
+
+UOK = { 
+
+set_variable = { amer_state_swing_resistance = random}
+set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_number_of_swings = 0}
+effect = {add_dynamic_modifier = { state_swing_modifier}}
+}
+
+UKA = { 
+
+set_variable = { amer_state_swing_resistance = random}
+set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_number_of_swings = 0}
+effect = {add_dynamic_modifier = { state_swing_modifier}}
+}
+
+UAR = { 
+
+set_variable = { amer_state_swing_resistance = random}
+set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_number_of_swings = 0}
+effect = {add_dynamic_modifier = { state_swing_modifier}}
+}
+
+ULA = { 
+
+set_variable = { amer_state_swing_resistance = random}
+set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_number_of_swings = 0}
+
+effect = {add_dynamic_modifier = { state_swing_modifier}}
+}
+
+UCO = { 
+
+set_variable = { amer_state_swing_resistance = random}
+set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_number_of_swings = 0}
+
+effect = {add_dynamic_modifier = { state_swing_modifier}}
+}
 
 UMX = { set_variable = { var_American_States = 1 }  }
 UOK = { set_variable = { var_American_States = 1 }  }
@@ -71,6 +121,7 @@ UKA = { set_variable = { var_American_States = 1 }  }
 UAR = { set_variable = { var_American_States = 1 }  }
 ULA = { set_variable = { var_American_States = 1 }  }
 UCO = { set_variable = { var_American_States = 1 }  }
+
 UMX = { set_variable = { var_Texan_States = 1 }  }
 UOK = { set_variable = { var_Texan_States = 1 }  }
 UKA = { set_variable = { var_Texan_States = 1 }  }

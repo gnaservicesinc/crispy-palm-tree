@@ -1,0 +1,3 @@
+Eaglet_Strike = {
+	visible = { is_subject_of =  USA}
+}

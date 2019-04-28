@@ -1,0 +1,185 @@
+union_member_state = {
+
+
+union_member_state_support_democracy = {
+
+		visible = {
+
+ if = { limit = { check_variable = { temp_desire > temp_resistance } }}} 
+
+	ai_will_do = {factor = [?amer_state_swing_desire] }
+		
+		cost = 150
+		days_remove = 1
+		days_re_enable = 30
+
+	remove_effect = {
+			 
+
+		if = { limit = { check_variable = { temp_desire > temp_resistance } }
+		set_temp_variable = { temp_stab2 = stability}
+
+		set_variable = { amer_state_swing_desire = 1.00} 
+		subtract_from_variable = {amer_state_swing_desire = temp_stab2} 
+		
+		set_variable = {amer_state_swing_resistance = stability}
+	
+		multiply_variable= {amer_state_swing_resistance = amer_state_swing_desire}
+
+		add_to_variable = { amer_state_number_of_swings = 1 }
+
+		set_politics = { parties = { democratic = { popularity = 100 } fascism = { popularity = 0 banned = yes } communism = { popularity = 0 banned = yes } american_globalism = {popularity = 0 banned = yes } american_isolationism= { popularity = 0 banned = yes }}  ruling_party = democratic elections_allowed = yes election_frequency = 24}
+
+	}		
+	}
+}
+union_member_state_support_american_globalism = {
+visible = {
+			
+
+ if = { limit = { check_variable = { temp_desire > temp_resistance } }}} 
+
+	ai_will_do = {factor = [?amer_state_swing_desire] }
+		
+		cost = 150
+		days_remove = 1
+		days_re_enable = 30
+
+	remove_effect = {
+
+		if = { limit = { check_variable = { temp_desire > temp_resistance } }
+		set_variable = { temp_stab2 = stability}
+
+		set_variable = { ROOT.amer_state_swing_desire = 1.00} 
+		subtract_from_variable = { ROOT.amer_state_swing_desire = temp_stab2} 
+		
+		set_variable = { ROOT.amer_state_swing_resistance = stability}
+	
+		multiply_variable= {ROOT.amer_state_swing_resistance = ROOT.amer_state_swing_desire}
+
+		add_to_variable = { ROOT.amer_state_number_of_swings = 1 }
+
+		ROOT = { set_politics = { parties = { democratic = { popularity = 0  banned = yes } fascism = { popularity = 0 banned = yes } communism = { popularity = 0 banned = yes } american_globalism = {popularity = 100 } american_isolationism= { popularity = 0 banned = yes }}  ruling_party = democratic elections_allowed = yes election_frequency = 24}}
+
+	}		
+	}
+}
+union_member_state_support_american_isolationism = {
+		visible = {
+ if = { limit = { check_variable = { temp_desire > temp_resistance } }}} 
+
+	ai_will_do = {factor = [?Root.amer_state_swing_desire] }
+		
+		cost = 150
+		days_remove = 1
+		days_re_enable = 30
+
+	remove_effect = {
+
+		if = { limit = { check_variable = { temp_desire > temp_resistance } }
+		set_temp_variable = { temp_stab2 = stability}
+
+		set_variable = { ROOT.amer_state_swing_desire = 1.00} 
+		subtract_from_variable = { ROOT.amer_state_swing_desire = temp_stab2} 
+		
+		set_variable = { ROOT.amer_state_swing_resistance = stability}
+	
+		multiply_variable= {ROOT.amer_state_swing_resistance = ROOT.amer_state_swing_desire}
+
+		add_to_variable = { ROOT.amer_state_number_of_swings = 1 }
+
+		ROOT = { set_politics = { parties = { democratic = { popularity = 0  banned = yes } fascism = { popularity = 0 banned = yes } communism = { popularity = 0 banned = yes } american_globalism = {popularity = 0 banned = yes } american_isolationism= { popularity = 100  }}  ruling_party = democratic elections_allowed = yes election_frequency = 24}
+
+	}		
+	}
+}
+}
+
+union_member_state_support_communism = {
+		visible = {
+
+ if = { limit = { check_variable = { temp_desire > temp_resistance } }}} 
+	ai_will_do = {factor = [?Root.amer_state_swing_desire] }
+		
+		cost = 150
+		days_remove = 1
+		days_re_enable = 30
+
+	remove_effect = {
+
+		if = { limit = { check_variable = { temp_desire > temp_resistance } }
+		set_temp_variable = { temp_stab2 = stability}
+
+		set_variable = { ROOT.amer_state_swing_desire = 1.00} 
+		subtract_from_variable = { ROOT.amer_state_swing_desire = temp_stab2} 
+		
+		set_variable = { ROOT.amer_state_swing_resistance = stability}
+	
+		multiply_variable= {ROOT.amer_state_swing_resistance = ROOT.amer_state_swing_desire}
+
+		add_to_variable = { ROOT.amer_state_number_of_swings = 1 }
+
+		ROOT = { set_politics = { parties = { democratic = { popularity = 0  banned = yes } fascism = { popularity = 0 banned = yes } communism = { popularity = 100  } american_globalism = {popularity = 0 banned = yes } american_isolationism= { popularity = 0 banned = yes }}  ruling_party = democratic elections_allowed = yes election_frequency = 24}}
+
+	}		
+	}
+}
+
+union_member_state_support_fascism = {
+visible = {
+			
+
+ if = { limit = { check_variable = { temp_desire > temp_resistance } }}} 
+
+	ai_will_do = {factor = -9000 }
+		
+		cost = 150
+		days_remove = 1
+		days_re_enable = 30
+
+	remove_effect = {
+		add_named_threat = { 
+    		threat = 50 
+    		name = "German Act of War On American Soil"
+		}	
+		if = { limit = { check_variable = { temp_desire > temp_resistance } }
+		set_temp_variable = { temp_stab2 = stability}
+
+		set_variable = { ROOT.amer_state_swing_desire = 1.00} 
+		subtract_from_variable = { ROOT.amer_state_swing_desire = temp_stab2} 
+		
+		set_variable = { ROOT.amer_state_swing_resistance = stability}
+	
+		multiply_variable= {ROOT.amer_state_swing_resistance = ROOT.amer_state_swing_desire}
+
+		add_to_variable = { ROOT.amer_state_number_of_swings = 1 }
+
+		ROOT = { set_politics = { parties = { democratic = { popularity = 30 } fascism = { popularity = 30 } communism = { popularity = 40  } american_globalism = {popularity = 0 } american_isolationism= { popularity = 0 }}  ruling_party = democratic elections_allowed = yes election_frequency = 24}
+
+			kill_country_leader = yes
+			release	= ROOT
+			leave_faction = yes
+	every_other_country = {
+	declare_war_on = {
+    target = ROOT
+    type = annex_everything}}
+		}
+
+
+
+	}		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}###########   
