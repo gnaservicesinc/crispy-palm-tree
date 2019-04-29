@@ -2,8 +2,186 @@
 ideas = {
 
 	 country = {
-
-
+american_states_stabilization_level_1 = {
+	picture = eng_imperial_conscription
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		stability_weekly = 0.01
+		}
+}
+american_states_stabilization_level_2 = {
+	picture = eng_imperial_conscription
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		stability_weekly = 0.02
+		}
+}
+american_states_stabilization_level_3 = {
+	picture = eng_imperial_conscription
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		stability_weekly = 0.03
+		}
+}
+american_states_stabilization_level_4 = {
+	picture = eng_imperial_conscription
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		stability_weekly = 0.04
+		}
+}
+american_states_stabilization_level_5 = {
+	picture = eng_imperial_conscription
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		stability_weekly = 0.05
+		}
+}
+american_states_stabilization_level_6 = {
+	picture = usa_war_department
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		stability_weekly = 0.06
+		}
+}
+american_states_stabilization_level_7 = {
+	picture = usa_war_department
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		stability_weekly = 0.07
+		}
+}
+american_states_stabilization_level_8 = {
+	picture = usa_war_department
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		stability_weekly = 0.08
+		}
+}
+american_states_stabilization_level_9 = {
+	picture = usa_war_department
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		stability_weekly = 0.09
+		}
+}
+american_states_stabilization_level_10 = {
+	picture = usa_war_department
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		stability_weekly = 0.10
+		}
+}
+american_states_destabilization_level_1 = {
+	picture = usa_desegregation_1
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		stability_weekly =  -0.01
+		}
+}
+american_states_destabilization_level_2 = {
+	picture = usa_desegregation_1
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		stability_weekly =  -0.02
+		}
+}
+american_states_destabilization_level_3 = {
+	picture = usa_desegregation_1
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		stability_weekly =  -0.03
+		}
+}
+american_states_destabilization_level_4 = {
+	picture = usa_desegregation_1
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		stability_weekly =  -0.04
+		}
+}
+american_states_destabilization_level_5 = {
+	picture = usa_desegregation_1
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		stability_weekly =  -0.050
+		}
+}
+american_states_destabilization_level_6 = {
+	picture = usa_desegregation_2
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		stability_weekly =  -0.06
+		}
+}
+american_states_destabilization_level_7 = {
+	picture = usa_desegregation_2
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		stability_weekly =  -0.07
+		}
+}
+american_states_destabilization_level_8 = {
+	picture = usa_desegregation_2
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		stability_weekly =  -0.08
+		}
+}
+american_states_destabilization_level_9 = {
+	picture = usa_desegregation_2
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		stability_weekly =  -0.09
+		}
+}
+american_states_destabilization_level_10 = {
+	picture = usa_desegregation_2
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		stability_weekly =  -0.10
+		}
+}
 military_advertising_and_pr_campaign={
 	picture = generic_war_preparation
 		allowed = {always = no}
@@ -11,7 +189,7 @@ military_advertising_and_pr_campaign={
 		removal_cost = -1
 	modifier = {
 	weekly_manpower	 = 10000
-	war_support_weekly = 0.13	
+	war_support_weekly = 0.03	
 	non_core_manpower = 0.50
 	training_time_factor= -0.50
 	conscription = 1.0

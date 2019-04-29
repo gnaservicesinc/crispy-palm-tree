@@ -1,0 +1,866 @@
+focus_tree = {
+ id = American_Loyal_State_focus
+country = {
+		factor = 0
+		
+		modifier = {
+			add = 0
+	}
+	}
+
+	continuous_focus_position = { x = 50 y = 1600 }
+	default = no
+
+
+####################################################################
+#
+#	Begin Ind. Effort Section
+#			
+#
+####################################################################
+	focus = {
+		id = American_loyal_industrial_effort
+		icon = GFX_goal_generic_production
+
+		x = 2
+		y = -2
+		cost = 1
+ 
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+focus = {
+		id = American_loyal_focus_on_infrastructure 
+		icon = GFX_goal_generic_production
+				relative_position_id = American_loyal_industrial_effort
+		prerequisite = { focus =American_loyal_industrial_effort  }
+		x = 0
+		y = 1
+
+		cost = 10
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+
+focus = {
+		id = American_loyal_focus_on_infrastructure2 
+		icon = GFX_goal_generic_production
+		relative_position_id = American_loyal_focus_on_infrastructure
+		prerequisite = { focus =American_loyal_focus_on_infrastructure}
+		x = 0
+		y = 1
+
+		cost = 5
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+focus = {
+		id = American_loyal_focus_on_infrastructure3 
+		icon = GFX_goal_generic_production
+		relative_position_id = American_loyal_focus_on_infrastructure2
+		prerequisite = { focus =American_loyal_focus_on_infrastructure2 }
+		x = 0
+		y = 1
+
+		cost = 5
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+focus = {
+		id = American_loyal_focus_on_infrastructure4 
+		icon = GFX_goal_generic_production
+		relative_position_id = American_loyal_focus_on_infrastructure3
+		prerequisite = { focus =American_loyal_focus_on_infrastructure3}
+		x = 0
+		y = 1
+
+		cost = 5
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+focus = {
+		id = American_loyal_focus_on_infrastructure5
+		icon = GFX_goal_generic_production
+		relative_position_id = American_loyal_focus_on_infrastructure4
+		prerequisite = { focus =American_loyal_focus_on_infrastructure4 }
+		x = 0
+		y = 1
+
+		cost = 5
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+
+focus = {
+		id = American_loyal_focus_on_infrastructure6 
+		icon = GFX_goal_generic_production
+		relative_position_id = American_loyal_focus_on_infrastructure5
+		prerequisite = { focus =American_loyal_focus_on_infrastructure5 }
+		x = 0
+		y = 1
+
+		cost = 5
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+focus = {
+		id = American_loyal_focus_on_infrastructure7
+		icon = GFX_goal_generic_production
+		relative_position_id = American_loyal_focus_on_infrastructure6
+		prerequisite = { focus =American_loyal_focus_on_infrastructure6 }
+		x = 0
+		y = 1
+
+		cost = 5
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+focus = {
+		id = American_loyal_focus_on_infrastructure8 
+		icon = GFX_goal_generic_production
+		relative_position_id = American_loyal_focus_on_infrastructure7
+		prerequisite = { focus =American_loyal_focus_on_infrastructure7}
+		x = 0
+		y = 1
+
+		cost = 5
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+focus = {
+		id = American_loyal_focus_on_infrastructure9 
+		icon = GFX_goal_generic_production
+		relative_position_id = American_loyal_focus_on_infrastructure8
+		prerequisite = { focus =American_loyal_focus_on_infrastructure8}
+		x = 0
+		y = 1
+
+		cost = 5
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+focus = {
+		id = American_loyal_focus_on_infrastructure10 
+		icon = GFX_goal_generic_production
+		relative_position_id = American_loyal_focus_on_infrastructure9
+		prerequisite = { focus =American_loyal_focus_on_infrastructure9}
+		x = 0
+		y = 1
+
+		cost = 5
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+
+
+
+####################################################################
+#
+#	END Ind. Effort Section
+#			
+#
+####################################################################
+
+####################################################################
+#
+#	Begin Military. Effort Section
+#			
+#
+####################################################################
+focus = {
+		id = American_loyal_apoint_officers
+		icon = GFX_goal_generic_production
+		 dynamic = yes
+		x = 5
+		y = 0
+		cost = 10
+		ai_will_do = { 
+			factor = 10
+			modifier = {
+				factor = 100
+				has_war = yes
+			}
+			}
+	
+		available_if_capitulated = no
+
+		completion_reward = {
+create_field_marshal = {
+	female = yes
+	traits = {  trickster armor_officer panzer_leader war_hero trait_reckless }
+	skill = 7
+	attack_skill = 7 
+	defense_skill = 7
+	planning_skill = 7
+	logistics_skill = 7
+}
+
+create_field_marshal = {
+	female = no
+	traits = {  trait_engineer trait_cautious brilliant_strategist harsh_leader }
+	skill = 6
+	attack_skill = 7
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 6
+}
+
+create_field_marshal = {
+	female = yes
+	traits = { logistics_wizard panzer_leader war_hero organizer offensive_doctrine trait_cautious armor_officer politically_connected }
+	skill = 8
+	attack_skill = 8
+	defense_skill = 8
+	planning_skill = 8
+	logistics_skill = 8
+}
+create_field_marshal = {
+	female = no
+	traits = { logistics_wizard organizer offensive_doctrine brilliant_strategist armor_officer politically_connected }
+	skill = 8
+	attack_skill = 8
+	defense_skill = 8
+	planning_skill = 8
+	logistics_skill = 8
+}
+create_field_marshal = {
+	female = yes
+	traits = { logistics_wizard organizer offensive_doctrine brilliant_strategist armor_officer war_hero }
+	skill = 8
+	attack_skill = 8
+	defense_skill = 8
+	planning_skill = 8
+	logistics_skill = 8
+}
+}
+
+
+}
+focus = {
+		id = American_loyal_apoint_jr_officers
+		icon = GFX_goal_generic_production
+		 dynamic = yes
+		relative_position_id = American_loyal_apoint_officers 
+		prerequisite = { focus =American_loyal_apoint_officers   }
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = { 
+			factor = 10
+			modifier = {
+				factor = 100
+				has_war = yes
+			}
+			}
+	
+		available_if_capitulated = no
+
+		completion_reward = { 
+
+		set_variable = { var_skill = random }
+		set_variable = { var_attack_skill = random }
+		set_variable = { var_defense_skill = random }
+		set_variable = { var_planning_skill = random }
+		set_variable = { var_logistics_skill = random }
+
+		multiply_temp_variable = { var_skill = 100 }
+		multiply_temp_variable = { var_attack_skill = 100 }
+		multiply_temp_variable = { var_defense_skill = 100 }
+		multiply_temp_variable = { var_planning_skill = 100 }
+		multiply_temp_variable = { var_logistics_skill = 100 }
+		
+		round_variable = var_skill 
+		round_variable =  var_attack_skill
+		round_variable = var_defense_skill
+		round_variable =  var_planning_skill
+		round_variable =  var_logistics_skill
+
+	create_corps_commander = {
+	traits = {  offensive_doctrine brilliant_strategist career_officer media_personality politically_connected }
+	skill = 8
+	
+	attack_skill = "[?var_attack_skill]"
+	defense_skill = "[?var_defense_skill]"
+	planning_skill = "[?var_planning_skill]"
+	logistics_skill = "[?var_logistics_skill]"
+		}
+
+		set_variable = { var_skill = random }
+		set_variable = { var_attack_skill = random }
+		set_variable = { var_defense_skill = random }
+		set_variable = { var_planning_skill = random }
+		set_variable = { var_logistics_skill = random }
+
+		multiply_temp_variable = { var_skill = 100 }
+		multiply_temp_variable = { var_attack_skill = 100 }
+		multiply_temp_variable = { var_defense_skill = 100 }
+		multiply_temp_variable = { var_planning_skill = 100 }
+		multiply_temp_variable = { var_logistics_skill = 100 }
+		
+		round_variable = var_skill 
+		round_variable =  var_attack_skill
+		round_variable = var_defense_skill
+		round_variable =  var_planning_skill
+		round_variable =  var_logistics_skill
+
+			create_corps_commander = {
+	traits = {  offensive_doctrine brilliant_strategist career_officer media_personality politically_connected }
+	skill = 8
+	
+	attack_skill = "[?var_attack_skill]"
+	defense_skill = "[?var_defense_skill]"
+	planning_skill = "[?var_planning_skill]"
+	logistics_skill = "[?var_logistics_skill]"
+		}
+
+		set_variable = { var_skill = random }
+		set_variable = { var_attack_skill = random }
+		set_variable = { var_defense_skill = random }
+		set_variable = { var_planning_skill = random }
+		set_variable = { var_logistics_skill = random }
+
+		multiply_temp_variable = { var_skill = 100 }
+		multiply_temp_variable = { var_attack_skill = 100 }
+		multiply_temp_variable = { var_defense_skill = 100 }
+		multiply_temp_variable = { var_planning_skill = 100 }
+		multiply_temp_variable = { var_logistics_skill = 100 }
+		
+		round_variable = var_skill 
+		round_variable =  var_attack_skill
+		round_variable = var_defense_skill
+		round_variable =  var_planning_skill
+		round_variable =  var_logistics_skill
+
+			create_corps_commander = {
+	traits = {  offensive_doctrine brilliant_strategist career_officer media_personality politically_connected }
+	skill = 8
+	
+	attack_skill = "[?var_attack_skill]"
+	defense_skill = "[?var_defense_skill]"
+	planning_skill = "[?var_planning_skill]"
+	logistics_skill = "[?var_logistics_skill]"
+		}
+		
+
+		set_variable = { var_skill = random }
+		set_variable = { var_attack_skill = random }
+		set_variable = { var_defense_skill = random }
+		set_variable = { var_planning_skill = random }
+		set_variable = { var_logistics_skill = random }
+
+		multiply_temp_variable = { var_skill = 100 }
+		multiply_temp_variable = { var_attack_skill = 100 }
+		multiply_temp_variable = { var_defense_skill = 100 }
+		multiply_temp_variable = { var_planning_skill = 100 }
+		multiply_temp_variable = { var_logistics_skill = 100 }
+		
+		round_variable = var_skill 
+		round_variable =  var_attack_skill
+		round_variable = var_defense_skill
+		round_variable =  var_planning_skill
+		round_variable =  var_logistics_skill
+	
+		create_corps_commander = {
+	traits = {  offensive_doctrine brilliant_strategist career_officer media_personality politically_connected }
+	skill = 8
+	
+	attack_skill = "[?var_attack_skill]"
+	defense_skill = "[?var_defense_skill]"
+	planning_skill = "[?var_planning_skill]"
+	logistics_skill = "[?var_logistics_skill]"
+		}
+		
+
+		set_variable = { var_skill = random }
+		set_variable = { var_attack_skill = random }
+		set_variable = { var_defense_skill = random }
+		set_variable = { var_planning_skill = random }
+		set_variable = { var_logistics_skill = random }
+
+		multiply_temp_variable = { var_skill = 100 }
+		multiply_temp_variable = { var_attack_skill = 100 }
+		multiply_temp_variable = { var_defense_skill = 100 }
+		multiply_temp_variable = { var_planning_skill = 100 }
+		multiply_temp_variable = { var_logistics_skill = 100 }
+		
+		round_variable = var_skill 
+		round_variable =  var_attack_skill
+		round_variable = var_defense_skill
+		round_variable =  var_planning_skill
+		round_variable =  var_logistics_skill
+	
+			create_corps_commander = {
+	traits = {  offensive_doctrine brilliant_strategist career_officer media_personality politically_connected }
+	skill = 8
+	
+	attack_skill = "[?var_attack_skill]"
+	defense_skill = "[?var_defense_skill]"
+	planning_skill = "[?var_planning_skill]"
+	logistics_skill = "[?var_logistics_skill]"
+		}
+		set_variable = { var_skill = random }
+		set_variable = { var_attack_skill = random }
+		set_variable = { var_defense_skill = random }
+		set_variable = { var_planning_skill = random }
+		set_variable = { var_logistics_skill = random }
+
+		multiply_temp_variable = { var_skill = 100 }
+		multiply_temp_variable = { var_attack_skill = 100 }
+		multiply_temp_variable = { var_defense_skill = 100 }
+		multiply_temp_variable = { var_planning_skill = 100 }
+		multiply_temp_variable = { var_logistics_skill = 100 }
+		
+		round_variable = var_skill 
+		round_variable =  var_attack_skill
+		round_variable = var_defense_skill
+		round_variable =  var_planning_skill
+		round_variable =  var_logistics_skill
+	
+			create_corps_commander = {
+	traits = {  offensive_doctrine brilliant_strategist career_officer media_personality politically_connected }
+	skill = 8
+	
+	attack_skill = "[?var_attack_skill]"
+	defense_skill = "[?var_defense_skill]"
+	planning_skill = "[?var_planning_skill]"
+	logistics_skill = "[?var_logistics_skill]"
+		}
+
+		set_variable = { var_skill = random }
+		set_variable = { var_attack_skill = random }
+		set_variable = { var_defense_skill = random }
+		set_variable = { var_planning_skill = random }
+		set_variable = { var_logistics_skill = random }
+
+		multiply_temp_variable = { var_skill = 100 }
+		multiply_temp_variable = { var_attack_skill = 100 }
+		multiply_temp_variable = { var_defense_skill = 100 }
+		multiply_temp_variable = { var_planning_skill = 100 }
+		multiply_temp_variable = { var_logistics_skill = 100 }
+		
+		round_variable = var_skill 
+		round_variable =  var_attack_skill
+		round_variable = var_defense_skill
+		round_variable =  var_planning_skill
+		round_variable =  var_logistics_skill
+	
+		create_corps_commander = {
+	traits = {  offensive_doctrine brilliant_strategist career_officer media_personality politically_connected }
+	skill = 8
+	
+	attack_skill = "[?var_attack_skill]"
+	defense_skill = "[?var_defense_skill]"
+	planning_skill = "[?var_planning_skill]"
+	logistics_skill = "[?var_logistics_skill]"
+		}
+		set_variable = { var_skill = random }
+		set_variable = { var_attack_skill = random }
+		set_variable = { var_defense_skill = random }
+		set_variable = { var_planning_skill = random }
+		set_variable = { var_logistics_skill = random }
+
+		multiply_temp_variable = { var_skill = 100 }
+		multiply_temp_variable = { var_attack_skill = 100 }
+		multiply_temp_variable = { var_defense_skill = 100 }
+		multiply_temp_variable = { var_planning_skill = 100 }
+		multiply_temp_variable = { var_logistics_skill = 100 }
+		
+		round_variable = var_skill 
+		round_variable =  var_attack_skill
+		round_variable = var_defense_skill
+		round_variable =  var_planning_skill
+		round_variable =  var_logistics_skill
+			create_corps_commander = {
+	traits = {  offensive_doctrine brilliant_strategist career_officer media_personality politically_connected }
+	skill = 8
+	
+	attack_skill = "[?var_attack_skill]"
+	defense_skill = "[?var_defense_skill]"
+	planning_skill = "[?var_planning_skill]"
+	logistics_skill = "[?var_logistics_skill]"
+		}
+
+
+}
+}
+
+focus = {
+		id = American_loyal_one_for_all_and_all_for_one
+		icon = GFX_goal_generic_production
+		 dynamic = yes
+		relative_position_id = American_loyal_apoint_officers 
+		prerequisite = { focus =American_loyal_apoint_officers   }
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = { 
+			factor = 10
+			modifier = {
+				factor = 100
+				has_war = yes
+			}
+			}
+	
+		available_if_capitulated = no
+
+		completion_reward = { 
+add_manpower = 10000000
+}
+}
+
+focus = {
+		id = American_loyal_take_direct_command 
+		icon = GFX_goal_generic_production
+		 dynamic = yes
+		relative_position_id = American_loyal_apoint_jr_officers 
+		prerequisite = { focus =American_loyal_apoint_jr_officers   }
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = { 
+			factor = 1
+			modifier = {
+				factor = 100
+				has_war = yes
+			}
+			}
+	
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+
+	if = { limit = { has_country_leader = { ruling_only = yes name ="Chairperson Upton Beall Sinclair Jr." }}
+
+		create_field_marshal = {
+				name = "Chairperson Upton Beall Sinclair Jr."
+				picture = GFX_UPTON_BEALL
+				skill = 8
+				attack_skill = 8
+				defense_skill = 8
+				planning_skill = 8
+				logistics_skill = 8
+				traits = { naval_invader }
+
+			}
+		if = { limit = { has_country_leader = { ruling_only = yes name ="Governor Jim Folsom" }}
+
+create_field_marshal = {
+				name = "Governor Jim Folsom"
+				picture = J_FOLSOM
+				skill = 8
+				attack_skill = 8
+				defense_skill = 8
+				planning_skill = 8
+				logistics_skill = 8
+				traits = { naval_invader }
+
+			}
+	if = { limit = { has_country_leader = { ruling_only = yes name = "Führer Bibb Graves" }}
+
+create_field_marshal = {
+				name = "Führer Bibb Graves"
+				picture = BIBB_GRAVES
+				skill = 8
+				attack_skill = 8
+				defense_skill = 8
+				planning_skill = 8
+				logistics_skill = 8
+				traits = { naval_invader }
+
+			}
+if = { limit = { has_country_leader = { ruling_only = yes name = "Fred W. Green" }}
+
+create_field_marshal = {
+				name = "Fred W. Green"
+				picture = FRED_WARREN_GREEN
+				skill = 8
+				attack_skill = 8
+				defense_skill = 8
+				planning_skill = 8
+				logistics_skill = 8
+				traits = { naval_invader }
+
+			}
+			else {
+		
+create_field_marshal = {
+				name="[?[Root.Owner.GetName]]"
+				picture = GFX_amer_sw_generic_lead
+				skill = 8
+				attack_skill = 8
+				defense_skill = 8
+				planning_skill = 8
+				logistics_skill = 8
+				traits = { naval_invader }
+
+			}}}
+		}}}
+	}
+}
+####################################################################
+#
+#	End Military. Effort Section
+#			
+#
+####################################################################
+
+
+
+
+
+
+}

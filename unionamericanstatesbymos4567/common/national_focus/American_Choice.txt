@@ -1,0 +1,197 @@
+focus_tree = {
+ id = American_choice_focus
+country = {
+		factor = 0
+		
+		modifier = {
+			add = 1000
+	OR={
+		
+		tag  =  UIL
+		tag  =  UNY
+		tag  =  UIN
+		tag  =  UCI
+		tag  =  UDK
+		tag  =  UMN
+		tag  =  UEN
+		tag  =  UKY
+		tag  =  UTN
+		tag  =  UMS
+		tag  =  UFL
+		tag  =  UGO
+		tag  =  UVA
+		tag  =  UNE
+		tag  =  UME
+		tag  =  UAR
+		tag  =  ULA
+		tag  =  UWI
+		tag  =  UOK
+		tag  =  UIA
+		tag  =  UKA
+		tag  =  UOH
+		tag  =  UPE
+		tag  =  UML
+		tag  =  UNJ
+		tag  =  UWA
+		tag  =  UID
+		tag  =  UAZ
+		tag  =  UUT
+		tag  =  UNV
+		tag  =  UOR
+		tag  =  UMO
+		tag  =  UCO
+		tag  =  UMX
+		tag  =  UWY}
+		}
+		
+		modifier = {
+		add = 1000 OR = {
+		original_tag   =  UIL
+		original_tag   =  UNY
+		original_tag   =  UIN
+		original_tag   =  UCI
+		original_tag   =  UDK
+		original_tag   =  UMN
+		original_tag   =  UEN
+		original_tag   =  UKY
+		original_tag   =  UTN
+		original_tag   =  UMS
+		original_tag   =  UFL
+		original_tag   =  UGO
+		original_tag   =  UVA
+		original_tag   =  UNE
+		original_tag   =  UME
+		original_tag   =  UAR
+		original_tag   =  ULA
+		original_tag   =  UWI
+		original_tag   =  UOK
+		original_tag   =  UIA
+		original_tag   =  UKA
+		original_tag   =  UOH
+		original_tag   =  UPE
+		original_tag   =  UML
+		original_tag   =  UNJ
+		original_tag   =  UWA
+		original_tag   =  UID
+		original_tag   =  UAZ
+		original_tag   =  UUT
+		original_tag   =  UNV
+		original_tag   =  UOR
+		original_tag   =  UMO
+		original_tag   =  UCO
+		original_tag   =  UMX
+		original_tag   =  UWY
+		}}
+	}
+
+	continuous_focus_position = { x = 50 y = 1600 }
+	default = no
+
+
+####################################################################
+
+	focus = {
+		id = American_choice_loyal_union_state
+		icon = GFX_expand_ru_eco_partnetship
+		x = 13
+		y = 0
+		dynamic =  yes
+		cost = 1
+
+		ai_will_do = {
+			factor = [ai_random]
+		}
+available = {
+ROOT = {   has_variable =var_American_States }
+    }
+
+ allow_branch = { ROOT = {   has_variable =var_American_States }}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+load_focus_tree = { tree = American_Loyal_State_focus 
+                     keep_completed = yes }
+			ROOT = { add_to_tech_sharing_group = usa_investigators 
+			inherit_technology = USA }
+		USA = {
+			
+			if = { limit = { has_dlc = "Man the Guns"}
+				inherit_technology = ROOT }
+	
+			if = { limit = { has_dlc = "Together for Victory"}
+			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
+			} else = { puppet =ROOT }	
+          }
+
+			 }
+	}
+
+
+focus = {
+		id = American_choice_not_so_loyal_union_state
+		icon = GFX_expand_ru_eco_partnetship
+	relative_position_id = American_choice_loyal_union_state
+	dynamic =  yes
+		x = 2
+		y = 0
+		ai_will_do = {
+			factor = [ai_random]
+		}
+		cost = 1
+
+cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+load_focus_tree = { tree = UCA_california_focus 
+                     keep_completed = yes }
+
+}
+}
+
+
+focus = {
+		id = American_choice_disloyal_union_state
+		icon = GFX_expand_ru_eco_partnetship
+	relative_position_id = American_choice_loyal_union_state
+	dynamic =  yes
+		x = -2
+		y = 0
+		ai_will_do = {
+			factor = [ai_random]
+		}
+		cost = 1
+
+cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+
+if = { limit = { has_dlc = "Together for Victory"}
+set_autonomy = {
+    target = ROOT
+    autonomy_state = autonomy_free
+}
+else = {
+end_puppet = ROOT 
+
+}}
+
+
+load_focus_tree = { tree = American_choose_side_focus
+                     keep_completed = yes }
+
+}
+}
+
+
+
+
+
+
+
+
+
+}

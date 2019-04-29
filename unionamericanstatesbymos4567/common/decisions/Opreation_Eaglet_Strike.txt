@@ -94,6 +94,25 @@ Eaglet_Strike= {
 		add_manpower = -1000000	
 		}
 	}
+eaglet_send_resource_rights_to_help_american_army = {
+ target_trigger = { FROM = { tag = USA }}
+		cost = 1
+		days_remove = 1
+		days_re_enable = 1
+ complete_effect = {
+               FROM = {
+    random_owned_state = { 
+       give_resource_rights = { receiver = FROM state = THIS }
+        PREV = {
+            random_owned_state = { 
+                limit = { NOT = { state = PREV.PREV } }
+              give_resource_rights = { receiver = FROM state = THIS }
+            }
+        }
+    }
+}
+}
+}
 
 
 }#################

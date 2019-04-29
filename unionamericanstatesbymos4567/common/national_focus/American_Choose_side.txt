@@ -1,0 +1,216 @@
+focus_tree = {
+ id = American_choose_side_focus
+country = {
+		factor = 0
+		
+		
+	}
+
+	continuous_focus_position = { x = 50 y = 1600 }
+	default = no
+
+
+####################################################################
+# Begin Covert Activities Section
+# 
+####################################################################
+####################################################################
+# Covert Activities Michigan
+####################################################################
+	focus = {
+		id = American_choose_side_sunshine
+		icon = GFX_expand_ru_eco_partnetship
+		x = 13
+		y = 0
+		dynamic =  yes
+		cost = 1
+
+		ai_will_do = {
+			factor = [ai_random]
+		}
+available = {
+ROOT = {   has_variable =var_American_States }
+    }
+
+ allow_branch = { ROOT = {   has_variable =var_American_States }}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+load_focus_tree = { tree = UCA_california_focus
+                     keep_completed = yes }
+			ROOT = { add_to_tech_sharing_group = uca_investigators 
+			inherit_technology = UCA }
+		UCA = {
+			
+			if = { limit = { has_dlc = "Man the Guns"}
+				inherit_technology = ROOT }
+	
+			if = { limit = { has_dlc = "Together for Victory"}
+			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
+			} else = { puppet =ROOT }	
+          }
+
+			 }
+	}
+
+	focus = {
+		id = American_choose_side_michigan
+		icon = GFX_expand_ru_eco_partnetship
+		relative_position_id = American_choose_side_sunshine
+		x = 2
+		y = 0
+		dynamic =  yes
+		cost = 1
+
+		ai_will_do = {
+			factor = [ai_random]
+		}
+available = {
+ROOT = {   has_variable =var_American_States }
+    }
+
+ allow_branch = { ROOT = {   has_variable =var_American_States }}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+load_focus_tree = { tree = UCA_california_focus
+                     keep_completed = yes }
+			ROOT = { add_to_tech_sharing_group = umi_investigators 
+			inherit_technology = UMI }
+		UMU = {
+			
+			if = { limit = { has_dlc = "Man the Guns"}
+				inherit_technology = ROOT }
+	
+			if = { limit = { has_dlc = "Together for Victory"}
+			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
+			} else = { puppet =ROOT }	
+          }
+
+			 }
+	}
+
+
+
+focus = {
+		id = American_choose_side_texas 
+		icon = GFX_expand_ru_eco_partnetship
+		relative_position_id = American_choose_side_sunshine
+		x = -2
+		y = 0
+		dynamic =  yes
+		cost = 1
+
+		ai_will_do = {
+			factor = [ai_random]
+		}
+available = {
+ROOT = {   has_variable =var_American_States }
+    }
+
+ allow_branch = { ROOT = {   has_variable =var_American_States }}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+load_focus_tree = { tree = UCA_california_focus
+                     keep_completed = yes }
+			ROOT = { add_to_tech_sharing_group = utx_investigators 
+			inherit_technology = UTX }
+		UTX = {
+			
+			if = { limit = { has_dlc = "Man the Guns"}
+				inherit_technology = ROOT }
+	
+			if = { limit = { has_dlc = "Together for Victory"}
+			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
+			} else = { puppet =ROOT }	
+          }
+
+			 }
+	}
+
+
+focus = {
+		id = American_choose_side_alabama 
+		icon = GFX_expand_ru_eco_partnetship
+		relative_position_id = American_choose_side_sunshine
+		x = 0
+		y = -2
+		dynamic =  yes
+		cost = 1
+
+		ai_will_do = {
+			factor = [ai_random]
+		}
+available = {
+ROOT = {   has_variable =var_American_States }
+    }
+
+ allow_branch = { ROOT = {   has_variable =var_American_States }}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+load_focus_tree = { tree = UCA_california_focus
+                     keep_completed = yes }
+			ROOT = { add_to_tech_sharing_group = ual_investigators 
+			inherit_technology = UAL }
+		UAL = {
+			
+			if = { limit = { has_dlc = "Man the Guns"}
+				inherit_technology = ROOT }
+	
+			if = { limit = { has_dlc = "Together for Victory"}
+			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
+			} else = { puppet =ROOT }	
+          }
+
+			 }
+	}
+
+
+
+focus = {
+		id = American_choose_go_alone 
+		icon = GFX_expand_ru_eco_partnetship
+		relative_position_id = American_choose_side_sunshine
+		x = 0
+		y = -2
+		dynamic =  yes
+		cost = 1
+
+		ai_will_do = {
+			factor = [ai_random]
+		}
+available = {
+ROOT = {   has_variable =var_American_States }
+    }
+
+ allow_branch = { ROOT = {   has_variable =var_American_States }}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+load_focus_tree = { tree = generic_focus
+                     keep_completed = yes }
+			
+          }
+
+			 }
+
+
+
+
+
+
+
+
+}
