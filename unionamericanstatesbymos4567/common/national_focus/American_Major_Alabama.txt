@@ -1,0 +1,16 @@
+focus_tree = {
+ id = American_Major_Alabama_focus
+country = {
+		factor = 0
+		
+		modifier = {
+			add = 1000	
+		tag =  UAL
+	}
+	}
+
+	continuous_focus_position = { x = 50 y = 1600 }
+	default = no
+
+
+}

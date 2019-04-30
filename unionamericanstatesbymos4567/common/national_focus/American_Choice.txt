@@ -93,7 +93,7 @@ country = {
 	focus = {
 		id = American_choice_loyal_union_state
 		icon = GFX_expand_ru_eco_partnetship
-		x = 13
+		x = 5
 		y = 0
 		dynamic =  yes
 		cost = 1
@@ -101,6 +101,10 @@ country = {
 		ai_will_do = {
 			factor = [ai_random]
 		}
+
+historical_ai = {
+is_subject_of =  USA 
+}
 available = {
 ROOT = {   has_variable =var_American_States }
     }
@@ -144,6 +148,13 @@ focus = {
 cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+historical_ai = {
+is_subject_of =  UMI
+is_subject_of =  UCA
+is_subject_of =  UAL
+is_subject_of =  UTX
+}
+
 		completion_reward = {
 load_focus_tree = { tree = UCA_california_focus 
                      keep_completed = yes }
@@ -175,13 +186,13 @@ set_autonomy = {
     autonomy_state = autonomy_free
 }
 else = {
-end_puppet = ROOT 
+release = ROOT 
 
 }}
-
+remove_from_faction = ROOT	
 
 load_focus_tree = { tree = American_choose_side_focus
-                     keep_completed = yes }
+                     keep_completed = no }
 
 }
 }

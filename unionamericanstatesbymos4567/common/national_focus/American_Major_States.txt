@@ -1,0 +1,24 @@
+focus_tree = {
+ id = American_Major_State_focus
+country = {
+		factor = 0
+		
+		modifier = {
+			add = 1000
+	OR = {
+	
+		tag =  UMI
+		tag =  UAL
+		tag =  UCA
+		tag =  UTX
+
+
+	}
+	}
+	}
+
+	continuous_focus_position = { x = 50 y = 1600 }
+	default = no
+
+
+}

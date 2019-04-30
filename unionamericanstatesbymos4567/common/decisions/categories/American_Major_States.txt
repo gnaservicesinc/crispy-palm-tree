@@ -1,0 +1,14 @@
+american_major_state = {
+	visible = {
+	OR = {
+	
+		tag =  UMI
+		tag =  UAL
+		tag =  UCA
+		tag =  UTX
+
+
+	}
+
+}
+}

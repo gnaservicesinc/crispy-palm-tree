@@ -1,7 +1,7 @@
 ﻿start_equipment_factor = 0.1
 ##### Division Templates #####
 division_template = {
-	name = "Infantry Division"  	# Standard formation for frontline divisions
+	name = "State Infantry Division"  	# Standard formation for frontline divisions
 division_names_group = State_Guard
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -37,7 +37,7 @@ division_names_group = State_Guard
 	}
 }
 division_template = {
-	name = "Guard Division"  	# Standard formation for frontline divisions
+	name = "State National Guard Division"  	# Standard formation for frontline divisions
 division_names_group = State_Motorized_Guard
 	regiments = {
 		motorized = { x = 0 y = 0 }
@@ -73,7 +73,7 @@ division_names_group = State_Motorized_Guard
 	}
 }
 division_template = {
-	name = "Mech Division"  	# Standard formation for frontline divisions
+	name = "Homeland Shield Division"  	# Standard formation for frontline divisions
 division_names_group = Mech_State_Guard
 	regiments = {
 		mechanized = { x = 0 y = 0 }
@@ -146,7 +146,7 @@ division_names_group = State_Police
 }
 units = {
 	division= {
-division_template = "Infantry Division"			# Still forming 
+division_template = "State Infantry Division"			# Still forming 
 	division_names_group = State_Guard
 	movement = 1.0
 }

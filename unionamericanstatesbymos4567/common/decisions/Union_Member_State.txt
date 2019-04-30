@@ -337,11 +337,11 @@ union_member_state_support_american_globalism = {
 
 	remove_effect = {
 		 
-			add_to_variable = { amer_state_number_of_swings = 1 }
+			add_to_variable = { Root.amer_state_number_of_swings = 1 }
 			
-			subtract_from_variable = {amer_state_swing_desire = 0.1}
-		set_politics = { parties = { democratic = { popularity = 0 banned = yes  } fascism = { popularity = 0 banned = yes } communism = { popularity = 0 banned = yes } american_globalism = {popularity = 100 } american_isolationism= { popularity = 0 banned = yes }}  ruling_party = american_globalism elections_allowed = yes election_frequency = 24}
-
+			subtract_from_variable = {Root.amer_state_swing_desire = 0.1}
+		ROOT = {set_politics = { parties = { democratic = { popularity = 0 banned = yes  } fascism = { popularity = 0 banned = yes } communism = { popularity = 0 banned = yes } american_globalism = {popularity = 100 } american_isolationism= { popularity = 0 banned = yes }}  ruling_party = american_globalism elections_allowed = yes election_frequency = 24}
+}
 		}
 
 	}		
@@ -423,14 +423,19 @@ set_politics = { parties = { democratic = { popularity = 0 banned = yes  } fasci
     		name = "German Act of War On American Soil"
 		}
 		}
-		set_politics = { parties = { democratic = { popularity = 50 banned = yes  } fascism = { popularity = 1  } communism = { popularity = 47  } american_globalism = {popularity = 1 banned = yes } american_isolationism= { popularity = 1 banned = yes }}  ruling_party = fascism elections_allowed = yes election_frequency = 24}
+			add_named_threat = { 
+    		threat = 100 
+    		name = "Fascism On American Soil"
+		} 
+		set_politics = { parties = { democratic = { popularity = 20 banned = yes  } fascism = { popularity = 20  } communism = { popularity = 20  } american_globalism = {popularity = 20 banned = yes } american_isolationism= { popularity = 20 banned = yes }}  ruling_party = fascism elections_allowed = no}
 start_civil_war = {
     ruling_party = fascism
     ideology = democratic
     size = 0.9
     only_own_territory = no
 }
-every_other_country = { if ={ limit={ NOT={ tag = GER}}
+every_other_country = { if ={ limit={ NOT={ has_government = fascism
+}}
 	declare_war_on = {
     target = ROOT
     type = annex_everything}}
