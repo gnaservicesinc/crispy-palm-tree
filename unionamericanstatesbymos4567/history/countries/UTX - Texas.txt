@@ -64,13 +64,13 @@ add_ideas = {
 }
 set_variable = { var_American_States = 1 } 
 set_variable = { var_Texan_States = 1 } 
-effect = {add_dynamic_modifier = { state_swing_modifier}}
+
 UMX = { 
 
 set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = ai_random}
 set_variable = { amer_state_number_of_swings = 0}
-effect = {add_dynamic_modifier = { state_swing_modifier}}
+
 }
 
 UOK = { 
@@ -78,7 +78,7 @@ UOK = {
 set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = ai_random}
 set_variable = { amer_state_number_of_swings = 0}
-effect = {add_dynamic_modifier = { state_swing_modifier}}
+
 }
 
 UKA = { 
@@ -86,7 +86,7 @@ UKA = {
 set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = ai_random}
 set_variable = { amer_state_number_of_swings = 0}
-effect = {add_dynamic_modifier = { state_swing_modifier}}
+
 }
 
 UAR = { 
@@ -94,7 +94,7 @@ UAR = {
 set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = ai_random}
 set_variable = { amer_state_number_of_swings = 0}
-effect = {add_dynamic_modifier = { state_swing_modifier}}
+
 }
 
 ULA = { 
@@ -103,7 +103,7 @@ set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = ai_random}
 set_variable = { amer_state_number_of_swings = 0}
 
-effect = {add_dynamic_modifier = { state_swing_modifier}}
+
 }
 
 UCO = { 
@@ -112,7 +112,7 @@ set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = ai_random}
 set_variable = { amer_state_number_of_swings = 0}
 
-effect = {add_dynamic_modifier = { state_swing_modifier}}
+
 }
 
 UMX = { set_variable = { var_American_States = 1 }  }
@@ -145,12 +145,11 @@ add_to_faction = v
 add_to_array = { array = USA.American_States value= v }
 if = { limit = { has_dlc = "Together for Victory"}
 set_autonomy = {target = v autonomous_state = autonomy_united_states_state }
-}
 else = {
 puppet =v
+}}
 }
-}
-add_to_array = { array = American_States value= UTX }
+UTX = { add_to_array = { array = American_States value= UTX }}
 
 # Starting tech
 set_technology = {

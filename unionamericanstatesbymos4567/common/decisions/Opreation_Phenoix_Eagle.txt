@@ -37,37 +37,6 @@ re_conquest_prepare_to_retake_the_homeland = {
 
 }
 
-re_conquest_retake_the_homeland = {
-		visible = {
-				tag = USA				
- 
-		}
-          target_trigger = {
-		
-
-		 FROM = {
-                 has_variable =var_American_States
-		NOT = { has_government = democratic }
-		NOT = { is_subject_of = USA }
-		NOT = { tag = USA }
-		NOT = { is_in_faction_with = USA }	
-		NOT = { has_war_together_with = USA }
-			}
-			
-		
-		
-               }
-		ai_will_do = {
-			factor = 1
-		}
-		cost = 1000
-		fire_only_once = yes
-		complete_effect = {
-			ROOT = { create_wargoal = { target =     FROM	 type = annex_everything } }
-  			FROM = { create_wargoal = { target =     ROOT	 type = annex_everything } }
-        	}
-
-}
 
 	re_conquest_support_industry = {
 		 

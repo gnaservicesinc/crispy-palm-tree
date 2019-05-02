@@ -1,0 +1,34 @@
+Rolling_Strike= {
+
+re_conquest_retake_the_homeland = {
+	
+          target_trigger = {
+		
+
+		 FROM = {
+                 has_variable =var_American_States
+		NOT = { is_subject_of = ROOT }
+		NOT = { tag = ROOT }
+		NOT = { is_in_faction_with = ROOT }	
+		NOT = { has_war_together_with = ROOT }
+			}
+			
+		
+		
+               }
+		days_remove = 1
+		days_re_enable = 30
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 1000
+		
+		complete_effect = {
+			ROOT = { create_wargoal = { target =     FROM	 type = annex_everything } }
+  			FROM = { create_wargoal = { target =     ROOT	 type = annex_everything } }
+        	}
+
+}
+
+
+}#################

@@ -1,0 +1,73 @@
+﻿###########################
+# Texan Events
+###########################
+
+add_namespace = texan
+
+country_event = {
+
+	id = texan.1
+	title = texan.1.t
+	desc = texan.1.d
+	picture = GFX_report_event_usa_macarthur_speech
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = { 
+			UTX = { kill_country_leader = yes}
+			news_event = {
+    id = texan.1
+    days = 30
+    random = 5
+}
+		}
+
+
+option = { 
+		name = texan.1.b 
+	}
+
+
+}
+
+news_event = {
+	id = texan.2
+	desc = texan.2.d
+	picture = GFX_news_event_nuke
+	major = yes 
+is_triggered_only = yes 
+fire_only_once = yes 
+immediate = { 
+hold_election = UTX
+}
+option = { 
+		name = texan.2.b 
+	}
+}
+
+country_event = {
+
+	id = texan.3
+	title = texan.3.t
+	desc = texan.3.d
+	picture = GFX_report_event_usa_macarthur_speech
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = { news_event = { id = texan.4 days = 1  }}
+
+option = { 
+		name = texan.3.b 
+	}
+
+
+}
+
+news_event = {
+	id = texan.4
+	picture = GFX_news_event_nuke
+	major = yes 
+is_triggered_only = yes 
+fire_only_once = yes 
+option = { 
+		name = texan.4.b 
+	}
+}

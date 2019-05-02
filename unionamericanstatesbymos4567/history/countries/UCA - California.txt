@@ -57,12 +57,12 @@ add_ideas = {
 
 set_variable = { var_American_States = 1 }
 set_variable = { var_Cali_States = 1 }
-effect = {add_dynamic_modifier = { state_swing_modifier}}
+
 UWA = { 
 set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = random}
 set_variable = { amer_state_number_of_swings = 0}
-effect = {add_dynamic_modifier = { state_swing_modifier}}
+
 }
 
 UOR = { 
@@ -70,7 +70,7 @@ UOR = {
 set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = random}
 set_variable = { amer_state_number_of_swings = 0}
-effect = {add_dynamic_modifier = { state_swing_modifier}}
+
 }
 
 UNV = { 
@@ -78,7 +78,7 @@ UNV = {
 set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = random}
 set_variable = { amer_state_number_of_swings = 0}
-effect = {add_dynamic_modifier = { state_swing_modifier}}
+
 }
 
 UMO = { 
@@ -86,7 +86,7 @@ UMO = {
 set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = random}
 set_variable = { amer_state_number_of_swings = 0}
-effect = {add_dynamic_modifier = { state_swing_modifier}}
+
 }
 
 UWY = { 
@@ -94,7 +94,7 @@ UWY = {
 set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = random}
 set_variable = { amer_state_number_of_swings = 0}
-effect = {add_dynamic_modifier = { state_swing_modifier}}
+
 }
 
 UID = { 
@@ -102,7 +102,7 @@ UID = {
 set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = random}
 set_variable = { amer_state_number_of_swings = 0}
-effect = {add_dynamic_modifier = { state_swing_modifier}}
+
 }
 
 UAZ = { 
@@ -110,7 +110,7 @@ UAZ = {
 set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = random}
 set_variable = { amer_state_number_of_swings = 0}
-effect = {add_dynamic_modifier = { state_swing_modifier}}
+
 }
 
 UUT = { 
@@ -118,7 +118,7 @@ UUT = {
 set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = random}
 set_variable = { amer_state_number_of_swings = 0}
-effect = {add_dynamic_modifier = { state_swing_modifier}}
+
 }
 
 
@@ -157,11 +157,10 @@ add_to_faction = v
 add_to_array = { array = USA.American_States value= v }
 if = { limit = { has_dlc = "Together for Victory"}
 set_autonomy = {target = v autonomous_state = autonomy_united_states_state }
-}
 else = {
 puppet =v
 }
-}
+}}
 add_to_array = { array = USA.American_States value= UCA }
 # Starting tech
 set_technology = {

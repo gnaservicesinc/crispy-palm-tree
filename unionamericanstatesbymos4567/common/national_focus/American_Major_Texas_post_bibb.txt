@@ -1,0 +1,93 @@
+focus_tree = {
+ id = American_Major_texas_post_bibb
+country = {
+		factor = 0
+		
+		modifier = {
+			add = 0
+	
+	}
+	}
+
+	continuous_focus_position = { x = 50 y = 1600 }
+	default = no
+
+
+
+focus = {
+		id = American_Major_texas_post_bibb_new_direction
+		icon = GFX_expand_ru_eco_partnetship
+	dynamic =  yes
+		x = 6
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 1
+
+cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+load_focus_tree = { tree = generic_focus
+                     keep_completed = no }
+
+}
+}
+
+
+focus = {
+		id = American_Major_texas_post_bibb_continue_the_dream
+		icon = GFX_expand_ru_eco_partnetship
+	dynamic =  yes
+		x = 4
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 1
+
+cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+load_focus_tree = { tree = generic_focus 
+                     keep_completed = no }
+
+}
+}
+
+focus = {
+		id = American_Major_texas_post_bibb_free_texas
+		icon = GFX_expand_ru_eco_partnetship
+	dynamic =  yes
+		x = 2
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 1
+
+cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+load_focus_tree = { tree = generic_focus
+                     keep_completed = no }
+
+
+}
+}
+
+
+
+
+
+}##
+

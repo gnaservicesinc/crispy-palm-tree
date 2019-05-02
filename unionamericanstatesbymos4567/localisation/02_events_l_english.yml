@@ -1,4 +1,10 @@
 ﻿l_english:
-  AmericanStates.0:0 "This is AmericanStates.0"
-  AmericanStates.0:0 "This is AmericanStates.1"
-  AmericanStates.0:0 "This is AmericanStates_option.1.a"
+  texan.1.t:0 "Texan Führer Bibb Graves DEAD"
+  texan.1.d:0 "Shock across the land. Reports from Dallas confirming the death of Texas Führer and Governor for life, Supreme Führer, Führer Bibb Graves. What is know is that Graves dead, that he  was shot over six hundred times, and that he was found this way inside is Texan home. It is unclear where his security detail was when this happened, how this was allowed to happen at all and who is  responsible.  The states of Michigan, California, and Alabama are the top suspects"
+ texan.1.b:0 "The world is a much safer place now."
+ texan.2.d:0 "New elections are being held in Texas just 30 days after the brutal assassination of Führer Bibb Graves shocked the entire world "
+ texan.2.b:0 "OK"
+ texan.3.t:0 "Texan Führer Bibb Graves Attacked!"
+ texan.3.d:0 "The Führer was shot at while exiting his office today. The Führer was unharmed in the botched attack. Texas Rangers swarmed the scene and arrested fifteen individuals. The criminals were swiftly executed by public executions held in Dallas."
+ texan.3.b:0 "OK"
+ texan.4.b:0 "OK"

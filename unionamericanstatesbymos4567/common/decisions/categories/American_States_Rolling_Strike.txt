@@ -1,0 +1,6 @@
+Rolling_Strike = {
+	visible = {
+	always=no
+
+}
+}

@@ -1,0 +1,123 @@
+ideas = {
+
+	 country = {
+american_states_sharing_is_careing = {
+	picture = eng_imperial_conscription
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		send_volunteer_size=10
+		justify_war_goal_time = -0.95
+		army_leader_start_level	= 5
+		ai_focus_aggressive_factor = 0.95	
+	
+		}
+}
+american_states_military_high_command = {
+	picture = eng_imperial_conscription
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		send_volunteer_size=10
+		justify_war_goal_time = -0.95
+		army_leader_start_level	= 5
+		ai_focus_aggressive_factor = 0.95
+		army_org = 25
+		army_org_factor = 0.35
+		}
+}
+american_states_sentence_white_criminals_to_military_service= {
+	picture = eng_imperial_conscription
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		weekly_manpower = 1000
+		}
+}
+american_states_sentence_all_criminals_to_military_service= {
+	picture = eng_imperial_conscription
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		weekly_manpower = 100000
+		}
+}
+
+american_states_emergency_govement_industry_wartime_partnership= {
+	picture = eng_imperial_conscription
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		industrial_capacity_factory=0.90
+	production_oil_factor = 0.45
+	local_resources_factor = 0.45
+	consumer_goods_factor = 0.45
+	production_factory_max_efficiency_factor = 0.45
+	industrial_capacity_dockyard = 0.45
+	industrial_capacity_factory = 0.45
+	production_oil_factor = 0.5
+fuel_gain_factor =0.45
+fuel_gain_factor_from_states = 0.47
+	local_resources_factor = 0.10
+		consumer_goods_factor = 0.05
+		}
+}
+american_states_serious_criminal_element = {
+	picture = eng_imperial_conscription
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+
+		foreign_subversive_activites = -0.90
+		drift_defence_factor = 0.50
+		stability_weekly =  -0.02
+}
+}
+american_states_overwhelming_criminal_element = {
+	picture = eng_imperial_conscription
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+
+		foreign_subversive_activites = -0.90
+		drift_defence_factor = 0.50
+		stability_weekly =  -0.05
+}
+}
+american_states_creative_recuitment = {
+	picture = eng_imperial_conscription
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		conscription_factor = 0.41
+			conscription = 0.41
+		non_core_manpower = 0.42
+}}
+
+american_states_state_on_the_warpath = {
+	picture = eng_imperial_conscription
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		ai_focus_aggressive_factor = 0.95
+		training_time_factor=-0.95	
+		planning_speed=0.59
+		max_planning=0.59	
+	army_org_factor = 0.05
+		army_org = 5
+
+		}
+}
+
+
+}}##############
+

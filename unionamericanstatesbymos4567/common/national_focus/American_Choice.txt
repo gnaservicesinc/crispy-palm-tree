@@ -99,7 +99,7 @@ country = {
 		cost = 1
 
 		ai_will_do = {
-			factor = [ai_random]
+			factor = 1
 		}
 
 historical_ai = {
@@ -141,7 +141,7 @@ focus = {
 		x = 2
 		y = 0
 		ai_will_do = {
-			factor = [ai_random]
+			factor = 1
 		}
 		cost = 1
 
@@ -156,7 +156,7 @@ is_subject_of =  UTX
 }
 
 		completion_reward = {
-load_focus_tree = { tree = UCA_california_focus 
+load_focus_tree = { tree = generic_focus
                      keep_completed = yes }
 
 }
@@ -171,7 +171,7 @@ focus = {
 		x = -2
 		y = 0
 		ai_will_do = {
-			factor = [ai_random]
+			factor = 1
 		}
 		cost = 1
 
@@ -179,7 +179,7 @@ cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-
+ROOT = { OVERLORD = { 
 if = { limit = { has_dlc = "Together for Victory"}
 set_autonomy = {
     target = ROOT
@@ -188,7 +188,7 @@ set_autonomy = {
 else = {
 release = ROOT 
 
-}}
+}} } }
 remove_from_faction = ROOT	
 
 load_focus_tree = { tree = American_choose_side_focus

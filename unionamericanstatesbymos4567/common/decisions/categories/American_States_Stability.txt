@@ -1,0 +1,6 @@
+American_States_Stability = {
+	visible = {
+	always=no
+
+}
+}

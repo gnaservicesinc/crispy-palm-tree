@@ -61,68 +61,68 @@ set_politics = {
 	election_frequency = 72
 	elections_allowed = yes
 }
-
+create_faction = "Southern Agricultural Alliance"
 add_ideas = {
 	free_trade
 }
-set_variable = { var_American_States = 1 } 
-set_variable = { var_Southern_States = 1 } 
-effect = {add_dynamic_modifier = { state_swing_modifier}}
+ROOT = {set_variable = { var_American_States = 1 } }
+ROOT = { set_variable = { var_Southern_States = 1 } }
+
 
  UCI  = { 
 
 set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_swing_desire = random}
 set_variable = { amer_state_number_of_swings = 0}
-effect = {add_dynamic_modifier = { state_swing_modifier}}
+
 }
 
  UME  = { 
 
 set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_swing_desire = random}
 set_variable = { amer_state_number_of_swings = 0}
-effect = {add_dynamic_modifier = { state_swing_modifier}}
+
 }
 
  UTN  = { 
 
 set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_swing_desire = random}
 set_variable = { amer_state_number_of_swings = 0}
-effect = {add_dynamic_modifier = { state_swing_modifier}}
+
 }
 
  UKY  = { 
 
 set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_swing_desire = random}
 set_variable = { amer_state_number_of_swings = 0}
-effect = {add_dynamic_modifier = { state_swing_modifier}}
+
 }
 
  UMS  = { 
 
 set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_swing_desire = random}
 set_variable = { amer_state_number_of_swings = 0}
-effect = {add_dynamic_modifier = { state_swing_modifier}}
+
 }
 
  UFL  = { 
 
 set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_swing_desire = random}
 set_variable = { amer_state_number_of_swings = 0}
-effect = {add_dynamic_modifier = { state_swing_modifier}}
+
 }
 
  UGO  = { 
 
 set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = ai_random}
+set_variable = { amer_state_swing_desire = random}
 set_variable = { amer_state_number_of_swings = 0}
-effect = {add_dynamic_modifier = { state_swing_modifier}}
+
 }
 
 
@@ -151,7 +151,7 @@ add_to_array = { array = USA.Southern_States value= UFL }
 add_to_array = { array = USA.Southern_States value= UGO }
 
 
-create_faction = "Southern Agricultural Alliance"
+
 
 for_each_loop = {
 array = USA.Southern_States
@@ -160,11 +160,10 @@ add_to_faction = v
 add_to_array = { array = USA.American_States value= v }
 if = { limit = { has_dlc = "Together for Victory"}
 set_autonomy = {target = v autonomous_state = autonomy_united_states_state }
-}
 else = {
 puppet =v
 }
-}
+}}
 
 add_to_array = { array = USA.American_States value= UAL }
 

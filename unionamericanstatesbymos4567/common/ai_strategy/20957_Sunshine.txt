@@ -1,8 +1,8 @@
 
 operation_Sunshine = {
 
-	name = "Operation Sunshine"
-	desc = "You will comply"
+	operation_Sunshine_name = "Operation Sunshine"
+	operation_Sunshine_desc = "You will comply"
 	enable = {
       		is_in_faction_with = UCA
 	}

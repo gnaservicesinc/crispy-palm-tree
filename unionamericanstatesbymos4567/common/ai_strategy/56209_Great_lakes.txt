@@ -89,9 +89,7 @@ abort = {
 operation_UnifiedLake = {
 
 	enable = {
-		# Special Strategy for proper states in the faction.
-		# So will only apply to US States in the faction
-		# US this approach for each of the state factions
+
 		has_variable =var_Michigan_States
 			
 		     	country_exists = UTX
@@ -232,7 +230,7 @@ operation_loose_lakes = {
 		 is_in_faction_with =UMI	
 
 	}
-has_government = a
+
 	ai_strategy = {
 		type = invade
 		id = "UMI"			

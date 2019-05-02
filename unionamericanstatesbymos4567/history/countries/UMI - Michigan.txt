@@ -68,14 +68,14 @@ create_faction = "Great Lakes Treaty Organization"
  set_variable = { var_Michigan_States = 1 }
  set_variable = { var_American_States = 1 }
 
-effect = {add_dynamic_modifier = { state_swing_modifier}}
+
 
 UWI  = { 
 
 set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = ai_random}
 set_variable = { amer_state_number_of_swings = 0}
-effect = {add_dynamic_modifier = { state_swing_modifier}}
+
 }
 
 UOH  = { 
@@ -83,7 +83,7 @@ UOH  = {
 set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = ai_random}
 set_variable = { amer_state_number_of_swings = 0}
-effect = {add_dynamic_modifier = { state_swing_modifier}}
+
 }
 
 UIL  = { 
@@ -91,7 +91,7 @@ UIL  = {
 set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = ai_random}
 set_variable = { amer_state_number_of_swings = 0}
-effect = {add_dynamic_modifier = { state_swing_modifier}}
+
 }
 
 UIN  = { 
@@ -99,7 +99,7 @@ UIN  = {
 set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = ai_random}
 set_variable = { amer_state_number_of_swings = 0}
-effect = {add_dynamic_modifier = { state_swing_modifier}}
+
 }
 
 UMN  = { 
@@ -107,7 +107,7 @@ UMN  = {
 set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = ai_random}
 set_variable = { amer_state_number_of_swings = 0}
-effect = {add_dynamic_modifier = { state_swing_modifier}}
+
 }
 
 UDK  = { 
@@ -115,7 +115,7 @@ UDK  = {
 set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = ai_random}
 set_variable = { amer_state_number_of_swings = 0}
-effect = {add_dynamic_modifier = { state_swing_modifier}}
+
 }
 
 UNE  = { 
@@ -123,7 +123,7 @@ UNE  = {
 set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = ai_random}
 set_variable = { amer_state_number_of_swings = 0}
-effect = {add_dynamic_modifier = { state_swing_modifier}}
+
 }
 
 UIA  = { 
@@ -131,7 +131,7 @@ UIA  = {
 set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = ai_random}
 set_variable = { amer_state_number_of_swings = 0}
-effect = {add_dynamic_modifier = { state_swing_modifier}}
+
 }
  
 
@@ -181,10 +181,9 @@ add_to_faction = v
 add_to_array = { array = USA.American_States value= v }
 if = { limit = { has_dlc = "Together for Victory"}
 set_autonomy = {target = v autonomous_state = autonomy_united_states_state }
-}
 else = {
 puppet =v
-}
+}}
 }
 
 # Starting tech

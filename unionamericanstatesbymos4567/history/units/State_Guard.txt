@@ -1,8 +1,8 @@
 ﻿start_equipment_factor = 0.1
 ##### Division Templates #####
 division_template = {
-	name = "State Infantry Division"  	# Standard formation for frontline divisions
-division_names_group = State_Guard
+	name = "State Infantry Division" 
+	division_names_group = State_Guard
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -144,13 +144,6 @@ division_names_group = State_Police
 		engineer = { x = 0 y = 1 }   # US Eng Rgt consisted of 2 Bns
 	}
 }
-units = {
-	division= {
-division_template = "State Infantry Division"			# Still forming 
-	division_names_group = State_Guard
-	movement = 1.0
-}
-}
 #########################
 ## STARTING PRODUCTION ##
 #########################
@@ -162,7 +155,7 @@ instant_effect = {
 			creator = ROOT
 		}
 		requested_factories = 6
-		progress = 0.4
+		progress = 0.9
 		efficiency = 100
 	}
 
@@ -182,7 +175,7 @@ instant_effect = {
 			creator = ROOT 
 		}
 		requested_factories = 1
-		progress = 0.3
+		progress = 0.9
 		efficiency = 100
 	}
 
@@ -192,7 +185,7 @@ instant_effect = {
 			creator = ROOT 
 		}
 		requested_factories = 1
-		progress = 0.6
+		progress = 0.9
 		efficiency = 100
 	}
 }

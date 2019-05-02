@@ -2,6 +2,7 @@
 ideas = {
 
 	 country = {
+
 american_states_stabilization_level_1 = {
 	picture = eng_imperial_conscription
 allowed = {always = no}
@@ -9,6 +10,7 @@ allowed = {always = no}
 		removal_cost = -1
 	modifier = {
 		stability_weekly = 0.01
+
 		}
 }
 american_states_stabilization_level_2 = {

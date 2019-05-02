@@ -2,15 +2,4 @@
 state_swing_modifier = {
 	enable = { always = yes }
 	remove_trigger = { always = no }
-		#Copy in Current Country / Game Values to Temps
-			set_variable = { temp_desire = amer_state_swing_desire }
-			set_variable = { temp_resistance= amer_state_swing_resistance }
-			set_variable = { temp_count= amer_state_number_of_swings }	
-			set_variable = { temp_stab = stability}	
-
-			#Calucuate adjusted values
-			add_to_variable = { temp_count = 1 } #+1 to temp count will not effect actual cont. 
-			multiply_variable = { temp_count = 0.01 } #Each swing adds 0.01 1%.
-			add_to_variable = {temp_resistance =  temp_count} # to resistance
-			multiply_variable = {temp_desire,temp_stab  } # And also Curve desire based on stability.
-}
+		}

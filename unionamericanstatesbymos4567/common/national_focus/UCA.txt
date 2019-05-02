@@ -3343,7 +3343,9 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = { 
-add_manpower = 10000000
+set_variable = { var_new_mp = random }
+multiply_temp_variable = { var_new_mp  = 100000000 }
+add_manpower = var_new_mp
 }
 }
 
