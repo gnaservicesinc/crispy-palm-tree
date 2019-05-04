@@ -16,26 +16,7 @@ country = {
 	default = no
 
 
-focus = {
-		id = American_Major_Texas_post_bibb
-		icon = GFX_goal_generic_production
-		x = 5
-		y = -2
-		cost = 1
-	cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-ai_will_do = {
-			factor = 100
-		}
 
-		available = {    if = { limit = { NOT ={ UTX = {has_country_leader = { ruling_only = yes name = "Führer Bibb Graves" }} }}}}
-
-completion_reward = {
-load_focus_tree = { tree = American_Major_texas_post_bibb
-                     keep_completed = no }
-}
-}
 
 focus = {
 		id = American_Major_Texas_Bibb_takes_command 
@@ -99,7 +80,7 @@ ai_will_do = {
 		
 create_field_marshal = {
 				name = "Führer Bibb Graves"
-				picture = BIBB_GRAVES
+				picture = "gfx/leaders/UTX/Bibb_Graves.dds"
 				skill = 8
 			attack_skill = "[?var_attack_skill]"
 			defense_skill = "[?var_defense_skill]"
@@ -132,7 +113,7 @@ ai_will_do = {
 		 completion_reward = {
 		add_offsite_building = { type = arms_factory level = 4 }
 
-a		dd_ideas = { american_states_sharing_is_careing }
+		add_ideas = { american_states_sharing_is_careing }
 
 	}
 }
@@ -535,7 +516,31 @@ INS = { declare_war_on = {
 }
 }
 
-	
+focus = {
+		id = American_Major_Texas_post_bibb
+		icon = GFX_goal_generic_production
+		relative_position_id = American_Major_Texas_focus_invade_mexico
+		x = 0
+		y = 2
+		cost = 1
+	cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	prerequisite = { 
+			focus =American_Major_Texas_focus_invade_mexico
+			focus =American_Major_Texas_focus_invade_canada
+			 }
+ai_will_do = {
+			factor = 1
+		}
+
+		available = {    if = { limit = {  UTX = { NOT ={ has_country_leader = { ruling_only = yes name = "Führer Bibb Graves" }} }}}}
+
+completion_reward = {
+load_focus_tree = { tree = American_Major_texas_post_bibb
+                     keep_completed = no }
+}
+}	
 
 
 

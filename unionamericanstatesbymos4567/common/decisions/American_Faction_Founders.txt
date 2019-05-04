@@ -1,38 +1,103 @@
 american_major_state = {
 
+american_major_state_build_intelligence_agency = {
+fire_only_once = yes
+ cost = 250
+		days_remove = 30
+
+available = {
+      if = { limit = { NOT = { has_idea = american_states_intelligence_agency_level_5 }}}
+}
+remove_effect = {
+	if={limit={has_idea = american_states_intelligence_agency_level_4}
+		 add_ideas = { american_states_intelligence_agency_level_5}
+}
+else  =  { limit = {  has_idea =american_states_intelligence_agency_level_3}
+swap_ideas = {
+    remove_idea = american_states_intelligence_agency_level_3
+    add_idea = american_states_intelligence_agency_level_4
+	}
+
+else  =  { limit = {  has_idea =american_states_intelligence_agency_level_2 }
+swap_ideas = {
+    remove_idea = american_states_intelligence_agency_level_2
+    add_idea = american_states_intelligence_agency_level_3
+	}
+
+else  =  { limit = {  has_idea =american_states_intelligence_agency_level_1}
+swap_ideas = {
+    remove_idea = american_states_intelligence_agency_level_1
+    add_idea = american_states_intelligence_agency_level_2
+	}
+else = { add_ideas = {american_states_intelligence_agency_level_1}
+	}
+}}}}
+}
+
+american_major_state_infiltrate = {
+ai_will_do = {factor = 1 }
+			cost = 100
+		days_remove = 1
+		days_re_enable = 30
+visible = {
+always=yes
+
+}
+
+available = { has_idea = american_states_intelligence_agency_level_1}
+
+      target_trigger = {
+		FROM = {tag = UTX}
+		FROM = {tag = UCA}
+		FROM = {tag = UAL}
+		FROM = {tag = UMI}
+		}
+	
+complete_effect = {
+
+FROM = {set_variable = { var_infiltrated_by_[?ROOT.GetName]} = 1 }
+}
+
+}
 
 american_major_state_assassinate_bibb_attempt = {
 		
  available = {
-     UTX = {   if = { limit = { has_country_leader = { ruling_only = yes name = "Führer Bibb Graves" }} }}
+has_variable =var_infiltrated_by_[?ROOT.GetName]
 }
-		
+visible = {
+NOT = { tag=FROM}
+
+}		
 ai_will_do = {factor = 1 }
-			cost = 2000
+			cost = 500
 		days_remove = 1
 		fire_only_once = yes
 
-            target_trigger = {FROM = {tag = UTX}}
+            target_trigger = {
+		FROM = {tag = UTX}
+		FROM = {tag = UCA}
+		FROM = {tag = UAL}
+		FROM = {tag = UMI}
+		}
 		complete_effect = {
-
-
-hold_election = UTX
-
-country_event = {
+		hold_election = FROM
+		if={limit={ tag = UTX }
+		country_event = {
     id = texan.1
     days = 1
     random = 5
 }
 
-add_named_threat = { 
-    threat = -100
-    name = "Führer Bibb Graves Assassinated"
+UTX ={load_focus_tree = { tree = American_Major_texas_post_bibb
+                     keep_completed = no }}
+
+
 }
-}
-
-
-
 		
 }
+}
+
+
 		
 }#####################

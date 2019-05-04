@@ -1,4 +1,8 @@
 ﻿  l_english:
+ american_major_state_infiltrate:0 "Establish [Root.Owner.GetNameWithFlag] Intelligence Agency"
+ american_major_state_infiltrate_desc:0 "Things have destabilized and the very concept of a [Root.Owner.GetRulingIdeology] world view is under threat and the [Root.Owner.GetFactionName] is in tatters.\nWe MUST act NOW to safeguard [Root.Owner.GetName] interests [Root.Owner.GetFlag] and [Root.Owner.GetRulingIdeology] values."
+ american_major_state_assassinate_bibb_attempt:0 "Eliminate [FROM.Owner.GetLeader]"
+ american_major_state_assassinate_bibb_attempt_desc:0 "Its time to ride the world of one very bad person. Instruct our agents in [ to eliminate [FROM.Owner.GetLeader]"
 American_States_Stability:0 "Should we stir thing up a bit or reassure people?"
  American_States_Stability_Stabilize:0 "Stabilize things" 
  American_States_Stability_Stabilize_desc:0 "Settle things down a bit"

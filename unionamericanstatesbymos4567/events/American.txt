@@ -1,0 +1,73 @@
+﻿###########################
+# American Events
+###########################
+
+add_namespace = american
+
+country_event = {
+
+
+	id = american.1
+	title = american.1.t
+	desc = american.1.d
+	picture = GFX_report_event_usa_macarthur_speech
+	is_triggered_only = yes
+option = { if={ limit ={	OR={
+		
+		tag  =  UIL
+		tag  =  UNY
+		tag  =  UIN
+		tag  =  UCI
+		tag  =  UDK
+		tag  =  UMN
+		tag  =  UEN
+		tag  =  UKY
+		tag  =  UTN
+		tag  =  UMS
+		tag  =  UFL
+		tag  =  UGO
+		tag  =  UVA
+		tag  =  UNE
+		tag  =  UME
+		tag  =  UAR
+		tag  =  ULA
+		tag  =  UWI
+		tag  =  UOK
+		tag  =  UIA
+		tag  =  UKA
+		tag  =  UOH
+		tag  =  UPE
+		tag  =  UML
+		tag  =  UNJ
+		tag  =  UWA
+		tag  =  UID
+		tag  =  UAZ
+		tag  =  UUT
+		tag  =  UNV
+		tag  =  UOR
+		tag  =  UMO
+		tag  =  UCO
+		tag  =  UMX
+		tag  =  UWY}}
+		name = american.1.b 
+		else ={ limit = { OR = { 	tag = UMI
+	tag = UCA
+	tag = UAL
+	tag = UTX }}
+	 name = american.1.b.2
+	else ={ limit = { tag = USA}
+			name = american.1.b.3 
+
+		else = {name = american.1.b.4 }
+		}
+
+		
+		}
+	}
+	}
+	
+
+		
+	
+
+}

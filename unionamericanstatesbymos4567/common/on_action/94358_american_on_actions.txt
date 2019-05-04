@@ -1,0 +1,7 @@
+on_actions = {
+
+on_startup = {
+country_event = {
+    id = american.1
+}
+}}

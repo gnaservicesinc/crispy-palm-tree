@@ -91,7 +91,7 @@ country = {
 ####################################################################
 
 	focus = {
-		id = American_choice_loyal_union_state
+		id = American_choice_loyal_union_states
 		icon = GFX_expand_ru_eco_partnetship
 		x = 5
 		y = 0
@@ -134,7 +134,7 @@ load_focus_tree = { tree = American_Loyal_State_focus
 
 
 focus = {
-		id = American_choice_not_so_loyal_union_state
+		id = American_choice_not_so_loyal_union_states
 		icon = GFX_expand_ru_eco_partnetship
 	relative_position_id = American_choice_loyal_union_state
 	dynamic =  yes
@@ -164,7 +164,7 @@ load_focus_tree = { tree = generic_focus
 
 
 focus = {
-		id = American_choice_disloyal_union_state
+		id = American_choice_disloyal_union_states
 		icon = GFX_expand_ru_eco_partnetship
 	relative_position_id = American_choice_loyal_union_state
 	dynamic =  yes

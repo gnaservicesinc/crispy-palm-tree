@@ -1,0 +1,99 @@
+focus_tree = {
+ id = Union_of_american_states_focus
+country = {
+		factor = 0
+		
+		modifier = {
+			add = 1000
+	OR={
+		
+		tag  =  UIL
+		tag  =  UNY
+		tag  =  UIN
+		tag  =  UCI
+		tag  =  UDK
+		tag  =  UMN
+		tag  =  UEN
+		tag  =  UKY
+		tag  =  UTN
+		tag  =  UMS
+		tag  =  UFL
+		tag  =  UGO
+		tag  =  UVA
+		tag  =  UNE
+		tag  =  UME
+		tag  =  UAR
+		tag  =  ULA
+		tag  =  UWI
+		tag  =  UOK
+		tag  =  UIA
+		tag  =  UKA
+		tag  =  UOH
+		tag  =  UPE
+		tag  =  UML
+		tag  =  UNJ
+		tag  =  UWA
+		tag  =  UID
+		tag  =  UAZ
+		tag  =  UUT
+		tag  =  UNV
+		tag  =  UOR
+		tag  =  UMO
+		tag  =  UCO
+		tag  =  UMX
+		tag  =  UMI
+		tag  =  UCA
+		tag  =  UTX
+		tag  =  UAL
+
+
+}
+		}
+		
+		modifier = {
+		add = 1000 OR = {
+		original_tag   =  UIL
+		original_tag   =  UNY
+		original_tag   =  UIN
+		original_tag   =  UCI
+		original_tag   =  UDK
+		original_tag   =  UMN
+		original_tag   =  UEN
+		original_tag   =  UKY
+		original_tag   =  UTN
+		original_tag   =  UMS
+		original_tag   =  UFL
+		original_tag   =  UGO
+		original_tag   =  UVA
+		original_tag   =  UNE
+		original_tag   =  UME
+		original_tag   =  UAR
+		original_tag   =  ULA
+		original_tag   =  UWI
+		original_tag   =  UOK
+		original_tag   =  UIA
+		original_tag   =  UKA
+		original_tag   =  UOH
+		original_tag   =  UPE
+		original_tag   =  UML
+		original_tag   =  UNJ
+		original_tag   =  UWA
+		original_tag   =  UID
+		original_tag   =  UAZ
+		original_tag   =  UUT
+		original_tag   =  UNV
+		original_tag   =  UOR
+		original_tag   =  UMO
+		original_tag   =  UCO
+		original_tag   =  UMX
+		original_tag   =  UMI
+		original_tag   =  UCA
+		original_tag   =  UTX
+		original_tag   =  UAL
+		}}
+	}
+
+	continuous_focus_position = { x = 50 y = 1600 }
+	default = no
+}
+

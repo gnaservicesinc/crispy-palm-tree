@@ -13,7 +13,7 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	immediate = { 
-			UTX = { kill_country_leader = yes}
+			FROM = { kill_country_leader = yes}
 			news_event = {
     id = texan.1
     days = 30

@@ -144,6 +144,69 @@ division_names_group = State_Police
 		engineer = { x = 0 y = 1 }   # US Eng Rgt consisted of 2 Bns
 	}
 }
+
+
+	random_owned_state = { 
+units = {
+	division= {	
+		name = "1st Division"
+		location = THIS
+		division_template = "State Infantry Division" 
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+
+		}
+	}
+}
+	random_owned_state = { 
+units = {
+	division= {	
+		name = "2st Division"
+		location = THIS
+		division_template = "State Infantry Division" 
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+
+		}
+	}
+}
+	random_owned_state = { 
+units = {
+	division= {	
+		name = "3st Division"
+		location = THIS
+		division_template = "State Infantry Division" 
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+
+		}
+	}
+}
+	random_owned_state = { 
+units = {
+	division= {	
+		name = "4st Division"
+		location = THIS
+		division_template = "State Infantry Division" 
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+
+		}
+	}
+}
+	random_owned_state = { 
+units = {
+	division= {	
+		name = "Police Division"
+		location = THIS
+		division_template = "State Police Division" 
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+
+		}
+	}
+}
+
 #########################
 ## STARTING PRODUCTION ##
 #########################

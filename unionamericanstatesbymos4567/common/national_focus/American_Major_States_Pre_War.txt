@@ -1,0 +1,73 @@
+focus_tree = {
+ id = American_Major_States_Pre_War
+country = {
+		factor = 0
+		
+		modifier = {
+			add = 10000	
+		tag =  UMI
+		tag =  UCA
+		tag =  UTX
+		tag =  UAL
+	}
+			modifier = {
+		add = 10000 
+		original_tag   = UMI
+		original_tag   = UTX
+		original_tag   = UAL
+		original_tag   = UCA
+		}
+}
+	continuous_focus_position = { x = 50 y = 1600 }
+	default = no
+
+focus = {
+	id= American_Major_States_Pre_War_[?ROOT.GetName]_national_war_effort
+	icon = GFX_goal_generic_production
+	x = 6
+	y = 0
+	cost = 5	
+	 dynamic = yes
+	ai_will_do = {factor = 1}
+ 		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+completion_reward = {
+	if={limit={tag=UTX}
+		UTX ={load_focus_tree = { tree = American_Major_Texas_focus
+                     keep_completed = yes }}}
+
+	 if={limit={tag=UMI}
+		UMI ={load_focus_tree = { tree = American_Major_Michigan_focus
+                     keep_completed = yes }}}
+
+	 if={limit={tag=UCA}
+			ROOT ={load_focus_tree = { tree = generic_focus
+                     keep_completed = no }}}
+
+	 if={limit={tag=UAL}
+			ROOT ={load_focus_tree = { tree = generic_focus
+                     keep_completed = no }}}
+	}
+}
+
+focus = {
+	id= American_Major_States_Pre_War_establish_[?ROOT.GetName]_department_of_intelligence
+	icon = GFX_goal_generic_production
+	x = 2
+	y = 0
+	cost = 5	
+	 dynamic = yes
+	ai_will_do = {factor = 1}
+ 		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+}
+
+
+
+
+
+
+}###############

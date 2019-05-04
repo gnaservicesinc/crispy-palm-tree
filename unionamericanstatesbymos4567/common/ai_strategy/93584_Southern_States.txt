@@ -135,7 +135,7 @@ free_for_all_down_south = {
 		type = declare_war
 		id = USA			
 		value = 9000
-	
+	}
 
 }
 
@@ -179,7 +179,7 @@ about = {
 			NOT = { is_in_faction_with = USA }
 			NOT = { is_in_faction_with = UAL }
 			
-
+			}
 			}
    ai_strategy = {
 		type = invade

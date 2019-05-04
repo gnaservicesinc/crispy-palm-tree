@@ -4,13 +4,45 @@ country = {
 		factor = 0
 		
 		modifier = {
-			add = 1000	
-		tag =  UMI
+			add = 1	
+		
 	}
+			modifier = {
+		add = 1 
+		
+		}
 	}
-
 	continuous_focus_position = { x = 50 y = 1600 }
 	default = no
 
 
+
+focus = {
+		id = American_choice_loyal_union_state
+		icon = GFX_expand_ru_eco_partnetship
+		x = 5
+		y = 0
+		dynamic =  yes
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+available = {
+ROOT = {   has_variable =var_American_States }
+    }
+
+ allow_branch = { ROOT = {   has_variable =var_American_States }}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+load_focus_tree = { tree = American_Major_States_Pre_War
+                     keep_completed = yes }}
 }
+
+
+}###############
