@@ -11,7 +11,7 @@ available = {
 remove_effect = {
 	if={limit={has_idea = american_states_intelligence_agency_level_4}
 		 add_ideas = { american_states_intelligence_agency_level_5}
-}
+
 else  =  { limit = {  has_idea =american_states_intelligence_agency_level_3}
 swap_ideas = {
     remove_idea = american_states_intelligence_agency_level_3
@@ -31,7 +31,7 @@ swap_ideas = {
 	}
 else = { add_ideas = {american_states_intelligence_agency_level_1}
 	}
-}}}}
+}}}}}
 }
 
 american_major_state_infiltrate = {

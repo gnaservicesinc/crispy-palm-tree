@@ -30,7 +30,7 @@ american_states_intelligence_agency_level_2 = {
 		planning_speed = 0.35
 		training_time_factor= -0.25
 		}
-}		}
+}	
 
 american_states_intelligence_agency_level_3 = {
 

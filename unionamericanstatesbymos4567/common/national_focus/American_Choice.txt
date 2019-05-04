@@ -41,11 +41,20 @@ country = {
 		tag  =  UMO
 		tag  =  UCO
 		tag  =  UMX
-		tag  =  UWY}
+		tag  =  UWY
+		tag = UMI
+		tag = UCA
+		tag = UAL
+		tag = UTX
+		}
 		}
 		
 		modifier = {
 		add = 1000 OR = {
+			original_tag = UMI
+		original_tag = UCA
+		original_tag = UAL
+		original_tag = UTX
 		original_tag   =  UIL
 		original_tag   =  UNY
 		original_tag   =  UIN
@@ -107,6 +116,10 @@ is_subject_of =  USA
 }
 available = {
 ROOT = {   has_variable =var_American_States }
+			NOT ={ tag = UMI }
+		NOT ={ tag = UCA }
+		NOT ={ tag = UAL }
+		NOT ={ tag = UTX }
     }
 
  allow_branch = { ROOT = {   has_variable =var_American_States }}		
@@ -144,7 +157,13 @@ focus = {
 			factor = 1
 		}
 		cost = 1
-
+available = {
+ROOT = {   has_variable =var_American_States }
+			NOT ={ tag = UMI }
+		NOT ={ tag = UCA }
+		NOT ={ tag = UAL }
+		NOT ={ tag = UTX }
+    }
 cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -174,7 +193,13 @@ focus = {
 			factor = 1
 		}
 		cost = 1
-
+available = {
+ROOT = {   has_variable =var_American_States }
+			NOT ={ tag = UMI }
+		NOT ={ tag = UCA }
+		NOT ={ tag = UAL }
+		NOT ={ tag = UTX }
+    }
 cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -199,8 +224,83 @@ load_focus_tree = { tree = American_choose_side_focus
 
 
 
+	focus = {
+		id = American_choice_major_union_states_warpath
+		icon = GFX_expand_ru_eco_partnetship
+		x = 10
+		y = 0
+		dynamic =  yes
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+available = {
+ROOT = {   has_variable =var_American_States }
+ROOT = { 	is_ai = yes }
+	OR{
+		ROOT = {tag = UMI }
+		ROOT = {tag = UCA }
+		ROOT = {tag = UAL }
+		ROOT = {tag = UTX }
+	}
+    }
+
+ allow_branch = { ROOT = {   has_variable =var_American_States }
+		ROOT = { 	is_ai = yes }}
+
+		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		load_focus_tree = { tree = American_Major_Warpath_focus
+                     keep_completed = no }
 
 
+			 }
+	}
+
+	focus = {
+		id = American_choice_major_union_states_generic
+		icon = GFX_expand_ru_eco_partnetship
+		x = 10
+		y = 0
+		dynamic =  yes
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+available = {
+ROOT = {   has_variable =var_American_States }
+ROOT = { NOT={	is_ai = yes }}
+	OR{
+		ROOT = {tag = UMI }
+		ROOT = {tag = UCA }
+		ROOT = {tag = UAL }
+		ROOT = {tag = UTX }
+	}
+    }
+
+ allow_branch = { ROOT = {   has_variable =var_American_States }
+		ROOT = { 	NOT={is_ai = yes }}}
+
+		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		load_focus_tree = { tree = generic_focus
+                     keep_completed = no }
+
+
+			 }
+	}
 
 
 

@@ -9,7 +9,7 @@ allowed = {always = no}
 	modifier = {
 		send_volunteer_size=10
 		justify_war_goal_time = -0.95
-		army_leader_start_level	= 5
+		army_leader_start_level	= 3
 		ai_focus_aggressive_factor = 0.95	
 	
 		}

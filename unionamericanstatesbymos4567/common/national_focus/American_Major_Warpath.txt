@@ -1,16 +1,13 @@
 focus_tree = {
- id = American_Major_Texas_focus
+ id = American_Major_Warpath_focus
 country = {
 		factor = 0
 		
 		modifier = {
-			add = 1	
-		tag =  UTX
+			add = 0	
+		
 	}
-			modifier = {
-		add = 1 
-		original_tag   = UTX
-		}
+		
 	}
 	continuous_focus_position = { x = 50 y = 1600 }
 	default = no
@@ -18,19 +15,21 @@ country = {
 
 
 
+
 focus = {
-		id = American_Major_Texas_Bibb_takes_command 
+		id = American_Major_Warpath_focus_[?ROOT.GetLeader]_takes_command 
 		icon = GFX_goal_generic_production
 		x = 6
 		y = 0
-		cost = 1
+		dynamic =  yes
+		cost = 4
 ai_will_do = {
 			factor = 100
 		}
 		 cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-		available = { ROOT = {   if = { limit = { has_country_leader = { ruling_only = yes name = "Führer Bibb Graves" }} }}}
+		
 		 completion_reward = {
 		
 
@@ -79,8 +78,21 @@ ai_will_do = {
 }
 		
 create_field_marshal = {
+				if={limit={tag=UTX}
 				name = "Führer Bibb Graves"
-				picture = "gfx/leaders/UTX/Bibb_Graves.dds"
+				picture = "Bibb_Graves.dds"
+				else ={ limit={tag=UMI}
+				name ="Fred W. Green"
+				picture = "gfx/leaders/UMI/portrait_umi_fred_warren_green.dds"
+				else ={ limit ={ tag=UCA}
+				name ="Chairperson Upton Beall Sinclair Jr."				picture = "gfx/leaders/UCA/Upton_Beall_SinclairJr.dds"
+				else ={
+					name ="Governor Jim Folsom"
+					picture ="gfx/leaders/UAL/Jim_Folsom.dds"
+				}
+				
+				}}}
+				
 				skill = 8
 			attack_skill = "[?var_attack_skill]"
 			defense_skill = "[?var_defense_skill]"
@@ -97,19 +109,19 @@ create_field_marshal = {
 }
 
 focus = {
-		id = American_Major_Texas_focus_blackmarket_arms_deal_1 
+		id = American_Major_Warpath_focus_focus_blackmarket_arms_deal_1 
 		icon = GFX_goal_generic_production
-		prerequisite = { focus =American_Major_Texas_Bibb_takes_command  }
+		prerequisite = { focus =American_Major_Warpath_focus_Bibb_takes_command  }
 		x = 3
 		y = 0
-		cost = 1
+		cost = 4
 ai_will_do = {
 			factor = 100
 		}
 		 cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-		available = { ROOT = {   if = { limit = { has_country_leader = { ruling_only = yes name = "Führer Bibb Graves" }} }}}
+		
 		 completion_reward = {
 		add_offsite_building = { type = arms_factory level = 4 }
 
@@ -120,20 +132,20 @@ ai_will_do = {
 
 
 focus = {
-		id = American_Major_Texas_focus_blackmarket_arms_deal_2 
+		id = American_Major_Warpath_focus_focus_blackmarket_arms_deal_2 
 		icon = GFX_goal_generic_production
-		relative_position_id = American_Major_Texas_focus_blackmarket_arms_deal_1 
-		prerequisite = { focus =American_Major_Texas_focus_blackmarket_arms_deal_1 }
+		relative_position_id = American_Major_Warpath_focus_focus_blackmarket_arms_deal_1 
+		prerequisite = { focus =American_Major_Warpath_focus_focus_blackmarket_arms_deal_1 }
 		x = 0
 		y = 1
-		cost = 1
+		cost = 4
 ai_will_do = {
 			factor = 100
 		}
 		 cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-		available = { ROOT = {   if = { limit = { has_country_leader = { ruling_only = yes name = "Führer Bibb Graves" }} }}}
+		
 		 completion_reward = {
 		add_offsite_building = { type = arms_factory level = 8 }		
 		add_ideas = { american_states_creative_recuitment }
@@ -142,34 +154,34 @@ ai_will_do = {
 }
 
 focus = {
-		id = American_Major_Texas_focus_blackmarket_arms_deal_3 
+		id = American_Major_Warpath_focus_focus_blackmarket_arms_deal_3 
 		icon = GFX_goal_generic_production
-		relative_position_id = American_Major_Texas_focus_blackmarket_arms_deal_2 
-		prerequisite = { focus =American_Major_Texas_focus_blackmarket_arms_deal_2 }
+		relative_position_id = American_Major_Warpath_focus_focus_blackmarket_arms_deal_2 
+		prerequisite = { focus =American_Major_Warpath_focus_focus_blackmarket_arms_deal_2 }
 		x = 0
 		y = 1
-		cost = 1
+		cost = 4
 		 cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
 ai_will_do = {
 			factor = 10
 		}
-		available = { ROOT = {   if = { limit = { has_country_leader = { ruling_only = yes name = "Führer Bibb Graves" }} }}}
+		
 		 completion_reward = {
 		add_offsite_building = { type = arms_factory level = 16 }
 add_ideas = { american_states_serious_criminal_element }
 }}
 
 focus = {
-		id = American_Major_Texas_focus_blackmarket_arms_deal_4 
+		id = American_Major_Warpath_focus_focus_blackmarket_arms_deal_4 
 		icon = GFX_goal_generic_production
-		relative_position_id = American_Major_Texas_focus_blackmarket_arms_deal_3 
-		prerequisite = { focus =American_Major_Texas_focus_blackmarket_arms_deal_3 }
-		available = { ROOT = {   if = { limit = { has_country_leader = { ruling_only = yes name = "Führer Bibb Graves" }} }}}
+		relative_position_id = American_Major_Warpath_focus_focus_blackmarket_arms_deal_3 
+		prerequisite = { focus =American_Major_Warpath_focus_focus_blackmarket_arms_deal_3 }
+		
 		x = 0
 		y = 1
-		cost = 1
+		cost = 4
 		 cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -183,18 +195,18 @@ add_ideas = { american_states_overwhelming_criminal_element }
 }
 
 focus = {
-		id = American_Major_Texas_focus_border_security
+		id = American_Major_Warpath_focus_focus_border_security
 		icon = GFX_goal_generic_production
 		x = 8
 		y = 0
-		cost = 1
+		cost = 4
 ai_will_do = {
 			factor = 1000
 		}
 		 cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-		available = { ROOT = {   if = { limit = { has_country_leader = { ruling_only = yes name = "Führer Bibb Graves" }} }}}
+		
 			
 		completion_reward = { 
 add_manpower = 1000000
@@ -206,20 +218,20 @@ add_ideas = { american_states_emergency_govement_industry_wartime_partnership }
 }
 
 focus = {
-		id = American_Major_Texas_focus_border_security_2
+		id = American_Major_Warpath_focus_focus_border_security_2
 		icon = GFX_goal_generic_production
-		relative_position_id = American_Major_Texas_focus_border_security
-		prerequisite = { focus =American_Major_Texas_focus_border_security }
+		relative_position_id = American_Major_Warpath_focus_focus_border_security
+		prerequisite = { focus =American_Major_Warpath_focus_focus_border_security }
 ai_will_do = {
 			factor = 1000
 		}
 		x = -1
 		y = 1
-		cost = 1
+		cost = 4
 		 cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-		available = { ROOT = {   if = { limit = { has_country_leader = { ruling_only = yes name = "Führer Bibb Graves" }} }}}
+		
 		
 			
 completion_reward = { 
@@ -232,17 +244,17 @@ add_manpower = 1000000
 
 
 focus = {
-		id = American_Major_Texas_focus_border_security_3
+		id = American_Major_Warpath_focus_focus_border_security_3
 		icon = GFX_goal_generic_production
-		relative_position_id = American_Major_Texas_focus_border_security_2
-		prerequisite = { focus =American_Major_Texas_focus_border_security_2 }
+		relative_position_id = American_Major_Warpath_focus_focus_border_security_2
+		prerequisite = { focus =American_Major_Warpath_focus_focus_border_security_2 }
 		x = -1
 		y = 1
 ai_will_do = {
 			factor = 1000
 		}
-available = { ROOT = {   if = { limit = { has_country_leader = { ruling_only = yes name = "Führer Bibb Graves" }} }}}
-		cost = 1
+
+		cost = 4
 		 cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes 
@@ -252,14 +264,14 @@ add_manpower = 1000000
 }
  }
 focus = {
-		id = American_Major_Texas_focus_border_security_4
+		id = American_Major_Warpath_focus_focus_border_security_4
 		icon = GFX_goal_generic_production
-		relative_position_id = American_Major_Texas_focus_border_security_3
-		prerequisite = { focus =American_Major_Texas_focus_border_security_3 }
+		relative_position_id = American_Major_Warpath_focus_focus_border_security_3
+		prerequisite = { focus =American_Major_Warpath_focus_focus_border_security_3 }
 		x = -1
 		y = 1
-		cost = 1
-available = { ROOT = {   if = { limit = { has_country_leader = { ruling_only = yes name = "Führer Bibb Graves" }} }}}
+		cost = 4
+
 ai_will_do = {
 			factor = 1000
 		}
@@ -275,14 +287,14 @@ add_manpower = 1000000
  }
 
 focus = {
-		id = American_Major_Texas_focus_bibb_consolidate_power
+		id = American_Major_Warpath_focus_focus_bibb_consolidate_power
 		icon = GFX_goal_generic_production
-		relative_position_id = American_Major_Texas_focus_border_security_4
-		prerequisite = {focus=American_Major_Texas_focus_border_security_4 }
-available = { ROOT = {   if = { limit = { has_country_leader = { ruling_only = yes name = "Führer Bibb Graves" }} }}}
+		relative_position_id = American_Major_Warpath_focus_focus_border_security_4
+		prerequisite = {focus=American_Major_Warpath_focus_focus_border_security_4 }
+
 		x = 0
 		y = 1
-		cost = 1
+		cost = 4
 ai_will_do = {
 			factor = 100
 		}
@@ -290,7 +302,7 @@ ai_will_do = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		 completion_reward = {
-			
+	if={limit={tag=UTX}		
 for_each_scope_loop = {
 array = USA.Texan_States
  if ={ limit = { is_ai = yes}	
@@ -301,17 +313,54 @@ annex_country = {
 
 }}}
 }
+else ={limit={tag=UMI}
+for_each_scope_loop = {
+array = USA.Michigan_States
+ if ={ limit = { is_ai = yes}	
+	ROOT = {
+annex_country = {
+    target = PREV
+    transfer_troops = yes
+
+}}}
+}
+else ={limit={tag=UCA}
+for_each_scope_loop = {
+array = USA.cali_States
+ if ={ limit = { is_ai = yes}	
+	ROOT = {
+annex_country = {
+    target = PREV
+    transfer_troops = yes
+
+}}}
+}
+else ={
+for_each_scope_loop = {
+array = USA.Southern_States
+ if ={ limit = { is_ai = yes}	
+	ROOT = {
+annex_country = {
+    target = PREV
+    transfer_troops = yes
+
+}}}
+}
+}
+}
+}
+}
 }
 }
 focus = {
-		id = American_Major_Texas_focus_bibb_consolidate_power_usa
+		id = American_Major_Warpath_focus_focus_bibb_consolidate_power_usa
 		icon = GFX_goal_generic_production
-		relative_position_id = American_Major_Texas_focus_bibb_consolidate_power
-		prerequisite = {focus=American_Major_Texas_focus_bibb_consolidate_power }
-available = { ROOT = {   if = { limit = { has_country_leader = { ruling_only = yes name = "Führer Bibb Graves" }} }}}
+		relative_position_id = American_Major_Warpath_focus_focus_bibb_consolidate_power
+		prerequisite = {focus=American_Major_Warpath_focus_focus_bibb_consolidate_power }
+
 		x = 0
 		y = 1
-		cost = 1
+		cost = 4
 ai_will_do = {
 			factor = 100
 		}
@@ -333,16 +382,16 @@ array = USA.American_States
 }}
 
 focus = {
-		id = American_Major_Texas_focus_invade_mexico
+		id = American_Major_Warpath_focus_focus_invade_mexico
 		icon = GFX_goal_generic_production
-		relative_position_id = American_Major_Texas_focus_bibb_consolidate_power_usa
+		relative_position_id = American_Major_Warpath_focus_focus_bibb_consolidate_power_usa
 		prerequisite = { 
-			focus =American_Major_Texas_focus_bibb_consolidate_power_usa
+			focus =American_Major_Warpath_focus_focus_bibb_consolidate_power_usa
 			 }
-available = { ROOT = {   if = { limit = { has_country_leader = { ruling_only = yes name = "Führer Bibb Graves" }} }}}
+
 		x = 0
 		y = 2
-		cost = 1
+		cost = 4
 		will_lead_to_war_with = MEX
 ai_will_do = {
 			factor = 100
@@ -358,12 +407,50 @@ declare_war_on = {
     target = MEX
     type = annex_everything
 }
+declare_war_on = {
+    target = BRA
+    type = annex_everything
+}
+declare_war_on = {
+    target = COL
+    type = annex_everything
+}
+declare_war_on = {
+    target = ARG
+    type = annex_everything
+}
 hidden_effect = { 
+if={limit={tag=UTX}		
 ROOT = {
 annex_country = {
     target = MEX
     transfer_troops = yes
 }}
+else ={limit={tag=UMI}
+ROOT = {
+annex_country = {
+    target = BRA
+    transfer_troops = yes
+}}
+else ={limit={tag=UCA}
+ROOT = {
+annex_country = {
+    target = COL
+    transfer_troops = yes
+}}
+else ={
+ROOT = {
+annex_country = {
+    target = ARG
+    transfer_troops = yes
+}}
+}
+}
+}
+}
+
+
+
 BRA = { declare_war_on = {
     					target = ROOT
     					type = annex_everything
@@ -428,21 +515,21 @@ HAI = { declare_war_on = {
 }
 
 focus = {
-		id = American_Major_Texas_focus_invade_canada
+		id = American_Major_Warpath_focus_focus_invade_canada
 		icon = GFX_goal_generic_production
-		relative_position_id = American_Major_Texas_focus_invade_mexico
+		relative_position_id = American_Major_Warpath_focus_focus_invade_mexico
 		prerequisite = { 
 
-			focus =American_Major_Texas_focus_bibb_consolidate_power_usa
+			focus =American_Major_Warpath_focus_focus_bibb_consolidate_power_usa
 			 }
 		will_lead_to_war_with = CAN
 
 		x = 2
 		y = 0
-		cost = 1
+		cost = 4
 ai_will_do = {	factor = 100 
 }
-available = { ROOT = {   if = { limit = { has_country_leader = { ruling_only = yes name = "Führer Bibb Graves" }} }}}
+
 
 		 cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -454,11 +541,14 @@ available = { ROOT = {   if = { limit = { has_country_leader = { ruling_only = y
 					}}
 
 hidden_effect = { 
+
+if ={limit={tag=UMI}
 ROOT = {
 annex_country = {
     target = CAN
     transfer_troops = yes
-}}
+}}}
+
 CHI = { declare_war_on = {
     					target = ROOT
     					type = annex_everything
@@ -517,28 +607,35 @@ INS = { declare_war_on = {
 }
 
 focus = {
-		id = American_Major_Texas_post_bibb
+		id = American_Major_Warpath_focus_world
 		icon = GFX_goal_generic_production
-		relative_position_id = American_Major_Texas_focus_invade_mexico
+		relative_position_id = American_Major_Warpath_focus_focus_invade_mexico
 		x = 0
 		y = 2
-		cost = 1
+		cost = 4
 	cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 	prerequisite = { 
-			focus =American_Major_Texas_focus_invade_mexico
-			focus =American_Major_Texas_focus_invade_canada
+			focus =American_Major_Warpath_focus_focus_invade_mexico
+			focus =American_Major_Warpath_focus_focus_invade_canada
 			 }
 ai_will_do = {
 			factor = 1
 		}
 
-		available = {    if = { limit = {  UTX = { NOT ={ has_country_leader = { ruling_only = yes name = "Führer Bibb Graves" }} }}}}
+		
 
 completion_reward = {
-load_focus_tree = { tree = American_Major_texas_post_bibb
-                     keep_completed = no }
+every_other_country={
+ROOT = { 
+declare_war_on = {
+    target = PREV
+    type = annex_everything
+}}
+
+}
+
 }
 }	
 

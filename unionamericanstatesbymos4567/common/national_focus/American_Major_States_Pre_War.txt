@@ -3,20 +3,7 @@ focus_tree = {
 country = {
 		factor = 0
 		
-		modifier = {
-			add = 10000	
-		tag =  UMI
-		tag =  UCA
-		tag =  UTX
-		tag =  UAL
-	}
-			modifier = {
-		add = 10000 
-		original_tag   = UMI
-		original_tag   = UTX
-		original_tag   = UAL
-		original_tag   = UCA
-		}
+
 }
 	continuous_focus_position = { x = 50 y = 1600 }
 	default = no
