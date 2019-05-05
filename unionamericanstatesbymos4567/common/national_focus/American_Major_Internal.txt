@@ -24,7 +24,7 @@ focus = {
 		dynamic =  yes
 		cost = 4
 ai_will_do = {
-			factor = 100
+			factor = 1
 		}
 		 cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -394,6 +394,8 @@ ai_will_do = {
 		
 		}
 	}
+
+
 focus = {
 		id = American_Major_Internal_focus_focus_on_infrastructure10 
 		icon = GFX_goal_generic_production

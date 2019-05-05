@@ -20,7 +20,7 @@ country = {
 ####################################################################
 	focus = {
 		id = American_loyal_industrial_effort
-		icon = GFX_goal_generic_production
+		icon = GFX_american_work
 
 		x = 2
 		y = -2
@@ -44,7 +44,7 @@ country = {
 
 focus = {
 		id = American_loyal_focus_on_infrastructure 
-		icon = GFX_goal_generic_production
+		icon = GFX_american_work
 				relative_position_id = American_loyal_industrial_effort
 		prerequisite = { focus =American_loyal_industrial_effort  }
 		x = 0
@@ -81,7 +81,7 @@ ai_will_do = {
 
 focus = {
 		id = American_loyal_focus_on_infrastructure2 
-		icon = GFX_goal_generic_production
+		icon = GFX_american_work
 		relative_position_id = American_loyal_focus_on_infrastructure
 		prerequisite = { focus =American_loyal_focus_on_infrastructure}
 		x = 0
@@ -117,7 +117,7 @@ ai_will_do = {
 	}
 focus = {
 		id = American_loyal_focus_on_infrastructure3 
-		icon = GFX_goal_generic_production
+		icon = GFX_american_work
 		relative_position_id = American_loyal_focus_on_infrastructure2
 		prerequisite = { focus =American_loyal_focus_on_infrastructure2 }
 		x = 0
@@ -153,7 +153,7 @@ ai_will_do = {
 	}
 focus = {
 		id = American_loyal_focus_on_infrastructure4 
-		icon = GFX_goal_generic_production
+		icon = GFX_american_work
 		relative_position_id = American_loyal_focus_on_infrastructure3
 		prerequisite = { focus =American_loyal_focus_on_infrastructure3}
 		x = 0
@@ -189,7 +189,7 @@ ai_will_do = {
 	}
 focus = {
 		id = American_loyal_focus_on_infrastructure5
-		icon = GFX_goal_generic_production
+		icon = GFX_american_work
 		relative_position_id = American_loyal_focus_on_infrastructure4
 		prerequisite = { focus =American_loyal_focus_on_infrastructure4 }
 		x = 0
@@ -226,7 +226,7 @@ ai_will_do = {
 
 focus = {
 		id = American_loyal_focus_on_infrastructure6 
-		icon = GFX_goal_generic_production
+		icon = GFX_american_work
 		relative_position_id = American_loyal_focus_on_infrastructure5
 		prerequisite = { focus =American_loyal_focus_on_infrastructure5 }
 		x = 0
@@ -262,7 +262,7 @@ ai_will_do = {
 	}
 focus = {
 		id = American_loyal_focus_on_infrastructure7
-		icon = GFX_goal_generic_production
+		icon = GFX_american_work
 		relative_position_id = American_loyal_focus_on_infrastructure6
 		prerequisite = { focus =American_loyal_focus_on_infrastructure6 }
 		x = 0
@@ -298,7 +298,7 @@ ai_will_do = {
 	}
 focus = {
 		id = American_loyal_focus_on_infrastructure8 
-		icon = GFX_goal_generic_production
+		icon = GFX_american_work
 		relative_position_id = American_loyal_focus_on_infrastructure7
 		prerequisite = { focus =American_loyal_focus_on_infrastructure7}
 		x = 0
@@ -334,7 +334,7 @@ ai_will_do = {
 	}
 focus = {
 		id = American_loyal_focus_on_infrastructure9 
-		icon = GFX_goal_generic_production
+		icon = GFX_american_work
 		relative_position_id = American_loyal_focus_on_infrastructure8
 		prerequisite = { focus =American_loyal_focus_on_infrastructure8}
 		x = 0
@@ -370,7 +370,7 @@ ai_will_do = {
 	}
 focus = {
 		id = American_loyal_focus_on_infrastructure10 
-		icon = GFX_goal_generic_production
+		icon = GFX_american_work
 		relative_position_id = American_loyal_focus_on_infrastructure9
 		prerequisite = { focus =American_loyal_focus_on_infrastructure9}
 		x = 0
@@ -422,7 +422,7 @@ ai_will_do = {
 ####################################################################
 focus = {
 		id = American_loyal_apoint_officers
-		icon = GFX_goal_generic_production
+		icon = GFX_american_recruit
 		 dynamic = yes
 		x = 5
 		y = 0
@@ -492,7 +492,7 @@ create_field_marshal = {
 
 focus = {
 		id = American_loyal_one_for_all_and_all_for_one
-		icon = GFX_goal_generic_production
+		icon = GFX_american_recruit
 		 dynamic = yes
 		relative_position_id = American_loyal_apoint_officers 
 		prerequisite = { focus =American_loyal_apoint_officers   }
@@ -516,7 +516,7 @@ add_manpower = 10000000
 
 focus = {
 		id = American_loyal_take_direct_command 
-		icon = GFX_goal_generic_production
+		icon = GFX_american_recruit
 		 dynamic = yes
 		relative_position_id = American_loyal_apoint_jr_officers 
 		prerequisite = { focus =American_loyal_apoint_jr_officers   }
@@ -540,7 +540,7 @@ focus = {
 
 		create_field_marshal = {
 				name = "Chairperson Upton Beall Sinclair Jr."
-				picture = GFX_UPTON_BEALL
+				picture = "gfx/leaders/UCA/Upton_Beall_SinclairJr.dds"
 				skill = 8
 				attack_skill = 8
 				defense_skill = 8

@@ -39,7 +39,22 @@ SpriteType = {
 	name = "GFX_russian_security_aid4"
 	texturefile = "gfx/interface/goals/gfx_russian_security_aid4.dds"
 }
-
+SpriteType = {
+	name = "GFX_american_strike"
+	texturefile = "gfx/interface/goals/gfx_american_strike.dds"
+}
+SpriteType = {
+	name = "GFX_american_recruit"
+	texturefile = "gfx/interface/goals/gfx_american_recruit.dds"
+}
+SpriteType = {
+	name = "GFX_american_work"
+	texturefile = "gfx/interface/goals/gfx_american_work.dds"
+}
+SpriteType = {
+	name = "GFX_american_warpath"
+	texturefile = "gfx/interface/goals/gfx_american_warpath.dds"
+}
 SpriteType = {
 	name = "GFX_UPTON_BEALL"
 	texturefile = "gfx/leaders/UCA/Upton_Beall_SinclairJr.dds"

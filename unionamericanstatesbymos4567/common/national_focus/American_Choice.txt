@@ -101,7 +101,7 @@ country = {
 
 	focus = {
 		id = American_choice_loyal_union_states
-		icon = GFX_expand_ru_eco_partnetship
+		icon = GFX_american_strike
 		x = 5
 		y = 0
 		dynamic =  yes
@@ -217,7 +217,7 @@ release = ROOT
 remove_from_faction = ROOT	
 
 load_focus_tree = { tree = American_choose_side_focus
-                     keep_completed = no }
+                     keep_completed = yes }
 
 }
 }
@@ -226,19 +226,20 @@ load_focus_tree = { tree = American_choose_side_focus
 
 	focus = {
 		id = American_choice_major_union_states_warpath
-		icon = GFX_expand_ru_eco_partnetship
-		x = 10
-		y = 0
+		
+		icon = GFX_american_warpath
+		relative_position_id = American_choice_loyal_union_state
+		x = 0
+		y = 2
 		dynamic =  yes
 		cost = 1
 
-		ai_will_do = {
+				ai_will_do = {
 			factor = 1
 		}
 
 available = {
 ROOT = {   has_variable =var_American_States }
-ROOT = { 	is_ai = yes }
 	OR{
 		ROOT = {tag = UMI }
 		ROOT = {tag = UCA }
@@ -248,7 +249,7 @@ ROOT = { 	is_ai = yes }
     }
 
  allow_branch = { ROOT = {   has_variable =var_American_States }
-		ROOT = { 	is_ai = yes }}
+		}
 
 		
 
@@ -257,7 +258,7 @@ ROOT = { 	is_ai = yes }
 		available_if_capitulated = no
 		completion_reward = {
 		load_focus_tree = { tree = American_Major_Warpath_focus
-                     keep_completed = no }
+                     keep_completed = yes }
 
 
 			 }
@@ -270,14 +271,16 @@ ROOT = { 	is_ai = yes }
 		y = 0
 		dynamic =  yes
 		cost = 1
-
+		prerequisite = { 
+			focus = American_choice_major_union_states_internal
+			focus =	American_choice_major_union_states_warpath
+		}
 		ai_will_do = {
 			factor = 1
 		}
 
 available = {
 ROOT = {   has_variable =var_American_States }
-ROOT = { NOT={	is_ai = yes }}
 	OR{
 		ROOT = {tag = UMI }
 		ROOT = {tag = UCA }
@@ -287,7 +290,7 @@ ROOT = { NOT={	is_ai = yes }}
     }
 
  allow_branch = { ROOT = {   has_variable =var_American_States }
-		ROOT = { 	NOT={is_ai = yes }}}
+	}
 
 		
 
@@ -306,7 +309,7 @@ ROOT = { NOT={	is_ai = yes }}
 		id = American_choice_major_union_states_internal
 		icon = GFX_expand_ru_eco_partnetship
 		x = 10
-		y = 2
+		y = 1
 		dynamic =  yes
 		cost = 1
 
@@ -316,7 +319,6 @@ ROOT = { NOT={	is_ai = yes }}
 
 available = {
 ROOT = {   has_variable =var_American_States }
-ROOT = { NOT={	is_ai = yes }}
 	OR{
 		ROOT = {tag = UMI }
 		ROOT = {tag = UCA }
@@ -326,7 +328,7 @@ ROOT = { NOT={	is_ai = yes }}
     }
 
  allow_branch = { ROOT = {   has_variable =var_American_States }
-		ROOT = { 	NOT={is_ai = yes }}}
+		}
 
 		
 

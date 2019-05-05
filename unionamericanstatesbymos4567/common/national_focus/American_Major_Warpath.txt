@@ -22,7 +22,7 @@ focus = {
 		dynamic =  yes
 		cost = 4
 ai_will_do = {
-			factor = 100
+			factor = 1
 		}
 		 cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -205,7 +205,7 @@ focus = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 ai_will_do = {
-			factor = -1000
+			factor = 1000
 		}
 		 completion_reward = {
 		add_offsite_building = { type = arms_factory level = 32 }
@@ -640,7 +640,7 @@ focus = {
 			focus =American_Major_Warpath_focus_focus_invade_canada
 			 }
 ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 
 		
