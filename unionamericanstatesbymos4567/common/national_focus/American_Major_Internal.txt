@@ -1,0 +1,444 @@
+focus_tree = {
+ id = American_Major_Internal_focus
+country = {
+		factor = 0
+		
+		modifier = {
+			add = 0	
+		
+	}
+		
+	}
+	continuous_focus_position = { x = 50 y = 1600 }
+	default = no
+
+
+
+
+
+focus = {
+		id = American_Major_Refocus_[?ROOT.GetName]
+		icon = GFX_goal_generic_production
+		x = 6
+		y = 0
+		dynamic =  yes
+		cost = 4
+ai_will_do = {
+			factor = 100
+		}
+		 cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		 completion_reward = {
+			load_focus_tree = { tree = American_choice_focus
+                     keep_completed = yes }
+		
+}
+}
+
+
+####################################################################
+#
+#	Begin Ind. Effort Section
+#			
+#
+####################################################################
+	focus = {
+		id = American_Major_Internal_focus_industrial_effort
+		icon = GFX_goal_generic_production
+		dynamic =  yes
+		x = 2
+		y = -2
+		cost = 1
+ 		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+focus = {
+		id = American_Major_Internal_focus_focus_on_infrastructure 
+		icon = GFX_goal_generic_production
+				relative_position_id = American_Major_Internal_focus_industrial_effort
+		prerequisite = { focus =American_Major_Internal_focus_industrial_effort  }
+		x = 0
+		y = 1
+
+		cost = 10
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+
+focus = {
+		id = American_Major_Internal_focus_focus_on_infrastructure2 
+		icon = GFX_goal_generic_production
+		relative_position_id = American_Major_Internal_focus_focus_on_infrastructure
+		prerequisite = { focus =American_Major_Internal_focus_focus_on_infrastructure}
+		x = 0
+		y = 1
+
+		cost = 5
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+focus = {
+		id = American_Major_Internal_focus_focus_on_infrastructure3 
+		icon = GFX_goal_generic_production
+		relative_position_id = American_Major_Internal_focus_focus_on_infrastructure2
+		prerequisite = { focus =American_Major_Internal_focus_focus_on_infrastructure2 }
+		x = 0
+		y = 1
+
+		cost = 5
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+focus = {
+		id = American_Major_Internal_focus_focus_on_infrastructure4 
+		icon = GFX_goal_generic_production
+		relative_position_id = American_Major_Internal_focus_focus_on_infrastructure3
+		prerequisite = { focus =American_Major_Internal_focus_focus_on_infrastructure3}
+		x = 0
+		y = 1
+
+		cost = 5
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+focus = {
+		id = American_Major_Internal_focus_focus_on_infrastructure5
+		icon = GFX_goal_generic_production
+		relative_position_id = American_Major_Internal_focus_focus_on_infrastructure4
+		prerequisite = { focus =American_Major_Internal_focus_focus_on_infrastructure4 }
+		x = 0
+		y = 1
+
+		cost = 5
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+
+focus = {
+		id = American_Major_Internal_focus_focus_on_infrastructure6 
+		icon = GFX_goal_generic_production
+		relative_position_id = American_Major_Internal_focus_focus_on_infrastructure5
+		prerequisite = { focus =American_Major_Internal_focus_focus_on_infrastructure5 }
+		x = 0
+		y = 1
+
+		cost = 5
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+focus = {
+		id = American_Major_Internal_focus_focus_on_infrastructure7
+		icon = GFX_goal_generic_production
+		relative_position_id = American_Major_Internal_focus_focus_on_infrastructure6
+		prerequisite = { focus =American_Major_Internal_focus_focus_on_infrastructure6 }
+		x = 0
+		y = 1
+
+		cost = 5
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+focus = {
+		id = American_Major_Internal_focus_focus_on_infrastructure8 
+		icon = GFX_goal_generic_production
+		relative_position_id = American_Major_Internal_focus_focus_on_infrastructure7
+		prerequisite = { focus =American_Major_Internal_focus_focus_on_infrastructure7}
+		x = 0
+		y = 1
+
+		cost = 5
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+focus = {
+		id = American_Major_Internal_focus_focus_on_infrastructure9 
+		icon = GFX_goal_generic_production
+		relative_position_id = American_Major_Internal_focus_focus_on_infrastructure8
+		prerequisite = { focus =American_Major_Internal_focus_focus_on_infrastructure8}
+		x = 0
+		y = 1
+
+		cost = 5
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+focus = {
+		id = American_Major_Internal_focus_focus_on_infrastructure10 
+		icon = GFX_goal_generic_production
+		relative_position_id = American_Major_Internal_focus_focus_on_infrastructure9
+		prerequisite = { focus =American_Major_Internal_focus_focus_on_infrastructure9}
+		x = 0
+		y = 1
+
+		cost = 5
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+
+
+
+####################################################################
+#
+#	END Ind. Effort Section
+#			
+#
+####################################################################
+
+
+}###################

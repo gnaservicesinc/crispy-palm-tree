@@ -1,0 +1,19 @@
+American_States_Volunteer = {
+	visible = {
+	OR = {
+	
+		tag =  UMI
+		tag =  UAL
+		tag =  UCA
+		tag =  UTX
+		tag = USA
+		is_subject_of =  UMI
+		is_subject_of =  UAL
+		is_subject_of =  UCA
+		is_subject_of =  UTX
+		is_subject_of =  USA
+
+	}
+
+}
+}

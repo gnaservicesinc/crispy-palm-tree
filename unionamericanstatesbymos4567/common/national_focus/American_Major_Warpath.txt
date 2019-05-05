@@ -14,7 +14,26 @@ country = {
 
 
 
-
+focus = {
+		id = American_Major_Warpath_Refocus_[?ROOT.GetName]
+		icon = GFX_goal_generic_production
+		x = 6
+		y = -3
+		dynamic =  yes
+		cost = 4
+ai_will_do = {
+			factor = 100
+		}
+		 cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		 completion_reward = {
+			load_focus_tree = { tree = American_choice_focus
+                     keep_completed = yes }
+		
+}
+}
 
 focus = {
 		id = American_Major_Warpath_focus_[?ROOT.GetLeader]_takes_command 

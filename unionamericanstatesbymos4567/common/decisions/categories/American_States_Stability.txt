@@ -1,6 +1,14 @@
 American_States_Stability = {
 	visible = {
-	always=no
+		OR = {
+	
+		is_subject_of =  UMI
+		is_subject_of =  UAL
+		is_subject_of =  UCA
+		is_subject_of =  UTX
+
+
+	}
 
 }
 }

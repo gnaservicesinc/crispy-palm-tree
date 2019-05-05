@@ -190,7 +190,7 @@ focus = {
 		icon = GFX_expand_ru_eco_partnetship
 		relative_position_id = American_choose_side_sunshine
 		x = 0
-		y = -4
+		y = -1
 		dynamic =  yes
 		cost = 1
 

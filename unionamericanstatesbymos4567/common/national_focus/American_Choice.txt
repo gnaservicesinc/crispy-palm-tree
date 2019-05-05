@@ -296,13 +296,50 @@ ROOT = { NOT={	is_ai = yes }}
 		available_if_capitulated = no
 		completion_reward = {
 		load_focus_tree = { tree = generic_focus
-                     keep_completed = no }
+                     keep_completed = yes }
 
 
 			 }
 	}
 
+	focus = {
+		id = American_choice_major_union_states_internal
+		icon = GFX_expand_ru_eco_partnetship
+		x = 10
+		y = 2
+		dynamic =  yes
+		cost = 1
 
+		ai_will_do = {
+			factor = 1
+		}
+
+available = {
+ROOT = {   has_variable =var_American_States }
+ROOT = { NOT={	is_ai = yes }}
+	OR{
+		ROOT = {tag = UMI }
+		ROOT = {tag = UCA }
+		ROOT = {tag = UAL }
+		ROOT = {tag = UTX }
+	}
+    }
+
+ allow_branch = { ROOT = {   has_variable =var_American_States }
+		ROOT = { 	NOT={is_ai = yes }}}
+
+		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		load_focus_tree = { tree = American_Major_Internal_focus
+                     keep_completed = yes }
+
+
+			 }
+	}
 
 
 }

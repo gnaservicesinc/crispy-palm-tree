@@ -1,0 +1,121 @@
+ideas = {
+
+	 country = {
+american_states_volunteer_corps_level_1 = {
+
+
+	picture = eng_imperial_conscription
+	allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		send_volunteer_size = 1
+}
+}
+american_states_volunteer_corps_level_2 = {
+
+
+	picture = eng_imperial_conscription
+	allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		send_volunteer_size = 1
+}
+}
+american_states_volunteer_corps_level_3 = {
+
+
+	picture = eng_imperial_conscription
+	allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		send_volunteer_size = 1
+}
+}
+american_states_volunteer_corps_level_4 = {
+
+
+	picture = eng_imperial_conscription
+	allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		send_volunteer_size = 1
+}
+}
+american_states_volunteer_corps_level_5 = {
+
+
+	picture = eng_imperial_conscription
+	allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		send_volunteer_size = 1
+}
+}
+american_states_volunteer_corps_level_6 = {
+
+
+	picture = eng_imperial_conscription
+	allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		send_volunteer_size = 1
+}
+}
+american_states_volunteer_corps_level_7 = {
+
+
+	picture = eng_imperial_conscription
+	allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		send_volunteer_size = 1
+}
+}
+american_states_volunteer_corps_level_8 = {
+
+
+	picture = eng_imperial_conscription
+	allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		send_volunteer_size = 1
+}
+}
+american_states_volunteer_corps_level_9 = {
+
+
+	picture = eng_imperial_conscription
+	allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		send_volunteer_size = 1
+}
+}
+american_states_volunteer_corps_level_10 = {
+
+
+	picture = eng_imperial_conscription
+	allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		send_volunteer_size = 1
+}
+}
+
+
+
+
+
+
+}##############
+}###############

@@ -1,0 +1,80 @@
+American_States_Volunteer = {
+
+
+American_States_Volunteer_raise_funds = {
+
+available = {
+      if = { limit = { NOT = { has_idea = american_states_volunteer_corps_level_10 }}}
+}
+		cost = 150
+		days_remove = 30
+		days_re_enable = 1
+ai_will_do = {factor = 1 }
+
+remove_effect = {
+
+
+if  =  { limit = {  has_idea =american_states_volunteer_corps_level_9 }
+swap_ideas = {
+    remove_idea = american_states_volunteer_corps_level_9
+    add_idea = american_states_volunteer_corps_level_10
+	}
+
+else  =  { limit = {  has_idea =american_states_volunteer_corps_level_8 }
+swap_ideas = {
+    remove_idea = american_states_volunteer_corps_level_8
+    add_idea = american_states_volunteer_corps_level_9
+	}
+
+else  =  { limit = {  has_idea =american_states_volunteer_corps_level_7 }
+swap_ideas = {
+    remove_idea = american_states_volunteer_corps_level_7
+    add_idea = american_states_volunteer_corps_level_8
+	}
+
+else  =  { limit = {  has_idea =american_states_volunteer_corps_level_6 }
+swap_ideas = {
+    remove_idea = american_states_volunteer_corps_level_6
+    add_idea = american_states_volunteer_corps_level_7
+	}
+
+else  =  { limit = {  has_idea =american_states_volunteer_corps_level_5 }
+swap_ideas = {
+    remove_idea = american_states_volunteer_corps_level_5
+    add_idea = american_states_volunteer_corps_level_6
+	}
+
+else  =  { limit = {  has_idea =american_states_volunteer_corps_level_4 }
+swap_ideas = {
+    remove_idea = american_states_volunteer_corps_level_4
+    add_idea = american_states_volunteer_corps_level_5
+	}
+
+else  =  { limit = {  has_idea =american_states_volunteer_corps_level_3 }
+swap_ideas = {
+    remove_idea = american_states_volunteer_corps_level_3
+    add_idea = american_states_volunteer_corps_level_4
+	}
+
+else  =  { limit = {  has_idea =american_states_volunteer_corps_level_2 }
+swap_ideas = {
+    remove_idea = american_states_volunteer_corps_level_2
+    add_idea = american_states_volunteer_corps_level_3
+	}
+
+else  =  { limit = {  has_idea =american_states_volunteer_corps_level_1 }
+		swap_ideas = {
+    remove_idea = american_states_volunteer_corps_level_1
+    add_idea = american_states_volunteer_corps_level_2
+	}
+else ={	 add_ideas = {american_states_volunteer_corps_level_1}
+
+}}}}}}}}}}}}
+	
+
+
+
+
+
+
+}###########   

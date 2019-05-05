@@ -1,393 +1,64 @@
 union_member_state = {
 
 
-union_member_state_stabilize_self = {
- available = {
-      if = { limit = { NOT = { has_idea = american_states_stabilization_level_10 }}}
-}
-
-ai_will_do = {factor = 1 }
-		
-		cost = 150
-		days_remove = 1
-		days_re_enable = 30
-
-remove_effect = {
-if  =  { limit = {  has_idea =american_states_destabilization_level_10 }
-swap_ideas = {
-    remove_idea = american_states_destabilization_level_10
-    add_idea = american_states_destabilization_level_9
-	}
-
-else  =  { limit = {  has_idea =american_states_destabilization_level_9 }
-swap_ideas = {
-    remove_idea = american_states_destabilization_level_9
-    add_idea = american_states_destabilization_level_8
-	}
-
-else  =  { limit = {  has_idea =american_states_destabilization_level_8 }
-swap_ideas = {
-    remove_idea = american_states_destabilization_level_8
-    add_idea = american_states_destabilization_level_7
-	}
-
-else  =  { limit = {  has_idea =american_states_destabilization_level_7 }
-swap_ideas = {
-    remove_idea = american_states_destabilization_level_7
-    add_idea = american_states_destabilization_level_6
-	}
-
-else  =  { limit = {  has_idea =american_states_destabilization_level_6 }
-swap_ideas = {
-    remove_idea = american_states_destabilization_level_6
-    add_idea = american_states_destabilization_level_5
-	}
-
-else  =  { limit = {  has_idea =american_states_destabilization_level_5 }
-swap_ideas = {
-    remove_idea = american_states_destabilization_level_5
-    add_idea = american_states_destabilization_level_4
-	}
-
-else  =  { limit = {  has_idea =american_states_destabilization_level_4 }
-swap_ideas = {
-    remove_idea = american_states_destabilization_level_4
-    add_idea = american_states_destabilization_level_3
-	}
-
-else  =  { limit = {  has_idea =american_states_destabilization_level_3 }
-swap_ideas = {
-    remove_idea = american_states_destabilization_level_3
-    add_idea = american_states_destabilization_level_2
-	}
-
-else  =  { limit = {  has_idea =american_states_destabilization_level_2 }
-swap_ideas = {
-    remove_idea = american_states_destabilization_level_2
-    add_idea = american_states_destabilization_level_1
-	}
-
-else  =  { limit = {  has_idea =american_states_destabilization_level_1 }
-	remove_ideas = {american_states_destabilization_level_1}
-	
-else = { limit = { has_idea = american_states_stabilization_level_9}
-
-	swap_ideas = {
-    remove_idea = american_states_stabilization_level_9
-    add_idea = american_states_stabilization_level_10
-	}
-
-
-else ={ limit = { has_idea = american_states_stabilization_level_8}
-
-
-	swap_ideas = {
-    remove_idea = american_states_stabilization_level_8
-    add_idea = american_states_stabilization_level_9
-	}
-
-else ={ limit = { has_idea = american_states_stabilization_level_7}
-
-
-	swap_ideas = {
-    remove_idea = american_states_stabilization_level_7
-    add_idea = american_states_stabilization_level_8
-	}
-
-else ={ limit = { has_idea = american_states_stabilization_level_6}
-
-
-	swap_ideas = {
-    remove_idea = american_states_stabilization_level_6
-    add_idea = american_states_stabilization_level_7
-	}
-else ={ limit = { has_idea = american_states_stabilization_level_5}
-
-
-	swap_ideas = {
-    remove_idea = american_states_stabilization_level_5
-    add_idea = american_states_stabilization_level_6
-	}
-
-else ={ limit = { has_idea = american_states_stabilization_level_4}
-
-
-	swap_ideas = {
-    remove_idea = american_states_stabilization_level_4
-    add_idea = american_states_stabilization_level_5
-	}
-else ={ limit = { has_idea = american_states_stabilization_level_3}
-
-
-	swap_ideas = {
-    remove_idea = american_states_stabilization_level_3
-    add_idea = american_states_stabilization_level_4
-	}
-else ={ limit = { has_idea = american_states_stabilization_level_2}
-
-
-	swap_ideas = {
-    remove_idea = american_states_stabilization_level_2
-    add_idea = american_states_stabilization_level_3
-	}
-
-else ={ limit = { has_idea = american_states_stabilization_level_1}
-
-
-	swap_ideas = {
-    remove_idea = american_states_stabilization_level_1
-    add_idea = american_states_stabilization_level_2
-	}
-
-	else ={ 
-		add_ideas = {american_states_stabilization_level_1 }
-		
-          }
-
-	}}}}}}}}}}}}}}}}}}}}
-
-
-}
-
-union_member_state_destabilize_self = {
- available = {
-      if = { limit = { NOT = { has_idea = american_states_destabilization_level_10 }}}
-}
-
-ai_will_do = {factor = 1 }
-		
-		cost = 150
-		days_remove = 1
-		days_re_enable = 30
-
-remove_effect = {
-if  =  { limit = {  has_idea =american_states_stabilization_level_10 }
-swap_ideas = {
-    remove_idea = american_states_stabilization_level_10
-    add_idea = american_states_stabilization_level_9
-	}
-
-else  =  { limit = {  has_idea =american_states_stabilization_level_9 }
-swap_ideas = {
-    remove_idea = american_states_stabilization_level_9
-    add_idea = american_states_stabilization_level_8
-	}
-
-else  =  { limit = {  has_idea =american_states_stabilization_level_8 }
-swap_ideas = {
-    remove_idea = american_states_stabilization_level_8
-    add_idea = american_states_stabilization_level_7
-	}
-
-else  =  { limit = {  has_idea =american_states_stabilization_level_7 }
-swap_ideas = {
-    remove_idea = american_states_stabilization_level_7
-    add_idea = american_states_stabilization_level_6
-	}
-
-else  =  { limit = {  has_idea =american_states_stabilization_level_6 }
-swap_ideas = {
-    remove_idea = american_states_stabilization_level_6
-    add_idea = american_states_stabilization_level_5
-	}
-
-else  =  { limit = {  has_idea =american_states_stabilization_level_5 }
-swap_ideas = {
-    remove_idea = american_states_stabilization_level_5
-    add_idea = american_states_stabilization_level_4
-	}
-
-else  =  { limit = {  has_idea =american_states_stabilization_level_4 }
-swap_ideas = {
-    remove_idea = american_states_stabilization_level_4
-    add_idea = american_states_stabilization_level_3
-	}
-
-else  =  { limit = {  has_idea =american_states_stabilization_level_3 }
-swap_ideas = {
-    remove_idea = american_states_stabilization_level_3
-    add_idea = american_states_stabilization_level_2
-	}
-
-else  =  { limit = {  has_idea =american_states_stabilization_level_2 }
-swap_ideas = {
-    remove_idea = american_states_stabilization_level_2
-    add_idea = american_states_stabilization_level_1
-	}
-
-else  =  { limit = {  has_idea =american_states_stabilization_level_1 }
-	remove_ideas = {american_states_stabilization_level_1}
-	
-else = { limit = { has_idea = american_states_destabilization_level_9}
-
-	swap_ideas = {
-    remove_idea = american_states_destabilization_level_9
-    add_idea = american_states_destabilization_level_10
-	}
-
-
-else ={ limit = { has_idea = american_states_destabilization_level_8}
-
-
-	swap_ideas = {
-    remove_idea = american_states_destabilization_level_8
-    add_idea = american_states_destabilization_level_9
-	}
-
-else ={ limit = { has_idea = american_states_destabilization_level_7}
-
-
-	swap_ideas = {
-    remove_idea = american_states_destabilization_level_7
-    add_idea = american_states_destabilization_level_8
-	}
-
-else ={ limit = { has_idea = american_states_destabilization_level_6}
-
-
-	swap_ideas = {
-    remove_idea = american_states_destabilization_level_6
-    add_idea = american_states_destabilization_level_7
-	}
-else ={ limit = { has_idea = american_states_destabilization_level_5}
-
-
-	swap_ideas = {
-    remove_idea = american_states_destabilization_level_5
-    add_idea = american_states_destabilization_level_6
-	}
-
-else ={ limit = { has_idea = american_states_destabilization_level_4}
-
-
-	swap_ideas = {
-    remove_idea = american_states_destabilization_level_4
-    add_idea = american_states_destabilization_level_5
-	}
-else ={ limit = { has_idea = american_states_destabilization_level_3}
-
-
-	swap_ideas = {
-    remove_idea = american_states_destabilization_level_3
-    add_idea = american_states_destabilization_level_4
-	}
-else ={ limit = { has_idea = american_states_destabilization_level_2}
-
-
-	swap_ideas = {
-    remove_idea = american_states_destabilization_level_2
-    add_idea = american_states_destabilization_level_3
-	}
-
-else ={ limit = { has_idea = american_states_destabilization_level_1}
-
-
-	swap_ideas = {
-    remove_idea = american_states_destabilization_level_1
-    add_idea = american_states_destabilization_level_2
-	}
-
-	else ={ 
-		add_ideas = {american_states_destabilization_level_1 }
-		
-          }
-
-
-	}}}}}}}}}}}}}}}}}}}}
-
-
-}
-
 union_member_state_support_democracy = {
-
-		available = {
-
- if = { limit = { check_variable = { amer_state_swing_desire > stability } }}} 
-
 	ai_will_do = {factor = 1 }
-		
-		cost = 150
+			available = { 
+ 	check_variable = { stability > 0.70 } 
+	}
+		cost = 1
 		days_remove = 1
-		days_re_enable = 30
+		days_re_enable = 1
 
 	remove_effect = {
-			 if = { limit = { check_variable = { amer_state_swing_desire > stability }} 
-			add_to_variable = { amer_state_number_of_swings = 1 }
-			
-add_to_variable = { amer_state_number_of_swings = 1 }
-			subtract_from_variable = {amer_state_swing_desire = 0.1}
 		set_politics = { parties = { democratic = { popularity = 100 } fascism = { popularity = 0 banned = yes } communism = { popularity = 0 banned = yes } american_globalism = {popularity = 0 banned = yes } american_isolationism= { popularity = 0 banned = yes }}  ruling_party = democratic elections_allowed = yes election_frequency = 24}
 
 		}
 
 	}		
-	}
+	
 
 union_member_state_support_american_globalism = {
-
-		available = {
-
- if = { limit = { check_variable = { amer_state_swing_desire > stability } }}} 
-
 	ai_will_do = {factor = 1 }
-		
-		cost = 150
+		available = { 
+	check_variable = { stability > 0.50 }
+ 	 check_variable = { stability < 0.70 }}
+		cost = 1
 		days_remove = 1
-		days_re_enable = 30
+		days_re_enable = 1
 
 	remove_effect = {
-		 
-			add_to_variable = { Root.amer_state_number_of_swings = 1 }
-			
-			subtract_from_variable = {Root.amer_state_swing_desire = 0.1}
 		ROOT = {set_politics = { parties = { democratic = { popularity = 0 banned = yes  } fascism = { popularity = 0 banned = yes } communism = { popularity = 0 banned = yes } american_globalism = {popularity = 100 } american_isolationism= { popularity = 0 banned = yes }}  ruling_party = american_globalism elections_allowed = yes election_frequency = 24}
 }
 		}
 
 	}		
 	
-
 union_member_state_support_american_isolationism = {
-
-		available = {
-
- if = { limit = { check_variable = { amer_state_swing_desire > stability } }}} 
-
+available = { 
+	check_variable = { stability > 0.20 } 
+ 	check_variable = { stability < 0.50 }
+	} 
 	ai_will_do = {factor = 1 }
 		
-		cost = 150
+		cost = 1
 		days_remove = 1
-		days_re_enable = 30
+		days_re_enable = 1
 
 	remove_effect = {
-			 
-			add_to_variable = { amer_state_number_of_swings = 1 }
-			
-			subtract_from_variable = {amer_state_swing_desire = 0.1}
 		set_politics = { parties = { democratic = { popularity = 0 banned = yes  } fascism = { popularity = 0 banned = yes } communism = { popularity = 0 banned = yes } american_globalism = {popularity = 0 banned = yes } american_isolationism= { popularity = 100 }}  ruling_party = american_isolationism elections_allowed = yes election_frequency = 24}
-
 		}
 
 	} 		
-	
-
 union_member_state_support_communism = {
-
-		available = {
-
- if = { limit = { check_variable = { amer_state_swing_desire > stability } }}} 
-
+available = {  check_variable = { stability < 0.20 } } 
 	ai_will_do = {factor = 1 }
 		
-		cost = 150
+		cost = 1
 		days_remove = 1
-		days_re_enable = 30
+		days_re_enable = 1
 
 	remove_effect = {
-			
-			add_to_variable = { amer_state_number_of_swings = 1 }
-			
-			subtract_from_variable = {amer_state_swing_desire = 0.1}
 		set_politics = { parties = { democratic = { popularity = 0 banned = yes  } fascism = { popularity = 0 banned = yes } communism = { popularity = 100  } american_globalism = {popularity = 0 banned = yes } american_isolationism= { popularity = 0 banned = yes }}  ruling_party = communism elections_allowed = yes election_frequency = 24}
 
 		}
@@ -396,42 +67,37 @@ union_member_state_support_communism = {
 	
 
 union_member_state_support_fascism = {
+available = { check_variable = { stability < 0.10 } }
 
-		available = {
-
- if = { limit = { check_variable = { stability < 0.5 } }}} 
-
-	ai_will_do = {factor = -9000 }
+		ai_will_do = {factor = -9000 }
 		
-		cost = 150
-		days_remove = 1
-		days_re_enable = 30
-
+		cost = 1
+		fire_only_once = yes
 	remove_effect = {
-		
-			add_to_variable = { amer_state_number_of_swings = 1 }
-			
-			subtract_from_variable = {amer_state_swing_desire = 0.1}
 set_politics = { parties = { democratic = { popularity = 0 banned = yes  } fascism = { popularity = 100  } communism = { popularity = 0  banned = yes } american_globalism = {popularity = 0 banned = yes } american_isolationism= { popularity = 1 banned = yes }}  ruling_party = fascism elections_allowed = yes election_frequency = 24}
-
-		
-	hidden_effect = {
-
-		GER = {
-		add_named_threat = { 
-    		threat = 100 
-    		name = "German Act of War On American Soil"
-		}
-		}
-			add_named_threat = { 
-    		threat = 100 
-    		name = "Fascism On American Soil"
-		} 
-		set_politics = { parties = { democratic = { popularity = 20 banned = yes  } fascism = { popularity = 20  } communism = { popularity = 20  } american_globalism = {popularity = 20 banned = yes } american_isolationism= { popularity = 20 banned = yes }}  ruling_party = fascism elections_allowed = no}
+	hidden_effect = { 
 start_civil_war = {
     ruling_party = fascism
     ideology = democratic
-    size = 0.9
+    size = 0.50
+    only_own_territory = no
+}
+start_civil_war = {
+    ruling_party = fascism
+    ideology = communism
+    size = 0.10
+    only_own_territory = no
+}
+start_civil_war = {
+    ruling_party = fascism
+    ideology = american_globalism
+    size = 0.20
+    only_own_territory = no
+}
+start_civil_war = {
+    ruling_party = fascism
+    ideology = american_isolationism
+    size = 0.20
     only_own_territory = no
 }
 every_other_country = { if ={ limit={ NOT={ has_government = fascism
@@ -441,9 +107,7 @@ every_other_country = { if ={ limit={ NOT={ has_government = fascism
     type = annex_everything}}
 		}}
 
-}
-
-	}
+}}
 
 
 
