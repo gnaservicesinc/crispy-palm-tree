@@ -129,7 +129,7 @@ create_field_marshal = {
 
 focus = {
 		id = American_Major_Warpath_focus_focus_blackmarket_arms_deal_1 
-		icon = GFX_goal_generic_production
+		icon = GFX_american_armsdeals
 		prerequisite = { focus =American_Major_Warpath_focus_Bibb_takes_command  }
 		x = 3
 		y = 0
@@ -152,7 +152,7 @@ ai_will_do = {
 
 focus = {
 		id = American_Major_Warpath_focus_focus_blackmarket_arms_deal_2 
-		icon = GFX_goal_generic_production
+		icon = GFX_american_armsdeals
 		relative_position_id = American_Major_Warpath_focus_focus_blackmarket_arms_deal_1 
 		prerequisite = { focus =American_Major_Warpath_focus_focus_blackmarket_arms_deal_1 }
 		x = 0
@@ -174,7 +174,7 @@ ai_will_do = {
 
 focus = {
 		id = American_Major_Warpath_focus_focus_blackmarket_arms_deal_3 
-		icon = GFX_goal_generic_production
+		icon = GFX_american_armsdeals2
 		relative_position_id = American_Major_Warpath_focus_focus_blackmarket_arms_deal_2 
 		prerequisite = { focus =American_Major_Warpath_focus_focus_blackmarket_arms_deal_2 }
 		x = 0
@@ -194,7 +194,7 @@ add_ideas = { american_states_serious_criminal_element }
 
 focus = {
 		id = American_Major_Warpath_focus_focus_blackmarket_arms_deal_4 
-		icon = GFX_goal_generic_production
+		icon = GFX_american_armsdeals3
 		relative_position_id = American_Major_Warpath_focus_focus_blackmarket_arms_deal_3 
 		prerequisite = { focus =American_Major_Warpath_focus_focus_blackmarket_arms_deal_3 }
 		
@@ -215,7 +215,7 @@ add_ideas = { american_states_overwhelming_criminal_element }
 
 focus = {
 		id = American_Major_Warpath_focus_focus_border_security
-		icon = GFX_goal_generic_production
+		icon = GFX_american_prep
 		x = 8
 		y = 0
 		cost = 4
@@ -238,7 +238,7 @@ add_ideas = { american_states_emergency_govement_industry_wartime_partnership }
 
 focus = {
 		id = American_Major_Warpath_focus_focus_border_security_2
-		icon = GFX_goal_generic_production
+		icon = GFX_american_prep
 		relative_position_id = American_Major_Warpath_focus_focus_border_security
 		prerequisite = { focus =American_Major_Warpath_focus_focus_border_security }
 ai_will_do = {
@@ -264,7 +264,7 @@ add_manpower = 1000000
 
 focus = {
 		id = American_Major_Warpath_focus_focus_border_security_3
-		icon = GFX_goal_generic_production
+		icon = GFX_american_prep
 		relative_position_id = American_Major_Warpath_focus_focus_border_security_2
 		prerequisite = { focus =American_Major_Warpath_focus_focus_border_security_2 }
 		x = -1
@@ -284,7 +284,7 @@ add_manpower = 1000000
  }
 focus = {
 		id = American_Major_Warpath_focus_focus_border_security_4
-		icon = GFX_goal_generic_production
+		icon = GFX_american_prep
 		relative_position_id = American_Major_Warpath_focus_focus_border_security_3
 		prerequisite = { focus =American_Major_Warpath_focus_focus_border_security_3 }
 		x = -1

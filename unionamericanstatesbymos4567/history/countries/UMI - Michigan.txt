@@ -68,73 +68,6 @@ create_faction = "Great Lakes Treaty Organization"
  set_variable = { var_Michigan_States = 1 }
  set_variable = { var_American_States = 1 }
 
-
-
-UWI  = { 
-
-set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = ai_random}
-set_variable = { amer_state_number_of_swings = 0}
-
-}
-
-UOH  = { 
-
-set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = ai_random}
-set_variable = { amer_state_number_of_swings = 0}
-
-}
-
-UIL  = { 
-
-set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = ai_random}
-set_variable = { amer_state_number_of_swings = 0}
-
-}
-
-UIN  = { 
-
-set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = ai_random}
-set_variable = { amer_state_number_of_swings = 0}
-
-}
-
-UMN  = { 
-
-set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = ai_random}
-set_variable = { amer_state_number_of_swings = 0}
-
-}
-
-UDK  = { 
-
-set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = ai_random}
-set_variable = { amer_state_number_of_swings = 0}
-
-}
-
-UNE  = { 
-
-set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = ai_random}
-set_variable = { amer_state_number_of_swings = 0}
-
-}
-
-UIA  = { 
-
-set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = ai_random}
-set_variable = { amer_state_number_of_swings = 0}
-
-}
- 
-
 UWI  = { set_variable = { var_Michigan_States = 1 }  }
 UOH  = { set_variable = { var_Michigan_States = 1 }  }
 UIL  = { set_variable = { var_Michigan_States = 1 }  }
@@ -226,8 +159,7 @@ if = {
 		basic_carrier = 1
 		transport = 1
 	}
-}
-if = {
+else = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
 		basic_naval_mines = 1
@@ -255,7 +187,7 @@ if = {
 		mtg_transport = 1
 		improved_airplane_launcher = 1
 	}
-}
+}}
 
 	set_technology = {
 		fighter1 = 1
@@ -314,8 +246,8 @@ if = {
 			basic_heavy_cruiser = 1
 			basic_battlecruiser = 1
 		}
-	}
-	if = {
+	
+	else = {
 		limit = { has_dlc = "Man the Guns" }
 		set_technology = {
 			improved_ship_hull_light = 1
@@ -329,7 +261,7 @@ if = {
 		}
 		remove_ideas = MTG_naval_treaty_adherent
 		add_ideas = MTG_naval_treaty_adherent_reduced
-	}
+	}}
 	create_equipment_variant = {
 		name = "Martin M166"
 		type = tac_bomber_equipment_0

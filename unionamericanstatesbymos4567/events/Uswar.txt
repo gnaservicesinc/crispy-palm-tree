@@ -1,0 +1,36 @@
+﻿###########################
+# uswar Events
+###########################
+
+add_namespace = uswar
+
+country_event = {
+
+
+	id = uswar.1
+	title = uswar.1.t
+	desc = uswar.1.d
+	picture = GFX_report_event_usa_macarthur_speech
+	major = yes
+	is_triggered_only = yes
+	immediate = { 
+		news_event = { id = uswar.2 days = 30 }
+	}
+	
+	option = { 
+		name = union.1.b 
+	}
+	}
+}
+
+news_event = {
+	id = uswar.2
+	desc = uswar.2.d
+	picture = GFX_news_event_nuke
+	major = yes 
+is_triggered_only = yes 
+fire_only_once = yes 
+option = { 
+		name = uswar.2.b 
+	}
+}

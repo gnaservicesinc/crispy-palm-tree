@@ -58,7 +58,7 @@ load_focus_tree = { tree = generic_focus
 
 	focus = {
 		id = American_choose_side_michigan
-		icon = GFX_expand_ru_eco_partnetship
+		icon = GFX_american_michigan
 		relative_position_id = American_choose_side_sunshine
 		x = 2
 		y = 0

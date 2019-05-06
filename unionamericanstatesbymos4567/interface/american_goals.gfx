@@ -52,8 +52,28 @@ SpriteType = {
 	texturefile = "gfx/interface/goals/gfx_american_work.dds"
 }
 SpriteType = {
-	name = "GFX_american_warpath"
-	texturefile = "gfx/interface/goals/gfx_american_warpath.dds"
+	name = "GFX_american_armsdeals"
+	texturefile = "gfx/interface/goals/gfx_american_armsdeals.dds"
+}
+SpriteType = {
+	name = "GFX_american_armsdeals2"
+	texturefile = "gfx/interface/goals/gfx_american_armsdeals2.dds"
+}
+SpriteType = {
+	name = "GFX_american_armsdeals3"
+	texturefile = "gfx/interface/goals/gfx_american_armsdeals3.dds"
+}
+SpriteType = {
+	name = "GFX_american_prep"
+	texturefile = "gfx/interface/goals/gfx_american_prep.dds"
+}
+SpriteType = {
+	name = "GFX_american_michigan"
+	texturefile = "gfx/interface/goals/gfx_american_michigan.dds"
+}
+SpriteType = {
+	name = "GFX_american_team_USA"
+	texturefile = "gfx/interface/goals/gfx_american_team_USA.dds"
 }
 SpriteType = {
 	name = "GFX_UPTON_BEALL"

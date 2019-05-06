@@ -1,0 +1,27 @@
+﻿###########################
+# Texan Events
+###########################
+
+add_namespace = union
+
+news_event = {
+
+
+	id = union.1
+	title = union.1.t
+	desc = union.1.d
+	picture = GFX_report_event_usa_macarthur_speech
+	major = yes
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days =1
+		}
+	trigger = {
+		country_exists = USA
+	}
+
+	option = { 
+		name = union.1.b 
+	}
+}
