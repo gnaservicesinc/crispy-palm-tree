@@ -1,0 +1,226 @@
+operation_bad_hen = {
+ reversed = yes
+    enable = {
+		has_variable =var_American_States
+		NOT = { tag = USA }
+		NOT = { tag = UCA }
+		NOT = { tag = UTX }
+		NOT = { tag = UAL }
+		NOT = { tag = UMI }
+		NOT = { is_in_faction_with = USA }
+		NOT = { is_in_faction_with = UCA }
+		NOT = { is_in_faction_with = UAL }
+		NOT = { is_in_faction_with = UTX }
+		NOT = { is_in_faction_with = UMI }
+			
+}
+abort = { 
+OR  = {
+is_in_faction_with = USA
+is_in_faction_with = UCA
+is_in_faction_with = UAL
+is_in_faction_with = UTX
+is_in_faction_with = UMI
+}}
+    ai_strategy = {
+		type = conquer
+		id = USA			
+		value = 9000
+	}
+	ai_strategy = {
+		type = invade
+		id = USA			
+		value = 9000
+	}
+      ai_strategy = {
+		type = contain
+		id = USA			
+		value = 9000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = USA			
+		value = 9000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = USA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UAL			
+		value = 9000
+	}
+	ai_strategy = {
+		type = invade
+		id = UAL			
+		value = 9000
+	}
+      ai_strategy = {
+		type = contain
+		id = UAL			
+		value = 9000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = UAL			
+		value = 9000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = UAL			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UCA			
+		value = 9000
+	}
+	ai_strategy = {
+		type = invade
+		id = UCA			
+		value = 9000
+	}
+      ai_strategy = {
+		type = contain
+		id = UCA			
+		value = 9000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = UCA			
+		value = 9000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = UCA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UTX			
+		value = 9000
+	}
+	ai_strategy = {
+		type = invade
+		id = UTX			
+		value = 9000
+	}
+      ai_strategy = {
+		type = contain
+		id = UTX			
+		value = 9000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = UTX			
+		value = 9000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = UTX			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UMI			
+		value = 9000
+	}
+	ai_strategy = {
+		type = invade
+		id = UMI			
+		value = 9000
+	}
+      ai_strategy = {
+		type = contain
+		id = UMI			
+		value = 9000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = UMI			
+		value = 9000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = UMI			
+		value = 9000
+	}
+	ai_strategy = {
+		type = contain
+		id = MEX			
+		value = 9000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = MEX			
+		value = 9000
+	}
+	ai_strategy = {
+		type = invade
+		id = MEX			
+		value = 9000
+	}
+		ai_strategy = {
+		type = conquer
+		id = MEX			
+		value = 9000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = MEX			
+		value = 9000
+	}
+	ai_strategy = {
+		type = contain
+		id = CAN			
+		value = 9000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = CAN			
+		value = 9000
+	}
+	ai_strategy = {
+		type = invade
+		id = CAN			
+		value = 9000
+	}
+		ai_strategy = {
+		type = conquer
+		id = CAN			
+		value = 9000
+	}
+		ai_strategy = {
+		type = declare_war
+		id = CAN			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = FRA			
+		value = 9000
+	}
+	ai_strategy = {
+		type = invade
+		id = FRA			
+		value = 9000
+	}
+      ai_strategy = {
+		type = contain
+		id = FRA			
+		value = 9000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = FRA			
+		value = 9000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = FRA			
+		value = 9000
+	}
+
+}

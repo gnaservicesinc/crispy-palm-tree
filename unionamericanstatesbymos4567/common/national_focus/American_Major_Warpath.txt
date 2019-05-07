@@ -20,7 +20,7 @@ focus = {
 		x = 6
 		y = -3
 		dynamic =  yes
-		cost = 4
+		cost = 10
 ai_will_do = {
 			factor = 1
 		}
@@ -41,7 +41,7 @@ focus = {
 		x = 6
 		y = 0
 		dynamic =  yes
-		cost = 4
+		cost = 10
 ai_will_do = {
 			factor = 100
 		}
@@ -94,32 +94,67 @@ ai_will_do = {
     var = var_logistics_skill
     min = 1
     max = 8
-}
-		
-create_field_marshal = {
-				if={limit={tag=UTX}
-				name = "Führer Bibb Graves"
-				picture = "Bibb_Graves.dds"
-				else ={ limit={tag=UMI}
-				name ="Fred W. Green"
-				picture = "gfx/leaders/UMI/portrait_umi_fred_warren_green.dds"
-				else ={ limit ={ tag=UCA}
-				name ="Chairperson Upton Beall Sinclair Jr."				picture = "gfx/leaders/UCA/Upton_Beall_SinclairJr.dds"
-				else ={
-					name ="Governor Jim Folsom"
-					picture ="gfx/leaders/UAL/Jim_Folsom.dds"
-				}
-				
-				}}}
-				
-				skill = 8
+}			
+	if={limit={tag=UTX}
+		create_field_marshal = {  
+			name = "Führer Bibb Graves"
+			portrait_path = "gfx/leaders/UTX/Bibb_Graves.dds"
+			skill = 8
 			attack_skill = "[?var_attack_skill]"
 			defense_skill = "[?var_defense_skill]"
 			planning_skill = "[?var_planning_skill]"
 			logistics_skill = "[?var_logistics_skill]"
-				traits = { naval_invader logistics_wizard organizer offensive_doctrine brilliant_strategist career_officer media_personality politically_connected panzer_leader armor_officer trait_engineer harsh_leader }
+			traits = { naval_invader logistics_wizard organizer offensive_doctrine brilliant_strategist career_officer media_personality politically_connected panzer_leader armor_officer trait_engineer harsh_leader }
 
 			}
+	else ={ limit={tag=UMI}
+		create_field_marshal = {  
+			name ="Fred W. Green"
+			portrait_path = "gfx/leaders/UMI/portrait_umi_fred_warren_green.dds"
+			skill = 8
+			attack_skill = "[?var_attack_skill]"
+			defense_skill = "[?var_defense_skill]"
+			planning_skill = "[?var_planning_skill]"
+			logistics_skill = "[?var_logistics_skill]"
+			traits = { naval_invader logistics_wizard organizer offensive_doctrine brilliant_strategist career_officer media_personality politically_connected panzer_leader armor_officer trait_engineer harsh_leader }
+			}
+	else ={ limit ={ tag=UCA}
+		create_field_marshal = {  
+			name ="Chairperson Upton Beall Sinclair Jr."
+			portrait_path = "gfx/leaders/UCA/Upton_Beall_SinclairJr.dds"
+			skill = 8
+			attack_skill = "[?var_attack_skill]"
+			defense_skill = "[?var_defense_skill]"
+			planning_skill = "[?var_planning_skill]"
+			logistics_skill = "[?var_logistics_skill]"
+			traits = { naval_invader logistics_wizard organizer offensive_doctrine brilliant_strategist career_officer media_personality politically_connected panzer_leader armor_officer trait_engineer harsh_leader }
+			}
+	else ={ limit ={ tag=UAL}
+		create_field_marshal = {  
+			name ="Governor Jim Folsom"
+			portrait_path ="gfx/leaders/UAL/Jim_Folsom.dds"
+			skill = 8
+			attack_skill = "[?var_attack_skill]"
+			defense_skill = "[?var_defense_skill]"
+			planning_skill = "[?var_planning_skill]"
+			logistics_skill = "[?var_logistics_skill]"
+			traits = { naval_invader logistics_wizard organizer offensive_doctrine brilliant_strategist career_officer media_personality politically_connected panzer_leader armor_officer trait_engineer harsh_leader }
+
+		}
+	else ={
+		create_field_marshal = {  
+			name ="Governor Jim Folsom"
+			portrait_path ="gfx/leaders/UAL/Jim_Folsom.dds"
+			skill = 8
+			attack_skill = "[?var_attack_skill]"
+			defense_skill = "[?var_defense_skill]"
+			planning_skill = "[?var_planning_skill]"
+			logistics_skill = "[?var_logistics_skill]"
+			traits = { naval_invader logistics_wizard organizer offensive_doctrine brilliant_strategist career_officer media_personality politically_connected panzer_leader armor_officer trait_engineer harsh_leader }
+			}
+
+		}}}}}
+
 
 		add_ideas = {  american_states_military_high_command}
 
@@ -133,7 +168,7 @@ focus = {
 		prerequisite = { focus =American_Major_Warpath_focus_Bibb_takes_command  }
 		x = 3
 		y = 0
-		cost = 4
+		cost = 10
 ai_will_do = {
 			factor = 100
 		}
@@ -157,7 +192,7 @@ focus = {
 		prerequisite = { focus =American_Major_Warpath_focus_focus_blackmarket_arms_deal_1 }
 		x = 0
 		y = 1
-		cost = 4
+		cost = 10
 ai_will_do = {
 			factor = 100
 		}
@@ -179,7 +214,7 @@ focus = {
 		prerequisite = { focus =American_Major_Warpath_focus_focus_blackmarket_arms_deal_2 }
 		x = 0
 		y = 1
-		cost = 4
+		cost = 10
 		 cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -200,7 +235,7 @@ focus = {
 		
 		x = 0
 		y = 1
-		cost = 4
+		cost = 10
 		 cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -212,13 +247,12 @@ ai_will_do = {
 add_ideas = { american_states_overwhelming_criminal_element }
 	}
 }
-
 focus = {
 		id = American_Major_Warpath_focus_focus_border_security
 		icon = GFX_american_prep
 		x = 8
 		y = 0
-		cost = 4
+		cost = 10
 ai_will_do = {
 			factor = 1000
 		}
@@ -235,7 +269,6 @@ add_ideas = { american_states_emergency_govement_industry_wartime_partnership }
 
  }
 }
-
 focus = {
 		id = American_Major_Warpath_focus_focus_border_security_2
 		icon = GFX_american_prep
@@ -246,7 +279,7 @@ ai_will_do = {
 		}
 		x = -1
 		y = 1
-		cost = 4
+		cost = 10
 		 cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -273,7 +306,7 @@ ai_will_do = {
 			factor = 1000
 		}
 
-		cost = 4
+		cost = 10
 		 cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes 
@@ -289,7 +322,7 @@ focus = {
 		prerequisite = { focus =American_Major_Warpath_focus_focus_border_security_3 }
 		x = -1
 		y = 1
-		cost = 4
+		cost = 10
 
 ai_will_do = {
 			factor = 1000
@@ -313,7 +346,7 @@ focus = {
 
 		x = 0
 		y = 1
-		cost = 4
+		cost = 10
 ai_will_do = {
 			factor = 100
 		}
@@ -379,7 +412,7 @@ focus = {
 
 		x = 0
 		y = 1
-		cost = 4
+		cost = 10
 ai_will_do = {
 			factor = 100
 		}
@@ -410,7 +443,7 @@ focus = {
 
 		x = 0
 		y = 2
-		cost = 4
+		cost = 10
 		will_lead_to_war_with = MEX
 ai_will_do = {
 			factor = 100
@@ -545,7 +578,7 @@ focus = {
 
 		x = 2
 		y = 0
-		cost = 4
+		cost = 10
 ai_will_do = {	factor = 100 
 }
 
@@ -631,7 +664,7 @@ focus = {
 		relative_position_id = American_Major_Warpath_focus_focus_invade_mexico
 		x = 0
 		y = 2
-		cost = 4
+		cost = 10
 	cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no

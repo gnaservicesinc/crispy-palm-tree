@@ -231,9 +231,9 @@ load_focus_tree = { tree = generic_focus
 focus = {
 		id = American_choose_go_with_soviet
 		icon = GFX_expand_ru_eco_partnetship
-		relative_position_id = American_choose_side_sunshine
+		relative_position_id = American_choose_go_with_germany
 		x = 0
-		y = -5
+		y = -1
 		dynamic =  yes
 		cost = 1
 
@@ -275,9 +275,9 @@ load_focus_tree = { tree = generic_focus
 focus = {
 		id = American_choose_go_with_japan
 		icon = GFX_expand_ru_eco_partnetship
-		relative_position_id = American_choose_side_sunshine
+		relative_position_id = American_choose_go_with_soviet
 		x = 0
-		y = -6
+		y = -1
 		dynamic =  yes
 		cost = 1
 
@@ -319,9 +319,9 @@ load_focus_tree = { tree = generic_focus
 focus = {
 		id = American_choose_go_with_commonwealth
 		icon = GFX_expand_ru_eco_partnetship
-		relative_position_id = American_choose_side_sunshine
+		relative_position_id = American_choose_go_with_japan
 		x = 0
-		y = -7
+		y = -1
 		dynamic =  yes
 		cost = 1
 
@@ -359,6 +359,33 @@ load_focus_tree = { tree = generic_focus
 			 }
 
 			 }
+focus = {
+		id = American_choose_go_independent
+		icon = GFX_expand_ru_eco_partnetship
+		relative_position_id = American_choose_go_with_commonwealth
+		x = 0
+		y = -1
+		dynamic =  yes
+		cost = 1
 
+		ai_will_do = {
+			factor = 1
+		}
+available = {
+ROOT = {   has_variable =var_American_States }
+    }
+
+ allow_branch = { ROOT = {   has_variable =var_American_States }}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+				load_focus_tree = { tree = generic_focus
+                     keep_completed = no }
+
+			 }
+
+			 }
 
 }

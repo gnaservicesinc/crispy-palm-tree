@@ -1,4 +1,4 @@
-Rolling_Strike= {
+Shock_and_Awe= {
 re_conquest_retake_the_homeland = {	
           target_trigger = {
 		 FROM = {
@@ -17,8 +17,8 @@ re_conquest_retake_the_homeland = {
 		cost = 1000
 		
 		complete_effect = {
-			ROOT = { create_wargoal = { target =     FROM	 type = annex_everything } }
-  			FROM = { create_wargoal = { target =     ROOT	 type = annex_everything } }
+			ROOT = { declare_war_on= { target =     FROM	 type = annex_everything } }
         	}
 }
+
 }#################

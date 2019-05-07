@@ -112,17 +112,22 @@ country = {
 		}
 
 historical_ai = {
-is_subject_of =  USA 
+is_subject_of =  USA
+factor = 1000 
 }
 available = {
-ROOT = {   has_variable =var_American_States }
-			NOT ={ tag = UMI }
+		ROOT = {   has_variable =var_American_States }
+		NOT ={ tag = UMI }
 		NOT ={ tag = UCA }
 		NOT ={ tag = UAL }
 		NOT ={ tag = UTX }
     }
 
- allow_branch = { ROOT = {   has_variable =var_American_States }}		
+allow_branch ={ ROOT={ has_variable =var_American_States }
+		NOT ={ tag = UMI }
+		NOT ={ tag = UCA }
+		NOT ={ tag = UAL }
+		NOT ={ tag = UTX } }		
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -158,24 +163,32 @@ focus = {
 		}
 		cost = 1
 available = {
-ROOT = {   has_variable =var_American_States }
-			NOT ={ tag = UMI }
+		ROOT = {   has_variable =var_American_States }
+		NOT ={ tag = UMI }
 		NOT ={ tag = UCA }
 		NOT ={ tag = UAL }
 		NOT ={ tag = UTX }
     }
+
+allow_branch ={ ROOT={ has_variable =var_American_States }
+		NOT ={ tag = UMI }
+		NOT ={ tag = UCA }
+		NOT ={ tag = UAL }
+		NOT ={ tag = UTX } }
 cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 historical_ai = {
+
 is_subject_of =  UMI
 is_subject_of =  UCA
 is_subject_of =  UAL
 is_subject_of =  UTX
+factor = 1000
 }
 
 		completion_reward = {
-load_focus_tree = { tree = generic_focus
+load_focus_tree = { tree = American_Not_So_Loyal_State
                      keep_completed = yes }
 
 }
@@ -194,12 +207,19 @@ focus = {
 		}
 		cost = 1
 available = {
-ROOT = {   has_variable =var_American_States }
-			NOT ={ tag = UMI }
+		ROOT = {   has_variable =var_American_States }
+		NOT ={ tag = UMI }
 		NOT ={ tag = UCA }
 		NOT ={ tag = UAL }
 		NOT ={ tag = UTX }
     }
+
+allow_branch ={ ROOT={ has_variable =var_American_States }
+		NOT ={ tag = UMI }
+		NOT ={ tag = UCA }
+		NOT ={ tag = UAL }
+		NOT ={ tag = UTX } }
+
 cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -249,6 +269,12 @@ ROOT = {   has_variable =var_American_States }
     }
 
  allow_branch = { ROOT = {   has_variable =var_American_States }
+OR{
+		ROOT = {tag = UMI }
+		ROOT = {tag = UCA }
+		ROOT = {tag = UAL }
+		ROOT = {tag = UTX }
+	}
 		}
 
 		
@@ -290,6 +316,12 @@ ROOT = {   has_variable =var_American_States }
     }
 
  allow_branch = { ROOT = {   has_variable =var_American_States }
+OR{
+		ROOT = {tag = UMI }
+		ROOT = {tag = UCA }
+		ROOT = {tag = UAL }
+		ROOT = {tag = UTX }
+	}
 	}
 
 		
@@ -328,6 +360,12 @@ ROOT = {   has_variable =var_American_States }
     }
 
  allow_branch = { ROOT = {   has_variable =var_American_States }
+OR{
+		ROOT = {tag = UMI }
+		ROOT = {tag = UCA }
+		ROOT = {tag = UAL }
+		ROOT = {tag = UTX }
+	}
 		}
 
 		
