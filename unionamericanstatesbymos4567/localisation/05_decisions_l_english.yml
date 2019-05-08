@@ -8,6 +8,8 @@
  american_major_state_assassinate_bibb_attempt:0 "Eliminate [FROM.Owner.GetLeader]"
  american_major_state_assassinate_bibb_attempt_desc:0 "Its time to ride the world of one very bad person.\nInstruct our agents in [FROM.Owner.GetName] to eliminate [FROM.Owner.GetLeader] at once"
 American_States_Stability:0 "Should we stir thing up a bit or reassure people?"
+ Shock_and_Awe_the_homeland:0 "Shock and Awe the Homeland"
+ Shock_and_Awe_the_homeland_desc:0 "The time for diplomatic options has ended. Its time for a military solution to what really is a military problem. [Root.GerLeader] will be addressing the nation at shortly." 
  American_States_Stability_Stabilize:0 "Stabilize things" 
  American_States_Stability_Stabilize_desc:0 "Settle things down a bit"
  American_States_Stability_Destabilize:0 "Destabilize things"

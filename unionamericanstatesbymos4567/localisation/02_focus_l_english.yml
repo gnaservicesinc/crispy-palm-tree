@@ -1,4 +1,6 @@
 ﻿l_english:
+  American_Not_So_Loyal_State_smugggle:0 "[Root.GetNameWithFlag] is smuggling in large quantities of illegal arms"
+  American_Not_So_Loyal_State_smugggle:0 "[Root.GetNameWithFlag] is blatantly smuggling in alarming quantities of illegal arms"
   American_choice_loyal_union_states:0 "Answer the Call"
   American_choice_loyal_union_states_desc:0 "The United States has arisen an has called upon to reaffirm our membership in the union. The implication here is war if we do not immediately comply."
   American_choice_not_so_loyal_union_state:0 "Not So loyal"

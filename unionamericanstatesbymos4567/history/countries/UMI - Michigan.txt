@@ -87,17 +87,7 @@ UDK  = { set_variable = { var_American_States = 1 }  }
 UNE  = { set_variable = { var_American_States = 1 }  }
 UIA  = { set_variable = { var_American_States = 1 }  }
 
-
-add_to_array = { array = USA.Michigan_States value= UWI }
-add_to_array = { array = USA.Michigan_States value= UOH }
-add_to_array = { array = USA.Michigan_States value= UIL }
-add_to_array = { array = USA.Michigan_States value= UIN }
-add_to_array = { array = USA.Michigan_States value= UMN }
-add_to_array = { array = USA.Michigan_States value= UDK }
-add_to_array = { array = USA.Michigan_States value= UNE }
-add_to_array = { array = USA.Michigan_States value= UIA }
-
-USA = {
+#Local Copy
 add_to_array = { array = Michigan_States value= UWI }
 add_to_array = { array = Michigan_States value= UOH }
 add_to_array = { array = Michigan_States value= UIL }
@@ -106,9 +96,9 @@ add_to_array = { array = Michigan_States value= UMN }
 add_to_array = { array = Michigan_States value= UDK }
 add_to_array = { array = Michigan_States value= UNE }
 add_to_array = { array = Michigan_States value= UIA }
-}
+
  for_each_loop = {
-array = USA.Michigan_States
+array = Michigan_States
 give_guarantee = v
 add_to_faction = v
 add_to_array = { array = USA.American_States value= v }

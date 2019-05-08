@@ -1,5 +1,11 @@
 ﻿l_english:
- autonomy_united_states_state:0 "United States State"
+
+ autonomy_united_states_state:0 "[Root.OVERLORD.GetName] State"
+ autonomy_united_states_state_desc:0 "One nation under the [Root.OVERLORD.GetName]"
+ autonomy_united_states_state_DEF:0 "One nation under the [Root.OVERLORD.GetName]"
+ USA_autonomy_united_states_state:0 "United States State"
+ USA_autonomy_united_states_state_desc:0 "One nation under the [Root.OVERLORD.GetName]"
+ UDA_autonomy_united_states_state_DEF:0 "One nation under the [Root.OVERLORD.GetName]"
  UTX_autonomy_united_states_state:0 "State of the Texas Republic"
  UAL_autonomy_united_states_state:0 "State of the Alabaman Southern Agricultural Alliance"
  UCA_autonomy_united_states_state:0 "Californian Sunshine State"
