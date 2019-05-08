@@ -20,7 +20,7 @@ country_event = {
 	option = { 
 		name = union.1.b 
 	}
-	}
+	
 }
 
 news_event = {

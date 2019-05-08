@@ -2075,7 +2075,6 @@ ROOT = { NOT = { is_in_faction_with = USA }}
 available = {
 	ROOT = { NOT = { has_war_with = ENG }}
 	ENG = { has_government = democratic }
-      ROOT = { has_government = democratic }
 ROOT = { NOT = { is_in_faction_with = USA }}
     }
 
@@ -2259,34 +2258,27 @@ ROOT = { add_to_tech_sharing_group = commonwealth_research}
 			factor = 1
 		}
 	completion_reward = {
-		
-	add_named_threat = { 
-    threat = 2 
-    name = American_Not_So_Loyal_State_smugggle
-}
+	
+   add_threat = 1 
 	add_equipment_to_stockpile = {
     type = infantry_equipment
-    amount = 100000
+    amount = 10000
 }
 add_equipment_to_stockpile = {
     type = support_equipment
-    amount = 100000
+    amount = 10000
 }
 add_equipment_to_stockpile = {
     type = artillery_equipment
-    amount = 100000
-}
-add_equipment_to_stockpile = {
-    type = mechanized_equipment
-    amount = 100000
+    amount = 10000
 }
 add_equipment_to_stockpile = {
     type = motorized_equipment
-    amount = 100000
+    amount = 10000
 }
 add_equipment_to_stockpile = {
     type = convoy
-    amount = 100000
+    amount = 10000
 }
 }
 
@@ -2307,33 +2299,26 @@ add_equipment_to_stockpile = {
 			factor = 1
 		}
 	completion_reward = {
-	add_named_threat = { 
-    threat = 4 
-    name = American_Not_So_Loyal_State_smugggle2
-}
-	add_equipment_to_stockpile = {
+    add_threat = 2 
+add_equipment_to_stockpile = {
     type = infantry_equipment
-    amount = 500000
+    amount = 50000
 }
 add_equipment_to_stockpile = {
     type = support_equipment
-    amount = 500000
+    amount = 50000
 }
 add_equipment_to_stockpile = {
     type = artillery_equipment
-    amount = 500000
-}
-add_equipment_to_stockpile = {
-    type = mechanized_equipment
-    amount = 500000
+    amount = 50000
 }
 add_equipment_to_stockpile = {
     type = motorized_equipment
-    amount = 500000
+    amount = 50000
 }
 add_equipment_to_stockpile = {
     type = convoy
-    amount = 500000
+    amount = 50000
 }
 }
 }
@@ -2354,41 +2339,54 @@ focus = {
 			factor = 1
 		}
 
-	completion_reward = {
-	set_variable = { var_no_offsite = random }
-
-print_variables = {
-    file = log_file
-    text = header_text
-    append = yes
-    print_global = yes
-    var_list = {  ROOT.var_no_offsite } 
-}
-
-if={limit={check_variable = { var_no_offsite < 0}}
-multiply_variable={ROOT.var_no_offsite = -1}
-print_variables = {
-    file = log_file
-    text = header_text
-    append = yes
-    print_global = yes
-    var_list = {  ROOT.var_no_offsite } 
-}
-}
-
-multiply_variable={ var_no_offsite =  1000}
-
-print_variables = {
-    file = log_file
-    text = header_text
-    append = yes
-    print_global = yes
-    var_list = { ROOT.var_no_offsite } 
-}
-	add_offsite_building = { type = arms_factory level = [?var_no_offsite] }
+	completion_reward = {		 add_threat = 3
+	add_offsite_building = { type = arms_factory level = 20 }
 
  }
 }
+focus = {
+		id = American_Not_So_Loyal_State_build_secrete_arms_factories_on_foreign_soil2  
+		icon = GFX_ru_mil_train_joint2
+		prerequisite = { focus=American_Not_So_Loyal_State_build_secrete_arms_factories_on_foreign_soil  }
+		relative_position_id =American_Not_So_Loyal_State_build_secrete_arms_factories_on_foreign_soil
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no	
+		x = 0
+		y = 1
+		dynamic =  yes
+		cost = 10
+	
+		ai_will_do = {
+			factor = 1
+		}
 
+	completion_reward = {		 add_threat = 4
+	add_offsite_building = { type = arms_factory level = 25 }
+
+ }
+}
+focus = {
+		id = American_Not_So_Loyal_State_build_secrete_arms_factories_on_foreign_soil3  
+		icon = GFX_ru_mil_train_joint2
+		prerequisite = { focus=American_Not_So_Loyal_State_build_secrete_arms_factories_on_foreign_soil2  }
+		relative_position_id =American_Not_So_Loyal_State_build_secrete_arms_factories_on_foreign_soil2  
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no	
+		x = 0
+		y = 1
+		dynamic =  yes
+		cost = 10
+	
+		ai_will_do = {
+			factor = 1
+		}
+
+	completion_reward = {		 threat = 5
+	add_offsite_building = { type = arms_factory level = 30 }
+
+ }
+}
 
 }####################
