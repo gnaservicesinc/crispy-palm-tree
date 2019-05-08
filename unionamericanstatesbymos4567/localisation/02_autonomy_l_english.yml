@@ -1,6 +1,6 @@
 ﻿l_english:
 
- autonomy_united_states_state:0 "[Root.OVERLORD.GetName] State"
+ autonomy_united_states_state:0 "United States State"
  autonomy_united_states_state_desc:0 "One nation under the [Root.OVERLORD.GetName]"
  autonomy_united_states_state_DEF:0 "One nation under the [Root.OVERLORD.GetName]"
  USA_autonomy_united_states_state:0 "United States State"
