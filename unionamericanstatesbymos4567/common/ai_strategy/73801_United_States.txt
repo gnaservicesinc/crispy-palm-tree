@@ -88,7 +88,7 @@ operation_guardian_eagle = {
 
 }
 operation_eagle_strike = {
-#Not reversed (default)
+
 	enable = {
 		has_variable =var_American_States
 		country_exists = USA
@@ -212,17 +212,8 @@ abort = {
 
 
 operation_UnifiedNation = {
-
-	enable = {
-		# Special Strategy for proper states in the faction.
-		# So will only apply to US States in the faction
-		# US this approach for each of the state factions
-
-		for_each_loop = {
-		array = Loyal_American_States
-		 original_tag = v
-			}
-		     		        country_exists = UTX
+		enable = {
+		     	country_exists = UTX
 			country_exists = UMI
 			country_exists = UCA
 			country_exists = UAL

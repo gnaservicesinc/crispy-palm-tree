@@ -1,6 +1,52 @@
-ger_protect_american_allies = {
+eng_protect_america= {
+	enable = {
+		 original_tag = ENG
+		ENG = { has_government = democratic }
+		USA = { NOT = { has_war_with = ENG  }}		
+		}
+
+	 abort = {
+	USA = {  has_war_with = ENG  }
+ ENG = { NOT = {has_government = democratic }}
+}
+
+	    ai_strategy = {
+		type = befriend
+		id = "USA"			
+		value = 2500
+	}
+	    ai_strategy = {
+		type = protect
+		id = "USA"			
+		value = 1000
+	}
+	    ai_strategy = {
+		type = support
+		id = "USA"			
+		value = 1000
+	}
+	    ai_strategy = {
+		type = garrison
+		id = "USA"			
+		value = 1000
+	}
+	    ai_strategy = {
+		type = alliance
+		id = "USA"			
+		value = 1500
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "USA"
+		value = 700
+	}
+}
+
+
+eng_protect_american_allies = {
 reversed = yes
 	 enable = {
+		
 		ROOT = {has_idea = commonwealth_special_partnership}
 		ROOT = { NOT = { is_in_faction_with = USA  }}
 		ROOT = { NOT = { has_war_with = ENG  }}
@@ -14,22 +60,22 @@ ROOT = { has_war_with = ENG }
 	    ai_strategy = {
 		type = befriend
 		id = "ENG"			
-		value = 500
+		value = 1000
 	}
 	    ai_strategy = {
 		type = protect
 		id = "ENG"			
-		value = 500
+		value = 1000
 	}
 	    ai_strategy = {
 		type = support
 		id = "ENG"			
-		value = 500
+		value = 1000
 	}
 	    ai_strategy = {
 		type = garrison
 		id = "ENG"			
-		value = 500
+		value = 1000
 	}
 	    ai_strategy = {
 		type = alliance
@@ -46,6 +92,7 @@ ger_harass_american_commies = {
 
 reversed = yes
 	 enable = { 
+		NOT = { tag = USA }
 		ROOT = {has_idea = california_soviet_partnership}
 		}
 abort =  {
@@ -112,17 +159,17 @@ ROOT = { NOT ={has_idea = california_soviet_partnership}}
 ai_strategy = {
 		type = declare_war
 		id = "ENG"			
-		value = 300
+		value = 3000
 	}
 	    ai_strategy = {
 		type = conquer
 		id = "ENG"			
-		value = 300
+		value = 3000
 	}
     ai_strategy = {
 		type = invade
 		id = "ENG"			
-		value = 300
+		value = 3000
 	}
 
 
@@ -146,17 +193,17 @@ ROOT = { NOT ={has_idea = global_foregin_intrest_partnership}}
  ai_strategy = {
 		type = antagonize
 		id = "ENG"			
-		value = 200
+		value = 2000
 	}
     ai_strategy = {
 		type = contain
 		id = "ENG"			
-		value = 200
+		value = 2000
 	}
 	ai_strategy = {
 		type = area_priority
 		id = north_america
-		value = 200
+		value = 300
 	}
 }
 
@@ -174,24 +221,24 @@ ROOT = { NOT ={has_idea = global_foregin_intrest_partnership}}
 ai_strategy = {
 		type = declare_war
 		id = "ENG"			
-		value = 200
+		value = 2000
 	}
 	    ai_strategy = {
 		type = conquer
 		id = "ENG"			
-		value = 200
+		value = 2000
 	}
     ai_strategy = {
 		type = invade
 		id = "ENG"			
-		value = 200
+		value = 2000
 	}
 
 
 	ai_strategy = {
 		type = area_priority
 		id = north_america
-		value = 200
+		value = 300
 	}
 }
 

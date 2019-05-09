@@ -1,15 +1,12 @@
 
 operation_Sunshine = {
-
-	operation_Sunshine_name = "Operation Sunshine"
-	operation_Sunshine_desc = "You will comply"
 	enable = {
       		is_in_faction_with = UCA
 	}
 
 abort = {
  		NOT = { is_in_faction_with = UCA }
-	 
+	 	
 	}
 
     ai_strategy = {
@@ -182,21 +179,28 @@ take_ca_sunshine = {
 
     # When to apply the strategy
     enable = {
-
+			has_variable =var_American_States
+					is_in_faction_with = UTX
+			is_in_faction_with = UMI
+			is_in_faction_with = UAL
 			is_in_faction_with = USA
 			original_tag = USA
-
+			original_tag = UTX
+			original_tag = UAL
+			original_tag = UMI
+			 NOT = { is_in_faction_with = UCA }
       		          
     }
 
 	abort =  {
+		 is_in_faction_with = UCA 
 		 NOT = { is_in_faction_with = USA }
 
 	}
   ai_strategy = {
 		type = declare_war
 		id = "UCA"			
-		value = 250
+		value = 2500
 	}
 	ai_strategy = {
 		type = invade
@@ -216,21 +220,30 @@ take_ca_sunshine2 = {
 
     # When to apply the strategy
     enable = {
-
+			has_variable =var_American_States
+			is_in_faction_with = UTX
+			is_in_faction_with = UMI
+			is_in_faction_with = UAL
 			is_in_faction_with = USA
 			original_tag = USA
-
+			original_tag = UTX
+			original_tag = UAL
+			original_tag = UMI
+			 NOT = { is_in_faction_with = UCA }
       		        
     }
 
 	abort =  {
+		NOT = { is_in_faction_with = UTX }
+		NOT = { is_in_faction_with = UAL }
+		NOT = { is_in_faction_with = UMI }
 		 NOT = { is_in_faction_with = USA }
 
 	}
   ai_strategy = {
 		type = declare_war
 		id = "UCA"			
-		value = 250
+		value = 2500
 	}
 	ai_strategy = {
 		type = invade

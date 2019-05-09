@@ -1,0 +1,40 @@
+operation_crazed_hen = {
+ reversed = yes
+    enable = {
+		ROOT ={ has_variable =var_American_States}
+		NOT = { country_exists = USA }
+	
+			
+}
+abort = { 
+OR  = {
+country_exists = USA
+}}
+    ai_strategy = {
+		type = conquer
+		id = ROOT			
+		value = 9000
+	}
+	ai_strategy = {
+		type = invade
+		id = ROOT			
+		value = 9000
+	}
+      ai_strategy = {
+		type = contain
+		id = ROOT			
+		value = 9000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = ROOT			
+		value = 9000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = ROOT			
+		value = 9000
+	}
+   
+
+}

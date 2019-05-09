@@ -1,0 +1,60 @@
+
+operation_WesternFury = {
+	enable = {
+		has_variable =var_Cali_States
+		NOT = { is_in_faction_with = UCA }
+      		
+	}
+
+abort = {
+ 	is_in_faction_with = UCA	
+	 	
+	}
+
+    ai_strategy = {
+		type = declare_war
+		id = "UCA"			
+		value = 2500
+	}
+
+    ai_strategy = {
+		type = conquer
+		id = "UCA"			
+		value = 2000
+	}
+    ai_strategy = {
+		type = invade
+		id = "UCA"			
+		value = 2500
+	}
+   
+    ai_strategy = {
+		type = contain
+		id = "SOV"			
+		value = 2000
+	}
+
+   ai_strategy = {
+		type = antagonize
+		id = "SOV"			
+		value = 2000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = "SIK"			
+		value = 500
+	}
+    ai_strategy = {
+		type = antagonize
+		id = "MON"			
+		value = 500
+	}
+    ai_strategy = {
+		type = antagonize
+		id = "PRC"			
+		value = 500
+	}
+    
+ 
+}
+

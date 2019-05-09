@@ -1,6 +1,7 @@
 operation_SouthRises = {
 
 	enable = {
+has_variable =var_American_States
 		is_in_faction_with = UAL
 	}
 
@@ -101,7 +102,7 @@ free_for_all_down_south = {
     enable = {
 
 			is_in_faction_with = USA
-			original_tag = UAL
+			 has_variable =var_Southern_States
 
       		        
     }
@@ -113,27 +114,27 @@ free_for_all_down_south = {
 
       ai_strategy = {
 		type = conquer
-		id = USA			
+		id = UAL			
 		value = 9000
 	}
 	ai_strategy = {
 		type = invade
-		id = USA			
+		id = UAL			
 		value = 9000
 	}
       ai_strategy = {
 		type = contain
-		id = USA			
+		id = UAL			
 		value = 9000
 	}
 	ai_strategy = {
 		type = antagonize
-		id = USA			
+		id = UAL			
 		value = 9000
 	}
 	ai_strategy = {
 		type = declare_war
-		id = USA			
+		id = UAL			
 		value = 9000
 	}
 
@@ -142,14 +143,7 @@ free_for_all_down_south = {
 operation_UnifiedSouth = {
 
 	enable = {
-		# Special Strategy for proper states in the faction.
-		# So will only apply to US States in the faction
-		# US this approach for each of the state factions
-
-		for_each_loop = {
-		array = Southern_States
-		 original_tag = v
-			}
+			 has_variable =var_Southern_States
 		        country_exists = UTX
 			country_exists = UMI
 			country_exists = UCA
