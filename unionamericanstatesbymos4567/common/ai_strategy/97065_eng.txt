@@ -94,7 +94,7 @@ ROOT = { NOT ={has_idea = california_soviet_partnership}}
 	ai_strategy = {
 		type = area_priority
 		id = north_america
-		value = ENG
+		value = 250
 	}
 }
 

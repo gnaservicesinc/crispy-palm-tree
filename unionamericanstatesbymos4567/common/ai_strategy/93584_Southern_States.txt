@@ -4,7 +4,7 @@ operation_SouthRises = {
 		is_in_faction_with = UAL
 	}
 
-about = {
+abort = {
 		NOT = { is_in_faction_with = UAL }
 	 
 	}
@@ -165,7 +165,7 @@ operation_UnifiedSouth = {
 		
 	}
 
-about = {
+abort = {
 				OR = {
 			NOT = { country_exists = USA }
 			NOT = { country_exists = UCA }

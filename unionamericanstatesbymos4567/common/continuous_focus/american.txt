@@ -229,7 +229,7 @@ focus = {
 		id = continuous_amer_war_prep
 		
 		icon = GFX_goal_continuous_reduce_training_time
-		
+		idea = continuous_naval_production
 		available = {
 		}
 		

@@ -52,7 +52,7 @@ operation_guardian_eagle = {
       			is_in_faction_with = USA
 			}
 
-	about = {
+	abort = {
 		NOT = { is_in_faction_with = USA } 
 	}
 
@@ -95,7 +95,7 @@ operation_eagle_strike = {
       		is_in_faction_with = USA
 	}
 
-about = {
+abort = {
 		NOT = { is_in_faction_with = USA }
 	 
 	}
@@ -237,7 +237,7 @@ operation_UnifiedNation = {
 		
 	}
 
-about = {
+abort = {
 				OR = {
 			NOT = { country_exists = USA }
 			NOT = { country_exists = UCA }
