@@ -26,9 +26,9 @@ american_states_intelligence_agency_level_2 = {
 		removal_cost = -1
 	modifier = {
 		stability_weekly = -0.2
-		war_support_weekly = 0.25
-		planning_speed = 0.35
-		training_time_factor= -0.25
+		war_support_weekly = 0.15
+		planning_speed = 0.15
+		training_time_factor= -0.15
 		}
 }	
 
@@ -41,9 +41,9 @@ american_states_intelligence_agency_level_3 = {
 		removal_cost = -1
 	modifier = {
 		stability_weekly = -0.03
-		war_support_weekly = 0.55
-		planning_speed = 0.55
-		training_time_factor= -0.55
+		war_support_weekly = 0.20
+		planning_speed = 0.20
+		training_time_factor= -0.10
 		}
 }
 american_states_intelligence_agency_level_4 = {
@@ -55,14 +55,14 @@ american_states_intelligence_agency_level_4 = {
 		removal_cost = -1
 	modifier = {
 		stability_weekly = -0.04
-		war_support_weekly = 0.55
-		planning_speed = 0.55
-		training_time_factor= -0.55
-			industrial_capacity_factory=0.50
-	production_oil_factor = 0.25
-	local_resources_factor = 0.25
-	consumer_goods_factor = 0.25
-	production_factory_max_efficiency_factor = 0.25
+		war_support_weekly = 0.15
+		planning_speed = 0.15
+		training_time_factor= -0.15
+			industrial_capacity_factory=0.20
+	production_oil_factor = 0.15
+	local_resources_factor = 0.15
+	consumer_goods_factor = 0.15
+	production_factory_max_efficiency_factor = 0.15
 		}
 }
 american_states_intelligence_agency_level_5 = {
@@ -74,14 +74,14 @@ american_states_intelligence_agency_level_5 = {
 		removal_cost = -1
 	modifier = {
 		stability_weekly = -0.05
-		war_support_weekly = 0.75
-		planning_speed = 0.75
-		training_time_factor= -0.75
-	industrial_capacity_factory=0.75
-	production_oil_factor = 0.75
-	local_resources_factor = 0.75
-	consumer_goods_factor = 0.75
-	production_factory_max_efficiency_factor = 0.75
+		war_support_weekly = 0.15
+		planning_speed = 0.15
+		training_time_factor= -0.15
+	industrial_capacity_factory=0.15
+	production_oil_factor = 0.15
+	local_resources_factor = 0.15
+	consumer_goods_factor = 0.15
+	production_factory_max_efficiency_factor = 0.15
 		}
 }
 american_states_stabilization_level_1 = {
@@ -306,12 +306,12 @@ american_states_goverment_industrial_wellfare = {
 		removal_cost = -1
 modifier = {
 	industrial_capacity_factory=0.50
-	production_oil_factor = 0.25
-	local_resources_factor = 0.25
-	consumer_goods_factor = 0.25
-	production_factory_max_efficiency_factor = 0.25
-	industrial_capacity_dockyard = 0.25
-	industrial_capacity_factory = 0.25
+	production_oil_factor = 0.15
+	local_resources_factor = 0.15
+	consumer_goods_factor = 0.15
+	production_factory_max_efficiency_factor = 0.15
+	industrial_capacity_dockyard = 0.15
+	industrial_capacity_factory = 0.15
 
 
 }
@@ -336,7 +336,7 @@ infiltration_by_spies = {
 		allowed_civil_war = {always = no}
 		removal_cost = -1
 		modifier = {
-		 stability_weekly = -0.25
+		 stability_weekly = -0.15
 		}
 }
 	english_military_training = {
@@ -346,17 +346,17 @@ infiltration_by_spies = {
 		removal_cost = -1
 
 		modifier = {
-			offence = 0.70
-			defence = 0.65
-			land_reinforce_rate = 0.62
-			training_time_factor = -0.66
-			training_time_army_factor = -0.50
+			offence = 0.20
+			defence = 0.15
+			land_reinforce_rate = 0.12
+			training_time_factor = -0.16
+			training_time_army_factor = -0.10
 			max_dig_in = 1
 			out_of_supply_factor = -0.5
 			supply_consumption_factor = -0.46
 			experience_loss_factor = -0.35
 			MONTHLY_POPULATION = 0.45
-			conscription = 0.75
+			conscription = 0.15
 
 	
 			}
@@ -368,17 +368,17 @@ infiltration_by_spies = {
 		removal_cost = -1
 
 		modifier = {
-			offence = 0.80
-			defence = 0.75
-			land_reinforce_rate = 0.74
-			training_time_factor = -0.70
-			training_time_army_factor = -0.60
+			offence = 0.30
+			defence = 0.15
+			land_reinforce_rate = 0.24
+			training_time_factor = -0.10
+			training_time_army_factor = -0.10
 			max_dig_in = 1
 			out_of_supply_factor = -0.5
 			supply_consumption_factor = -0.56
-			experience_loss_factor = -0.65
-			MONTHLY_POPULATION = 0.65
-			conscription = 0.75
+			experience_loss_factor = -0.15
+			MONTHLY_POPULATION = 0.15
+			conscription = 0.15
 
 	
 			}
@@ -391,10 +391,10 @@ infiltration_by_spies = {
 		removal_cost = -1
 
 		modifier = {
-			decryption_factor = 0.25
-			encryption_factor = 0.25
-			enemy_partisan_effect = -0.25
-			political_power_gain = 0.25
+			decryption_factor = 0.15
+			encryption_factor = 0.15
+			enemy_partisan_effect = -0.15
+			political_power_gain = 0.15
 			MONTHLY_POPULATION = 0.15
 			conscription = 0.15
 			}
@@ -407,10 +407,10 @@ infiltration_by_spies = {
 		removal_cost = -1
 
 		modifier = {
-			decryption_factor = 0.25
-			encryption_factor = 0.25
-			enemy_partisan_effect = -0.25
-			political_power_gain = 0.25
+			decryption_factor = 0.15
+			encryption_factor = 0.15
+			enemy_partisan_effect = -0.15
+			political_power_gain = 0.15
 			MONTHLY_POPULATION = 0.15
 			conscription = 0.15
 			}
@@ -423,11 +423,11 @@ infiltration_by_spies = {
 		removal_cost = -1
 
 		modifier = {
-			decryption_factor = 0.25
-			encryption_factor = 0.25
-			enemy_partisan_effect = -0.25
-			political_power_gain = 0.25
-			MONTHLY_POPULATION = 0.25
+			decryption_factor = 0.15
+			encryption_factor = 0.15
+			enemy_partisan_effect = -0.15
+			political_power_gain = 0.15
+			MONTHLY_POPULATION = 0.15
 			conscription = 0.15
 			}
 	
@@ -439,11 +439,11 @@ infiltration_by_spies = {
 		removal_cost = -1
 
 		modifier = {
-			decryption_factor = 0.25
-			encryption_factor = 0.25
-			enemy_partisan_effect = -0.25
-			political_power_gain = 0.25
-			MONTHLY_POPULATION = 0.25
+			decryption_factor = 0.15
+			encryption_factor = 0.15
+			enemy_partisan_effect = -0.15
+			political_power_gain = 0.15
+			MONTHLY_POPULATION = 0.15
 			conscription = 0.15
 			}
 	
@@ -458,14 +458,14 @@ infiltration_by_spies = {
 			production_speed_arms_factory_factor = 0.20
 			production_factory_efficiency_gain_factor = 0.20
 			democratic_drift = 0.80 
-			democratic_acceptance = 90
-			drift_defence_factor = 0.25
+			democratic_acceptance = 75
+			drift_defence_factor = 0.15
 			weekly_manpower = 1000
-			MONTHLY_POPULATION = 0.75
-			conscription = 0.25
-			opinion_gain_monthly_same_ideology_factor = 0.7
+			MONTHLY_POPULATION = 0.15
+			conscription = 0.15
+			opinion_gain_monthly_same_ideology_factor = 0.27
 			ai_badass_factor = 0.15
-			ai_focus_defense_factor = 0.7
+			ai_focus_defense_factor = 0.27
 			
 			}
 	
@@ -477,17 +477,17 @@ infiltration_by_spies = {
 		removal_cost = -1
 
 		modifier = {
-			offence = 0.50
+			offence = 0.20
 			defence = 0.35
-			land_reinforce_rate = 0.52
-			training_time_factor = -0.60
-			training_time_army_factor = -0.40
+			land_reinforce_rate = 0.22
+			training_time_factor = -0.20
+			training_time_army_factor = -0.20
 			max_dig_in = 1
 			out_of_supply_factor = -0.5
 			supply_consumption_factor = -0.26
 			experience_loss_factor = -0.15
 			MONTHLY_POPULATION = 0.35
-			conscription = 0.65
+			conscription = 0.15
 
 	
 			}
@@ -499,17 +499,17 @@ infiltration_by_spies = {
 		removal_cost = -1
 
 		modifier = {
-			offence = 0.50
+			offence = 0.20
 			defence = 0.35
 			land_reinforce_rate = 0.52
-			training_time_factor = -0.50
-			training_time_army_factor = -0.40
+			training_time_factor = -0.10
+			training_time_army_factor = -0.10
 			max_dig_in = 1
 			out_of_supply_factor = -0.5
 			supply_consumption_factor = -0.26
 			experience_loss_factor = -0.15
 			MONTHLY_POPULATION = 0.35
-			conscription = 0.65
+			conscription = 0.15
 
 	
 			}
@@ -522,10 +522,10 @@ infiltration_by_spies = {
 		removal_cost = -1
 
 		modifier = {
-			decryption_factor = 0.25
-			encryption_factor = 0.25
-			enemy_partisan_effect = -0.25
-			political_power_gain = 0.25
+			decryption_factor = 0.15
+			encryption_factor = 0.15
+			enemy_partisan_effect = -0.15
+			political_power_gain = 0.15
 			MONTHLY_POPULATION = 0.15
 			conscription = 0.15
 			}
@@ -538,10 +538,10 @@ infiltration_by_spies = {
 		removal_cost = -1
 
 		modifier = {
-			decryption_factor = 0.25
-			encryption_factor = 0.25
-			enemy_partisan_effect = -0.25
-			political_power_gain = 0.25
+			decryption_factor = 0.15
+			encryption_factor = 0.15
+			enemy_partisan_effect = -0.15
+			political_power_gain = 0.15
 			MONTHLY_POPULATION = 0.15
 			conscription = 0.15
 			}
@@ -554,10 +554,10 @@ infiltration_by_spies = {
 		removal_cost = -1
 
 		modifier = {
-			decryption_factor = 0.25
-			encryption_factor = 0.25
-			enemy_partisan_effect = -0.25
-			political_power_gain = 0.25
+			decryption_factor = 0.15
+			encryption_factor = 0.15
+			enemy_partisan_effect = -0.15
+			political_power_gain = 0.15
 			MONTHLY_POPULATION = 0.15
 			conscription = 0.15
 			}
@@ -570,10 +570,10 @@ infiltration_by_spies = {
 		removal_cost = -1
 
 		modifier = {
-			decryption_factor = 0.25
-			encryption_factor = 0.25
-			enemy_partisan_effect = -0.25
-			political_power_gain = 0.25
+			decryption_factor = 0.15
+			encryption_factor = 0.15
+			enemy_partisan_effect = -0.15
+			political_power_gain = 0.15
 			MONTHLY_POPULATION = 0.15
 			conscription = 0.15
 			}
@@ -590,10 +590,10 @@ infiltration_by_spies = {
 			production_factory_efficiency_gain_factor = 0.20
 			communism_drift = 0.30 
 			communism_acceptance = 90
-			drift_defence_factor = 0.25
+			drift_defence_factor = 0.15
 			weekly_manpower = 1000
-			MONTHLY_POPULATION = 0.75
-			conscription = 0.25
+			MONTHLY_POPULATION = 0.15
+			conscription = 0.15
 			opinion_gain_monthly_same_ideology_factor = 0.5
 			ai_badass_factor = 0.15
 			ai_focus_defense_factor = 0.5
@@ -612,10 +612,10 @@ infiltration_by_spies = {
 			production_factory_efficiency_gain_factor = 0.20
 			communism_drift = 0.30 
 			communism_acceptance = 90
-			drift_defence_factor = 0.25
+			drift_defence_factor = 0.15
 			weekly_manpower = 1000
-			MONTHLY_POPULATION = 0.75
-			conscription = 0.25
+			MONTHLY_POPULATION = 0.15
+			conscription = 0.15
 			opinion_gain_monthly_same_ideology_factor = 0.5
 			ai_badass_factor = 0.15
 			ai_focus_defense_factor = 0.5
@@ -647,10 +647,10 @@ infiltration_by_spies = {
 		removal_cost = -1
 
 		modifier = {
-			decryption_factor = 0.25
-			encryption_factor = 0.25
-			enemy_partisan_effect = -0.25
-			political_power_gain = 0.25
+			decryption_factor = 0.15
+			encryption_factor = 0.15
+			enemy_partisan_effect = -0.15
+			political_power_gain = 0.15
 			MONTHLY_POPULATION = 0.05
 			conscription = 0.05
 			}
@@ -663,10 +663,10 @@ infiltration_by_spies = {
 		removal_cost = -1
 
 		modifier = {
-			decryption_factor = 0.25
-			encryption_factor = 0.25
-			enemy_partisan_effect = -0.25
-			political_power_gain = 0.25
+			decryption_factor = 0.15
+			encryption_factor = 0.15
+			enemy_partisan_effect = -0.15
+			political_power_gain = 0.15
 			MONTHLY_POPULATION = 0.05
 			conscription = 0.05
 			}
@@ -679,10 +679,10 @@ infiltration_by_spies = {
 		removal_cost = -1
 
 		modifier = {
-			decryption_factor = 0.25
-			encryption_factor = 0.25
-			enemy_partisan_effect = -0.25
-			political_power_gain = 0.25
+			decryption_factor = 0.15
+			encryption_factor = 0.15
+			enemy_partisan_effect = -0.15
+			political_power_gain = 0.15
 			MONTHLY_POPULATION = 0.05
 			conscription = 0.05
 			}
@@ -695,10 +695,10 @@ infiltration_by_spies = {
 		removal_cost = -1
 
 		modifier = {
-			decryption_factor = 0.25
-			encryption_factor = 0.25
-			enemy_partisan_effect = -0.25
-			political_power_gain = 0.25
+			decryption_factor = 0.15
+			encryption_factor = 0.15
+			enemy_partisan_effect = -0.15
+			political_power_gain = 0.15
 			MONTHLY_POPULATION = 0.05
 			conscription = 0.05
 			}
@@ -712,11 +712,11 @@ infiltration_by_spies = {
 		removal_cost = -1
 
 		modifier = {
-			offence = 0.25
-			defence = 0.25
-			land_reinforce_rate = 0.42
-			training_time_factor = -0.30
-			training_time_army_factor = -0.30
+			offence = 0.15
+			defence = 0.15
+			land_reinforce_rate = 0.22
+			training_time_factor = -0.10
+			training_time_army_factor = -0.15
 			max_dig_in = 1
 			out_of_supply_factor = -0.5
 			supply_consumption_factor = -0.26
@@ -734,11 +734,11 @@ infiltration_by_spies = {
 		removal_cost = -1
 
 		modifier = {
-			offence = 0.25
-			defence = 0.25
-			land_reinforce_rate = 0.52
-			training_time_factor = -0.45
-			training_time_army_factor = -0.40
+			offence = 0.15
+			defence = 0.15
+			land_reinforce_rate = 0.22
+			training_time_factor = -0.15
+			training_time_army_factor = -0.10
 			out_of_supply_factor = -0.5
 			supply_consumption_factor = -0.36
 			experience_loss_factor = -0.35
