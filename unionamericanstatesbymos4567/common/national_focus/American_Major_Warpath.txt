@@ -1,13 +1,7 @@
 focus_tree = {
  id = American_Major_Warpath_focus
 country = {
-		factor = 0
-		
-		modifier = {
-			add = 0	
-		
-	}
-		
+		factor = 0	
 	}
 	continuous_focus_position = { x = 50 y = 1600 }
 	default = no

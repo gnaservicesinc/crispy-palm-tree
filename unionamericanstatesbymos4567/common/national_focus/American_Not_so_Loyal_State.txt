@@ -2,10 +2,6 @@ focus_tree = {
  id = American_Not_So_Loyal_State
 country = {
 		factor = 0
-		
-		modifier = {
-			add = 0
-	}
 	}
 
 	continuous_focus_position = { x = 50 y = 1600 }

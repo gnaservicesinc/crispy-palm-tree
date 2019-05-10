@@ -2,15 +2,6 @@ focus_tree = {
  id = American_Major_Texas_focus
 country = {
 		factor = 0
-		
-		modifier = {
-			add = 1	
-		tag =  UTX
-	}
-			modifier = {
-		add = 1 
-		original_tag   = UTX
-		}
 	}
 	continuous_focus_position = { x = 50 y = 1600 }
 	default = no

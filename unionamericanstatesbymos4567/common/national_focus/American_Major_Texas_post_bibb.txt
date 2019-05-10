@@ -2,11 +2,6 @@ focus_tree = {
  id = American_Major_texas_post_bibb
 country = {
 		factor = 0
-		
-		modifier = {
-			add = 0
-	
-	}
 	}
 
 	continuous_focus_position = { x = 50 y = 1600 }
