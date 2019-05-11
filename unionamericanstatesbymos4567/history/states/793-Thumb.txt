@@ -20,15 +20,15 @@ state = {
     
     history = {
      		owner = UMI
-	
 	add_core_of = UMI        
 	add_core_of = USA
 	buildings = {
 			infrastructure = 7
-			industrial_complex = 10
-			air_base = 10
+			industrial_complex = 5
+			air_base = 5
 		
 
 		}
         }
+buildings_max_level_factor=1.000
     }

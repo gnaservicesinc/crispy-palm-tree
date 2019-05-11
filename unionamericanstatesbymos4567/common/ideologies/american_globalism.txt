@@ -4,6 +4,8 @@ ideologies = {
 		types = {
 			americanism = {
 			}
+			texanism  = {
+			}
 			
 		}
 		dynamic_faction_names = {

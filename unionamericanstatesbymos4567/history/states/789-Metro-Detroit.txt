@@ -25,6 +25,7 @@ state = {
 	add_core_of = UMI        
 	add_core_of = USA
         }
+buildings_max_level_factor=4.000
     }
 
 

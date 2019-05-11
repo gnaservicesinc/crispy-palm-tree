@@ -1,0 +1,11 @@
+continent = {
+name = north_america
+	political = {
+	 	american_globalism = {
+			male = { 
+				"gfx/leaders/AMERICAN/generic_southwest_lead.dds"
+			}
+		}
+	}
+
+}

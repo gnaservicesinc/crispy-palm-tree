@@ -8,7 +8,7 @@ state = {
     resources = {
   
 		steel=26.000
-		aluminium = 3.000
+		aluminium = 30.000
 		oil = 19.000
 		
 	
@@ -22,7 +22,7 @@ state = {
 	buildings = {
 			infrastructure = 5
 			industrial_complex = 4
-			air_base = 2
+			air_base = 3
 		
 
 		}

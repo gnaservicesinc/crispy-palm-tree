@@ -76,5 +76,5 @@ state = {
 
 		}
         }
-
+buildings_max_level_factor=10.000
     }
