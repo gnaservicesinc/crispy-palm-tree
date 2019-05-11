@@ -46,12 +46,14 @@ country = {
 		tag = UCA
 		tag = UAL
 		tag = UTX
+		tag = USA
 		}
 		}
 		
 		modifier = {
 		add = 1000 OR = {
-			original_tag = UMI
+		original_tag = UMI
+		original_tag = USA
 		original_tag = UCA
 		original_tag = UAL
 		original_tag = UTX
@@ -96,9 +98,159 @@ country = {
 	continuous_focus_position = { x = 50 y = 1600 }
 	default = no
 
-
 ####################################################################
+#BEGIN USA PREP FOCUS
+####################################################################
+	focus = {
+		id = American_choice_focus_winter_is_coming
+		icon = GFX_american_strike
+		x = 5
+		y = 0
+		dynamic =  yes
+		cost = 10
 
+		ai_will_do = {
+			factor = 1
+		}
+
+historical_ai = {
+tag =  USA
+}
+available = {tag = USA}
+allow_branch ={ tag = USA }		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		add_offsite_building = { type = arms_factory level = 32 }
+		add_manpower = 250000
+		
+	}
+}
+focus = {
+		id = American_choice_focus_winter_is_really_coming
+		icon = GFX_american_strike
+		relative_position_id = American_choice_focus_winter_is_coming
+		prerequisite = { focus = American_choice_focus_winter_is_coming }
+		x = 1
+		y = 1
+		dynamic =  yes
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+historical_ai = {
+tag =  USA
+}
+available = {tag = USA}
+allow_branch ={ tag = USA }		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		add_offsite_building = { type = arms_factory level = 64 }
+		add_manpower = 500000
+		
+	}
+}
+focus = {
+		id = American_choice_focus_winter_is_really_coming_soon
+		icon = GFX_american_strike
+		relative_position_id = American_choice_focus_winter_is_really_coming
+		prerequisite = { focus = American_choice_focus_winter_is_really_coming }
+		x = 1
+		y = 1
+		dynamic =  yes
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+historical_ai = {
+tag =  USA
+}
+available = {tag = USA}
+allow_branch ={ tag = USA }		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		add_offsite_building = { type = arms_factory level = 128 }
+		add_manpower = 500000
+		
+	}
+}
+
+focus = {
+		id = American_choice_focus_winter_is_really_coming_soon_run
+		icon = GFX_american_strike
+		relative_position_id = American_choice_focus_winter_is_really_coming_soon
+		prerequisite = { focus = American_choice_focus_winter_is_really_coming_soon }
+		x = 1
+		y = 1
+		dynamic =  yes
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+historical_ai = {
+tag =  USA
+}
+available = {tag = USA}
+allow_branch ={ tag = USA }		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		add_offsite_building = { type = arms_factory level = 256 }
+		add_manpower = 500000
+		
+	}
+}
+focus = {
+		id = American_choice_focus_refocus_usa
+		icon = GFX_american_strike
+		relative_position_id = American_choice_focus_winter_is_really_coming_soon_run
+		prerequisite = { focus = American_choice_focus_winter_is_really_coming_soon_run }
+		x = 1
+		y = 1
+		dynamic =  yes
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+historical_ai = {
+is_subject_of =  USA
+}
+available = {tag = USA}
+allow_branch ={ tag = USA }		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		load_focus_tree = { tree = usa_focus
+                     keep_completed = yes }
+		
+	}
+}
+####################################################################
+#END USA PREP FOCUS
+####################################################################
+####################################################################
+#START MINOR STATE FOCUS
+####################################################################
 	focus = {
 		id = American_choice_loyal_union_states
 		icon = GFX_american_strike
@@ -239,8 +391,12 @@ load_focus_tree = { tree = American_choose_side_focus
 
 }
 }
-
-
+####################################################################
+#END MINOR STATE FOCUS
+####################################################################
+####################################################################
+#START MAJOR STATE FOCUS
+####################################################################
 
 	focus = {
 		id = American_choice_major_union_states_warpath
@@ -378,6 +534,8 @@ OR{
 
 			 }
 	}
-
+####################################################################
+#END MAJOR STATE FOCUS
+####################################################################
 
 }

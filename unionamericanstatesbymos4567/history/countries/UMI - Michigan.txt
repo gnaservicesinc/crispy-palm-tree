@@ -1,4 +1,4 @@
-﻿﻿capital = 393
+﻿capital = 393
 oob = "State_Guard"
 if = {
 	limit = { has_dlc = "Man the Guns" }

@@ -9,8 +9,8 @@ if = {
 	}
 }
 
-set_research_slots = 4
-set_stability = 0.75
+set_research_slots = 6
+set_stability = 1.00
 set_war_support = 100
 add_to_tech_sharing_group = usa_investigators
 set_variable = { var = senators_support value = 96 }
@@ -94,6 +94,12 @@ add_to_array = { array = Michigan_States value= UDK }
 add_to_array = { array = Michigan_States value= UNE }
 add_to_array = { array = Michigan_States value= UIA }
 
+
+FRA ={ give_guarantee = USA }
+ENG ={ give_guarantee = USA }
+GER ={ give_guarantee = USA }
+ITA ={ give_guarantee = USA }
+POR ={ give_guarantee = USA }
 
 # Starting tech
 set_technology = {
@@ -193,6 +199,7 @@ give_guarantee = CHL
 give_guarantee = PAR
 give_guarantee = ARG
 give_guarantee = URG
+
 
 
 

@@ -109,9 +109,9 @@ allowed = {always = no}
 		removal_cost = -1
 	modifier = {
 		ai_focus_aggressive_factor = 0.95
-		training_time_factor=-0.95	
-		planning_speed=0.59
-		max_planning=0.59	
+		training_time_factor=-0.25	
+		planning_speed=0.29
+		max_planning=0.29	
 	army_org_factor = 0.05
 		army_org = 5
 

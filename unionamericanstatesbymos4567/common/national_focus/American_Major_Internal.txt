@@ -124,8 +124,13 @@ ai_will_do = {
 					is_owned_by = ROOT
 					is_controlled_by = ROOT
 				}
-				add_building_construction = {
+add_building_construction = {
 					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex 
 					level = 1
 					instant_build = yes
 				}
@@ -165,6 +170,12 @@ ai_will_do = {
 					level = 1
 					instant_build = yes
 				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+ 
 			}
 		
 			
@@ -201,6 +212,11 @@ ai_will_do = {
 					level = 1
 					instant_build = yes
 				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
 			}
 		
 			
@@ -234,6 +250,11 @@ ai_will_do = {
 				}
 				add_building_construction = {
 					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
@@ -274,6 +295,11 @@ ai_will_do = {
 					level = 1
 					instant_build = yes
 				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
 			}
 		
 			
@@ -307,6 +333,11 @@ ai_will_do = {
 				}
 				add_building_construction = {
 					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
@@ -346,6 +377,11 @@ ai_will_do = {
 					level = 1
 					instant_build = yes
 				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
 			}
 		
 			
@@ -379,6 +415,11 @@ ai_will_do = {
 				}
 				add_building_construction = {
 					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
@@ -417,6 +458,11 @@ ai_will_do = {
 				}
 				add_building_construction = {
 					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
