@@ -1,6 +1,10 @@
 ﻿l_english:
-  texan.1.t:0 "Texan Führer Bibb Graves DEAD"
-  texan.1.d:0 "Shock across the land. Reports from Dallas confirming the death of Texas Führer and Governor for life, Supreme Führer, Führer Bibb Graves. What is know is that Graves dead, that he  was shot over six hundred times, and that he was found this way inside is Texan home. It is unclear where his security detail was when this happened, how this was allowed to happen at all and who is  responsible.  The states of Michigan, California, and Alabama are the top suspects"
+ USAEvents.1.t:0 "USA Offers Herself"
+ USAEvents.1.d:0 "The United States has offered to allow us to take over the US Federal Government."
+ USAEvents_option.1.a:0 "Yes! We accept.Nothing can stop us now. God Bless the USA!"
+ USAEvents_option.1.b:0 "No. The USA is very popular around these parts. We wold be hated"
+ texan.1.t:0 "Texan Führer Bibb Graves DEAD"
+ texan.1.d:0 "Shock across the land. Reports from Dallas confirming the death of Texas Führer and Governor for life, Supreme Führer, Führer Bibb Graves. What is know is that Graves dead, that he  was shot over six hundred times, and that he was found this way inside is Texan home. It is unclear where his security detail was when this happened, how this was allowed to happen at all and who is  responsible.  The states of Michigan, California, and Alabama are the top suspects"
  texan.1.b:0 "The world is a much safer place now."
  texan.2.d:0 "New elections are being held in Texas just 30 days after the brutal assassination of Führer Bibb Graves shocked the entire world "
  texan.2.b:0 "OK"

@@ -101,13 +101,181 @@ country = {
 ####################################################################
 #BEGIN USA PREP FOCUS
 ####################################################################
-	focus = {
-		id = American_choice_focus_winter_is_coming
+focus = {
+		id = American_choice_usa_choose_stand_down
 		icon = GFX_american_strike
-		x = 5
+		
+		x = 3
+		y = 2
+		dynamic =  yes
+		cost = 1
+mutually_exclusive = { 
+		focus = American_choice_usa_choose_war
+		focus = American_choice_usa_choose_michigan
+		}
+		ai_will_do = {
+			factor = 1
+		}
+available = {tag = USA}
+allow_branch ={ tag = USA }		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		for_each_loop_scope = {
+		array = American_States
+			
+			leave_faction = yes
+			dismantle_faction = yes
+			 OVERLORD = {
+				dismantle_faction = yes 
+				if = { limit = { has_dlc = "Together for Victory"}
+					set_autonomy = {
+    						target = PREV
+    						autonomy_state = autonomy_free}
+				else = {
+					release = PREV 
+				}} } 
+
+			load_focus_tree = { tree = generic_focus
+                     keep_completed = yes }
+
+		}
+		for_each_loop_scope = {
+		array = USA.Loyal_American_States
+		
+		give_guarantee	= ENG
+		give_military_access = ENG
+		diplomatic_relation ={country = ENG relation = non_aggression_pact  active = yes }
+		ENG = {
+			give_guarantee	= PREV
+			give_military_access = PREV
+			diplomatic_relation ={country = PREV relation = non_aggression_pact  active = yes }
+				
+			}
+		}
+		
+		ENG = {
+			annex_country = {
+   				 target = USA
+   		 transfer_troops = yes
+		}
+			}	
+		
+	}
+}	
+focus = {
+		id = American_choice_usa_choose_michigan
+		icon = GFX_american_strike
+		
+		x = 3
+		y = -2
+		dynamic =  yes
+		cost = 1
+		mutually_exclusive = { 
+		focus =American_choice_usa_choose_war
+		focus = American_choice_usa_choose_stand_down
+		}
+		ai_will_do = {
+			factor = 1
+		}
+available = {is_ai = yes
+        tag = USA
+	 country_exists = UMI
+	NOT = { is_in_faction_with = UMI }
+		}
+
+	
+allow_branch ={ is_ai = yes
+tag = USA 
+}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		USA = {leave_faction = yes}
+		UMI ={ add_to_faction = USA }
+		USA = {load_focus_tree = { tree = usa_focus
+                     keep_completed = yes }}
+		}
+	}
+
+focus = {
+		id = American_choice_usa_choose_war
+		icon = GFX_american_strike
+		
+		x = 3
 		y = 0
 		dynamic =  yes
-		cost = 10
+		cost = 1
+mutually_exclusive = { 
+		focus = American_choice_usa_choose_michigan
+		focus = American_choice_usa_choose_stand_down
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+historical_ai = {
+tag =  USA
+}
+available = {tag = USA}
+allow_branch ={ tag = USA }		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		add_command_power=100
+		add_political_power = 1000
+
+		
+	}
+}
+
+
+focus = {
+		id = American_choice_focus_winter_is_coming
+		icon = GFX_american_strike
+		relative_position_id = American_choice_usa_choose_war
+		prerequisite = { focus = American_choice_usa_choose_war }
+		x = 2
+		y = 0
+		dynamic =  yes
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+historical_ai = {
+tag =  USA
+}
+available = {tag = USA}
+allow_branch ={ tag = USA }		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		add_offsite_building = { type = arms_factory level = 16 }
+		add_manpower = 50000
+		
+	}
+}
+focus = {
+		id = American_choice_focus_winter_is_really_coming
+		icon = GFX_american_strike
+		relative_position_id = American_choice_focus_winter_is_coming
+		prerequisite = { focus = American_choice_focus_winter_is_coming }
+		x = 1
+		y = 1
+		dynamic =  yes
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -129,14 +297,14 @@ allow_branch ={ tag = USA }
 	}
 }
 focus = {
-		id = American_choice_focus_winter_is_really_coming
+		id = American_choice_focus_winter_is_really_coming_soon
 		icon = GFX_american_strike
-		relative_position_id = American_choice_focus_winter_is_coming
-		prerequisite = { focus = American_choice_focus_winter_is_coming }
+		relative_position_id = American_choice_focus_winter_is_really_coming
+		prerequisite = { focus = American_choice_focus_winter_is_really_coming }
 		x = 1
 		y = 1
 		dynamic =  yes
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -153,19 +321,20 @@ allow_branch ={ tag = USA }
 		available_if_capitulated = no
 		completion_reward = {
 		add_offsite_building = { type = arms_factory level = 64 }
-		add_manpower = 500000
+		add_manpower = 250000
 		
 	}
 }
+
 focus = {
-		id = American_choice_focus_winter_is_really_coming_soon
+		id = American_choice_focus_winter_is_really_coming_soon_run
 		icon = GFX_american_strike
-		relative_position_id = American_choice_focus_winter_is_really_coming
-		prerequisite = { focus = American_choice_focus_winter_is_really_coming }
+		relative_position_id = American_choice_focus_winter_is_really_coming_soon
+		prerequisite = { focus = American_choice_focus_winter_is_really_coming_soon }
 		x = 1
 		y = 1
 		dynamic =  yes
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -182,36 +351,6 @@ allow_branch ={ tag = USA }
 		available_if_capitulated = no
 		completion_reward = {
 		add_offsite_building = { type = arms_factory level = 128 }
-		add_manpower = 500000
-		
-	}
-}
-
-focus = {
-		id = American_choice_focus_winter_is_really_coming_soon_run
-		icon = GFX_american_strike
-		relative_position_id = American_choice_focus_winter_is_really_coming_soon
-		prerequisite = { focus = American_choice_focus_winter_is_really_coming_soon }
-		x = 1
-		y = 1
-		dynamic =  yes
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-historical_ai = {
-tag =  USA
-}
-available = {tag = USA}
-allow_branch ={ tag = USA }		
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		add_offsite_building = { type = arms_factory level = 256 }
 		add_manpower = 500000
 		
 	}
@@ -290,8 +429,7 @@ load_focus_tree = { tree = American_Loyal_State_focus
 			inherit_technology = USA }
 		USA = {
 			
-			if = { limit = { has_dlc = "Man the Guns"}
-				inherit_technology = ROOT }
+			
 	
 			if = { limit = { has_dlc = "Together for Victory"}
 			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 

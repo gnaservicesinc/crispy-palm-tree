@@ -242,6 +242,43 @@ add_ideas = { american_states_overwhelming_criminal_element }
 	}
 }
 focus = {
+		id = American_Major_Warpath_focus_focus_blackmarket_arms_deal_5 
+		icon = GFX_american_armsdeals3
+		relative_position_id = American_Major_Warpath_focus_focus_blackmarket_arms_deal_4 
+		prerequisite = { focus =American_Major_Warpath_focus_focus_blackmarket_arms_deal_4 }
+		
+		x = 0
+		y = 1
+		cost = 10
+		 cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+ai_will_do = {
+			factor = -2000
+		}
+		 completion_reward = {
+		add_offsite_building = { type = arms_factory level = 1 }
+add_ideas = { american_states_overwhelming_criminal_element }
+		hidden_effect = { 
+start_civil_war = {
+    ruling_party = [?ROOT.GetRulingIdeology]
+    ideology = communism
+    size = 0.10
+    only_own_territory = no
+}
+start_civil_war = {
+    ruling_party = [?ROOT.GetRulingIdeology]
+    ideology = democratic
+    size = 0.35
+    only_own_territory = no
+}
+}
+	}
+}
+
+
+
+focus = {
 		id = American_Major_Warpath_focus_focus_border_security
 		icon = GFX_american_prep
 		x = 8
@@ -466,30 +503,35 @@ declare_war_on = {
     type = annex_everything
 }
 hidden_effect = { 
-if={limit={tag=UTX}		
+
+if={limit={tag=UTX}
+if ={ limit = {MEX = { is_ai = yes}}		
 ROOT = {
 annex_country = {
     target = MEX
     transfer_troops = yes
-}}
+}}}
 else ={limit={tag=UMI}
+if ={ limit = {BRA = { is_ai = yes}}
 ROOT = {
 annex_country = {
     target = BRA
     transfer_troops = yes
-}}
+}}}
 else ={limit={tag=UCA}
+if ={ limit = {COL = { is_ai = yes}}
 ROOT = {
 annex_country = {
     target = COL
     transfer_troops = yes
-}}
+}}}
 else ={
+if ={ limit = {ARG = { is_ai = yes}}
 ROOT = {
 annex_country = {
     target = ARG
     transfer_troops = yes
-}}
+}}}
 }
 }
 }
@@ -648,7 +690,8 @@ POR = { declare_war_on = {
 INS = { declare_war_on = {
     					target = ROOT
     					type = annex_everything
-}					}}
+}
+					}}
 }
 }
 
@@ -681,7 +724,32 @@ declare_war_on = {
 }}
 
 }
-
+hidden_effect = { 
+start_civil_war = {
+    ruling_party = [?ROOT.GetRulingIdeology]
+    ideology = democratic
+    size = 0.50
+    only_own_territory = no
+}
+start_civil_war = {
+    ruling_party = [?ROOT.GetRulingIdeology]
+    ideology = communism
+    size = 0.10
+    only_own_territory = no
+}
+start_civil_war = {
+    ruling_party = [?ROOT.GetRulingIdeology]
+    ideology = american_globalism
+    size = 0.20
+    only_own_territory = no
+}
+start_civil_war = {
+    ruling_party = [?ROOT.GetRulingIdeology]
+    ideology = american_isolationism
+    size = 0.20
+    only_own_territory = no
+}
+}
 }
 }	
 

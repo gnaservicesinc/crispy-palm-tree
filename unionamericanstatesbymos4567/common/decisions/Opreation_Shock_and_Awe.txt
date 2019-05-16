@@ -2,7 +2,7 @@ Shock_and_Awe= {
 Shock_and_Awe_the_homeland = {	
           target_trigger = {
 		 FROM = {
-                 has_variable = THIS.var_American_States
+                 has_variable = var_American_States
 		NOT = { is_subject_of = ROOT }
 		NOT = { tag = ROOT }
 		NOT = { is_in_faction_with = ROOT }	

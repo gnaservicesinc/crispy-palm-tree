@@ -94,6 +94,8 @@ Eaglet_Strike= {
 		add_manpower = -1000000	
 		}
 	}
+
+
 #eaglet_send_resource_rights_to_help_american_army = {
 # target_trigger = { FROM = { tag = USA }}
 #		cost = 1

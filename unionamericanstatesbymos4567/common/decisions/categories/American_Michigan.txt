@@ -1,0 +1,5 @@
+american_michigan = {
+	visible = {
+		tag =  UMI
+}
+}

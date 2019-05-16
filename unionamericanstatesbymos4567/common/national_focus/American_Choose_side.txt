@@ -45,7 +45,7 @@ ROOT = { NOT = {   has_variable =var_Cali_States }}}
 		UCA = {
 			
 			if = { limit = { has_dlc = "Man the Guns"}
-				inherit_technology = ROOT }
+				 }
 	
 			if = { limit = { has_dlc = "Together for Victory"}
 			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
@@ -90,7 +90,7 @@ ROOT = { NOT = {   has_variable =var_Michigan_States  }}}
 		UMI = {
 			
 			if = { limit = { has_dlc = "Man the Guns"}
-				inherit_technology = ROOT }
+				 }
 	
 			if = { limit = { has_dlc = "Together for Victory"}
 			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
@@ -132,7 +132,7 @@ ROOT = { NOT = {   has_variable =var_Texan_States  }}}
 		UTX = {
 			
 			if = { limit = { has_dlc = "Man the Guns"}
-				inherit_technology = ROOT }
+				 }
 	
 			if = { limit = { has_dlc = "Together for Victory"}
 			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
@@ -174,7 +174,7 @@ ROOT = { NOT = {   has_variable =var_Southern_States  }}}
 		UAL = {
 			
 			if = { limit = { has_dlc = "Man the Guns"}
-				inherit_technology = ROOT }
+				 }
 	
 			if = { limit = { has_dlc = "Together for Victory"}
 			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
@@ -211,10 +211,10 @@ ROOT = {   has_variable =var_American_States }
 			inherit_technology = GER }
 		GER = {
 	
-		inherit_technology = ROOT
+		
 			
 			if = { limit = { has_dlc = "Man the Guns"}
-				inherit_technology = ROOT }
+				 }
 	
 			if = { limit = { has_dlc = "Together for Victory"}
 			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
@@ -255,10 +255,10 @@ ROOT = {   has_variable =var_American_States }
 			inherit_technology = SOV }
 		SOV = {
 	
-		inherit_technology = ROOT
+		
 			
 			if = { limit = { has_dlc = "Man the Guns"}
-				inherit_technology = ROOT }
+				 }
 	
 			if = { limit = { has_dlc = "Together for Victory"}
 			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
@@ -299,10 +299,10 @@ ROOT = {   has_variable =var_American_States }
 			inherit_technology = JAP }
 		JAP = {
 	
-		inherit_technology = ROOT
+		
 			
 			if = { limit = { has_dlc = "Man the Guns"}
-				inherit_technology = ROOT }
+				 }
 	
 			if = { limit = { has_dlc = "Together for Victory"}
 			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
@@ -343,10 +343,10 @@ ROOT = {   has_variable =var_American_States }
 			inherit_technology = ENG }
 		ENG = {
 	
-		inherit_technology = ROOT
+		
 			
 			if = { limit = { has_dlc = "Man the Guns"}
-				inherit_technology = ROOT }
+				 }
 	
 			if = { limit = { has_dlc = "Together for Victory"}
 			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 

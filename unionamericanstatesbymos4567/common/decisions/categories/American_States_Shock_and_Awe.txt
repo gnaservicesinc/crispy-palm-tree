@@ -1,6 +1,6 @@
 Shock_and_Awe= {
 	visible = {
-	always=no
+	tag=USA
 
 }
 }

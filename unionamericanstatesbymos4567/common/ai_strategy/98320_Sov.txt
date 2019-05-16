@@ -1,3 +1,40 @@
+sov_protect_cali_friends = {
+	 enable = {
+		tag = SOV
+		UCA ={ NOT ={ has_war_with = SOV }}
+		}
+
+		ai_strategy = {
+		type = send_volunteers_desire
+		id = UCA
+		value = 1531
+		}
+abort =  {
+is_in_faction_with = USA
+UCA = { has_war_with = SOV }
+}
+	ai_strategy = {
+		type = befriend
+		id = "UCA"			
+		value = 500
+	}
+	    ai_strategy = {
+		type = protect
+		id = "UCA"			
+		value = 525
+	}
+	    ai_strategy = {
+		type = support
+		id = "UCA"			
+		value = 750
+	}
+	    ai_strategy = {
+		type = garrison
+		id = "UCA"			
+		value = 450
+	}
+}
+
 sov_protect_american_allies = {
 reversed = yes
 	 enable = {
@@ -85,12 +122,12 @@ sov_invested_in_american = {
 	ai_strategy = {
 		type = send_volunteers_desire
 		id = UCA
-		value = 275
+		value = 2750
 	}
 ai_strategy = {
 		type = area_priority
 		id = north_america
-		value = 500
+		value = 1500
 	}
 }
 

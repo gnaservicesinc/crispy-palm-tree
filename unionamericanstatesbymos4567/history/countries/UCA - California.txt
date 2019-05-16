@@ -20,7 +20,7 @@ create_country_leader = {
 		warmonger
 	}
 }
-	
+
 set_major = yes
 set_research_slots = 4
 set_stability = 0.95
@@ -54,6 +54,15 @@ set_politics = {
 add_ideas = {
 	free_trade
 }
+SOV = {give_guarantee	= UCA}
+
+SOV = {give_military_access 	= UCA}
+
+SOV = { diplomatic_relation ={country = UCA relation = non_aggression_pact  active = yes } }
+
+give_guarantee	= SOV
+give_military_access 	= SOV
+		diplomatic_relation ={country = SOV relation = non_aggression_pact  active = yes }
 
 set_variable = { var_American_States = 1 }
 set_variable = { var_Cali_States = 1 }
