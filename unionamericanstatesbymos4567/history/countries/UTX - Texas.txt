@@ -14,7 +14,7 @@ create_country_leader = {
 	desc = "POLITICS_BIB_GRAVES_DESC"
 	picture = "gfx/leaders/UTX/Bibb_Graves.dds"
 	expire = "1975.1.1"
-	ideology = americanism
+	ideology = texanism
 	traits = {
 		lieutenant_of_industry
 		anti_democrat

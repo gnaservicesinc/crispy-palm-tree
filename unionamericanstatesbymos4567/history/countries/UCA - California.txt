@@ -157,7 +157,18 @@ add_to_array = { array = USA.cali_States value= UWY }
 add_to_array = { array = USA.cali_States value= UID }
 add_to_array = { array = USA.cali_States value= UAZ }
 add_to_array = { array = USA.cali_States value= UUT }
+
+SOV ={
+dismantle_faction=yes
+if = { limit = { has_dlc = "Together for Victory"}
+set_autonomy = {target = UCA autonomous_state = autonomy_united_states_state }
+else = {
+puppet =UCA
+}
+}}
+
 create_faction = "The Sunshine Block"
+
 
 for_each_loop = {
 array = USA.cali_States
@@ -170,6 +181,9 @@ else = {
 puppet =v
 }
 }}
+give_guarantee = SOV
+add_to_faction = SOV
+ 
 add_to_array = { array = USA.American_States value= UCA }
 # Starting tech
 set_technology = {

@@ -125,7 +125,7 @@ allow_branch ={ tag = USA }
 
 		completion_reward = {
 
-		for_each_loop_scope = {
+		for_each_scope_loop = {
 		array = American_States
 			
 			leave_faction = yes
@@ -144,7 +144,7 @@ allow_branch ={ tag = USA }
                      keep_completed = yes }
 
 		}
-		for_each_loop_scope = {
+		for_each_scope_loop = {
 		array = USA.Loyal_American_States
 		
 		give_guarantee	= ENG
@@ -402,9 +402,13 @@ allow_branch ={ tag = USA }
 			factor = 1
 		}
 
-historical_ai = {
+historical_ai = { OR = {
 is_subject_of =  USA
-}
+is_subject_of =  UMI
+is_subject_of =  UCA
+is_subject_of =  UAL
+is_subject_of =  UTX
+}}
 available = {
 		ROOT = {   has_variable =var_American_States }
 		NOT ={ tag = UMI }
@@ -467,13 +471,7 @@ allow_branch ={ ROOT={ has_variable =var_American_States }
 cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-historical_ai = {
 
-is_subject_of =  UMI
-is_subject_of =  UCA
-is_subject_of =  UAL
-is_subject_of =  UTX
-}
 
 		completion_reward = {
 load_focus_tree = { tree = American_Not_So_Loyal_State

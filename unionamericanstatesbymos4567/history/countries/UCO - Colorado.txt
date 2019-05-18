@@ -9,7 +9,19 @@ if = {
 	}
 }
 
-
+create_country_leader = {
+	name = "Leiter Edwin C. Johnson"
+	desc = "POLITICS_EDWIN_C_JOHNSON_DESC"
+	picture = "gfx/leaders/UCO/Edwin_C_Johnson.dds"
+	expire = "1975.1.1"
+	ideology = americanism
+	traits = {
+		lieutenant_of_industry
+		political_dancer
+		warmonger
+		anti_communist
+	}
+}
 
 set_research_slots = 4
 set_stability = 0.95

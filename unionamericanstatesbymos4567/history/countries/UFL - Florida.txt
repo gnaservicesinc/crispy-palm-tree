@@ -8,7 +8,19 @@ if = {
 }
 
 capital = 366
-
+create_country_leader = {
+	name = "Daniel T. McCarty"
+	desc = "POLITICS_DANIEL_T_MCCARTY_DESC"
+	picture = "gfx/leaders/UFL/Daniel_T._McCarty.dds"
+	expire = "1975.1.1"
+	ideology = alabaman
+	traits = {
+		anti_communist 
+		political_dancer 
+		fascist_militia_leader
+		warmonger
+	}
+}
 set_research_slots = 4
 set_stability = 0.95
 set_war_support = 15
@@ -23,7 +35,15 @@ set_politics = {
 		}
 
 		fascism = {
-			popularity = 100
+			popularity = 40
+			
+		}
+		american_globalism = {
+			popularity = 10
+			}
+
+		american_isolationism = {
+			popularity = 55
 			
 		}
 		
@@ -33,9 +53,9 @@ set_politics = {
 		}
 	}
 	
-	ruling_party = fascism
+	ruling_party = american_isolationism
 	last_election = "1932.11.8"
-	election_frequency = 48
+	election_frequency = 72
 	elections_allowed = yes
 }
 
