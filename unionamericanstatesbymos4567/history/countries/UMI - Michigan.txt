@@ -7,6 +7,7 @@ if = {
 		set_naval_oob = "USA_1936_naval_legacy"
 	}
 }
+
 create_country_leader = {
 	name = "Fred W. Green"
 	desc = "POLITICS_FRED_W_GREEN_DESC"
@@ -24,9 +25,9 @@ create_country_leader = {
 }
 
 set_major = yes
-set_research_slots = 4
+set_research_slots = 6
 set_stability = 0.95
-set_war_support = 15
+set_war_support = 95
 add_to_tech_sharing_group = umi_investigators
 set_convoys = 4000
 set_politics = {

@@ -12,7 +12,7 @@ create_country_leader = {
 	name = "Daniel T. McCarty"
 	desc = "POLITICS_DANIEL_T_MCCARTY_DESC"
 	picture = "gfx/leaders/UFL/Daniel_T._McCarty.dds"
-	expire = "1975.1.1"
+	expire = "1953.1.1"
 	ideology = alabaman
 	traits = {
 		anti_communist 

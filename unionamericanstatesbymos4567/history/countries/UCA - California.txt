@@ -7,6 +7,7 @@ if = {
 		set_naval_oob = "USA_1936_naval_legacy"
 	}
 }
+
 create_country_leader = {
 	name = "Chairperson Upton Beall Sinclair Jr."
 	desc = "POLITICS_UPTON_BEALL_DESC"
@@ -22,7 +23,7 @@ create_country_leader = {
 }
 
 set_major = yes
-set_research_slots = 4
+set_research_slots = 5
 set_stability = 0.95
 set_war_support = 100
 add_to_tech_sharing_group = uca_investigators
@@ -44,6 +45,14 @@ set_politics = {
 			popularity = 100
 			 #default is no
 		}
+	american_isolationism = {
+			popularity = 0
+			banned = yes	
+		}
+		american_globalism = {
+			popularity = 0
+			banned = yes
+			}
 	}
 	
 	ruling_party = communism
@@ -54,15 +63,11 @@ set_politics = {
 add_ideas = {
 	free_trade
 }
-SOV = {give_guarantee	= UCA}
 
-SOV = {give_military_access 	= UCA}
 
-SOV = { diplomatic_relation ={country = UCA relation = non_aggression_pact  active = yes } }
-
-give_guarantee	= SOV
-give_military_access 	= SOV
-		diplomatic_relation ={country = SOV relation = non_aggression_pact  active = yes }
+give_guarantee = SOV
+give_military_access = SOV
+diplomatic_relation ={ country = SOV relation = non_aggression_pact  active = yes }
 
 set_variable = { var_American_States = 1 }
 set_variable = { var_Cali_States = 1 }
@@ -149,6 +154,10 @@ UID = { set_variable = { var_Cali_States = 1 }  }
 UAZ = { set_variable = { var_Cali_States = 1 }  }
 UUT = { set_variable = { var_Cali_States = 1 }  }
 
+add_to_array = { array = USA.cali_States value= SOV }
+add_to_array = { array = USA.cali_States value= SIK }
+add_to_array = { array = USA.cali_States value= MON }
+add_to_array = { array = USA.cali_States value= PRC }
 add_to_array = { array = USA.cali_States value= UWA }
 add_to_array = { array = USA.cali_States value= UOR }
 add_to_array = { array = USA.cali_States value= UNV }
@@ -158,18 +167,19 @@ add_to_array = { array = USA.cali_States value= UID }
 add_to_array = { array = USA.cali_States value= UAZ }
 add_to_array = { array = USA.cali_States value= UUT }
 
-SOV ={
+
+
+SOV = {
+give_guarantee = UCA
+give_military_access = UCA
+diplomatic_relation ={country = UCA relation = non_aggression_pact  active = yes }
 dismantle_faction=yes
-if = { limit = { has_dlc = "Together for Victory"}
-set_autonomy = {target = UCA autonomous_state = autonomy_united_states_state }
-else = {
-puppet =UCA
 }
-}}
 
+
+
+UCA ={
 create_faction = "The Sunshine Block"
-
-
 for_each_loop = {
 array = USA.cali_States
 give_guarantee = v
@@ -181,10 +191,13 @@ else = {
 puppet =v
 }
 }}
+
+
 give_guarantee = SOV
 add_to_faction = SOV
- 
+add_to_array = { array = USA.cali_States value= SOV } 
 add_to_array = { array = USA.American_States value= UCA }
+}
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

@@ -2,7 +2,7 @@ bookmarks = {
 	bookmark = {
 		name = "UNION_OF_STATES_NAME"
 		desc = "UNION_OF_STATES_DESC"
-		date = 1936.1.1.12
+		date = 1936.1.1
 		picture = "GFX_select_date_UnionofAmericanStates"
 		default_country = "USA"
 		default = yes
@@ -37,7 +37,7 @@ bookmarks = {
 			history = "UCA_UNION_OF_STATES_DESC"
 			ideology = communism
 			ideas = {
-	
+				free_trade
 			}
 			focuses = {
 		
