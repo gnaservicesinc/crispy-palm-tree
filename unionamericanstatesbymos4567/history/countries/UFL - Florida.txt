@@ -21,6 +21,32 @@ create_country_leader = {
 		warmonger
 	}
 }
+create_country_leader = {
+	name = "LeRoy Collins"
+	desc = "POLITICS_LEROY_COLLINS_DESC"
+	picture = "gfx/leaders/UFL/LeRoy_Collins.dds"
+	expire = "1973.1.1"
+	ideology = americanism
+	traits = {
+		anti_communist 
+		political_dancer 
+		fascist_militia_leader
+		warmonger
+	}
+}
+create_country_leader = {
+	name = "Cecil Farris Bryant"
+	desc = "POLITICS_CECIL_FARRIS_BRYANT_DESC"
+	picture = "gfx/leaders/UFL/C._Farris_Bryant.dds"
+	expire = "1983.1.1"
+	ideology = liberalism
+	traits = {
+		anti_communist 
+		political_dancer 
+		staunch_constitutionalist
+		dislikes_germany
+	}
+}
 set_research_slots = 4
 set_stability = 0.95
 set_war_support = 15
