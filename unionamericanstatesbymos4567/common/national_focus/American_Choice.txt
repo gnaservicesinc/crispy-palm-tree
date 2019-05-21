@@ -108,13 +108,13 @@ focus = {
 		x = 3
 		y = 2
 		dynamic =  yes
-		cost = 1
+		cost = 5
 mutually_exclusive = { 
 		focus = American_choice_usa_choose_war
 		focus = American_choice_usa_choose_michigan
 		}
 		ai_will_do = {
-			factor = 1
+			factor = -1
 		}
 available = {tag = USA}
 allow_branch ={ tag = USA }		
@@ -180,27 +180,40 @@ focus = {
 		focus = American_choice_usa_choose_stand_down
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 10
+
+			modifier = {
+			is_historical_focus_on = yes
+			factor = -5000			}
 		}
 available = {is_ai = yes
         tag = USA
 	 country_exists = UMI
 	NOT = { is_in_faction_with = UMI }
+	UMI ={ is_ai = yes}
+
 		}
 
 	
 allow_branch ={ is_ai = yes
 tag = USA 
+NOT = { is_in_faction_with = UMI }
+	UMI ={ is_ai = yes}
 }		
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
+		UMI = {set_variable = { var_mi_and_usa = 1 } }
+		USA = {set_variable = { var_mi_and_usa = 1 } }
 		USA = {leave_faction = yes}
 		UMI ={ add_to_faction = USA }
-		USA = {load_focus_tree = { tree = usa_focus
+		USA ={ add_ideas = { american_join_michigan_full_support }}
+		USA ={ load_focus_tree = { tree = American_Support_Michigan
                      keep_completed = yes }}
+
+		
 		}
 	}
 
@@ -211,13 +224,18 @@ focus = {
 		x = 3
 		y = 0
 		dynamic =  yes
-		cost = 1
+		cost = 5
 mutually_exclusive = { 
 		focus = American_choice_usa_choose_michigan
 		focus = American_choice_usa_choose_stand_down
 		}
 		ai_will_do = {
 			factor = 1
+	
+			modifier = {
+			is_historical_focus_on = yes
+			factor = 5000
+			}
 		}
 
 historical_ai = {
@@ -246,7 +264,7 @@ focus = {
 		x = 2
 		y = 0
 		dynamic =  yes
-		cost = 1
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -363,7 +381,7 @@ focus = {
 		x = 1
 		y = 1
 		dynamic =  yes
-		cost = 1
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -396,7 +414,7 @@ allow_branch ={ tag = USA }
 		x = 5
 		y = 0
 		dynamic =  yes
-		cost = 1
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -454,7 +472,7 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-		cost = 1
+		cost = 5
 available = {
 		ROOT = {   has_variable =var_American_States }
 		NOT ={ tag = UMI }
@@ -491,7 +509,7 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-		cost = 1
+		cost = 5
 available = {
 		ROOT = {   has_variable =var_American_States }
 		NOT ={ tag = UMI }
@@ -542,7 +560,7 @@ load_focus_tree = { tree = American_choose_side_focus
 		x = 0
 		y = 2
 		dynamic =  yes
-		cost = 1
+		cost = 5
 
 				ai_will_do = {
 			factor = 1
@@ -586,7 +604,7 @@ OR{
 		x = 10
 		y = 0
 		dynamic =  yes
-		cost = 1
+		cost = 5
 		prerequisite = { 
 			focus = American_choice_major_union_states_internal
 			focus =	American_choice_major_union_states_warpath
@@ -633,7 +651,7 @@ OR{
 		x = 10
 		y = 1
 		dynamic =  yes
-		cost = 1
+		cost = 5
 
 		ai_will_do = {
 			factor = 1

@@ -11,6 +11,7 @@ country = {
 focus = {
 		id = American_Major_Warpath_Refocus_[?ROOT.GetName]
 		icon = GFX_goal_generic_production
+		prerequisite = { focus =American_Major_Warpath_focus_focus_bibb_consolidate_power_usa}
 		x = 6
 		y = -3
 		dynamic =  yes
@@ -18,12 +19,38 @@ focus = {
 ai_will_do = {
 			factor = 1
 		}
+available = {NOT={has_variable = var_mi_and_usa}}
+
+
+
 		 cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		
 		 completion_reward = {
 			load_focus_tree = { tree = American_choice_focus
+                     keep_completed = yes }
+		
+}
+}
+focus = {
+		id = American_Major_Warpath_Forced_Refocus_[?ROOT.GetName]_to_generic
+		relative_position_id = American_Major_Warpath_Refocus_[?ROOT.GetName]
+		icon = GFX_goal_generic_production
+		x = 0
+		y = -1
+		dynamic =  yes
+		cost = 10
+ai_will_do = {
+			factor = 1
+		}
+available = {has_variable = var_mi_and_usa}
+		 cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		 completion_reward = {
+			load_focus_tree = { tree =generic_focus
                      keep_completed = yes }
 		
 }
@@ -39,7 +66,7 @@ focus = {
 ai_will_do = {
 			factor = 100
 		}
-		 cancel_if_invalid = yes
+available = {NOT={has_variable = var_mi_and_usa}}		 cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		
@@ -166,6 +193,7 @@ focus = {
 ai_will_do = {
 			factor = 100
 		}
+available = {NOT={has_variable = var_mi_and_usa}}
 		 cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -190,6 +218,7 @@ focus = {
 ai_will_do = {
 			factor = 100
 		}
+available = {NOT={has_variable = var_mi_and_usa}}
 		 cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -215,6 +244,7 @@ focus = {
 ai_will_do = {
 			factor = 10
 		}
+available = {NOT={has_variable = var_mi_and_usa}}
 		
 		 completion_reward = {
 		add_offsite_building = { type = arms_factory level = 16 }
@@ -246,19 +276,19 @@ focus = {
 		icon = GFX_american_armsdeals3
 		relative_position_id = American_Major_Warpath_focus_focus_blackmarket_arms_deal_4 
 		prerequisite = { focus =American_Major_Warpath_focus_focus_blackmarket_arms_deal_4 }
-		
+		available = {NOT={has_variable = var_mi_and_usa}}
 		x = 0
 		y = 1
-		cost = 10
+		cost = 50
 		 cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
 ai_will_do = {
-			factor = -2000
+			factor = -5000
 		}
 		 completion_reward = {
 		add_offsite_building = { type = arms_factory level = 1 }
-add_ideas = { american_states_overwhelming_criminal_element }
+add_ideas = { american_states_mass_backlash_to_extreme_criminal_element }
 	}
 }
 
@@ -270,6 +300,7 @@ focus = {
 		x = 8
 		y = 0
 		cost = 10
+available = {NOT={has_variable = var_mi_and_usa}}
 ai_will_do = {
 			factor = 1000
 		}
@@ -319,6 +350,7 @@ focus = {
 		prerequisite = { focus =American_Major_Warpath_focus_focus_border_security_2 }
 		x = -1
 		y = 1
+available = {NOT={has_variable = var_mi_and_usa}}
 ai_will_do = {
 			factor = 1000
 		}
@@ -340,6 +372,7 @@ focus = {
 		x = -1
 		y = 1
 		cost = 10
+available = {NOT={has_variable = var_mi_and_usa}}
 
 ai_will_do = {
 			factor = 1000
@@ -364,6 +397,7 @@ focus = {
 		x = 0
 		y = 1
 		cost = 10
+available = {NOT={has_variable = var_mi_and_usa}}
 ai_will_do = {
 			factor = 100
 		}
@@ -430,6 +464,7 @@ focus = {
 		x = 0
 		y = 1
 		cost = 10
+available = {NOT={has_variable = var_mi_and_usa}}
 ai_will_do = {
 			factor = 100
 		}
@@ -461,6 +496,7 @@ focus = {
 		x = 0
 		y = 2
 		cost = 10
+available = {NOT={has_variable = var_mi_and_usa}}
 		will_lead_to_war_with = MEX
 ai_will_do = {
 			factor = 100
@@ -601,6 +637,7 @@ focus = {
 		x = 2
 		y = 0
 		cost = 10
+available = {NOT={has_variable = var_mi_and_usa}}
 ai_will_do = {	factor = 100 
 }
 
@@ -698,7 +735,7 @@ focus = {
 ai_will_do = {
 			factor = 10
 		}
-
+available = {NOT={has_variable = var_mi_and_usa}}
 		
 
 completion_reward = {

@@ -1,0 +1,156 @@
+focus_tree = {
+ id = American_Support_Michigan
+country = {
+		factor = 0
+		
+
+}
+	continuous_focus_position = { x = 50 y = 1600 }
+	default = no
+
+focus = {
+	id= American_Support_Michigan_Diplomatic_Alignment
+	icon = GFX_goal_generic_production
+	x = 6
+	y = 0
+	cost = 5	
+	 dynamic = yes
+	ai_will_do = {factor = 1}
+ 		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+	allow_branch ={ is_ai = yes
+			tag = USA 
+			is_in_faction_with = UMI
+			UMI ={ is_ai = yes}
+			}
+
+completion_reward = {				
+	UMI={ add_ideas={american_join_michigan_diplomatic_alignment} }
+	USA={ add_ideas={american_join_michigan_diplomatic_alignment} }
+	}
+}
+
+focus = {
+	id= American_Support_Michigan_Economic_Alliance
+	icon = GFX_goal_generic_production
+	prerequisite = { focus = American_Support_Michigan_Diplomatic_Alignment }
+	relative_position_id = American_Support_Michigan_Diplomatic_Alignment
+	x = 1
+	y = 1
+	cost = 5	
+	 dynamic = yes
+	ai_will_do = {factor = 1}
+ 		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+completion_reward = {				
+	USA={ add_ideas={american_join_michigan_economic_alliance} }
+	UMI={ add_ideas={american_join_michigan_economic_alliance} }
+	}
+}
+
+focus = {
+	id= American_Support_Michigan_Energy_Partnership
+	icon = GFX_goal_generic_production
+	prerequisite = { focus = American_Support_Michigan_Economic_Alliance }
+	relative_position_id = American_Support_Michigan_Economic_Alliance
+	x = 1
+	y = -2
+	cost = 5	
+	 dynamic = yes
+	ai_will_do = {factor = 1}
+ 		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+completion_reward = {				
+	USA={ add_ideas={american_join_michigan_energy_partnership} }
+	UMI={ add_ideas={american_join_michigan_energy_partnership} }
+	}
+}
+
+focus = {
+	id= American_Support_Michigan_Maritime_Partnership
+	icon = GFX_goal_generic_production
+	prerequisite = { focus = American_Support_Michigan_Energy_Partnership }
+	relative_position_id = American_Support_Michigan_Energy_Partnership
+	x = 1
+	y = 2
+	cost = 5	
+	 dynamic = yes
+	ai_will_do = {factor = 1}
+ 		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+completion_reward = {				
+	USA={ add_ideas={american_join_michigan_maritime_partnership} }
+	UMI={ add_ideas={american_join_michigan_maritime_partnership} }
+	USA={create_navy_leader = {
+	traits = { superior_tactician }
+	skill = 8
+	}}
+UMI={create_navy_leader = {
+	traits = { superior_tactician }
+	skill = 8
+}
+	}}
+}
+focus = { 
+	id= American_Support_Michigan_State_Security_Partnership
+	icon = GFX_goal_generic_production
+	prerequisite = { focus = American_Support_Michigan_Maritime_Partnership }
+	relative_position_id = American_Support_Michigan_Maritime_Partnership
+	x = 1
+	y = -2
+	cost = 5	
+	 dynamic = yes
+	ai_will_do = {factor = 1}
+ 		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+completion_reward = {				
+	USA={ add_ideas={american_join_michigan_state_security_partnership} }
+	UMI={ add_ideas={american_join_michigan_state_security_partnership} }
+	}
+}
+focus = { 
+	id= American_Support_Michigan_Joint_Military_Training
+	icon = GFX_goal_generic_production
+	prerequisite = { focus = American_Support_Michigan_State_Security_Partnership }
+	relative_position_id = American_Support_Michigan_State_Security_Partnership
+	x = 1
+	y = 2
+	cost = 5	
+	 dynamic = yes
+	ai_will_do = {factor = 1}
+ 		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+completion_reward = {				
+	USA={ add_ideas={american_join_michigan_joint_military_training} }
+	UMI={ add_ideas={american_join_michigan_joint_military_training} }
+	}
+}
+focus = { 
+	id= American_Support_Michigan_Refocus__[?ROOT.GetName]_To_National_Focus
+	icon = GFX_goal_generic_production
+	prerequisite = { focus = American_Support_Michigan_Joint_Military_Training }
+	relative_position_id = American_Support_Michigan_Joint_Military_Training
+	x = 1
+	y = -2
+	cost = 1	
+	 dynamic = yes
+	ai_will_do = {factor = 1}
+ 		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+completion_reward = {	
+	add_command_power = 100
+	add_political_power = 2000
+	UMI ={add_political_power = 2000}
+	UMI ={add_command_power = 100}	
+	USA = {load_focus_tree = { tree = usa_focus
+                     keep_completed = yes }}
+	}
+}
+}###############

@@ -1,0 +1,90 @@
+ideas = {
+
+	 country = {
+
+american_join_michigan_full_support = {
+	picture = eng_imperial_conscription
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		send_volunteer_size=10
+		army_leader_start_level	= 3
+		army_org = 15
+		army_org_factor = 0.15
+		}
+}
+american_join_michigan_diplomatic_alignment = {
+	picture = eng_imperial_conscription
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		ai_focus_aggressive_factor = -0.95
+		stability_weekly =  0.15
+		conscription_factor = 0.61
+		conscription = 0.61
+		non_core_manpower = 0.72
+		}
+}
+american_join_michigan_economic_alliance = {
+	picture = eng_imperial_conscription
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		industrial_capacity_factory=0.95
+		production_factory_max_efficiency_factor = 0.75
+		industrial_capacity_dockyard = 0.75
+		industrial_capacity_factory = 0.75
+		consumer_goods_factor = 0.25
+		}
+}
+american_join_michigan_energy_partnership= {
+	picture = eng_imperial_conscription
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		production_oil_factor = 0.75
+		fuel_gain_factor =0.75
+		fuel_gain_factor_from_states = 0.77
+		local_resources_factor = 0.50
+		}
+}
+american_join_michigan_maritime_partnership= {
+	picture = eng_imperial_conscription
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		industrial_capacity_dockyard = 0.75
+
+		}
+}
+american_join_michigan_state_security_partnership= {
+	picture = eng_imperial_conscription
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+			foreign_subversive_activites = -0.90
+		drift_defence_factor = 0.90
+		}
+}
+american_join_michigan_joint_military_training= {
+	picture = eng_imperial_conscription
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		training_time_factor=-0.55	
+		planning_speed=0.39
+		max_planning=0.39	
+		army_org_factor = 0.25
+		army_org = 35
+		}
+}
+
+
+}}##############
