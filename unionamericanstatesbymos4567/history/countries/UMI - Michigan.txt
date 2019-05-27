@@ -30,38 +30,18 @@ set_stability = 0.95
 set_war_support = 95
 add_to_tech_sharing_group = umi_investigators
 set_convoys = 4000
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 92
-			
-		}
-
-		fascism = {
-			popularity = 2
-			banned = yes
-		}
-
-		american_isolationism = {
-			popularity = 2
-			banned = yes	
-		}
-		american_globalism = {
-			popularity = 2
-			banned = yes
-			}
-		communism = {
-			popularity = 2
-			banned = yes
-		}
+	set_politics = {
+		ruling_party = democratic
+		election_frequency = 48
+		elections_allowed = yes
 	}
-	
-	ruling_party = democratic
-	last_election = "1936.11.11"
-	election_frequency = 48
-	elections_allowed = yes
-}
+	set_popularities = {
+	democratic = 100
+	communism = 0
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 0
+	}
 add_ideas = {
 	free_trade
 	home_of_the_free
@@ -69,6 +49,102 @@ add_ideas = {
 create_faction = "Great Lakes Treaty Organization"
  set_variable = { var_Michigan_States = 1 }
  set_variable = { var_American_States = 1 }
+UWI  = { 	set_politics = {
+		ruling_party = democratic
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+	democratic = 100
+	communism = 0
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 0
+	}  }
+UOH  = {  	set_politics = {
+		ruling_party = democratic
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+	democratic = 100
+	communism = 0
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 0
+	} }
+UIL  = { 	set_politics = {
+		ruling_party = democratic
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+	democratic = 100
+	communism = 0
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 0
+	}  }
+UIN  = { 	set_politics = {
+		ruling_party = democratic
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+	democratic = 100
+	communism = 0
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 0
+	}  }
+UMN  = { 	set_politics = {
+		ruling_party = democratic
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+	democratic = 100
+	communism = 0
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 0
+	}  }
+UDK  = { 	set_politics = {
+		ruling_party = democratic
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+	democratic = 100
+	communism = 0
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 0
+	}  }
+UNE  = { 	set_politics = {
+		ruling_party = democratic
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+	democratic = 100
+	communism = 0
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 0
+	}  }
+UIA  = { 	set_politics = {
+		ruling_party = democratic
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+	democratic = 100
+	communism = 0
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 0
+	}  } 
 
 UWI  = { set_variable = { var_Michigan_States = 1 }  }
 UOH  = { set_variable = { var_Michigan_States = 1 }  }

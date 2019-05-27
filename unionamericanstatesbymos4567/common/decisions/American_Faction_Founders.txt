@@ -4,7 +4,10 @@ american_major_state_build_intelligence_agency = {
 fire_only_once = yes
  cost = 250
 		days_remove = 30
-available = {
+ available = {
+tag=UMI
+}
+visible = {
 tag=UMI
 }
 available = {
@@ -42,8 +45,7 @@ american_major_state_assassinate_bibb_attempt = {
 tag=UMI
 }
 visible = {
-NOT = { tag=UTX}
-
+tag=UMI
 }		
 ai_will_do = {factor = 1 }
 			cost = 500

@@ -29,36 +29,18 @@ set_stability = 0.95
 set_war_support = 100
 add_to_tech_sharing_group = utx_investigators
 set_convoys = 4000
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 0
-			banned = yes
-		}
-
-		fascism = {
-			popularity = 0
-			banned = yes
-						
-		}
-		
-		communism = {
-			popularity = 0
-			banned = yes
-			 #default is no
-		}
-		american_globalism = {
-			popularity = 100
-		}
+	set_politics = {
+		ruling_party =american_globalism
+		election_frequency = 48
+		elections_allowed = yes
 	}
-	
-	ruling_party = american_globalism
-	last_election = "1932.11.8"
-	election_frequency = 68
-	elections_allowed = yes
-}
-
+	set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 100
+	}
 add_ideas = {
 	free_trade
 }
@@ -66,7 +48,18 @@ set_variable = { var_American_States = 1 }
 set_variable = { var_Texan_States = 1 } 
 
 UMX = { 
-
+	set_politics = {
+		ruling_party =american_globalism
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 100
+	}
 set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = ai_random}
 set_variable = { amer_state_number_of_swings = 0}
@@ -74,7 +67,18 @@ set_variable = { amer_state_number_of_swings = 0}
 }
 
 UOK = { 
-
+	set_politics = {
+		ruling_party =american_globalism
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 100
+	}
 set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = ai_random}
 set_variable = { amer_state_number_of_swings = 0}
@@ -82,7 +86,18 @@ set_variable = { amer_state_number_of_swings = 0}
 }
 
 UKA = { 
-
+	set_politics = {
+		ruling_party =american_globalism
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 100
+	}
 set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = ai_random}
 set_variable = { amer_state_number_of_swings = 0}
@@ -90,7 +105,18 @@ set_variable = { amer_state_number_of_swings = 0}
 }
 
 UAR = { 
-
+	set_politics = {
+		ruling_party =american_globalism
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 100
+	}
 set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = ai_random}
 set_variable = { amer_state_number_of_swings = 0}
@@ -98,7 +124,18 @@ set_variable = { amer_state_number_of_swings = 0}
 }
 
 ULA = { 
-
+	set_politics = {
+		ruling_party =american_globalism
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 100
+	}
 set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = ai_random}
 set_variable = { amer_state_number_of_swings = 0}
@@ -107,7 +144,18 @@ set_variable = { amer_state_number_of_swings = 0}
 }
 
 UCO = { 
-
+	set_politics = {
+		ruling_party =american_globalism
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 100
+	}
 set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = ai_random}
 set_variable = { amer_state_number_of_swings = 0}

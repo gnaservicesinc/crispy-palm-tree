@@ -11,12 +11,28 @@ union_member_state_support_democracy = {
 		days_re_enable = 1
 
 	remove_effect = {
-		set_politics = { parties = { democratic = { popularity = 100 } fascism = { popularity = 0 banned = yes } communism = { popularity = 0 banned = yes } american_globalism = {popularity = 0 banned = yes } american_isolationism= { popularity = 0 banned = yes }}  ruling_party = democratic elections_allowed = yes election_frequency = 24}
 
-		}
+	ROOT ={set_politics = {
+		ruling_party = democratic
+		election_frequency = 48
+		elections_allowed = yes
+	}}
+	ROOT = {set_popularities = {
+	democratic = 100
+	communism = 0
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 0
+	}}
+		
+	}
 
 	}		
+
+
 	
+
+		
 
 union_member_state_support_american_globalism = {
 	ai_will_do = {factor = 1 }
@@ -28,11 +44,22 @@ union_member_state_support_american_globalism = {
 		days_re_enable = 1
 
 	remove_effect = {
-		ROOT = {set_politics = { parties = { democratic = { popularity = 0 banned = yes  } fascism = { popularity = 0 banned = yes } communism = { popularity = 0 banned = yes } american_globalism = {popularity = 100 } american_isolationism= { popularity = 0 banned = yes }}  ruling_party = american_globalism elections_allowed = yes election_frequency = 24}
-}
-		}
+		
+	ROOT ={set_politics = {
+		ruling_party =american_globalism
+		election_frequency = 48
+		elections_allowed = yes
+	}}
+	ROOT = {set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 100
+	}}}
+	}
 
-	}		
+			
 	
 union_member_state_support_american_isolationism = {
 available = { 
@@ -46,10 +73,21 @@ available = {
 		days_re_enable = 1
 
 	remove_effect = {
-		set_politics = { parties = { democratic = { popularity = 0 banned = yes  } fascism = { popularity = 0 banned = yes } communism = { popularity = 0 banned = yes } american_globalism = {popularity = 0 banned = yes } american_isolationism= { popularity = 100 }}  ruling_party = american_isolationism elections_allowed = yes election_frequency = 24}
-		}
+			
+	ROOT ={set_politics = {
+		ruling_party =american_isolationism
+		election_frequency = 48
+		elections_allowed = yes
+	}}
+	ROOT = {set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 0
+	american_isolationism=100
+	american_globalism = 0
+	}}
 
-	} 		
+	} }		
 union_member_state_support_communism = {
 available = {  check_variable = { stability < 0.20 } } 
 	ai_will_do = {factor = 1 }
@@ -59,11 +97,23 @@ available = {  check_variable = { stability < 0.20 } }
 		days_re_enable = 1
 
 	remove_effect = {
-		set_politics = { parties = { democratic = { popularity = 0 banned = yes  } fascism = { popularity = 0 banned = yes } communism = { popularity = 100  } american_globalism = {popularity = 0 banned = yes } american_isolationism= { popularity = 0 banned = yes }}  ruling_party = communism elections_allowed = yes election_frequency = 24}
+			
+	ROOT ={set_politics = {
+		ruling_party =communism
+		election_frequency = 48
+		elections_allowed = yes
+	}}
+	ROOT = {set_popularities = {
+	democratic = 0
+	communism = 100
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 0
+	}}
 
-		}
+		}}
 
-	}		
+			
 	
 
 union_member_state_support_fascism = {
@@ -74,8 +124,22 @@ available = { check_variable = { stability < 0.10 } }
 		cost = 1
 		fire_only_once = yes
 	remove_effect = {
-set_politics = { parties = { democratic = { popularity = 0 banned = yes  } fascism = { popularity = 100  } communism = { popularity = 0  banned = yes } american_globalism = {popularity = 0 banned = yes } american_isolationism= { popularity = 1 banned = yes }}  ruling_party = fascism elections_allowed = yes election_frequency = 24}
-	hidden_effect = { 
+	
+	ROOT ={set_politics = {
+		ruling_party =fascism
+		election_frequency = 48
+		elections_allowed = yes
+	}}
+	ROOT = {set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 100
+	american_isolationism=0
+	american_globalism = 0
+	}}
+		
+
+hidden_effect = { 
 start_civil_war = {
     ruling_party = fascism
     ideology = democratic

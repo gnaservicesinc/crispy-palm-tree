@@ -22,43 +22,30 @@ create_country_leader = {
 	}
 }
 
+create_corps_commander = {
+	name = "Ernst Lubitsch"
+	portrait_path = "gfx/leaders/UCA/Ernst_Lubitsch.dds"
+	traits = { panzer_leader fortress_buster }
+	skill = 8
+}
 set_major = yes
 set_research_slots = 5
 set_stability = 0.95
 set_war_support = 100
 add_to_tech_sharing_group = uca_investigators
 set_convoys = 4000
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 0
-			banned = yes
-		}
-
-		fascism = {
-			popularity = 0
-			banned = yes
-		}
-		
-		communism = {
-			popularity = 100
-			 #default is no
-		}
-	american_isolationism = {
-			popularity = 0
-			banned = yes	
-		}
-		american_globalism = {
-			popularity = 0
-			banned = yes
-			}
+	set_politics = {
+		ruling_party =communism
+		election_frequency = 48
+		elections_allowed = yes
 	}
-	
-	ruling_party = communism
-	last_election = "1928.11.8"
-	elections_allowed = no
-}
+	set_popularities = {
+	democratic = 0
+	communism = 100
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 0
+	}
 
 add_ideas = {
 	free_trade
@@ -73,6 +60,18 @@ set_variable = { var_American_States = 1 }
 set_variable = { var_Cali_States = 1 }
 
 UWA = { 
+	set_politics = {
+		ruling_party =communism
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+	democratic = 0
+	communism = 100
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 0
+	}
 set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = random}
 set_variable = { amer_state_number_of_swings = 0}
@@ -80,7 +79,18 @@ set_variable = { amer_state_number_of_swings = 0}
 }
 
 UOR = { 
-
+	set_politics = {
+		ruling_party =communism
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+	democratic = 0
+	communism = 100
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 0
+	}
 set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = random}
 set_variable = { amer_state_number_of_swings = 0}
@@ -88,7 +98,18 @@ set_variable = { amer_state_number_of_swings = 0}
 }
 
 UNV = { 
-
+	set_politics = {
+		ruling_party =communism
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+	democratic = 0
+	communism = 100
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 0
+	}
 set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = random}
 set_variable = { amer_state_number_of_swings = 0}
@@ -96,7 +117,18 @@ set_variable = { amer_state_number_of_swings = 0}
 }
 
 UMO = { 
-
+	set_politics = {
+		ruling_party =communism
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+	democratic = 0
+	communism = 100
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 0
+	}
 set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = random}
 set_variable = { amer_state_number_of_swings = 0}
@@ -104,7 +136,18 @@ set_variable = { amer_state_number_of_swings = 0}
 }
 
 UWY = { 
-
+	set_politics = {
+		ruling_party =communism
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+	democratic = 0
+	communism = 100
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 0
+	}
 set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = random}
 set_variable = { amer_state_number_of_swings = 0}
@@ -112,7 +155,18 @@ set_variable = { amer_state_number_of_swings = 0}
 }
 
 UID = { 
-
+	set_politics = {
+		ruling_party =communism
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+	democratic = 0
+	communism = 100
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 0
+	}
 set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = random}
 set_variable = { amer_state_number_of_swings = 0}
@@ -120,7 +174,18 @@ set_variable = { amer_state_number_of_swings = 0}
 }
 
 UAZ = { 
-
+	set_politics = {
+		ruling_party =communism
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+	democratic = 0
+	communism = 100
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 0
+	}
 set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = random}
 set_variable = { amer_state_number_of_swings = 0}
@@ -128,7 +193,18 @@ set_variable = { amer_state_number_of_swings = 0}
 }
 
 UUT = { 
-
+	set_politics = {
+		ruling_party =communism
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+	democratic = 0
+	communism = 100
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 0
+	}
 set_variable = { amer_state_swing_resistance = random}
 set_variable = { amer_state_swing_desire = random}
 set_variable = { amer_state_number_of_swings = 0}

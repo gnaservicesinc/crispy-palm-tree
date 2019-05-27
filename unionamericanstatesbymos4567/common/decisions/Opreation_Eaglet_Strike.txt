@@ -94,8 +94,139 @@ Eaglet_Strike= {
 		add_manpower = -1000000	
 		}
 	}
+	eaglet_support_campaign_to_help_america_level_1 = {
+         	 target_trigger = { FROM = { tag = USA }}
+		cost = 1
+		days_remove = 1
+		days_re_enable = 30
+		visible = {
+               has_political_power > 0
 
+          }
+		 available = {
+               has_political_power > 100
+		FROM={has_political_power < 1901}
+          }
+		  complete_effect = {
+               FROM = {
+			add_political_power= 100
+			add_war_support = 0.01
+	
+		}
+		add_political_power = -100
+		add_war_support = 0.01
+		}
+	}
+	eaglet_support_campaign_to_help_america_level_2 = {
+         	 target_trigger = { FROM = { tag = USA }}
+		cost = 1
+		days_remove = 1
+		days_re_enable = 30
+		visible = {
+               has_political_power > 0
 
+          }
+		 available = {
+               has_political_power > 500
+		FROM={has_political_power < 1501}
+          }
+		  complete_effect = {
+               FROM = {
+			add_political_power= 500
+			add_war_support = 0.10	
+		}
+		add_political_power = -500
+		add_war_support = 0.10		
+		}
+	}
+	eaglet_support_campaign_to_help_america_level_3 = {
+         	 target_trigger = { FROM = { tag = USA }}
+		cost = 1
+		days_remove = 1
+		days_re_enable = 30
+		visible = {
+               has_political_power > 0
+
+          }
+		 available = {
+             has_political_power > 500
+		FROM={has_political_power < 1001}
+          }
+		  complete_effect = {
+               FROM = {
+			add_political_power= 1000
+			add_war_support = 0.15	
+		}
+		add_political_power = -1000
+		add_war_support = 0.15		
+		}
+	}
+	eaglet_joint_military_support_1  = {
+         	 target_trigger = { FROM = { tag = USA }}
+		cost = 1
+		days_remove = 1
+		days_re_enable = 30
+		visible = {
+              command_power > 0
+
+          }
+		 available = {
+             command_power > 10
+		FROM={has_political_power < 1901}
+          }
+		  complete_effect = {
+               FROM = {
+			add_command_power= 10
+			
+	
+		}
+		add_command_power= -10
+		}
+	}
+	eaglet_joint_military_support_2  = {
+         	 target_trigger = { FROM = { tag = USA }}
+		cost = 1
+		days_remove = 1
+		days_re_enable = 30
+		visible = {
+              command_power > 0
+
+          }
+		 available = {
+             command_power > 25
+		FROM={has_political_power < 1901}
+          }
+		  complete_effect = {
+               FROM = {
+			add_command_power= 25
+			
+	
+		}
+		add_command_power= -25
+		}
+	}
+	eaglet_joint_military_support_3  = {
+         	 target_trigger = { FROM = { tag = USA }}
+		cost = 1
+		days_remove = 1
+		days_re_enable = 30
+		visible = {
+              command_power > 0
+
+          }
+		 available = {
+             command_power > 50
+		FROM={has_political_power < 1901}
+          }
+		  complete_effect = {
+               FROM = {
+			add_command_power= 50
+			
+	
+		}
+		add_command_power= -50
+		}
+	}
 #eaglet_send_resource_rights_to_help_american_army = {
 # target_trigger = { FROM = { tag = USA }}
 #		cost = 1
