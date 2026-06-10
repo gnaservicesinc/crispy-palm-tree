@@ -1,4 +1,5 @@
 name="Union of American States"
+path="mod/unionamericanstatesbymos4567/"
 tags={
 	"Alternative History"
 	"Events"
@@ -11,6 +12,5 @@ tags={
 	"Technologies"
 	"Sound"
 }
-supported_version="1.*.*"
-path="/Users/andrewsmith/Documents/Paradox Interactive/Hearts of Iron IV/mod/unionamericanstatesbymos4567"
 remote_file_id="1712173861"
+supported_version="1.*.*"
