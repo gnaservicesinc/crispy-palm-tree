@@ -1,4 +1,4 @@
-capital = 375
+﻿capital = 375
 oob = "UTX"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -56,17 +56,24 @@ set_stability = 0.95
 set_war_support = 100
 add_to_tech_sharing_group = utx_investigators
 set_convoys = 14000
-	set_politics = {
-		ruling_party =american_globalism
+	set_politics = {ruling_party =american_globalism
 		election_frequency = 48
 		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 0
-	communism = 0
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 100
+
+		parties = {
+
+			democratic = { popularity = 0 }
+
+			communism = { popularity = 0 }
+
+			fascism = { popularity = 0 }
+
+			american_isolationism = { popularity = 0 }
+
+			american_globalism = { popularity = 100 }
+
+		}
+
 	}
 add_ideas = {
 	free_trade
@@ -90,28 +97,29 @@ UAR = { set_variable = { var_Texan_States = 1 }  }
 ULA = { set_variable = { var_Texan_States = 1 }  }
 UCO = { set_variable = { var_Texan_States = 1 }  }
 
-add_to_array = { array = USA.Texan_States value= UMX }
-add_to_array = { array = USA.Texan_States value= UOK }
-add_to_array = { array = USA.Texan_States value= UKA }
-add_to_array = { array = USA.Texan_States value= UAR }
-add_to_array = { array = USA.Texan_States value= ULA }
-add_to_array = { array = USA.Texan_States value= UCO }
+add_to_array = { USA.Texan_States = UMX  }
+add_to_array = { USA.Texan_States = UOK  }
+add_to_array = { USA.Texan_States = UKA  }
+add_to_array = { USA.Texan_States = UAR  }
+add_to_array = { USA.Texan_States = ULA  }
+add_to_array = { USA.Texan_States = UCO  }
 
 create_faction = "Texas Federation of Republics"
 
 
-for_each_loop = {
-array = USA.Texan_States
+for_each_scope = {
+	array = USA.Texan_States
+	value = v
 give_guarantee = v
 add_to_faction = v
-add_to_array = { array = USA.American_States value= v }
+add_to_array = { USA.American_States = v  }
 if = { limit = { has_dlc = "Together for Victory"}
-set_autonomy = {target = v autonomous_state = autonomy_united_states_state }
+set_autonomy = { target = v autonomy_state = autonomy_united_states_state }
 else = {
 puppet =v
 }}
 }
-UTX = { add_to_array = { array = American_States value= UTX }}
+UTX = { add_to_array = { American_States = UTX  }}
 GER ={ give_guarantee = USA }
 ITA ={ give_guarantee = USA }
 

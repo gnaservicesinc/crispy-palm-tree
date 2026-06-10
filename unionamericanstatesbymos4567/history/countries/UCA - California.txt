@@ -36,17 +36,24 @@ set_stability = 1
 set_war_support = 100
 add_to_tech_sharing_group = uca_investigators
 set_convoys = 9000
-	set_politics = {
-		ruling_party =communism
+	set_politics = {ruling_party =communism
 		election_frequency = 48
 		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 0
-	communism = 100
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 0
+
+		parties = {
+
+			democratic = { popularity = 0 }
+
+			communism = { popularity = 100 }
+
+			fascism = { popularity = 0 }
+
+			american_isolationism = { popularity = 0 }
+
+			american_globalism = { popularity = 0 }
+
+		}
+
 	}
 
 add_ideas = {
@@ -83,17 +90,17 @@ UUT = { set_variable = { var_Cali_States = 1 }  }
 
 
 
-add_to_array = { array = USA.cali_States value= SIK }
-add_to_array = { array = USA.cali_States value= MON }
-add_to_array = { array = USA.cali_States value= PRC }
-add_to_array = { array = USA.cali_States value= UWA }
-add_to_array = { array = USA.cali_States value= UOR }
-add_to_array = { array = USA.cali_States value= UNV }
-add_to_array = { array = USA.cali_States value= UMO }
-add_to_array = { array = USA.cali_States value= UWY }
-add_to_array = { array = USA.cali_States value= UID }
-add_to_array = { array = USA.cali_States value= UAZ }
-add_to_array = { array = USA.cali_States value= UUT }
+add_to_array = { USA.cali_States = SIK  }
+add_to_array = { USA.cali_States = MON  }
+add_to_array = { USA.cali_States = PRC  }
+add_to_array = { USA.cali_States = UWA  }
+add_to_array = { USA.cali_States = UOR  }
+add_to_array = { USA.cali_States = UNV  }
+add_to_array = { USA.cali_States = UMO  }
+add_to_array = { USA.cali_States = UWY  }
+add_to_array = { USA.cali_States = UID  }
+add_to_array = { USA.cali_States = UAZ  }
+add_to_array = { USA.cali_States = UUT  }
 
 
 
@@ -105,20 +112,21 @@ UCA ={
 
 dismantle_faction=yes
 create_faction = "The Sunshine Block"
-for_each_loop = {
-array = USA.cali_States
+for_each_scope = {
+	array = USA.cali_States
+	value = v
 give_guarantee = v
 add_to_faction = v
-add_to_array = { array = USA.American_States value= v }
+add_to_array = { USA.American_States = v  }
 if = { limit = { has_dlc = "Together for Victory"}
-set_autonomy = {target = v autonomous_state = autonomy_united_states_state }
+set_autonomy = { target = v autonomy_state = autonomy_united_states_state }
 else = {
 puppet =v
 }
 }}
 
 
-add_to_array = { array = USA.American_States value= UCA }
+add_to_array = { USA.American_States = UCA  }
 }
 
 # Starting tech

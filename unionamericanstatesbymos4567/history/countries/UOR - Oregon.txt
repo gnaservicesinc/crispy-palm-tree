@@ -69,17 +69,24 @@ set_stability = 0.95
 set_war_support = 15
 add_to_tech_sharing_group = uca_investigators
 set_convoys = 4000
-	set_politics = {
-		ruling_party =communism
+	set_politics = {ruling_party =communism
 		election_frequency = 48
 		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 0
-	communism = 100
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 0
+
+		parties = {
+
+			democratic = { popularity = 0 }
+
+			communism = { popularity = 100 }
+
+			fascism = { popularity = 0 }
+
+			american_isolationism = { popularity = 0 }
+
+			american_globalism = { popularity = 0 }
+
+		}
+
 	}
 
 add_ideas = {

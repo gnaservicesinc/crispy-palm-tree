@@ -109,10 +109,10 @@ if = {
 	}
 }
 
-set_variable = { var = ger_gateway_to_europe_influence value = 0 }
+set_variable = { ger_gateway_to_europe_influence = 0  }
 
-set_variable = { var = wehrmacht_anger value = 0 }
-set_variable = { var = ss_anger value = 0 }
+set_variable = { wehrmacht_anger = 0  }
+set_variable = { ss_anger = 0  }
 set_research_slots = 4
 set_convoys = 200
 set_stability = 0.75 
@@ -134,7 +134,7 @@ create_import = {
 	#adding ministers
 	add_ideas = {
 		henschel
-		ig_faben
+		ig_farben
 		heinrich_himmler
 		rudolf_hess
 		ludwig_beck
@@ -148,10 +148,7 @@ create_import = {
 	
 	oob = "GER_1939"
 	
-	set_autonomy = {
-		target = SLO
-		autonomous_state = autonomy_puppet
-	}
+	set_autonomy = { target = SLO autonomy_state = autonomy_puppet }
 	
 	give_military_access = SLO
 	create_wargoal = {
@@ -204,7 +201,7 @@ create_import = {
 
 	set_global_flag = end_of_czechoslovakia
 	set_global_flag = olympics_1936
-	set_variable = { var = GER_mefo_bill_counter value = 90 }
+	set_variable = { GER_mefo_bill_counter = 90  }
 	complete_national_focus = GER_autobahn
 	complete_national_focus = GER_west_wall
 	complete_national_focus = GER_army_innovation
@@ -302,16 +299,27 @@ create_import = {
 	}
 }
 
-set_politics = {
-	ruling_party = fascism
+set_politics = {ruling_party = fascism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
-}
-set_popularities = {
-	democratic = 20
-	fascism = 60
-	communism = 20
+
+
+	parties = {
+
+
+		democratic = { popularity = 20 }
+
+
+		fascism = { popularity = 60 }
+
+
+		communism = { popularity = 20 }
+
+
+	}
+
+
 }
 
 create_faction = Axis

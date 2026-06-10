@@ -1,4 +1,4 @@
-focus_tree = {
+﻿focus_tree = {
  id = American_Not_So_Loyal_State
 country = {
 		factor = 0
@@ -1384,7 +1384,7 @@ NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 				#inherit_technology = ROOT }
 
 				if = { limit = { has_dlc = "Together for Victory"}
-			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
+			set_autonomy = { target = ROOT autonomy_state = autonomy_united_states_state } 
 			} else = { puppet =ROOT }	
 
      			}
@@ -1427,18 +1427,25 @@ available = {NOT={any_country = {has_variable =var_American_Homeland_Victory_Fla
 ROOT = { add_to_tech_sharing_group = comintern_research}
 	
 	ROOT={
-			set_politics = {
-		ruling_party =communism
+			set_politics = {ruling_party =communism
 		election_frequency = 48
 		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 0
-	communism = 100
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 0
-	}
+
+				parties = {
+
+					democratic = { popularity = 0 }
+
+					communism = { popularity = 100 }
+
+					fascism = { popularity = 0 }
+
+					american_isolationism = { popularity = 0 }
+
+					american_globalism = { popularity = 0 }
+
+				}
+
+			}
 load_focus_tree = { tree = generic_focus
                      keep_completed = yes }
 	}
@@ -1954,7 +1961,7 @@ NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 				#inherit_technology = ROOT }
 
 				if = { limit = { has_dlc = "Together for Victory"}
-			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
+			set_autonomy = { target = ROOT autonomy_state = autonomy_united_states_state } 
 			} else = { puppet =ROOT }	
 
      			}
@@ -2000,17 +2007,24 @@ ROOT = { add_to_tech_sharing_group = axis_research}
 	
 
 	ROOT={
-			set_politics = {
-		ruling_party =fascism
+			set_politics = {ruling_party =fascism
 		elections_allowed = no
-	}
-	set_popularities = {
-	democratic = 0
-	communism = 0
-	fascism = 100
-	american_isolationism=0
-	american_globalism = 0
-	}
+
+				parties = {
+
+					democratic = { popularity = 0 }
+
+					communism = { popularity = 0 }
+
+					fascism = { popularity = 100 }
+
+					american_isolationism = { popularity = 0 }
+
+					american_globalism = { popularity = 0 }
+
+				}
+
+			}
 	load_focus_tree = { tree = generic_focus
                      keep_completed = yes }
 	}
@@ -2523,7 +2537,7 @@ focus = {
 				#inherit_technology = ROOT }
 
 				if = { limit = { has_dlc = "Together for Victory"}
-			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
+			set_autonomy = { target = ROOT autonomy_state = autonomy_united_states_state } 
 			} else = { puppet =ROOT }	
 
      			}
@@ -2568,18 +2582,25 @@ completion_reward = {
 ROOT = { add_to_tech_sharing_group = commonwealth_research}
 	
 	ROOT={
-			set_politics = {
-		ruling_party =democratic
+			set_politics = {ruling_party =democratic
 		election_frequency = 48
 		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 100
-	communism = 0
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 0
-	}
+
+				parties = {
+
+					democratic = { popularity = 100 }
+
+					communism = { popularity = 0 }
+
+					fascism = { popularity = 0 }
+
+					american_isolationism = { popularity = 0 }
+
+					american_globalism = { popularity = 0 }
+
+				}
+
+			}
 	load_focus_tree = { tree = generic_focus
                      keep_completed = yes }
 	}
@@ -3089,7 +3110,7 @@ ROOT = { NOT = { is_in_faction_with = USA }}
 				#inherit_technology = ROOT }
 
 				if = { limit = { has_dlc = "Together for Victory"}
-			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
+			set_autonomy = { target = ROOT autonomy_state = autonomy_united_states_state } 
 			} else = { puppet =ROOT }	
 
      			}
@@ -3133,17 +3154,24 @@ completion_reward = {
 ROOT = { add_to_tech_sharing_group = japanese_research}
 
 	ROOT={
-			set_politics = {
-		ruling_party =democratic
+			set_politics = {ruling_party =democratic
 		elections_allowed = no
-	}
-	set_popularities = {
-	democratic = 0
-	communism = 0
-	fascism = 100
-	american_isolationism=0
-	american_globalism = 0
-	}
+
+				parties = {
+
+					democratic = { popularity = 0 }
+
+					communism = { popularity = 0 }
+
+					fascism = { popularity = 100 }
+
+					american_isolationism = { popularity = 0 }
+
+					american_globalism = { popularity = 0 }
+
+				}
+
+			}
 	load_focus_tree = { tree = generic_focus
                      keep_completed = yes }
 	}

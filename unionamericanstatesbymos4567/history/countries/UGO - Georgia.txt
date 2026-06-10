@@ -44,16 +44,23 @@ set_stability = 0.95
 set_war_support = 15
 add_to_tech_sharing_group = ual_investigators
 set_convoys = 9000
-	set_politics = {
-		ruling_party =fascism
+	set_politics = {ruling_party =fascism
 		elections_allowed = no
-	}
-	set_popularities = {
-	democratic = 1
-	communism = 2
-	fascism = 70
-	american_isolationism=18
-	american_globalism = 9
+
+		parties = {
+
+			democratic = { popularity = 1 }
+
+			communism = { popularity = 2 }
+
+			fascism = { popularity = 70 }
+
+			american_isolationism = { popularity = 18 }
+
+			american_globalism = { popularity = 9 }
+
+		}
+
 	}
 
 add_ideas = {

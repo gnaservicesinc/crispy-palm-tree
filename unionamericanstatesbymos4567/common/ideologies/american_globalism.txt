@@ -1,4 +1,4 @@
-ideologies = {
+﻿ideologies = {
 
 	american_globalism = {
 		types = {
@@ -42,6 +42,10 @@ ideologies = {
 			send_volunteers_tension = 1.00
 
 		}
+		can_be_boosted = yes
+
+		can_collaborate = yes
+
 		ai_fascist = yes
 		
 	}

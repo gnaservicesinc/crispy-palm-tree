@@ -4,7 +4,7 @@ division_template = {
 
 	division_names_group = USA_INF_01
 
-	regiments = {
+	combat_unit = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
@@ -15,7 +15,7 @@ division_template = {
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
 	}
-	support = {
+	support_unit = {
 		artillery = { x = 0 y = 0 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
 		engineer = { x = 0 y = 1 }   # US Eng Rgt consisted of 2 Bns
 	}
@@ -25,7 +25,7 @@ division_template = {
 
 	division_names_group = USA_INF_01
 
-	regiments = {						
+	combat_unit = {						
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
@@ -39,7 +39,7 @@ division_template = {
 		infantry = { x = 3 y = 1 }
 		infantry = { x = 3 y = 2 }
 	}
-	support = {
+	support_unit = {
 		artillery = { x = 0 y = 0 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
 		engineer = { x = 0 y = 1 }   # US Eng Rgt consisted of 2 Bns
 	}
@@ -49,7 +49,7 @@ division_template = {
 
 	division_names_group = USA_CAV_01
 
-	regiments = {
+	combat_unit = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
 		cavalry = { x = 0 y = 2 }
@@ -59,7 +59,7 @@ division_template = {
 		cavalry = { x = 1 y = 2 }
 		cavalry = { x = 1 y = 3 }
 	}
-	support = {
+	support_unit = {
 		recon = { x = 0 y = 0 }      # US Cav Recon consisted of 52 ACs, 13 L Arm
 		engineer = { x = 0 y = 1 }   # US Eng Bn
 	}
@@ -69,12 +69,12 @@ division_template = {
 
 	division_names_group = USA_GAR_01		# Brigade level irregular unit, so no default names
 
-	regiments = {
+	combat_unit = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
 	}
-	support = {
+	support_unit = {
 		engineer = { x = 0 y = 0 }   
 	}
 	priority = 0
@@ -85,13 +85,13 @@ division_template = {
 
 	division_names_group = USA_MAR_01
 
-	regiments = {
+	combat_unit = {
 		marine = { x = 0 y = 0 }
 		marine = { x = 0 y = 1 }
 		marine = { x = 1 y = 0 }
 		marine = { x = 1 y = 1 }
 	}
-	support = {
+	support_unit = {
 		engineer = { x = 0 y = 0 }   
 	}
 	priority = 2

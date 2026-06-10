@@ -1,123 +1,161 @@
-spriteTypes = {	
+﻿spriteTypes = {	
 
-SpriteType = {
+spriteType = {
 	name = "FRED_WARREN_GREEN"
 	texturefile = "gfx/leaders/UMI/portrait_umi_fred_warren_green.dds"
 }
 
-SpriteType = {
+spriteType = {
 	name = "BookMarkStartGFX"
 	texturefile = "gfx/interface/load_1.dds"
 }
 
-SpriteType = {
+spriteType = {
 	name = "BIBB_GRAVES"
 	texturefile = "gfx/leaders/UTX/Bibb_Graves.dds"
 }
-SpriteType = {
+spriteType = {
 	name = "J_FOLSOM"
 	texturefile = "gfx/leaders/UAL/Jim_Folsom.dds"
 }
 
-SpriteType = {
+spriteType = {
 	name = "GFX_expand_ru_eco_partnetship"
 	texturefile = "gfx/interface/goals/gfx_expand_ru_eco_partnetship.dds"
 }
-SpriteType = {
+spriteType = {
 	name = "GFX_russian_security_aid"
 	texturefile = "gfx/interface/goals/gfx_russian_security_aid.dds"
 }
-SpriteType = {
+spriteType = {
 	name = "GFX_russian_security_aid2"
 	texturefile = "gfx/interface/goals/gfx_russian_security_aid2.dds"
 }
-SpriteType = {
+spriteType = {
 	name = "GFX_russian_security_aid3"
 	texturefile = "gfx/interface/goals/gfx_russian_security_aid3.dds"
 }
-SpriteType = {
+spriteType = {
 	name = "GFX_russian_security_aid4"
 	texturefile = "gfx/interface/goals/gfx_russian_security_aid4.dds"
 }
-SpriteType = {
+spriteType = {
 	name = "GFX_american_strike"
 	texturefile = "gfx/interface/goals/gfx_american_strike.dds"
 }
-SpriteType = {
+spriteType = {
 	name = "GFX_american_recruit"
 	texturefile = "gfx/interface/goals/gfx_american_recruit.dds"
 }
-SpriteType = {
+spriteType = {
 	name = "GFX_american_work"
 	texturefile = "gfx/interface/goals/gfx_american_work.dds"
 }
-SpriteType = {
+spriteType = {
 	name = "GFX_american_armsdeals"
 	texturefile = "gfx/interface/goals/gfx_american_armsdeals.dds"
 }
-SpriteType = {
+spriteType = {
 	name = "GFX_american_armsdeals2"
 	texturefile = "gfx/interface/goals/gfx_american_armsdeals2.dds"
 }
-SpriteType = {
+spriteType = {
 	name = "GFX_american_armsdeals3"
 	texturefile = "gfx/interface/goals/gfx_american_armsdeals3.dds"
 }
-SpriteType = {
+spriteType = {
 	name = "GFX_american_prep"
 	texturefile = "gfx/interface/goals/gfx_american_prep.dds"
 }
-SpriteType = {
+spriteType = {
 	name = "GFX_american_michigan"
 	texturefile = "gfx/interface/goals/gfx_american_michigan.dds"
 }
-SpriteType = {
+spriteType = {
 	name = "GFX_american_team_USA"
 	texturefile = "gfx/interface/goals/gfx_american_team_USA.dds"
 }
-SpriteType = {
+spriteType = {
 	name = "GFX_UPTON_BEALL"
 	texturefile = "gfx/leaders/UCA/Upton_Beall_SinclairJr.dds"
 }
 
-SpriteType = {
+spriteType = {
 	name = "GFX_ru_mil_train_joint"
 	texturefile = "gfx/interface/goals/gfx_ru_mil_train_joint.dds"
 }
-SpriteType = {
+spriteType = {
 	name = "GFX_ru_mil_train_joint2"
 	texturefile = "gfx/interface/goals/gfx_ru_mil_train_joint2.dds"
 }
-SpriteType = {
+spriteType = {
 	name = "GFX_amer_sw_generic_lead"
 	texturefile = "gfx/leaders/AMERICAN/generic_southwest_lead.dds"
 }
-SpriteType = {
+spriteType = {
 	name = "GFX_expand_jap_eco_partnetship"
 	texturefile = "gfx/interface/goals/gfx_expand_jap_eco_partnetship.dds"
 }
-SpriteType = {
+spriteType = {
 	name = "GFX_japanese_security_aid"
 	texturefile = "gfx/interface/goals/gfx_japanese_security_aid.dds"
 }
-SpriteType = {
+spriteType = {
 	name = "GFX_japanese_security_aid2"
 	texturefile = "gfx/interface/goals/gfx_japanese_security_aid2.dds"
 }
-SpriteType = {
+spriteType = {
 	name = "GFX_japanese_security_aid3"
 	texturefile = "gfx/interface/goals/gfx_japanese_security_aid3.dds"
 }
-SpriteType = {
+spriteType = {
 	name = "GFX_japanese_security_aid4"
 	texturefile = "gfx/interface/goals/gfx_japanese_security_aid4.dds"
 }
-SpriteType = {
+spriteType = {
 	name = "GFX_jap_mil_train_joint"
 	texturefile = "gfx/interface/goals/gfx_jap_mil_train_joint.dds"
 }
-SpriteType = {
+spriteType = {
 	name = "GFX_jap_mil_train_joint2"
 	texturefile = "gfx/interface/goals/gfx_jap_mil_train_joint2.dds"
 }
-}####################
+
+spriteType = {
+	name = "GFX_american_warpath"
+	texturefile = "gfx/interface/goals/gfx_american_warpath.dds"
+}
+spriteType = {
+	name = "GFX_english_security_aid"
+	texturefile = "gfx/interface/goals/gfx_american_strike.dds"
+}
+spriteType = {
+	name = "GFX_english_security_aid2"
+	texturefile = "gfx/interface/goals/gfx_american_strike.dds"
+}
+spriteType = {
+	name = "GFX_english_security_aid3"
+	texturefile = "gfx/interface/goals/gfx_american_strike.dds"
+}
+spriteType = {
+	name = "GFX_english_security_aid4"
+	texturefile = "gfx/interface/goals/gfx_american_strike.dds"
+}
+spriteType = {
+	name = "GFX_german_security_aid"
+	texturefile = "gfx/interface/goals/gfx_american_armsdeals.dds"
+}
+spriteType = {
+	name = "GFX_german_security_aid2"
+	texturefile = "gfx/interface/goals/gfx_american_armsdeals.dds"
+}
+spriteType = {
+	name = "GFX_german_security_aid3"
+	texturefile = "gfx/interface/goals/gfx_american_armsdeals.dds"
+}
+spriteType = {
+	name = "GFX_german_security_aid4"
+	texturefile = "gfx/interface/goals/gfx_american_armsdeals.dds"
+}
+
+}

@@ -1,4 +1,4 @@
-focus_tree = {
+﻿focus_tree = {
  id = American_Major_Texas_focus
 country = {
 		factor = 0
@@ -282,8 +282,9 @@ ai_will_do = {
 		available_if_capitulated = yes
 		 completion_reward = {
 			
-for_each_scope_loop = {
-array = USA.Texan_States
+for_each_scope = {
+	array = USA.Texan_States
+	value = v
  if ={ limit = { is_ai = yes}	
 	ROOT = {
 annex_country = {
@@ -311,8 +312,9 @@ ai_will_do = {
 		available_if_capitulated = yes
 		 completion_reward = {
 			
-for_each_scope_loop = {
-array = USA.American_States
+for_each_scope = {
+	array = USA.American_States
+	value = v
  if ={ limit = { is_ai = yes}
  ROOT = {declare_war_on = {
     target = PREV

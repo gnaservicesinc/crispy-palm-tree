@@ -13,30 +13,45 @@ set_research_slots = 16
 set_stability = 1.00
 set_war_support = 100
 add_to_tech_sharing_group = usa_investigators
-set_variable = { var = senators_support value = 96 }
-set_variable = { var = senators_total value = 96 }
-set_variable = { var = representatives_support value = 435 }
-set_variable = { var = representatives_total value = 435 }
-set_variable = { var = quorum_low value = 39 }
-set_variable = { var = quorum_medium value = 49 }
-set_variable = { var = quorum_high value = 58 }
+set_variable = { senators_support = 96  }
+set_variable = { senators_total = 96  }
+set_variable = { representatives_support = 435  }
+set_variable = { representatives_total = 435  }
+set_variable = { quorum_low = 39  }
+set_variable = { quorum_medium = 49  }
+set_variable = { quorum_high = 58  }
 USA_recalc_congress_icon_frames = yes
 USA = {
 	country_event = { id = usa.50 days = 2 }
 	country_event = { id = usa.51 days = 2 }
 }
 
-	set_politics = {
-		ruling_party = democratic
+	set_politics = {ruling_party = democratic
 		election_frequency = 48
 		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 100
-	communism = 0
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 0
+
+
+		parties = {
+
+
+			democratic = { popularity = 100 }
+
+
+			communism = { popularity = 0 }
+
+
+			fascism = { popularity = 0 }
+
+
+			american_isolationism = { popularity = 0 }
+
+
+			american_globalism = { popularity = 0 }
+
+
+		}
+
+
 	}
 create_intelligence_agency = yes
 
@@ -52,15 +67,15 @@ UAK  = { set_variable = { var_Loyal_American_States = 1 }  }
 
 
 #Loyal_American_States
-add_to_array = { array = Loyal_American_States value= UPE }
-add_to_array = { array = Loyal_American_States value= UML }
-add_to_array = { array = Loyal_American_States value= UEN }
-add_to_array = { array = Loyal_American_States value= UNY }
-add_to_array = { array = Loyal_American_States value= UML }
-add_to_array = { array = Loyal_American_States value= UNJ }
-add_to_array = { array = Loyal_American_States value= UVA }
-add_to_array = { array = Loyal_American_States value= UAK }
-add_to_array = { array = Loyal_American_States value= UHW }
+add_to_array = { Loyal_American_States = UPE  }
+add_to_array = { Loyal_American_States = UML  }
+add_to_array = { Loyal_American_States = UEN  }
+add_to_array = { Loyal_American_States = UNY  }
+add_to_array = { Loyal_American_States = UML  }
+add_to_array = { Loyal_American_States = UNJ  }
+add_to_array = { Loyal_American_States = UVA  }
+add_to_array = { Loyal_American_States = UAK  }
+add_to_array = { Loyal_American_States = UHW  }
 
 
 IRE  = { set_variable = { var_American_States = 1 }  }
@@ -97,12 +112,12 @@ add_to_faction=CHI}
 JAP ={ create_faction = "The Global Empire of Japan Co-Prosperity Sphere"}
 JAP ={
 if = { limit = { has_dlc = "Together for Victory"}
-set_autonomy = {target = GER autonomous_state = autonomy_united_states_state }
-set_autonomy = {target = ITA autonomous_state = autonomy_united_states_state }
-set_autonomy = {target = ELS autonomous_state = autonomy_united_states_state }
-set_autonomy = {target = DOM autonomous_state = autonomy_united_states_state }
-set_autonomy = {target = VEN autonomous_state = autonomy_united_states_state }
-set_autonomy = {target = PRU autonomous_state = autonomy_united_states_state }
+set_autonomy = { target = GER autonomy_state = autonomy_united_states_state }
+set_autonomy = { target = ITA autonomy_state = autonomy_united_states_state }
+set_autonomy = { target = ELS autonomy_state = autonomy_united_states_state }
+set_autonomy = { target = DOM autonomy_state = autonomy_united_states_state }
+set_autonomy = { target = VEN autonomy_state = autonomy_united_states_state }
+set_autonomy = { target = PRU autonomy_state = autonomy_united_states_state }
 else = {
 puppet =GER
 puppet =ITA
@@ -122,8 +137,9 @@ JAP ={ add_to_faction = PRU }
 add_offsite_building = { type = arms_factory level = 32 }
 add_offsite_building = { type = industrial_complex level = 32 }
 # do the dirty work.
-for_each_loop = {
-array = Loyal_American_States
+for_each_scope = {
+	array = Loyal_American_States
+	value = v
 give_guarantee = v
 add_to_faction = v
 set_rule = {
@@ -131,9 +147,9 @@ set_rule = {
  can_generate_female_aces = yes
 
 }
-add_to_array = { array = American_States value= v }
+add_to_array = { American_States = v  }
 if = { limit = { has_dlc = "Together for Victory"}
-set_autonomy = {target = v autonomous_state = autonomy_united_states_state }
+set_autonomy = { target = v autonomy_state = autonomy_united_states_state }
 else = {
 puppet =v
 } 
@@ -142,14 +158,14 @@ puppet =v
 # it is done! Whaahahahaahah!
 	
 #Mi States
-add_to_array = { array = Michigan_States value= UWI }
-add_to_array = { array = Michigan_States value= UOH }
-add_to_array = { array = Michigan_States value= UIL }
-add_to_array = { array = Michigan_States value= UIN }
-add_to_array = { array = Michigan_States value= UMN }
-add_to_array = { array = Michigan_States value= UDK }
-add_to_array = { array = Michigan_States value= UNE }
-add_to_array = { array = Michigan_States value= UIA }
+add_to_array = { Michigan_States = UWI  }
+add_to_array = { Michigan_States = UOH  }
+add_to_array = { Michigan_States = UIL  }
+add_to_array = { Michigan_States = UIN  }
+add_to_array = { Michigan_States = UMN  }
+add_to_array = { Michigan_States = UDK  }
+add_to_array = { Michigan_States = UNE  }
+add_to_array = { Michigan_States = UIA  }
 
 
 FRA ={ give_guarantee = USA }
@@ -430,18 +446,33 @@ give_guarantee = URG
 
 set_convoys = 5000
 
-	set_politics = {
-		ruling_party = democratic
+	set_politics = {ruling_party = democratic
 		last_election = "1932.11.8"
 		election_frequency = 48
 		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 100
-	communism = 0
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 0
+
+
+		parties = {
+
+
+			democratic = { popularity = 100 }
+
+
+			communism = { popularity = 0 }
+
+
+			fascism = { popularity = 0 }
+
+
+			american_isolationism = { popularity = 0 }
+
+
+			american_globalism = { popularity = 0 }
+
+
+		}
+
+
 	}
 add_ideas = {
 	#undisturbed_isolation
@@ -453,24 +484,36 @@ add_ideas = {
 
 
 # DIPLOMACY
-set_autonomy = {
-	target = PHI
-	autonomous_state =  autonomy_puppet
-}
+set_autonomy = { target = PHI autonomy_state = autonomy_puppet }
 
 1939.1.1 = {
 
-	set_politics = {
-		ruling_party = democratic
+	set_politics = {ruling_party = democratic
 		election_frequency = 48
 		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 100
-	communism = 0
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 0
+
+
+		parties = {
+
+
+			democratic = { popularity = 100 }
+
+
+			communism = { popularity = 0 }
+
+
+			fascism = { popularity = 0 }
+
+
+			american_isolationism = { popularity = 0 }
+
+
+			american_globalism = { popularity = 0 }
+
+
+		}
+
+
 	}
 }
 

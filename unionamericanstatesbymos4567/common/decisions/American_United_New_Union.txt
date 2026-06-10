@@ -1,4 +1,4 @@
-American_USA_New_Union= {
+﻿American_USA_New_Union= {
 
 
 unite_the_american_states_accept_the_results = {
@@ -28,7 +28,7 @@ ROOT ={ NOT = { is_subject_of = FROM }}
 complete_effect = {
 
 	if = { limit = { has_dlc = "Together for Victory"}
-	FROM = { set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state }}
+	FROM = { set_autonomy = { target = ROOT autonomy_state = autonomy_united_states_state }}
 	else = {FROM = {puppet =ROOT} } 
 	}
 	}

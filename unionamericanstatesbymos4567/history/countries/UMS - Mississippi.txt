@@ -42,18 +42,24 @@ set_stability = 0.95
 set_war_support = 15
 add_to_tech_sharing_group = ual_investigators
 set_convoys = 4000
-	set_politics = {
-		ruling_party =american_isolationism
+	set_politics = {ruling_party =american_isolationism
 		election_frequency = 48
 		elections_allowed = yes
-	}
 
-	set_popularities = {
-	democratic = 4
-	communism = 1
-	fascism = 10
-	american_isolationism=80
-	american_globalism = 5
+		parties = {
+
+			democratic = { popularity = 4 }
+
+			communism = { popularity = 1 }
+
+			fascism = { popularity = 10 }
+
+			american_isolationism = { popularity = 80 }
+
+			american_globalism = { popularity = 5 }
+
+		}
+
 	}
 add_ideas = {
 	free_trade

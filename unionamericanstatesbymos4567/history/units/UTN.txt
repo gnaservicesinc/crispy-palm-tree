@@ -2,7 +2,7 @@
 division_template = {
 	name = "Tennessee State Infantry Division"
 	division_names_group = USA_INF_01
-	regiments = {
+	combat_unit = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
@@ -25,7 +25,7 @@ division_template = {
 		infantry = { x = 3 y = 4 }
 
 	}
-	support = {
+	support_unit = {
 		artillery = { x = 0 y = 0 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
 		engineer = { x = 0 y = 1 }   # US Eng Rgt consisted of 2 Bns
 	}
@@ -33,7 +33,7 @@ division_template = {
 division_template = {
 	name = "Tennessee State National Guard Division"
 	division_names_group = USA_INF_01
-	regiments = {
+	combat_unit = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
 		motorized = { x = 0 y = 2 }
@@ -56,7 +56,7 @@ division_template = {
 		motorized = { x = 3 y = 4 }
 
 	}
-	support = {
+	support_unit = {
 		artillery = { x = 0 y = 0 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
 		engineer = { x = 0 y = 1 }   # US Eng Rgt consisted of 2 Bns
 	}
@@ -64,7 +64,7 @@ division_template = {
 division_template = {
 	name = "Tennessee's Homeland Shield Division"
 	division_names_group = USA_INF_01
-	regiments = {
+	combat_unit = {
 		mechanized = { x = 0 y = 0 }
 		mechanized = { x = 0 y = 1 }
 		mechanized = { x = 0 y = 2 }
@@ -86,7 +86,7 @@ division_template = {
 		mechanized = { x = 3 y = 3 }
 		mechanized = { x = 3 y = 4 }
 	}
-	support = {
+	support_unit = {
 		artillery = { x = 0 y = 0 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
 		engineer = { x = 0 y = 1 }   # US Eng Rgt consisted of 2 Bns
 	}
@@ -94,7 +94,7 @@ division_template = {
 division_template = {
 	name = "Tennessee State Police Division"
 	division_names_group = USA_CAV_01
-	regiments = {
+	combat_unit = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
 		cavalry = { x = 0 y = 2 }
@@ -116,7 +116,7 @@ division_template = {
 		cavalry = { x = 3 y = 3 }
 		cavalry = { x = 3 y = 4 }
 	}
-	support = {
+	support_unit = {
 		artillery = { x = 0 y = 0 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
 		engineer = { x = 0 y = 1 }   # US Eng Rgt consisted of 2 Bns
 	}

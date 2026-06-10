@@ -1,4 +1,4 @@
-focus_tree = {
+﻿focus_tree = {
 	id = american_soviet_focus
 
 	country = {
@@ -36,8 +36,8 @@ focus_tree = {
 				SOV = { set_variable = { SOV.var_Sov_Soviet_Leadership_in_cali = 1 }  }
 				SOV = { set_variable = { var_American_States = 1 }  }
 				SOV = { set_variable = { var_Cali_States = 1 }  }
-				USA = { add_to_array = { array = USA.cali_States value= SOV }
-					add_to_array = { array = USA.American_States value= SOV}
+				USA = { add_to_array = { USA.cali_States = SOV  }
+					add_to_array = { USA.American_States = SOV }
 					}
 				SOV = { give_guarantee = UCA}
 				SOV = { give_military_access = UCA}
@@ -49,7 +49,7 @@ focus_tree = {
 				UCA ={ add_to_faction = SOV}
 				
 				if = { limit = { has_dlc = "Together for Victory"}
-					UCA ={ set_autonomy = {target = SOV autonomous_state = autonomy_united_states_state }}
+					UCA ={ set_autonomy = { target = SOV autonomy_state = autonomy_united_states_state }}
 				else = {
 					UCA ={ puppet =SOV }
 					}
@@ -79,8 +79,9 @@ focus_tree = {
 		SOV = { set_variable = { SOV.var_Sov_Soviet_War_Criminals = 1 }  }
 			UCA={ dismantle_faction=yes}
 
-			for_each_scope_loop = {
-				array = USA.cali_States
+			for_each_scope = {
+	array = USA.cali_States
+	value = v
 					give_guarantee	= SOV
 					give_military_access = SOV
 					diplomatic_relation ={country = SOV relation = non_aggression_pact  active = yes }
@@ -91,7 +92,7 @@ focus_tree = {
 
 					if ={ limit = {PREV = { is_ai = yes}}
 					if = { limit = { has_dlc = "Together for Victory"}
-					set_autonomy = {target = PREV autonomous_state = autonomy_united_states_state }
+					set_autonomy = { target = PREV autonomy_state = autonomy_united_states_state }
 				else = {
 					puppet =PREV
 					}
@@ -110,7 +111,7 @@ focus_tree = {
 			SOV = { add_to_faction = UCA }
 
 			SOV = { if = { limit = { has_dlc = "Together for Victory"} 
-			 set_autonomy = {target = UCA autonomous_state = autonomy_united_states_state } 
+			 set_autonomy = { target = UCA autonomy_state = autonomy_united_states_state } 
 				else = {
 					puppet =UCA
 					}
@@ -119,8 +120,8 @@ focus_tree = {
 				
 			SOV = { set_variable = { var_American_States = 1 }  }
 			SOV = { set_variable = { var_Cali_States = 1 }  }
-			USA = { add_to_array = { array = USA.cali_States value= SOV }
-				add_to_array = { array = USA.American_States value= SOV}
+			USA = { add_to_array = { USA.cali_States = SOV  }
+				add_to_array = { USA.American_States = SOV }
 					}
 			SOV = { load_focus_tree = { tree = soviet_focus
                      keep_completed = yes } }
@@ -147,8 +148,9 @@ focus_tree = {
 		completion_reward = {
 			
 
-			for_each_scope_loop = {
-				array = USA.cali_States
+			for_each_scope = {
+	array = USA.cali_States
+	value = v
 				if ={ limit = { is_ai = yes}
 				SOV = {
 					annex_country = {

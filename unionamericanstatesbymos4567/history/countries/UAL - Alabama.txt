@@ -56,17 +56,24 @@ set_stability = 1
 set_war_support = 100
 add_to_tech_sharing_group = ual_investigators
 set_convoys = 12000
-	set_politics = {
-		ruling_party =american_isolationism
+	set_politics = {ruling_party =american_isolationism
 		election_frequency = 48
 		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 0
-	communism = 0
-	fascism = 0
-	american_isolationism=100
-	american_globalism = 0
+
+		parties = {
+
+			democratic = { popularity = 0 }
+
+			communism = { popularity = 0 }
+
+			fascism = { popularity = 0 }
+
+			american_isolationism = { popularity = 100 }
+
+			american_globalism = { popularity = 0 }
+
+		}
+
 	}
 create_faction = "Southern Agricultural Alliance"
 add_ideas = {
@@ -91,30 +98,31 @@ ROOT = { set_variable = { var_Southern_States = 1 } }
  UFL  = { set_variable = { var_American_States = 1 }  }
  UGO  = { set_variable = { var_American_States = 1 }  }
  
-add_to_array = { array = USA.Southern_States value= UCI }
-add_to_array = { array = USA.Southern_States value= UME }
-add_to_array = { array = USA.Southern_States value= UTN }
-add_to_array = { array = USA.Southern_States value= UKY }
-add_to_array = { array = USA.Southern_States value= UMS }
-add_to_array = { array = USA.Southern_States value= UFL }
-add_to_array = { array = USA.Southern_States value= UGO }
+add_to_array = { USA.Southern_States = UCI  }
+add_to_array = { USA.Southern_States = UME  }
+add_to_array = { USA.Southern_States = UTN  }
+add_to_array = { USA.Southern_States = UKY  }
+add_to_array = { USA.Southern_States = UMS  }
+add_to_array = { USA.Southern_States = UFL  }
+add_to_array = { USA.Southern_States = UGO  }
 
 
 
 
-for_each_loop = {
-array = USA.Southern_States
+for_each_scope = {
+	array = USA.Southern_States
+	value = v
 give_guarantee = v
 add_to_faction = v
-add_to_array = { array = USA.American_States value= v }
+add_to_array = { USA.American_States = v  }
 if = { limit = { has_dlc = "Together for Victory"}
-set_autonomy = {target = v autonomous_state = autonomy_united_states_state }
+set_autonomy = { target = v autonomy_state = autonomy_united_states_state }
 else = {
 puppet =v
 }
 }}
 
-add_to_array = { array = USA.American_States value= UAL }
+add_to_array = { USA.American_States = UAL  }
 
 # Starting tech
 

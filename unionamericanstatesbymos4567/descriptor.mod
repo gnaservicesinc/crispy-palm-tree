@@ -1,0 +1,15 @@
+name="Union of American States"
+tags={
+	"Alternative History"
+	"Events"
+	"Balance"
+	"Graphics"
+	"Ideologies"
+	"Gameplay"
+	"Map"
+	"National Focuses"
+	"Technologies"
+	"Sound"
+}
+remote_file_id="1712173861"
+supported_version="1.*.*"
