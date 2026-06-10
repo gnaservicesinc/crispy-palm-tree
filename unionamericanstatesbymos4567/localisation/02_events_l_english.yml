@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 amer_news.19.t:0 "[ROOT.GetName] Attacks USA." 
  amer_news.19.desc:0 "\n[ROOT.GetName] Has attacked the USA in an unprovoked act of aggression. The US Congress has vowed all out war on Maryland"
  amer_news.19.a:0 "Oh snap."
