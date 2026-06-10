@@ -1,3 +1,4 @@
+version="604"
 name="Union of American States"
 tags={
 	"Alternative History"

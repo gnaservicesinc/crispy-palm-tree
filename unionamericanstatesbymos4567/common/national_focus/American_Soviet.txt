@@ -219,7 +219,7 @@
 	}
 	focus = {
 		id = american_soviet_focus_gtfo
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_goal_generic_production
 		x = 0
 		y = 1
 		relative_position_id = american_soviet_focus_land_grab
