@@ -1,4 +1,4 @@
-﻿oob = "State_Guard"
+﻿oob = "UTN"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "USA_1936_naval_mtg"
@@ -8,44 +8,49 @@ if = {
 }
 
 capital = 368
-
+create_country_leader = {
+	name = "Governor William Prentice Cooper, Jr."
+	desc = "POLITICS_WILLIAM_PRENTICE_DESC"
+	picture = "gfx/leaders/UTN/portrait_utn_prentice_cooper.dds"
+	expire = "1985.1.1"
+	ideology = alabaman
+	traits = {
+		anti_communist 
+		socialite_connections 
+		fascist_militia_leader
+		cornered_fox
+	}
+}
+create_country_leader = {
+	name = "Führer Gordon Weaver Browning"
+	desc = "POLITICS_GORDON_WEAVER_BROWNING_DESC"
+	picture = "gfx/leaders/UTN/portrait_utn_browning_gordon_harris_ewing.dds"
+	expire = "1975.1.1"
+	ideology = texanism
+	traits = {
+		anti_communist 
+		anti_democrat
+		warmonger
+		baron_of_terror
+	}
+}
 set_research_slots = 4
 set_stability = 0.95
 set_war_support = 15
 add_to_tech_sharing_group = ual_investigators
 set_convoys = 4000
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 0
-			banned = yes
-		}
-
-		fascism = {
-			popularity = 40
-			
-		}
-		american_globalism = {
-			popularity = 19
-			}
-
-		american_isolationism = {
-			popularity = 51
-			
-		}
-		
-		communism = {
-			popularity = 0
-			banned = yes
-		}
+	set_politics = {
+		ruling_party =american_isolationism
+		election_frequency = 48
+		elections_allowed = yes
 	}
-	
-	ruling_party = american_isolationism
-	last_election = "1932.11.8"
-	election_frequency = 48
-	elections_allowed = yes
-}
+	set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 0
+	american_isolationism=100
+	american_globalism = 0
+	}
 
 add_ideas = {
 	free_trade

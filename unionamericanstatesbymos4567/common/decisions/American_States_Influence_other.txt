@@ -1,0 +1,107 @@
+union_member_state_influence = {
+	state_influence_others = {
+	target_trigger = { FROM = { 
+	has_variable =var_American_States
+		NOT={ original_tag = FRA }
+	NOT={ original_tag = ENG }
+	NOT={ original_tag = IRE }
+	}}
+		days_remove = 1
+		days_re_enable = 30
+ai_will_do = {
+			factor = 1
+		 modifier = {
+        		add = 1
+			has_war = yes
+		}
+		 modifier = {
+		add = 1
+		ROOT={has_war_with =FROM}
+		}
+		 modifier = {
+        		add = 1
+			ROOT={NOT={ has_government = democratic }}
+		}
+	}
+cost = 100
+	available = { AND={
+		FROM={is_ai = yes}
+		FROM={ NOT={is_in_faction_with = ROOT}}
+		FROM={NOT = { is_major = yes }}
+}}
+
+complete_effect = {
+
+if={ limit ={ ROOT={ has_government = fascism} }
+FROM = { add_popularity = {
+    ideology = fascism
+    popularity = 0.25
+} }
+else ={limit={ROOT={ has_government = communism} }
+FROM = { add_popularity = {
+    ideology = communism
+    popularity = 0.25
+} }
+else ={limit={ROOT={ has_government = democratic} }
+FROM = { add_popularity = {
+    ideology = democratic
+    popularity = 0.25
+} }
+else ={limit={ROOT={ has_government = american_globalism} }
+FROM = { add_popularity = {
+    ideology = american_globalism
+    popularity = 0.35
+} }
+else ={limit={ROOT={ has_government = american_isolationism} }
+FROM = { add_popularity = {
+    ideology = american_isolationism
+    popularity = 0.35
+} }
+else ={
+FROM = { add_popularity = {
+    ideology = fascism
+    popularity = -0.15
+} }
+FROM = { add_popularity = {
+    ideology = communism
+    popularity = -0.15
+} }
+FROM = { add_popularity = {
+    ideology = democratic
+    popularity = -0.15
+} }
+FROM = { add_popularity = {
+    ideology = american_globalism
+    popularity = -0.25
+} }
+FROM = { add_popularity = {
+    ideology = american_isolationism
+    popularity = -0.25
+} }
+
+}
+}
+}
+}
+}
+}
+
+	if={ limit ={ FROM = {fascism > 0.50}}
+		FROM = { set_politics= { ruling_party = fascism}}
+	
+	else={ limit ={ FROM = {communism > 0.50}}
+		FROM = { set_politics= { ruling_party = communism}}
+	
+	else={ limit ={ FROM = {democratic > 0.50}}
+		FROM = { set_politics= { ruling_party = democratic}}
+	
+	else={ limit ={ FROM = {american_globalism > 0.50}}
+		FROM = { set_politics= { ruling_party = american_globalism}}
+	
+	else={ limit ={ FROM = {american_globalism > 0.50}}
+		FROM = { set_politics= { ruling_party = american_isolationism}}
+}}}}}	
+}
+}
+
+}##

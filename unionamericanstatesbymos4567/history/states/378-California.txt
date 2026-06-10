@@ -4,7 +4,7 @@ state={
 	name="STATE_378"
 	resources={
 		oil=980.000
-		steel=213.000
+		steel=813.000
 		aluminium=500.000
 		tungsten=500.000
 		rubber=875.000
@@ -19,8 +19,9 @@ state={
 		add_core_of = UAL
 		add_core_of = UTX
 		add_core_of = UCA
+		add_core_of = SOV
 			buildings = {
-			infrastructure = 7
+			infrastructure = 8
 			industrial_complex = 10
 			air_base = 10
 		
@@ -44,7 +45,7 @@ state={
 	provinces={
 		710 823 941 986 1432 1562 1601 1651 3677 3784 3840 4518 4657 4727 6694 6861 6876 7517 7667 7986 9637 9855 9911 10387 10483 11757 11763 11795 11859 11876 12303 12374 
 	}
-	manpower=5677248
-	buildings_max_level_factor=1.000
+	manpower=877248
+	buildings_max_level_factor=4.000
 	state_category=megalopolis
 }

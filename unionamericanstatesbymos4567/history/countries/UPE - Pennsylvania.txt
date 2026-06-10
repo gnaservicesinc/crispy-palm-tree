@@ -1,6 +1,6 @@
 ﻿capital = 360
 
-oob = "State_Guard"
+oob = "UPE"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "USA_1936_naval_mtg"
@@ -9,37 +9,77 @@ if = {
 	}
 }
 
+create_country_leader = {
+	name = "Edward Martin"
+	desc = "POLITICS_EDWARD_MARTIN_PA_DESC"
+	picture = "gfx/leaders/UPE/Edward_Martin.dds"
+	expire = "1975.1.1"
+	ideology = liberalism
+	traits = {
+		dislikes_germany
+		staunch_constitutionalist
+		political_dancer
+		dealbroker
+		anti_communist
 
-
-set_research_slots = 4
+	}
+}
+create_country_leader = {
+	name = "Координатор сообщества George H. Earle"
+	desc = "POLITICS_GEORGE_H_EARLE_DESC"
+	picture = "gfx/leaders/UPE/George_H_Earle.dds"
+	expire = "1975.1.1"
+	ideology = stalinism
+	traits = {
+		triumphant_revolutionary
+		anti_democrat
+		red_army_organizer
+		warmonger
+	}
+}
+create_country_leader = {
+	name = "Spionageführer John Stuchell Fisher"
+	desc = "POLITICS_JOHN_STUCHELL_FISHER_DESC"
+	picture = "gfx/leaders/UPE/John_Stuchell_Fisher.dds"
+	expire = "1975.1.1"
+	ideology = texanism
+	traits = {
+		lieutenant_of_industry
+		anti_democrat
+		warmonger
+		baron_of_terror
+	}
+}
+create_country_leader = {
+	name = "Governor Gifford Pinchot"
+	desc = "POLITICS_GIFFORD_PINCHOT_DESC"
+	picture = "gfx/leaders/UPE/Gifford_Pinchot.dds"
+	expire = "1985.1.1"
+	ideology = alabaman
+	traits = {
+		anti_communist 
+		socialite_connections 
+		staunch_constitutionalist
+		cornered_fox
+	}
+}
+set_research_slots = 6
 set_stability = 0.95
 set_war_support = 15
 add_to_tech_sharing_group = ual_investigators
 set_convoys = 4000
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 99
-		}
-
-		fascism = {
-			popularity = 0
-			banned = yes
-		}
-		
-		communism = {
-			popularity = 1
-			banned = yes
-			 #default is no
-		}
+		ruling_party = democratic
+		election_frequency = 48
+		elections_allowed = yes
 	}
-	
-	ruling_party = democratic
-	last_election = "1932.11.8"
-	election_frequency = 48
-	elections_allowed = yes
-}
+	set_popularities = {
+	democratic = 96
+	communism = 1
+	fascism = 1
+	american_isolationism=1
+	american_globalism = 1
+	}
 
 add_ideas = {
 	free_trade

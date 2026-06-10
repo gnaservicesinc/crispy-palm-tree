@@ -1,0 +1,641 @@
+focus_tree = {
+ id = American_Major_Japan_focus
+country = {
+		factor = 0	
+	}
+	continuous_focus_position = { x = 50 y = 1600 }
+	default = no
+####################################################################
+# BEGIN FOCUS ROOT 
+####################################################################
+	focus = {
+		id = American_Major_Japan_focus
+		icon = GFX_japanese_security_aid
+		x = 10
+		y = 0
+		dynamic =  yes
+		cost = 1
+		ai_will_do = { factor = 1 }
+		completion_reward = {	ROOT={ add_ideas={imperial_japan_blessing} }	}
+		}
+####################################################################
+# END FOCUS ROOT 
+####################################################################
+####################################################################
+# BEGIN MAJOR VISIONS HEADINGS 
+####################################################################
+	focus = {
+		id = American_Major_Japan_focus_government
+		icon = GFX_japanese_security_aid
+		relative_position_id = American_Major_Japan_focus
+		prerequisite = { focus = American_Major_Japan_focus }
+		x = -2
+		y = 2
+		dynamic =  yes
+		cost = 1
+		ai_will_do = { factor = 1 }
+		completion_reward = {	ROOT={ add_ideas={imperial_japan_shared_vision_of_government} }	}
+		}
+	focus = {
+		id = American_Major_Japan_focus_security
+		icon = GFX_japanese_security_aid
+		relative_position_id = American_Major_Japan_focus_government
+		prerequisite = { focus = American_Major_Japan_focus }
+		x = 3
+		y = 0
+		dynamic =  yes
+		cost = 1
+		ai_will_do = { factor = 1 }
+		completion_reward = {	ROOT={ add_ideas={imperial_japan_shared_vision_of_security} }	}
+		}
+	focus = {
+		id = American_Major_Japan_focus_military
+		icon = GFX_japanese_security_aid
+		relative_position_id = American_Major_Japan_focus_security
+		prerequisite = { focus = American_Major_Japan_focus }
+		x = 3
+		y = 0
+		dynamic =  yes
+		cost = 1
+		ai_will_do = { factor = 1 }
+		completion_reward = {	ROOT={ add_ideas={imperial_japan_shared_vision_of_military} }	}
+		}
+	focus = {
+		id = American_Major_Japan_focus_for_economy
+		icon = GFX_japanese_security_aid
+		relative_position_id = American_Major_Japan_focus_military
+		prerequisite = { focus = American_Major_Japan_focus }
+		x = 3
+		y = 0
+		dynamic =  yes
+		cost = 1
+		ai_will_do = { factor = 1 }
+		completion_reward = {	ROOT={ add_ideas={imperial_japan_shared_vision_of_economy} }	}
+		}
+####################################################################
+# END BEGIN MAJOR VISIONS HEADINGS 
+####################################################################
+####################################################################
+# BEGIN VISIONS TREES
+####################################################################
+####################################################################
+# BEGIN SHARED GOV VISIONS TREE 
+####################################################################
+	focus = {
+		id = American_Major_Japan_focus_shared_government_vision_fulfilled
+		icon = GFX_japanese_security_aid
+		relative_position_id = American_Major_Japan_focus_government
+		
+
+prerequisite = {focus = American_Major_Japan_focus_government}
+prerequisite = {focus = American_Major_Japan_focus_security}
+prerequisite = {focus = American_Major_Japan_focus_military}
+prerequisite = {focus = American_Major_Japan_focus_for_economy}
+
+
+		x = 0
+		y = 2
+		dynamic =  yes
+		cost = 1
+		ai_will_do = { factor = 0 }
+		completion_reward = {		
+			if = { limit = { country_exists	= JAP }
+			JAP = { 
+			if = { limit = { has_dlc = "Together for Victory"}
+			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
+			} else = { puppet =ROOT }	
+
+     			}
+			ROOT = { load_focus_tree = { tree = generic_focus
+                     keep_completed = yes }}
+					ROOT={
+			set_politics = {
+		ruling_party =american_globalism 
+		elections_allowed = no
+	}
+	set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 100
+	}}
+		}
+		hidden_effect = { 
+		if = { limit ={ USA={ NOT = { has_war_with= JAP}}} 
+		news_event = {
+   		 id = amer_news.8
+   		 days = 1
+    		random = 3
+		}
+		USA = { declare_war_on = {
+    					target = JAP
+    					type = annex_everything
+					}}
+		}
+		if = { limit ={ ENG={ NOT = { has_war_with= JAP}}} 
+		ENG = { declare_war_on = {
+    					target = JAP
+    					type = annex_everything
+					}}
+		}
+
+
+
+		}
+		}
+		}	
+####################################################################
+# END SHARED GOV VISIONS TREE 
+####################################################################
+####################################################################
+# BEGIN SHARED SECURITY VISIONS TREE 
+####################################################################
+	focus = {
+		id = American_Major_Japan_focus_security_expanded
+		icon = GFX_japanese_security_aid
+		relative_position_id = American_Major_Japan_focus_security
+		prerequisite = { focus = American_Major_Japan_focus_security }
+		x = 0
+		y = 2
+		dynamic =  yes
+		cost = 1
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		add_offsite_building = { type = arms_factory level = 64 }
+		}
+		}
+	focus = {
+		id = American_Major_Japan_focus_security_expanded2
+		icon = GFX_japanese_security_aid
+		relative_position_id = American_Major_Japan_focus_security_expanded
+		prerequisite = { focus = American_Major_Japan_focus_security_expanded }
+		x = 0
+		y = 2
+		dynamic =  yes
+		cost = 2
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		add_offsite_building = { type = arms_factory level = 2 }
+		}
+		}
+	focus = {
+		id = American_Major_Japan_focus_security_expanded3
+		icon = GFX_japanese_security_aid
+		relative_position_id = American_Major_Japan_focus_security_expanded2
+		prerequisite = { focus = American_Major_Japan_focus_security_expanded2 }
+		x = 0
+		y = 2
+		dynamic =  yes
+		cost = 4
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		add_offsite_building = { type = arms_factory level = 4 }
+		}
+		}
+	focus = {
+		id = American_Major_Japan_focus_security_expanded4
+		icon = GFX_japanese_security_aid
+		relative_position_id = American_Major_Japan_focus_security_expanded3
+		prerequisite = { focus = American_Major_Japan_focus_security_expanded3 }
+		x = 0
+		y = 2
+		dynamic =  yes
+		cost = 8
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		add_offsite_building = { type = arms_factory level = 8 }
+		}
+		}
+	focus = {
+		id = American_Major_Japan_focus_security_expanded5
+		icon = GFX_japanese_security_aid
+		relative_position_id = American_Major_Japan_focus_security_expanded4
+		prerequisite = { focus = American_Major_Japan_focus_security_expanded4 }
+		x = 0
+		y = 2
+		dynamic =  yes
+		cost = 16
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		add_offsite_building = { type = arms_factory level = 16 }
+		}
+		}
+	focus = {
+		id = American_Major_Japan_focus_security_expanded6
+		icon = GFX_japanese_security_aid
+		relative_position_id = American_Major_Japan_focus_security_expanded5
+		prerequisite = { focus = American_Major_Japan_focus_security_expanded5 }
+		x = 0
+		y = 2
+		dynamic =  yes
+		cost = 32
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		add_offsite_building = { type = arms_factory level = 32 }
+		}
+		}
+	focus = {
+		id = American_Major_Japan_focus_security_expanded7
+		icon = GFX_japanese_security_aid
+		relative_position_id = American_Major_Japan_focus_security_expanded6
+		prerequisite = { focus = American_Major_Japan_focus_security_expanded6 }
+		x = 0
+		y = 2
+		dynamic =  yes
+		cost = 64
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		add_offsite_building = { type = arms_factory level = 64 }
+		}
+		}
+	focus = {
+		id = American_Major_Japan_focus_security_expanded8
+		icon = GFX_japanese_security_aid
+		relative_position_id = American_Major_Japan_focus_security_expanded7
+		prerequisite = { focus = American_Major_Japan_focus_security_expanded7 }
+		x = 0
+		y = 2
+		dynamic =  yes
+		cost = 128
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		add_offsite_building = { type = arms_factory level = 128 }
+		}
+		}
+	focus = {
+		id = American_Major_Japan_focus_security_expanded9
+		icon = GFX_japanese_security_aid
+		relative_position_id = American_Major_Japan_focus_security_expanded8
+		prerequisite = { focus = American_Major_Japan_focus_security_expanded8 }
+		x = 0
+		y = 2
+		dynamic =  yes
+		cost = 256
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		add_offsite_building = { type = arms_factory level = 256 }
+		}
+		}
+	focus = {
+		id = American_Major_Japan_focus_security_expanded10
+		icon = GFX_japanese_security_aid
+		relative_position_id = American_Major_Japan_focus_security_expanded9
+		prerequisite = { focus = American_Major_Japan_focus_security_expanded9 }
+		x = 0
+		y = 2
+		dynamic =  yes
+		cost = 512
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		add_offsite_building = { type = arms_factory level = 512 }
+		}
+		}
+####################################################################
+# END SHARED SECURITY VISIONS TREE 
+####################################################################
+####################################################################
+# BEGIN SHARED MILITARY VISIONS TREE 
+####################################################################
+	focus = {
+		id = American_Major_Japan_focus_military_expanded
+		icon = GFX_japanese_security_aid
+		relative_position_id = American_Major_Japan_focus_military
+		prerequisite = { focus = American_Major_Japan_focus_military }
+		x = 0
+		y = 2
+		dynamic =  yes
+		cost = 1
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		add_manpower = 50000	
+		}
+		}
+	focus = {
+		id = American_Major_Japan_focus_military_expanded2
+		icon = GFX_japanese_security_aid
+		relative_position_id = American_Major_Japan_focus_military_expanded
+		prerequisite = { focus = American_Major_Japan_focus_military_expanded }
+		x = 0
+		y = 2
+		dynamic =  yes
+		cost = 3
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		add_manpower = 75000	
+		}
+		}
+	focus = {
+		id = American_Major_Japan_focus_military_expanded3
+		icon = GFX_japanese_security_aid
+		relative_position_id = American_Major_Japan_focus_military_expanded2
+		prerequisite = { focus = American_Major_Japan_focus_military_expanded2 }
+		x = 0
+		y = 2
+		dynamic =  yes
+		cost = 6
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		add_manpower = 100000	
+		}
+		}
+	focus = {
+		id = American_Major_Japan_focus_military_expanded4
+		icon = GFX_japanese_security_aid
+		relative_position_id = American_Major_Japan_focus_military_expanded3
+		prerequisite = { focus = American_Major_Japan_focus_military_expanded3 }
+		x = 0
+		y = 2
+		dynamic =  yes
+		cost = 7
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		add_manpower = 500000	
+		}
+		}
+	focus = {
+		id = American_Major_Japan_focus_military_expanded5
+		icon = GFX_japanese_security_aid
+		relative_position_id = American_Major_Japan_focus_military_expanded4
+		prerequisite = { focus = American_Major_Japan_focus_military_expanded4 }
+		x = 0
+		y = 2
+		dynamic =  yes
+		cost = 8
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		add_manpower = 750000	
+		}
+		}
+	focus = {
+		id = American_Major_Japan_focus_military_expanded6
+		icon = GFX_japanese_security_aid
+		relative_position_id = American_Major_Japan_focus_military_expanded5
+		prerequisite = { focus = American_Major_Japan_focus_military_expanded5 }
+		x = 0
+		y = 2
+		dynamic =  yes
+		cost = 10
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		add_manpower = 1000000	
+		}
+		}
+	focus = {
+		id = American_Major_Japan_focus_military_expanded7
+		icon = GFX_japanese_security_aid
+		relative_position_id = American_Major_Japan_focus_military_expanded6
+		prerequisite = { focus = American_Major_Japan_focus_military_expanded6 }
+		x = 0
+		y = 2
+		dynamic =  yes
+		cost = 12
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		add_manpower = 2000000	
+		}
+		}
+	focus = {
+		id = American_Major_Japan_focus_military_expanded8
+		icon = GFX_japanese_security_aid
+		relative_position_id = American_Major_Japan_focus_military_expanded7
+		prerequisite = { focus = American_Major_Japan_focus_military_expanded7 }
+		x = 0
+		y = 2
+		dynamic =  yes
+		cost = 13
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		add_manpower = 2000000	
+		}
+		}
+	focus = {
+		id = American_Major_Japan_focus_military_expanded9
+		icon = GFX_japanese_security_aid
+		relative_position_id = American_Major_Japan_focus_military_expanded8
+		prerequisite = { focus = American_Major_Japan_focus_military_expanded8 }
+		x = 0
+		y = 2
+		dynamic =  yes
+		cost = 14
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		add_manpower = 2000000	
+		}
+		}
+	focus = {
+		id = American_Major_Japan_focus_military_expanded10
+		icon = GFX_japanese_security_aid
+		relative_position_id = American_Major_Japan_focus_military_expanded9
+		prerequisite = { focus = American_Major_Japan_focus_military_expanded9 }
+		x = 0
+		y = 2
+		dynamic =  yes
+		cost = 15
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		add_manpower = 2000000	
+		}
+		}
+####################################################################
+# END SHARED MILITARY VISIONS TREE 
+####################################################################
+####################################################################
+# BEGIN SHARED ECONOMIC VISIONS TREE 
+####################################################################
+	focus = { 
+		id = American_Major_Japan_focus_join_economic_vision
+		icon = GFX_japanese_security_aid
+		relative_position_id = American_Major_Japan_focus_for_economy
+		prerequisite = { focus = American_Major_Japan_focus_for_economy }
+		x = 0
+		y = 2
+		dynamic =  yes
+		cost = 1
+		ai_will_do = { factor = 1 }
+		completion_reward = {	
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				
+			}
+		}
+		}
+		
+	focus = { 
+		id = American_Major_Japan_focus_join_economic_vision2
+		icon = GFX_japanese_security_aid
+		relative_position_id = American_Major_Japan_focus_join_economic_vision
+		prerequisite = { focus = American_Major_Japan_focus_join_economic_vision }
+		x = 0
+		y = 2
+		dynamic =  yes
+		cost = 1
+		ai_will_do = { factor = 1 }
+		completion_reward = {	
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				
+			}
+		}
+	}
+	focus = { 
+		id = American_Major_Japan_focus_join_economic_vision3
+		icon = GFX_japanese_security_aid
+		relative_position_id = American_Major_Japan_focus_join_economic_vision2
+		prerequisite = { focus = American_Major_Japan_focus_join_economic_vision2 }
+		x = 0
+		y = 2
+		dynamic =  yes
+		cost = 1
+		ai_will_do = { factor = 1 }
+		completion_reward = {	
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				
+			}
+		}
+	}
+	focus = { 
+		id = American_Major_Japan_focus_join_economic_vision4
+		icon = GFX_japanese_security_aid
+		relative_position_id = American_Major_Japan_focus_join_economic_vision3
+		prerequisite = { focus = American_Major_Japan_focus_join_economic_vision3 }
+		x = 0
+		y = 2
+		dynamic =  yes
+		cost = 1
+		ai_will_do = { factor = 1 }
+		completion_reward = {	
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				
+			}
+		}
+	}
+	focus = { 
+		id = American_Major_Japan_focus_join_economic_vision5
+		icon = GFX_japanese_security_aid
+		relative_position_id = American_Major_Japan_focus_join_economic_vision4
+		prerequisite = { focus = American_Major_Japan_focus_join_economic_vision4 }
+		x = 0
+		y = 2
+		dynamic =  yes
+		cost = 1
+		ai_will_do = { factor = 1 }
+		completion_reward = {	
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				
+			}
+		}
+	}	
+focus = { 
+	
+		id = American_Major_Japan_focus_join_economic_vision6
+		icon = GFX_japanese_security_aid
+		relative_position_id = American_Major_Japan_focus_join_economic_vision5
+		prerequisite = { focus = American_Major_Japan_focus_join_economic_vision5 }
+		x = 0
+		y = 2
+		dynamic =  yes
+		cost = 1
+		ai_will_do = { factor = 1 }
+		completion_reward = {	
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				
+			}
+		}
+	}
+####################################################################
+# END SHARED ECONOMIC VISIONS TREE 
+####################################################################
+####################################################################
+# END VISIONS TREES
+####################################################################
+
+}

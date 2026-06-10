@@ -1,5 +1,5 @@
 ﻿capital = 396
-oob = "State_Guard"
+oob = "UIN"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "USA_1936_naval_mtg"
@@ -8,6 +8,21 @@ if = {
 	}
 }
 
+create_country_leader = {
+	name = "Sam'l M. Ralston"
+	desc = "POLITICS_SAML_M_RALSTON_DESC"
+	picture = "gfx/leaders/UIN/saml_m_ralston.dds"
+	expire = "1975.1.1"
+	ideology = liberalism
+	traits = {
+		dislikes_germany
+		staunch_constitutionalist
+		socialite_connections
+		headstrong
+		anti_communist
+
+	}
+}
 
 
 
@@ -17,29 +32,17 @@ set_war_support = 15
 add_to_tech_sharing_group = umi_investigators
 set_convoys = 4000
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 99
-		}
-
-		fascism = {
-			popularity = 0
-			banned = yes
-		}
-		
-		communism = {
-			popularity = 1
-			banned = yes
-			 #default is no
-		}
+		ruling_party = democratic
+		election_frequency = 48
+		elections_allowed = yes
 	}
-	
-	ruling_party = democratic
-	last_election = "1932.11.8"
-	election_frequency = 48
-	elections_allowed = yes
-}
+	set_popularities = {
+	democratic = 100
+	communism = 0
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 0
+	}
 
 add_ideas = {
 	free_trade

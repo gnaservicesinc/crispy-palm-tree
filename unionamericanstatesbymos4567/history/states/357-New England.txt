@@ -3,7 +3,7 @@ state={
 	id=357
 	name="STATE_357"
 	resources={
-		steel=92 # was: 20.000
+		steel=192 # was: 20.000
 	}
 
 	state_category = metropolis
@@ -12,7 +12,6 @@ state={
 	history={
 		add_core_of = UEN
 		owner = UEN
-		add_core_of = UEN
 		add_core_of = UMI
 		add_core_of = USA
 		add_core_of = UAL

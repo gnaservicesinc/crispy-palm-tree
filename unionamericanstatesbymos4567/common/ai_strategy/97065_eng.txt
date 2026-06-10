@@ -8,36 +8,87 @@ eng_protect_america= {
 	 abort = {
 	USA = {  has_war_with = ENG  }
  ENG = { NOT = {has_government = democratic }}
+OR = { any_country = {has_variable =var_American_Homeland_Victory_Flag_Won} }
 }
 
 	    ai_strategy = {
 		type = befriend
-		id = "USA"			
+		id = USA			
 		value = 2500
 	}
 	    ai_strategy = {
 		type = protect
-		id = "USA"			
+		id = USA			
 		value = 1000
 	}
 	    ai_strategy = {
 		type = support
-		id = "USA"			
+		id = USA			
 		value = 1000
 	}
 	    ai_strategy = {
 		type = garrison
-		id = "USA"			
+		id = USA			
 		value = 1000
 	}
 	    ai_strategy = {
 		type = alliance
-		id = "USA"			
+		id = USA			
+		value = 1500
+	}
+	    ai_strategy = {
+		type = force_defend_ally_borders
+		id = USA			
+		value = 1500
+	}	
+	ai_strategy = {
+		type = prepare_for_war
+		id = UTX			
+		value = 1500
+	}
+	    ai_strategy = {
+		type = prepare_for_war
+		id = UAL			
+		value = 1500
+	}
+	    ai_strategy = {
+		type = prepare_for_war
+		id = SOV			
+		value = 1500
+	}
+	    ai_strategy = {
+		type = area_priority
+		id = north_america			
+		value = 1500
+	}
+	    ai_strategy = {
+		type = prepare_for_war
+		id = UCA			
+		value = 1500
+	}
+	    ai_strategy = {
+		type = prepare_for_war
+		id = UTX			
+		value = 1500
+	}
+	    ai_strategy = {
+		type = declare_war
+		id = UAL			
+		value = 1500
+	}
+	    ai_strategy = {
+		type = declare_war
+		id = UCA			
+		value = 1500
+	}
+	    ai_strategy = {
+		type = declare_war
+		id = UTX			
 		value = 1500
 	}
 	ai_strategy = {
 		type = send_volunteers_desire
-		id = "USA"
+		id = USA
 		value = 700
 	}
 }
@@ -55,40 +106,42 @@ abort =  {
 ROOT = { NOT = { has_idea = commonwealth_special_partnership}}
 ROOT = { is_in_faction_with = USA  }
 ROOT = { has_war_with = ENG }
+OR = { any_country = {has_variable =var_American_Homeland_Victory_Flag_Won} }
 
 }
 	    ai_strategy = {
 		type = befriend
-		id = "ENG"			
+		id = ENG			
 		value = 1000
 	}
 	    ai_strategy = {
 		type = protect
-		id = "ENG"			
+		id = ENG			
 		value = 1000
 	}
 	    ai_strategy = {
 		type = support
-		id = "ENG"			
+		id = ENG			
 		value = 1000
 	}
 	    ai_strategy = {
 		type = garrison
-		id = "ENG"			
+		id = ENG			
 		value = 1000
 	}
 	    ai_strategy = {
 		type = alliance
-		id = "ENG"			
+		id = ENG			
 		value = 500
 	}
 	ai_strategy = {
 		type = send_volunteers_desire
-		id = "ENG"
+		id = ENG
 		value = 500
 	}		
 }
-ger_harass_american_commies = {
+
+eng_harass_american_commies_R = {
 
 reversed = yes
 	 enable = { 
@@ -102,12 +155,12 @@ ROOT = { NOT ={has_idea = california_soviet_partnership}}
 
  ai_strategy = {
 		type = antagonize
-		id = "GER"			
+		id = ENG			
 		value = 250
 	}
     ai_strategy = {
 		type = contain
-		id = "GER"			
+		id = ENG			
 		value = 250
 	}
 	ai_strategy = {
@@ -125,17 +178,18 @@ reversed = yes
 		}
 abort =  {
 ROOT = { NOT ={has_idea = california_soviet_partnership}}
+OR = { any_country = {has_variable =var_American_Homeland_Victory_Flag_Won} }
 }
 
 
  ai_strategy = {
 		type = antagonize
-		id = "ENG"			
+		id = ENG			
 		value = 250
 	}
     ai_strategy = {
 		type = contain
-		id = "ENG"			
+		id = ENG			
 		value = 250
 	}
 	ai_strategy = {
@@ -153,22 +207,23 @@ reversed = yes
 		}
 abort =  {
 ROOT = { NOT ={has_idea = california_soviet_partnership}}
+OR = { any_country = {has_variable =var_American_Homeland_Victory_Flag_Won} }
 }
 
    
 ai_strategy = {
 		type = declare_war
-		id = "ENG"			
+		id = ENG			
 		value = 3000
 	}
 	    ai_strategy = {
 		type = conquer
-		id = "ENG"			
+		id = ENG			
 		value = 3000
 	}
     ai_strategy = {
 		type = invade
-		id = "ENG"			
+		id = ENG			
 		value = 3000
 	}
 
@@ -187,17 +242,18 @@ reversed = yes
 		}
 abort =  {
 ROOT = { NOT ={has_idea = global_foregin_intrest_partnership}}
+OR = { any_country = {has_variable =var_American_Homeland_Victory_Flag_Won} }
 }
 
 
  ai_strategy = {
 		type = antagonize
-		id = "ENG"			
+		id = ENG			
 		value = 2000
 	}
     ai_strategy = {
 		type = contain
-		id = "ENG"			
+		id = ENG			
 		value = 2000
 	}
 	ai_strategy = {
@@ -215,22 +271,23 @@ reversed = yes
 		}
 abort =  {
 ROOT = { NOT ={has_idea = global_foregin_intrest_partnership}}
+OR = { any_country = {has_variable =var_American_Homeland_Victory_Flag_Won} }
 }
 
    
 ai_strategy = {
 		type = declare_war
-		id = "ENG"			
+		id = ENG			
 		value = 2000
 	}
 	    ai_strategy = {
 		type = conquer
-		id = "ENG"			
+		id = ENG			
 		value = 2000
 	}
     ai_strategy = {
 		type = invade
-		id = "ENG"			
+		id = ENG			
 		value = 2000
 	}
 
@@ -242,7 +299,41 @@ ai_strategy = {
 	}
 }
 
+eng_dealwtih_american_japan_enemies = {
+reversed = yes
+	 enable = { 
+		ROOT = {has_idea = imperial_japan_special_partnership}
+		ENG = { has_war_with = JAP }
+		}
+abort =  {
+ROOT = { NOT ={has_idea = imperial_japan_special_partnership}}
+OR = { any_country = {has_variable =var_American_Homeland_Victory_Flag_Won} }
+}
 
+   
+ai_strategy = {
+		type = declare_war
+		id = ENG			
+		value = 2000
+	}
+	    ai_strategy = {
+		type = conquer
+		id = ENG			
+		value = 2000
+	}
+    ai_strategy = {
+		type = invade
+		id = ENG			
+		value = 2000
+	}
+
+
+	ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = 300
+	}
+}
 
 
 

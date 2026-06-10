@@ -1,5 +1,8 @@
 #reload countrycolors
-
+USM = {
+	color = rgb { 12 0 249 }
+	color_ui = rgb { 2 31 66 }
+}
 UMI = {
 	color = rgb { 12 0 249 }
 	color_ui = rgb { 2 31 66 }

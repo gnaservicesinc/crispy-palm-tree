@@ -1,5 +1,7 @@
 union_member_state = {
 	visible = {
+	AND={
+	NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 	OR = {
 	
 		is_subject_of =  UMI

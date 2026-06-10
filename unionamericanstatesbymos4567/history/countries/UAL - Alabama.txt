@@ -1,6 +1,6 @@
 ﻿capital = 367
 
-oob = "State_Guard"
+oob = "UAL"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "USA_1936_naval_mtg"
@@ -14,21 +14,48 @@ create_country_leader = {
 	name = "Governor Jim Folsom"
 	desc = "POLITICS_JIM_FOLSOM_DESC"
 	picture = "gfx/leaders/UAL/Jim_Folsom.dds"
-	expire = "1975.1.1"
+	expire = "1985.1.1"
 	ideology = alabaman
 	traits = {
 		anti_communist 
 		socialite_connections 
-		fascist_militia_leader
+		staunch_constitutionalist
 		cornered_fox
 	}
 }
-
-set_research_slots = 4
-set_stability = 0.99
+create_country_leader = {
+	name = "John Malcolm Patterson"
+	desc = "POLITICS_JOHN_MALCOLM_PATTERSON_DESC"
+	picture = "gfx/leaders/UAL/John_Malcolm_Patterson.dds"
+	expire = "2030.1.1"
+	ideology = liberalism
+	traits = {
+		anti_communist 
+		dislikes_germany
+		staunch_constitutionalist
+		dealbroker
+	}
+}
+create_country_leader = {
+	name = "Oberleutnant Chauncey Sparks"
+	desc = "POLITICS_OBERLEUTNANT_CHAUNCEY_SPARKS_DESC"
+	picture = "gfx/leaders/UAL/Chauncey_Sparks.dds"
+	expire = "2030.1.1"
+	ideology = texanism
+	traits = {
+		lieutenant_of_industry
+		anti_communist 
+		anti_democrat
+		fascist_militia_leader
+		warmonger
+		baron_of_terror
+	}
+}
+set_research_slots = 5
+set_stability = 1
 set_war_support = 100
 add_to_tech_sharing_group = ual_investigators
-set_convoys = 4000
+set_convoys = 12000
 	set_politics = {
 		ruling_party =american_isolationism
 		election_frequency = 48
@@ -47,141 +74,6 @@ add_ideas = {
 }
 ROOT = {set_variable = { var_American_States = 1 } }
 ROOT = { set_variable = { var_Southern_States = 1 } }
-
-
- UCI  = { 
-	set_politics = {
-		ruling_party =american_isolationism
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 0
-	communism = 0
-	fascism = 0
-	american_isolationism=100
-	american_globalism = 0
-	}
-set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = random}
-set_variable = { amer_state_number_of_swings = 0}
-
-}
-
- UME  = { 
-	set_politics = {
-		ruling_party =american_isolationism
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 0
-	communism = 0
-	fascism = 0
-	american_isolationism=100
-	american_globalism = 0
-	}
-set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = random}
-set_variable = { amer_state_number_of_swings = 0}
-
-}
-
- UTN  = { 
-	set_politics = {
-		ruling_party =american_isolationism
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 0
-	communism = 0
-	fascism = 0
-	american_isolationism=100
-	american_globalism = 0
-	}
-set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = random}
-set_variable = { amer_state_number_of_swings = 0}
-
-}
-
- UKY  = { 
-	set_politics = {
-		ruling_party =american_isolationism
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 0
-	communism = 0
-	fascism = 0
-	american_isolationism=100
-	american_globalism = 0
-	}
-set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = random}
-set_variable = { amer_state_number_of_swings = 0}
-
-}
-
- UMS  = { 
-	set_politics = {
-		ruling_party =american_isolationism
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 0
-	communism = 0
-	fascism = 0
-	american_isolationism=100
-	american_globalism = 0
-	}
-set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = random}
-set_variable = { amer_state_number_of_swings = 0}
-
-}
-
- UFL  = { 
-	set_politics = {
-		ruling_party =american_isolationism
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 0
-	communism = 0
-	fascism = 0
-	american_isolationism=100
-	american_globalism = 0
-	}
-set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = random}
-set_variable = { amer_state_number_of_swings = 0}
-
-}
-
- UGO  = { 
-	set_politics = {
-		ruling_party =american_isolationism
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 0
-	communism = 0
-	fascism = 0
-	american_isolationism=100
-	american_globalism = 0
-	}
-set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = random}
-set_variable = { amer_state_number_of_swings = 0}
-
-}
-
 
  UCI  = { set_variable = { var_Southern_States = 1 }  }
  UME  = { set_variable = { var_Southern_States = 1 }  }

@@ -1,0 +1,58 @@
+UCA_alternate_plan = {
+
+	name = "UCA alternate plan"
+	desc = "Bitter is the citrus left to rot."
+
+	enable = { AND={
+		original_tag = UCA
+		is_historical_focus_on = no
+	}}
+	abort = {
+		OR ={
+			always = no
+		}
+	}
+	ai_national_focuses = {
+		American_choice_major_union_states_japan
+		American_Major_Japan_focus
+		American_Major_Japan_focus_security
+		American_Major_Japan_focus_security_expanded
+		American_Major_Japan_focus_military
+		American_Major_Japan_focus_military_expanded
+		American_Major_Japan_focus_military_expanded2
+		American_Major_Japan_focus_military_expanded3
+		American_Major_Japan_focus_military_expanded4
+		American_Major_Japan_focus_for_economy
+		American_Major_Japan_focus_join_economic_vision
+		American_Major_Japan_focus_security_expanded2
+ 		American_Major_Japan_focus_security_expanded3
+		American_Major_Japan_focus_security_expanded4
+		American_Major_Japan_focus_security_expanded5
+		American_Major_Japan_focus_military_expanded4
+		American_Major_Japan_focus_shared_government_vision_fulfilled
+		continuous_amer_war_prep
+	}
+research = {
+
+	}
+
+	ideas = {
+
+	}
+	traits = {
+		captain_of_industry = 10
+		popular_figurehead = 5
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

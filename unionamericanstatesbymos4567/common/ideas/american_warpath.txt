@@ -20,7 +20,7 @@ allowed = {always = no}
 		allowed_civil_war = {always = no}
 		removal_cost = -1
 	modifier = {
-		send_volunteer_size=10
+		send_volunteer_size=20
 		justify_war_goal_time = -0.95
 		army_leader_start_level	= 5
 		ai_focus_aggressive_factor = 0.95
@@ -54,18 +54,24 @@ allowed = {always = no}
 		removal_cost = -1
 	modifier = {
 		industrial_capacity_factory=0.90
-	production_oil_factor = 0.45
-	local_resources_factor = 0.45
-	consumer_goods_factor = 0.45
-	production_factory_max_efficiency_factor = 0.45
-	industrial_capacity_dockyard = 0.45
-	industrial_capacity_factory = 0.45
-	production_oil_factor = 0.5
-fuel_gain_factor =0.45
+	production_factory_max_efficiency_factor = 0.95
+	production_oil_factor = 0.75
+fuel_gain_factor =0.65
 fuel_gain_factor_from_states = 0.47
-	local_resources_factor = 0.10
-		consumer_goods_factor = 0.05
 		}
+}
+american_states_usa_abandon_federal_system = {
+	picture = eng_imperial_conscription
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		ai_focus_aggressive_factor = 0.99
+		foreign_subversive_activites = 0.99
+		drift_defence_factor = -0.99
+		stability_weekly =  -0.08
+		justify_war_goal_time = -0.95
+}
 }
 american_states_serious_criminal_element = {
 	picture = eng_imperial_conscription
@@ -76,7 +82,7 @@ allowed = {always = no}
 
 		foreign_subversive_activites = -0.10
 		drift_defence_factor = 0.10
-		stability_weekly =  -0.02
+		stability_weekly =  -0.01
 }
 }
 american_states_overwhelming_criminal_element = {
@@ -88,7 +94,7 @@ allowed = {always = no}
 
 		foreign_subversive_activites = -0.20
 		drift_defence_factor = 0.20
-		stability_weekly =  -0.05
+		stability_weekly =  -0.02
 }
 }
 american_states_mass_backlash_to_extreme_criminal_element = {
@@ -99,7 +105,18 @@ allowed = {always = no}
 	modifier = {
 		foreign_subversive_activites = 1.00
 		drift_defence_factor = -1.00
-		stability_weekly =  -0.10
+		stability_weekly =  -0.25
+}
+}
+american_states_mass_backlash_to_failed_coup = {
+	picture = eng_imperial_conscription
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		foreign_subversive_activites = 1.00
+		drift_defence_factor = -1.00
+		stability_weekly =  -1
 }
 }
 american_states_creative_recuitment = {
@@ -107,10 +124,9 @@ american_states_creative_recuitment = {
 allowed = {always = no}
 		allowed_civil_war = {always = no}
 		removal_cost = -1
-	modifier = {
-		conscription_factor = 0.41
-			conscription = 0.41
-		non_core_manpower = 0.42
+	modifier = {	
+			conscription = 0.51
+		non_core_manpower = 0.52
 }}
 
 american_states_state_on_the_warpath = {
@@ -120,11 +136,10 @@ allowed = {always = no}
 		removal_cost = -1
 	modifier = {
 		ai_focus_aggressive_factor = 0.95
-		training_time_factor=-0.25	
-		planning_speed=0.29
-		max_planning=0.29	
-	army_org_factor = 0.05
-		army_org = 5
+		training_time_factor=-0.45	
+		planning_speed=0.79
+		max_planning=0.79	
+		army_org = 65
 
 		}
 }

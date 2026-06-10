@@ -1,0 +1,38 @@
+
+state={
+	id=816
+	name="STATE_816"
+	resources={
+		oil=919.000
+		steel=913.000
+		aluminium=915.000
+		tungsten=915.000
+		rubber=917.000
+		chromium=918.000
+	}
+
+	history={
+		owner = UCA
+		add_core_of = USA
+		add_core_of = UCA
+		add_core_of = SOV
+	buildings = {
+			infrastructure = 9
+			industrial_complex = 12
+			air_base = 10
+		
+
+		}
+		victory_points = {
+			9671 500 
+		}
+
+	}
+
+	provinces={
+		9671
+	}
+	manpower=859248
+	buildings_max_level_factor=8.000
+	state_category=megalopolis
+}

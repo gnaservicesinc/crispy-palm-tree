@@ -1,4 +1,4 @@
-﻿oob = "State_Guard"
+﻿oob = "UGO"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "USA_1936_naval_mtg"
@@ -8,37 +8,53 @@ if = {
 }
 
 capital = 365
+create_country_leader = {
+	name = "Maj Gen Smedley D. Butler"
+	desc = "POLITICS_SMEDLEY_BUTLER_DESC"
+	picture = "gfx/leaders/UGO/Smedley_Butler.dds"
+	expire = "1985.1.1"
+	ideology = nazism
+	traits = {
+		anti_communist 
+		socialite_connections 
+		fascist_militia_leader
+		cornered_fox
+		dictator
+	}
+}
+create_country_leader = {
+	name = "Father Charles Coughlin"
+	desc = "POLITICS_CHARLES_COUGHLIN_DESC"
+	picture = "gfx/leaders/UGO/Charles_Coughlin.dds"
+	expire = "1985.1.1"
+	ideology = texanism
+	traits = {
+		anti_communist 
+		anti_democrat 
+		warmonger
+		dictator
+		baron_of_terror
+	}
+}
+
+
 
 set_research_slots = 4
 set_stability = 0.95
 set_war_support = 15
 add_to_tech_sharing_group = ual_investigators
-set_convoys = 4000
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 0
-			banned = yes
-		}
-
-		fascism = {
-			popularity = 100
-			
-		}
-		
-		communism = {
-			popularity = 1
-			banned = yes
-			 #default is no
-		}
+set_convoys = 9000
+	set_politics = {
+		ruling_party =fascism
+		elections_allowed = no
 	}
-	
-	ruling_party = fascism
-	last_election = "1932.11.8"
-	election_frequency = 36
-	elections_allowed = yes
-}
+	set_popularities = {
+	democratic = 1
+	communism = 2
+	fascism = 70
+	american_isolationism=18
+	american_globalism = 9
+	}
 
 add_ideas = {
 	free_trade

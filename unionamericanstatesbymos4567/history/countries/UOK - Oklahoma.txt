@@ -1,4 +1,4 @@
-﻿oob = "State_Guard"
+﻿oob = "UOK"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "USA_1936_naval_mtg"
@@ -8,42 +8,65 @@ if = {
 }
 
 capital = 374
+create_country_leader = {
+	name = "William Henry Davis Murray"
+	desc = "POLITICS_WILLIAM_HENRY_DAVIS_MURRAY_DESC"
+	picture = "gfx/leaders/UOK/portrait_uok_william_henry_davis_murray.dds"
+	expire = "1975.1.1"
+	ideology = liberalism
+	traits = {
+		dislikes_germany
+		staunch_constitutionalist
+		political_dancer
+		dealbroker
+		anti_communist
 
-set_research_slots = 4
+	}
+}
+create_country_leader = {
+	name = "Governor Henry Simpson Johnston"
+	desc = "POLITICS_HENRY_SIMPSON_JOHNSTON_DESC"
+	picture = "gfx/leaders/UOK/portrait_uok_henry_simpson_johnston.dds"
+	expire = "1985.1.1"
+	ideology = alabaman
+	traits = {
+		anti_communist 
+		socialite_connections 
+		staunch_constitutionalist
+		cornered_fox
+	}
+}
+create_country_leader = {
+	name = "Wissenschaftsführer Leon Chase Phillips"
+	desc = "POLITICS_LEON_CHASE_PHILLIPS_DESC"
+	picture = "gfx/leaders/UOK/portrait_uok_leon_chase_phillips.dds"
+	expire = "1975.1.1"
+	ideology = texanism
+	traits = {
+		anti_communist
+		lieutenant_of_industry
+		dealbroker
+		warmonger
+		political_dancer
+	}
+}
+set_research_slots = 16
 set_stability = 0.95
 set_war_support = 15
 add_to_tech_sharing_group = utx_investigators
 set_convoys = 4000
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 0
-			banned = yes
-		}
-
-		fascism = {
-			popularity = 0
-			banned = yes
-						
-		}
-		
-		communism = {
-			popularity = 0
-			banned = yes
-			 #default is no
-		}
-		american_globalism = {
-			popularity = 100
-		}
+	set_politics = {
+		ruling_party =american_globalism
+		election_frequency = 48
+		elections_allowed = yes
 	}
-	
-	ruling_party = american_globalism
-	last_election = "1932.11.8"
-	election_frequency = 68
-	elections_allowed = yes
-}
-
+	set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 100
+	}
 add_ideas = {
 	free_trade
 }

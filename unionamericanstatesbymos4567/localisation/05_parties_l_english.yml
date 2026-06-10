@@ -5,7 +5,7 @@
  american_isolationism_noun:0 "American Isolationism"
  american_isolationism_desc:0 "Nothing compels the United States to ensure border contiguity or political independence of any nation, to interfere in foreign domestic disputes regardless of their status in the League, or to command troops or ships without Congressional declaration of war."
  USA_american_isolationism_party:0 "AFC"
- USA_american_isolationism_party:0 "America First Committee"
+ USA_american_isolationism_party_desc:0 "America First Committee"
  USA_american_isolationism:0 "the weak Union of powerful and independent American states"
  USA_american_isolationism_noun:0 "American Isolationism"
  USA_american_isolationism_desc:0 "Nothing compels the United States to ensure border contiguity or political independence of any nation, to interfere in foreign domestic disputes regardless of their status in the League, or to command troops or ships without Congressional declaration of war."
@@ -19,3 +19,8 @@
  american_isolationism_noun:0 "American Isolationism"
  americanism:0 "Americanism"
  
+american_wilsonianism:0 "Wilsonianism"
+american_wilsonianism_desc:"For the self-determination of peoples, spread of capitalism, collective security through multilateralism,  open diplomacy, and freedom of the seas."
+american_wilsonianism_noun:0 "Wilsonism"
+american_wilsonianism_party:0 "AWP"
+american_wilsonianism_party_desc:0 "American Wilson Party"

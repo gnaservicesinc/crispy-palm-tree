@@ -7,20 +7,31 @@ country = {
 	default = no
 
 
-
 focus = {
 		id = American_Major_Warpath_Refocus_[?ROOT.GetName]
 		icon = GFX_goal_generic_production
-		prerequisite = { focus =American_Major_Warpath_focus_focus_bibb_consolidate_power_usa}
-		x = 6
+		prerequisite = { focus =American_Major_Warpath_focus_focus_bibb_consolidate_power}
+		x = 25
 		y = -3
 		dynamic =  yes
-		cost = 10
+		cost = 0
 ai_will_do = {
 			factor = 1
 		}
-available = {NOT={has_variable = var_mi_and_usa}}
-
+available = {
+	AND={
+		NOT={has_variable = var_mi_and_usa}
+		NOT = { is_in_faction_with = USA }
+		if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+	}
+}
+allow_branch = {
+	AND={
+		NOT={has_variable = var_mi_and_usa}
+		NOT = { is_in_faction_with = USA }
+		if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+	}
+}
 
 
 		 cancel_if_invalid = yes
@@ -28,7 +39,7 @@ available = {NOT={has_variable = var_mi_and_usa}}
 		available_if_capitulated = yes
 		
 		 completion_reward = {
-			load_focus_tree = { tree = American_choice_focus
+			load_focus_tree = { tree = generic_focus
                      keep_completed = yes }
 		
 }
@@ -40,11 +51,19 @@ focus = {
 		x = 0
 		y = -1
 		dynamic =  yes
-		cost = 10
+		cost = 0
 ai_will_do = {
 			factor = 1
 		}
-available = {has_variable = var_mi_and_usa}
+available = {
+	OR={
+		has_variable = var_mi_and_usa
+		  is_in_faction_with = USA
+		if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+
+		
+	}
+}
 		 cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -59,16 +78,23 @@ available = {has_variable = var_mi_and_usa}
 focus = {
 		id = American_Major_Warpath_focus_[?ROOT.GetLeader]_takes_command 
 		icon = GFX_goal_generic_production
-		x = 6
+		x = 13
 		y = 0
 		dynamic =  yes
-		cost = 10
+		cost = 25
 ai_will_do = {
 			factor = 100
 		}
-available = {NOT={has_variable = var_mi_and_usa}}		 cancel_if_invalid = yes
+available = {
+	AND={
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+		NOT={has_variable = var_mi_and_usa}
+		NOT = { is_in_faction_with = USA }
+	}
+}		
+		 cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 		
 		 completion_reward = {
 		
@@ -115,7 +141,9 @@ available = {NOT={has_variable = var_mi_and_usa}}		 cancel_if_invalid = yes
     var = var_logistics_skill
     min = 1
     max = 8
-}			
+}
+
+				
 	if={limit={tag=UTX}
 		create_field_marshal = {  
 			name = "Führer Bibb Graves"
@@ -164,8 +192,8 @@ available = {NOT={has_variable = var_mi_and_usa}}		 cancel_if_invalid = yes
 		}
 	else ={
 		create_field_marshal = {  
-			name ="Governor Jim Folsom"
-			portrait_path ="gfx/leaders/UAL/Jim_Folsom.dds"
+			name="[?[Root.GetLeader]]"
+			picture = GFX_amer_sw_generic_lead
 			skill = 8
 			attack_skill = "[?var_attack_skill]"
 			defense_skill = "[?var_defense_skill]"
@@ -187,19 +215,25 @@ focus = {
 		id = American_Major_Warpath_focus_focus_blackmarket_arms_deal_1 
 		icon = GFX_american_armsdeals
 		prerequisite = { focus =American_Major_Warpath_focus_[?ROOT.GetLeader]_takes_command  }
-		x = 3
+		x = 20
 		y = 0
-		cost = 10
+		cost = 25
 ai_will_do = {
-			factor = 100
+			factor = 10
 		}
-available = {NOT={has_variable = var_mi_and_usa}}
+available = {
+	AND={
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+		NOT={has_variable = var_mi_and_usa}
+		NOT = { is_in_faction_with = USA }
+	}
+}
 		 cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 		
 		 completion_reward = {
-		add_offsite_building = { type = arms_factory level = 4 }
+		add_offsite_building = { type = arms_factory level = 8 }
 
 		add_ideas = { american_states_sharing_is_careing }
 
@@ -214,17 +248,23 @@ focus = {
 		prerequisite = { focus =American_Major_Warpath_focus_focus_blackmarket_arms_deal_1 }
 		x = 0
 		y = 1
-		cost = 10
+		cost = 25
 ai_will_do = {
-			factor = 100
+			factor = 1
 		}
-available = {NOT={has_variable = var_mi_and_usa}}
+available = {
+	AND={
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+		NOT={has_variable = var_mi_and_usa}
+		NOT = { is_in_faction_with = USA }
+	}
+}
 		 cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 		
 		 completion_reward = {
-		add_offsite_building = { type = arms_factory level = 8 }		
+		add_offsite_building = { type = arms_factory level = 16 }		
 		add_ideas = { american_states_creative_recuitment }
 
 	}
@@ -237,17 +277,23 @@ focus = {
 		prerequisite = { focus =American_Major_Warpath_focus_focus_blackmarket_arms_deal_2 }
 		x = 0
 		y = 1
-		cost = 10
+		cost = 25
 		 cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 ai_will_do = {
-			factor = 10
+			factor = -1
 		}
-available = {NOT={has_variable = var_mi_and_usa}}
+available = {
+	AND={
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+		NOT={has_variable = var_mi_and_usa}
+		NOT = { is_in_faction_with = USA }
+	}
+}
 		
 		 completion_reward = {
-		add_offsite_building = { type = arms_factory level = 16 }
+		add_offsite_building = { type = arms_factory level = 32 }
 add_ideas = { american_states_serious_criminal_element }
 }}
 
@@ -256,19 +302,37 @@ focus = {
 		icon = GFX_american_armsdeals3
 		relative_position_id = American_Major_Warpath_focus_focus_blackmarket_arms_deal_3 
 		prerequisite = { focus =American_Major_Warpath_focus_focus_blackmarket_arms_deal_3 }
-		
+		available = {
+	AND={
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+		NOT={has_variable = var_mi_and_usa}
+		NOT = { is_in_faction_with = USA }
+	}
+}
 		x = 0
 		y = 1
-		cost = 10
+		cost = 25
 		 cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 ai_will_do = {
-			factor = 1000
+			factor = -5000
 		}
 		 completion_reward = {
-		add_offsite_building = { type = arms_factory level = 32 }
+		add_offsite_building = { type = arms_factory level = 64 }
 add_ideas = { american_states_overwhelming_criminal_element }
+
+hidden_effect = { 
+if = { limit = { AND={
+is_ai = yes
+original_tag = UTX
+JAP={is_ai = yes}
+}}
+
+UTX={add_to_faction = JAP }
+
+}}
+
 	}
 }
 focus = {
@@ -276,15 +340,21 @@ focus = {
 		icon = GFX_american_armsdeals3
 		relative_position_id = American_Major_Warpath_focus_focus_blackmarket_arms_deal_4 
 		prerequisite = { focus =American_Major_Warpath_focus_focus_blackmarket_arms_deal_4 }
-		available = {NOT={has_variable = var_mi_and_usa}}
+		available = {
+			AND={
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+				NOT={has_variable = var_mi_and_usa}
+				NOT = { is_in_faction_with = USA }
+			}
+		}	
 		x = 0
 		y = 1
-		cost = 50
+		cost = 25
 		 cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 ai_will_do = {
-			factor = -5000
+			factor = -9000
 		}
 		 completion_reward = {
 		add_offsite_building = { type = arms_factory level = 1 }
@@ -293,20 +363,25 @@ add_ideas = { american_states_mass_backlash_to_extreme_criminal_element }
 }
 
 
-
 focus = {
 		id = American_Major_Warpath_focus_focus_border_security
 		icon = GFX_american_prep
-		x = 8
+		x = 16
 		y = 0
-		cost = 10
-available = {NOT={has_variable = var_mi_and_usa}}
+		cost = 25
+		available = {
+			AND={
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+				NOT={has_variable = var_mi_and_usa}
+				NOT = { is_in_faction_with = USA }
+			}
+		}
 ai_will_do = {
 			factor = 1000
 		}
 		 cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 		
 			
 		completion_reward = { 
@@ -322,15 +397,22 @@ focus = {
 		icon = GFX_american_prep
 		relative_position_id = American_Major_Warpath_focus_focus_border_security
 		prerequisite = { focus =American_Major_Warpath_focus_focus_border_security }
+		available = {
+			AND={
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+				NOT={has_variable = var_mi_and_usa}
+				NOT = { is_in_faction_with = USA }
+			}
+		}
 ai_will_do = {
 			factor = 1000
 		}
 		x = -1
 		y = 1
-		cost = 10
+		cost = 30
 		 cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 		
 		
 			
@@ -350,15 +432,21 @@ focus = {
 		prerequisite = { focus =American_Major_Warpath_focus_focus_border_security_2 }
 		x = -1
 		y = 1
-available = {NOT={has_variable = var_mi_and_usa}}
+		available = {
+			AND={
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+				NOT={has_variable = var_mi_and_usa}
+				NOT = { is_in_faction_with = USA }
+			}
+		}
 ai_will_do = {
 			factor = 1000
 		}
 
-		cost = 10
+		cost = 40
 		 cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes 
+		available_if_capitulated = no 
 completion_reward = { 
 add_ideas = { american_states_sentence_all_criminals_to_military_service}
 add_manpower = 1000000
@@ -371,8 +459,14 @@ focus = {
 		prerequisite = { focus =American_Major_Warpath_focus_focus_border_security_3 }
 		x = -1
 		y = 1
-		cost = 10
-available = {NOT={has_variable = var_mi_and_usa}}
+		cost = 50
+		available = {
+			AND={
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+				NOT={has_variable = var_mi_and_usa}
+				NOT = { is_in_faction_with = USA }
+			}
+		}
 
 ai_will_do = {
 			factor = 1000
@@ -395,66 +489,29 @@ focus = {
 		prerequisite = {focus=American_Major_Warpath_focus_focus_border_security_4 }
 
 		x = 0
-		y = 1
-		cost = 10
-available = {NOT={has_variable = var_mi_and_usa}}
+		y = 4
+		cost = 60
+		available = {
+			AND={
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+				NOT={has_variable = var_mi_and_usa}
+				NOT = { is_in_faction_with = USA }
+			}
+		}
 ai_will_do = {
-			factor = 100
+			factor = 1000
 		}
 		 cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
-		 completion_reward = {
-	if={limit={tag=UTX}		
-for_each_scope_loop = {
-array = USA.Texan_States
- if ={ limit = { is_ai = yes}	
-	ROOT = {
-annex_country = {
-    target = PREV
-    transfer_troops = yes
+		available_if_capitulated = no
 
-}}}
-}
-else ={limit={tag=UMI}
-for_each_scope_loop = {
-array = USA.Michigan_States
- if ={ limit = { is_ai = yes}	
-	ROOT = {
-annex_country = {
-    target = PREV
-    transfer_troops = yes
 
-}}}
+	 completion_reward = {
+	add_political_power = 2000
+add_manpower = 1000000
+	}
 }
-else ={limit={tag=UCA}
-for_each_scope_loop = {
-array = USA.cali_States
- if ={ limit = { is_ai = yes}	
-	ROOT = {
-annex_country = {
-    target = PREV
-    transfer_troops = yes
 
-}}}
-}
-else ={
-for_each_scope_loop = {
-array = USA.Southern_States
- if ={ limit = { is_ai = yes}	
-	ROOT = {
-annex_country = {
-    target = PREV
-    transfer_troops = yes
-
-}}}
-}
-}
-}
-}
-}
-}
-}
 focus = {
 		id = American_Major_Warpath_focus_focus_bibb_consolidate_power_usa
 		icon = GFX_goal_generic_production
@@ -463,209 +520,52 @@ focus = {
 
 		x = 0
 		y = 1
-		cost = 10
-available = {NOT={has_variable = var_mi_and_usa}}
+		cost = 50
+		available = {
+			AND={
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+				NOT={has_variable = var_mi_and_usa}
+				NOT = { is_in_faction_with = USA }
+			}
+		}
+will_lead_to_war_with = USA
 ai_will_do = {
-			factor = 100
+						factor = 0
+
+			modifier = {
+       			 	add = -9000
+				
+				ROOT={has_government = democratic}
+				
+			}
+			modifier = {
+        			add = 9000	
+				ROOT = {has_government = communism }
+			}
+			modifier = {
+        			add = -9000	
+				ROOT = {has_government = american_globalism  }
+			}
+			modifier = {
+        			add = -9000	
+				ROOT = {has_government = american_isolationism  }
+			}
+
 		}
 		 cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 		 completion_reward = {
-			
-for_each_scope_loop = {
-array = USA.American_States
- if ={ limit = { is_ai = yes}
- ROOT = {declare_war_on = {
+every_other_country = { 
+ 		if ={ limit = { AND={ NOT={is_in_faction_with = ROOT}
+			has_variable =var_American_States
+			}}	
+			 ROOT = {declare_war_on = {
     target = PREV
     type = annex_everything
-
-}
 }}
-}
 }}
-
-focus = {
-		id = American_Major_Warpath_focus_focus_invade_mexico
-		icon = GFX_goal_generic_production
-		relative_position_id = American_Major_Warpath_focus_focus_bibb_consolidate_power_usa
-		prerequisite = { 
-			focus =American_Major_Warpath_focus_focus_bibb_consolidate_power_usa
-			 }
-
-		x = 0
-		y = 2
-		cost = 10
-available = {NOT={has_variable = var_mi_and_usa}}
-		will_lead_to_war_with = MEX
-ai_will_do = {
-			factor = 100
-		}
-		 cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		 
-			
-completion_reward = { 
-
-declare_war_on = {
-    target = MEX
-    type = annex_everything
-}
-declare_war_on = {
-    target = BRA
-    type = annex_everything
-}
-declare_war_on = {
-    target = COL
-    type = annex_everything
-}
-declare_war_on = {
-    target = ARG
-    type = annex_everything
-}
-hidden_effect = { 
-
-if={limit={tag=UTX}
-if ={ limit = {MEX = { is_ai = yes}}		
-ROOT = {
-annex_country = {
-    target = MEX
-    transfer_troops = yes
-}}}
-else ={limit={tag=UMI}
-if ={ limit = {BRA = { is_ai = yes}}
-ROOT = {
-annex_country = {
-    target = BRA
-    transfer_troops = yes
-}}}
-else ={limit={tag=UCA}
-if ={ limit = {COL = { is_ai = yes}}
-ROOT = {
-annex_country = {
-    target = COL
-    transfer_troops = yes
-}}}
-else ={
-if ={ limit = {ARG = { is_ai = yes}}
-ROOT = {
-annex_country = {
-    target = ARG
-    transfer_troops = yes
-}}}
-}
-}
-}
-}
-
-
-
-BRA = { declare_war_on = {
-    					target = ROOT
-    					type = annex_everything
-					}}
-CUB = { declare_war_on = {
-    					target = ROOT
-    					type = annex_everything
-					}}
-PAN = { declare_war_on = {
-    					target = ROOT
-    					type = annex_everything
-					}}
- 
-COS = { declare_war_on = {
-    					target = ROOT
-    					type = annex_everything
-					}}
-GUA = { declare_war_on = {
-    					target = ROOT
-    					type = annex_everything
-					}}
-HON = { declare_war_on = {
-    					target = ROOT
-    					type = annex_everything
-					}}	
-
-NIC = { declare_war_on = {
-    					target = ROOT
-    					type = annex_everything
-					}}
-COL = { declare_war_on = {
-    					target = ROOT
-    					type = annex_everything
-					}}
-
-ECU = { declare_war_on = {
-    					target = ROOT
-    					type = annex_everything
-					}}
-URG = { declare_war_on = {
-    					target = ROOT
-    					type = annex_everything
-					}}
-CHL = { declare_war_on = {
-    					target = ROOT
-    					type = annex_everything
-					}}
-ARG = { declare_war_on = {
-    					target = ROOT
-    					type = annex_everything
-					}}
-BOL = { declare_war_on = {
-    					target = ROOT
-    					type = annex_everything
-					}}
-HAI = { declare_war_on = {
-    					target = ROOT
-    					type = annex_everything
-					}}
-}}
-
-}
-
-focus = {
-		id = American_Major_Warpath_focus_focus_invade_canada
-		icon = GFX_goal_generic_production
-		relative_position_id = American_Major_Warpath_focus_focus_invade_mexico
-		prerequisite = { 
-
-			focus =American_Major_Warpath_focus_focus_bibb_consolidate_power_usa
-			 }
-		will_lead_to_war_with = CAN
-
-		x = 2
-		y = 0
-		cost = 10
-available = {NOT={has_variable = var_mi_and_usa}}
-ai_will_do = {	factor = 100 
-}
-
-
-		 cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		 completion_reward = {
-			ROOT = {declare_war_on = {
-    					target = CAN
-    					type = annex_everything
-					}}
-
-hidden_effect = { 
-
-if ={limit={tag=UMI}
-ROOT = {
-annex_country = {
-    target = CAN
-    transfer_troops = yes
-}}}
-
-CHI = { declare_war_on = {
-    					target = ROOT
-    					type = annex_everything
-					}}
-
-JAP = { declare_war_on = {
+USA = { declare_war_on = {
     					target = ROOT
     					type = annex_everything
 					}}
@@ -673,87 +573,380 @@ ENG = { declare_war_on = {
     					target = ROOT
     					type = annex_everything
 					}}
-SOV = { declare_war_on = {
-    					target = ROOT
-    					type = annex_everything
-					}}
 FRA = { declare_war_on = {
     					target = ROOT
     					type = annex_everything
 					}}
-GER = { declare_war_on = {
-    					target = ROOT
-    					type = annex_everything
-					}}
-SWE = { declare_war_on = {
-    					target = ROOT
-    					type = annex_everything
-					}}
+if ={limit={tag=UTX}
+news_event = {
+    id = amer_news.4
+    days = 1
+    random = 3
+}}
+if ={limit={tag=UAL}
+news_event = {
+    id = amer_news.5
+    days = 1
+    random = 3
+}}
 
-NOR = { declare_war_on = {
-    					target = ROOT
-    					type = annex_everything
-					}}
-IRE = { declare_war_on = {
-    					target = ROOT
-    					type = annex_everything
-					}}
-ITA = { declare_war_on = {
-    					target = ROOT
-    					type = annex_everything
-					}}
-DEN = { declare_war_on = {
-    					target = ROOT
-    					type = annex_everything
-					}}
-POR = { declare_war_on = {
-    					target = ROOT
-    					type = annex_everything
-					}}
-INS = { declare_war_on = {
-    					target = ROOT
-    					type = annex_everything
+if ={limit={tag=UCA}
+news_event = {
+    id = amer_news.6
+    days = 1
+    random = 3
+}}
+			
+}}
+
+focus = {
+		id = American_Major_Warpath_focus_focus_invade_mexico
+		icon = GFX_goal_generic_production
+		relative_position_id = American_Major_Warpath_focus_focus_bibb_consolidate_power
+		prerequisite = { 
+			focus =American_Major_Warpath_focus_focus_bibb_consolidate_power
+			 }
+
+		x = 2
+		y = 2
+		cost = 0
+		available = {
+			AND={
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+				NOT={has_variable = var_mi_and_usa}
+				NOT = { is_in_faction_with = USA }
+				ROOT = { has_government = american_globalism}
+			}
+		}
+		will_lead_to_war_with = MEX
+ai_will_do = {
+			factor = 5000
+		}
+		 cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+			
+completion_reward = { 
+ 
+add_to_array = { array = Targeted_By_Bib value= MEX }
+add_to_array = { array = Targeted_By_Bib value= UMX }
+add_to_array = { array = Targeted_By_Bib value= BRA }
+add_to_array = { array = Targeted_By_Bib value= GER }
+add_to_array = { array = Targeted_By_Bib value= ITA }
+add_to_array = { array = Targeted_By_Bib value= JAP }
+add_to_array = { array = Targeted_By_Bib value= PRU }
+add_to_array = { array = Targeted_By_Bib value= VEN }
+add_to_array = { array = Targeted_By_Bib value= COL }
+add_to_array = { array = Targeted_By_Bib value= ARG }
+
+for_each_scope_loop = {
+array = Targeted_By_Bib
+if={limit={ OR={
+ has_government = fascism
+ has_government = american_globalism
+ }}
+set_variable = { var_American_States = 1 }
+set_rule = {
+   units_deployed_to_overlord  = yes
+ can_generate_female_aces = yes
+
 }
-					}}
+	set_politics = {
+		ruling_party =american_globalism
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 100
+	}
+ROOT={
+give_guarantee = PREV
+add_to_faction = PREV
+add_to_array = { array = USA.American_States value= PREV }
+if = { limit = { has_dlc = "Together for Victory"}
+set_autonomy = {target = PREV autonomous_state = autonomy_united_states_state }
+else = {
+puppet =PREV
+} 
+}}
+
+
+else={
+ROOT = {declare_war_on = {
+    target = PREV
+    type = annex_everything
+}}
+}
+}
+}
+
+
 }
 }
 
 focus = {
-		id = American_Major_Warpath_focus_world
+		id = American_Major_Warpath_focus_focus_invade_canada
 		icon = GFX_goal_generic_production
-		relative_position_id = American_Major_Warpath_focus_focus_invade_mexico
-		x = 0
-		y = 2
+		relative_position_id = American_Major_Warpath_focus_focus_bibb_consolidate_power
+		prerequisite = { 
+
+			focus =American_Major_Warpath_focus_focus_bibb_consolidate_power
+			 }
+		will_lead_to_war_with = CAN
+
+		x = -2
+		y = 0
+		cost = 150
+		available = {
+			AND={
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+				NOT={has_variable = var_mi_and_usa}
+				NOT = { is_in_faction_with = USA }
+				NOT = { is_in_faction_with = CAN }
+			ROOT={has_government = democratic}
+			}
+		}
+ai_will_do = {	factor = -5000}
+
+
+		 cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		 completion_reward = {
+			ROOT = {declare_war_on = {
+    					target = CAN
+    					type = annex_everything
+					}}
+
+hidden_effect = { 
+random_list = { 75 = {
+if ={limit={tag=UMI}
+if ={ limit = {CAN = { is_ai = yes}}
+ROOT = {
+annex_country = {
+    target = CAN
+    transfer_troops = yes
+}}}}}}
+
+
+if ={ limit = {ENG = { is_ai = yes}}
+ENG = { declare_war_on = {
+    					target = ROOT
+    					type = annex_everything
+					}}}
+
+if ={ limit = {FRA = { is_ai = yes}}
+FRA = { declare_war_on = {
+    					target = ROOT
+    					type = annex_everything
+					}}}
+
+if ={ limit = {SWE = { is_ai = yes}}
+SWE = { declare_war_on = {
+    					target = ROOT
+    					type = annex_everything
+					}}}
+
+
+if ={ limit = {NOR = { is_ai = yes}}
+NOR = { declare_war_on = {
+    					target = ROOT
+    					type = annex_everything
+					}}}
+
+if ={ limit = {IRE = { is_ai = yes}}
+IRE = { declare_war_on = {
+    					target = ROOT
+    					type = annex_everything
+					}}}
+
+if ={ limit = {DEN = { is_ai = yes}}
+DEN = { declare_war_on = {
+    					target = ROOT
+    					type = annex_everything
+					}}}
+
+if ={ limit = {POR = { is_ai = yes}}
+POR = { declare_war_on = {
+    					target = ROOT
+    					type = annex_everything
+					}}}
+
+if ={ limit = {INS = { is_ai = yes}}
+INS = { declare_war_on = {
+    					target = ROOT
+    					type = annex_everything
+					}}}
+}
+}
+}
+
+	
+focus = {
+		id = American_Major_Warpath_focus_world_cali
+		icon = GFX_goal_generic_production
+		relative_position_id = American_Major_Warpath_focus_focus_bibb_consolidate_power
+		x = 2
+		y = 0
 		cost = 10
 	cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 	prerequisite = { 
-			focus =American_Major_Warpath_focus_focus_invade_mexico
-			focus =American_Major_Warpath_focus_focus_invade_canada
-			 }
+
+		focus =American_Major_Warpath_focus_focus_bibb_consolidate_power}
+	
 ai_will_do = {
-			factor = 10
+			factor = 5000
 		}
-available = {NOT={has_variable = var_mi_and_usa}}
-		
+available = {
+	AND={
+	is_faction_leader = yes 
+	ROOT = {NOT={has_variable = var_mi_and_usa}}
+	ROOT = {NOT = { is_in_faction_with = USA }}
+	ROOT = { has_government = communism }
+	SOV = { has_government = communism }
+	SOV = {is_ai = yes}
+	NOT={SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}
 
+	}
+}
 completion_reward = {
-every_other_country={
-ROOT = { 
-declare_war_on = {
-    target = PREV
-    type = annex_everything
+if ={limit={
+country_exists= SOV
+is_faction_leader = yes
+SOV = {is_ai = yes}
+NOT={SOV = {   has_variable =SOV.var_Sov_Soviet_War_Criminals }}
+}
+ROOT = {
+annex_country = {
+    target = SOV
+    transfer_troops = yes
+
 }}
+ROOT = {
+add_named_threat = { 
+    threat = 100
+    name = "Soviet Union and [?[Root.GetName]] Merge"
+}
+}
+ROOT = { news_event = {
+    id = amer_news.10
+    days = 1
+    random = 3
+}}
+}
+}
+}
+focus = {
+		id = American_Major_Warpath_focus_world_alab_wait
+		icon = GFX_goal_generic_production
+		relative_position_id = American_Major_Warpath_focus_focus_bibb_consolidate_power
+		x =-5
+		y = 0
+		cost = 2
+	cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		prerequisite = { 
 
+		focus =American_Major_Warpath_focus_focus_bibb_consolidate_power}
+ai_will_do = {
+			factor = 9000
+}
+available = {
+	AND={
+	NOT={has_variable = var_mi_and_usa}	
+	NOT = { is_in_faction_with = USA }
+	ROOT = { has_government = american_isolationism }
+	}}
+completion_reward = {
+			add_offsite_building = { type = arms_factory level = 128 }
+			add_offsite_building = { type = industrial_complex level = 128 }
+		}
 }
 
+focus = {
+		id = American_Major_Warpath_focus_world_alab
+		icon = GFX_goal_generic_production
+		relative_position_id = American_Major_Warpath_focus_world_alab_wait
+		x =0
+		y = -1
+		cost = 10
+	cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	prerequisite = { 
+		focus =American_Major_Warpath_focus_world_alab_wait}
+	
+ai_will_do = {
+			factor = -9000
+		}
+available = {
+	AND={
+	NOT={has_variable = var_mi_and_usa}	
+	NOT = { is_in_faction_with = USA }
+	ROOT = { has_government = american_isolationism }
+	UTX = { NOT={ has_government = american_isolationism }}
+	UTX = { has_completed_focus = American_Major_Warpath_focus_focus_invade_mexico }
+
+	UTX = {is_ai = yes}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+	}
 }
-}	
+completion_reward = {
+if ={limit={
+country_exists= UTX
+UTX = {is_ai = yes}
+}
+ROOT = {
+annex_country = {
+    target = UTX
+    transfer_troops = yes
 
+}}
+add_named_threat = { 
+    threat = -100
+    name = "Texas threat eliminated"
+}
+ROOT = { news_event = {
+    id = amer_news.11
+    days = 1
+    random = 3
+}}}
 
+}
+}
 
+focus = {
+		id = American_Major_Warpath_focus_refocus_sov_war
+		icon = GFX_american_team_USA
+		relative_position_id = American_Major_Warpath_Refocus_[?ROOT.GetName]
+		x = 2
+		y = 0
+		cost = 1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		dynamic =  yes
+	
+ai_will_do = {
+			factor = 1
+		}
+available = {
+SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }
+	if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 ROOT={ has_war_with = SOV}	}
+	}
+completion_reward = {
+load_focus_tree = { tree = american_soviet_war_focus
+                     keep_completed = no }
 
-
+}
+}
 
 }###################

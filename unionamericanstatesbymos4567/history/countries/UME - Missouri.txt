@@ -1,5 +1,5 @@
 ﻿capital = 373
-oob = "State_Guard"
+oob = "UME"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "USA_1936_naval_mtg"
@@ -15,38 +15,73 @@ set_stability = 0.95
 set_war_support = 15
 add_to_tech_sharing_group = ual_investigators
 set_convoys = 4000
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 0
-			banned = yes
-		}
-
-		fascism = {
-			popularity = 25
-			
-		}
-
-		american_isolationism = {
-			popularity = 70
-			
-		}
-		american_globalism = {
-			popularity = 5
-			}
-		communism = {
-			popularity = 0
-			banned = yes
-		}
+	set_politics = {
+		ruling_party =american_isolationism
+		election_frequency = 48
+		elections_allowed = yes
 	}
-	
-	ruling_party = american_isolationism
-	last_election = "1932.11.8"
-	election_frequency = 48
-	elections_allowed = yes
-}
+	set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 0
+	american_isolationism=100
+	american_globalism = 0
+	}
 
+create_country_leader = {
+	name = "Governor Arthur Mastick Hyde"
+	desc = "POLITICS_ARTHUR_M_HYDE_DESC"
+	picture = "gfx/leaders/UME/Arthur_M_Hyde.dds"
+	expire = "1985.1.1"
+	ideology = alabaman
+	traits = {
+		anti_communist 
+		socialite_connections 
+		staunch_constitutionalist
+		cornered_fox
+	}
+}
+create_country_leader = {
+	name = "Führer der Waffen Forest Smith"
+	desc = "POLITICS_FORREST_SMITH_DESC"
+	picture = "gfx/leaders/UME/Forrest_Smith.dds"
+	expire = "1985.1.1"
+	ideology = texanism
+	traits = {
+		anti_communist 
+		anti_democrat
+		warmonger
+		baron_of_terror
+	}
+}
+create_country_leader = {
+	name = "Phil Donnelly"
+	desc = "POLITICS_PHIL_DONNELLY_DESC"
+	picture = "gfx/leaders/UME/Phil_Donnelly.dds"
+	expire = "1975.1.1"
+	ideology = liberalism
+	traits = {
+		dislikes_germany
+		staunch_constitutionalist
+		political_dancer
+		dealbroker
+		anti_communist
+
+	}
+}
+create_country_leader = {
+	name = "Party Secretary Guy Brasfield Park"
+	desc = "POLITICS_GUY_BRASFIELD_PARK_DESC"
+	picture = "gfx/leaders/UME/Guy_Brasfield_Park.dds"
+	expire = "1975.1.1"
+	ideology = stalinism
+	traits = {
+		triumphant_revolutionary
+		anti_democrat
+		red_army_organizer
+		warmonger
+	}
+}
 add_ideas = {
 	free_trade
 	home_of_the_free

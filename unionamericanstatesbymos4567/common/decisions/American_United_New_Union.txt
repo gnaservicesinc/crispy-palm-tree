@@ -1,0 +1,37 @@
+American_USA_New_Union= {
+
+
+unite_the_american_states_accept_the_results = {
+
+          cost = 0
+fixed_random_seed = no	
+ fire_only_once = yes
+
+ai_will_do = {
+			factor = 10000
+	}
+       target_trigger = {
+		FROM = { 
+		NOT = { tag = ROOT }
+		has_variable =var_American_Homeland_Victory_Flag_Won	
+		
+	}
+	}
+
+available = {
+		ROOT ={ NOT={has_variable =var_American_Homeland_Victory_Flag_Won}}
+
+ROOT ={ NOT = { is_subject_of = FROM }}
+}
+
+
+complete_effect = {
+
+	if = { limit = { has_dlc = "Together for Victory"}
+	FROM = { set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state }}
+	else = {FROM = {puppet =ROOT} } 
+	}
+	}
+				
+   }
+}#####################

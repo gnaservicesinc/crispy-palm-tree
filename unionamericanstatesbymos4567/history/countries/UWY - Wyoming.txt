@@ -1,6 +1,6 @@
 ﻿capital = 381
 
-oob = "State_Guard"
+oob = "UWY"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "USA_1936_naval_mtg"
@@ -11,37 +11,62 @@ if = {
 
 
 
-set_research_slots = 4
+create_country_leader = {
+	name = "Youth Chairperson George Clayton Johnson"
+	desc = "POLITICS_GEORGE_CLAYTON_JOHNSON_DESC"
+	picture = "gfx/leaders/UWY/portrait_uwy_george_clayton_johnson.dds"
+	expire = "1975.1.1"
+	ideology = stalinism
+	traits = {
+		triumphant_revolutionary
+		anti_democrat
+		red_army_organizer
+		warmonger
+	}
+}
+create_country_leader = {
+	name = "Governor John Benjamin Kendrick"
+	desc = "POLITICS_JOHN_BENJAMIN_KENDRICK_DESC"
+	picture = "gfx/leaders/UWY/portrait_uwy_john_benjamin_kendrick.dds"
+	expire = "1985.1.1"
+	ideology = alabaman
+	traits = {
+		anti_communist 
+		socialite_connections 
+		staunch_constitutionalist
+		cornered_fox
+	}
+}
+create_country_leader = {
+	name = "Gerechtigkeitsführer Edgar Jacob Herschler"
+	desc = "POLITICS_EDGAR_JACOB_HERSCHLER_DESC"
+	picture = "gfx/leaders/UWY/portrait_uwy_edgar_jacob_herschler.dds"
+	expire = "1975.1.1"
+	ideology = texanism
+	traits = {
+		lieutenant_of_industry
+		anti_democrat
+		warmonger
+		baron_of_terror
+	}
+}
+set_research_slots = 6
 set_stability = 0.95
 set_war_support = 15
-add_to_tech_sharing_group = usa_investigators
+add_to_tech_sharing_group = uca_investigators
 set_convoys = 4000
-set_politics = {
-
-
-	parties = {
-		democratic = { 
-			popularity = 0
-			banned = yes
-		}
-
-		fascism = {
-			popularity = 0
-			banned = yes
-		}
-		
-		communism = {
-			popularity = 100
-			
-			 #default is no
-		}
+	set_politics = {
+		ruling_party =communism
+		election_frequency = 48
+		elections_allowed = yes
 	}
-	
-	ruling_party = communism
-	last_election = "1932.11.8"
-	election_frequency = 48
-	elections_allowed = yes
-}
+	set_popularities = {
+	democratic = 0
+	communism = 100
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 0
+	}
 
 add_ideas = {
 	free_trade

@@ -1,0 +1,121 @@
+ideas = {
+
+	 country = {
+
+	american_soviet_war_1 = {
+	picture = eng_imperial_conscription
+	allowed = {always = no}
+	allowed_civil_war = {always = no}
+	removal_cost = -1
+	modifier = {
+		army_leader_start_level	= 6
+		ai_focus_aggressive_factor = 1.00
+		}
+
+	}
+	american_soviet_war_2 = {
+	picture = eng_imperial_conscription
+	allowed = {always = no}
+	allowed_civil_war = {always = no}
+	removal_cost = -1
+	modifier = {
+	
+		army_org = 75
+		army_org_factor = 0.75
+		training_time_factor=-0.95	
+		planning_speed=0.99
+		max_planning=0.99
+		max_dig_in = 1
+		out_of_supply_factor = -0.95
+		land_reinforce_rate = 0.92
+		}
+	}
+	american_soviet_war_3 = {
+	picture = eng_imperial_conscription
+	allowed = {always = no}
+	allowed_civil_war = {always = no}
+	removal_cost = -1
+	modifier = {
+		weekly_manpower = 100000
+		non_core_manpower = 0.92
+		conscription_factor = 0.91
+		conscription = 0.91
+		}
+	}
+	american_soviet_war_4 = {
+	picture = eng_imperial_conscription
+	allowed = {always = no}
+	allowed_civil_war = {always = no}
+	removal_cost = -1
+	modifier = {
+		industrial_capacity_factory=0.90
+		local_resources_factor = 0.85
+		consumer_goods_factor = 0.75
+		production_factory_max_efficiency_factor = 0.85
+		}
+	 }
+	american_soviet_war_5 = {
+	picture = eng_imperial_conscription
+	allowed = {always = no}
+	allowed_civil_war = {always = no}
+	removal_cost = -1
+	modifier = {
+		production_oil_factor = 0.90
+		fuel_gain_factor =0.95
+		fuel_gain_factor_from_states = 0.97
+		}
+	}
+	american_soviet_war_6 = {
+	picture = eng_imperial_conscription
+	allowed = {always = no}
+	allowed_civil_war = {always = no}
+	removal_cost = -1
+	modifier = {
+		stability_weekly = 0.10
+		war_support_weekly = 0.10
+		}
+	}
+	american_soviet_war_7 = {
+	picture = eng_imperial_conscription
+	allowed = {always = no}
+	allowed_civil_war = {always = no}
+	removal_cost = -1
+	modifier = {
+		foreign_subversive_activites = -0.99
+		drift_defence_factor = 0.99
+		}
+	}
+	american_soviet_war_8 = {
+	picture = eng_imperial_conscription
+	allowed = {always = no}
+	allowed_civil_war = {always = no}
+	removal_cost = -1
+	modifier = {
+		decryption_factor = 1.00
+		encryption_factor = 1.00
+		}
+	}
+	american_soviet_war_9 = {
+	picture = eng_imperial_conscription
+	allowed = {always = no}
+	allowed_civil_war = {always = no}
+	removal_cost = -1
+	modifier = {
+		experience_loss_factor = -0.95
+		offence = 0.75
+		defence = 0.75
+		}}
+	american_soviet_war_10 = {
+	picture = eng_imperial_conscription
+	allowed = {always = no}
+	allowed_civil_war = {always = no}
+	removal_cost = -1
+	modifier = {
+		supply_consumption_factor = -0.96
+		industrial_capacity_dockyard = 0.85
+		industrial_capacity_factory = 0.85
+		}
+
+	}
+
+}}

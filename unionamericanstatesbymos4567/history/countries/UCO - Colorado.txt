@@ -1,6 +1,6 @@
 ﻿capital = 382
 
-oob = "State_Guard"
+oob = "UCO"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "USA_1936_naval_mtg"
@@ -28,35 +28,18 @@ set_stability = 0.95
 set_war_support = 15
 add_to_tech_sharing_group = uca_investigators
 set_convoys = 4000
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 0
-			banned = yes
-		}
-
-		fascism = {
-			popularity = 0
-			banned = yes
-						
-		}
-		
-		communism = {
-			popularity = 0
-			banned = yes
-			 #default is no
-		}
-		american_globalism = {
-			popularity = 100
-		}
+	set_politics = {
+		ruling_party =american_globalism
+		election_frequency = 48
+		elections_allowed = yes
 	}
-	
-	ruling_party = american_globalism
-	last_election = "1932.11.8"
-	election_frequency = 68
-	elections_allowed = yes
-}
+	set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 100
+	}
 add_ideas = {
 	free_trade
 }

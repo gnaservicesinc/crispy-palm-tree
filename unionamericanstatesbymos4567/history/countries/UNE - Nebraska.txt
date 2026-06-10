@@ -1,5 +1,5 @@
 ﻿capital = 384
-oob = "State_Guard"
+oob = "UNE"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "USA_1936_naval_mtg"
@@ -8,37 +8,64 @@ if = {
 	}
 }
 
+create_country_leader = {
+	name = "Samuel McKelvie"
+	desc = "POLITICS_SAMUEL_MCKELVIE_DESC"
+	picture = "gfx/leaders/UNE/portrait_une_samuel_mckelvie.dds"
+	expire = "1975.1.1"
+	ideology = liberalism
+	traits = {
+		dislikes_germany
+		staunch_constitutionalist
+		political_dancer
+		dealbroker
+		anti_communist
 
-
+	}
+}
+create_country_leader = {
+	name = "Governor Adam McMullen"
+	desc = "POLITICS_ADAM_MCMULLEN_DESC"
+	picture = "gfx/leaders/UNE/portrait_une_adam_mcmullen.dds"
+	expire = "1985.1.1"
+	ideology = alabaman
+	traits = {
+		anti_communist 
+		socialite_connections 
+		staunch_constitutionalist
+		cornered_fox
+	}
+}
+create_country_leader = {
+	name = "Führer Charles Bryan"
+	desc = "POLITICS_CHARLES_BRYAN_DESC"
+	picture = "gfx/leaders/UNE/portrait_une_charles_bryan.dds"
+	expire = "1975.1.1"
+	ideology = texanism
+	traits = {
+		lieutenant_of_industry
+		anti_democrat
+		warmonger
+		baron_of_terror
+	}
+}
 set_research_slots = 4
 set_stability = 0.95
 set_war_support = 15
 add_to_tech_sharing_group = umi_investigators
 set_convoys = 4000
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 99
-		}
-
-		fascism = {
-			popularity = 0
-			banned = yes
-		}
-		
-		communism = {
-			popularity = 1
-			banned = yes
-			 #default is no
-		}
+		ruling_party = democratic
+		election_frequency = 48
+		elections_allowed = yes
 	}
-	
-	ruling_party = democratic
-	last_election = "1932.11.8"
-	election_frequency = 48
-	elections_allowed = yes
-}
+	set_popularities = {
+	democratic = 100
+	communism = 0
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 0
+	}
 
 add_ideas = {
 	free_trade

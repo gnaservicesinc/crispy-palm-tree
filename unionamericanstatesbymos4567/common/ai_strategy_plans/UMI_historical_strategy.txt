@@ -1,0 +1,74 @@
+UMI_historical_plan = {
+
+	name = "UMI historical plan"
+	desc = "Just a peaceful lakeside democracy. We don't have a secrete Mongoose-Beaver hybrid army! Don't look at that Mongoose-Beaver! Nothing to see here. Move along, now, move along."
+
+	enable = { AND={
+		original_tag = UMI
+		is_historical_focus_on = yes
+	}}
+	abort = {
+		OR ={
+			is_subject = yes
+			NOT = { has_government = democratic }
+		}
+	}
+	ai_national_focuses = {
+		American_choice_major_union_states_refocus_to_crouching_tiger
+		American_Crouching_Tiger_recruitment
+		American_Crouching_Tiger_Arms
+		American_Crouching_Tiger_recruitment_2
+		American_Crouching_Tiger_Arms_2
+		American_Crouching_Tiger_recruitment_3
+		American_Crouching_Tiger_Arms_3
+		American_Crouching_Tiger_recruitment_4
+		American_Crouching_Tiger_Arms_4
+		American_Crouching_Tiger_recruitment_5
+		American_Crouching_Tiger_Arms_5
+		American_Crouching_Tiger_recruitment_6
+		American_Crouching_Tiger_Arms_6
+		American_Crouching_Tiger_Arms_7
+		American_Crouching_Tiger_recruitment_7
+		American_Crouching_Tiger_infrastructure
+		American_Crouching_Tiger_recruitment_8
+		American_Crouching_Tiger_infrastructure_2
+		American_Crouching_Tiger_recruitment_9
+		American_Crouching_Tiger_infrastructure_3 
+		American_Crouching_Tiger_recruitment_10
+		American_Crouching_Tiger_infrastructure_4
+		American_Crouching_Tiger_Recruitment_Refocus
+		American_Major_Warpath_focus_[?ROOT.GetLeader]_takes_command
+		American_Major_Warpath_focus_focus_border_security
+		American_Major_Warpath_focus_focus_border_security_2
+		American_Major_Warpath_focus_focus_border_security_3
+		American_Major_Warpath_focus_focus_border_security_4
+		American_Major_Warpath_focus_focus_bibb_consolidate_power
+		American_Major_Warpath_focus_[?ROOT.GetLeader]_takes_command
+		continuous_amer_war_prep
+
+		
+	}
+research = {
+
+	}
+
+	ideas = {
+
+	}
+	traits = {
+		captain_of_industry = 50
+		popular_figurehead = 5
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

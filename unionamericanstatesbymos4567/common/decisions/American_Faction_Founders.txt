@@ -1,18 +1,19 @@
 american_major_state = {
 
 american_major_state_build_intelligence_agency = {
-fire_only_once = yes
- cost = 250
-		days_remove = 30
- available = {
-tag=UMI
-}
+ cost = 5
+		days_remove = 1
+days_re_enable = 1
+
 visible = {
-tag=UMI
+has_intelligence_agency=yes
 }
 available = {
-      if = { limit = { NOT = { has_idea = american_states_intelligence_agency_level_5 }}}
+ NOT = { has_idea = american_states_intelligence_agency_level_5 }
 }
+ai_will_do = {
+			factor = 1000
+	}
 remove_effect = {
 	if={limit={has_idea = american_states_intelligence_agency_level_4}
 		 add_ideas = { american_states_intelligence_agency_level_5}
@@ -39,38 +40,76 @@ else = { add_ideas = {american_states_intelligence_agency_level_1}
 }}}}}
 }
 
-american_major_state_assassinate_bibb_attempt = {
-		
+american_major_state_assassinate_attempt = {
+	target_trigger = { FROM = { 
+	has_variable =var_American_States
+	OR={	
+		is_major = yes
+		NOT={is_subject = yes}
+	  }
+	}}
+war_with_target_on_complete = yes
  available = {
-tag=UMI
+AND={
+	OR={	
+		FROM={is_major = yes}
+		FROM={NOT={is_subject = yes}}
+	  }
+FROM={NOT={is_subject = yes}}
+FROM={NOT = { is_in_faction_with = ROOT }}
+ROOT={has_idea = american_states_intelligence_agency_level_5}
 }
-visible = {
-tag=UMI
-}		
-ai_will_do = {factor = 1 }
-			cost = 500
-		days_remove = 1
-		fire_only_once = yes
-
-            target_trigger = {
-		FROM = {tag = UTX}
+}
+ai_will_do = {factor = 1 
+		 modifier = {
+		add = 1000
+		ROOT={has_war_with =FROM}
 		}
-		complete_effect = {
-		hold_election = FROM
-		if={limit={ tag = UTX }
-	country_event={	
-    id = texan.1
-    days = 1
-    random = 5
-}
 
-UTX ={load_focus_tree = { tree = American_Major_texas_post_bibb
+	}
+	cost = 500
+fixed_random_seed = no	
+
+complete_effect = {
+random_list = {
+    10 = {
+	news_event={	
+   				 id = amer_news.12
+    				 days = 1
+   				 random = 5
+				}
+        if={limit={FROM={has_government = american_globalism}} FROM={kill_ideology_leader=american_globalism}  }
+	if={limit={FROM={has_government = american_isolationism}} FROM={kill_ideology_leader=american_isolationism}  }
+	if={limit={FROM={has_government = democratic}} FROM={kill_ideology_leader=democratic}  }
+	if={limit={FROM={has_government = communism}} FROM={kill_ideology_leader=communism}  }
+	if={limit={FROM={has_government = fascism}} FROM={kill_ideology_leader=fascism}  }
+	if={limit={FROM={has_government = neutrality}} FROM={kill_ideology_leader=neutrality}  }
+	hold_election = FROM
+	ROOT = {set_variable = { var_assassinated_world_leader = 1 } }
+	if={limit={FROM={original_tag = UTX} }
+			ROOT = {set_variable = { var_bib_killed = 1 } }
+			FROM = {set_variable = { var_bib_killed = 1 } }			
+			FROM = {load_focus_tree = { tree = American_Major_texas_post_bibb
                      keep_completed = no }}
-
+			}
+	FROM = {add_war_support = 1}
+			if ={ limit={ NOT={ROOT={has_war_with =FROM}} } FROM = {declare_war_on= { target = ROOT	 type = annex_everything }}}
+    }
+   	90 = {
+		news_event={	
+   				 id = amer_news.13
+    				 days = 1
+   				 random = 5
+				}
+		add_war_support = -1
+		FROM = {add_war_support = 1}
+		if ={ limit={ NOT={ROOT={has_war_with =FROM}} } FROM = {declare_war_on= { target = ROOT	 type = annex_everything }}}
+    }
 
 }
-		
 }
+
+
 }
 
 

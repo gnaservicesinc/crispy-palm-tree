@@ -1,0 +1,2183 @@
+wilson_goals={
+enable = {
+	 NOT={original_tag = USA}
+	has_variable =var_American_States
+	has_government =american_wilsonianism
+	}
+abort = {NOT={has_government =american_wilsonianism}}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = USA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = USA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = USA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = USA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = USA			
+		value = 9000
+	}
+ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = 9000
+	}
+ai_strategy = {
+		type = prepare_for_war
+		id = UMI			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UMI			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UMI			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UMI			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UMI			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UIL			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UIL			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UIL			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UIL			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UIL			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UNY			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UNY			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UNY			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UNY			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UNY			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UAL			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UAL			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UAL			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UAL			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UAL			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UCA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UCA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UCA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UCA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UCA			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UTX			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UTX			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UTX			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UTX			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UTX			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UIN			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UIN			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UIN			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UIN			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UIN			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UCI			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UCI			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UCI			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UCI			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UCI			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UDK			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UDK			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UDK			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UDK			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UDK			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UMN			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UMN			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UMN			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UMN			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UMN			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UEN			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UEN			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UEN			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UEN			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UEN			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UKY			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UKY			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UKY			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UKY			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UKY			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UTN			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UTN			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UTN			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UTN			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UTN			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UMS			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UMS			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UMS			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UMS			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UMS			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UFL			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UFL			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UFL			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UFL			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UFL			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UGO			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UGO			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UGO			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UGO			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UGO			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UVA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UVA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UVA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UVA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UVA			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UNE			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UNE			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UNE			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UNE			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UNE			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UME			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UME			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UME			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UME			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UME			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UAR			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UAR			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UAR			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UAR			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UAR			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = ULA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = ULA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = ULA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = ULA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = ULA			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UWI			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UWI			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UWI			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UWI			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UWI			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UOK			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UOK			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UOK			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UOK			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UOK			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UIA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UIA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UIA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UIA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UIA			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UKA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UKA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UKA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UKA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UKA			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UOH			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UOH			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UOH			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UOH			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UOH			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UPE			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UPE			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UPE			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UPE			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UPE			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UML			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UML			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UML			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UML			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UML			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UNJ			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UNJ			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UNJ			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UNJ			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UNJ			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UWA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UWA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UWA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UWA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UWA			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UID			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UID			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UID			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UID			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UID			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UAZ			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UAZ			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UAZ			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UAZ			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UAZ			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UUT			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UUT			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UUT			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UUT			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UUT			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UNV			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UNV			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UNV			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UNV			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UNV			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UOR			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UOR			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UOR			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UOR			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UOR			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UMO			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UMO			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UMO			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UMO			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UMO			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UCO			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UCO			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UCO			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UCO			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UCO			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UMX			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UMX			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UMX			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UMX			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UMX			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UWY			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UWY			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UWY			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UWY			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UWY			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UHW			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UHW			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UHW			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UHW			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UHW			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UAK			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UAK			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UAK			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UAK			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UAK			
+		value = 9000
+	}
+
+
+}
+
+wilson_goalsR={
+reversed = yes
+enable = {
+	 NOT={original_tag = USA}
+	has_variable =var_American_States
+	has_government =american_wilsonianism
+	}
+abort = {NOT={has_government =american_wilsonianism}}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UMI			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UMI			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UMI			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UMI			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UMI			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UIL			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UIL			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UIL			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UIL			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UIL			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UNY			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UNY			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UNY			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UNY			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UNY			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UAL			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UAL			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UAL			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UAL			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UAL			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UCA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UCA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UCA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UCA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UCA			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UTX			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UTX			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UTX			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UTX			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UTX			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UIN			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UIN			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UIN			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UIN			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UIN			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UCI			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UCI			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UCI			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UCI			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UCI			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UDK			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UDK			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UDK			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UDK			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UDK			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UMN			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UMN			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UMN			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UMN			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UMN			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UEN			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UEN			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UEN			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UEN			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UEN			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UKY			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UKY			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UKY			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UKY			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UKY			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UTN			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UTN			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UTN			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UTN			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UTN			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UMS			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UMS			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UMS			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UMS			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UMS			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UFL			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UFL			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UFL			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UFL			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UFL			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UGO			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UGO			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UGO			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UGO			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UGO			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UVA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UVA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UVA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UVA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UVA			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UNE			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UNE			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UNE			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UNE			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UNE			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UME			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UME			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UME			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UME			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UME			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UAR			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UAR			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UAR			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UAR			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UAR			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = ULA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = ULA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = ULA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = ULA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = ULA			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UWI			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UWI			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UWI			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UWI			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UWI			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UOK			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UOK			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UOK			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UOK			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UOK			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UIA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UIA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UIA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UIA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UIA			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UKA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UKA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UKA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UKA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UKA			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UOH			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UOH			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UOH			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UOH			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UOH			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UPE			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UPE			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UPE			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UPE			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UPE			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UML			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UML			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UML			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UML			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UML			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UNJ			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UNJ			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UNJ			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UNJ			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UNJ			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UWA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UWA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UWA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UWA			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UWA			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UID			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UID			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UID			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UID			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UID			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UAZ			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UAZ			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UAZ			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UAZ			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UAZ			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UUT			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UUT			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UUT			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UUT			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UUT			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UNV			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UNV			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UNV			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UNV			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UNV			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UOR			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UOR			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UOR			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UOR			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UOR			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UMO			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UMO			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UMO			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UMO			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UMO			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UCO			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UCO			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UCO			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UCO			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UCO			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UMX			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UMX			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UMX			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UMX			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UMX			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UWY			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UWY			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UWY			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UWY			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UWY			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UHW			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UHW			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UHW			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UHW			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UHW			
+		value = 9000
+	}
+
+ai_strategy = {
+		type = prepare_for_war
+		id = UAK			
+		value = 9000
+	}
+    ai_strategy = {
+		type = declare_war
+		id = UAK			
+		value = 9000
+	}
+    ai_strategy = {
+		type = invade
+		id = UAK			
+		value = 9000
+	}
+    ai_strategy = {
+		type = conquer
+		id = UAK			
+		value = 9000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = UAK			
+		value = 9000
+	}
+
+}

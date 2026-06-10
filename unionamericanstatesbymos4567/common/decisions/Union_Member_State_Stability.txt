@@ -6,10 +6,92 @@ American_States_Stability_Stabilize = {
 available = {
       if = { limit = { NOT = { has_idea = american_states_stabilization_level_10 }}}
 }
-		cost = 150
-		days_remove = 1
-		days_re_enable = 30
 
+
+ai_will_do = {
+factor = 0
+
+
+ modifier = {
+        add = 100
+	AND={
+		check_variable = { stability < 0.50 }
+		OR={
+			AND={
+			is_in_faction_with = UMI
+			UMI ={ has_government = democratic }
+			}
+			AND={
+			is_in_faction_with = ENG
+			ENG ={ has_government = democratic }
+			}
+			AND={
+			is_in_faction_with = USA
+			USA ={ has_government = democratic }
+			}
+		}
+	}
+ }
+
+modifier = {
+	add = 50
+	AND = {
+	is_in_faction_with = UTX
+	check_variable = { stability < 0.50 }
+	has_government = american_globalism 
+	UTX ={ has_government = american_globalism }
+	}
+	
+	}
+modifier = {
+	add = 50
+	AND = {
+	is_in_faction_with = UAL
+	has_government = american_isolationism
+	UAL ={ has_government = american_isolationism }
+	check_variable = { stability < 0.50 }
+	}
+	
+	}
+modifier = {
+	add = 50
+	AND = {
+	is_in_faction_with = UCA
+	check_variable = { stability < 0.50 }
+	has_government = communism
+	UCA ={ has_government = communism }
+	}
+	
+	}
+modifier = {
+	add = 50
+	AND = {
+	is_in_faction_with = GER
+	check_variable = { stability < 0.50 }
+	has_government = fascism
+	GER = { has_government = fascism}
+	}
+	
+	}
+modifier = {
+	add = 50
+	AND = {
+	is_in_faction_with = JAP
+	check_variable = { stability > 0.50 }
+	has_government = fascism
+	JAP = { has_government = fascism}
+	}
+	
+	}
+modifier = {
+	check_variable = { stability > 0.95 }
+	factor =0
+	}
+}
+
+		cost = 5
+		days_remove = 1
+		days_re_enable = 5
 
 remove_effect = {
 if  =  { limit = {  has_idea =american_states_destabilization_level_10 }
@@ -153,11 +235,101 @@ available = {
       if = { limit = { NOT = { has_idea = american_states_destabilization_level_10 }}}
 }
 
-ai_will_do = {factor = 1 }
+ai_will_do = {
+factor = 0
+
+
+ modifier = {
+        add = 300
+	AND = {
+	is_in_faction_with = UTX
+	UTX ={ has_government = american_globalism }
+	NOT={ has_government = american_globalism }
+	check_variable = { stability > 0.70 }
+	}
+ }
+ modifier = {
+        add = 300
+	AND = {
+	is_in_faction_with = UAL
+	UAL ={ has_government = american_isolationism }
+	NOT={ has_government = american_isolationism }
+	check_variable = { stability > 0.80 }
+	}
+ }
+ modifier = {
+        add = 300
+	AND = {
+	NOT={ has_government = communism }
+	UCA ={ has_government = communism }
+	check_variable = { stability > 0.60 }
+	is_in_faction_with = UCA
+	}
+ }
+ modifier = {
+        add = 300
+	AND = {
+	NOT={ has_government = communism }
+	SOV ={ has_government = communism }
+	check_variable = { stability > 0.60 }
+	is_in_faction_with = SOV
+	}
+ }
+ modifier = {
+        add = 300
+	AND = {
+	is_in_faction_with = JAP
+	NOT={ has_government = fascism }
+	JAP = { has_government = fascism}
+	check_variable = { stability > 0.50 }
+	}
+ }
+ modifier = {
+        add = 300
+	AND = {
+	is_in_faction_with = GER
+	NOT={ has_government = fascism }
+	GER = { has_government = fascism}
+	check_variable = { stability > 0.50 }
+	}
+ }
+
+modifier = {
+	AND ={
+	is_in_faction_with = UMI
+	has_government = democratic
+	UMI ={ has_government = democratic }
+	}
+	factor =0
+
+	}
+modifier = {
+	AND ={
+	is_in_faction_with = USA
+	has_government = democratic
+	USA ={ has_government = democratic }
+	}
+	factor =0
+	}
+modifier = {
+	AND ={
+	is_in_faction_with = ENG
+	has_government = democratic
+	ENG ={ has_government = democratic }
+	}
+	factor =0
+
+	}
+modifier = {
+	check_variable = { stability < 0.40 }
+	factor =0
+	}
+}
+
 		
-		cost = 150
+		cost = 5
 		days_remove = 1
-		days_re_enable = 30
+		days_re_enable = 5
 
 remove_effect = {
 if  =  { limit = {  has_idea =american_states_stabilization_level_10 }

@@ -1,54 +1,56 @@
 focus_tree = {
- id = American_choice_focus
-country = {
-		factor = 0
+ 	id = American_choice_focus
+	country = {
+	factor = 0
 		
-		modifier = {
-			add = 1000
-	OR={
+	modifier = {
+		add = 1000
+		OR={
 		
-		tag  =  UIL
-		tag  =  UNY
-		tag  =  UIN
-		tag  =  UCI
-		tag  =  UDK
-		tag  =  UMN
-		tag  =  UEN
-		tag  =  UKY
-		tag  =  UTN
-		tag  =  UMS
-		tag  =  UFL
-		tag  =  UGO
-		tag  =  UVA
-		tag  =  UNE
-		tag  =  UME
-		tag  =  UAR
-		tag  =  ULA
-		tag  =  UWI
-		tag  =  UOK
-		tag  =  UIA
-		tag  =  UKA
-		tag  =  UOH
-		tag  =  UPE
-		tag  =  UML
-		tag  =  UNJ
-		tag  =  UWA
-		tag  =  UID
-		tag  =  UAZ
-		tag  =  UUT
-		tag  =  UNV
-		tag  =  UOR
-		tag  =  UMO
-		tag  =  UCO
-		tag  =  UMX
-		tag  =  UWY
-		tag = UMI
-		tag = UCA
-		tag = UAL
-		tag = UTX
-		tag = USA
+			tag  =  UIL
+			tag  =  UNY
+			tag  =  UIN
+			tag  =  UCI
+			tag  =  UDK
+			tag  =  UMN
+			tag  =  UEN
+			tag  =  UKY
+			tag  =  UTN
+			tag  =  UMS
+			tag  =  UFL
+			tag  =  UGO
+			tag  =  UVA
+			tag  =  UNE
+			tag  =  UME
+			tag  =  UAR
+			tag  =  ULA
+			tag  =  UWI
+			tag  =  UOK
+			tag  =  UIA
+			tag  =  UKA
+			tag  =  UOH
+			tag  =  UPE
+			tag  =  UML
+			tag  =  UNJ
+			tag  =  UWA
+			tag  =  UID
+			tag  =  UAZ
+			tag  =  UUT
+			tag  =  UNV
+			tag  =  UOR
+			tag  =  UMO
+			tag  =  UCO
+			tag  =  UMX
+			tag  =  UWY
+			tag  =  UAK
+			tag  =  UHW
+			tag = UMI
+			tag = UCA
+			tag = UAL
+			tag = UTX
+			tag = USA
 		}
-		}
+	}
 		
 		modifier = {
 		add = 1000 OR = {
@@ -92,6 +94,8 @@ country = {
 		original_tag   =  UCO
 		original_tag   =  UMX
 		original_tag   =  UWY
+		original_tag   =  UAK
+		original_tag   =  UHW
 		}}
 	}
 
@@ -116,15 +120,22 @@ mutually_exclusive = {
 		ai_will_do = {
 			factor = -1
 		}
-available = {tag = USA}
-allow_branch ={ tag = USA }		
+available = {
+
+original_tag = USA
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+
+}
+allow_branch ={ original_tag = USA 
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-
+		ENG={inherit_technology = USA}
 		for_each_scope_loop = {
 		array = American_States
 			
@@ -159,6 +170,12 @@ allow_branch ={ tag = USA }
 		}
 		
 		ENG = {
+ change_tag_from = ROOT 
+news_event = {
+    id = amer_news.3
+    days = 1
+    random = 3
+}
 			annex_country = {
    				 target = USA
    		 transfer_troops = yes
@@ -166,83 +183,128 @@ allow_branch ={ tag = USA }
 			}	
 		
 	}
-}	
+}
+
 focus = {
 		id = American_choice_usa_choose_michigan
 		icon = GFX_american_strike
-		
-		x = 3
+		relative_position_id = American_choice_usa_choose_stand_down
+		x = 2
 		y = -2
 		dynamic =  yes
-		cost = 1
+		cost = 0
 		mutually_exclusive = { 
 		focus =American_choice_usa_choose_war
 		focus = American_choice_usa_choose_stand_down
 		}
-		ai_will_do = {
-			factor = 10
-
+				ai_will_do = {
+			factor = 8
+	
 			modifier = {
-			is_historical_focus_on = yes
-			factor = -5000			}
+			add = 5000
+			is_historical_focus_on = no
+			
+			}
 		}
-available = {is_ai = yes
-        tag = USA
+available = {
+        original_tag = USA
 	 country_exists = UMI
 	NOT = { is_in_faction_with = UMI }
 	UMI ={ is_ai = yes}
-
+	USA ={ is_ai = yes}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
 		}
 
 	
-allow_branch ={ is_ai = yes
-tag = USA 
+allow_branch ={ 
+original_tag = USA 
 NOT = { is_in_faction_with = UMI }
 	UMI ={ is_ai = yes}
+	USA ={ is_ai = yes}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
 }		
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
+		USA = { add_ideas = usa_phoenix_rising}
 		UMI = {set_variable = { var_mi_and_usa = 1 } }
 		USA = {set_variable = { var_mi_and_usa = 1 } }
-		USA = {leave_faction = yes}
-		UMI ={ add_to_faction = USA }
+		UMI = {leave_faction = yes}
+		USA ={ add_to_faction = UMI }
 		USA ={ add_ideas = { american_join_michigan_full_support }}
-		USA ={ load_focus_tree = { tree = American_Support_Michigan
-                     keep_completed = yes }}
+		USA={add_to_array = { array = USA.Loyal_American_States value=UMI }}
+		USA={
 
+				for_each_loop = {
+		array = UMI.Michigan_States
+			add_to_array = { array = USA.Loyal_American_States value=v }
+			
+
+			if = { limit = { has_dlc = "Together for Victory"}
+			set_autonomy = {target = v autonomous_state = autonomy_united_states_state }
+			add_to_faction =v
+			give_guarantee = v
+			else = {
+			puppet =PREV
+			add_to_faction =v
+			give_guarantee = v
+			} 
+			}
+			}
+			}
+		if = { limit = { has_dlc = "Together for Victory"}
+set_autonomy = {target = UMI autonomous_state = autonomy_united_states_state }
+else = {
+puppet =UMI
+} 
+}
+
+		UMI ={ load_focus_tree = { tree =American_Military_State
+                     keep_completed = yes }}
+		USA ={ load_focus_tree = { tree =American_Military_State
+                     keep_completed = yes }}
+			news_event = {
+    id = amer_news.2
+    days = 1
+    random = 3
+}
 		
 		}
-	}
+}
 
 focus = {
 		id = American_choice_usa_choose_war
 		icon = GFX_american_strike
-		
-		x = 3
+		relative_position_id = American_choice_usa_choose_michigan
+		x = 2
 		y = 0
 		dynamic =  yes
-		cost = 5
+		cost = 0
 mutually_exclusive = { 
 		focus = American_choice_usa_choose_michigan
 		focus = American_choice_usa_choose_stand_down
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 8
 	
 			modifier = {
+			add = 5000
 			is_historical_focus_on = yes
-			factor = 5000
+			
 			}
 		}
 
 historical_ai = {
-tag =  USA
+original_tag =  USA
 }
-available = {tag = USA}
-allow_branch ={ tag = USA }		
+available = {
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+original_tag = USA}
+allow_branch ={
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+ original_tag = USA }		
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -250,11 +312,82 @@ allow_branch ={ tag = USA }
 		completion_reward = {
 		add_command_power=100
 		add_political_power = 1000
-
+		if = { limit = { is_ai = yes} add_ideas = usa_phoenix_rising}
+news_event = {
+    id = amer_news.1
+    days = 1
+    random = 3
+}
 		
 	}
 }
+focus = {
+		id = American_choice_usa_annex_michigan
+		icon = GFX_american_strike
+		relative_position_id = American_choice_usa_choose_war
+		prerequisite = { focus = American_choice_usa_choose_war}
+		x = 0
+		y = 2
+		dynamic =  yes
+		cost = 0
 
+		ai_will_do = {
+			factor = 2
+	
+			modifier = {
+			add = 5000
+			is_historical_focus_on = yes
+			
+			}
+			modifier = {
+			add = -5000
+			is_historical_focus_on = no
+			
+			}
+		}
+available = {
+	NOT={is_ai = yes}
+        original_tag = USA
+	 country_exists = UMI
+	NOT = { is_in_faction_with = UMI }
+	UMI ={ is_ai = yes}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+		}
+
+	
+allow_branch ={ 
+NOT={is_ai = yes}
+original_tag = USA 
+NOT = { is_in_faction_with = UMI }
+	UMI ={ is_ai = yes}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+}
+
+historical_ai = {
+original_tag =  USA
+}	
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		add_command_power=100
+		add_political_power = 1000
+if ={ limit = {UMI = { is_ai = yes}}
+ROOT = {
+annex_country = {
+    target = UMI
+    transfer_troops = yes
+}}}
+
+news_event = {
+    id = amer_news.9
+    days = 1
+    random = 3
+}
+		
+	}
+}
 
 focus = {
 		id = American_choice_focus_winter_is_coming
@@ -264,17 +397,22 @@ focus = {
 		x = 2
 		y = 0
 		dynamic =  yes
-		cost = 5
+		cost = 1
 
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 
 historical_ai = {
-tag =  USA
+original_tag  USA
 }
-available = {tag = USA}
-allow_branch ={ tag = USA }		
+available = {original_tag = USA
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+
+}
+
+allow_branch ={ original_tag = USA
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	} }		
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -293,23 +431,26 @@ focus = {
 		x = 1
 		y = 1
 		dynamic =  yes
-		cost = 5
+		cost = 1
 
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 
 historical_ai = {
-tag =  USA
+original_tag =  USA
 }
-available = {tag = USA}
-allow_branch ={ tag = USA }		
+available = {original_tag = USA
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}}
+allow_branch ={ original_tag = USA 
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}}		
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
 		add_offsite_building = { type = arms_factory level = 32 }
+		add_offsite_building = { type = industrial_complex level = 32 }
 		add_manpower = 250000
 		
 	}
@@ -322,23 +463,26 @@ focus = {
 		x = 1
 		y = 1
 		dynamic =  yes
-		cost = 5
+		cost = 1
 
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 
 historical_ai = {
-tag =  USA
+original_tag =  USA
 }
-available = {tag = USA}
-allow_branch ={ tag = USA }		
+available = {original_tag = USA
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}}
+allow_branch ={ original_tag = USA 
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}}		
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
 		add_offsite_building = { type = arms_factory level = 64 }
+		add_offsite_building = { type = industrial_complex level = 64 }
 		add_manpower = 250000
 		
 	}
@@ -352,23 +496,26 @@ focus = {
 		x = 1
 		y = 1
 		dynamic =  yes
-		cost = 5
+		cost = 1
 
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 
 historical_ai = {
-tag =  USA
+original_tag =  USA
 }
-available = {tag = USA}
-allow_branch ={ tag = USA }		
+available = {original_tag = USA
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}}
+allow_branch ={ original_tag = USA 
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}}		
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
 		add_offsite_building = { type = arms_factory level = 128 }
+		add_offsite_building = { type = industrial_complex level = 128 }
 		add_manpower = 500000
 		
 	}
@@ -381,17 +528,19 @@ focus = {
 		x = 1
 		y = 1
 		dynamic =  yes
-		cost = 5
+		cost = 0
 
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 
 historical_ai = {
-is_subject_of =  USA
+original_tag  =  USA
 }
-available = {tag = USA}
-allow_branch ={ tag = USA }		
+available = {original_tag  = USA
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}}
+allow_branch ={ original_tag  = USA 
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}}		
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -401,6 +550,38 @@ allow_branch ={ tag = USA }
                      keep_completed = yes }
 		
 	}
+}
+focus = {
+		id = American_choice_focus_refocus_usa_soviet_war 
+		icon = GFX_american_team_USA
+		x = -2
+		y = 0
+		dynamic =  yes
+		cost = 0
+		relative_position_id =American_choice_focus_refocus_usa
+		ai_will_do = {
+			factor = 6000
+		}
+
+historical_ai = {
+original_tag  =  USA
+}
+available = {original_tag  = USA
+SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }
+ROOT={ has_war_with = SOV}}
+ 	
+allow_branch ={ original_tag  = USA 	}
+		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		load_focus_tree = { tree = american_soviet_war_focus
+                     keep_completed = no }
+		}
+		
+	
 }
 ####################################################################
 #END USA PREP FOCUS
@@ -414,52 +595,88 @@ allow_branch ={ tag = USA }
 		x = 5
 		y = 0
 		dynamic =  yes
-		cost = 5
+		cost = 1
 
 		ai_will_do = {
-			factor = 1
-		}
+			factor = 2
 
-historical_ai = { OR = {
-is_subject_of =  USA
-is_subject_of =  UMI
-is_subject_of =  UCA
-is_subject_of =  UAL
-is_subject_of =  UTX
-}}
+		modifier = {
+       			 add = 1
+				AND={
+				ROOT={is_in_faction_with = USA}
+				ROOT={has_government = democratic}
+				USA ={ has_government = democratic }}
+				}
+		modifier = {
+       			 add = 1
+			 ROOT={has_variable = var_Loyal_American_States}
+			}	
+		modifier = {
+       			 add = -2
+				AND={
+				ROOT={NOT={has_government = democratic}}
+				USA ={ has_government = democratic }}
+				}
+
+					modifier = {
+			add = 1000
+			AND={
+			
+			is_historical_focus_on = yes
+			is_subject_of =  USA
+			}
+			
+			}
+		}
+		
+
 available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 		ROOT = {   has_variable =var_American_States }
+		NOT = {has_war_with =USA}
 		NOT ={ tag = UMI }
 		NOT ={ tag = UCA }
 		NOT ={ tag = UAL }
 		NOT ={ tag = UTX }
+		if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
     }
 
-allow_branch ={ ROOT={ has_variable =var_American_States }
+allow_branch ={
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+ ROOT={ has_variable =var_American_States }
 		NOT ={ tag = UMI }
 		NOT ={ tag = UCA }
+		NOT = {has_war_with =USA}
 		NOT ={ tag = UAL }
-		NOT ={ tag = UTX } }		
+		NOT ={ tag = UTX } 
+		if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}}		
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-load_focus_tree = { tree = American_Loyal_State_focus 
-                     keep_completed = yes }
-			ROOT = { add_to_tech_sharing_group = usa_investigators 
-			inherit_technology = USA }
+
+			
+
+			
 		USA = {
 			
-			
-	
+			add_to_array = { array = USA.Loyal_American_States value= ROOT }	
+		
 			if = { limit = { has_dlc = "Together for Victory"}
 			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
 			} else = { puppet =ROOT }	
-          }
 
-			 }
+		give_guarantee = ROOT
+		add_to_faction = ROOT
+          }
+	 ROOT = { 
+		add_to_tech_sharing_group = usa_investigators
+		load_focus_tree = { tree = American_Military_State
+                     keep_completed = yes }
+		}
 	}
+}
 
 
 focus = {
@@ -470,22 +687,36 @@ focus = {
 		x = 2
 		y = 0
 		ai_will_do = {
-			factor = 1
+			factor = 2
+
+			modifier = {
+       			 add = 1
+				AND={
+				ROOT={NOT={has_government = democratic}}
+				USA ={ has_government = democratic }}
+				}
 		}
-		cost = 5
+		cost = 1
 available = {
 		ROOT = {   has_variable =var_American_States }
 		NOT ={ tag = UMI }
 		NOT ={ tag = UCA }
 		NOT ={ tag = UAL }
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 		NOT ={ tag = UTX }
+		NOT = {has_war_with =USA}
+		if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
     }
 
 allow_branch ={ ROOT={ has_variable =var_American_States }
 		NOT ={ tag = UMI }
 		NOT ={ tag = UCA }
 		NOT ={ tag = UAL }
-		NOT ={ tag = UTX } }
+		NOT ={ tag = UTX }
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+		NOT = {has_war_with =USA} 
+		if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+		}
 cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -507,27 +738,56 @@ focus = {
 		x = -2
 		y = 0
 		ai_will_do = {
-			factor = 1
+			factor = 2
+
+			modifier = {
+			add = 9000
+			ROOT={has_war_with =USA}
+
+			}
+			modifier = {
+       				 add = 1
+				
+				ROOT={NOT={has_government = democratic}}
+				
+				}
+			modifier = {
+       			 	add = -1
+				
+				ROOT={has_government = democratic}
+				
+			}
+			modifier = {
+			add = -500
+			is_historical_focus_on = yes
+						}
 		}
-		cost = 5
+		cost = 0
 available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 		ROOT = {   has_variable =var_American_States }
 		NOT ={ tag = UMI }
 		NOT ={ tag = UCA }
 		NOT ={ tag = UAL }
 		NOT ={ tag = UTX }
+		if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
     }
 
-allow_branch ={ ROOT={ has_variable =var_American_States }
+allow_branch ={ 
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+
+ROOT={ has_variable =var_American_States }
 		NOT ={ tag = UMI }
 		NOT ={ tag = UCA }
 		NOT ={ tag = UAL }
-		NOT ={ tag = UTX } }
+		NOT ={ tag = UTX } 
+		if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}}
 
-cancel_if_invalid = yes
+		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
+	ROOT={ add_ideas={american_states_disloyal_state} }	
 ROOT = { OVERLORD = { 
 if = { limit = { has_dlc = "Together for Victory"}
 set_autonomy = {
@@ -545,25 +805,181 @@ load_focus_tree = { tree = American_choose_side_focus
 
 }
 }
+focus = {
+		id = American_choice_militarize_union_states
+		icon = GFX_american_strike
+	relative_position_id = American_choice_loyal_union_states
+	dynamic =  yes
+		x = -4
+		y = -2
+		ai_will_do = {
+			factor = 8000
+		}
+		cost = 0
+available = {
+		ROOT = {   has_variable =var_American_States }
+		NOT ={ original_tag = UMI }
+		NOT ={ original_tag = UCA }
+		NOT ={ original_tag = UAL }
+		NOT ={ original_tag = UTX }
+		NOT ={ has_variable = var_militarize_union_states_refocused  }
+		
+    }
+
+allow_branch ={ ROOT={ has_variable =var_American_States }
+		NOT ={ original_tag = UMI }
+		NOT ={ original_tag = UCA }
+		NOT ={ original_tag = UAL }
+		NOT ={ original_tag = UTX } 
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		completion_reward = {
+		set_variable = { var_militarize_union_states = 1 }
+load_focus_tree = { tree = American_Military_State
+                     keep_completed = yes }
+			}
+
+	}
+focus = {
+		id = American_choice_loyal_michigan_states
+		icon = GFX_american_team_USA
+	relative_position_id = American_choice_not_so_loyal_union_states
+	dynamic =  yes
+		x = 2
+		y = 0
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+       			 add = 1
+				AND={
+				ROOT={has_government = democratic}
+				}
+			 }
+			modifier = {
+       			 add = 1
+				AND={
+				ROOT={is_in_faction_with = UMI}
+				}
+			 }
+		modifier = {
+       			 add = 1
+			 ROOT={has_variable = var_Michigan_States}
+			}
+
+			modifier = {
+			add = 1
+			is_historical_focus_on = yes
+			}
+			modifier = {
+			add = -1
+			is_historical_focus_on = no
+			}
+		modifier = {
+       			 add = -1
+				AND={
+				ROOT={NOT={has_government = democratic}}
+				}
+			 }
+		}
+		cost = 1
+available = { AND = {
+		ROOT = {has_variable =var_American_States }
+		ROOT = {NOT ={ original_tag = UMI }}
+		ROOT = {is_in_faction_with = UMI}
+		if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+		
+    }}
+
+allow_branch ={ AND = {		
+		ROOT = {has_variable =var_American_States }
+		ROOT = {NOT ={ original_tag = UMI }
+		ROOT = {is_in_faction_with = UMI} }
+		if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+	}}
+cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+load_focus_tree = { tree = American_Military_State
+                     keep_completed = yes }
+
+}
+}
+focus = {
+		id = American_states_choice_refocus_soviet_war_
+		icon = GFX_american_team_USA
+	relative_position_id = American_choice_loyal_union_states
+	dynamic =  yes
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 2
+		}
+		cost = 1
+available = {
+		ROOT = {   has_variable =var_American_States }
+		NOT ={ tag = UMI }
+		NOT ={ tag = UCA }
+		NOT ={ tag = UAL }
+		NOT ={ tag = UTX }
+		SOV = { has_variable = SOV.var_Sov_Annexed_American_States }
+		ROOT={ has_war_with = SOV}	
+    }
+
+allow_branch ={ ROOT={ has_variable =var_American_States }
+		NOT ={ tag = UMI }
+		NOT ={ tag = UCA }
+		NOT ={ tag = UAL }
+		NOT ={ tag = UTX } 
+		SOV = { has_variable =SOV.var_Sov_Annexed_American_States }
+		ROOT={ has_war_with = SOV}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+			load_focus_tree = { tree = american_soviet_war_focus
+                     keep_completed = no }
+		}
+}
 ####################################################################
 #END MINOR STATE FOCUS
 ####################################################################
 ####################################################################
 #START MAJOR STATE FOCUS
 ####################################################################
-
 	focus = {
-		id = American_choice_major_union_states_warpath
+		id = American_choice_usa_abandon_federal_system
 		
 		icon = GFX_american_warpath
-		relative_position_id = American_choice_loyal_union_states
+		
 		x = 0
-		y = 2
+		y = 0
 		dynamic =  yes
-		cost = 5
+		cost = 80
 
-				ai_will_do = {
-			factor = 1
+		ai_will_do = {
+			factor = -900
+			modifier = {
+        			add = -2	
+				ROOT = {has_government = democratic }
+			}
+			modifier = {
+        			add = -1	
+				ROOT = {has_government = communism }
+			}
+			modifier = {
+			add = -500
+			is_historical_focus_on = yes
+						}
 		}
 
 available = {
@@ -574,9 +990,92 @@ ROOT = {   has_variable =var_American_States }
 		ROOT = {tag = UAL }
 		ROOT = {tag = UTX }
 	}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
     }
 
  allow_branch = { ROOT = {   has_variable =var_American_States }
+OR{
+		ROOT = {tag = UMI }
+		ROOT = {tag = UCA }
+		ROOT = {tag = UAL }
+		ROOT = {tag = UTX }
+	}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+		}
+
+		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		ROOT={ add_ideas={american_states_usa_abandon_federal_system} }	
+		}
+
+			 }
+
+	focus = {
+		id = American_choice_major_union_states_warpath
+		icon = GFX_american_warpath
+		relative_position_id = American_choice_usa_abandon_federal_system
+		x = 0
+		y = 1
+		dynamic =  yes
+		cost = 50
+
+				ai_will_do = {
+			factor = 2
+			modifier = {
+			factor = 500 
+			AND={
+				is_historical_focus_on = yes
+				NOT={original_tag = UAL}
+				}
+			}
+			modifier = {
+        			add = -1	
+				ROOT = {has_government = communism  }
+			}
+			modifier = {
+        			add = 1	
+				ROOT = {has_government = american_globalism  }
+			}
+			modifier = {
+        			add = 1	
+				ROOT = {has_war = yes }
+			}
+			modifier = {
+        			add = 1	
+				ROOT = {has_war_support > 0.90 }
+			}
+			modifier = {
+        			add = -1	
+				ROOT = {has_war_support < 0.10 }
+			}
+
+
+		}
+historical_ai = {
+OR ={
+tag =  UCA
+tag =  UTX
+tag =  UAL
+}
+}
+
+available = {
+ROOT = {   has_variable =var_American_States }
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+	OR{
+		ROOT = {tag = UMI }
+		ROOT = {tag = UCA }
+		ROOT = {tag = UAL }
+		ROOT = {tag = UTX }
+	}
+    }
+
+ allow_branch = { ROOT = {   has_variable =var_American_States }
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
 OR{
 		ROOT = {tag = UMI }
 		ROOT = {tag = UCA }
@@ -591,6 +1090,10 @@ OR{
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
+		set_variable = { var_American_States_state_on_the_warpath = 1 }
+		every_country	={ if = { limit={ is_subject_of = ROOT}
+			set_variable = { var_American_States_state_on_the_warpath = 1 }
+		}}
 		load_focus_tree = { tree = American_Major_Warpath_focus
                      keep_completed = yes }
 
@@ -601,19 +1104,27 @@ OR{
 	focus = {
 		id = American_choice_major_union_states_generic
 		icon = GFX_expand_ru_eco_partnetship
-		x = 10
-		y = 0
+		relative_position_id =American_choice_major_union_states_warpath
+		x = 4
+		y = 4
 		dynamic =  yes
-		cost = 5
+		cost = 50
 		prerequisite = { 
 			focus = American_choice_major_union_states_internal
 			focus =	American_choice_major_union_states_warpath
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 2
+
+			modifier = {
+			add = -500
+			is_historical_focus_on = yes
+			
+						}
 		}
 
 available = {
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
 ROOT = {   has_variable =var_American_States }
 	OR{
 		ROOT = {tag = UMI }
@@ -624,6 +1135,7 @@ ROOT = {   has_variable =var_American_States }
     }
 
  allow_branch = { ROOT = {   has_variable =var_American_States }
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
 OR{
 		ROOT = {tag = UMI }
 		ROOT = {tag = UCA }
@@ -644,35 +1156,194 @@ OR{
 
 			 }
 	}
+	focus = {
+		id = American_choice_major_union_states_japan
+		icon = GFX_japanese_security_aid
+		relative_position_id =American_choice_major_union_states_warpath
+		x = 2
+		y = 0
+		dynamic =  yes
+		cost = 0
+			ai_will_do = {
+			factor = 0
+
+			modifier = {
+					add = 1
+					NOT={ has_government = democratic }
+				}
+			modifier = {
+					add = -1
+					 has_government = democratic 
+				}
+			modifier = {
+					add = 1
+					 has_government = american_isolationism
+					
+				}
+modifier = {
+					add = 1
+					original_tag = UAL
+					
+				}
+	
+			 modifier = {
+        			add = 1
+				has_war = yes
+			}
+			 modifier = {
+        			add = -1
+				JAP ={ has_war = yes}
+			}
+			 modifier = {
+        			add = -1
+				has_wargoal_against = JAP 
+			}
+			 modifier = {
+        			add = 1
+				JAP ={ has_wargoal_against = ROOT } 
+			}
+				 modifier = {
+        			add = -1
+				is_justifying_wargoal_against = JAP 
+			}
+				 modifier = {
+        			add = 1
+				JAP= {is_justifying_wargoal_against = ROOT }
+			}
+		modifier = {
+        			add = 1
+				has_war_with = USA
+			}
+		modifier = {
+        			add = 1
+				has_war_with = ENG
+			}
+		modifier = {
+        		add = 1
+			has_war_support < 0.10
+		}
+	
+
+			modifier = {
+			add = -500
+			AND={
+				is_historical_focus_on = yes
+				NOT={original_tag = UAL}
+				}
+			}
+			modifier = {
+			add = 500
+			AND={
+				is_historical_focus_on = yes
+				original_tag = UAL
+				}
+			}
+
+			}
+		available = {
+		AND = {
+			if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+			ROOT = {   has_variable =var_American_States }
+			OR{
+				ROOT = {original_tag = UMI }
+				ROOT = {original_tag = UCA }
+				ROOT = {original_tag = UAL }
+				ROOT = {original_tag = UTX }
+			}
+			ROOT = { NOT = { has_war_with = JAP }}
+			ROOT = { NOT = { is_in_faction_with = USA }}
+			
+		}
+    		}
+		allow_branch = {
+		AND = {
+			if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+			ROOT = {   has_variable =var_American_States }
+			OR{
+				ROOT = {original_tag = UMI }
+				ROOT = {original_tag = UCA }
+				ROOT = {original_tag = UAL }
+				ROOT = {original_tag = UTX }
+			}
+		}
+    		}
+					cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+	if = { limit = { country_exists	= JAP }
+		add_ideas = { imperial_japan_special_partnership 
+		japanese_military_training
+paramilitarism_focus
+foreign_expeditions_focus
+}
+add_political_power = 750
+ROOT = { leave_faction	= yes}
+	JAP = { add_to_faction	= ROOT }
+ROOT = { add_to_tech_sharing_group = japanese_research}
+
+	ROOT={
+			set_politics = {
+		ruling_party =american_globalism 
+		elections_allowed = no
+	}
+	set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 100
+	}
+		load_focus_tree = { tree = American_Major_Japan_focus
+                     keep_completed = yes }
+
+		}
+		}
+	}
+	}
 
 	focus = {
 		id = American_choice_major_union_states_internal
 		icon = GFX_expand_ru_eco_partnetship
-		x = 10
-		y = 1
+		relative_position_id =American_choice_major_union_states_warpath
+		x = 0
+		y = 2
 		dynamic =  yes
 		cost = 5
 
-		ai_will_do = {
-			factor = 1
+			ai_will_do = {
+			factor = 2
+			
+			modifier = {
+        			add = -1	
+				ROOT = {has_war = yes }
+			}
+			modifier = {
+			add = -500
+			is_historical_focus_on = yes
+			NOT={original_tag = UMI}
+						}
+
 		}
 
 available = {
+	if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
 ROOT = {   has_variable =var_American_States }
 	OR{
-		ROOT = {tag = UMI }
-		ROOT = {tag = UCA }
-		ROOT = {tag = UAL }
-		ROOT = {tag = UTX }
+		ROOT = {original_tag = UMI }
+		ROOT = {original_tag = UCA }
+		ROOT = {original_tag = UAL }
+		ROOT = {original_tag = UTX }
 	}
     }
 
  allow_branch = { ROOT = {   has_variable =var_American_States }
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
 OR{
-		ROOT = {tag = UMI }
-		ROOT = {tag = UCA }
-		ROOT = {tag = UAL }
-		ROOT = {tag = UTX }
+		ROOT = {original_tag = UMI }
+		ROOT = {original_tag = UCA }
+		ROOT = {original_tag = UAL }
+		ROOT = {original_tag = UTX }
 	}
 		}
 
@@ -688,6 +1359,125 @@ OR{
 
 			 }
 	}
+
+	focus = {
+		id = American_choice_major_union_states_refocus_to_crouching_tiger
+		icon = GFX_expand_ru_eco_partnetship
+		relative_position_id =American_choice_major_union_states_internal
+		x = 0
+		y = 2
+		dynamic =  yes
+		cost = 5
+
+			ai_will_do = {
+			factor = 0
+			
+			modifier = {
+			add = 5
+			ROOT = {original_tag = UMI }
+			}
+			modifier = {
+			add = -5
+			NOT ={ ROOT = {original_tag = UMI }}
+			}
+			modifier = {
+			add = 500
+			is_historical_focus_on = yes
+			original_tag = UMI
+			}
+
+		}
+available = {
+AND={
+ROOT = {   has_variable =var_American_States }
+ROOT = {is_ai = yes}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+	OR{
+		ROOT = {original_tag = UMI }
+		ROOT = {original_tag = UCA }
+		ROOT = {original_tag = UAL }
+		ROOT = {original_tag = UTX }
+		
+	}
+	
+    }
+}
+ allow_branch = { AND={
+ROOT = {   has_variable =var_American_States }
+ROOT = {is_ai = yes}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+	OR{
+		ROOT = {original_tag = UMI }
+		ROOT = {original_tag = UCA }
+		ROOT = {original_tag = UAL }
+		ROOT = {original_tag = UTX }
+		
+	}
+	
+    }
+	}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		load_focus_tree = { tree = American_Crouching_Tiger_focus
+                     keep_completed = yes }
+
+
+			 }
+		}
+
+	focus = {
+		id = American_choice_major_union_states_refocus_to_soviet_war
+		icon = GFX_american_team_USA
+		relative_position_id =American_choice_major_union_states_refocus_to_crouching_tiger
+		x = 2
+		y = 1
+		dynamic =  yes
+		cost = 0
+
+			ai_will_do = {
+			factor = 1}
+available = {
+AND={
+ROOT = {   has_variable =var_American_States }
+SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	ROOT={ has_war_with = SOV}	}
+	OR{
+		ROOT = {original_tag = UMI }
+		ROOT = {original_tag = UCA }
+		ROOT = {original_tag = UAL }
+		ROOT = {original_tag = UTX }
+		
+	}
+	
+    }
+}
+ allow_branch = { AND={
+ROOT = {   has_variable =var_American_States }
+SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }
+ if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }} ROOT={ has_war_with = SOV}	}
+	OR{
+		ROOT = {original_tag = UMI }
+		ROOT = {original_tag = UCA }
+		ROOT = {original_tag = UAL }
+		ROOT = {original_tag = UTX }
+		
+	}
+	
+    }
+	}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+load_focus_tree = { tree = american_soviet_war_focus
+                     keep_completed = no }}
+
+}
+
+
+
 ####################################################################
 #END MAJOR STATE FOCUS
 ####################################################################

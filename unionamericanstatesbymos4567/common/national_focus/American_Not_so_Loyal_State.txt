@@ -23,21 +23,61 @@ country = {
 		cost = 1
  
 		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+	
+
+			modifier = {
+			add = 500
+			is_historical_focus_on = yes
+						}
+			modifier = {
+			add = -500
+			is_historical_focus_on = no
+						}
+			 modifier = {
+        			add = -1
+				has_war = yes
+			}
+		}
+available = { NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}} }
 
 		completion_reward = {
+add_offsite_building = { type = arms_factory level = 8 }
+add_offsite_building = { type = industrial_complex level = 8 }
 			add_tech_bonus = {
 				name = industrial_bonus
 				bonus = 1.0
 				uses = 1
 				category = industry
 			}
+			random_owned_controlled_state = { add_extra_state_shared_building_slots = 6 }
 		}
 
-		ai_will_do = {
-			factor = 5
-		}
+
 	}
+	focus = {
+		id = American_Not_So_Loyal_State_refocus
+		icon = GFX_american_work
+		relative_position_id = American_Not_So_Loyal_State_industrial_effort
+		x = -2
+		y = -2
+		cost = 0
+ 
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1000
+		}
+available = { any_country = {has_variable =var_American_Homeland_Victory_Flag_Won} }
 
+		completion_reward = {
+load_focus_tree = { tree = American_Military_State
+                     keep_completed = yes }
+
+		}
+
+
+	}
 focus = {
 		id = American_Not_So_Loyal_State_focus_on_infrastructure 
 		icon = GFX_american_work
@@ -46,17 +86,119 @@ focus = {
 		x = 0
 		y = 1
 
-		cost = 10
-ai_will_do = {
+		cost = 1
+		ai_will_do = {
 			factor = 1
-		}
+	
 
+			modifier = {
+			add = 500
+			is_historical_focus_on = yes
+						}
+			modifier = {
+			add = -500
+			is_historical_focus_on = no
+						}
+			 modifier = {
+        			add = -1
+				has_war = yes
+			}
+		}
+available = { NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}} }
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
 		completion_reward = {
+				add_offsite_building = { type = arms_factory level = 8 }
+add_offsite_building = { type = industrial_complex level = 8 }
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+					add_building_construction = {
+					type =  industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+focus = {
+		id = American_Not_So_Loyal_State_refocus_on_sov_war 
+		icon = GFX_american_team_USA
+				relative_position_id = American_Not_So_Loyal_State_industrial_effort
+	
+		x = 0
+		y = -1
+
+		cost = 1
+		ai_will_do = {
+			factor = 9000
+		}
+
+available = {
+SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }
+	 if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }} ROOT={ has_war_with = SOV}	}
+}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		if={limit={is_ai = yes}
+			add_offsite_building = { type = arms_factory level = 512 }
+			add_offsite_building = { type = industrial_complex level = 512 }
+		}
+load_focus_tree = { tree = american_soviet_war_focus
+                     keep_completed = yes }
+		}
+	}
+focus = {
+		id = American_Not_So_Loyal_State_focus_on_infrastructure2 
+		icon = GFX_american_work
+		relative_position_id = American_Not_So_Loyal_State_focus_on_infrastructure
+		prerequisite = { focus =American_Not_So_Loyal_State_focus_on_infrastructure}
+		x = 0
+		y = 1
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+	
+
+			modifier = {
+			add = 500
+			is_historical_focus_on = yes
+						}
+			modifier = {
+			add = -500
+			is_historical_focus_on = no
+						}
+			 modifier = {
+        			add = -1
+				has_war = yes
+			}
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+available = { NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}} }
+		completion_reward = {
+			add_offsite_building = { type = arms_factory level = 4 }
+			add_offsite_building = { type = industrial_complex level = 4 }
 				
 			every_state = {
 				limit = {
@@ -68,40 +210,8 @@ ai_will_do = {
 					level = 1
 					instant_build = yes
 				}
-			}
-		
-			
-		
-		}
-	}
-
-focus = {
-		id = American_Not_So_Loyal_State_focus_on_infrastructure2 
-		icon = GFX_american_work
-		relative_position_id = American_Not_So_Loyal_State_focus_on_infrastructure
-		prerequisite = { focus =American_Not_So_Loyal_State_focus_on_infrastructure}
-		x = 0
-		y = 1
-
-		cost = 5
-ai_will_do = {
-			factor = 1
-		}
-
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-				
-			every_state = {
-				limit = {
-					is_owned_by = ROOT
-					is_controlled_by = ROOT
-				}
 				add_building_construction = {
-					type = infrastructure
+					type =  industrial_complex
 					level = 1
 					instant_build = yes
 				}
@@ -120,17 +230,32 @@ focus = {
 		y = 1
 
 		cost = 5
-ai_will_do = {
+		ai_will_do = {
 			factor = 1
+	
+
+			modifier = {
+			add = 500
+			is_historical_focus_on = yes
+						}
+			modifier = {
+			add = -500
+			is_historical_focus_on = no
+						}
+			 modifier = {
+        			add = -1
+				has_war = yes
+			}
 		}
 
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
+available = { NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}} }
 		completion_reward = {
-				
+			add_offsite_building = { type = arms_factory level = 4 }
+			add_offsite_building = { type = industrial_complex level = 4 }
 			every_state = {
 				limit = {
 					is_owned_by = ROOT
@@ -138,6 +263,11 @@ ai_will_do = {
 				}
 				add_building_construction = {
 					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type =  industrial_complex
 					level = 1
 					instant_build = yes
 				}
@@ -156,17 +286,32 @@ focus = {
 		y = 1
 
 		cost = 5
-ai_will_do = {
+		ai_will_do = {
 			factor = 1
-		}
+	
 
+			modifier = {
+			add = 500
+			is_historical_focus_on = yes
+						}
+			modifier = {
+			add = -500
+			is_historical_focus_on = no
+						}
+			 modifier = {
+        			add = -1
+				has_war = yes
+			}
+		}
+available = { NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}} }
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
 		completion_reward = {
-				
+			add_offsite_building = { type = arms_factory level = 4 }
+			add_offsite_building = { type = industrial_complex level = 4 }
 			every_state = {
 				limit = {
 					is_owned_by = ROOT
@@ -174,6 +319,11 @@ ai_will_do = {
 				}
 				add_building_construction = {
 					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type =  industrial_complex
 					level = 1
 					instant_build = yes
 				}
@@ -192,17 +342,31 @@ focus = {
 		y = 1
 
 		cost = 5
-ai_will_do = {
+		ai_will_do = {
 			factor = 1
+	
+
+			modifier = {
+			add = 500
+			is_historical_focus_on = yes
+						}
+			modifier = {
+			add = -500
+			is_historical_focus_on = no
+						}
+			 modifier = {
+        			add = -1
+				has_war = yes
+			}
 		}
-
-
+available = { NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}} }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
 		completion_reward = {
-				
+			add_offsite_building = { type = arms_factory level = 4 }
+			add_offsite_building = { type = industrial_complex level = 4 }
 			every_state = {
 				limit = {
 					is_owned_by = ROOT
@@ -210,6 +374,11 @@ ai_will_do = {
 				}
 				add_building_construction = {
 					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type =  industrial_complex
 					level = 1
 					instant_build = yes
 				}
@@ -229,17 +398,30 @@ focus = {
 		y = 1
 
 		cost = 5
-ai_will_do = {
+		ai_will_do = {
 			factor = 1
+			modifier = {
+			add = 500
+			is_historical_focus_on = yes
+						}
+			modifier = {
+			add = -500
+			is_historical_focus_on = no
+						}
+			 modifier = {
+        			add = -1
+				has_war = yes
+			}
 		}
-
+available = { NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}} }
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
 		completion_reward = {
-				
+			add_offsite_building = { type = arms_factory level = 4 }
+			add_offsite_building = { type = industrial_complex level = 4 }
 			every_state = {
 				limit = {
 					is_owned_by = ROOT
@@ -247,6 +429,11 @@ ai_will_do = {
 				}
 				add_building_construction = {
 					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type =  industrial_complex
 					level = 1
 					instant_build = yes
 				}
@@ -265,17 +452,32 @@ focus = {
 		y = 1
 
 		cost = 5
-ai_will_do = {
+		ai_will_do = {
 			factor = 1
-		}
+	
 
+			modifier = {
+			add = 500
+			is_historical_focus_on = yes
+						}
+			modifier = {
+			add = -500
+			is_historical_focus_on = no
+						}
+			 modifier = {
+        			add = -1
+				has_war = yes
+			}
+		}
+available = { NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}} }
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
 		completion_reward = {
-				
+							add_offsite_building = { type = arms_factory level = 4 }
+			add_offsite_building = { type = industrial_complex level = 4 }
 			every_state = {
 				limit = {
 					is_owned_by = ROOT
@@ -283,6 +485,11 @@ ai_will_do = {
 				}
 				add_building_construction = {
 					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type =  industrial_complex
 					level = 1
 					instant_build = yes
 				}
@@ -301,17 +508,32 @@ focus = {
 		y = 1
 
 		cost = 5
-ai_will_do = {
+		ai_will_do = {
 			factor = 1
+	
+
+			modifier = {
+			add = 500
+			is_historical_focus_on = yes
+						}
+			modifier = {
+			add = -500
+			is_historical_focus_on = no
+						}
+			 modifier = {
+        			add = -1
+				has_war = yes
+			}
 		}
 
-
+available = { NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}} }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
 		completion_reward = {
-				
+							add_offsite_building = { type = arms_factory level = 4 }
+			add_offsite_building = { type = industrial_complex level = 4 }
 			every_state = {
 				limit = {
 					is_owned_by = ROOT
@@ -319,6 +541,11 @@ ai_will_do = {
 				}
 				add_building_construction = {
 					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type =  industrial_complex
 					level = 1
 					instant_build = yes
 				}
@@ -337,17 +564,32 @@ focus = {
 		y = 1
 
 		cost = 5
-ai_will_do = {
+		ai_will_do = {
 			factor = 1
-		}
+	
 
+			modifier = {
+			add = 500
+			is_historical_focus_on = yes
+						}
+			modifier = {
+			add = -500
+			is_historical_focus_on = no
+						}
+			 modifier = {
+        			add = -1
+				has_war = yes
+			}
+		}
+available = { NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}} }
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
 		completion_reward = {
-				
+							add_offsite_building = { type = arms_factory level = 4 }
+			add_offsite_building = { type = industrial_complex level = 4 }
 			every_state = {
 				limit = {
 					is_owned_by = ROOT
@@ -355,6 +597,11 @@ ai_will_do = {
 				}
 				add_building_construction = {
 					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type =  industrial_complex
 					level = 1
 					instant_build = yes
 				}
@@ -373,17 +620,32 @@ focus = {
 		y = 1
 
 		cost = 5
-ai_will_do = {
+		ai_will_do = {
 			factor = 1
+	
+
+			modifier = {
+			add = 500
+			is_historical_focus_on = yes
+						}
+			modifier = {
+			add = -500
+			is_historical_focus_on = no
+						}
+			 modifier = {
+        			add = -1
+				has_war = yes
+			}
 		}
 
-
+available = { NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}} }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
 		completion_reward = {
-				
+							add_offsite_building = { type = arms_factory level = 4 }
+			add_offsite_building = { type = industrial_complex level = 4 }
 			every_state = {
 				limit = {
 					is_owned_by = ROOT
@@ -391,6 +653,11 @@ ai_will_do = {
 				}
 				add_building_construction = {
 					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type =  industrial_complex
 					level = 1
 					instant_build = yes
 				}
@@ -422,17 +689,27 @@ focus = {
 		 dynamic = yes
 		x = 2
 		y = 0
-		cost = 10
-		ai_will_do = { 
-			factor = 10
+		cost = 1
+		ai_will_do = {
+			factor = 1
+	
+
 			modifier = {
-				factor = 100
+			add = 500
+			is_historical_focus_on = yes
+						}
+			modifier = {
+			add = -500
+			is_historical_focus_on = no
+						}
+			 modifier = {
+        			add = 1000
 				has_war = yes
 			}
-			}
+		}
 	
 		available_if_capitulated = no
-
+available = { NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}} }
 		completion_reward = {
 create_field_marshal = {
 	female = yes
@@ -494,19 +771,35 @@ focus = {
 		prerequisite = { focus =American_Not_So_Loyal_State_apoint_officers   }
 		x = 0
 		y = 2
-		cost = 10
-		ai_will_do = { 
-			factor = 10
+		cost = 1
+			ai_will_do = {
+			factor = 1
+	
+
 			modifier = {
+			add = 500
+			is_historical_focus_on = yes
+						}
+			modifier = {
+			add = -500
+			is_historical_focus_on = no
+						}
+			 modifier = {
+        			add = 1000
+				has_war = yes
+			}
+		modifier = {
 				factor = 100
 				has_war = yes
 			}
-			}
+		}
 	
 		available_if_capitulated = no
-
+available = { NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}} }
 		completion_reward = { 
 add_manpower = 10000000
+			add_offsite_building = { type = arms_factory level = 4 }
+			add_offsite_building = { type = industrial_complex level = 4 }
 }
 }
 
@@ -518,88 +811,47 @@ focus = {
 		prerequisite = { focus =American_Not_So_Loyal_State_one_for_all_and_all_for_one   }
 		x = 0
 		y = 2
-		cost = 10
-		ai_will_do = { 
+		cost = 1
+				ai_will_do = {
 			factor = 1
+	
+
 			modifier = {
+			add = 500
+			is_historical_focus_on = yes
+						}
+			modifier = {
+			add = -500
+			is_historical_focus_on = no
+						}
+			 modifier = {
+        			add = 1000
+				has_war = yes
+			}
+		modifier = {
 				factor = 100
 				has_war = yes
 			}
-			}
+		}
 	
 		available_if_capitulated = no
 
 		completion_reward = {
 		
 
-	if = { limit = { has_country_leader = { ruling_only = yes name ="Chairperson Upton Beall Sinclair Jr." }}
-
-		create_field_marshal = {
-				name = "Chairperson Upton Beall Sinclair Jr."
-				picture = "gfx/leaders/UCA/Upton_Beall_SinclairJr.dds"
-				skill = 8
-				attack_skill = 8
-				defense_skill = 3
-				planning_skill = 7
-				logistics_skill = 6
-				traits = { naval_invader }
-
-			}
-		if = { limit = { has_country_leader = { ruling_only = yes name ="Governor Jim Folsom" }}
-
-create_field_marshal = {
-				name = "Governor Jim Folsom"
-				picture = J_FOLSOM
-				skill = 8
-				attack_skill = 3
-				defense_skill = 6
-				planning_skill = 8
-				logistics_skill = 4
-				traits = { naval_invader }
-
-			}
-	if = { limit = { has_country_leader = { ruling_only = yes name = "Führer Bibb Graves" }}
-
-create_field_marshal = {
-				name = "Führer Bibb Graves"
-				picture = BIBB_GRAVES
-				skill = 8
-				attack_skill = 8
-				defense_skill = 1
-				planning_skill = 6
-				logistics_skill = 7
-				traits = { naval_invader }
-
-			}
-if = { limit = { has_country_leader = { ruling_only = yes name = "Fred W. Green" }}
-
-create_field_marshal = {
-				name = "Fred W. Green"
-				picture = FRED_WARREN_GREEN
-				skill = 8
-				attack_skill = 4
-				defense_skill = 8
-				planning_skill = 6
-				logistics_skill = 8
-				traits = { naval_invader }
-
-			}
-			else {
-		
-create_field_marshal = {
+	create_field_marshal = {
 				name="[?[Root.Owner.GetName]]"
 				picture = GFX_amer_sw_generic_lead
-				skill = 8
-				attack_skill = 6
-				defense_skill = 8
-				planning_skill = 6
-				logistics_skill = 7
+				skill = 9
+				attack_skill = 9
+				defense_skill = 9
+				planning_skill = 9
+				logistics_skill = 9
 				traits = { naval_invader }
 
-			}}}
-		}}}
+			}
+		}
 	}
-}
 ####################################################################
 #
 #	End Military. Effort Section
@@ -626,12 +878,30 @@ create_field_marshal = {
 		cost = 1
 mutually_exclusive = {
 focus = American_Not_So_Loyal_State_form_the_german_partnership 
-focus = American_Not_So_Loyal_State_form_the_english_partnership 
+focus = American_Not_So_Loyal_State_form_the_english_partnership
+focus = American_Not_So_Loyal_State_form_the_japanese_partnership 
 }
 		ai_will_do = {
-			factor = 1
+			factor = 0
+
+			 modifier = {
+        			add = 0
+				has_war = yes
+			}
+			modifier = {
+					add = 1
+					ROOT = {has_government = communism  }
+				}
+modifier = {
+					add = 1
+					ROOT = { OVERLORD = { is_in_faction_with  = SOV  } }
+				}
+
+  
+	
 		}
 available = {
+ NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}} 
 ROOT = { NOT = { has_war_with = SOV }}
 ROOT = { NOT = { is_in_faction_with = USA }}
 	SOV = { has_government = communism }
@@ -655,12 +925,13 @@ ROOT = { NOT = { is_in_faction_with = USA }}
 		x = 0
 		y = -1
 		dynamic =  yes
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
 		}
 available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 ROOT = { NOT = { has_war_with = SOV }}
 ROOT = { NOT = { is_in_faction_with = USA }}
 	SOV = { has_government = communism }
@@ -717,12 +988,13 @@ ROOT = { NOT = { is_in_faction_with = USA }}
 		x = 0
 		y = -1
 		dynamic =  yes
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
 		}
 available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 ROOT = { NOT = { has_war_with = SOV }}
 ROOT = { NOT = { is_in_faction_with = USA }}
 	SOV = { has_government = communism }
@@ -776,12 +1048,13 @@ ROOT = { NOT = { is_in_faction_with = USA }}
 		x = 0
 		y = -1
 		dynamic =  yes
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
 		}
 available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 ROOT = { NOT = { has_war_with = SOV }}
 ROOT = { NOT = { is_in_faction_with = USA }}
 	SOV = { has_government = communism }
@@ -941,6 +1214,7 @@ if = {
 			factor = 1
 		}
 available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 ROOT = { NOT = { has_war_with = SOV }}
 ROOT = { NOT = { is_in_faction_with = USA }}
 	SOV = { has_government = communism }
@@ -986,12 +1260,13 @@ ROOT = { NOT = { is_in_faction_with = USA }}
 		x = 0
 		y = 1
 		dynamic =  yes
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
 		}
 available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 ROOT = { NOT = { has_war_with = SOV }}
 	SOV = { has_government = communism }
 ROOT = { NOT = { is_in_faction_with = USA }}
@@ -1031,12 +1306,13 @@ add_political_power = 250
 		x = 0
 		y = 1
 		dynamic =  yes
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
 		}
 available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 ROOT = { NOT = { has_war_with = SOV }}
 	SOV = { has_government = communism }
 ROOT = { NOT = { is_in_faction_with = USA }}
@@ -1091,26 +1367,29 @@ ROOT = { NOT = { is_in_faction_with = USA }}
 		continue_if_invalid = no
 		available_if_capitulated = no
 		dynamic =  yes
-		cost = 10
+		cost = 1
 		 available_if_capitulated = yes	
 		ai_will_do = {
 			factor = 1
 		}
 		 available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 			SOV = { has_government = communism }
 
 		}
 		completion_reward = {
 			if = { limit = { country_exists	= SOV }
 			SOV = { 
-				if = { limit = { has_dlc = "Man the Guns"}
-				inherit_technology = ROOT }
+				#if = { limit = { has_dlc = "Man the Guns"}
+				#inherit_technology = ROOT }
 
 				if = { limit = { has_dlc = "Together for Victory"}
 			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
 			} else = { puppet =ROOT }	
 
      			}
+			ROOT = { load_focus_tree = { tree = generic_focus
+                     keep_completed = yes }}
 		}
 		}
 
@@ -1130,7 +1409,7 @@ ROOT = { NOT = { is_in_faction_with = USA }}
 		x = -1
 		y = 1
 		dynamic =  yes
-		cost = 10
+		cost = 1
 			 available = {
 			SOV = { has_government = communism }
 
@@ -1138,13 +1417,33 @@ ROOT = { NOT = { is_in_faction_with = USA }}
 		ai_will_do = {
 			factor = 1
 		}
+available = {NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}}
+
 	completion_reward = {
 	
 	if = { limit = { country_exists	= SOV }
 			ROOT = { leave_faction	= yes}
 	SOV = { add_to_faction	= ROOT }
-ROOT = { add_to_tech_sharing_group = commonwealth_research}
-	}}}
+ROOT = { add_to_tech_sharing_group = comintern_research}
+	
+	ROOT={
+			set_politics = {
+		ruling_party =communism
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+	democratic = 0
+	communism = 100
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 0
+	}
+load_focus_tree = { tree = generic_focus
+                     keep_completed = yes }
+	}
+	}
+}}
 ####################################################################
 #
 #	Foreign Partners End of Section 1. 
@@ -1161,19 +1460,20 @@ focus = {
 		id = American_Not_So_Loyal_State_form_the_german_partnership 
 		icon = GFX_expand_ru_eco_partnetship
 		relative_position_id =American_Not_So_Loyal_State_form_the_california_soviet_economic_partnership 
-		x = 2
+		x = 3
 		y = 0
 		dynamic =  yes
-		cost = 10
+		cost = 1
 mutually_exclusive = {
-
-focus =American_Not_So_Loyal_State_form_the_california_soviet_economic_partnership
-focus =American_Not_So_Loyal_State_form_the_english_partnership 
+focus = American_Not_So_Loyal_State_form_the_california_soviet_economic_partnership
+focus = American_Not_So_Loyal_State_form_the_english_partnership 
+focus = American_Not_So_Loyal_State_form_the_japanese_partnership 
 }
 		ai_will_do = {
 			factor = 1
 		}
 available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 	ROOT = { NOT = { has_war_with = GER }}
 	GER = { has_government = fascism }
 	ROOT = { NOT = { is_in_faction_with = USA }}
@@ -1197,12 +1497,13 @@ available = {
 		x = 0
 		y = -1
 		dynamic =  yes
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
 		}
 available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 	ROOT = { NOT = { has_war_with = GER }}
 	GER = { has_government = fascism }
 	ROOT = { NOT = { is_in_faction_with = USA }}
@@ -1258,12 +1559,13 @@ available = {
 		x = 0
 		y = -1
 		dynamic =  yes
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
 		}
 available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 	ROOT = { NOT = { has_war_with = GER }}
 ROOT = { NOT = { is_in_faction_with = USA }}
 	GER = { has_government = fascism }
@@ -1314,12 +1616,13 @@ ROOT = { NOT = { is_in_faction_with = USA }}
 		x = 0
 		y = -1
 		dynamic =  yes
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
 		}
 available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 	ROOT = { NOT = { has_war_with = GER }}
 ROOT = { NOT = { is_in_faction_with = USA }}
 	GER = { has_government = fascism }
@@ -1473,12 +1776,13 @@ if = {
 		x = 0
 		y = -1
 		dynamic =  yes
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
 		}
 available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 	ROOT = { NOT = { has_war_with = GER }}
 ROOT = { NOT = { is_in_faction_with = USA }}
 	GER = { has_government = fascism }
@@ -1524,12 +1828,13 @@ ROOT = { NOT = { is_in_faction_with = USA }}
 		x = 0
 		y = 1
 		dynamic =  yes
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
 		}
 available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 	ROOT = { NOT = { has_war_with = GER }}
 	GER = { has_government = fascism }
       ROOT = { has_government = fascism }
@@ -1570,12 +1875,13 @@ add_political_power = 250
 		x = 0
 		y = 1
 		dynamic =  yes
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
 		}
 available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 	ROOT = { NOT = { has_war_with = GER }}
 	GER = { has_government = fascism }
 ROOT = { NOT = { is_in_faction_with = USA }}
@@ -1631,26 +1937,29 @@ focus = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		dynamic =  yes
-		cost = 10
+		cost = 1
 		 available_if_capitulated = yes	
 		ai_will_do = {
 			factor = 1
 		}
 		 available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 			GER = { has_government = fascism }
 
 		}
 		completion_reward = {
 			if = { limit = { country_exists	= GER }
 			GER = { 
-				if = { limit = { has_dlc = "Man the Guns"}
-				inherit_technology = ROOT }
+				#if = { limit = { has_dlc = "Man the Guns"}
+				#inherit_technology = ROOT }
 
 				if = { limit = { has_dlc = "Together for Victory"}
 			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
 			} else = { puppet =ROOT }	
 
      			}
+			ROOT = { load_focus_tree = { tree = generic_focus
+                     keep_completed = yes }}
 		}
 		}
 
@@ -1671,7 +1980,7 @@ focus = {
 		x = 1
 		y = 1
 		dynamic =  yes
-		cost = 10
+		cost = 1
 			 available = {
 			GER = { has_government = fascism }
 
@@ -1679,13 +1988,34 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
+available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+}
 completion_reward = {
 	
 	if = { limit = { country_exists	= GER }
 			ROOT = { leave_faction	= yes}
 	GER = { add_to_faction	= ROOT }
-ROOT = { add_to_tech_sharing_group = commonwealth_research}
-	}}}
+ROOT = { add_to_tech_sharing_group = axis_research}
+	
+
+	ROOT={
+			set_politics = {
+		ruling_party =fascism
+		elections_allowed = no
+	}
+	set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 100
+	american_isolationism=0
+	american_globalism = 0
+	}
+	load_focus_tree = { tree = generic_focus
+                     keep_completed = yes }
+	}
+	}
+}}
 ####################################################################
 #
 #	 Foreign Partners End of Section 2.
@@ -1702,17 +2032,20 @@ focus = {
 		id = American_Not_So_Loyal_State_form_the_english_partnership 
 		icon = GFX_expand_ru_eco_partnetship
 		relative_position_id =American_Not_So_Loyal_State_form_the_german_partnership 
-		x = 2
+		x = 3
 		y = 0
 		dynamic =  yes
-		cost = 10
-		 mutually_exclusive = {focus = American_Not_So_Loyal_State_form_the_california_soviet_economic_partnership
+		cost = 1
+		 mutually_exclusive = {
+focus = American_Not_So_Loyal_State_form_the_california_soviet_economic_partnership
 focus = American_Not_So_Loyal_State_form_the_german_partnership 
+focus = American_Not_So_Loyal_State_form_the_japanese_partnership 
 }
 		ai_will_do = {
 			factor = 1
 		}
 available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 	ROOT = { NOT = { has_war_with = ENG }}
 	ENG = { has_government = democratic }
 	ROOT = { NOT = { is_in_faction_with = USA }}
@@ -1736,7 +2069,7 @@ available = {
 		x = 0
 		y = -1
 		dynamic =  yes
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
@@ -1797,12 +2130,13 @@ available = {
 		x = 0
 		y = -1
 		dynamic =  yes
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
 		}
 available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 	ROOT = { NOT = { has_war_with = ENG }}
 ROOT = { NOT = { is_in_faction_with = USA }}
 	ENG = { has_government = democratic }
@@ -1853,12 +2187,13 @@ ROOT = { NOT = { is_in_faction_with = USA }}
 		x = 0
 		y = -1
 		dynamic =  yes
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
 		}
 available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 	ROOT = { NOT = { has_war_with = ENG }}
 ROOT = { NOT = { is_in_faction_with = USA }}
 	ENG = { has_government = democratic }
@@ -2012,12 +2347,13 @@ if = {
 		x = 0
 		y = -1
 		dynamic =  yes
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
 		}
 available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 	ROOT = { NOT = { has_war_with = ENG }}
 ROOT = { NOT = { is_in_faction_with = USA }}
 	ENG = { has_government = democratic }
@@ -2063,12 +2399,13 @@ ROOT = { NOT = { is_in_faction_with = USA }}
 		x = 0
 		y = 1
 		dynamic =  yes
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
 		}
 available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 	ROOT = { NOT = { has_war_with = ENG }}
 	ENG = { has_government = democratic }
 ROOT = { NOT = { is_in_faction_with = USA }}
@@ -2108,12 +2445,13 @@ add_political_power = 250
 		x = 0
 		y = 1
 		dynamic =  yes
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
 		}
 available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 	ROOT = { NOT = { has_war_with = ENG }}
 	ENG = { has_government = democratic }
 ROOT = { NOT = { is_in_faction_with = USA }}
@@ -2169,7 +2507,7 @@ focus = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		dynamic =  yes
-		cost = 10
+		cost = 1
 		 available_if_capitulated = yes	
 		ai_will_do = {
 			factor = 1
@@ -2181,14 +2519,16 @@ focus = {
 		completion_reward = {
 			if = { limit = { country_exists	= ENG }
 			ENG = { 
-				if = { limit = { has_dlc = "Man the Guns"}
-				inherit_technology = ROOT }
+				#if = { limit = { has_dlc = "Man the Guns"}
+				#inherit_technology = ROOT }
 
 				if = { limit = { has_dlc = "Together for Victory"}
 			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
 			} else = { puppet =ROOT }	
 
      			}
+			ROOT = { load_focus_tree = { tree = generic_focus
+                     keep_completed = yes }}
 		}
 		}
 
@@ -2209,7 +2549,7 @@ focus = {
 		x = 1
 		y = 1
 		dynamic =  yes
-		cost = 10
+		cost = 1
 			 available = {
 			ENG = { has_government = democratic }
 
@@ -2217,17 +2557,602 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
+available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+}
 completion_reward = {
 	
 	if = { limit = { country_exists	= ENG }
 			ROOT = { leave_faction	= yes}
 	ENG = { add_to_faction	= ROOT }
 ROOT = { add_to_tech_sharing_group = commonwealth_research}
-	}}}
+	
+	ROOT={
+			set_politics = {
+		ruling_party =democratic
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+	democratic = 100
+	communism = 0
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 0
+	}
+	load_focus_tree = { tree = generic_focus
+                     keep_completed = yes }
+	}
+	}
+}}
 ####################################################################
 #
 #	 Foreign Partners End of Section 3.
 #		England
+#
+####################################################################
+####################################################################
+#
+#	Foreign Partners Section 4. 
+#		Japan
+#
+####################################################################
+focus = {
+		id = American_Not_So_Loyal_State_form_the_japanese_partnership
+		icon = GFX_expand_jap_eco_partnetship
+		relative_position_id =American_Not_So_Loyal_State_form_the_english_partnership 
+		x = 3
+		y = 0
+		dynamic =  yes
+		cost = 1
+		 mutually_exclusive = {
+focus = American_Not_So_Loyal_State_form_the_california_soviet_economic_partnership
+focus = American_Not_So_Loyal_State_form_the_german_partnership 
+focus = American_Not_So_Loyal_State_form_the_english_partnership
+}
+		ai_will_do = {
+			factor = 1
+		}
+available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+	ROOT = { NOT = { has_war_with = JAP }}
+	ROOT = { NOT = { is_in_faction_with = USA }}
+    }
+   
+
+ 
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = { add_ideas = { imperial_japan_special_partnership } }
+	}
+
+
+	focus = {
+		id = American_Not_So_Loyal_State_japanese_security_partnership 
+		icon = GFX_japanese_security_aid
+		relative_position_id = American_Not_So_Loyal_State_form_the_japanese_partnership 
+		prerequisite = { focus = American_Not_So_Loyal_State_form_the_japanese_partnership   }
+		x = 0
+		y = -1
+		dynamic =  yes
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+	ROOT = { NOT = { has_war_with = JAP }}
+	ROOT = { NOT = { is_in_faction_with = USA }}
+    }
+    
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = { add_ideas = { japanese_security_aid1  }
+
+	 add_political_power = 250
+				add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+			army_experience = 15
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+				add_ideas = special_forces
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.0
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+				technology = marines
+				technology = marines2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+			}
+}
+}
+	focus = {
+		id = American_Not_So_Loyal_State_japanese_security_partnership2 
+		icon = GFX_japanese_security_aid2
+		relative_position_id =  American_Not_So_Loyal_State_japanese_security_partnership 
+		prerequisite = { focus = American_Not_So_Loyal_State_japanese_security_partnership  }
+		x = 0
+		y = -1
+		dynamic =  yes
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+	ROOT = { NOT = { has_war_with = JAP }}
+ROOT = { NOT = { is_in_faction_with = USA }}
+    }
+    
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = { add_ideas = { japanese_security_aid2  } add_political_power = 250
+		air_experience = 35
+			add_tech_bonus = {
+				name = motorized_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = motorized_equipment
+			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}		
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+
+}
+
+}
+	focus = {
+		id = American_Not_So_Loyal_State_japanese_security_partnership3 
+		icon = GFX_japanese_security_aid3
+		relative_position_id = American_Not_So_Loyal_State_japanese_security_partnership2
+		prerequisite = { focus = American_Not_So_Loyal_State_japanese_security_partnership2  }
+		x = 0
+		y = -1
+		dynamic =  yes
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+	ROOT = { NOT = { has_war_with = JAP }}
+ROOT = { NOT = { is_in_faction_with = USA }}
+
+    }
+    
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = { add_ideas = { japanese_security_aid3  } add_political_power = 250
+		add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 3.0
+				technology = motorised_infantry
+			}
+
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+
+
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+			add_tech_bonus = {
+				name = jet_rocket_bonus
+				ahead_reduction = 2
+				uses = 2
+				category = rocketry
+				category = jet_technology
+			}
+if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = { tag = ROOT }
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+		}			
+}
+
+
+	focus = {
+		id = American_Not_So_Loyal_State_japanese_security_partnership4 
+		icon = GFX_japanese_security_aid4
+		relative_position_id = American_Not_So_Loyal_State_japanese_security_partnership3 
+		prerequisite = { focus = American_Not_So_Loyal_State_japanese_security_partnership3  }
+		x = 0
+		y = -1
+		dynamic =  yes
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+	ROOT = { NOT = { has_war_with = JAP }}
+ROOT = { NOT = { is_in_faction_with = USA }}
+    }
+    
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = { 
+		
+		add_ideas = { japanese_security_aid3  } 
+		add_political_power = 250
+
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+		
+
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = dd_tech
+			}
+		
+
+}
+	}
+
+
+	focus = {
+		id = American_Not_So_Loyal_State_joint_japanese_military_training 
+		icon = GFX_jap_mil_train_joint
+		relative_position_id = American_Not_So_Loyal_State_form_the_japanese_partnership  
+		x = 0
+		y = 1
+		dynamic =  yes
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+	ROOT = { NOT = { has_war_with = JAP }}
+ROOT = { NOT = { is_in_faction_with = USA }}
+    }
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = { add_ideas = {japanese_military_training
+paramilitarism_focus
+foreign_expeditions_focus} 
+
+add_political_power = 250
+
+
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 1.0
+				uses = 4
+				category = electronics
+				category = nuclear
+				category = rocketry
+			}
+		
+
+
+
+}
+	}
+	focus = {
+		id = American_Not_So_Loyal_State_joint_japanese_military_training2 
+		icon = GFX_jap_mil_train_joint
+		relative_position_id = American_Not_So_Loyal_State_joint_japanese_military_training  
+		prerequisite = { focus =American_Not_So_Loyal_State_joint_japanese_military_training   }
+		x = 0
+		y = 1
+		dynamic =  yes
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+	ROOT = { NOT = { has_war_with = JAP }}
+	ROOT = { NOT = { is_in_faction_with = USA }}
+
+    }
+			
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = { add_ideas = { japanese_military_training2}
+
+				add_tech_bonus = {
+					name = electronics_bonus
+					bonus = 1.0
+					uses = 1
+					category = electronics
+				}
+				add_tech_bonus = {
+					name = industrial_bonus
+					bonus = 1.0
+					uses = 1
+					category = industry
+				}	
+				add_tech_bonus = {
+					name = infantry_artillery_bonus #@#
+					bonus = 1.0
+					uses = 1
+					category = infantry_weapons
+					category = artillery
+				}
+
+		hidden_effect = {
+				set_rule = { can_use_kamikaze_pilots = yes }
+			}
+			custom_effect_tooltip = kamikaze_focus_tooltip
+
+
+ }
+	}
+focus = {
+		id = American_Not_So_Loyal_State_joint_japanese_state 
+		icon = GFX_jap_mil_train_joint2
+		relative_position_id = American_Not_So_Loyal_State_joint_japanese_military_training2 
+		prerequisite = { 
+			focus =American_Not_So_Loyal_State_joint_japanese_military_training2 
+			  }
+		mutually_exclusive = {focus = American_Not_So_Loyal_State_joint_japanese_movement }
+		x = 0
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		dynamic =  yes
+		cost = 1
+		 available_if_capitulated = yes	
+		ai_will_do = {
+			factor = 1
+		}
+		 available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+			ROOT = { NOT = { has_war_with = JAP }}
+ROOT = { NOT = { is_in_faction_with = USA }}
+
+		}
+		completion_reward = {
+			if = { limit = { country_exists	= JAP }
+			JAP = { 
+				#if = { limit = { has_dlc = "Man the Guns"}
+				#inherit_technology = ROOT }
+
+				if = { limit = { has_dlc = "Together for Victory"}
+			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
+			} else = { puppet =ROOT }	
+
+     			}
+			ROOT = { load_focus_tree = { tree = generic_focus
+                     keep_completed = yes }}
+		}
+		}
+
+
+	}
+	focus = {
+		id = American_Not_So_Loyal_State_joint_japanese_movement
+		icon = GFX_jap_mil_train_joint2
+		relative_position_id = American_Not_So_Loyal_State_joint_japanese_state
+	prerequisite = { 
+			focus =American_Not_So_Loyal_State_joint_japanese_military_training 
+			focus =American_Not_So_Loyal_State_japanese_security_partnership4 
+			  }
+		mutually_exclusive = {focus = American_Not_So_Loyal_State_joint_japanese_state }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no	
+		x = 1
+		y = 1
+		dynamic =  yes
+		cost = 1
+			 available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+			ROOT = { NOT = { has_war_with = JAP }}
+ROOT = { NOT = { is_in_faction_with = USA }}
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+completion_reward = {
+	
+	if = { limit = { country_exists	= JAP }
+			ROOT = { leave_faction	= yes}
+	JAP = { add_to_faction	= ROOT }
+ROOT = { add_to_tech_sharing_group = japanese_research}
+
+	ROOT={
+			set_politics = {
+		ruling_party =democratic
+		elections_allowed = no
+	}
+	set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 100
+	american_isolationism=0
+	american_globalism = 0
+	}
+	load_focus_tree = { tree = generic_focus
+                     keep_completed = yes }
+	}
+	}
+}}
+####################################################################
+#
+#	 Foreign Partners End of Section 4.
+#		Japan
 #
 ####################################################################
 ####################################################################
@@ -2241,7 +3166,7 @@ ROOT = { add_to_tech_sharing_group = commonwealth_research}
 
 	focus = {
 		id = American_Not_So_Loyal_State_smugggle_in_league_banned_foreign_arms
-		relative_position_id = American_Not_So_Loyal_State_form_the_english_partnership  
+		relative_position_id =  American_Not_So_Loyal_State_form_the_japanese_partnership
 		icon = GFX_ru_mil_train_joint2
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2249,10 +3174,11 @@ ROOT = { add_to_tech_sharing_group = commonwealth_research}
 		x = 4
 		y = 0
 		dynamic =  yes
-		cost = 10
+		cost = 1
 		ai_will_do = {
 			factor = 1
 		}
+available = {NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}}
 	completion_reward = {
 	
    add_threat = 1 
@@ -2290,10 +3216,11 @@ add_equipment_to_stockpile = {
 		x = 0
 		y = 1
 		dynamic =  yes
-		cost = 10
+		cost = 1
 		ai_will_do = {
 			factor = 1
 		}
+available = {NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}}
 	completion_reward = {
     add_threat = 2 
 add_equipment_to_stockpile = {
@@ -2329,7 +3256,7 @@ focus = {
 		x = 0
 		y = 1
 		dynamic =  yes
-		cost = 10
+		cost = 1
 	
 		ai_will_do = {
 			factor = 1
@@ -2351,7 +3278,7 @@ focus = {
 		x = 0
 		y = 1
 		dynamic =  yes
-		cost = 10
+		cost = 1
 	
 		ai_will_do = {
 			factor = 1
@@ -2373,7 +3300,7 @@ focus = {
 		x = 0
 		y = 1
 		dynamic =  yes
-		cost = 10
+		cost = 1
 	
 		ai_will_do = {
 			factor = 1

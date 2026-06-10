@@ -1,0 +1,10 @@
+union_member_state_influence = {
+	icon = GFX_decision_category_generic_propaganda
+	visible = {
+	has_variable =var_American_States
+	NOT={ original_tag = FRA }
+	NOT={ original_tag = ENG }
+	NOT={ original_tag = IRE }
+	NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+}
+}

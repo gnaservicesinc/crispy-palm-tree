@@ -1,18 +1,180 @@
+sov_abondon_cali_friends_rev = {
+reversed = yes
+		enable = {
+		
+		has_variable =var_American_States
+		SOV={has_variable =var_Sov_Abandon_American_States}
+		NOT = { original_tag = SOV } 
+		NOT = { is_in_faction_with = SOV }
+			}
+	abort = {
+	NOT={SOV={has_variable =var_Sov_Abandon_American_States}}
+	OR = { any_country = {has_variable =var_American_Homeland_Victory_Flag_Won} }
+	}
+
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = SOV
+		value = 10000
+		}
+	ai_strategy = {
+		type = prepare_for_war
+		id = SOV
+		value = 10000
+		}
+	ai_strategy = {
+		type = invade
+		id = SOV
+		value = 10000
+		}
+	ai_strategy = {
+		type = declare_war
+		id = SOV
+		value = 10000
+		}
+	ai_strategy = {
+		type = conquer
+		id = SOV
+		value = 10000
+		}
+	ai_strategy = {
+		type = antagonize
+		id = SOV
+		value = 10000
+		}
+	ai_strategy = {
+		type = contain
+		id = SOV
+		value = 10000
+		}
+	ai_strategy = {
+		type = consider_weak
+		id = SOV
+		value = 10000
+		}
+}
+sov_abondon_cali_friends = {
+
+		enable = {
+		original_tag = SOV
+		SOV={has_variable =var_Sov_Abandon_American_States}
+			}
+	abort = {
+	NOT={SOV={has_variable =var_Sov_Abandon_American_States}}
+	OR = { any_country = {has_variable =var_American_Homeland_Victory_Flag_Won} }
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = UCA
+		value = 10000
+		}
+	ai_strategy = {
+		type = prepare_for_war
+		id = UMI
+		value = 10000
+		}
+	ai_strategy = {
+		type = prepare_for_war
+		id = UAL
+		value = 10000
+		}
+	ai_strategy = {
+		type = prepare_for_war
+		id = UTX
+		value = 10000
+		}
+	ai_strategy = {
+		type = prepare_for_war
+		id = USA
+		value = 10000
+		}
+	ai_strategy = {
+		type = prepare_for_war
+		id = ENG
+		value = 10000
+		}
+	ai_strategy = {
+		type = ignore
+		id = UCA
+		value = 10000
+		}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = UCA
+		value = 10000
+		}
+	ai_strategy = {
+		type = ignore
+		id = UMI
+		value = 10000
+		}
+	ai_strategy = {
+		type = ignore
+		id = UTX
+		value = 10000
+		}
+	ai_strategy = {
+		type = ignore
+		id = UAL
+		value = 10000
+		}
+	ai_strategy = {
+		type = ignore
+		id = ENG
+		value = 10000
+		}
+	ai_strategy = {
+		type = ignore
+		id = USA
+		value = 10000
+		}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = USA
+		value = 10000
+		}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = ENG
+		value = 10000
+		}
+		ai_strategy = {
+		type = dont_join_wars_with
+		id = UMI
+		value = 10000
+		}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = UTX
+		value = 10000
+		}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = UAL
+		value = 10000
+		}
+}
+
 sov_protect_cali_friends = {
 	 enable = {
-		tag = SOV
+		original_tag = SOV
+		NOT={has_variable =var_Sov_Abandon_American_States}
 		UCA ={ NOT ={ has_war_with = SOV }}
 		}
 
-		ai_strategy = {
+	
+abort =  {
+has_variable =var_Sov_Abandon_American_States
+is_in_faction_with = USA
+UCA = { has_war_with = SOV }
+OR = { any_country = {has_variable =var_American_Homeland_Victory_Flag_Won} }
+}
+
+	ai_strategy = {
 		type = send_volunteers_desire
 		id = UCA
 		value = 1531
 		}
-abort =  {
-is_in_faction_with = USA
-UCA = { has_war_with = SOV }
-}
 	ai_strategy = {
 		type = befriend
 		id = "UCA"			
@@ -41,12 +203,20 @@ reversed = yes
 		ROOT = {has_idea = california_soviet_partnership}
 		ROOT = { NOT = { is_in_faction_with = USA  }}
 		ROOT = { NOT = { has_war_with = SOV  }}
+		NOT={SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}
+		NOT={SOV = {  has_variable =var_Sov_Abandon_American_States }}
 		}
 abort =  {
-ROOT = { NOT = { has_idea = california_soviet_partnership}}
-ROOT = { is_in_faction_with = USA  }
-ROOT = { has_war_with = SOV }
-
+AND={
+	OR={
+	any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}
+	SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }
+	SOV = {  has_variable =var_Sov_Abandon_American_States }
+	}
+	ROOT = { NOT = { has_idea = california_soviet_partnership}}
+	ROOT = { is_in_faction_with = USA  }
+	ROOT = { has_war_with = SOV }
+}
 }
 	    ai_strategy = {
 		type = befriend
@@ -84,7 +254,8 @@ ROOT = { has_war_with = SOV }
 sov_invested_in_american = {
 
  enable = {
-	
+has_variable =var_Sov_Abandon_American_States
+	SOV = { NOT={has_variable =var_Sov_Abandon_American_States}}
 	original_tag = SOV
 	NOT = { is_in_faction_with = USA }
 	UCA =  { 
@@ -95,9 +266,11 @@ sov_invested_in_american = {
 	}
 
 	abort =  {
+	
 		UCA =  { NOT = { has_government = communism } }
 		 is_in_faction_with = USA 
-
+		SOV={has_variable =var_Sov_Abandon_American_States}
+OR = { any_country = {has_variable =var_American_Homeland_Victory_Flag_Won} }
 	}
 	    ai_strategy = {
 		type = befriend
@@ -136,10 +309,13 @@ sov_invested_in_american = {
 	
 	original_tag = SOV
 	country_exists = USA
+	SOV={NOT={has_variable =var_Sov_Abandon_American_States}}
 }
 
 abort =  {
+SOV={has_variable =var_Sov_Abandon_American_States}
 	NOT = { country_exists = USA }
+OR = { any_country = {has_variable =var_American_Homeland_Victory_Flag_Won} }
 }
 	ai_strategy = {
 		type = contain
@@ -176,10 +352,13 @@ sov_invested_in_american_mi = {
 	
 	original_tag = SOV
 	country_exists = UMI
+	SOV={NOT={has_variable =var_Sov_Abandon_American_States}}
 }
 
 abort =  {
+	SOV={has_variable =var_Sov_Abandon_American_States}
 	NOT = { country_exists = UMI }
+OR = { any_country = {has_variable =var_American_Homeland_Victory_Flag_Won} }
 }
 	ai_strategy = {
 		type = contain
@@ -217,10 +396,14 @@ sov_invested_in_american_al = {
 	
 	original_tag = SOV
 	country_exists = UAL
+	SOV={NOT={has_variable =var_Sov_Abandon_American_States}}
 }
 
 abort =  {
+	SOV={has_variable =var_Sov_Abandon_American_States}
 	NOT = { country_exists = UAL }
+OR = { any_country = {has_variable =var_American_Homeland_Victory_Flag_Won} }
+	
 }
 	ai_strategy = {
 		type = contain
@@ -257,10 +440,12 @@ sov_invested_in_american_tx = {
 	
 	original_tag = SOV
 	country_exists = UTX
+SOV={NOT={has_variable =var_Sov_Abandon_American_States}}
 }
 
 abort =  {
 	NOT = { country_exists = UTX }
+OR = { any_country = {has_variable =var_American_Homeland_Victory_Flag_Won} }
 }
 	ai_strategy = {
 		type = contain

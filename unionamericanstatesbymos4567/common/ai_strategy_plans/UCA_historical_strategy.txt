@@ -1,0 +1,49 @@
+UCA_historical_plan = {
+
+	name = "UCA historical plan"
+	desc = "Unity and community shall bring a new light upon these dark lands."
+
+	enable = { AND={
+		original_tag = UCA
+		is_historical_focus_on = yes
+	}}
+	abort = {
+		always = no
+	}
+	ai_national_focuses = {
+		American_choice_major_union_states_warpath
+		American_Major_Warpath_focus_[?ROOT.GetLeader]_takes_command
+		American_Major_Warpath_focus_focus_border_security
+		American_Major_Warpath_focus_focus_border_security_2
+		American_Major_Warpath_focus_focus_border_security_3
+		American_Major_Warpath_focus_focus_border_security_4
+		American_Major_Warpath_focus_focus_bibb_consolidate_power
+		American_Major_Warpath_focus_focus_bibb_consolidate_power_usa
+		American_Major_Warpath_focus_focus_blackmarket_arms_deal_1 
+		American_Major_Warpath_focus_focus_blackmarket_arms_deal_2
+		continuous_amer_war_prep
+	}
+research = {
+
+	}
+
+	ideas = {
+
+	}
+	traits = {
+		captain_of_industry = 10
+		popular_figurehead = 5
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

@@ -1,6 +1,6 @@
 ﻿capital = 359
 
-oob = "State_Guard"
+oob = "UNJ"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "USA_1936_naval_mtg"
@@ -8,38 +8,83 @@ if = {
 		set_naval_oob = "USA_1936_naval_legacy"
 	}
 }
-
-
-
-set_research_slots = 4
-set_stability = 0.95
-set_war_support = 15
-add_to_tech_sharing_group = usa_investigators
-set_convoys = 4000
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 99
-		}
-
-		fascism = {
-			popularity = 0
-			banned = yes
-		}
-		
-		communism = {
-			popularity = 1
-			banned = yes
-			 #default is no
-		}
+create_country_leader = {
+	name = "American Royal King Thomas Woodrow Wilson"
+	desc = "POLITICS_KING_THOMAS_WOODROW_WILSON_DESC"
+	picture = "gfx/leaders/UNJ/King_Thomas_Woodrow_Wilson.dds"
+	expire = "1975.1.1"
+	ideology = wilsonianism
+	traits = {
+		dislikes_germany
+		lieutenant_of_industry
+		staunch_constitutionalist
+		political_dancer
+		dealbroker
+		anti_communist
+		warmonger
+		baron_of_terror
+		socialite_connections
 	}
-	
-	ruling_party = democratic
-	last_election = "1932.11.8"
-	election_frequency = 48
-	elections_allowed = yes
 }
+create_country_leader = {
+	name = "George S. Silzer"
+	desc = "POLITICS_GEORGE_S_SILZER_DESC"
+	picture = "gfx/leaders/UNJ/George_S_Silzer.dds"
+	expire = "1989.1.1"
+	ideology = liberalism
+	traits = {
+		lieutenant_of_industry
+		dislikes_germany
+		anti_communist
+		political_dancer
+		staunch_constitutionalist
+		dealbroker
+	}
+}
+create_country_leader = {
+	name = "Ostküstenführer Morgan F. Larson"
+	desc = "POLITICS_MORGAN_F_LARSON_DESC"
+	picture = "gfx/leaders/UNJ/Morgan_F_Larson.dds"
+	expire = "1975.1.1"
+	ideology = texanism
+	traits = {
+		lieutenant_of_industry
+		anti_democrat
+		warmonger
+		baron_of_terror
+	}
+}
+create_country_leader = {
+	name = "Governor Charles Edison"
+	desc = "POLITICS_CHARLES_EDISON_DESC"
+	picture = "gfx/leaders/UNJ/Charles_Edison.dds"
+	expire = "1985.1.1"
+	ideology = alabaman
+	traits = {
+		anti_communist 
+		socialite_connections 
+		staunch_constitutionalist
+		cornered_fox
+	}
+}
+set_research_slots = 8
+set_stability = 1
+set_war_support = 100
+add_to_tech_sharing_group = usa_investigators
+set_convoys = 40000
+set_politics = {
+		ruling_party = democratic
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+	democratic = 100
+	communism = 0
+	fascism = 0
+	american_wilsonianism=0
+	american_isolationism=0
+	american_globalism = 0
+	}
 
 add_ideas = {
 	free_trade

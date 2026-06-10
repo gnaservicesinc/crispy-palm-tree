@@ -4,7 +4,7 @@ state={
 	name="STATE_392"
 	manpower = 8470938
 	
-	state_category = city
+	state_category = "city"
 
 	history={
 		owner = UIA

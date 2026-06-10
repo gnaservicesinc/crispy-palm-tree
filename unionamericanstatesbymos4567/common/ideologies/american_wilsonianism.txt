@@ -1,0 +1,47 @@
+ideologies = {
+
+	american_wilsonianism = {
+		types = {
+			wilsonianism = {
+			}
+		
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_AMERICAN_WILSONIANISM_1"
+			"FACTION_NAME_AMERICAN_WILSONIANISM_2"
+			"FACTION_NAME_AMERICAN_WILSONIANISM_3"
+			"FACTION_NAME_AMERICAN_WILSONIANISM_4"
+			"FACTION_NAME_AMERICAN_WILSONIANISM_5"
+			"FACTION_NAME_AMERICAN_WILSONIANISM_6"
+		}
+		
+		color = { 7 0 0 }
+		
+		war_impact_on_world_tension = -1
+		faction_impact_on_world_tension = -1
+		can_host_government_in_exile = yes
+
+		rules = {
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = no
+			can_guarantee_other_ideologies = yes
+		}
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.55
+		}
+		modifiers = {
+			annex_cost_factor = -5.0
+			trade_opinion_factor = 2.0
+			lend_lease_tension = 1.00
+			send_volunteers_tension = 1.00
+
+		}
+		ai_fascist = yes
+		
+	}
+}
+

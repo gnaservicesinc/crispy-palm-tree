@@ -92,4 +92,32 @@ SpriteType = {
 	name = "GFX_amer_sw_generic_lead"
 	texturefile = "gfx/leaders/AMERICAN/generic_southwest_lead.dds"
 }
+SpriteType = {
+	name = "GFX_expand_jap_eco_partnetship"
+	texturefile = "gfx/interface/goals/gfx_expand_jap_eco_partnetship.dds"
+}
+SpriteType = {
+	name = "GFX_japanese_security_aid"
+	texturefile = "gfx/interface/goals/gfx_japanese_security_aid.dds"
+}
+SpriteType = {
+	name = "GFX_japanese_security_aid2"
+	texturefile = "gfx/interface/goals/gfx_japanese_security_aid2.dds"
+}
+SpriteType = {
+	name = "GFX_japanese_security_aid3"
+	texturefile = "gfx/interface/goals/gfx_japanese_security_aid3.dds"
+}
+SpriteType = {
+	name = "GFX_japanese_security_aid4"
+	texturefile = "gfx/interface/goals/gfx_japanese_security_aid4.dds"
+}
+SpriteType = {
+	name = "GFX_jap_mil_train_joint"
+	texturefile = "gfx/interface/goals/gfx_jap_mil_train_joint.dds"
+}
+SpriteType = {
+	name = "GFX_jap_mil_train_joint2"
+	texturefile = "gfx/interface/goals/gfx_jap_mil_train_joint2.dds"
+}
 }####################

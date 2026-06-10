@@ -1,0 +1,46 @@
+American_States_Consolidation = {
+	Consolidate_union_state = {
+	 target_trigger = { FROM = { AND={
+			has_variable =var_American_States
+			}
+		}}
+		days_remove = 1
+		days_re_enable = 30
+
+		ai_will_do = {
+			factor = 1
+		 modifier = {
+        		add = 1
+			has_war = yes
+		}
+
+		 modifier = {
+        		add = 1
+			NOT={ has_government = democratic }
+		}
+		 modifier = {
+        		add = 1
+			FROM={has_war = yes}
+		}
+		modifier = {
+        		add = 1
+			FROM={NOT={ has_government = democratic }}
+		}
+	}
+	cost = 5
+
+	available = { AND={
+		FROM={is_ai = yes}
+		FROM={is_in_faction_with = ROOT}
+		FROM={NOT = { is_major = yes }}
+		ROOT={has_completed_focus = American_Major_Warpath_focus_focus_bibb_consolidate_power
+		}}}		
+complete_effect = {
+
+		ROOT = { annex_country = {
+   			 target = FROM
+    			transfer_troops = yes
+				}}					
+        	}
+	}
+}

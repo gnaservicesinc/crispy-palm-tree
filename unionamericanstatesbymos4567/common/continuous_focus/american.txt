@@ -183,7 +183,7 @@ continuous_focus_palette = {
 		}
 		
 		modifier = {
-			training_time_army_factor = -0.35
+			training_time_army_factor = -0.55
 		}
 		
 		ai_will_do = {
@@ -235,7 +235,6 @@ focus = {
 		
 		
 		modifier = {
-			production_speed_infrastructure_factor = 0.24
 			production_speed_air_base_factor = 0.1
 			production_speed_naval_base_factor = 0.1
 			production_speed_fuel_silo_factor = 0.1	
@@ -247,17 +246,17 @@ focus = {
 			production_speed_radar_station_factor = 0.2
 planning_speed = 0.50
 				command_power_gain_mult = 0.15
-				conscription = 0.08
+				conscription = 0.16
 				consumer_goods_factor = 0.07
 				stability_factor = 0.13
-				mobilization_speed = 0.75
+				mobilization_speed = 0.80
 				production_speed_industrial_complex_factor = 0.18
 				production_speed_arms_factory_factor = 0.14
 				production_factory_efficiency_gain_factor = 0.13
 				defensive_war_stability_factor = 0.25
 				offensive_war_stability_factor = 0.25
-production_speed_infrastructure_factor = 0.1
-				army_core_attack_factor = 0.25
+production_speed_infrastructure_factor = 0.25
+				army_core_attack_factor = 0.35
 				training_time_factor = -0.25
 				equipment_capture = 0.225	
 				conscription_factor = 0.25
@@ -325,7 +324,9 @@ production_speed_infrastructure_factor = 0.1
 		}
 		
 		modifier = {
-			autonomy_gain = 0.5
+				non_core_manpower = 0.5
+				conscription = 0.10
+				conscription_factor = 0.10
 		}
 		
 		ai_will_do = {

@@ -1,0 +1,47 @@
+ideas = {
+	 country = {
+
+usa_phoenix_rising = {
+	picture = eng_imperial_conscription
+allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+	modifier = {
+		political_power_gain	=0.65
+		political_power_factor =0.55
+		send_volunteer_size=10
+		justify_war_goal_time = -0.55	
+		army_leader_start_level	= 5
+		ai_focus_aggressive_factor = 0.99
+			training_time_factor=-0.15	
+		planning_speed=0.50
+		max_planning=0.59
+		army_org = 25
+recon_factor = 0.28
+army_defence_factor = 0.35
+		army_org_factor = 0.25
+ai_desired_divisions_factor = 1
+weekly_manpower = 5000
+attrition = -0.25
+research_speed_factor = 0.25
+	war_support_weekly = 0.01
+	stability_weekly = 0.01
+stability_factor = 0.10	
+war_support_factor = 0.10	
+master_ideology_drift = 0.75	
+operative_slot = 10
+resistance_damage_to_garrison = -0.1
+		conscription_factor = 0.41
+			conscription = 0.41
+		non_core_manpower = 0.99
+	production_factory_max_efficiency_factor = 0.95
+	industrial_capacity_dockyard = 0.45
+	production_oil_factor = 0.5
+fuel_gain_factor =0.75
+fuel_gain_factor_from_states = 0.75
+consumer_goods_factor = -0.50
+	
+		}
+}
+
+}}##################

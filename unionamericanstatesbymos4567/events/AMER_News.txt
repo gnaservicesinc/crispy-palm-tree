@@ -1,0 +1,503 @@
+﻿add_namespace = amer_news
+
+news_event = {
+	id = amer_news.1
+	title = amer_news.1.t
+	desc = amer_news.1.desc
+	picture = GFX_news_event_ger_civil_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = amer_news.1.a
+		trigger = {
+			original_tag = USA
+		}
+	}
+	option = {
+		name = amer_news.1.b
+		trigger = { 
+			NOT = { original_tag = USA }
+			has_government = democratic
+		}
+	}
+	option = {
+		name = amer_news.1.c
+		trigger = { 
+			NOT = { original_tag = USA }
+			NOT = { has_government = democratic }
+		}
+	}
+
+}
+news_event = {
+	id = amer_news.2
+	title = amer_news.2.t
+	desc = amer_news.2.desc
+	picture = GFX_news_event_ger_civil_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = amer_news.2.a
+		trigger = {
+			original_tag = USA
+		}
+	}
+        option = {
+		name = amer_news.2.b
+		trigger = {
+			original_tag = UMI
+		}
+	}
+	option = {
+		name = amer_news.2.c
+		trigger = { 
+			NOT = { original_tag = UMI }
+			NOT = { original_tag = USA }
+			has_government = democratic
+		}
+	}
+	option = {
+		name = amer_news.2.d
+		trigger = { 
+			NOT = { original_tag = USA }
+			NOT = { original_tag = UMI }
+			NOT = { has_government = democratic }
+		}
+	}
+
+}
+
+news_event = {
+	id = amer_news.3
+	title = amer_news.3.t
+	desc = amer_news.3.desc
+	picture = GFX_news_event_ger_civil_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = amer_news.3.a
+		trigger = {
+			original_tag = USA
+		}
+	}
+	option = {
+		name = amer_news.3.b
+		trigger = { 
+			NOT = { original_tag = USA }
+			has_government = democratic
+		}
+	}
+	option = {
+		name = amer_news.3.c
+		trigger = { 
+			NOT = { original_tag = USA }
+			NOT = { has_government = democratic }
+		}
+	}
+
+}
+news_event = {
+	id = amer_news.4
+	title = amer_news.4.t
+	desc = amer_news.4.desc
+	picture = GFX_news_event_ger_civil_war
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = amer_news.4.a
+		trigger = {
+			original_tag = USA
+		}
+	}
+	option = {
+		name = amer_news.4.b
+		trigger = { 
+			NOT = { original_tag = USA }
+			has_government = democratic
+		}
+	}
+	option = {
+		name = amer_news.4.c
+		trigger = { 
+			NOT = { original_tag = USA }
+			NOT = { has_government = democratic }
+		}
+	}
+
+}
+news_event = {
+	id = amer_news.5
+	title = amer_news.5.t
+	desc = amer_news.5.desc
+	picture = GFX_news_event_ger_civil_war
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = amer_news.5.a
+		trigger = {
+			original_tag = USA
+		}
+	}
+	option = {
+		name = amer_news.5.b
+		trigger = { 
+			NOT = { original_tag = USA }
+			has_government = democratic
+		}
+	}
+	option = {
+		name = amer_news.5.c
+		trigger = { 
+			NOT = { original_tag = USA }
+			NOT = { has_government = democratic }
+		}
+	}
+
+}
+news_event = {
+	id = amer_news.6
+	title = amer_news.6.t
+	desc = amer_news.6.desc
+	picture = GFX_news_event_ger_civil_war
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = amer_news.6.a
+		trigger = {
+			original_tag = USA
+		}
+	}
+	option = {
+		name = amer_news.6.b
+		trigger = { 
+			NOT = { original_tag = USA }
+			has_government = democratic
+		}
+	}
+	option = {
+		name = amer_news.6.c
+		trigger = { 
+			NOT = { original_tag = USA }
+			NOT = { has_government = democratic }
+		}
+	}
+
+}
+
+news_event = {
+	id = amer_news.7
+	title = amer_news.7.t
+	desc = amer_news.7.desc
+	picture = GFX_news_event_ger_civil_war
+	
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = amer_news.7.a
+		trigger = {
+			original_tag = USA
+		}
+	}
+	option = {
+		name = amer_news.7.b
+		trigger = { 
+			NOT = { original_tag = USA }
+			NOT = { original_tag = FROM.GetTag }
+		}
+	}
+	option = {
+		name = amer_news.7.c
+		trigger = { 
+		tag = FROM.GetTag
+		}
+	}
+
+}
+news_event = {
+	id = amer_news.8
+	title = amer_news.8.t
+	desc = amer_news.8.desc
+	picture = GFX_news_event_ger_civil_war
+	
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = amer_news.8.a
+		trigger = {
+			original_tag = USA
+		}
+	}
+	option = {
+		name = amer_news.8.b
+		trigger = { 
+			NOT = { original_tag = USA }
+			NOT = { original_tag = JAP }
+			NOT = { original_tag = ENG }
+			NOT = { original_tag = FROM.GetTag }
+		}
+	}
+	option = {
+		name = amer_news.8.c
+		trigger = { 
+		tag = FROM.GetTag
+		}
+	}
+	option = {
+		name = amer_news.8.d
+		trigger = {
+			original_tag = JAP
+			
+		}
+	}
+	option = {
+		name = amer_news.8.e
+		trigger = {
+			original_tag = ENG
+		}
+	}
+}
+news_event = {
+	id = amer_news.9
+	title = amer_news.9.t
+	desc = amer_news.9.desc
+	picture = GFX_news_event_ger_civil_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = amer_news.9.a
+		trigger = {
+			original_tag = USA
+		}
+	}
+	option = {
+		name = amer_news.9.b
+		trigger = { 
+			NOT = { original_tag = USA }
+			has_government = democratic
+		}
+	}
+	option = {
+		name = amer_news.9.c
+		trigger = { 
+			NOT = { original_tag = USA }
+			NOT = { has_government = democratic }
+		}
+	}
+
+}
+news_event = {
+	id = amer_news.10
+	title = amer_news.10.t
+	desc = amer_news.10.desc
+	picture = GFX_news_event_ger_civil_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = amer_news.10.a
+		trigger = { original_tag = UCA	}
+		add_named_threat = { 
+    				threat = 100
+   				 name = "Global Communist Revolution Promised"
+				}
+	}
+	option = {
+		name = amer_news.10.b
+		trigger = { AND={
+	
+			NOT = { original_tag = UCA }
+			has_government = communism
+		}}
+	}
+	option = { 
+		name = amer_news.10.c
+		trigger = {AND={
+			NOT = { original_tag = UCA }
+			NOT = { has_government = communism}
+		}
+	}}
+
+
+}
+news_event = {
+	id = amer_news.11
+	title = amer_news.11.t
+	desc = amer_news.11.desc
+	picture = GFX_news_event_french_parade
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = amer_news.11.a
+	}
+
+
+}
+news_event = {
+	id = amer_news.12
+	title = amer_news.12.t
+	desc = amer_news.12.desc
+	picture = GFX_news_event_generic_funeral
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = amer_news.12.a
+	}
+}
+news_event = {
+	id = amer_news.13
+	title = amer_news.13.t
+	desc = amer_news.13.desc
+	picture = GFX_news_event_generic_rally2
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = amer_news.13.a
+	}
+}
+news_event = {
+	id = amer_news.14
+	title = amer_news.14.t
+	desc = amer_news.14.desc
+	picture = GFX_news_event_generic_rally2
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = amer_news.14.a
+	}
+
+
+}
+news_event = {
+	id = amer_news.15
+	title = amer_news.15.t
+	desc = amer_news.15.desc
+	picture = GFX_news_event_ger_civil_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = amer_news.15.a
+	}
+
+
+}
+news_event = {
+	id = amer_news.16
+	title = amer_news.16.t
+	desc = amer_news.16.desc
+	picture = GFX_news_event_ger_civil_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = amer_news.16.a
+		trigger = { NOT={original_tag = UML }}
+	}
+	option = {
+		name = amer_news.16.b
+		trigger = { 
+			 original_tag = UML 
+		}
+	}
+}
+news_event = {
+	id = amer_news.17
+	title = amer_news.17.t
+	desc = amer_news.17.desc
+	picture = GFX_news_event_ger_civil_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = amer_news.17.a
+		trigger = { NOT={original_tag = UML }}
+	}
+	option = {
+		name = amer_news.17.b
+		trigger = { 
+			 original_tag = UML 
+		}
+	}
+}
+news_event = {
+	id = amer_news.18
+	title = amer_news.18.t
+	desc = amer_news.18.desc
+	picture = GFX_news_event_ger_civil_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = amer_news.18.a
+		trigger = { NOT={original_tag = UML }}
+	}
+	option = {
+		name = amer_news.18.b
+		trigger = { 
+			 original_tag = UML 
+		}
+	}
+}
+news_event = {
+	id = amer_news.19
+	title = amer_news.19.t
+	desc = amer_news.19.desc
+	picture = GFX_news_event_ger_civil_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = amer_news.19.a
+		trigger = { NOT={original_tag = UML }}
+	}
+	option = {
+		name = amer_news.19.b
+		trigger = { 
+			 original_tag = UML 
+		}
+	}
+}

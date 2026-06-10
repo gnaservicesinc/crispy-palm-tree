@@ -6,6 +6,7 @@ reversed = yes
 		ROOT = { NOT = { has_war_with = GER  }}
 		}
 abort =  {
+OR = { any_country = {has_variable =var_American_Homeland_Victory_Flag_Won} }
 ROOT = { NOT = { has_idea = global_foregin_intrest_partnership}}
 ROOT = { is_in_faction_with = USA  }
 ROOT = { has_war_with = GER }
@@ -13,32 +14,32 @@ ROOT = { has_war_with = GER }
 }
 	    ai_strategy = {
 		type = befriend
-		id = "GER"			
+		id = GER			
 		value = 500
 	}
 	    ai_strategy = {
 		type = protect
-		id = "GER"			
+		id = GER			
 		value = 500
 	}
 	    ai_strategy = {
 		type = support
-		id = "GER"			
+		id = GER			
 		value = 500
 	}
 	    ai_strategy = {
 		type = garrison
-		id = "GER"			
+		id = GER			
 		value = 500
 	}
 	    ai_strategy = {
 		type = alliance
-		id = "GER"			
+		id = GER			
 		value = 500
 	}
 	ai_strategy = {
 		type = send_volunteers_desire
-		id = "GER"
+		id = GER
 		value = 500
 	}		
 }
@@ -49,17 +50,18 @@ reversed = yes
 		}
 abort =  {
 ROOT = { NOT ={has_idea = commonwealth_special_partnership}}
+OR = { any_country = {has_variable =var_American_Homeland_Victory_Flag_Won} }
 }
 
 
  ai_strategy = {
 		type = antagonize
-		id = "GER"			
+		id = GER			
 		value = 200
 	}
     ai_strategy = {
 		type = contain
-		id = "GER"			
+		id = GER			
 		value = 200
 	}
 	ai_strategy = {
@@ -77,22 +79,23 @@ reversed = yes
 		}
 abort =  {
 ROOT = { NOT ={has_idea = commonwealth_special_partnership}}
+OR = { any_country = {has_variable =var_American_Homeland_Victory_Flag_Won} }
 }
 
    
 ai_strategy = {
 		type = declare_war
-		id = "GER"			
+		id = GER			
 		value = 200
 	}
 	    ai_strategy = {
 		type = conquer
-		id = "GER"			
+		id = GER			
 		value = 200
 	}
     ai_strategy = {
 		type = invade
-		id = "GER"			
+		id = GER			
 		value = 200
 	}
 
@@ -111,17 +114,18 @@ reversed = yes
 		}
 abort =  {
 ROOT = { NOT ={has_idea = california_soviet_partnership}}
+OR = { any_country = {has_variable =var_American_Homeland_Victory_Flag_Won} }
 }
 
 
  ai_strategy = {
 		type = antagonize
-		id = "GER"			
+		id = GER			
 		value = 250
 	}
     ai_strategy = {
 		type = contain
-		id = "GER"			
+		id = GER			
 		value = 250
 	}
 	ai_strategy = {
@@ -140,22 +144,23 @@ reversed = yes
 		}
 abort =  {
 ROOT = { NOT ={has_idea = california_soviet_partnership}}
+OR = { any_country = {has_variable =var_American_Homeland_Victory_Flag_Won} }
 }
 
    
 ai_strategy = {
 		type = declare_war
-		id = "GER"			
+		id = GER			
 		value = 300
 	}
 	    ai_strategy = {
 		type = conquer
-		id = "GER"			
+		id = GER			
 		value = 300
 	}
     ai_strategy = {
 		type = invade
-		id = "GER"			
+		id = GER			
 		value = 300
 	}
 

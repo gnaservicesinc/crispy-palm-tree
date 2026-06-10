@@ -1,11 +1,23 @@
 ﻿capital = 388
 
-oob = "State_Guard"
+oob = "UMO"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "USA_1936_naval_mtg"
 	else = {
 		set_naval_oob = "USA_1936_naval_legacy"
+	}
+}
+create_country_leader = {
+	name = "Nellie Davis Tayloe Ross"
+	desc = "POLITICS_NELLIE_TAYLOE_ROSS_DESC"
+	picture = "gfx/leaders/UMO/Nellie_Tayloe_Ross.dds"
+	expire = "1985.1.1"
+	ideology = stalinism
+	traits = {
+		triumphant_revolutionary
+		red_army_organizer
+		warmonger
 	}
 }
 
@@ -16,29 +28,18 @@ set_stability = 0.95
 set_war_support = 15
 add_to_tech_sharing_group = uca_investigators
 set_convoys = 4000
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 0
-			banned = yes
-		}
-
-		fascism = {
-			popularity = 0
-			banned = yes
-		}
-		
-		communism = {
-			popularity = 100
-			 #default is no
-		}
+	set_politics = {
+		ruling_party =communism
+		election_frequency = 48
+		elections_allowed = yes
 	}
-	
-	ruling_party = communism
-	last_election = "1928.11.8"
-	elections_allowed = no
-}
+	set_popularities = {
+	democratic = 0
+	communism = 100
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 0
+	}
 add_ideas = {
 	free_trade
 	home_of_the_free

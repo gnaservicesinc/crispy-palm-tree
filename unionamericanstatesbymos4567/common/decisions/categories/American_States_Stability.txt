@@ -1,5 +1,6 @@
 American_States_Stability = {
 	visible = {
+		AND={
 		OR = {
 	
 		is_subject_of =  UMI
@@ -8,6 +9,8 @@ American_States_Stability = {
 		is_subject_of =  UTX
 
 
+	}
+	NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 	}
 
 }

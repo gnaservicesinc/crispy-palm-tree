@@ -1,0 +1,714 @@
+##START FOCUS TREE OPENING
+focus_tree = {
+ id = American_Crouching_Tiger_focus
+country = {
+		factor = 0	
+	}
+	continuous_focus_position = { x = 50 y = 1600 }
+	default = no
+##END FOCUS TREE OPENING
+#START REFOCUS
+focus = {
+
+		id = American_Crouching_Tiger_Recruitment_Refocus
+		icon = GFX_goal_generic_production
+		x = 17
+		y = 0
+		cost = 1
+		dynamic =  yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = { factor = 1}
+available = {
+	if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+}
+		completion_reward = {
+		load_focus_tree = { tree = American_Major_Warpath_focus
+                     keep_completed = yes }
+
+
+			 }
+}
+focus = {
+
+		id = American_Crouching_Tiger_Recruitment_Refocus_SOV_War
+		icon = GFX_american_team_USA
+		relative_position_id = American_Crouching_Tiger_Recruitment_Refocus
+		x = 2
+		y = 0
+		cost = 1
+		dynamic =  yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = { factor = 1}
+available = {
+SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }
+	 if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }} ROOT={ has_war_with = SOV}	}
+}
+		completion_reward = {
+		load_focus_tree = { tree = american_soviet_war_focus
+                     keep_completed = no }
+
+
+			 }
+}
+## END REFOCUS
+## START SECTION HEADS
+focus = {
+
+		id = American_Crouching_Tiger_recruitment
+		icon = GFX_goal_generic_production
+		relative_position_id = American_Crouching_Tiger_Recruitment_Refocus
+		x = 0
+		y = 3
+		cost = 1
+		dynamic =  yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+
+available = {
+	AND={
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+		NOT={has_variable = var_mi_and_usa}
+		NOT = { is_in_faction_with = USA }
+		NOT = {has_war = yes}
+	}
+}
+completion_reward = { 
+	add_manpower = 1000000
+ 	}
+}
+
+
+focus = {
+
+		id = American_Crouching_Tiger_Arms
+		icon = GFX_goal_generic_production
+		relative_position_id = American_Crouching_Tiger_recruitment
+		x = 2
+		y = 0
+		cost = 1
+		dynamic =  yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		ai_will_do = { factor = 5}
+available = {
+	AND={
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+		NOT={has_variable = var_mi_and_usa}
+		NOT = { is_in_faction_with = USA }
+		NOT = {has_war = yes}
+	}
+}
+completion_reward = { 
+	add_offsite_building = { type = arms_factory level = 8 }
+ 	}
+}
+focus = {
+
+		id = American_Crouching_Tiger_infrastructure 
+		icon = GFX_goal_generic_production
+		relative_position_id = American_Crouching_Tiger_Arms
+		x = 2
+		y = 0
+		cost = 1
+		dynamic =  yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		ai_will_do = { factor = 5}
+available = {
+	AND={
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+		NOT={has_variable = var_mi_and_usa}
+		NOT = { is_in_faction_with = USA }
+		NOT = {has_war = yes}
+	}
+}
+		completion_reward = {	
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				
+			}
+		}
+}
+##END SECTION HEADS
+##START RECRUITMENT SECTION
+focus = {
+
+		id = American_Crouching_Tiger_recruitment_2
+		icon = GFX_goal_generic_production
+		relative_position_id = American_Crouching_Tiger_recruitment
+		prerequisite = { focus =American_Crouching_Tiger_recruitment }
+		x = 0
+		y = 1
+		cost = 1
+		dynamic =  yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		ai_will_do = { factor = 5}
+		
+available = {
+	AND={
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+		NOT={has_variable = var_mi_and_usa}
+		NOT = { is_in_faction_with = USA }
+		NOT = {has_war = yes}
+	}
+}
+completion_reward = { 
+	add_manpower = 1000000
+ 	}
+}
+focus = {
+
+		id = American_Crouching_Tiger_recruitment_3
+		icon = GFX_goal_generic_production
+		relative_position_id = American_Crouching_Tiger_recruitment_2
+		prerequisite = { focus =American_Crouching_Tiger_recruitment_2 }
+		x = 0
+		y = 1
+		cost = 1
+		dynamic =  yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		ai_will_do = { factor = 5}
+		
+available = {
+	AND={
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+		NOT={has_variable = var_mi_and_usa}
+		NOT = { is_in_faction_with = USA }
+		NOT = {has_war = yes}
+	}
+}
+completion_reward = { 
+	add_manpower = 1000000
+ 	}
+}
+focus = {
+
+		id = American_Crouching_Tiger_recruitment_4
+		icon = GFX_goal_generic_production
+		relative_position_id = American_Crouching_Tiger_recruitment_3
+		prerequisite = { focus =American_Crouching_Tiger_recruitment_3 }
+		x = 0
+		y = 1
+		cost = 1
+		dynamic =  yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		ai_will_do = { factor = 5}
+		
+available = {
+	AND={
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+		NOT={has_variable = var_mi_and_usa}
+		NOT = { is_in_faction_with = USA }
+		NOT = {has_war = yes}
+	}
+}
+completion_reward = { 
+	add_manpower = 1000000
+ 	}
+}
+focus = {
+
+		id = American_Crouching_Tiger_recruitment_5
+		icon = GFX_goal_generic_production
+		relative_position_id = American_Crouching_Tiger_recruitment_4
+		prerequisite = { focus =American_Crouching_Tiger_recruitment_4 }
+		x = 0
+		y = 1
+		cost = 1
+		dynamic =  yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		ai_will_do = { factor = 5}
+		
+available = {
+	AND={
+	if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+		NOT={has_variable = var_mi_and_usa}
+		NOT = { is_in_faction_with = USA }
+		NOT = {has_war = yes}
+	}
+}
+completion_reward = { 
+	add_manpower = 1000000
+ 	}
+}
+focus = {
+
+		id = American_Crouching_Tiger_recruitment_6
+		icon = GFX_goal_generic_production
+		relative_position_id = American_Crouching_Tiger_recruitment_5
+		prerequisite = { focus =American_Crouching_Tiger_recruitment_5 }
+		x = 0
+		y = 1
+		cost = 1
+		dynamic =  yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		ai_will_do = { factor = 5}
+		
+available = {
+	AND={
+	if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+		NOT={has_variable = var_mi_and_usa}
+		NOT = { is_in_faction_with = USA }
+		NOT = {has_war = yes}
+	}
+}
+completion_reward = { 
+	add_manpower = 1000000
+ 	}
+}
+focus = {
+
+		id = American_Crouching_Tiger_recruitment_7
+		icon = GFX_goal_generic_production
+		relative_position_id = American_Crouching_Tiger_recruitment_6
+		prerequisite = { focus =American_Crouching_Tiger_recruitment_6 }
+		x = 0
+		y = 1
+		cost = 1
+		dynamic =  yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		ai_will_do = { factor = 5}
+		
+available = {
+	AND={
+	if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+		NOT={has_variable = var_mi_and_usa}
+		NOT = { is_in_faction_with = USA }
+		NOT = {has_war = yes}
+	}
+}
+completion_reward = { 
+	add_manpower = 1000000
+ 	}
+}
+focus = {
+
+		id = American_Crouching_Tiger_recruitment_8
+		icon = GFX_goal_generic_production
+		relative_position_id = American_Crouching_Tiger_recruitment_7
+		prerequisite = { focus =American_Crouching_Tiger_recruitment_7 }
+		x = 0
+		y = 1
+		cost = 1
+		dynamic =  yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		ai_will_do = { factor = 5}
+		
+available = {
+	if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+	AND={
+		NOT={has_variable = var_mi_and_usa}
+		NOT = { is_in_faction_with = USA }
+		NOT = {has_war = yes}
+	}
+}
+completion_reward = { 
+	add_manpower = 1000000
+ 	}
+}
+focus = {
+
+		id = American_Crouching_Tiger_recruitment_9
+		icon = GFX_goal_generic_production
+		relative_position_id = American_Crouching_Tiger_recruitment_8
+		prerequisite = { focus =American_Crouching_Tiger_recruitment_8 }
+		x = 0
+		y = 1
+		cost = 1
+		dynamic =  yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		ai_will_do = { factor = 5}
+		
+available = {
+	AND={
+	if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+		NOT={has_variable = var_mi_and_usa}
+		NOT = { is_in_faction_with = USA }
+		NOT = {has_war = yes}
+	}
+}
+completion_reward = { 
+	add_manpower = 1000000
+ 	}
+}
+focus = {
+
+		id = American_Crouching_Tiger_recruitment_10
+		icon = GFX_goal_generic_production
+		relative_position_id = American_Crouching_Tiger_recruitment_9
+		prerequisite = { focus =American_Crouching_Tiger_recruitment_9 }
+		x = 0
+		y = 1
+		cost = 1
+		dynamic =  yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		ai_will_do = { factor = 5}
+		
+available = {
+	AND={
+	if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+		NOT={has_variable = var_mi_and_usa}
+		NOT = { is_in_faction_with = USA }
+		NOT = {has_war = yes}
+	}
+}
+completion_reward = { 
+	add_manpower = 1000000
+ 	}
+}
+##END RECRUITMENT SECTION
+##START ARMS SECTION
+focus = {
+
+		id = American_Crouching_Tiger_Arms_2
+		icon = GFX_goal_generic_production
+		relative_position_id = American_Crouching_Tiger_Arms
+		prerequisite = { focus =American_Crouching_Tiger_Arms}
+		x = 0
+		y = 1
+		cost = 1
+		dynamic =  yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		ai_will_do = { factor = 5}
+available = {
+	AND={
+	if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+		NOT={has_variable = var_mi_and_usa}
+		NOT = { is_in_faction_with = USA }
+		NOT = {has_war = yes}
+	}
+}
+completion_reward = { 
+	add_offsite_building = { type = arms_factory level = 16 }
+ 	}
+}
+focus = {
+
+		id = American_Crouching_Tiger_Arms_3
+		icon = GFX_goal_generic_production
+		relative_position_id = American_Crouching_Tiger_Arms_2
+		prerequisite = { focus =American_Crouching_Tiger_Arms_2 }
+		x = 0
+		y = 1
+		cost = 1
+		dynamic =  yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		ai_will_do = { factor = 5}
+available = {
+	AND={
+	if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+		NOT={has_variable = var_mi_and_usa}
+		NOT = { is_in_faction_with = USA }
+		NOT = {has_war = yes}
+	}
+}
+completion_reward = { 
+	add_offsite_building = { type = arms_factory level = 32 }
+ 	}
+}
+focus = {
+
+		id = American_Crouching_Tiger_Arms_4
+		icon = GFX_goal_generic_production
+		relative_position_id = American_Crouching_Tiger_Arms_3
+		prerequisite = { focus =American_Crouching_Tiger_Arms_3 }
+		x = 0
+		y = 1
+		cost = 1
+		dynamic =  yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		ai_will_do = { factor = 5}
+available = {
+	AND={
+	if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+		NOT={has_variable = var_mi_and_usa}
+		NOT = { is_in_faction_with = USA }
+		NOT = {has_war = yes}
+	}
+}
+completion_reward = { 
+	add_offsite_building = { type = arms_factory level = 64 }
+ 	}
+}
+focus = {
+
+		id = American_Crouching_Tiger_Arms_5
+		icon = GFX_goal_generic_production
+		relative_position_id = American_Crouching_Tiger_Arms_4
+		prerequisite = { focus =American_Crouching_Tiger_Arms_4 }
+		x = 0
+		y = 1
+		cost = 1
+		dynamic =  yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		ai_will_do = { factor = 5}
+available = {
+	AND={
+	if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+		NOT={has_variable = var_mi_and_usa}
+		NOT = { is_in_faction_with = USA }
+		NOT = {has_war = yes}
+	}
+}
+completion_reward = { 
+	add_offsite_building = { type = arms_factory level = 128 }
+ 	}
+}
+focus = {
+
+		id = American_Crouching_Tiger_Arms_6
+		icon = GFX_goal_generic_production
+		relative_position_id = American_Crouching_Tiger_Arms_5
+		prerequisite = { focus =American_Crouching_Tiger_Arms_5 }
+		x = 0
+		y = 1
+		cost = 1
+		dynamic =  yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		ai_will_do = { factor = 5}
+available = {
+	AND={
+	if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+		NOT={has_variable = var_mi_and_usa}
+		NOT = { is_in_faction_with = USA }
+		NOT = {has_war = yes}
+	}
+}
+completion_reward = { 
+	add_offsite_building = { type = arms_factory level = 256 }
+ 	}
+}
+focus = {
+
+		id = American_Crouching_Tiger_Arms_7
+		icon = GFX_goal_generic_production
+		relative_position_id = American_Crouching_Tiger_Arms_6
+		prerequisite = { focus =American_Crouching_Tiger_Arms_6 }
+		x = 0
+		y = 1
+		cost = 1
+		dynamic =  yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		ai_will_do = { factor = 5}
+available = {
+	AND={
+	if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+		NOT={has_variable = var_mi_and_usa}
+		NOT = { is_in_faction_with = USA }
+		NOT = {has_war = yes}
+	}
+}
+completion_reward = { 
+	add_offsite_building = { type = arms_factory level = 512 }
+ 	}
+}
+##END ARMS SECTION
+##START INFRASTRUCTURE SECTION
+focus = {
+
+		id = American_Crouching_Tiger_infrastructure_2 
+		icon = GFX_goal_generic_production
+		relative_position_id = American_Crouching_Tiger_infrastructure
+		prerequisite = { focus = American_Crouching_Tiger_infrastructure }
+		x = 0
+		y = 1
+		cost = 1
+		dynamic =  yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		ai_will_do = { factor = 5}
+available = {
+	AND={
+	if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+		NOT={has_variable = var_mi_and_usa}
+		NOT = { is_in_faction_with = USA }
+		NOT = {has_war = yes}
+	}
+}
+		completion_reward = {	
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				
+			}
+		}
+}
+focus = {
+
+		id = American_Crouching_Tiger_infrastructure_3 
+		icon = GFX_goal_generic_production
+		relative_position_id = American_Crouching_Tiger_infrastructure_2
+		prerequisite = { focus = American_Crouching_Tiger_infrastructure_2 }
+		x = 0
+		y = 1
+		cost = 1
+		dynamic =  yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		ai_will_do = { factor = 5}
+available = {
+	AND={
+	if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+		NOT={has_variable = var_mi_and_usa}
+		NOT = { is_in_faction_with = USA }
+		NOT = {has_war = yes}
+	}
+}
+		completion_reward = {	
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				
+			}
+		}
+}
+focus = {
+
+		id = American_Crouching_Tiger_infrastructure_4 
+		icon = GFX_goal_generic_production
+		relative_position_id = American_Crouching_Tiger_infrastructure_3
+		prerequisite = { focus = American_Crouching_Tiger_infrastructure_3 }
+		x = 0
+		y = 1
+		cost = 1
+		dynamic =  yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		ai_will_do = { factor = 5}
+available = {
+	AND={
+	if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+		NOT={has_variable = var_mi_and_usa}
+		NOT = { is_in_faction_with = USA }
+		NOT = {has_war = yes}
+	}
+}
+		completion_reward = {	
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				
+			}
+		}
+}
+##END INFRASTRUCTURE SECTION
+##START FOCUS TREE CLOSE
+}
+##END FOCUS TREE CLOSE

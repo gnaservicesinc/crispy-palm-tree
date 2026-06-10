@@ -1,4 +1,4 @@
-oob = "State_Guard"
+oob = "UVA"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "USA_1936_naval_mtg"
@@ -7,37 +7,80 @@ if = {
 	}
 }
 
-﻿capital = 362
+create_country_leader = {
+	name = "Militärgouverneur von Virginia Elbert Lee Trinkle"
+	desc = "POLITICS_ELBERT_LEE_TRINKLE_DESC"
+	picture = "gfx/leaders/UVA/Elbert_Lee_Trinkle.dds"
+	expire = "1975.1.1"
+	ideology = texanism
+	traits = {
+		anti_democrat
+		fascist_militia_leader
+		warmonger
+		anti_communist
+		baron_of_terror
 
-set_research_slots = 4
+	}
+}
+create_country_leader = {
+	name = "Westmoreland \"Morley\" Davis"
+	desc = "POLITICS_ELBERT_LEE_TRINKLE_DESC"
+	picture = "gfx/leaders/UVA/Westmoreland_Davis.dds"
+	expire = "1975.1.1"
+	ideology = liberalism
+	traits = {
+		dislikes_germany
+		staunch_constitutionalist
+		political_dancer
+		dealbroker
+		anti_communist
+
+	}
+}
+create_country_leader = {
+	name = "Governor Harry Flood Byrd Sr."
+	desc = "POLITICS_HARRY_FLOOD_BYRD_SR_DESC"
+	picture = "gfx/leaders/UVA/Harry_Flood_Byrd_Sr.dds"
+	expire = "1985.1.1"
+	ideology = alabaman
+	traits = {
+		anti_communist 
+		socialite_connections 
+		staunch_constitutionalist
+		cornered_fox
+	}
+}
+create_country_leader = {
+	name = "Senior Supervisor George C. Peery"
+	desc = "POLITICS_GEORGE_C_PEERY_DESC"
+	picture = "gfx/leaders/UVA/George_C_Peery.dds"
+	expire = "1975.1.1"
+	ideology = stalinism
+	traits = {
+		triumphant_revolutionary
+		anti_democrat
+		red_army_organizer
+		warmonger
+	}
+}
+set_research_slots = 6
 set_stability = 0.95
 set_war_support = 15
-add_to_tech_sharing_group = ual_investigators
+add_to_tech_sharing_group = usa_investigators
 set_convoys = 4000
+capital=362
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 99
-		}
-
-		fascism = {
-			popularity = 0
-			banned = yes
-		}
-		
-		communism = {
-			popularity = 1
-			banned = yes
-			 #default is no
-		}
+		ruling_party = democratic
+		election_frequency = 48
+		elections_allowed = yes
 	}
-	
-	ruling_party = democratic
-	last_election = "1932.11.8"
-	election_frequency = 48
-	elections_allowed = yes
-}
+	set_popularities = {
+	democratic = 100
+	communism = 0
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 0
+	}
 
 add_ideas = {
 	free_trade

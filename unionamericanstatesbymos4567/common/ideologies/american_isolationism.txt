@@ -2,20 +2,19 @@ ideologies = {
 
 	american_isolationism = {
 		types = {
-			americanism = {
-			}
 				isolationist = {
 			}
 				alabaman = {
 			}
+
 		}
 		dynamic_faction_names = {
-			"FACTION_NAME_DEMOCRATIC_1"
-			"FACTION_NAME_DEMOCRATIC_2"
-			"FACTION_NAME_DEMOCRATIC_3"
-			"FACTION_NAME_DEMOCRATIC_4"
-			"FACTION_NAME_DEMOCRATIC_5"
-			"FACTION_NAME_DEMOCRATIC_6"
+			"FACTION_NAME_AMERICAN_ISOLATIONISM_1"
+			"FACTION_NAME_AMERICAN_ISOLATIONISM_2"
+			"FACTION_NAME_AMERICAN_ISOLATIONISM_3"
+			"FACTION_NAME_AMERICAN_ISOLATIONISM_4"
+			"FACTION_NAME_AMERICAN_ISOLATIONISM_5"
+			"FACTION_NAME_AMERICAN_ISOLATIONISM_6"
 		}
 		
 		color = { 225 9 13 }
@@ -38,11 +37,10 @@ ideologies = {
 		}
 		modifiers = {
 			join_faction_tension = 1.0
-			annex_cost_factor = 1.0
+			annex_cost_factor = -1.0
 			trade_opinion_factor = 1.0
-			lend_lease_tension = 1.00
-			send_volunteers_tension = 1.00
-			take_states_cost_factor = 1.00
+			lend_lease_tension = -1.00
+			send_volunteers_tension = -1.00
 
 
 		}

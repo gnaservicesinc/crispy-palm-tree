@@ -1,3 +1,4 @@
 Phenoix_Eagle = {
-	visible = { tag  =  USA}
+	visible = { tag  =  USA
+	NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}}
 }

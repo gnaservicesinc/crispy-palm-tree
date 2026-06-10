@@ -11,7 +11,13 @@ american_states_intelligence_agency_level_1 = {
 		allowed_civil_war = {always = no}
 		removal_cost = -1
 	modifier = {
-		stability_weekly = -0.01
+		agency_upgrade_time=-0.05
+		commando_trait_chance_factor = 0.05
+		intel_from_operatives_factor = 0.05
+		root_out_resistance_effectiveness_factor = 0.05
+		operative_slot = 1
+		new_operative_slot_bonus = 1
+		stability_weekly = 0.01
 		war_support_weekly = 0.03
 		planning_speed = 0.15
 		training_time_factor= -0.10
@@ -25,7 +31,14 @@ american_states_intelligence_agency_level_2 = {
 		allowed_civil_war = {always = no}
 		removal_cost = -1
 	modifier = {
-		stability_weekly = -0.2
+		agency_upgrade_time=-0.15
+		commando_trait_chance_factor = 0.15
+		intel_from_operatives_factor = 0.15
+		root_out_resistance_effectiveness_factor = 0.15
+		operative_slot = 1
+		new_operative_slot_bonus = 2
+
+		stability_weekly = 0.2
 		war_support_weekly = 0.15
 		planning_speed = 0.15
 		training_time_factor= -0.15
@@ -40,7 +53,14 @@ american_states_intelligence_agency_level_3 = {
 		allowed_civil_war = {always = no}
 		removal_cost = -1
 	modifier = {
-		stability_weekly = -0.03
+		agency_upgrade_time=-0.25
+		commando_trait_chance_factor = 0.25
+		intel_from_operatives_factor = 0.25
+		root_out_resistance_effectiveness_factor = 0.25
+		operative_slot = 2
+		new_operative_slot_bonus = 3
+
+		stability_weekly = 0.03
 		war_support_weekly = 0.20
 		planning_speed = 0.20
 		training_time_factor= -0.10
@@ -54,14 +74,20 @@ american_states_intelligence_agency_level_4 = {
 		allowed_civil_war = {always = no}
 		removal_cost = -1
 	modifier = {
-		stability_weekly = -0.04
+		agency_upgrade_time=-0.35
+		commando_trait_chance_factor = 0.35
+		intel_from_operatives_factor = 0.35
+		root_out_resistance_effectiveness_factor = 0.35
+		operative_slot = 3
+		new_operative_slot_bonus = 4
+
+		stability_weekly = 0.04
 		war_support_weekly = 0.15
 		planning_speed = 0.15
 		training_time_factor= -0.15
-			industrial_capacity_factory=0.20
+		
 	production_oil_factor = 0.15
 	local_resources_factor = 0.15
-	consumer_goods_factor = 0.15
 	production_factory_max_efficiency_factor = 0.15
 		}
 }
@@ -73,15 +99,19 @@ american_states_intelligence_agency_level_5 = {
 		allowed_civil_war = {always = no}
 		removal_cost = -1
 	modifier = {
-		stability_weekly = -0.05
+	agency_upgrade_time=-0.55
+		commando_trait_chance_factor = 0.55
+		intel_from_operatives_factor = 0.55
+		root_out_resistance_effectiveness_factor = 0.55
+		operative_slot = 5
+		new_operative_slot_bonus = 6
+
+		stability_weekly = 0.05
 		war_support_weekly = 0.15
 		planning_speed = 0.15
 		training_time_factor= -0.15
-	industrial_capacity_factory=0.15
 	production_oil_factor = 0.15
 	local_resources_factor = 0.15
-	consumer_goods_factor = 0.15
-	production_factory_max_efficiency_factor = 0.15
 		}
 }
 american_states_stabilization_level_1 = {
@@ -272,8 +302,7 @@ military_advertising_and_pr_campaign={
 		allowed_civil_war = {always = no}
 		removal_cost = -1
 	modifier = {
-	weekly_manpower	 = 10000
-	war_support_weekly = 0.03	
+	weekly_manpower	 = 10000	
 	non_core_manpower = 0.50
 	training_time_factor= -0.50
 	conscription = 1.0
@@ -294,6 +323,10 @@ american_states_military_industrial_complex ={
 	training_time_factor= -0.10
 	defence = 1.0
 	offence = 1.0
+	planning_speed=0.25
+	max_planning=0.50
+	recon_factor = 0.25
+	ai_focus_aggressive_factor = 0.75
 	}
 
 			
@@ -305,13 +338,10 @@ american_states_goverment_industrial_wellfare = {
 		allowed_civil_war = {always = no}
 		removal_cost = -1
 modifier = {
-	industrial_capacity_factory=0.50
+
 	production_oil_factor = 0.15
 	local_resources_factor = 0.15
-	consumer_goods_factor = 0.15
 	production_factory_max_efficiency_factor = 0.15
-	industrial_capacity_dockyard = 0.15
-	industrial_capacity_factory = 0.15
 
 
 }
@@ -325,11 +355,21 @@ modifier = {
 	production_oil_factor = 0.5
 fuel_gain_factor =0.45
 fuel_gain_factor_from_states = 0.47
-	local_resources_factor = 0.10
-		consumer_goods_factor = 0.05
+	local_resources_factor = 0.17
+		consumer_goods_factor = 0.08
 }
 }
-
+american_states_disloyal_state= {
+	picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+modifier = {
+	ai_focus_aggressive_factor = 1
+	local_resources_factor = 0.58
+	consumer_goods_factor = -0.25
+}
+}
 infiltration_by_spies = {
 	picture = generic_war_preparation
 		allowed = {always = no}
@@ -393,7 +433,6 @@ infiltration_by_spies = {
 		modifier = {
 			decryption_factor = 0.15
 			encryption_factor = 0.15
-			enemy_partisan_effect = -0.15
 			political_power_gain = 0.15
 			MONTHLY_POPULATION = 0.15
 			conscription = 0.15
@@ -409,7 +448,6 @@ infiltration_by_spies = {
 		modifier = {
 			decryption_factor = 0.15
 			encryption_factor = 0.15
-			enemy_partisan_effect = -0.15
 			political_power_gain = 0.15
 			MONTHLY_POPULATION = 0.15
 			conscription = 0.15
@@ -425,7 +463,6 @@ infiltration_by_spies = {
 		modifier = {
 			decryption_factor = 0.15
 			encryption_factor = 0.15
-			enemy_partisan_effect = -0.15
 			political_power_gain = 0.15
 			MONTHLY_POPULATION = 0.15
 			conscription = 0.15
@@ -441,7 +478,6 @@ infiltration_by_spies = {
 		modifier = {
 			decryption_factor = 0.15
 			encryption_factor = 0.15
-			enemy_partisan_effect = -0.15
 			political_power_gain = 0.15
 			MONTHLY_POPULATION = 0.15
 			conscription = 0.15
@@ -524,7 +560,6 @@ infiltration_by_spies = {
 		modifier = {
 			decryption_factor = 0.15
 			encryption_factor = 0.15
-			enemy_partisan_effect = -0.15
 			political_power_gain = 0.15
 			MONTHLY_POPULATION = 0.15
 			conscription = 0.15
@@ -540,7 +575,6 @@ infiltration_by_spies = {
 		modifier = {
 			decryption_factor = 0.15
 			encryption_factor = 0.15
-			enemy_partisan_effect = -0.15
 			political_power_gain = 0.15
 			MONTHLY_POPULATION = 0.15
 			conscription = 0.15
@@ -556,7 +590,7 @@ infiltration_by_spies = {
 		modifier = {
 			decryption_factor = 0.15
 			encryption_factor = 0.15
-			enemy_partisan_effect = -0.15
+
 			political_power_gain = 0.15
 			MONTHLY_POPULATION = 0.15
 			conscription = 0.15
@@ -572,7 +606,7 @@ infiltration_by_spies = {
 		modifier = {
 			decryption_factor = 0.15
 			encryption_factor = 0.15
-			enemy_partisan_effect = -0.15
+
 			political_power_gain = 0.15
 			MONTHLY_POPULATION = 0.15
 			conscription = 0.15
@@ -649,7 +683,7 @@ infiltration_by_spies = {
 		modifier = {
 			decryption_factor = 0.15
 			encryption_factor = 0.15
-			enemy_partisan_effect = -0.15
+
 			political_power_gain = 0.15
 			MONTHLY_POPULATION = 0.05
 			conscription = 0.05
@@ -665,7 +699,7 @@ infiltration_by_spies = {
 		modifier = {
 			decryption_factor = 0.15
 			encryption_factor = 0.15
-			enemy_partisan_effect = -0.15
+
 			political_power_gain = 0.15
 			MONTHLY_POPULATION = 0.05
 			conscription = 0.05
@@ -681,7 +715,7 @@ infiltration_by_spies = {
 		modifier = {
 			decryption_factor = 0.15
 			encryption_factor = 0.15
-			enemy_partisan_effect = -0.15
+
 			political_power_gain = 0.15
 			MONTHLY_POPULATION = 0.05
 			conscription = 0.05
@@ -697,7 +731,7 @@ infiltration_by_spies = {
 		modifier = {
 			decryption_factor = 0.15
 			encryption_factor = 0.15
-			enemy_partisan_effect = -0.15
+
 			political_power_gain = 0.15
 			MONTHLY_POPULATION = 0.05
 			conscription = 0.05
@@ -749,5 +783,250 @@ infiltration_by_spies = {
 			}
 	
 		}
+
+
+	japanese_military_training = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			offence = 0.20
+			defence = 0.15
+			land_reinforce_rate = 0.12
+			training_time_factor = -0.16
+			training_time_army_factor = -0.10
+			max_dig_in = 1
+			out_of_supply_factor = -0.5
+			supply_consumption_factor = -0.46
+			experience_loss_factor = -0.35
+			MONTHLY_POPULATION = 0.45
+			conscription = 0.15
+
+	
+			}
+}
+	japanese_military_training2 = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			offence = 0.30
+			defence = 0.15
+			land_reinforce_rate = 0.24
+			training_time_factor = -0.10
+			training_time_army_factor = -0.10
+			max_dig_in = 1
+			out_of_supply_factor = -0.5
+			supply_consumption_factor = -0.56
+			experience_loss_factor = -0.15
+			MONTHLY_POPULATION = 0.15
+			conscription = 0.15
+
+	
+			}
+}
+
+	japanese_security_aid1 = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			decryption_factor = 0.15
+			encryption_factor = 0.15
+
+			political_power_gain = 0.15
+			MONTHLY_POPULATION = 0.15
+			conscription = 0.15
+			}
+	
+		}
+	japanese_security_aid2 = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			decryption_factor = 0.15
+			encryption_factor = 0.15
+
+			political_power_gain = 0.15
+			MONTHLY_POPULATION = 0.15
+			conscription = 0.15
+			}
+	
+		}
+	japanese_security_aid3 = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			decryption_factor = 0.15
+			encryption_factor = 0.15
+
+			political_power_gain = 0.15
+			MONTHLY_POPULATION = 0.15
+			conscription = 0.15
+			}
+	
+		}
+	japanese_security_aid4 = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			decryption_factor = 0.15
+			encryption_factor = 0.15
+
+			political_power_gain = 0.15
+			MONTHLY_POPULATION = 0.15
+			conscription = 0.15
+			}
+	
+		}
+	imperial_japan_special_partnership = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+
+		modifier = {
+			 stability_weekly = 25
+			production_speed_arms_factory_factor = 0.20
+			production_factory_efficiency_gain_factor = 0.20
+			democratic_drift = -1.00 
+			democratic_acceptance = -100
+			communism_acceptance = -100
+			american_isolationism_acceptance = -100
+			fascism_drift = -1.00 
+			communism_drift = -1.00 
+			american_isolationism_drift = -1.00 
+			fascism_acceptance = 100
+			american_globalism_acceptance = 100
+			american_globalism_drift=10
+			drift_defence_factor = 0.15
+			weekly_manpower = 1000
+			MONTHLY_POPULATION = 0.15
+			conscription = 0.15
+			opinion_gain_monthly_same_ideology_factor = 0.27
+			ai_badass_factor = 0.15
+			ai_focus_defense_factor = 0.27
+			
+			}
+	
+		}
+
+	imperial_japan_blessing = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+		modifier = {
+			 stability_weekly = 35
+			democratic_drift = -1.00 
+			democratic_acceptance = -100
+			communism_acceptance = -100
+			american_isolationism_acceptance = -100
+			fascism_drift = -1.00 
+			communism_drift = -1.00 
+			american_isolationism_drift = -1.00 
+			fascism_acceptance = 100
+			american_globalism_acceptance = 100
+			american_globalism_drift=10
+			drift_defence_factor = 0.50
+			training_time_factor = -0.50
+			training_time_army_factor = -0.50
+			ai_focus_aggressive_factor = 1.00
+			max_dig_in = 1
+			out_of_supply_factor = -0.75
+			supply_consumption_factor = -0.46
+			experience_loss_factor = -0.55
+			MONTHLY_POPULATION = 0.50
+			production_speed_arms_factory_factor = 0.50
+			production_factory_efficiency_gain_factor = 0.50
+			opinion_gain_monthly_same_ideology_factor = 1.00
+			}	
+		}
+
+	imperial_japan_shared_vision_of_government  = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+		modifier = {
+			democratic_drift = -1.00 
+			democratic_acceptance = -100
+			communism_acceptance = -100
+			american_isolationism_acceptance = -100
+			fascism_drift = -1.00 
+			communism_drift = -1.00 
+			american_isolationism_drift = -1.00 
+			fascism_acceptance = 100
+			american_globalism_acceptance = 100
+			american_globalism_drift=10
+			drift_defence_factor = 0.50
+			MONTHLY_POPULATION = 0.50
+			opinion_gain_monthly_same_ideology_factor = 1.00
+			
+		}	
+		}
+	imperial_japan_shared_vision_of_security  = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+		modifier = {
+			decryption_factor = 1.00
+			encryption_factor = 1.00
+			conscription = 1.00
+			}
+		}
+	imperial_japan_shared_vision_of_military  = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+		modifier = {
+
+			training_time_factor = -0.50
+			training_time_army_factor = -0.50
+			ai_focus_aggressive_factor = 1.00
+			max_dig_in = 1
+			out_of_supply_factor = -0.75
+			supply_consumption_factor = -0.46
+			experience_loss_factor = -0.55
+			offence = 0.40
+			defence = 0.55
+			land_reinforce_rate = 0.42
+		}
+	}
+	imperial_japan_shared_vision_of_economy  = {
+		picture = generic_war_preparation
+		allowed = {always = no}
+		allowed_civil_war = {always = no}
+		removal_cost = -1
+		modifier = {
+			MONTHLY_POPULATION = 0.50
+			production_speed_arms_factory_factor = 0.50
+			production_factory_efficiency_gain_factor = 0.50
+			production_oil_factor = 0.45
+	production_factory_max_efficiency_factor = 0.65
+	industrial_capacity_dockyard = 0.75
+			
+		}
+	}
+
+
+
 	}
 }

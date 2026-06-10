@@ -1,0 +1,298 @@
+focus_tree = {
+	id = american_soviet_war_focus
+
+	country = {
+		factor = 0
+	}
+	continuous_focus_position = { x = 50 y = 1600 }
+	default = no
+
+	focus = {
+		id = american_soviet_war_focus_post_war_refocus
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 5
+		y = -3
+
+		dynamic =  yes
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+available = {
+NOT={ has_war_with = SOV}
+}
+
+
+		completion_reward = {
+		
+		if = { limit = { has_idea = american_soviet_war_1}
+   			remove_ideas = { american_soviet_war_1
+			}}
+		if = { limit = { has_idea = american_soviet_war_3}
+   			remove_ideas = { american_soviet_war_2
+			}}
+		if = { limit = { has_idea = american_soviet_war_3}
+   			remove_ideas = { american_soviet_war_3
+			}}
+		if = { limit = { has_idea = american_soviet_war_4}
+   			remove_ideas = { american_soviet_war_4
+			}}
+		if = { limit = { has_idea = american_soviet_war_5}
+   			remove_ideas = { american_soviet_war_5
+			}}
+		if = { limit = { has_idea = american_soviet_war_6}
+   			remove_ideas = { american_soviet_war_6
+			}}
+		if = { limit = { has_idea = american_soviet_war_7}
+   			remove_ideas = { american_soviet_war_7
+			}}
+		if = { limit = { has_idea = american_soviet_war_8}
+   			remove_ideas = { american_soviet_war_8
+			}}
+		if = { limit = { has_idea = american_soviet_war_9}
+   			remove_ideas = { american_soviet_war_9
+			}}
+		if = { limit = { has_idea = american_soviet_war_10}
+   			remove_ideas = { american_soviet_war_10
+			}}
+		
+				load_focus_tree = { tree = American_choice_focus
+                     keep_completed = no }
+
+		}
+	}
+	focus = {
+		id = american_soviet_war_focus
+		icon = GFX_goal_generic_forceful_treaty
+		x = 0
+		y = 1
+		relative_position_id = american_soviet_war_focus_post_war_refocus
+		dynamic =  yes
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {has_war_with = SOV}
+		completion_reward = {
+			add_offsite_building = { type = arms_factory level = 4 }
+			add_ideas ={american_soviet_war_1 }
+				
+		}
+	}	
+
+	focus = {
+		id = american_soviet_war_focus_2
+		icon = GFX_goal_generic_forceful_treaty
+		x = 0
+		y = 1
+		relative_position_id = american_soviet_war_focus
+		prerequisite = { focus =american_soviet_war_focus}
+		dynamic =  yes
+		cost = 1
+		available = {has_war_with = SOV}
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+			add_offsite_building = { type = arms_factory level = 4 }
+			add_ideas ={american_soviet_war_2 }
+		}
+
+	}
+	focus = {
+		id = american_soviet_war_focus_3
+		icon = GFX_goal_generic_forceful_treaty
+		x = 0
+		y = 1
+		relative_position_id = american_soviet_war_focus_2
+		prerequisite = { focus =american_soviet_war_focus_2}
+		dynamic =  yes
+		cost = 1
+		available = {has_war_with = SOV}
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+			add_offsite_building = { type = arms_factory level = 4 }
+			add_ideas ={american_soviet_war_3 }
+		}
+
+	}
+	focus = {
+		id = american_soviet_war_focus_4
+		icon = GFX_goal_generic_forceful_treaty
+		x = 0
+		y = 1
+		relative_position_id = american_soviet_war_focus_3
+		prerequisite = { focus =american_soviet_war_focus_3}
+		dynamic =  yes
+		cost = 1
+		available = {has_war_with = SOV}
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+			add_offsite_building = { type = arms_factory level = 4 }
+			add_ideas ={american_soviet_war_4 }
+		}
+
+	}
+		focus = {
+		id = american_soviet_war_focus_5
+		icon = GFX_goal_generic_forceful_treaty
+		x = 0
+		y = 1
+		relative_position_id = american_soviet_war_focus_4
+		prerequisite = { focus =american_soviet_war_focus_4}
+		dynamic =  yes
+		cost = 1
+		available = {has_war_with = SOV}
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+			add_offsite_building = { type = arms_factory level = 4 }
+			add_ideas ={american_soviet_war_5 }
+		}
+
+	}
+	focus = {
+		id = american_soviet_war_focus_6
+		icon = GFX_goal_generic_forceful_treaty
+		x = 0
+		y = 1
+		relative_position_id = american_soviet_war_focus_5
+		prerequisite = { focus =american_soviet_war_focus_5}
+		dynamic =  yes
+		cost = 1
+		available = {has_war_with = SOV}
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+			add_offsite_building = { type = arms_factory level = 4 }
+			add_ideas ={american_soviet_war_6 }
+		}
+
+	}	
+	focus = {
+		id = american_soviet_war_focus_7
+		icon = GFX_goal_generic_forceful_treaty
+		x = 0
+		y = 1
+		relative_position_id = american_soviet_war_focus_6
+		prerequisite = { focus =american_soviet_war_focus_6}
+		dynamic =  yes
+		cost = 1
+		available = {has_war_with = SOV}
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+			add_offsite_building = { type = arms_factory level = 4 }
+			add_ideas ={american_soviet_war_7 }
+		}
+
+	}
+	focus = {
+		id = american_soviet_war_focus_8
+		icon = GFX_goal_generic_forceful_treaty
+		x = 0
+		y = 1
+		relative_position_id = american_soviet_war_focus_7
+		prerequisite = { focus =american_soviet_war_focus_7}
+		dynamic =  yes
+		cost = 1
+		available = {has_war_with = SOV}
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+			add_offsite_building = { type = arms_factory level = 4 }
+			add_ideas ={american_soviet_war_8 }
+		}
+
+	}
+	focus = {
+		id = american_soviet_war_focus_9
+		icon = GFX_goal_generic_forceful_treaty
+		x = 0
+		y = 1
+		relative_position_id = american_soviet_war_focus_8
+		prerequisite = { focus =american_soviet_war_focus_8}
+		dynamic =  yes
+		cost = 1
+		available = {has_war_with = SOV}
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+			add_offsite_building = { type = arms_factory level = 4 }
+			add_ideas ={american_soviet_war_9 }
+		}
+
+	}
+	focus = {
+		id = american_soviet_war_focus_10
+		icon = GFX_goal_generic_forceful_treaty
+		x = 0
+		y = 1
+		relative_position_id = american_soviet_war_focus_9
+		prerequisite = { focus =american_soviet_war_focus_9}
+		dynamic =  yes
+		cost = 1
+		available = {has_war_with = SOV}
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+			add_offsite_building = { type = arms_factory level = 4 }
+			add_ideas ={american_soviet_war_10 }
+		}
+
+	}
+}

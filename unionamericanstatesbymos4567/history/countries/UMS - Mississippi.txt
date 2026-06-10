@@ -1,4 +1,4 @@
-﻿oob = "State_Guard"
+﻿oob = "UMS"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "USA_1936_naval_mtg"
@@ -6,7 +6,35 @@ if = {
 		set_naval_oob = "USA_1936_naval_legacy"
 	}
 }
-
+create_country_leader = {
+	name = "Governor Paul Burney Johnson Sr."
+	desc = "POLITICS_PAUL_BURNEY_JOHNSON_SR_DESC"
+	picture = "gfx/leaders/UMS/portrait_ums_pb_johnson.dds"
+	expire = "1985.1.1"
+	ideology = alabaman
+	traits = {
+		anti_communist 
+		staunch_constitutionalist 
+		dislikes_germany
+		cornered_fox
+	}
+}
+create_country_leader = {
+	name = "Oberleutnant Hugh Lawson White"
+	desc = "POLITICS_OBERLEUTNANT_HUGE_LAWSON_WHITE_DESC"
+	picture = "gfx/leaders/UMS/portrait_ums_hugh_l_white.dds"
+	expire = "2030.1.1"
+	ideology = texanism
+	traits = {
+		lieutenant_of_industry
+		anti_communist 
+		anti_democrat
+		staunch_constitutionalist
+		warmonger
+		fascist_militia_leader
+		baron_of_terror
+	}
+}
 capital = 370
 
 set_research_slots = 4
@@ -14,32 +42,19 @@ set_stability = 0.95
 set_war_support = 15
 add_to_tech_sharing_group = ual_investigators
 set_convoys = 4000
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 0
-			banned = yes
-		}
-
-		fascism = {
-			popularity = 100
-			
-		}
-		
-		communism = {
-			popularity = 0
-			banned = yes
-			 #default is no
-		}
+	set_politics = {
+		ruling_party =american_isolationism
+		election_frequency = 48
+		elections_allowed = yes
 	}
-	
-	ruling_party = democratic
-	last_election = "1932.11.8"
-	election_frequency = 48
-	elections_allowed = yes
-}
 
+	set_popularities = {
+	democratic = 4
+	communism = 1
+	fascism = 10
+	american_isolationism=80
+	american_globalism = 5
+	}
 add_ideas = {
 	free_trade
 	home_of_the_free

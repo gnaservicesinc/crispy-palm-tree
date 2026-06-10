@@ -9,7 +9,7 @@ if = {
 	}
 }
 
-set_research_slots = 6
+set_research_slots = 16
 set_stability = 1.00
 set_war_support = 100
 add_to_tech_sharing_group = usa_investigators
@@ -38,150 +38,89 @@ USA = {
 	american_isolationism=0
 	american_globalism = 0
 	}
-
-UPE  = { 	set_politics = {
-		ruling_party = democratic
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 100
-	communism = 0
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 0
-	} }
-UML  = { 	set_politics = {
-		ruling_party = democratic
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 100
-	communism = 0
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 0
-	} }
-UEN  = { 	set_politics = {
-		ruling_party = democratic
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 100
-	communism = 0
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 0
-	} }
-UCI  = { 	set_politics = {
-		ruling_party = democratic
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 100
-	communism = 0
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 0
-	} }
-UNY  = {  	set_politics = {
-		ruling_party = democratic
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 100
-	communism = 0
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 0
-	}}
-UML  = {  	set_politics = {
-		ruling_party = democratic
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 100
-	communism = 0
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 0
-	}}
-UNJ  = { 	set_politics = {
-		ruling_party = democratic
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 100
-	communism = 0
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 0
-	} }
-UVA  = { 	set_politics = {
-		ruling_party = democratic
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 100
-	communism = 0
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 0
-	} }
-IRE  = { 	set_politics = {
-		ruling_party = democratic
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 100
-	communism = 0
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 0
-	} }
+create_intelligence_agency = yes
 
 UPE  = { set_variable = { var_Loyal_American_States = 1 }  }
 UML  = { set_variable = { var_Loyal_American_States = 1 }  }
 UEN  = { set_variable = { var_Loyal_American_States = 1 }  }
-UCI  = { set_variable = { var_Loyal_American_States = 1 }  }
 UNY  = { set_variable = { var_Loyal_American_States = 1 }  }
 UML  = { set_variable = { var_Loyal_American_States = 1 }  }
 UNJ  = { set_variable = { var_Loyal_American_States = 1 }  }
 UVA  = { set_variable = { var_Loyal_American_States = 1 }  }
-IRE  = { set_variable = { var_Loyal_American_States = 1 }  }
+UHW  = { set_variable = { var_Loyal_American_States = 1 }  }
+UAK  = { set_variable = { var_Loyal_American_States = 1 }  }
+
 
 #Loyal_American_States
 add_to_array = { array = Loyal_American_States value= UPE }
 add_to_array = { array = Loyal_American_States value= UML }
 add_to_array = { array = Loyal_American_States value= UEN }
-add_to_array = { array = Loyal_American_States value= UCI }
 add_to_array = { array = Loyal_American_States value= UNY }
 add_to_array = { array = Loyal_American_States value= UML }
 add_to_array = { array = Loyal_American_States value= UNJ }
 add_to_array = { array = Loyal_American_States value= UVA }
-add_to_array = { array = Loyal_American_States value= IRE }
+add_to_array = { array = Loyal_American_States value= UAK }
+add_to_array = { array = Loyal_American_States value= UHW }
 
 
+IRE  = { set_variable = { var_American_States = 1 }  }
 UPE  = { set_variable = { var_American_States = 1 }  }
 UML  = { set_variable = { var_American_States = 1 }  }
 UEN  = { set_variable = { var_American_States = 1 }  }
-UCI  = { set_variable = { var_American_States = 1 }  }
+ENG  = { set_variable = { var_American_States = 1 }  }
 UNY  = { set_variable = { var_American_States = 1 }  }
 UML  = { set_variable = { var_American_States = 1 }  }
 UNJ  = { set_variable = { var_American_States = 1 }  }
 UVA  = { set_variable = { var_American_States = 1 }  }
+UAK  = { set_variable = { var_American_States = 1 }  }
+FRA  = { set_variable = { var_American_States = 1 }  }
+UHW  = { set_variable = { var_American_States = 1 }  }
 
-
-create_faction = "United States of America"
-
+ENG={create_faction = "Global Intergovernmental Military Alliance Organization"
+add_to_faction=USA
+add_to_faction=IRE
+add_to_faction=FRA
+add_to_faction=POL
+add_to_faction=SPR
+add_to_faction=CZE
+add_to_faction=CUB
+add_to_faction=COS
+add_to_faction=COL
+add_to_faction=CUB
+add_to_faction=SWE
+add_to_faction=DEN
+add_to_faction=NOR
+add_to_faction=FIN
+add_to_faction=SWI
+add_to_faction=POR
+add_to_faction=CHI}
+JAP ={ create_faction = "The Global Empire of Japan Co-Prosperity Sphere"}
+JAP ={
+if = { limit = { has_dlc = "Together for Victory"}
+set_autonomy = {target = GER autonomous_state = autonomy_united_states_state }
+set_autonomy = {target = ITA autonomous_state = autonomy_united_states_state }
+set_autonomy = {target = ELS autonomous_state = autonomy_united_states_state }
+set_autonomy = {target = DOM autonomous_state = autonomy_united_states_state }
+set_autonomy = {target = VEN autonomous_state = autonomy_united_states_state }
+set_autonomy = {target = PRU autonomous_state = autonomy_united_states_state }
+else = {
+puppet =GER
+puppet =ITA
+puppet =ELS
+puppet =DOM
+puppet =VEN
+puppet =PRU
+} 
+}
+}
+JAP ={ add_to_faction = GER }
+JAP ={ add_to_faction = ITA }
+JAP ={ add_to_faction = ELS }
+JAP ={ add_to_faction = DOM }
+JAP ={ add_to_faction = VEN }
+JAP ={ add_to_faction = PRU }
+add_offsite_building = { type = arms_factory level = 32 }
+add_offsite_building = { type = industrial_complex level = 32 }
 # do the dirty work.
 for_each_loop = {
 array = Loyal_American_States
@@ -215,9 +154,39 @@ add_to_array = { array = Michigan_States value= UIA }
 
 FRA ={ give_guarantee = USA }
 ENG ={ give_guarantee = USA }
-GER ={ give_guarantee = USA }
-ITA ={ give_guarantee = USA }
 POR ={ give_guarantee = USA }
+BRA ={ give_guarantee = USA }
+CUB ={ give_guarantee = USA }
+POR ={ give_guarantee = USA }
+CAN ={ give_guarantee = USA }
+RAJ ={ give_guarantee = USA }
+SAF ={ give_guarantee = USA }
+AST ={ give_guarantee = USA }
+NZL ={ give_guarantee = USA }
+CHI ={ give_guarantee = USA }
+
+if = {
+	limit = { has_dlc = "La Resistance" }
+	create_operative_leader = {
+		name = "Josephine Baker"
+		GFX = GFX_portrait_josephine_baker
+		traits = { operative_well_groomed }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { USA }
+	}
+
+	create_operative_leader = {
+		name = "Virginia Hall"
+		GFX = GFX_portrait_virginia_hall
+		traits = { operative_demolition_expert }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { USA }
+	}
+}
 
 # Starting tech
 set_technology = {
@@ -459,10 +428,11 @@ give_guarantee = URG
 
 
 
-set_convoys = 400
+set_convoys = 5000
 
 	set_politics = {
 		ruling_party = democratic
+		last_election = "1932.11.8"
 		election_frequency = 48
 		elections_allowed = yes
 	}

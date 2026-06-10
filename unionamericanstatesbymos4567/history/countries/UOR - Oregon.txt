@@ -1,6 +1,6 @@
 ﻿capital = 385
 
-oob = "State_Guard"
+oob = "UOR"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "USA_1936_naval_mtg"
@@ -10,35 +10,77 @@ if = {
 }
 
 
+create_country_leader = {
+	name = "Chairman of the Central Control Commission George E Chamberlain"
+	desc = "POLITICS_GEORGE_E_CHAMBERLAIN_DESC"
+	picture = "gfx/leaders/UOR/George_E_Chamberlain.dds"
+	expire = "1975.1.1"
+	ideology = stalinism
+	traits = {
+		triumphant_revolutionary
+		anti_democrat
+		red_army_organizer
+		warmonger
+	}
+}
+create_country_leader = {
+	name = "Brig. Genl. C.H. Martin"
+	desc = "POLITICS_CHARLES_H_MARTIN_DESC"
+	picture = "gfx/leaders/UOR/Charles_H_Martin.dds"
+	expire = "1975.1.1"
+	ideology = liberalism
+	traits = {
+		dislikes_germany
+		staunch_constitutionalist
+		political_dancer
+		dealbroker
+		anti_communist
 
+	}
+}
+create_country_leader = {
+	name = "Stellvertretender Leiter Oswald West"
+	desc = "POLITICS_OSWALD_WEST_DESC"
+	picture = "gfx/leaders/UOR/Oswald_West.dds"
+	expire = "1975.1.1"
+	ideology = texanism
+	traits = {
+		lieutenant_of_industry
+		anti_democrat
+		warmonger
+		baron_of_terror
+	}
+}
+create_country_leader = {
+	name = "Governor Walter M. Pierce"
+	desc = "POLITICS_WALTER_M_PIERCE_DESC"
+	picture = "gfx/leaders/UOR/Walter_M._Pierce.dds"
+	expire = "1985.1.1"
+	ideology = alabaman
+	traits = {
+		anti_communist 
+		socialite_connections 
+		fascist_militia_leader
+		cornered_fox
+	}
+}
 set_research_slots = 4
 set_stability = 0.95
 set_war_support = 15
 add_to_tech_sharing_group = uca_investigators
 set_convoys = 4000
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 0
-			banned = yes
-		}
-
-		fascism = {
-			popularity = 0
-			banned = yes
-		}
-		
-		communism = {
-			popularity = 100
-			 #default is no
-		}
+	set_politics = {
+		ruling_party =communism
+		election_frequency = 48
+		elections_allowed = yes
 	}
-	
-	ruling_party = communism
-	last_election = "1928.11.8"
-	elections_allowed = no
-}
+	set_popularities = {
+	democratic = 0
+	communism = 100
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 0
+	}
 
 add_ideas = {
 	free_trade

@@ -1,0 +1,6 @@
+American_States_Global_Response = {
+	visible = {
+	NOT={has_variable =var_American_States}
+	NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+}
+}

@@ -1,0 +1,35 @@
+state = {
+    id = 824
+    name = "STATE_824"
+    manpower = 338780
+    state_category = rural
+   buildings_max_level_factor=3.000
+    provinces = {
+        5205
+    }
+    
+    resources = {
+  
+		steel=260 # was: 24.000
+		aluminium = 90
+		oil = 190
+		
+	
+    }
+    
+    history = {
+     		owner = UMI
+	add_core_of = UMI        
+	add_core_of = USA
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 5
+			air_base = 10
+		
+
+		}
+		victory_points = {
+			5205 50 
+		}
+        }
+    }

@@ -1,4 +1,4 @@
-﻿oob = "State_Guard"
+﻿oob = "UCI"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "USA_1936_naval_mtg"
@@ -8,46 +8,77 @@ if = {
 }
 
 capital = 363
+create_country_leader = {
+	name = "Governor Clyde Roark Hoey"
+	desc = "POLITICS_CLYDE_ROARK_HOEY_DESC"
+	picture = "gfx/leaders/UCI/portrait_uci_clyde_roark_hoey.dds"
+	expire = "1985.1.1"
+	ideology = alabaman
+	traits = {
+		anti_communist 
+		socialite_connections 
+		staunch_constitutionalist
+		cornered_fox
+	}
+}
+create_country_leader = {
+	name = "John Gardiner Richards, Jr."
+	desc = "POLITICS_JOHN_GARDINER_RICHARDS_JR_DESC"
+	picture = "gfx/leaders/UCI/portrait_uci_john_gardiner_richards_Jr.dds"
+	expire = "1975.1.1"
+	ideology = liberalism
+	traits = {
+		dislikes_germany
+		staunch_constitutionalist
+		political_dancer
+		dealbroker
+		anti_communist
 
-
+	}
+}
+create_country_leader = {
+	name = "Führer Thomas Gordon McLeod"
+	desc = "POLITICS_THOMAS_GORDON_MCLEOD_DESC"
+	picture = "gfx/leaders/UCI/portrait_uci_Thomas_Gordon_McLeod.dds"
+	expire = "1975.1.1"
+	ideology = texanism
+	traits = {
+		lieutenant_of_industry
+		anti_democrat
+		warmonger
+		baron_of_terror
+	}
+}
+create_country_leader = {
+	name = "Lt. Chairperson Olin DeWitt Talmadge Johnston"
+	desc = "POLITICS_OLIN_DEWITT_TALMADGE_JOHNSTON_DESC"
+	picture = "gfx/leaders/UCI/portrait_uci_olin_dewitt_talmadge_johnston.dds"
+	expire = "1975.1.1"
+	ideology = stalinism
+	traits = {
+		dislikes_germany
+		dealbroker
+		red_army_organizer
+		political_dancer
+	}
+}
 set_research_slots = 4
 set_stability = 0.95
 set_war_support = 15
 add_to_tech_sharing_group = ual_investigators
 set_convoys = 4000
 set_politics = {
-	parties = {
-		democratic = { 
-			popularity = 0
-			banned = yes
-		}
-
-		fascism = {
-			popularity = 10
-			
-		}
-				american_globalism = {
-			popularity = 20
-			}
-
-		american_isolationism = {
-			popularity = 70
-			
-		}
-		
-		communism = {
-			popularity = 0
-			banned = yes
-		}
+		ruling_party = american_isolationism
+		election_frequency = 48
+		elections_allowed = yes
 	}
-	
-	ruling_party = american_isolationism
-	last_election = "1932.11.8"
-	election_frequency = 48
-	elections_allowed = yes
-	
-}
-
+	set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 0
+	american_isolationism=100
+	american_globalism = 0
+	}
 add_ideas = {
 	free_trade
 }

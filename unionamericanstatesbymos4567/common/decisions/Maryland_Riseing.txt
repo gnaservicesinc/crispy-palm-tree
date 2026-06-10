@@ -1,0 +1,376 @@
+american_states_wilson ={
+
+	american_states_meryland_wilson_to_power ={
+		icon = GFX_decision_generic_army_support
+ 		cost = 30
+ 		fire_only_once = yes
+		days_remove = 7
+
+		visible = {  NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}}
+		
+		available = {
+			NOT={has_variable =var_Maryland_rising_attempted}
+			}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				add = 5000
+				is_historical_focus_on = no
+				
+				}
+			modifier = {
+				add = -5000
+				is_historical_focus_on = yes
+				
+				}
+		}
+complete_effect = {
+if={limit={NOT={has_variable =var_Maryland_rising_attempted}}
+
+set_variable = { var_Maryland_rising_attempted=1}
+
+random_list = {
+
+10 = { 
+set_variable = { var_Maryland_rising_success =1}
+	news_event={	
+   				 id = amer_news.16
+    				 days = 1
+   				 random = 5
+				}
+}
+20 = { 
+set_variable = { var_Maryland_rising_civil_war =1}
+	news_event={	
+   				 id = amer_news.17
+    				 days = 1
+   				 random = 5
+				}
+}
+30 = { 
+set_variable = { var_Maryland_rising_usa_annex =1}
+	news_event={	
+   				 id = amer_news.18
+    				 days = 1
+   				 random = 5
+				}
+}
+
+40 = {
+set_variable = { var_Maryland_rising_war_with_usa =1}
+	news_event={	
+   				 id = amer_news.19
+    				 days = 1
+   				 random = 5
+				}
+}
+
+
+}
+}
+}
+	remove_effect = {
+log="Maryland_rising decision.remove_effect called with vars are as follows"
+log = "var_Maryland_rising_war_with_usa: [?var_Maryland_rising_war_with_usa]"
+log = "var_Maryland_rising_success: [?var_Maryland_rising_success]"
+log = "var_Maryland_rising_usa_annex: [?var_Maryland_rising_usa_annex]"
+log = "var_Maryland_rising_civil_war: [?var_Maryland_rising_civil_war]"
+log = "I am [Root.GetName]"
+
+leave_faction = yes
+
+	 if={limit={
+		OR={
+			is_puppet=yes
+			is_subject=yes}}
+		 OVERLORD = {
+				if = { limit = { has_dlc = "Together for Victory"}
+					set_autonomy = {
+    						target = PREV
+    						autonomy_state = autonomy_free}
+				else = {
+					release = PREV 
+				}} } 
+		}
+if={limit={has_variable =var_Maryland_rising_civil_war}
+			transfer_state=817
+			set_capital=817
+			#add_ideas = { american_states_mass_backlash_to_failed_coup  }
+			start_civil_war = {
+    				 ideology = ROOT
+   				 size = 0.5
+    				capital = 361
+   				 states = { 
+      				  361 817
+    				}
+
+  			  keep_political_leader = yes
+			}
+}
+		
+else_if={limit={has_variable =var_Maryland_rising_usa_annex}
+		USA={inherit_technology = UML}
+		USA = {annex_country = {
+				target = UML
+				transfer_troops = yes
+				}}
+		}
+else_if={ limit={has_variable =var_Maryland_rising_success}
+			inherit_technology = USA
+			leave_faction = yes
+			set_capital=817
+			set_popularities = {
+				democratic = 0
+				neutrality = 0
+				fascism = 0
+				communism = 0
+				american_wilsonianism=100
+				american_isolationism=0
+				american_globalism = 0
+			}
+			set_politics = {
+				ruling_party = american_wilsonianism
+				elections_allowed = no
+			}
+	if={ limit={ NOT={ is_major = yes}} set_major = yes}
+	transfer_state=817
+	transfer_state=827
+add_state_core=126
+add_state_core=261
+add_state_core=354
+add_state_core=355
+add_state_core=356
+add_state_core=357
+add_state_core=358
+add_state_core=359
+add_state_core=360
+add_state_core=361
+add_state_core=362
+add_state_core=363
+add_state_core=364
+add_state_core=365
+add_state_core=366
+add_state_core=367
+add_state_core=368
+add_state_core=369
+add_state_core=370
+add_state_core=371
+add_state_core=372
+add_state_core=373
+add_state_core=374
+add_state_core=375
+add_state_core=376
+add_state_core=377
+add_state_core=378
+add_state_core=379
+add_state_core=380
+add_state_core=381
+add_state_core=382
+add_state_core=383
+add_state_core=384
+add_state_core=385
+add_state_core=386
+add_state_core=387
+add_state_core=388
+add_state_core=389
+add_state_core=390
+add_state_core=391
+add_state_core=392
+add_state_core=393
+add_state_core=394
+add_state_core=395
+add_state_core=396
+add_state_core=463
+add_state_core=471
+add_state_core=629
+add_state_core=683
+add_state_core=807
+add_state_core=808
+add_state_core=809
+add_state_core=810
+add_state_core=811
+add_state_core=812
+add_state_core=813
+add_state_core=814
+add_state_core=815
+add_state_core=816
+add_state_core=817
+add_state_core=818
+add_state_core=819
+add_state_core=820
+add_state_core=821
+add_state_core=822
+add_state_core=823
+add_state_core=824
+add_state_core=825
+add_state_core=826
+add_state_core=827
+			for_each_scope_loop = {
+		array = USA.Loyal_American_States
+			add_to_array = {
+  				  array = UML.Loyal_American_States
+    				  value = THIS
+				}
+			if={ limit={is_ai = yes}
+			ROOT={
+			annex_country = {
+				target = PREV
+				transfer_troops = yes
+				}
+			}
+			}}
+	for_each_scope_loop = {
+		array = USA.American_States
+
+		if={ limit={is_ai = yes}
+			ROOT={
+			annex_country = {
+				target = PREV
+				transfer_troops = yes
+				}
+			}
+			}
+		}
+
+			if={limit={ NOT={original_tag = USA}}
+			annex_country = {
+				target = USA
+				transfer_troops = yes
+				}}
+		
+
+set_variable = { var = senators_support value = 96 }
+set_variable = { var = senators_total value = 96 }
+set_variable = { var = representatives_support value = 435 }
+set_variable = { var = representatives_total value = 435 }
+set_variable = { var = quorum_low value = 39 }
+set_variable = { var = quorum_medium value = 49 }
+set_variable = { var = quorum_high value = 58 }
+every_enemy_country = {
+white_peace = ROOT
+}
+if={limit={ NOT={original_tag = USA}}
+load_focus_tree = { tree = usa_focus
+                    keep_completed = yes }}
+set_cosmetic_tag = USA
+
+}
+
+else_if={limit={has_variable =var_Maryland_rising_war_with_usa}
+		leave_faction = yes
+		for_each_scope_loop = {
+		array = USA.Loyal_American_States
+			declare_war_on = {
+   			 target = ROOT
+   			 type = annex_everything
+				}
+			}
+			UMI={			declare_war_on = {
+   			 target = ROOT
+   			 type = annex_everything
+				}}
+			UTX={			declare_war_on = {
+   			 target = ROOT
+   			 type = annex_everything
+				}}
+			UAL={			declare_war_on = {
+   			 target = ROOT
+   			 type = annex_everything
+				}}
+			UCA={			declare_war_on = {
+   			 target = ROOT
+   			 type = annex_everything
+				}}
+			GER={			declare_war_on = {
+   			 target = ROOT
+   			 type = annex_everything
+				}}
+			FRA={			declare_war_on = {
+   			 target = ROOT
+   			 type = annex_everything
+				}}
+			ENG={			declare_war_on = {
+   			 target = ROOT
+   			 type = annex_everything
+				}}
+			JAP={			declare_war_on = {
+   			 target = ROOT
+   			 type = annex_everything
+				}}
+			CHI={			declare_war_on = {
+   			 target = ROOT
+   			 type = annex_everything
+				}}
+			USA={
+			declare_war_on = {
+   			 target = ROOT
+   			 type = annex_everything
+				}
+				set_technology = {
+    					nukes =1
+					}
+				add_nuclear_bombs = 7
+				launch_nuke = {
+					province = 6823
+					state = 361
+					controller = UML
+					use_nuke = yes
+					}
+				launch_nuke = {
+					province = 6892
+					state = 361
+					controller = UML
+					use_nuke = yes
+					}
+				launch_nuke = {
+					province = 6929
+					state = 361
+					controller = UML
+					use_nuke = yes
+					}
+				launch_nuke = {
+					province = 6984
+					state = 361
+					controller = UML
+					use_nuke = yes
+					}
+				launch_nuke = {
+					province = 9758
+					state = 361
+					controller = UML
+					use_nuke = yes
+					}
+				launch_nuke = {
+					province = 9786
+					state = 361
+					controller = UML
+					use_nuke = yes
+					}
+				launch_nuke = {
+					province = 11892
+					state = 361
+					controller = UML
+					use_nuke = yes
+					}
+				}
+			}
+
+else ={
+log="Error in Maryland_rising decision.remove_effect called with no matching. Vars are as follows"
+log = "var_Maryland_rising_war_with_usa: [?var_Maryland_rising_war_with_usa]"
+log = "var_Maryland_rising_success: [?var_Maryland_rising_success]"
+log = "var_Maryland_rising_usa_annex: [?var_Maryland_rising_usa_annex]"
+log = "var_Maryland_rising_civil_war: [?var_Maryland_rising_civil_war]"
+log = "I am [Root.GetName]"
+}
+
+		}
+		
+
+	
+
+}
+
+
+} #

@@ -1,0 +1,258 @@
+﻿oob = "UAK"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "USA_1936_naval_mtg"
+	else = {
+		set_naval_oob = "USA_1936_naval_legacy"
+	}
+}
+
+create_country_leader = {
+	name = "George Alexander Parks"
+	desc = "POLITICS_GEORGE_ALEXANDER_PARKS_DESC"
+	picture = "gfx/leaders/UAK/George_Alexander_Parks.dds"
+	expire = "1975.1.1"
+	ideology = liberalism
+	traits = {
+		dislikes_germany
+		staunch_constitutionalist
+		political_dancer
+		dealbroker
+		anti_communist
+
+	}
+}
+create_country_leader = {
+	name = "Arctic Union Boss Ernest Gruening."
+	desc = "POLITICS_ERNEST_GRUENING_DESC"
+	picture = "gfx/leaders/UAK/Ernest_Gruening.dds"
+	expire = "1975.1.1"
+	ideology = stalinism
+	traits = {
+		triumphant_revolutionary
+		anti_democrat
+		red_army_organizer
+		warmonger
+	}
+}
+
+create_country_leader = {
+	name = "Governor Walter Joseph Hickel"
+	desc = "POLITICS_WALTER_JOSEPH_HICKEL_DESC"
+	picture = "gfx/leaders/UAK/Walter_Joseph_Hickel.dds"
+	expire = "1985.1.1"
+	ideology = alabaman
+	traits = {
+		anti_communist 
+		socialite_connections 
+		staunch_constitutionalist
+		cornered_fox
+	}
+}
+
+create_country_leader = {
+	name = "Arktischer Führer William Allen Egan"
+	desc = "POLITICS_WILLIAM_ALLEN_EGAN_DESC"
+	picture = "gfx/leaders/UAK/William_Allen_Egan.dds"
+	expire = "1975.1.1"
+	ideology = texanism
+	traits = {
+		lieutenant_of_industry
+		anti_democrat
+		warmonger
+		baron_of_terror
+	}
+}
+create_country_leader = {
+	name = "Kinderkönig Jay Hammond"
+	desc = "POLITICS_JAY_HAMMOND_DESC"
+	picture = "gfx/leaders/UAK/Jay_Hammond.dds"
+	expire = "2007.1.1"
+	ideology = nazism
+	traits = {
+		anti_communist 
+		socialite_connections 
+		fascist_militia_leader
+		cornered_fox
+		dictator
+	}
+}
+capital = 463
+set_research_slots = 6
+set_stability = 0.95
+set_war_support = 15
+add_to_tech_sharing_group = usa_investigators
+set_convoys = 4000
+set_politics = {
+		ruling_party = democratic
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+	democratic = 100
+	communism = 0
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 0
+	}
+
+add_ideas = {
+	free_trade
+	home_of_the_free
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	cv_CAS1 = 1
+	naval_bomber1 = 1
+	CAS1 = 1
+	early_bomber = 1
+	superior_firepower = 1
+	base_strike = 1
+	motorised_infantry = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	marines = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		improved_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_airplane_launcher = 1
+	}
+}
+
+	set_technology = {
+		fighter1 = 1
+		cv_fighter1 = 1
+		heavy_fighter1 = 1
+		tactical_bomber1 = 1
+		CAS2 = 1
+		strategic_bomber1 = 1
+		basic_light_tank = 1
+		interwar_artillery = 1
+		interwar_antitank = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+		support_weapons2 = 1
+		marines = 1
+
+		#doctrines
+		#Air
+		air_superiority = 1
+		infrastructure_destruction = 1
+		naval_strike_tactics = 1
+
+		sup_delay = 1
+		submarine_operations_bs = 1
+		carrier_primacy = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+		basic_encryption = 1
+		basic_decryption = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
+		fuel_refining2 = 1
+		fuel_refining3 = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+		dispersed_industry3 = 1
+	}
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		set_technology = {
+			improved_submarine = 1
+			basic_destroyer = 1
+			basic_heavy_cruiser = 1
+			basic_battlecruiser = 1
+		}
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			improved_ship_hull_light = 1
+			basic_ship_hull_heavy = 1
+			improved_ship_hull_heavy = 1
+			improved_sonar = 1
+			improved_ship_torpedo_launcher = 1
+			improved_cruiser_armor_scheme = 1
+			improved_heavy_battery = 1
+			dp_secondary_battery = 1
+		}
+		remove_ideas = MTG_naval_treaty_adherent
+		add_ideas = MTG_naval_treaty_adherent_reduced
+	}
+	create_equipment_variant = {
+		name = "Martin M166"
+		type = tac_bomber_equipment_0
+		upgrades = {
+			plane_tac_bomb_upgrade = 2
+			plane_range_upgrade = 1
+			plane_engine_upgrade = 2
+			plane_reliability_upgrade = 3
+		}
+	}
+

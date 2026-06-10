@@ -1,6 +1,7 @@
 re_conquest_america = {
 icon = GFX_decision_category_military_operation
 	visible = {
+	NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 	OR = {
 		tag  =  UIL
 		tag  =  UNY
@@ -37,6 +38,8 @@ icon = GFX_decision_category_military_operation
 		tag  =  UCO
 		tag  =  UMX
 		tag  =  UWY
+		tag  =  UHW
+		tag  =  UAK
 
 	}
 

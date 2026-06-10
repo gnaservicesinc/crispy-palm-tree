@@ -1,4 +1,4 @@
-﻿oob = "State_Guard"
+﻿oob = "UKY"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "USA_1936_naval_mtg"
@@ -8,44 +8,50 @@ if = {
 }
 
 capital = 369
-
+create_country_leader = {
+	name = "Albert Benjamin Chandler Sr. "
+	desc = "POLITICS_ALBERT_BENJMIN_CHANDLER_SR_DESC"
+	picture = "gfx/leaders/UKY/portrait_uky_albert_benjamin_chandler_sr.dds"
+	expire = "1985.1.1"
+	ideology = alabaman
+	traits = {
+		anti_communist 
+		socialite_connections 
+		fascist_militia_leader
+		cornered_fox
+	}
+}
+create_country_leader = {
+	name = "Führer Ruby Laffoon"
+	desc = "POLITICS_RUBY_LAFFON_DESC"
+	picture = "gfx/leaders/UKY/portrait_uky_ruby_laffoon.dds"
+	expire = "1985.1.1"
+	ideology = texanism
+	traits = {
+		anti_democrat 
+		anti_communist 
+		baron_of_terror
+		fascist_militia_leader
+		warmonger
+	}
+}
 set_research_slots = 4
 set_stability = 0.95
 set_war_support = 15
 add_to_tech_sharing_group = ual_investigators
 set_convoys = 4000
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 0
-			banned = yes
-		}
-
-		fascism = {
-			popularity = 45
-			
-		}
-		american_globalism = {
-			popularity = 5
-			}
-
-		american_isolationism = {
-			popularity = 50
-			
-		}
-		
-		communism = {
-			popularity = 0
-			banned = yes
-		}
+	set_politics = {
+		ruling_party = american_isolationism
+		election_frequency = 48
+		elections_allowed = yes
 	}
-	
-	ruling_party = american_isolationism
-	last_election = "1932.11.8"
-	election_frequency = 48
-	elections_allowed = yes
-}
+	set_popularities = {
+	democratic = 3
+	communism = 2
+	fascism = 40
+	american_isolationism=50
+	american_globalism = 5
+	}
 
 add_ideas = {
 	free_trade

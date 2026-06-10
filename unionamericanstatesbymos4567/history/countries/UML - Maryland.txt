@@ -1,6 +1,6 @@
 ﻿capital = 361
 
-oob = "State_Guard"
+oob = "UML"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "USA_1936_naval_mtg"
@@ -8,38 +8,95 @@ if = {
 		set_naval_oob = "USA_1936_naval_legacy"
 	}
 }
-
-
-
-set_research_slots = 4
+create_country_leader = {
+	name = "American Royal Prince William Preston Lane"
+	desc = "POLITICS_PRINCE_WILLIAM_PRESTON_LANE_DESC"
+	picture = "gfx/leaders/UML/William_Preston_Lane.dds"
+	expire = "1975.1.1"
+	ideology = wilsonianism
+	traits = {
+		dislikes_germany
+		lieutenant_of_industry
+		staunch_constitutionalist
+		political_dancer
+		dealbroker
+		anti_communist
+		warmonger
+		baron_of_terror
+		socialite_connections
+	}
+}
+create_country_leader = {
+	name = "John Millard Tawes"
+	desc = "POLITICS_JOHN_MILLARD_TAWES_DESC"
+	picture = "gfx/leaders/UML/John_Millard_Tawes.dds"
+	expire = "1989.1.1"
+	ideology = liberalism
+	traits = {
+		lieutenant_of_industry
+		dislikes_germany
+		anti_communist
+		political_dancer
+		staunch_constitutionalist
+		dealbroker
+	}
+}
+create_country_leader = {
+	name = "Chairperson Herbert Romulus O'Conor"
+	desc = "POLITICS_HERBERT_ROMULUS_OCONOR_DESC"
+	picture = "gfx/leaders/UML/Herbert_Romulus_OConor.dds"
+	expire = "1975.1.1"
+	ideology = stalinism
+	traits = {
+		triumphant_revolutionary
+		anti_democrat
+		red_army_organizer
+		warmonger
+	}
+}
+create_country_leader = {
+	name = "Governor Harry Whinna Nice"
+	desc = "POLITICS_HARRY_WHINNA_NICE_DESC"
+	picture = "gfx/leaders/UML/Harry_Whinna_Nice.dds"
+	expire = "1985.1.1"
+	ideology = alabaman
+	traits = {
+		anti_communist 
+		socialite_connections 
+		staunch_constitutionalist
+		cornered_fox
+	}
+}
+create_country_leader = {
+	name = "Polizeiführer Emerson Harrington Bachrach"
+	desc = "POLITICS_Emerson_Harrington_Bachrach_DESC"
+	picture = "gfx/leaders/UML/Emerson_Harrington_Bachrach.dds"
+	expire = "1975.1.1"
+	ideology = texanism
+	traits = {
+		lieutenant_of_industry
+		anti_democrat
+		warmonger
+		baron_of_terror
+	}
+}
+set_research_slots = 8
 set_stability = 0.95
 set_war_support = 15
-add_to_tech_sharing_group = ual_investigators
-set_convoys = 4000
+add_to_tech_sharing_group = usa_investigators
+set_convoys = 90000
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 99
-		}
-
-		fascism = {
-			popularity = 0
-			banned = yes
-		}
-		
-		communism = {
-			popularity = 1
-			banned = yes
-			 #default is no
-		}
+		ruling_party = democratic
+		election_frequency = 48
+		elections_allowed = yes
 	}
-	
-	ruling_party = democratic
-	last_election = "1932.11.8"
-	election_frequency = 48
-	elections_allowed = yes
-}
+	set_popularities = {
+	democratic = 100
+	communism = 0
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 0
+	}
 
 add_ideas = {
 	free_trade

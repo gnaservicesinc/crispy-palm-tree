@@ -1,0 +1,228 @@
+ideas = {
+	 country = {
+		american_warstate_elite_training_founded = {
+			picture = eng_imperial_conscription
+			allowed = {always = no}
+			allowed_civil_war = {always = no}
+			removal_cost = -1
+			modifier = {
+				ai_desired_divisions_factor = 1
+				ai_focus_aggressive_factor = 0.99
+				political_power_gain	=0.95
+				political_power_factor =0.85
+				army_leader_start_level	= 3
+				research_speed_factor = 0.15
+				war_support_weekly = 0.25
+				stability_weekly = 0.21
+				stability_factor = 0.10
+				justify_war_goal_time = -0.50
+
+			}
+		}
+		american_warstate_elite_training_instructors = {
+			picture = eng_imperial_conscription
+			allowed = {always = no}
+			allowed_civil_war = {always = no}
+			removal_cost = -1
+			modifier = {
+				training_time_army_factor=-0.2
+				training_time_factor=-0.2
+
+				}
+
+		}
+		american_warstate_elite_training_survival_school = {
+			picture = eng_imperial_conscription
+			allowed = {always = no}
+			allowed_civil_war = {always = no}
+			removal_cost = -1
+			modifier = {
+				attrition = -0.35
+				}
+
+		}
+		american_warstate_elite_training_survival_school_2 = {
+			picture = eng_imperial_conscription
+			allowed = {always = no}
+			allowed_civil_war = {always = no}
+			removal_cost = -1
+			modifier = {
+				no_supply_grace = 72
+				out_of_supply_factor = -0.35
+				}
+
+		}
+		american_warstate_elite_training_survival_school_3 = {
+			picture = eng_imperial_conscription
+			allowed = {always = no}
+			allowed_civil_war = {always = no}
+			removal_cost = -1
+			modifier = {
+				supply_consumption_factor = -0.75
+				}
+
+		}
+		american_warstate_elite_training_recon_school = {
+			picture = eng_imperial_conscription
+			allowed = {always = no}
+			allowed_civil_war = {always = no}
+			removal_cost = -1
+			modifier = {
+				
+				recon_factor = 0.50
+			
+				}
+
+		}
+		american_warstate_elite_training_command_theory = {
+			picture = eng_imperial_conscription
+			allowed = {always = no}
+			allowed_civil_war = {always = no}
+			removal_cost = -1
+			modifier = {
+				command_power_gain_mult=0.25
+				command_power_gain = 0.20
+				max_command_power = 50
+				planning_speed=0.50
+				max_planning=0.50
+				}
+
+		}
+		american_warstate_elite_training_officers_school_tactics = {
+			picture = eng_imperial_conscription
+			allowed = {always = no}
+			allowed_civil_war = {always = no}
+			removal_cost = -1
+			modifier = {
+				army_org = 15
+				army_org_factor = 0.20
+				weekly_manpower=1000	
+				}
+
+		}
+		american_warstate_elite_training_officers_school_tactics_2 = {
+			picture = eng_imperial_conscription
+			allowed = {always = no}
+			allowed_civil_war = {always = no}
+			removal_cost = -1
+			modifier = {
+				weekly_manpower=1000
+				army_org = 15
+				}
+
+		}
+		american_warstate_elite_training_officers_school_tactics_3 = {
+			picture = eng_imperial_conscription
+			allowed = {always = no}
+			allowed_civil_war = {always = no}
+			removal_cost = -1
+			modifier = {
+				army_org = 15
+				weekly_manpower=1000
+				}
+
+		}
+		american_warstate_elite_training_officers_school_tactics_4 = {
+			picture = eng_imperial_conscription
+			allowed = {always = no}
+			allowed_civil_war = {always = no}
+			removal_cost = -1
+			modifier = {
+				army_org = 15
+				weekly_manpower=1000
+				}
+
+		}
+		american_warstate_elite_training_school_morale_officers= {
+			picture = eng_imperial_conscription
+			allowed = {always = no}
+			allowed_civil_war = {always = no}
+			removal_cost = -1
+			modifier = {
+				army_morale_factor=0.30
+				weekly_manpower=1000
+				}
+
+		}
+
+		
+		american_warstate_elite_training_school_assault = {
+			picture = eng_imperial_conscription
+			allowed = {always = no}
+			allowed_civil_war = {always = no}
+			removal_cost = -1
+			modifier = {
+				offence=0.50
+				army_attack_factor=0.50
+				army_core_attack_factor=0.50
+				}
+
+		}
+		american_warstate_elite_training_school_defense = {
+			picture = eng_imperial_conscription
+			allowed = {always = no}
+			allowed_civil_war = {always = no}
+			removal_cost = -1
+			modifier = {
+				defence=0.50
+				army_defence_factor = 0.50
+				army_core_defence_factor=0.50
+				}
+
+		}
+		american_warstate_elite_training_school_defense_2 = {
+			picture = eng_imperial_conscription
+			allowed = {always = no}
+			allowed_civil_war = {always = no}
+			removal_cost = -1
+			modifier = {
+				max_dig_in = 1
+				dig_in_speed = 0.75
+				dig_in_speed_factor = 0.75
+				}
+
+		}
+		american_warstate_elite_training_school_recruitment = {
+			picture = eng_imperial_conscription
+			allowed = {always = no}
+			allowed_civil_war = {always = no}
+			removal_cost = -1
+			modifier = {
+				weekly_manpower = 5000
+				conscription_factor = 0.75
+				conscription = 0.90
+				non_core_manpower = 0.90
+				}
+
+		}
+		american_warstate_elite_training_counter_partisan  = {
+			picture = eng_imperial_conscription
+			allowed = {always = no}
+			allowed_civil_war = {always = no}
+			removal_cost = -1
+			modifier = {
+					special_forces_cap = 0.10
+			}
+
+
+
+		}
+		american_warstate_elite_training_school_for_industry = {
+			picture = eng_imperial_conscription
+			allowed = {always = no}
+			allowed_civil_war = {always = no}
+			removal_cost = -1
+			modifier = {
+				production_oil_factor = 0.95
+				production_factory_max_efficiency_factor = 0.95
+				fuel_gain_factor =0.95
+				fuel_gain_factor_from_states = 0.95
+					consumer_goods_factor = -0.50
+			}
+
+
+
+		}
+
+	}
+}

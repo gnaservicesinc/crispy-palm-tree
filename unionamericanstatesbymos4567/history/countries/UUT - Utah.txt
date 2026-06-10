@@ -1,6 +1,6 @@
 ﻿capital = 380
 
-oob = "State_Guard"
+oob = "UUT"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "USA_1936_naval_mtg"
@@ -9,42 +9,80 @@ if = {
 	}
 }
 
+create_country_leader = {
+	name = "Führer der Kinder Joseph Bracken Lee"
+	desc = "POLITICS_JOSEPH_BRACKEN_LEE_DESC"
+	picture = "gfx/leaders/UUT/Joseph_Bracken_Lee.dds"
+	expire = "1975.1.1"
+	ideology = texanism
+	traits = {
+		lieutenant_of_industry
+		anti_democrat
+		warmonger
+		baron_of_terror
+	}
+}
+create_country_leader = {
+	name = "Supervisor Henry Hooper Blood"
+	desc = "POLITICS_HENRY_HOOPER_BLOOD_DESC"
+	picture = "gfx/leaders/UUT/Henry_Hooper_Blood.dds"
+	expire = "1975.1.1"
+	ideology = stalinism
+	traits = {
+		triumphant_revolutionary
+		anti_democrat
+		red_army_organizer
+		warmonger
+	}
+}
+create_country_leader = {
+	name = "Governor Charles Rendell Mabey"
+	desc = "POLITICS_CHARLES_RENDELL_MABEY_DESC"
+	picture = "gfx/leaders/UUT/Charles_Rendell_Mabey.dds"
+	expire = "1985.1.1"
+	ideology = alabaman
+	traits = {
+		anti_communist 
+		socialite_connections 
+		staunch_constitutionalist
+		cornered_fox
+	}
+}
+create_country_leader = {
+	name = "Calvin Lewellyn Rampton"
+	desc = "POLITICS_CALVIN_LEWELLYN_RAMPTON_DESC"
+	picture = "gfx/leaders/UUT/Calvin_Lewellyn_Rampton.dds"
+	expire = "1975.1.1"
+	ideology = liberalism
+	traits = {
+		dislikes_germany
+		staunch_constitutionalist
+		political_dancer
+		dealbroker
+		anti_communist
 
-
-set_research_slots = 4
+	}
+}
+set_research_slots = 6
 set_stability = 0.95
 set_war_support = 15
 add_to_tech_sharing_group = uca_investigators
 set_convoys = 4000
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 0
-			banned = yes
-		}
-
-		fascism = {
-			popularity = 10
-			banned = yes
-		}
-		
-		communism = {
-			popularity = 90
-			
-			 #default is no
-		}
+	set_politics = {
+		ruling_party =communism
+		election_frequency = 48
+		elections_allowed = yes
 	}
-	
-	ruling_party = communism
-	last_election = "1932.11.8"
-	election_frequency = 48
-	elections_allowed = yes
-}
+	set_popularities = {
+	democratic = 0
+	communism = 100
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 0
+	}
 
 add_ideas = {
 	free_trade
-	home_of_the_free
 }
 
 # Starting tech

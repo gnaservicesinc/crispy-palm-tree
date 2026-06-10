@@ -1,0 +1,139 @@
+usa_pre_victory_homeland_mission_accomplished_USA={
+
+	 enable = {
+	 original_tag = USA
+	NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+	}
+	abort = {
+	any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}
+	}	
+
+ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = 9000
+	}
+    ai_strategy = {
+		type = force_build_armies
+	}
+    ai_strategy = {
+		type = prepare_for_war
+		id = UTX			
+		value = 5000
+	}
+    ai_strategy = {
+		type = prepare_for_war
+		id = UAL			
+		value = 5000
+	}
+    ai_strategy = {
+		type = prepare_for_war
+		id = UCA			
+		value = 5000
+	}
+    ai_strategy = {
+		type = prepare_for_war
+		id = UMI			
+		value = 5000
+	}
+	    ai_strategy = {
+		type = declare_war
+		id = UTX			
+		value = 9550
+	}
+	    ai_strategy = {
+		type = declare_war
+		id = UAL			
+		value = 9550
+	}
+	    ai_strategy = {
+		type = declare_war
+		id = UCA			
+		value = 9550
+	}
+	    ai_strategy = {
+		type = declare_war
+		id = UMI			
+		value = 9550
+	}
+	    ai_strategy = {
+		type = conquer
+		id = UTX			
+		value = 9550
+	}
+	    ai_strategy = {
+		type = conquer
+		id = UAL			
+		value = 9550
+	}
+	    ai_strategy = {
+		type = conquer
+		id = UCA			
+		value = 9550
+	}
+	    ai_strategy = {
+		type = conquer
+		id = UMI			
+		value = 9550
+	}
+
+}
+
+usa_victory_homeland_mission_accomplished_USA={
+
+	 enable = {
+	 original_tag = USA
+	has_variable =var_American_Homeland_Victory_Flag_Won
+	}
+
+	abort = {
+		NOT={has_variable =USA.var_American_Homeland_Victory_Flag_Won}
+	}	
+
+ai_strategy = {
+		type = area_priority
+		id = europe
+		value = 9000
+	}
+ai_strategy = {
+		type = area_priority
+		id = asia
+		value = 5000
+	}
+ai_strategy = {
+		type = area_priority
+		id = middle_east
+		value = 2000
+	}
+ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = 1000
+	}
+ai_strategy = {
+		type = area_priority
+		id = pacific
+		value = 500
+	}
+ai_strategy = {
+		type = area_priority
+		id = oceania
+		value = 250
+	}
+	ai_strategy = {
+		type = area_priority
+		id = south_america
+		value = 150
+	}
+	ai_strategy = {
+		type = area_priority
+		id = scandinavia
+		value = 100
+	}
+ai_strategy = {
+		type = area_priority
+		id = africa
+		value = 50
+	}
+
+}

@@ -29,19 +29,34 @@ country = {
 			factor = 1
 		}
 available = {
-ROOT = {   has_variable =var_American_States }
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+
+ROOT = { NOT = {has_war_with =UCA}} 
+ROOT = { has_variable =var_American_States }
 ROOT = { NOT = {   has_variable =var_Cali_States }}
+
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}
+	 NOT={ ROOT={ has_war_with = SOV}}
+	}
     }
 
- allow_branch = { ROOT = {   has_variable =var_American_States }
-ROOT = { NOT = {   has_variable =var_Cali_States }}}		
+ allow_branch = { 
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+ROOT = { NOT = {has_war_with =UCA} }
+ROOT = {   has_variable =var_American_States }
+ROOT = { NOT = {   has_variable =var_Cali_States }}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}
+	 NOT={ ROOT={ has_war_with = SOV}}
+	}
+}
+
+		
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			ROOT = { add_to_tech_sharing_group = uca_investigators 
-			inherit_technology = UCA }
+			ROOT = { add_to_tech_sharing_group = uca_investigators  }
 		UCA = {
 			
 			if = { limit = { has_dlc = "Man the Guns"}
@@ -51,7 +66,7 @@ ROOT = { NOT = {   has_variable =var_Cali_States }}}
 			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
 			} else = { puppet =ROOT }	
           }
-load_focus_tree = { tree = generic_focus
+load_focus_tree = { tree = American_Military_State
                      keep_completed = no }
 			 }
 	}
@@ -72,12 +87,27 @@ load_focus_tree = { tree = generic_focus
 
 	
 available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+NOT = {has_war_with =USA} 
 ROOT = {   has_variable =var_American_States }
 ROOT = { NOT = {   has_variable =var_Michigan_States  }}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}
+	 NOT={ ROOT={ has_war_with = SOV}}
+	}
     }
 
- allow_branch = { ROOT = {   has_variable =var_American_States }
-ROOT = { NOT = {   has_variable =var_Michigan_States  }}}
+ allow_branch = { 
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+NOT = {has_war_with =USA} 
+ROOT = {   has_variable =var_American_States }
+ROOT = { NOT = {   has_variable =var_Michigan_States  }}
+ 
+ NOT={ ROOT={ has_war_with = SOV}}
+
+	if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}
+	 NOT={ ROOT={ has_war_with = SOV}}
+	}
+}
 
 
 		cancel_if_invalid = yes
@@ -85,8 +115,8 @@ ROOT = { NOT = {   has_variable =var_Michigan_States  }}}
 		available_if_capitulated = no
 		completion_reward = {
 
-			ROOT = { add_to_tech_sharing_group = umi_investigators 
-			inherit_technology = UMI }
+			ROOT = { add_to_tech_sharing_group = umi_investigators }
+			#inherit_technology = UMI }
 		UMI = {
 			
 			if = { limit = { has_dlc = "Man the Guns"}
@@ -96,7 +126,7 @@ ROOT = { NOT = {   has_variable =var_Michigan_States  }}}
 			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
 			} else = { puppet =ROOT }	
           }
-load_focus_tree = { tree = generic_focus
+load_focus_tree = { tree = American_Military_State
                      keep_completed = yes }
 			 }
 	}
@@ -116,19 +146,32 @@ focus = {
 			factor = 1
 		}
 available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+NOT = {has_war_with =UTX}
 ROOT = {   has_variable =var_American_States }
 ROOT = { NOT = {   has_variable =var_Texan_States  }}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}
+	 NOT={ ROOT={ has_war_with = SOV}}
+	}
     }
 
- allow_branch = { ROOT = {   has_variable =var_American_States }
-ROOT = { NOT = {   has_variable =var_Texan_States  }}}	
+ allow_branch = { 
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+NOT = {has_war_with =UTX}
+ROOT = {   has_variable =var_American_States }
+ROOT = { NOT = {   has_variable =var_Texan_States  }}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}
+	 NOT={ ROOT={ has_war_with = SOV}}
+	}
+}
+	
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			ROOT = { add_to_tech_sharing_group = utx_investigators 
-			inherit_technology = UTX }
+			ROOT = { add_to_tech_sharing_group = utx_investigators  }
+			#inherit_technology = UTX }
 		UTX = {
 			
 			if = { limit = { has_dlc = "Man the Guns"}
@@ -138,7 +181,7 @@ ROOT = { NOT = {   has_variable =var_Texan_States  }}}
 			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
 			} else = { puppet =ROOT }	
           }
-load_focus_tree = { tree = generic_focus
+load_focus_tree = { tree = American_Military_State
                      keep_completed = yes }
 			 }
 	}
@@ -157,20 +200,32 @@ focus = {
 			factor = 1
 		}
 available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+ROOT = { NOT = {has_war_with =UAL}}
 ROOT = {   has_variable =var_American_States }
 ROOT = { NOT = {   has_variable =var_Southern_States  }}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}
+	 NOT={ ROOT={ has_war_with = SOV}}
+	}
     }
 
- allow_branch = { ROOT = {   has_variable =var_American_States }
-ROOT = { NOT = {   has_variable =var_Southern_States  }}}	
+ allow_branch = { 
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+ROOT = {NOT = {has_war_with =UAL}}
+ROOT = {   has_variable =var_American_States }
+ROOT = { NOT = {   has_variable =var_Southern_States  }}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}
+	 NOT={ ROOT={ has_war_with = SOV}}
+	}
+}	
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
 
-			ROOT = { add_to_tech_sharing_group = ual_investigators 
-			inherit_technology = UAL }
+			ROOT = { add_to_tech_sharing_group = ual_investigators }
+			# inherit_technology = UAL }
 		UAL = {
 			
 			if = { limit = { has_dlc = "Man the Guns"}
@@ -180,7 +235,7 @@ ROOT = { NOT = {   has_variable =var_Southern_States  }}}
 			set_autonomy = {target = ROOT autonomous_state = autonomy_united_states_state } 
 			} else = { puppet =ROOT }	
           }
-load_focus_tree = { tree = generic_focus
+load_focus_tree = { tree = American_Military_State
                      keep_completed = yes }
 			 }
 	}
@@ -195,20 +250,32 @@ focus = {
 		cost = 1
 
 		ai_will_do = {
-			factor = -100
+			factor = 1
 		}
 available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+ROOT = {NOT = {has_war_with =GER}}
 ROOT = {   has_variable =var_American_States }
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}
+	 NOT={ ROOT={ has_war_with = SOV}}
+	}
     }
 
- allow_branch = { ROOT = {   has_variable =var_American_States }}		
+ allow_branch = { 
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+ROOT = {NOT = {has_war_with =GER}}
+ROOT = {   has_variable =var_American_States }
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}
+	 NOT={ ROOT={ has_war_with = SOV}}
+	}}
+		
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			ROOT = { add_to_tech_sharing_group = axis_research 
-			inherit_technology = GER }
+			ROOT = { add_to_tech_sharing_group = axis_research } 
+			
 		GER = {
 	
 		
@@ -221,7 +288,7 @@ ROOT = {   has_variable =var_American_States }
 			} else = { puppet =ROOT }	
           }
 
-load_focus_tree = { tree = generic_focus
+load_focus_tree = { tree = American_Military_State
                      keep_completed = no }
 
 			 }
@@ -238,21 +305,30 @@ focus = {
 		cost = 1
 
 		ai_will_do = {
-			factor = -100
+			factor = -1000
 		}
 available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 ROOT = {   has_variable =var_American_States }
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}
+	 NOT={ ROOT={ has_war_with = SOV}}
+	}
     }
 
- allow_branch = { ROOT = {   has_variable =var_American_States }}		
+ allow_branch = { 
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+ROOT = {   has_variable =var_American_States }
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}
+	 NOT={ ROOT={ has_war_with = SOV}}
+	}}		
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
 
-			ROOT = { add_to_tech_sharing_group = comintern_research
-			inherit_technology = SOV }
+			ROOT = { add_to_tech_sharing_group = comintern_research }
+			# inherit_technology = SOV }
 		SOV = {
 	
 		
@@ -265,7 +341,7 @@ ROOT = {   has_variable =var_American_States }
 			} else = { puppet =ROOT }	
           }
 
-load_focus_tree = { tree = generic_focus
+load_focus_tree = { tree = American_Military_State
                      keep_completed = no }
 
 			 }
@@ -282,21 +358,32 @@ focus = {
 		cost = 1
 
 		ai_will_do = {
-			factor = -100
+			factor = 1
 		}
 available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+ROOT = {NOT = {has_war_with =JAP}}
 ROOT = {   has_variable =var_American_States }
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}
+	 NOT={ ROOT={ has_war_with = SOV}}
+	}
     }
 
- allow_branch = { ROOT = {   has_variable =var_American_States }}		
+ allow_branch = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+ROOT = {NOT = {has_war_with =JAP}} 
+ROOT = {   has_variable =var_American_States }
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}
+	 NOT={ ROOT={ has_war_with = SOV}}
+	}}		
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
 
-			ROOT = { add_to_tech_sharing_group = japanese_research
-			inherit_technology = JAP }
+			ROOT = { add_to_tech_sharing_group = japanese_research }
+			
 		JAP = {
 	
 		
@@ -309,8 +396,8 @@ ROOT = {   has_variable =var_American_States }
 			} else = { puppet =ROOT }	
           }
 
-load_focus_tree = { tree = generic_focus
-                     keep_completed = no }
+load_focus_tree = { tree = American_Military_State
+                     keep_completed = yes }
 
 			 }
 
@@ -329,18 +416,31 @@ focus = {
 			factor = -100
 		}
 available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+ROOT = { NOT = {has_war_with =USA}} 
+ROOT = { NOT = {has_war_with =ENG}}
 ROOT = {   has_variable =var_American_States }
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}
+	 NOT={ ROOT={ has_war_with = SOV}}
+	}
     }
 
- allow_branch = { ROOT = {   has_variable =var_American_States }}		
+ allow_branch = { 
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+ROOT = { NOT = {has_war_with =ENG}}
+ROOT = { NOT = {has_war_with =USA}}
+ROOT = {   has_variable =var_American_States }
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}
+	 NOT={ ROOT={ has_war_with = SOV}}
+	}}		
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
 
-			ROOT = { add_to_tech_sharing_group = commonwealth_research
-			inherit_technology = ENG }
+			ROOT = { add_to_tech_sharing_group = commonwealth_research }
+			# inherit_technology = ENG }
 		ENG = {
 	
 		
@@ -353,7 +453,7 @@ ROOT = {   has_variable =var_American_States }
 			} else = { puppet =ROOT }	
           }
 
-load_focus_tree = { tree = generic_focus
+load_focus_tree = { tree = American_Military_State
                      keep_completed = no }
 
 			 }
@@ -372,17 +472,99 @@ focus = {
 			factor = 1
 		}
 available = {
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 ROOT = {   has_variable =var_American_States }
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}
+	 NOT={ ROOT={ has_war_with = SOV}}
+	}
     }
 
- allow_branch = { ROOT = {   has_variable =var_American_States }}		
+ allow_branch = { 
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+ROOT = {   has_variable =var_American_States }
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}
+	 NOT={ ROOT={ has_war_with = SOV}}
+	}
+}		
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-				load_focus_tree = { tree = generic_focus
-                     keep_completed = no }
+				load_focus_tree = { tree = American_Military_State
+                     keep_completed = yes }
+
+			 }
+
+			 }
+focus = {
+		id = American_refocus_sov_war
+		icon = GFX_expand_ru_eco_partnetship
+		relative_position_id = American_choose_go_independent
+		x = 0
+		y = -1
+		dynamic =  yes
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+available = {
+ROOT = {   has_variable =var_American_States }
+SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}
+	ROOT={ has_war_with = SOV}
+	}
+    }
+
+ allow_branch = { ROOT = {   has_variable =var_American_States }
+SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}
+	 ROOT={ has_war_with = SOV}
+	}
+}		
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+				load_focus_tree = { tree = american_soviet_war_focus
+                     keep_completed = yes }
+
+			 }
+
+			 }
+focus = {
+		id = American_refocus_to_warstate
+		icon = GFX_expand_ru_eco_partnetship
+		relative_position_id = American_refocus_sov_war
+		x = 0
+		y = -1
+		dynamic =  yes
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+available = {
+any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}
+	 NOT={ ROOT={ has_war_with = SOV}}
+	}
+	}
+
+ allow_branch = { any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}
+	 NOT={ ROOT={ has_war_with = SOV}}
+	}
+}	
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+				load_focus_tree = { tree = American_Military_State
+                     keep_completed = yes }
 
 			 }
 

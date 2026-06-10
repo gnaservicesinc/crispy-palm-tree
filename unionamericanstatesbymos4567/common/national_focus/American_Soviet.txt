@@ -1,0 +1,245 @@
+focus_tree = {
+	id = american_soviet_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 100
+			tag = SOV
+		}
+	}
+	
+	default = no
+
+	focus = {
+		id = american_soviet_focus_move_leadership_to_cali
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 5
+		y = 0
+
+		dynamic =  yes
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			add = 5000
+			is_historical_focus_on = yes
+			
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+				SOV = { set_variable = { SOV.var_Sov_Soviet_Leadership_in_cali = 1 }  }
+				SOV = { set_variable = { var_American_States = 1 }  }
+				SOV = { set_variable = { var_Cali_States = 1 }  }
+				USA = { add_to_array = { array = USA.cali_States value= SOV }
+					add_to_array = { array = USA.American_States value= SOV}
+					}
+				SOV = { give_guarantee = UCA}
+				SOV = { give_military_access = UCA}
+				SOV = { diplomatic_relation ={country = UCA relation = non_aggression_pact  active = yes }}
+				SOV = { dismantle_faction=yes}
+				UCA ={ give_military_access = SOV}
+				UCA ={ give_guarantee = SOV}
+				UCA ={ diplomatic_relation ={country = SOV relation = non_aggression_pact  active = yes }}
+				UCA ={ add_to_faction = SOV}
+				
+				if = { limit = { has_dlc = "Together for Victory"}
+					UCA ={ set_autonomy = {target = SOV autonomous_state = autonomy_united_states_state }}
+				else = {
+					UCA ={ puppet =SOV }
+					}
+				}
+			SOV = { load_focus_tree = { tree = soviet_focus
+                     keep_completed = yes } }
+		
+
+		}
+	}
+	focus = {
+		id = american_soviet_focus_soviet_leadership
+		icon = GFX_goal_generic_forceful_treaty
+		x = 0
+		y = 1
+		relative_position_id = american_soviet_focus_move_leadership_to_cali
+		dynamic =  yes
+		cost = 1
+
+		ai_will_do = {
+			factor = 0
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		SOV = { set_variable = { SOV.var_Sov_Soviet_War_Criminals = 1 }  }
+			UCA={ dismantle_faction=yes}
+
+			for_each_scope_loop = {
+				array = USA.cali_States
+					give_guarantee	= SOV
+					give_military_access = SOV
+					diplomatic_relation ={country = SOV relation = non_aggression_pact  active = yes }
+					SOV = {
+						give_guarantee	= PREV
+						give_military_access = PREV
+						diplomatic_relation ={country = PREV relation = non_aggression_pact  active = yes }
+
+					if ={ limit = {PREV = { is_ai = yes}}
+					if = { limit = { has_dlc = "Together for Victory"}
+					set_autonomy = {target = PREV autonomous_state = autonomy_united_states_state }
+				else = {
+					puppet =PREV
+					}
+				}}
+						}
+				
+			}	
+		
+			
+			UCA={ give_guarantee = SOV}
+			UCA={ give_military_access = SOV}
+			UCA={ diplomatic_relation ={country = SOV relation = non_aggression_pact  active = yes }}
+				
+
+			
+			SOV = { add_to_faction = UCA }
+
+			SOV = { if = { limit = { has_dlc = "Together for Victory"} 
+			 set_autonomy = {target = UCA autonomous_state = autonomy_united_states_state } 
+				else = {
+					puppet =UCA
+					}
+				}}
+
+				
+			SOV = { set_variable = { var_American_States = 1 }  }
+			SOV = { set_variable = { var_Cali_States = 1 }  }
+			USA = { add_to_array = { array = USA.cali_States value= SOV }
+				add_to_array = { array = USA.American_States value= SOV}
+					}
+			SOV = { load_focus_tree = { tree = soviet_focus
+                     keep_completed = yes } }
+		}
+	
+			
+		
+	}
+
+	focus = {
+		id = american_soviet_focus_land_grab
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 0
+		y = 1
+		relative_position_id = american_soviet_focus_soviet_leadership
+		dynamic =  yes
+		cost = 1
+		ai_will_do = {
+			factor = 0
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			
+
+			for_each_scope_loop = {
+				array = USA.cali_States
+				if ={ limit = { is_ai = yes}
+				SOV = {
+					annex_country = {
+    					target = PREV
+    					transfer_troops = yes
+					}}
+
+					}
+
+				}
+			SOV = {
+				annex_country = {
+    				target = UCA
+    				transfer_troops = yes
+					}}
+			add_named_threat = { 
+  			  threat = 100
+   			 name = "Soviet Annexing in North America"
+			}
+			SOV = { set_variable = { SOV.var_Sov_Annexed_American_States = 1 }  }
+			SOV = { load_focus_tree = { tree = soviet_focus
+                     keep_completed = yes } }
+			hidden_effect = { 
+			every_country = {
+				if ={limit={
+					has_variable =var_American_States
+				}
+
+					if ={ limit = { is_ai = yes}
+						declare_war_on = {
+						target = SOV
+						type = annex_everything
+						}
+			
+					}	
+			}}
+
+			
+			
+			if ={ limit = {ENG = { is_ai = yes}}
+			ENG = { declare_war_on = {
+    					target = SOV
+    					type = annex_everything
+					}}}
+			if ={ limit = {FRA = { is_ai = yes}}
+			FRA = { declare_war_on = {
+    					target = SOV
+    					type = annex_everything
+					}}}
+
+			if ={ limit = {USA = { is_ai = yes}}
+			USA = { declare_war_on = {
+    					target = SOV
+    					type = annex_everything
+					}}}
+			if ={ limit = {MEX = { is_ai = yes}}
+			MEX = { declare_war_on = {
+    					target = SOV
+    					type = annex_everything
+					}}}
+
+			}
+			 
+			}
+	
+	}
+	focus = {
+		id = american_soviet_focus_gtfo
+		icon = GFX_goal_generic_national_unity
+		x = 0
+		y = 1
+		relative_position_id = american_soviet_focus_land_grab
+		dynamic =  yes
+		cost = 1
+
+		ai_will_do = {
+			factor = 0
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			SOV = { set_variable = { SOV.var_Sov_Abandon_American_States = 1 }  }
+			add_named_threat = { 
+   			 threat = -100
+   			 name = "Soviet Withdraw from North America"
+			}
+			load_focus_tree = { tree = soviet_focus
+                     keep_completed = yes }
+			 }
+	
+	}
+		
+}

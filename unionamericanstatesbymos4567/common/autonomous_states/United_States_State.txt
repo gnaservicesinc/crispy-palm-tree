@@ -5,7 +5,7 @@ autonomy_state = {
 	
 	min_freedom_level = 0.0
 	
-	manpower_influence = 0.5
+	manpower_influence = 1.0
 	
 	rule = {
 		can_not_declare_war = yes
@@ -37,65 +37,41 @@ autonomy_state = {
 	}
 
 	allowed = {
-		if = { limit = {
-			OR = {
-			OVERLORD = { original_tag = USA }
-			OVERLORD = { original_tag =  UMI}
-			OVERLORD = { original_tag =  UIL}
-			OVERLORD = { original_tag =  UNY}
-			OVERLORD = { original_tag =  UAL}
-			OVERLORD = { original_tag =  UCA}
-			OVERLORD = { original_tag =  UTX}
-			OVERLORD = { original_tag =  UIN}
-			OVERLORD = { original_tag =  UCI}
-			OVERLORD = { original_tag =  UDK}
-			OVERLORD = { original_tag =  UMN}
-			OVERLORD = { original_tag =  UEN}
-			OVERLORD = { original_tag =  UKY}
-			OVERLORD = { original_tag =  UTN}
-			OVERLORD = { original_tag =  UMS}
-			OVERLORD = { original_tag =  UFL}
-			OVERLORD = { original_tag =  UGO}
-			OVERLORD = { original_tag =  UVA}
-			OVERLORD = { original_tag =  UNE}
-			OVERLORD = { original_tag =  UME}
-			OVERLORD = { original_tag =  UAR}
-			OVERLORD = { original_tag =  ULA}
-			OVERLORD = { original_tag =  UWI}
-			OVERLORD = { original_tag =  UOK}
-			OVERLORD = { original_tag =  UIA}
-			OVERLORD = { original_tag =  UKA}
-			OVERLORD = { original_tag =  UOH}
-			OVERLORD = { original_tag =  UPE}
-			OVERLORD = { original_tag =  UML}
-			OVERLORD = { original_tag =  UNJ}
-			OVERLORD = { original_tag =  UWA}
-			OVERLORD = { original_tag =  UID}
-			OVERLORD = { original_tag =  UAZ}
-			OVERLORD = { original_tag =  UUT}
-			OVERLORD = { original_tag =  UNV}
-			OVERLORD = { original_tag =  UOR}
-			OVERLORD = { original_tag =  UMO}
-			OVERLORD = { original_tag =  UCO}
-			OVERLORD = { original_tag =  UMX}
-			OVERLORD = { original_tag =  UWY}
-					
-				}
-			
+		has_variable = var_American_States
+		}
+	use_for_peace_conference_weight = {
+		base = 0
+		modifier = {
+			add = 15
+			has_variable = var_American_States	
+		}
+		modifier = {
+			add = 15
+			FROM = {
+				has_variable = var_American_States
 			}
 		}
 	}
-	
 	can_take_level = {
-		always = no
-		#if = {
-		#	USA {
-		#	has_completed_focus = USA_decentralize_power
-		#	}
-		#}
-	
-        }
+	 AND = {
+		has_variable = var_American_States
+		OR = {
+			has_idea = american_states_disloyal_state
+			has_completed_focus = American_choice_disloyal_union_states
+			} #and
+		NOT={ has_government = democratic }
+		OVERLORD = { has_completed_focus =  American_choice_usa_abandon_federal_system}
+		OVERLORD = { NOT={ has_government = democratic }}
+		
+		
+	}
+    }
+
 	can_lose_level = {
-		always = no
+		 AND = {
+		has_variable = var_American_States
+		OVERLORD = { NOT={ has_government = democratic }}
+		OVERLORD = { has_completed_focus =  American_choice_usa_abandon_federal_system} 
+		NOT={ has_government = democratic }}
 	}
 }

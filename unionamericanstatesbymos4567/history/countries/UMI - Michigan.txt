@@ -1,5 +1,5 @@
 ﻿capital = 393
-oob = "State_Guard"
+oob = "UMI"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "USA_1936_naval_mtg"
@@ -23,9 +23,40 @@ create_country_leader = {
 
 	}
 }
-
+create_country_leader = {
+	name = "Führer der Region der Großen Seen Alexander Joseph Groesbeck"
+	desc = "POLITICS_ALEXANDER_JOSEPH_GROESBECK_DESC"
+	picture = "gfx/leaders/UMI/Alexander_Joseph_Groesbeck.dds"
+	expire = "1975.1.1"
+	ideology = texanism
+	traits = {
+		lieutenant_of_industry
+		anti_democrat
+		warmonger
+		baron_of_terror
+	}
+}
+create_country_leader = {
+	name = "Governor Wilber  Marion Brucker"
+	desc = "POLITICS_WILBER_MARION_BRUCKER_DESC"
+	picture = "gfx/leaders/UMI/Wilber_Marion_Brucker.dds"
+	expire = "1985.1.1"
+	ideology = alabaman
+	traits = {
+		anti_communist 
+		socialite_connections 
+		staunch_constitutionalist
+		cornered_fox
+	}
+}
+create_corps_commander = {
+	name = "General of the Great Lakes Army, Supreme Military Commander Alex"
+	portrait_path = "gfx/leaders/UMI/portrait_umi_alex.dds"
+	traits = { panzer_leader fortress_buster }
+	skill = 8
+}
 set_major = yes
-set_research_slots = 6
+set_research_slots = 10
 set_stability = 0.95
 set_war_support = 95
 add_to_tech_sharing_group = umi_investigators
@@ -49,102 +80,7 @@ add_ideas = {
 create_faction = "Great Lakes Treaty Organization"
  set_variable = { var_Michigan_States = 1 }
  set_variable = { var_American_States = 1 }
-UWI  = { 	set_politics = {
-		ruling_party = democratic
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 100
-	communism = 0
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 0
-	}  }
-UOH  = {  	set_politics = {
-		ruling_party = democratic
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 100
-	communism = 0
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 0
-	} }
-UIL  = { 	set_politics = {
-		ruling_party = democratic
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 100
-	communism = 0
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 0
-	}  }
-UIN  = { 	set_politics = {
-		ruling_party = democratic
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 100
-	communism = 0
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 0
-	}  }
-UMN  = { 	set_politics = {
-		ruling_party = democratic
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 100
-	communism = 0
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 0
-	}  }
-UDK  = { 	set_politics = {
-		ruling_party = democratic
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 100
-	communism = 0
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 0
-	}  }
-UNE  = { 	set_politics = {
-		ruling_party = democratic
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 100
-	communism = 0
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 0
-	}  }
-UIA  = { 	set_politics = {
-		ruling_party = democratic
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 100
-	communism = 0
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 0
-	}  } 
+
 
 UWI  = { set_variable = { var_Michigan_States = 1 }  }
 UOH  = { set_variable = { var_Michigan_States = 1 }  }

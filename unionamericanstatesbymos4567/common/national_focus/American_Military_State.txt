@@ -1,0 +1,474 @@
+focus_tree = {
+ id = American_Military_State
+country = {
+		factor = 0
+	}
+
+	continuous_focus_position = { x = 50 y = 1600 }
+	default = no
+
+
+
+	focus = {
+		id = American_Military_State_industry
+		icon = GFX_american_work
+		x=10
+		y=0
+		dynamic =  yes
+		cost = 0
+		ai_will_do = {
+			factor = 5
+		}
+		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_industry}}}}	
+		completion_reward = {
+					every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type =  industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			add_manpower = 1000000
+
+			add_offsite_building = { type = arms_factory level = 4 }
+			add_offsite_building = { type = industrial_complex level = 4 }
+		}
+		}
+	focus = {
+		id = American_Military_State_industry_deals
+		icon = GFX_american_work
+		relative_position_id = American_Military_State_industry
+		prerequisite = { focus = American_Military_State_industry }
+		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_industry_deals}}}}	
+		x=0
+		y=-2
+		dynamic =  yes
+		cost = 0
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_manpower = 1000000
+			add_offsite_building = { type = arms_factory level = 8 }
+			add_offsite_building = { type = industrial_complex level = 8 }
+		}
+		}
+	focus = {
+		id = American_Military_State_industry_deals_2
+		icon = GFX_american_work
+		relative_position_id = American_Military_State_industry_deals
+		prerequisite = { focus = American_Military_State_industry_deals }
+available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_industry_deals_2}}}}
+		x=0
+		y=-2
+		dynamic =  yes
+		cost = 0
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_manpower = 1000000
+			add_offsite_building = { type = arms_factory level = 16 }
+			add_offsite_building = { type = industrial_complex level = 16 }
+		}
+		}
+	focus = {
+		id = American_Military_State_industry_deals_3
+		icon = GFX_american_work
+		relative_position_id = American_Military_State_industry_deals_2
+		prerequisite = { focus = American_Military_State_industry_deals_2 }
+		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_industry_deals_3}}}}
+		x=0
+		y=-2
+		dynamic =  yes
+		cost = 0
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_manpower = 1000000
+			add_offsite_building = { type = arms_factory level = 32 }
+			add_offsite_building = { type = industrial_complex level = 32 }
+		}
+		}
+	focus = {
+		id = American_Military_State_industry_deals_4
+		icon = GFX_american_work
+		relative_position_id = American_Military_State_industry_deals_3
+		prerequisite = { focus = American_Military_State_industry_deals_3 }
+		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_industry_deals_4}}}}
+		x=0
+		y=-2
+		dynamic =  yes
+		cost = 0
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_manpower = 1000000
+			add_offsite_building = { type = arms_factory level = 64 }
+			add_offsite_building = { type = industrial_complex level = 64 }
+		}
+		}
+	focus = {
+		id = American_Military_State_industry_deals_5
+		icon = GFX_american_work
+		relative_position_id = American_Military_State_industry_deals_4
+		prerequisite = { focus = American_Military_State_industry_deals_4 }
+		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_industry_deals_5}}}}
+		x=0
+		y=-2
+		dynamic =  yes
+		cost = 0
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_manpower = 10000000
+			add_offsite_building = { type = arms_factory level = 128 }
+			add_offsite_building = { type = industrial_complex level = 128 }
+		}
+		}
+	focus = {
+		id = American_Military_refocus
+		icon = GFX_american_team_USA
+		relative_position_id = American_Military_State_industry
+		x=-7
+		y=0
+		dynamic =  yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			set_variable = { var_militarize_union_states_refocused = 1 }
+			load_focus_tree = { tree = American_choice_focus
+                     keep_completed = yes }
+		}
+		}
+	focus = {
+		id = American_Military_State_education
+		icon = GFX_goal_generic_more_territorial_claims
+		relative_position_id = American_Military_State_industry
+		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_education}}}}
+		x=2
+		y=0
+		dynamic =  yes
+		cost = 0
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_ideas = { american_warstate_elite_training_founded  }
+		}
+		}
+	focus = {
+		id = American_Military_State_education_instructors
+		icon = GFX_goal_generic_more_territorial_claims
+		relative_position_id = American_Military_State_education
+		prerequisite = { focus =  American_Military_State_education}
+		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_education_instructors}}}}
+		x=-2
+		y=2
+		dynamic =  yes
+		cost = 0
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_ideas = { american_warstate_elite_training_instructors  }
+		}
+		}
+	focus = {
+		id = American_Military_State_education_survival_school
+		icon = GFX_goal_generic_more_territorial_claims
+		relative_position_id = American_Military_State_education_instructors
+		prerequisite = { focus =  American_Military_State_education_instructors}
+		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_education_survival_school}}}}
+		x=2
+		y=2
+		dynamic =  yes
+		cost = 0
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_ideas = { american_warstate_elite_training_survival_school  }
+		}
+		}
+	focus = {
+		id = American_Military_State_education_survival_school_2
+		icon = GFX_goal_generic_more_territorial_claims
+		relative_position_id =American_Military_State_education_survival_school
+		prerequisite = { focus = American_Military_State_education_survival_school}
+		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_education_survival_school_2}}}}
+		x=0
+		y=2
+		dynamic =  yes
+		cost = 0
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_ideas = { american_warstate_elite_training_survival_school_2  }
+		}
+		}
+		focus = {
+		id = American_Military_State_education_survival_school_3
+		icon = GFX_goal_generic_more_territorial_claims
+		relative_position_id =American_Military_State_education_survival_school_2
+		prerequisite = { focus = American_Military_State_education_survival_school_2}
+		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_education_survival_school_3}}}}
+		x=0
+		y=2
+		dynamic =  yes
+		cost = 0
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_ideas = { american_warstate_elite_training_survival_school_3  }
+		}
+		}
+	focus = {
+		id = American_Military_State_education_recon_school
+		icon = GFX_goal_generic_more_territorial_claims
+		relative_position_id = American_Military_State_education_instructors
+		prerequisite = { focus =  American_Military_State_education_instructors}
+		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_education_recon_school}}}}
+		x=4
+		y=2
+		dynamic =  yes
+		cost = 0
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_ideas = { american_warstate_elite_training_recon_school  }
+		}
+		}
+	focus = {
+		id = American_Military_State_education_officers_tactics_school
+		icon = GFX_goal_generic_more_territorial_claims
+		relative_position_id = American_Military_State_education_instructors
+		prerequisite = { focus =  American_Military_State_education_instructors}
+		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_education_officers_tactics_school}}}}
+		x=6
+		y=2
+		dynamic =  yes
+		cost = 0
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_ideas = { american_warstate_elite_training_officers_school_tactics }
+		}
+		}
+	focus = {
+		id = American_Military_State_education_officers_tactics_school_2
+		icon = GFX_goal_generic_more_territorial_claims
+		relative_position_id = American_Military_State_education_officers_tactics_school
+		prerequisite = { focus =  American_Military_State_education_officers_tactics_school}
+		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_education_officers_tactics_school_2}}}}
+		x=0
+		y=2
+		dynamic =  yes
+		cost = 0
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_ideas = { american_warstate_elite_training_officers_school_tactics_2 }
+		}
+		}
+	focus = {
+		id = American_Military_State_education_officers_tactics_school_3
+		icon = GFX_goal_generic_more_territorial_claims
+		relative_position_id = American_Military_State_education_officers_tactics_school_2
+		prerequisite = { focus =  American_Military_State_education_officers_tactics_school_2}
+		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_education_officers_tactics_school_3}}}}
+		x=0
+		y=2
+		dynamic =  yes
+		cost = 0
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_ideas = { american_warstate_elite_training_officers_school_tactics_3 }
+		}
+		}
+	focus = {
+		id = American_Military_State_education_officers_tactics_school_4
+		icon = GFX_goal_generic_more_territorial_claims
+		relative_position_id = American_Military_State_education_officers_tactics_school_3
+		prerequisite = { focus =  American_Military_State_education_officers_tactics_school_3}
+		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_education_officers_tactics_school_4}}}}
+		x=0
+		y=2
+		dynamic =  yes
+		cost = 0
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_ideas = { american_warstate_elite_training_officers_school_tactics_4}
+		}
+		}
+
+	focus = {
+		id = American_Military_State_education_morale_officers_school
+		icon = GFX_goal_generic_more_territorial_claims
+		relative_position_id = American_Military_State_education_instructors
+		prerequisite = { focus =  American_Military_State_education_instructors}
+		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_education_morale_officers_school}}}}
+		x=8
+		y=2
+		dynamic =  yes
+		cost = 0
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_ideas = {american_warstate_elite_training_school_morale_officers }
+		}
+		}
+	focus = {
+		id = American_Military_State_assault_school
+		icon = GFX_goal_generic_more_territorial_claims
+		relative_position_id = American_Military_State_education_instructors
+		prerequisite = { focus =  American_Military_State_education_instructors}
+		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_assault_school}}}}
+		x=10
+		y=2
+		dynamic =  yes
+		cost = 0
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_ideas = {american_warstate_elite_training_school_assault }
+		}
+		}
+	focus = {
+		id = American_Military_State_defense_school
+		icon = GFX_goal_generic_more_territorial_claims
+		relative_position_id = American_Military_State_education_instructors
+		prerequisite = { focus =  American_Military_State_education_instructors}
+		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_defense_school}}}}
+		x=12
+		y=2
+		dynamic =  yes
+		cost = 0
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_ideas = {american_warstate_elite_training_school_defense }
+		}
+		}
+	focus = {
+		id = American_Military_State_defense_school_2
+		icon = GFX_goal_generic_more_territorial_claims
+		relative_position_id = American_Military_State_defense_school
+		prerequisite = { focus =  American_Military_State_defense_school}
+		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_defense_school_2}}}}
+		x=0
+		y=2
+		dynamic =  yes
+		cost = 0
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_ideas = {american_warstate_elite_training_school_defense_2 }
+		}
+		}
+	focus = {
+		id = American_Military_State_recruitment_school
+		icon = GFX_goal_generic_more_territorial_claims
+		relative_position_id = American_Military_State_education_instructors
+		prerequisite = { focus =  American_Military_State_education_instructors}
+		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_recruitment_school}}}}
+		x=14
+		y=2
+		dynamic =  yes
+		cost = 0
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_ideas = {american_warstate_elite_training_school_recruitment}
+		}
+		}
+	focus = {
+		id = American_Military_State_counter_partisan_school
+		icon = GFX_goal_generic_more_territorial_claims
+		relative_position_id = American_Military_State_education_instructors
+		prerequisite = { focus =  American_Military_State_education_instructors}
+		available = { if = { limit = { NOT={ has_completed_focus = american_warstate_elite_training_school_recruitment}}}}
+		x=16
+		y=2
+		dynamic =  yes
+		cost = 0
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_ideas = {american_warstate_elite_training_counter_partisan }
+		}
+		}
+	focus = {
+		id = American_Military_State_military_industry_school
+		icon = GFX_goal_generic_more_territorial_claims
+		relative_position_id = American_Military_State_education_instructors
+		prerequisite = { 
+				focus = American_Military_State_education_instructors
+				focus = American_Military_State_industry_deals
+				}
+		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_military_industry_school}}}}
+		x=18
+		y=2
+		dynamic =  yes
+		cost = 0
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_ideas = {american_warstate_elite_training_school_for_industry }
+		}
+		}
+
+}

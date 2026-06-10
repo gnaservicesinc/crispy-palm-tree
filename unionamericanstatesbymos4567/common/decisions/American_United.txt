@@ -1,0 +1,270 @@
+american_usa_united= {
+
+unite_the_american_states_enforce_the_results = {
+          cost = 25
+      fire_only_once = yes
+fixed_random_seed = no	
+
+ai_will_do = {
+			factor = 1
+				modifier = {
+       			 add = -10001
+				AND={
+				FROM={has_government = democratic}
+				ROOT={has_government = democratic}
+				}
+			}
+				modifier = {
+       			 add = -10001
+
+				ROOT={has_government =american_isolationism }
+			}
+				modifier = {
+       			 add = 10000
+
+				ROOT={has_government =american_wilsonianism  }
+			}
+		modifier = {
+       			 add = 10000
+				AND={
+				FROM={NOT={has_government = democratic}}
+				ROOT={has_government = democratic}
+				}
+			}
+		modifier = {
+       			 add = 10000
+				AND={
+				FROM={NOT={has_government = communism}}
+				ROOT={has_government = communism}
+				}
+			}
+		modifier = {
+       			 add = 10000
+				AND={
+				FROM={NOT={has_government = american_globalism }}
+				ROOT={has_government = american_globalism }
+				}
+			}
+}
+
+
+
+
+       target_trigger = {
+		FROM = { 
+			NOT = { tag = ROOT }
+			NOT={has_variable =var_American_Homeland_Victory_Flag_Won}
+		has_variable =var_American_States
+NOT = { is_in_faction_with = ROOT }	
+NOT = { is_subject_of = ROOT }
+is_ai=yes
+	}
+	}
+available = {has_variable =var_American_Homeland_Victory_Flag_Won}
+
+visible = {
+country_exists=FROM
+has_variable =var_American_Homeland_Victory_Flag_Won}
+
+complete_effect = {
+ROOT={
+	annex_country = {
+   				 target = FROM
+					transfer_troops = yes
+		}
+
+	}}
+
+}
+
+
+
+unite_the_american_states= {
+	icon = GFX_decision_generic_army_support
+ cost = 250
+ fire_only_once = no
+
+fixed_random_seed = no		
+days_re_enable = 30
+days_remove = 7
+
+visible = { 	AND={
+NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+			is_puppet=no
+			is_subject=no
+}
+}
+available = {
+
+AND={
+controls_state= 817
+controls_state= 393
+controls_state= 367
+controls_state= 378
+controls_state= 375
+}}
+
+ai_will_do = {
+			factor = 10000
+	}
+complete_effect = {
+
+if={limit={NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}}
+
+random_list = {
+    65 = {
+	news_event={	
+   				 id = amer_news.14
+    				 days = 1
+   				 random = 5
+				}
+set_variable = { var_American_Homeland_Victory_Flag_Won =1}
+  }
+    35 = {
+	news_event={	
+   				 id = amer_news.15
+    				 days = 1
+   				 random = 5
+				}
+
+
+  }
+}
+}
+}
+
+remove_effect = {
+
+
+
+if={limit={has_variable =var_American_Homeland_Victory_Flag_Won}
+	add_ideas = usa_liberty
+	if={ limit={ NOT={ is_major = yes}} set_major = yes}
+	transfer_state=817
+	transfer_state=827
+add_state_core=126
+add_state_core=261
+add_state_core=354
+add_state_core=355
+add_state_core=356
+add_state_core=357
+add_state_core=358
+add_state_core=359
+add_state_core=360
+add_state_core=361
+add_state_core=362
+add_state_core=363
+add_state_core=364
+add_state_core=365
+add_state_core=366
+add_state_core=367
+add_state_core=368
+add_state_core=369
+add_state_core=370
+add_state_core=371
+add_state_core=372
+add_state_core=373
+add_state_core=374
+add_state_core=375
+add_state_core=376
+add_state_core=377
+add_state_core=378
+add_state_core=379
+add_state_core=380
+add_state_core=381
+add_state_core=382
+add_state_core=383
+add_state_core=384
+add_state_core=385
+add_state_core=386
+add_state_core=387
+add_state_core=388
+add_state_core=389
+add_state_core=390
+add_state_core=391
+add_state_core=392
+add_state_core=393
+add_state_core=394
+add_state_core=395
+add_state_core=396
+add_state_core=463
+add_state_core=471
+add_state_core=629
+add_state_core=683
+add_state_core=807
+add_state_core=808
+add_state_core=809
+add_state_core=810
+add_state_core=811
+add_state_core=812
+add_state_core=813
+add_state_core=814
+add_state_core=815
+add_state_core=816
+add_state_core=817
+add_state_core=818
+add_state_core=819
+add_state_core=820
+add_state_core=821
+add_state_core=822
+add_state_core=823
+add_state_core=824
+add_state_core=825
+add_state_core=826
+add_state_core=827
+set_variable = { var = senators_support value = 96 }
+set_variable = { var = senators_total value = 96 }
+set_variable = { var = representatives_support value = 435 }
+set_variable = { var = representatives_total value = 435 }
+set_variable = { var = quorum_low value = 39 }
+set_variable = { var = quorum_medium value = 49 }
+set_variable = { var = quorum_high value = 58 }
+every_enemy_country = {
+white_peace = ROOT
+}
+
+
+
+if = { limit = {is_historical_focus_on = no}
+
+if = { limit = { has_dlc = "Together for Victory"}
+set_autonomy = {target = JAP autonomous_state = autonomy_united_states_state }
+else = {
+puppet =JAP
+} 
+}
+add_to_array = { array = ROOT.New_American_States value= JAP }
+}
+
+if={ limit={ NOT={original_tag = USA}} 
+
+USA={set_cosmetic_tag = ROOT}
+set_cosmetic_tag = USA 
+
+if = { limit = { has_dlc = "Together for Victory"}
+set_autonomy = {target = USA autonomous_state = autonomy_united_states_state }
+else = {
+puppet =USA
+} 
+}
+
+add_to_array = { array = ROOT.New_American_States value= USA }
+
+
+load_focus_tree = { tree = usa_focus
+                    keep_completed = yes }
+
+}
+
+
+}
+
+
+
+
+
+
+}
+}
+		
+}#####################

@@ -1,5 +1,5 @@
 ﻿capital = 378
-oob = "State_Guard"
+oob = "UCA"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "USA_1936_naval_mtg"
@@ -21,19 +21,21 @@ create_country_leader = {
 		warmonger
 	}
 }
-
 create_corps_commander = {
 	name = "Ernst Lubitsch"
 	portrait_path = "gfx/leaders/UCA/Ernst_Lubitsch.dds"
 	traits = { panzer_leader fortress_buster }
 	skill = 8
 }
+
+add_offsite_building = { type = arms_factory level = 128 }
+add_offsite_building = { type = industrial_complex level = 128 }
 set_major = yes
-set_research_slots = 5
-set_stability = 0.95
+set_research_slots = 6
+set_stability = 1
 set_war_support = 100
 add_to_tech_sharing_group = uca_investigators
-set_convoys = 4000
+set_convoys = 9000
 	set_politics = {
 		ruling_party =communism
 		election_frequency = 48
@@ -59,158 +61,6 @@ diplomatic_relation ={ country = SOV relation = non_aggression_pact  active = ye
 set_variable = { var_American_States = 1 }
 set_variable = { var_Cali_States = 1 }
 
-UWA = { 
-	set_politics = {
-		ruling_party =communism
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 0
-	communism = 100
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 0
-	}
-set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = random}
-set_variable = { amer_state_number_of_swings = 0}
-
-}
-
-UOR = { 
-	set_politics = {
-		ruling_party =communism
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 0
-	communism = 100
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 0
-	}
-set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = random}
-set_variable = { amer_state_number_of_swings = 0}
-
-}
-
-UNV = { 
-	set_politics = {
-		ruling_party =communism
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 0
-	communism = 100
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 0
-	}
-set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = random}
-set_variable = { amer_state_number_of_swings = 0}
-
-}
-
-UMO = { 
-	set_politics = {
-		ruling_party =communism
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 0
-	communism = 100
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 0
-	}
-set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = random}
-set_variable = { amer_state_number_of_swings = 0}
-
-}
-
-UWY = { 
-	set_politics = {
-		ruling_party =communism
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 0
-	communism = 100
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 0
-	}
-set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = random}
-set_variable = { amer_state_number_of_swings = 0}
-
-}
-
-UID = { 
-	set_politics = {
-		ruling_party =communism
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 0
-	communism = 100
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 0
-	}
-set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = random}
-set_variable = { amer_state_number_of_swings = 0}
-
-}
-
-UAZ = { 
-	set_politics = {
-		ruling_party =communism
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 0
-	communism = 100
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 0
-	}
-set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = random}
-set_variable = { amer_state_number_of_swings = 0}
-
-}
-
-UUT = { 
-	set_politics = {
-		ruling_party =communism
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 0
-	communism = 100
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 0
-	}
-set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = random}
-set_variable = { amer_state_number_of_swings = 0}
-
-}
-
 
 UWA = { set_variable = { var_American_States = 1 }  }
 UOR = { set_variable = { var_American_States = 1 }  }
@@ -221,6 +71,7 @@ UID = { set_variable = { var_American_States = 1 }  }
 UAZ = { set_variable = { var_American_States = 1 }  }
 UUT = { set_variable = { var_American_States = 1 }  }
 
+
 UWA = { set_variable = { var_Cali_States = 1 }  }
 UOR = { set_variable = { var_Cali_States = 1 }  }
 UNV = { set_variable = { var_Cali_States = 1 }  }
@@ -230,7 +81,8 @@ UID = { set_variable = { var_Cali_States = 1 }  }
 UAZ = { set_variable = { var_Cali_States = 1 }  }
 UUT = { set_variable = { var_Cali_States = 1 }  }
 
-add_to_array = { array = USA.cali_States value= SOV }
+
+
 add_to_array = { array = USA.cali_States value= SIK }
 add_to_array = { array = USA.cali_States value= MON }
 add_to_array = { array = USA.cali_States value= PRC }
@@ -245,16 +97,13 @@ add_to_array = { array = USA.cali_States value= UUT }
 
 
 
-SOV = {
-give_guarantee = UCA
-give_military_access = UCA
-diplomatic_relation ={country = UCA relation = non_aggression_pact  active = yes }
-dismantle_faction=yes
-}
+
 
 
 
 UCA ={
+
+dismantle_faction=yes
 create_faction = "The Sunshine Block"
 for_each_loop = {
 array = USA.cali_States
@@ -269,11 +118,9 @@ puppet =v
 }}
 
 
-give_guarantee = SOV
-add_to_faction = SOV
-add_to_array = { array = USA.cali_States value= SOV } 
 add_to_array = { array = USA.American_States value= UCA }
 }
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

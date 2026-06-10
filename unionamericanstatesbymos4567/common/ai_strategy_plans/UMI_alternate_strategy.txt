@@ -1,0 +1,56 @@
+UMI_alternate_plan = {
+
+	name = "UMI alternate plan"
+	desc = "The time has come for a new order in the USA. We must reunify this nation by whatever means necessary, now. Our time as a peaceful lakeside democracy is no more! We have MUCH to do- - What was that? Who are you? Go away! Nothing to see here. Move along, now, move along."
+
+	enable = { AND={
+		original_tag = UMI
+		is_historical_focus_on = no
+	}}
+	abort = {
+		OR ={
+			is_subject = yes
+			NOT = { has_government = democratic }
+		}
+	}
+
+
+	ai_national_focuses = {
+		American_choice_major_union_states_warpath
+		American_Major_Warpath_focus_refocus_sov_war
+		American_Major_Warpath_Refocus_[?ROOT.GetName]
+		American_Major_Warpath_focus_[?ROOT.GetLeader]_takes_command
+		American_Major_Warpath_focus_focus_border_security
+		American_Major_Warpath_focus_focus_border_security_2
+		American_Major_Warpath_focus_focus_border_security_3
+		American_Major_Warpath_focus_focus_border_security_4
+		American_Major_Warpath_focus_focus_bibb_consolidate_power
+		American_Major_Warpath_focus_focus_blackmarket_arms_deal_1 
+		continuous_amer_war_prep
+		
+		
+	}
+research = {
+
+	}
+
+	ideas = {
+
+	}
+	traits = {
+		captain_of_industry = 50
+		popular_figurehead = 5
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

@@ -1,5 +1,5 @@
 capital = 375
-oob = "State_Guard"
+oob = "UTX"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "USA_1936_naval_mtg"
@@ -22,13 +22,40 @@ create_country_leader = {
 		baron_of_terror
 	}
 }
-	
+create_country_leader = {
+	name = "Wilbert Lee O'Daniel"
+	desc = "POLITICS_WILBERT_LEE_ODANIEL_DESC"
+	picture = "gfx/leaders/UTX/Wilbert_Lee_ODaniel.dds"
+	expire = "1989.1.1"
+	ideology = liberalism
+	traits = {
+		lieutenant_of_industry
+		dislikes_germany
+		anti_communist
+		political_dancer
+		staunch_constitutionalist
+		dealbroker
+	}
+}
+create_country_leader = {
+	name = "Governor Jim Folsom"
+	desc = "POLITICS_JIM_FOLSOM_DESC"
+	picture = "gfx/leaders/UAL/Jim_Folsom.dds"
+	expire = "1985.1.1"
+	ideology = alabaman
+	traits = {
+		anti_communist 
+		socialite_connections 
+		staunch_constitutionalist
+		cornered_fox
+	}
+}	
 set_major = yes
-set_research_slots = 4
+set_research_slots = 16
 set_stability = 0.95
 set_war_support = 100
 add_to_tech_sharing_group = utx_investigators
-set_convoys = 4000
+set_convoys = 14000
 	set_politics = {
 		ruling_party =american_globalism
 		election_frequency = 48
@@ -44,125 +71,11 @@ set_convoys = 4000
 add_ideas = {
 	free_trade
 }
+
+
+
 set_variable = { var_American_States = 1 } 
 set_variable = { var_Texan_States = 1 } 
-
-UMX = { 
-	set_politics = {
-		ruling_party =american_globalism
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 0
-	communism = 0
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 100
-	}
-set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = ai_random}
-set_variable = { amer_state_number_of_swings = 0}
-
-}
-
-UOK = { 
-	set_politics = {
-		ruling_party =american_globalism
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 0
-	communism = 0
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 100
-	}
-set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = ai_random}
-set_variable = { amer_state_number_of_swings = 0}
-
-}
-
-UKA = { 
-	set_politics = {
-		ruling_party =american_globalism
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 0
-	communism = 0
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 100
-	}
-set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = ai_random}
-set_variable = { amer_state_number_of_swings = 0}
-
-}
-
-UAR = { 
-	set_politics = {
-		ruling_party =american_globalism
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 0
-	communism = 0
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 100
-	}
-set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = ai_random}
-set_variable = { amer_state_number_of_swings = 0}
-
-}
-
-ULA = { 
-	set_politics = {
-		ruling_party =american_globalism
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 0
-	communism = 0
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 100
-	}
-set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = ai_random}
-set_variable = { amer_state_number_of_swings = 0}
-
-
-}
-
-UCO = { 
-	set_politics = {
-		ruling_party =american_globalism
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-	democratic = 0
-	communism = 0
-	fascism = 0
-	american_isolationism=0
-	american_globalism = 100
-	}
-set_variable = { amer_state_swing_resistance = random}
-set_variable = { amer_state_swing_desire = ai_random}
-set_variable = { amer_state_number_of_swings = 0}
-
-
-}
-
 UMX = { set_variable = { var_American_States = 1 }  }
 UOK = { set_variable = { var_American_States = 1 }  }
 UKA = { set_variable = { var_American_States = 1 }  }
@@ -186,6 +99,7 @@ add_to_array = { array = USA.Texan_States value= UCO }
 
 create_faction = "Texas Federation of Republics"
 
+
 for_each_loop = {
 array = USA.Texan_States
 give_guarantee = v
@@ -198,6 +112,8 @@ puppet =v
 }}
 }
 UTX = { add_to_array = { array = American_States value= UTX }}
+GER ={ give_guarantee = USA }
+ITA ={ give_guarantee = USA }
 
 # Starting tech
 set_technology = {

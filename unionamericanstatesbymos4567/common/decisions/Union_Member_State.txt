@@ -2,13 +2,97 @@ union_member_state = {
 
 
 union_member_state_support_democracy = {
-	ai_will_do = {factor = 1 }
-			available = { 
- 	check_variable = { stability > 0.70 } 
+	ai_will_do = {
+factor = 0
+
+
+ modifier = {
+        add = 6000
+	AND = {
+	is_in_faction_with = USA
+	NOT={ has_government = democratic}
+	USA = { has_government = democratic}
 	}
-		cost = 1
+ }
+
+ modifier = {
+        add = 5000
+	AND = {
+	is_in_faction_with = UMI
+	NOT={ has_government = democratic}
+	UMI = { has_government = democratic}
+	}
+ }
+ modifier = {
+        add = 5000
+	AND = {
+	is_in_faction_with = ENG
+	NOT={ has_government = democratic}
+	ENG = { has_government = democratic}
+	}
+ }
+ modifier = {
+        add = -100
+	AND = {
+	has_war_with = ENG
+	NOT = { has_government = democratic}
+	}
+ }
+ modifier = {
+        add = -100
+	AND = {
+	has_war_with = USA
+	NOT = { has_government = democratic}
+	}
+ }
+ modifier = {
+        add = -10
+	AND = {
+	has_war_with = UMI
+	NOT = { has_government = democratic}
+	}
+ }
+ modifier = {
+        add = 5
+	AND = {
+	NOT = { has_government = democratic}
+	OR  = {
+		has_war_with = UCA
+		has_war_with = UAL
+		has_war_with = UTX
+		}
+	}
+ }
+ modifier = {
+        add = -20
+	AND = {
+	is_in_faction_with = UCA
+	UCA = { has_government = communism}
+	}
+ }
+ modifier = {
+        add = -10
+	is_in_faction_with = UAL
+	UAL = { has_government = american_isolationism}
+ }
+ modifier = {
+        add = -15
+	AND = {
+	is_in_faction_with = UTX
+	UTX = { has_government = american_globalism}
+	}
+ }
+modifier = {
+	 has_government = democratic
+	factor =0
+	}
+}
+			available = { 
+ 	check_variable = { stability > 0.90 } 
+	}
+		cost = 100
 		days_remove = 1
-		days_re_enable = 1
+		days_re_enable = 30
 
 	remove_effect = {
 
@@ -35,13 +119,49 @@ union_member_state_support_democracy = {
 		
 
 union_member_state_support_american_globalism = {
-	ai_will_do = {factor = 1 }
+	ai_will_do = {
+factor = 0
+
+
+
+modifier = {
+        add = 50
+	AND = {
+	is_in_faction_with = UTX
+	NOT={ has_government = american_globalism}
+	UTX = { has_government = american_globalism}
+	}
+ }
+ modifier = {
+        add = 10
+	has_government = american_isolationism
+ }
+ modifier = {
+        add = 1
+	 has_government = communism
+ }
+ modifier = {
+        add = 5
+	 has_government = democratic
+ }
+ modifier = {
+        add = -10
+	AND = {
+	has_war_with = UTX
+	UTX={ has_government = american_globalism }
+	NOT = { has_government = american_globalism}
+	}
+ }
+modifier = {
+	 has_government = american_globalism
+	factor =0
+	}
+}
 		available = { 
-	check_variable = { stability > 0.50 }
  	 check_variable = { stability < 0.70 }}
-		cost = 1
+		cost = 100
 		days_remove = 1
-		days_re_enable = 1
+		days_re_enable = 30
 
 	remove_effect = {
 		
@@ -63,14 +183,51 @@ union_member_state_support_american_globalism = {
 	
 union_member_state_support_american_isolationism = {
 available = { 
-	check_variable = { stability > 0.20 } 
- 	check_variable = { stability < 0.50 }
+ 	check_variable = { stability < 0.80 }
 	} 
-	ai_will_do = {factor = 1 }
+		ai_will_do = {
+factor = 0
+
+ modifier = {
+        add = -10
+	AND = {
+	has_war_with = UAL
+	UAL={ has_government = american_isolationism }
+	NOT = { has_government = american_isolationism}
+	}
+ }
+modifier = {
+        add = 50
+	AND = {
+	is_in_faction_with = UAL
+	NOT={ has_government = american_isolationism}
+	UAL = { has_government = american_isolationism}
+	}
+ }
+
+
+ modifier = {
+        add = 1
+	 has_government = communism
+ }
+ modifier = {
+        add = 10
+	 has_government = democratic
+ }
+ modifier = {
+        add = 100
+	 has_government = american_globalism
+ }
+
+modifier = {
+	 has_government = american_isolationism
+	factor =0
+	}
+}
 		
-		cost = 1
+		cost = 100
 		days_remove = 1
-		days_re_enable = 1
+		days_re_enable = 30
 
 	remove_effect = {
 			
@@ -89,12 +246,53 @@ available = {
 
 	} }		
 union_member_state_support_communism = {
-available = {  check_variable = { stability < 0.20 } } 
-	ai_will_do = {factor = 1 }
+
+available = {  check_variable = { stability < 0.60 } 
+		} 
+		ai_will_do = {
+factor = 0
+ modifier = {
+        add = -10
+	AND = {
+	has_war_with = UAL
+	UCA={ has_government = communism }
+	NOT = { has_government = communism}
+	}
+ }
+modifier = {
+        add = 50
+	AND = {
+	is_in_faction_with = UAL
+	NOT={ has_government = communism}
+	UAL = { has_government = communism}
+	}
+ }
+
+
+
+ modifier = {
+        add = -10
+	 has_government = american_isolationism
+ }
+ modifier = {
+        add = 1
+	 has_government = democratic
+ }
+ modifier = {
+        add = 10
+	 has_government = american_globalism
+ }
+
+
+modifier = {
+	 has_government = communism
+	factor =0
+	}
+}
 		
-		cost = 1
+		cost = 100
 		days_remove = 1
-		days_re_enable = 1
+		days_re_enable = 30
 
 	remove_effect = {
 			
@@ -117,18 +315,88 @@ available = {  check_variable = { stability < 0.20 } }
 	
 
 union_member_state_support_fascism = {
-available = { check_variable = { stability < 0.10 } }
+available = { check_variable = { stability < 0.50 } }
+ai_will_do = {
+factor = -50 
 
-		ai_will_do = {factor = -9000 }
+
+ modifier = {
+        add = 550
+	AND={
+	is_in_faction_with = GER
+	NOT={ has_government = fascism}
+	GER = { has_government = fascism}
+	}
+ }
+ modifier = {
+        add = 450
+	AND={
+	is_in_faction_with = JAP
+	NOT={ has_government = fascism}
+	JAP = { has_government = fascism}
+	}
+ }
+ modifier = {
+        add = -100
+	AND ={
+	is_in_faction_with = USA
+	NOT={ has_government = fascism}
+	USA ={ has_government = democratic }
+	}
+ }
+ modifier = {
+        add = -250
+	AND ={
+	is_in_faction_with = UCA
+	NOT={ has_government = fascism}
+	UCA ={ has_government = communism }
+	}
+ }
+ modifier = {
+        add = -200
+	AND ={
+	is_in_faction_with = UMI
+	NOT={ has_government = fascism}
+	UMI ={ has_government = democratic }
+	}
+ }
+ modifier = {
+        add = 50
+	AND ={
+	is_in_faction_with = UAL
+	NOT={ has_government = fascism}
+	UAL ={ has_government = american_isolationism }
+
+	}
+ }
+ modifier = {
+        add = 51
+	AND ={
+	is_in_faction_with = UTX
+	NOT={ has_government = fascism}
+	UTX ={ has_government = american_globalism }
+
+	}
+ }
+modifier = {
+	 has_government = fascism
+	factor =0
+	}
+}
+
+
+
+
 		
-		cost = 1
-		fire_only_once = yes
+			cost = 100
+		days_remove = 1
+		days_re_enable = 30
+		
 	remove_effect = {
 	
 	ROOT ={set_politics = {
 		ruling_party =fascism
-		election_frequency = 48
-		elections_allowed = yes
+		elections_allowed = no
 	}}
 	ROOT = {set_popularities = {
 	democratic = 0
@@ -144,25 +412,21 @@ start_civil_war = {
     ruling_party = fascism
     ideology = democratic
     size = 0.50
-    only_own_territory = no
 }
 start_civil_war = {
     ruling_party = fascism
     ideology = communism
     size = 0.10
-    only_own_territory = no
 }
 start_civil_war = {
     ruling_party = fascism
     ideology = american_globalism
     size = 0.20
-    only_own_territory = no
 }
 start_civil_war = {
     ruling_party = fascism
     ideology = american_isolationism
     size = 0.20
-    only_own_territory = no
 }
 every_other_country = { if ={ limit={ NOT={ has_government = fascism
 }}

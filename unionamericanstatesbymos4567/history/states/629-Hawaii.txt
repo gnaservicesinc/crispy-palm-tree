@@ -1,0 +1,36 @@
+
+state={
+	id=629
+	name="STATE_629"
+	manpower = 968336
+	state_category = city
+		resources={
+		steel=160.000
+		oil=260.000
+		aluminium=70.000
+		tungsten=80.000
+		rubber=87.000
+		chromium=98.000
+		oil=185.000
+	}
+
+	history={
+		owner = UHW
+		add_core_of = UHW
+		add_core_of = USA
+		buildings = {
+			infrastructure = 3
+			air_base = 5
+			4180 = {
+				naval_base = 10
+			}
+		}
+		victory_points = {
+			4180 15
+		 }
+	}
+
+	provinces={
+		4180 7112 7195 10048 12021 
+	}
+}

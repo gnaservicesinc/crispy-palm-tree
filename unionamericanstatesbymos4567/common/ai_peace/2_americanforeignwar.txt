@@ -1,0 +1,62 @@
+
+
+american_foreign_peace = {
+	# ROOT = Taker, FROM = Giver
+	enable = {
+		AND = {
+			has_variable =var_American_States
+			NOT = { original_tag = UTX }
+			FROM = {
+				NOT={has_variable =var_American_States}
+				
+			}
+		}
+	}
+
+	annex_randomness = 0
+	liberate_randomness = 0
+	puppet_randomness = 0
+	take_states_randomness = 0
+	force_government_randomness = 0
+	
+	# ROOT = Taker, FROM = Giver
+	annex = {
+		factor = 0
+	}
+
+	# ROOT = Taker, FROM = Liberated
+	liberate = {
+		factor = 9000
+	}
+
+	# ROOT = Taker, FROM = Giver
+	puppet = {
+		factor = 100
+	}
+
+	# ROOT = Taker, FROM = Giver
+	puppet_all = {
+		base = 100 
+	}
+	
+	# ROOT = STATE, FROM = Taker, FROM.FROM = Giver
+	puppet_state = {
+				base = 0 
+		modifier = { #puppet state only if already puppeted
+			add = 2000
+			is_in_array = { subject_countries@FROM = FROM.FROM }
+		}
+	}
+	
+	# ROOT = Taker, FROM = State
+	take_states = {
+		factor = 10
+	}
+
+	# ROOT = Taker, FROM = Giver
+	force_government = {
+		factor = 1000
+	}
+}
+
+

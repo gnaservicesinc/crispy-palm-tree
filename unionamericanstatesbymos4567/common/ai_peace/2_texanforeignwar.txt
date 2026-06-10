@@ -1,0 +1,61 @@
+
+
+texan_foreign_peace = {
+	# ROOT = Taker, FROM = Giver
+	enable = {
+		AND = {
+			original_tag = UTX 
+			FROM = {
+			NOT = { original_tag = UTX }
+			NOT = { original_tag = UCA }
+			NOT = { original_tag = UMI }
+			NOT = { original_tag = UAL }
+				NOT={has_variable =var_American_States}
+				
+			}
+		}
+	}
+
+	annex_randomness = 0
+	liberate_randomness = 0
+	puppet_randomness = 0
+	take_states_randomness = 0
+	force_government_randomness = 0
+	
+	# ROOT = Taker, FROM = Giver
+	annex = {
+		factor = 9000
+	}
+
+	# ROOT = Taker, FROM = Liberated
+	liberate = {
+		factor = 0
+	}
+
+	# ROOT = Taker, FROM = Giver
+	puppet = {
+		factor = 0
+	}
+
+	# ROOT = Taker, FROM = Giver
+	puppet_all = {
+		base = 0 
+	}
+	
+	# ROOT = STATE, FROM = Taker, FROM.FROM = Giver
+	puppet_state = {
+		base = 0 
+	}
+	
+	# ROOT = Taker, FROM = State
+	take_states = {
+		factor = 5000
+	}
+
+	# ROOT = Taker, FROM = Giver
+	force_government = {
+		factor = 1000
+	}
+}
+
+

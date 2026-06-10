@@ -25,6 +25,8 @@ country = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_offsite_building = { type = arms_factory level = 4 }
+			add_offsite_building = { type = industrial_complex level = 4 }
 			add_tech_bonus = {
 				name = industrial_bonus
 				bonus = 1.0
@@ -37,7 +39,32 @@ country = {
 			factor = 5
 		}
 	}
+focus = {
+		id = American_loyal_focus_refocus_sov_war 
+		icon = GFX_american_team_USA
+		relative_position_id = American_loyal_industrial_effort
+		
+		x = 0
+		y = -2
 
+		cost = 1
+ai_will_do = {
+			factor = 9000
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+		SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }
+		if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	ROOT={ has_war_with = SOV}	}
+		}
+		completion_reward = {
+load_focus_tree = { tree = american_soviet_war_focus
+                     keep_completed = no }
+		}
+	}
 focus = {
 		id = American_loyal_focus_on_infrastructure 
 		icon = GFX_american_work
@@ -46,7 +73,7 @@ focus = {
 		x = 0
 		y = 1
 
-		cost = 10
+		cost = 1
 ai_will_do = {
 			factor = 1
 		}
@@ -57,7 +84,8 @@ ai_will_do = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-				
+							add_offsite_building = { type = arms_factory level = 8 }
+add_offsite_building = { type = industrial_complex level = 8 }
 			every_state = {
 				limit = {
 					is_owned_by = ROOT
@@ -83,7 +111,7 @@ focus = {
 		x = 0
 		y = 1
 
-		cost = 5
+		cost = 1
 ai_will_do = {
 			factor = 1
 		}
@@ -94,7 +122,9 @@ ai_will_do = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-				
+add_offsite_building = { type = arms_factory level = 8 }
+add_offsite_building = { type = industrial_complex level = 8 }
+
 			every_state = {
 				limit = {
 					is_owned_by = ROOT
@@ -119,7 +149,7 @@ focus = {
 		x = 0
 		y = 1
 
-		cost = 5
+		cost = 1
 ai_will_do = {
 			factor = 1
 		}
@@ -130,7 +160,8 @@ ai_will_do = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-				
+							add_offsite_building = { type = arms_factory level = 8 }
+add_offsite_building = { type = industrial_complex level = 8 }
 			every_state = {
 				limit = {
 					is_owned_by = ROOT
@@ -155,7 +186,7 @@ focus = {
 		x = 0
 		y = 1
 
-		cost = 5
+		cost = 1
 ai_will_do = {
 			factor = 1
 		}
@@ -166,7 +197,8 @@ ai_will_do = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-				
+							add_offsite_building = { type = arms_factory level = 8 }
+add_offsite_building = { type = industrial_complex level = 8 }
 			every_state = {
 				limit = {
 					is_owned_by = ROOT
@@ -191,7 +223,7 @@ focus = {
 		x = 0
 		y = 1
 
-		cost = 5
+		cost = 1
 ai_will_do = {
 			factor = 1
 		}
@@ -202,7 +234,8 @@ ai_will_do = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-				
+							add_offsite_building = { type = arms_factory level = 8 }
+add_offsite_building = { type = industrial_complex level = 8 }
 			every_state = {
 				limit = {
 					is_owned_by = ROOT
@@ -228,7 +261,7 @@ focus = {
 		x = 0
 		y = 1
 
-		cost = 5
+		cost = 1
 ai_will_do = {
 			factor = 1
 		}
@@ -237,9 +270,10 @@ ai_will_do = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
+		
 		completion_reward = {
-				
+add_offsite_building = { type = arms_factory level = 8 }
+add_offsite_building = { type = industrial_complex level = 8 }
 			every_state = {
 				limit = {
 					is_owned_by = ROOT
@@ -264,7 +298,7 @@ focus = {
 		x = 0
 		y = 1
 
-		cost = 5
+		cost = 1
 ai_will_do = {
 			factor = 1
 		}
@@ -275,7 +309,8 @@ ai_will_do = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-				
+							add_offsite_building = { type = arms_factory level = 8 }
+add_offsite_building = { type = industrial_complex level = 8 }
 			every_state = {
 				limit = {
 					is_owned_by = ROOT
@@ -300,7 +335,7 @@ focus = {
 		x = 0
 		y = 1
 
-		cost = 5
+		cost = 1
 ai_will_do = {
 			factor = 1
 		}
@@ -311,7 +346,8 @@ ai_will_do = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-				
+							add_offsite_building = { type = arms_factory level = 8 }
+add_offsite_building = { type = industrial_complex level = 8 }
 			every_state = {
 				limit = {
 					is_owned_by = ROOT
@@ -336,7 +372,7 @@ focus = {
 		x = 0
 		y = 1
 
-		cost = 5
+		cost = 1
 ai_will_do = {
 			factor = 1
 		}
@@ -347,7 +383,8 @@ ai_will_do = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-				
+							add_offsite_building = { type = arms_factory level = 128 }
+add_offsite_building = { type = industrial_complex level = 128 }
 			every_state = {
 				limit = {
 					is_owned_by = ROOT
@@ -372,7 +409,7 @@ focus = {
 		x = 0
 		y = 1
 
-		cost = 5
+		cost = 1
 ai_will_do = {
 			factor = 1
 		}
@@ -383,7 +420,8 @@ ai_will_do = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-				
+							add_offsite_building = { type = arms_factory level = 128 }
+add_offsite_building = { type = industrial_complex level = 128 }
 			every_state = {
 				limit = {
 					is_owned_by = ROOT
@@ -422,7 +460,7 @@ focus = {
 		 dynamic = yes
 		x = 5
 		y = 0
-		cost = 10
+		cost = 1
 		ai_will_do = { 
 			factor = 10
 			modifier = {
@@ -432,8 +470,8 @@ focus = {
 			}
 	
 		available_if_capitulated = no
-
-		completion_reward = {
+completion_reward = {
+		
 create_field_marshal = {
 	female = yes
 	traits = {  trickster armor_officer panzer_leader war_hero trait_reckless }
@@ -494,7 +532,7 @@ focus = {
 		prerequisite = { focus =American_loyal_apoint_officers   }
 		x = 0
 		y = 2
-		cost = 10
+		cost = 1
 		ai_will_do = { 
 			factor = 10
 			modifier = {
@@ -518,7 +556,7 @@ focus = {
 		prerequisite = { focus =American_loyal_one_for_all_and_all_for_one  }
 		x = 0
 		y = 2
-		cost = 10
+		cost = 1
 		ai_will_do = { 
 			factor = 1
 			modifier = {
@@ -587,7 +625,7 @@ create_field_marshal = {
 			else {
 		
 create_field_marshal = {
-				name="[?[Root.Owner.GetName]]"
+				name="[?[Root.GetLeader]]"
 				picture = GFX_amer_sw_generic_lead
 				skill = 8
 				attack_skill = 8
@@ -603,6 +641,1106 @@ create_field_marshal = {
 ####################################################################
 #
 #	End Military. Effort Section
+#			
+#
+####################################################################
+####################################################################
+#
+#	Begin Arms Ind. Effort Section
+#			
+#
+####################################################################
+	focus = {
+		id = American_loyal_industrial_effort2
+		icon = GFX_american_work
+
+		x = 8
+		y = -2
+		cost = 1
+ 
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+focus = {
+		id = American_loyal_focus_on_arms 
+		icon = GFX_american_work
+				relative_position_id = American_loyal_industrial_effort2
+		prerequisite = { focus =American_loyal_industrial_effort2  }
+		x = 0
+		y = 1
+
+		cost = 1
+ai_will_do = {
+			factor = 10
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				add_offsite_building = { type = arms_factory level = 16 }
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type =  arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+
+focus = {
+		id = American_loyal_focus_on_arms2 
+		icon = GFX_american_work
+		relative_position_id = American_loyal_focus_on_arms
+		prerequisite = { focus =American_loyal_focus_on_arms}
+		x = 0
+		y = 1
+
+		cost = 1
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type =  arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+focus = {
+		id = American_loyal_focus_on_arms3 
+		icon = GFX_american_work
+		relative_position_id = American_loyal_focus_on_arms2
+		prerequisite = { focus =American_loyal_focus_on_arms2 }
+		x = 0
+		y = 1
+
+		cost = 1
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type =  arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+focus = {
+		id = American_loyal_focus_on_arms4 
+		icon = GFX_american_work
+		relative_position_id = American_loyal_focus_on_arms3
+		prerequisite = { focus =American_loyal_focus_on_arms3}
+		x = 0
+		y = 1
+
+		cost = 1
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type =  arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+focus = {
+		id = American_loyal_focus_on_arms5
+		icon = GFX_american_work
+		relative_position_id = American_loyal_focus_on_arms4
+		prerequisite = { focus =American_loyal_focus_on_arms4 }
+		x = 0
+		y = 1
+
+		cost = 1
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type =  arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+
+focus = {
+		id = American_loyal_focus_on_arms6 
+		icon = GFX_american_work
+		relative_position_id = American_loyal_focus_on_arms5
+		prerequisite = { focus =American_loyal_focus_on_arms5 }
+		x = 0
+		y = 1
+
+		cost = 1
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type =  arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+focus = {
+		id = American_loyal_focus_on_arms7
+		icon = GFX_american_work
+		relative_position_id = American_loyal_focus_on_arms6
+		prerequisite = { focus =American_loyal_focus_on_arms6 }
+		x = 0
+		y = 1
+
+		cost = 1
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type =  arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+focus = {
+		id = American_loyal_focus_on_arms8 
+		icon = GFX_american_work
+		relative_position_id = American_loyal_focus_on_arms7
+		prerequisite = { focus =American_loyal_focus_on_arms7}
+		x = 0
+		y = 1
+
+		cost = 1
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type =  arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+focus = {
+		id = American_loyal_focus_on_arms9 
+		icon = GFX_american_work
+		relative_position_id = American_loyal_focus_on_arms8
+		prerequisite = { focus =American_loyal_focus_on_arms8}
+		x = 0
+		y = 1
+
+		cost = 1
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type =  arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+focus = {
+		id = American_loyal_focus_on_arms10 
+		icon = GFX_american_work
+		relative_position_id = American_loyal_focus_on_arms9
+		prerequisite = { focus =American_loyal_focus_on_arms9}
+		x = 0
+		y = 1
+
+		cost = 1
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type =  arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+
+
+
+####################################################################
+#
+#	END Arms Ind. Effort Section 
+#			
+#
+####################################################################
+####################################################################
+#
+#	Begin Ind. Complex Effort Section
+#			
+#
+####################################################################
+	focus = {
+		id = American_loyal_industrial_effort3
+		icon = GFX_american_work
+
+		x = 11
+		y = -2
+		cost = 1
+ 
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+focus = {
+		id = American_loyal_focus_on_industrial_complex 
+		icon = GFX_american_work
+				relative_position_id = American_loyal_industrial_effort3
+		prerequisite = { focus =American_loyal_industrial_effort3  }
+		x = 0
+		y = 1
+
+		cost = 1
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type =  industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+
+focus = {
+		id = American_loyal_focus_on_industrial_complex2 
+		icon = GFX_american_work
+		relative_position_id = American_loyal_focus_on_industrial_complex
+		prerequisite = { focus =American_loyal_focus_on_industrial_complex}
+		x = 0
+		y = 1
+
+		cost = 1
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type =  industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+focus = {
+		id = American_loyal_focus_on_industrial_complex3 
+		icon = GFX_american_work
+		relative_position_id = American_loyal_focus_on_industrial_complex2
+		prerequisite = { focus =American_loyal_focus_on_industrial_complex2 }
+		x = 0
+		y = 1
+
+		cost = 1
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type =  industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+focus = {
+		id = American_loyal_focus_on_industrial_complex4 
+		icon = GFX_american_work
+		relative_position_id = American_loyal_focus_on_industrial_complex3
+		prerequisite = { focus =American_loyal_focus_on_industrial_complex3}
+		x = 0
+		y = 1
+
+		cost = 1
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type =  industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+focus = {
+		id = American_loyal_focus_on_industrial_complex5
+		icon = GFX_american_work
+		relative_position_id = American_loyal_focus_on_industrial_complex4
+		prerequisite = { focus =American_loyal_focus_on_industrial_complex4 }
+		x = 0
+		y = 1
+
+		cost = 1
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type =  industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+
+focus = {
+		id = American_loyal_focus_on_industrial_complex6 
+		icon = GFX_american_work
+		relative_position_id = American_loyal_focus_on_industrial_complex5
+		prerequisite = { focus =American_loyal_focus_on_industrial_complex5 }
+		x = 0
+		y = 1
+
+		cost = 1
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type =  industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+focus = {
+		id = American_loyal_focus_on_industrial_complex7
+		icon = GFX_american_work
+		relative_position_id = American_loyal_focus_on_industrial_complex6
+		prerequisite = { focus =American_loyal_focus_on_industrial_complex6 }
+		x = 0
+		y = 1
+
+		cost = 1
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type =  industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+focus = {
+		id = American_loyal_focus_on_industrial_complex8 
+		icon = GFX_american_work
+		relative_position_id = American_loyal_focus_on_industrial_complex7
+		prerequisite = { focus =American_loyal_focus_on_industrial_complex7}
+		x = 0
+		y = 1
+
+		cost = 1
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type =  industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+focus = {
+		id = American_loyal_focus_on_industrial_complex9 
+		icon = GFX_american_work
+		relative_position_id = American_loyal_focus_on_industrial_complex8
+		prerequisite = { focus =American_loyal_focus_on_industrial_complex8}
+		x = 0
+		y = 1
+
+		cost = 1
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type =  industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+focus = {
+		id = American_loyal_focus_on_industrial_complex10 
+		icon = GFX_american_work
+		relative_position_id = American_loyal_focus_on_industrial_complex9
+		prerequisite = { focus =American_loyal_focus_on_industrial_complex9}
+		x = 0
+		y = 1
+
+		cost = 1
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				add_building_construction = {
+					type =  industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		
+			
+		
+		}
+	}
+
+
+
+####################################################################
+#
+#	END Ind. Complex Effort Section 
+#			
+#
+####################################################################
+####################################################################
+#
+#	Begin Enhanced Land Usage Effort Section
+#			
+#
+####################################################################
+	focus = {
+		id = American_loyal_industrial_effort4
+		icon = GFX_american_work
+
+		x = 14
+		y = -2
+		cost = 1
+ 
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+focus = {
+		id = American_loyal_focus_on_land_use 
+		icon = GFX_american_work
+				relative_position_id = American_loyal_industrial_effort4
+		prerequisite = { focus =American_loyal_industrial_effort4  }
+		x = 0
+		y = 1
+
+		cost = 1
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+				random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 }
+		
+			
+		
+		}
+	}
+
+focus = {
+		id = American_loyal_focus_on_land_use2 
+		icon = GFX_american_work
+		relative_position_id = American_loyal_focus_on_land_use
+		prerequisite = { focus =American_loyal_focus_on_land_use}
+		x = 0
+		y = 1
+
+		cost = 1
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+				random_owned_controlled_state = { add_extra_state_shared_building_slots = 2 }
+			
+		
+		}
+	}
+focus = {
+		id = American_loyal_focus_on_land_use3 
+		icon = GFX_american_work
+		relative_position_id = American_loyal_focus_on_land_use2
+		prerequisite = { focus =American_loyal_focus_on_land_use2 }
+		x = 0
+		y = 1
+
+		cost = 1
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+				random_owned_controlled_state = { add_extra_state_shared_building_slots = 3 }
+		
+			
+		
+		}
+	}
+focus = {
+		id = American_loyal_focus_on_land_use4 
+		icon = GFX_american_work
+		relative_position_id = American_loyal_focus_on_land_use3
+		prerequisite = { focus =American_loyal_focus_on_land_use3}
+		x = 0
+		y = 1
+
+		cost = 1
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+				random_owned_controlled_state = { add_extra_state_shared_building_slots = 4 }
+		
+			
+		
+		}
+	}
+focus = {
+		id = American_loyal_focus_on_land_use5
+		icon = GFX_american_work
+		relative_position_id = American_loyal_focus_on_land_use4
+		prerequisite = { focus =American_loyal_focus_on_land_use4 }
+		x = 0
+		y = 1
+
+		cost = 1
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+				random_owned_controlled_state = { add_extra_state_shared_building_slots = 5 }
+			
+		
+		}
+	}
+
+focus = {
+		id = American_loyal_focus_on_land_use6 
+		icon = GFX_american_work
+		relative_position_id = American_loyal_focus_on_land_use5
+		prerequisite = { focus =American_loyal_focus_on_land_use5 }
+		x = 0
+		y = 1
+
+		cost = 1
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+				random_owned_controlled_state = { add_extra_state_shared_building_slots = 6 }
+			
+		
+		}
+	}
+focus = {
+		id = American_loyal_focus_on_land_use7
+		icon = GFX_american_work
+		relative_position_id = American_loyal_focus_on_land_use6
+		prerequisite = { focus =American_loyal_focus_on_land_use6 }
+		x = 0
+		y = 1
+
+		cost = 1
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+					random_owned_controlled_state = { add_extra_state_shared_building_slots = 7 }
+		
+			
+		
+		}
+	}
+focus = {
+		id = American_loyal_focus_on_land_use8 
+		icon = GFX_american_work
+		relative_position_id = American_loyal_focus_on_land_use7
+		prerequisite = { focus =American_loyal_focus_on_land_use7}
+		x = 0
+		y = 1
+
+		cost = 1
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+				random_owned_controlled_state = { add_extra_state_shared_building_slots =8 }
+		
+			
+		
+		}
+	}
+focus = {
+		id = American_loyal_focus_on_land_use9 
+		icon = GFX_american_work
+		relative_position_id = American_loyal_focus_on_land_use8
+		prerequisite = { focus =American_loyal_focus_on_land_use8}
+		x = 0
+		y = 1
+
+		cost = 1
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			random_owned_controlled_state = { add_extra_state_shared_building_slots = 9 }
+		
+			
+		
+		}
+	}
+focus = {
+		id = American_loyal_focus_on_land_use10 
+		icon = GFX_american_work
+		relative_position_id = American_loyal_focus_on_land_use9
+		prerequisite = { focus =American_loyal_focus_on_land_use9}
+		x = 0
+		y = 1
+
+		cost = 1
+ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				random_owned_controlled_state = { add_extra_state_shared_building_slots = 10 }
+		
+			
+		
+		}
+	}
+
+
+
+####################################################################
+#
+#	END Enhanced Land Usage Effort Section
 #			
 #
 ####################################################################

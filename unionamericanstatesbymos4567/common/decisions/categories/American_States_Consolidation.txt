@@ -1,0 +1,18 @@
+American_States_Consolidation = {
+icon = GFX_decision_category_generic_crisis
+	visible = {
+	  AND = {
+		OR = {
+	
+		original_tag =  UMI
+		original_tag =  UAL
+		original_tag =  UCA
+		original_tag =  UTX
+
+
+		}
+	has_completed_focus = American_Major_Warpath_focus_focus_bibb_consolidate_power
+	NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+}
+}
+}

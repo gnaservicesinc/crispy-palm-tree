@@ -6,15 +6,15 @@ ideologies = {
 			}
 			texanism  = {
 			}
-			
+		
 		}
 		dynamic_faction_names = {
-			"FACTION_NAME_DEMOCRATIC_1"
-			"FACTION_NAME_DEMOCRATIC_2"
-			"FACTION_NAME_DEMOCRATIC_3"
-			"FACTION_NAME_DEMOCRATIC_4"
-			"FACTION_NAME_DEMOCRATIC_5"
-			"FACTION_NAME_DEMOCRATIC_6"
+			"FACTION_NAME_AMERICAN_GLOBALISM_1"
+			"FACTION_NAME_AMERICAN_GLOBALISM_2"
+			"FACTION_NAME_AMERICAN_GLOBALISM_3"
+			"FACTION_NAME_AMERICAN_GLOBALISM_4"
+			"FACTION_NAME_AMERICAN_GLOBALISM_5"
+			"FACTION_NAME_AMERICAN_GLOBALISM_6"
 		}
 		
 		color = { 25 2 223 }
@@ -28,17 +28,18 @@ ideologies = {
 			can_force_government = yes
 			can_send_volunteers = yes
 			can_puppet = yes
-			can_lower_tension = yes
+			can_lower_tension = no
 			can_only_justify_war_on_threat_country = no
-			can_guarantee_other_ideologies = no
+			can_guarantee_other_ideologies = yes
 		}
 		faction_modifiers = {
 			faction_trade_opinion_factor = 0.15
 		}
 		modifiers = {
 			annex_cost_factor = -1.0
-			take_states_cost_factor = -1.00
-
+			trade_opinion_factor = -1.0
+			lend_lease_tension = 1.00
+			send_volunteers_tension = 1.00
 
 		}
 		ai_fascist = yes

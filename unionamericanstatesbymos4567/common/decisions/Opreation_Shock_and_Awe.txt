@@ -1,8 +1,10 @@
 Shock_and_Awe= {
 Shock_and_Awe_the_homeland = {	
+	icon = GFX_decision_generic_army_support
           target_trigger = {
 		 FROM = {
                  has_variable = var_American_States
+		NOT={ has_government = democratic}
 		NOT = { is_subject_of = ROOT }
 		NOT = { tag = ROOT }
 		NOT = { is_in_faction_with = ROOT }	
@@ -13,9 +15,230 @@ Shock_and_Awe_the_homeland = {
 		days_re_enable = 30
 		ai_will_do = {
 			factor = 1
+		 modifier = {
+        		add = -1
+			has_war = yes
 		}
-		cost = 1000
+		modifier = {
+        		add = 2
+			has_war = no
+		}
+		modifier = {
+        		add = 1
+			FROM={has_war = yes}
+		}
+		modifier = {
+        		add = -2
+			FROM={has_war = no}
+		}
+		modifier = {
+        		add = -1
+			AND ={
+			FROM={has_war_with= UCA}
+			UCA={ NOT={ has_government = democratic }}
+			}
+		}
+		modifier = {
+        		add = 1
+			AND ={
+			FROM={has_war_with= UAL}
+			UAL={ NOT={ has_government = democratic }}
+			}
+		}
+			modifier = {
+        		add = -1
+			AND ={
+			FROM={has_war_with= UTX}
+			UTX={ NOT={ has_government = democratic }}
+			}
+		}
+		modifier = {
+        		add = 1
+			FROM={has_war_with = UMI}
+		}
+		modifier = {
+        		add = 1
+			FROM={has_war_with = ENG}
+		}
+		modifier = {
+        		add = 1
+			FROM={has_war_together_with = UTX}
+		}
+		modifier = {
+        		add = 1
+			FROM={has_war_together_with = UAL}
+		}
+		modifier = {
+        		add = 1
+			FROM={has_war_together_with = UCA}
+		}
+		modifier = {
+        		add = -1
+			FROM={has_war_together_with = UMI}
+		}
+		modifier = {
+        		add = 1
+			FROM={ is_in_faction_with = JAP}
+		}
+		modifier = {
+        		add = 1
+			AND={
+			FROM={ is_in_faction_with = JAP}
+			JAP = { has_war = yes }
+			}
+		}
+
+		modifier = {
+        		add = 1
+			AND={
+			FROM={ is_in_faction_with = JAP}
+			JAP = { has_government = fascism}
+			}
+		}
+		modifier = {
+        		add = 1
+			FROM={ is_in_faction_with = GER}
+		}
+		modifier = {
+        		add = 1
+			AND={
+			FROM={ is_in_faction_with = GER}
+			GER = { has_government = fascism}
+			}
+		}
+		modifier = {
+        		add = 1
+			AND={
+			FROM={ is_in_faction_with = GER}
+			GER = { has_war = yes }
+			}
+		}
+		modifier = {
+        		add = 1
+			FROM={  has_government = communism }
+		}
+		modifier = {
+        		add = 2
+			FROM={ has_government = fascism }
+		}
+		modifier = {
+        		add = 1
+			ROOT={has_wargoal_against = FROM}
+		}
+		modifier = {
+        		add = 1
+			FROM ={has_wargoal_against = ROOT }
+		}
+		modifier = {
+        		add = 1
+			ROOT={is_justifying_wargoal_against = FROM}
+		}	
+		modifier = {
+        		add = 1
+			FROM={is_justifying_wargoal_against = ROOT}
+		}
+		modifier = {
+        		add = 1
+			ROOT={has_annex_war_goal = FROM}
+		}
+		modifier = {
+        		add = 1
+			ROOT={has_border_war_with = FROM}
+		}
+		modifier = {
+        		add = 1
+			FROM={is_in_faction_with = UCA}
+		}
+		modifier = {
+        		add = 1
+			FROM={is_in_faction_with = UCA}
+			UCA={has_war = yes}
+		}
+		modifier = {
+        		add = 1
+			FROM={is_in_faction_with = UAL}
+		}
+		modifier = {
+        		add = 1
+			FROM={is_in_faction_with = UAL}
+			UAL={has_war = yes}
+		}
+		modifier = {
+        		add = 1
+			FROM={is_in_faction_with = UTX}
+		}
+		modifier = {
+        		add = 1
+			FROM={is_in_faction_with = UTX}
+			UTX={has_war = yes}
+		}
+		modifier = {
+        		add = 1
+			FROM = { is_ai = yes}
+		}
+		modifier = {
+        		add = -1
+			FROM ={has_political_power > 500}
+		}
+		modifier = {
+        		add = -1
+			FROM ={has_political_power > 1000}
+		}
+		modifier = {
+        		add = -1
+			FROM ={has_political_power > 1500}
+		}
+		modifier = {
+        		add = 1
+			FROM ={has_political_power < 150}
+		}
+		modifier = {
+        		add = 1
+			FROM ={has_political_power < 10}
+		}
 		
+		modifier = {
+        		add = -1
+			FROM ={has_war_support > 0.90}
+		}
+		modifier = {
+        		add = -1
+			FROM ={has_war_support > 0.80}
+		}
+		modifier = {
+        		add = 1
+			FROM ={has_war_support < 0.80}
+		}
+		modifier = {
+        		add = 1
+			FROM ={has_war_support < 0.70}
+		}
+		modifier = {
+        		add = 1
+			FROM ={has_war_support < 0.60}
+		}
+		modifier = {
+        		add = 1
+			FROM ={has_war_support < 0.50}
+		}
+		modifier = {
+        		add = -1
+			ROOT={has_war_support < 0.10}
+		}
+		modifier = {
+        		add = 1
+			ROOT={ has_war_support > 0.75}
+		}
+		modifier = {
+        		add = 1
+			ROOT={has_war_support > 0.90}
+		}
+		}
+		cost = 150
+		available = { 
+		ROOT = { has_government = democratic}
+		## ROOT = { has_completed_focus =	American_choice_usa_choose_war}
+		}
 		complete_effect = {
 			ROOT = { declare_war_on= { target =     FROM	 type = annex_everything } }
         	}

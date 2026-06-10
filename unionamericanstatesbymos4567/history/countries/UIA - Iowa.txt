@@ -1,6 +1,6 @@
 ﻿capital = 392
 
-oob = "State_Guard"
+oob = "UIA"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "USA_1936_naval_mtg"
@@ -10,36 +10,78 @@ if = {
 }
 load_oob ="State_Guard"
 
+create_country_leader = {
+	name = "Leo Arthur Hoegh"
+	desc = "POLITICS_LEO_ARTHUR_HOEGH_DESC"
+	picture = "gfx/leaders/UIA/portrait_uia_leo_arthur_hoegh.dds"
+	expire = "2001.1.1"
+	ideology = liberalism
+	traits = {
+		dislikes_germany
+		staunch_constitutionalist
+		political_dancer
+		dealbroker
+		anti_communist
 
-set_research_slots = 4
-set_stability = 0.95
+	}
+}
+create_country_leader = {
+	name = "Governor William Shane Beardsley"
+	desc = "POLITICS_WILLIAM_SHANE_BEARDSLEY_DESC"
+	picture = "gfx/leaders/UIA/portrait_uia_william_shane_beardsley.dds"
+	expire = "1985.1.1"
+	ideology = alabaman
+	traits = {
+		anti_communist 
+		socialite_connections 
+		staunch_constitutionalist
+		cornered_fox
+	}
+}
+create_country_leader = {
+	name = "Jugendführer Clyde LaVerne Herring"
+	desc = "POLITICS_CLYDE_LAVERNE_HERRING_DESC"
+	picture = "gfx/leaders/UIA/portrait_uia_clyde_laverne_herring.dds"
+	expire = "1975.1.1"
+	ideology = texanism
+	traits = {
+		lieutenant_of_industry
+		anti_democrat
+		warmonger
+		baron_of_terror
+	}
+}
+create_country_leader = {
+	name = "Under Chairperson William Lloyd Harding"
+	desc = "POLITICS_WILLIAM_LLOYD_HARDING_DESC"
+	picture = "gfx/leaders/UIA/portrait_uia_william_lloyd_harding.dds"
+	expire = "1975.1.1"
+	ideology = stalinism
+	traits = {
+		triumphant_revolutionary
+		anti_democrat
+		red_army_organizer
+		warmonger
+	}
+}
+
+set_research_slots = 6
+set_stability = 1
 set_war_support = 15
 add_to_tech_sharing_group = umi_investigators
 set_convoys = 4000
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 99
-		}
-
-		fascism = {
-			popularity = 0
-			banned = yes
-		}
-		
-		communism = {
-			popularity = 1
-			banned = yes
-			 #default is no
-		}
+		ruling_party = democratic
+		election_frequency = 48
+		elections_allowed = yes
 	}
-	
-	ruling_party = democratic
-	last_election = "1932.11.8"
-	election_frequency = 48
-	elections_allowed = yes
-}
+	set_popularities = {
+	democratic = 100
+	communism = 0
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 0
+	}
 
 add_ideas = {
 	free_trade

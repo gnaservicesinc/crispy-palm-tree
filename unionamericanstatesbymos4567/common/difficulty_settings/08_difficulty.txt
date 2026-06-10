@@ -1,0 +1,26 @@
+difficulty_settings = {
+	difficulty_setting = {
+		key = "custom_diff_strong_umi"
+		modifier = diff_strong_ai_generic
+		countries = { UMI }
+		multiplier = 2.0
+	}	
+	difficulty_setting = {
+		key = "custom_diff_strong_ual"
+		modifier = diff_strong_ai_generic
+		countries = { UAL }
+		multiplier = 3.0
+	}
+	difficulty_setting = {
+		key = "custom_diff_strong_uca"
+		modifier = diff_strong_ai_generic
+		countries = { UCA }
+		multiplier = 2.0
+	}
+	difficulty_setting = {
+		key = "custom_diff_strong_utx"
+		modifier = diff_strong_ai_generic
+		countries = { UTX }
+		multiplier = 4.0
+	}
+}

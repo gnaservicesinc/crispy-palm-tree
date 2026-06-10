@@ -1,6 +1,6 @@
 ﻿capital = 379
 
-oob = "State_Guard"
+oob = "UNV"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "USA_1936_naval_mtg"
@@ -9,38 +9,78 @@ if = {
 	}
 }
 
+create_country_leader = {
+	name = "Governor Edward P. Carville"
+	desc = "POLITICS_EDWARD_P_CARVILLE_DESC"
+	picture = "gfx/leaders/UNV/Edward_P_Carville.dds"
+	expire = "1985.1.1"
+	ideology = alabaman
+	traits = {
+		anti_communist 
+		socialite_connections 
+		staunch_constitutionalist
+		cornered_fox
+	}
+}
+create_country_leader = {
+	name = "Fred B. Balzar"
+	desc = "POLITICS_FRED_B_BALZAR_DESC"
+	picture = "gfx/leaders/UNV/Fred_B_Balzar.dds"
+	expire = "2030.1.1"
+	ideology = liberalism
+	traits = {
+		anti_communist 
+		dislikes_germany
+		staunch_constitutionalist
+		dealbroker
+	}
+}
+create_country_leader = {
+	name = "Bankführer Morley Griswold"
+	desc = "POLITICS_MORLEY_GRISWOLD_DESC"
+	picture = "gfx/leaders/UNV/Morley_Griswold.dds"
+	expire = "2030.1.1"
+	ideology = texanism
+	traits = {
+		lieutenant_of_industry
+		anti_communist 
+		anti_democrat
+		fascist_militia_leader
+		warmonger
+		baron_of_terror
+	}
+}
 
-
-set_research_slots = 4
+create_country_leader = {
+	name = "Central Committee Special Supervisor Emmet D. Boyle"
+	desc = "POLITICS_EMMET_D_BOYLE_DESC"
+	picture = "gfx/leaders/UNV/Emmet_D_Boyle.dds"
+	expire = "1975.1.1"
+	ideology = stalinism
+	traits = {
+		triumphant_revolutionary
+		anti_democrat
+		red_army_organizer
+		warmonger
+	}
+}
+set_research_slots = 6
 set_stability = 0.95
 set_war_support = 15
 add_to_tech_sharing_group = uca_investigators
 set_convoys = 4000
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 0
-			banned = yes
-		}
-
-		fascism = {
-			popularity = 0
-			banned = yes
-		}
-		
-		communism = {
-			popularity = 100
-			
-			 #default is no
-		}
+	set_politics = {
+		ruling_party =communism
+		election_frequency = 48
+		elections_allowed = yes
 	}
-	
-	ruling_party = communism
-	last_election = "1932.11.8"
-	election_frequency = 48
-	elections_allowed = yes
-}
+	set_popularities = {
+	democratic = 0
+	communism = 100
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 0
+	}
 
 add_ideas = {
 	free_trade
