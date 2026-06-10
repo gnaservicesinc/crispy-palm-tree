@@ -14,7 +14,7 @@
 
 	focus = {
 		id = american_soviet_focus_move_leadership_to_cali
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_goal_generic_production
 		x = 5
 		y = 0
 
@@ -62,7 +62,7 @@
 	}
 	focus = {
 		id = american_soviet_focus_soviet_leadership
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_goal_generic_production
 		x = 0
 		y = 1
 		relative_position_id = american_soviet_focus_move_leadership_to_cali
@@ -133,7 +133,7 @@
 
 	focus = {
 		id = american_soviet_focus_land_grab
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_goal_generic_production
 		x = 0
 		y = 1
 		relative_position_id = american_soviet_focus_soviet_leadership

@@ -163,7 +163,7 @@ available = { if = { limit = { NOT={ has_completed_focus = American_Military_Sta
 		}
 	focus = {
 		id = American_Military_State_education
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_goal_generic_production
 		relative_position_id = American_Military_State_industry
 		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_education}}}}
 		x=2
@@ -180,7 +180,7 @@ available = { if = { limit = { NOT={ has_completed_focus = American_Military_Sta
 		}
 	focus = {
 		id = American_Military_State_education_instructors
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_goal_generic_production
 		relative_position_id = American_Military_State_education
 		prerequisite = { focus =  American_Military_State_education}
 		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_education_instructors}}}}
@@ -198,7 +198,7 @@ available = { if = { limit = { NOT={ has_completed_focus = American_Military_Sta
 		}
 	focus = {
 		id = American_Military_State_education_survival_school
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_goal_generic_production
 		relative_position_id = American_Military_State_education_instructors
 		prerequisite = { focus =  American_Military_State_education_instructors}
 		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_education_survival_school}}}}
@@ -216,7 +216,7 @@ available = { if = { limit = { NOT={ has_completed_focus = American_Military_Sta
 		}
 	focus = {
 		id = American_Military_State_education_survival_school_2
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_goal_generic_production
 		relative_position_id =American_Military_State_education_survival_school
 		prerequisite = { focus = American_Military_State_education_survival_school}
 		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_education_survival_school_2}}}}
@@ -234,7 +234,7 @@ available = { if = { limit = { NOT={ has_completed_focus = American_Military_Sta
 		}
 		focus = {
 		id = American_Military_State_education_survival_school_3
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_goal_generic_production
 		relative_position_id =American_Military_State_education_survival_school_2
 		prerequisite = { focus = American_Military_State_education_survival_school_2}
 		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_education_survival_school_3}}}}
@@ -252,7 +252,7 @@ available = { if = { limit = { NOT={ has_completed_focus = American_Military_Sta
 		}
 	focus = {
 		id = American_Military_State_education_recon_school
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_goal_generic_production
 		relative_position_id = American_Military_State_education_instructors
 		prerequisite = { focus =  American_Military_State_education_instructors}
 		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_education_recon_school}}}}
@@ -270,7 +270,7 @@ available = { if = { limit = { NOT={ has_completed_focus = American_Military_Sta
 		}
 	focus = {
 		id = American_Military_State_education_officers_tactics_school
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_goal_generic_production
 		relative_position_id = American_Military_State_education_instructors
 		prerequisite = { focus =  American_Military_State_education_instructors}
 		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_education_officers_tactics_school}}}}
@@ -288,7 +288,7 @@ available = { if = { limit = { NOT={ has_completed_focus = American_Military_Sta
 		}
 	focus = {
 		id = American_Military_State_education_officers_tactics_school_2
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_goal_generic_production
 		relative_position_id = American_Military_State_education_officers_tactics_school
 		prerequisite = { focus =  American_Military_State_education_officers_tactics_school}
 		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_education_officers_tactics_school_2}}}}
@@ -306,7 +306,7 @@ available = { if = { limit = { NOT={ has_completed_focus = American_Military_Sta
 		}
 	focus = {
 		id = American_Military_State_education_officers_tactics_school_3
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_goal_generic_production
 		relative_position_id = American_Military_State_education_officers_tactics_school_2
 		prerequisite = { focus =  American_Military_State_education_officers_tactics_school_2}
 		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_education_officers_tactics_school_3}}}}
@@ -324,7 +324,7 @@ available = { if = { limit = { NOT={ has_completed_focus = American_Military_Sta
 		}
 	focus = {
 		id = American_Military_State_education_officers_tactics_school_4
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_goal_generic_production
 		relative_position_id = American_Military_State_education_officers_tactics_school_3
 		prerequisite = { focus =  American_Military_State_education_officers_tactics_school_3}
 		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_education_officers_tactics_school_4}}}}
@@ -343,7 +343,7 @@ available = { if = { limit = { NOT={ has_completed_focus = American_Military_Sta
 
 	focus = {
 		id = American_Military_State_education_morale_officers_school
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_goal_generic_production
 		relative_position_id = American_Military_State_education_instructors
 		prerequisite = { focus =  American_Military_State_education_instructors}
 		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_education_morale_officers_school}}}}
@@ -361,7 +361,7 @@ available = { if = { limit = { NOT={ has_completed_focus = American_Military_Sta
 		}
 	focus = {
 		id = American_Military_State_assault_school
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_goal_generic_production
 		relative_position_id = American_Military_State_education_instructors
 		prerequisite = { focus =  American_Military_State_education_instructors}
 		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_assault_school}}}}
@@ -379,7 +379,7 @@ available = { if = { limit = { NOT={ has_completed_focus = American_Military_Sta
 		}
 	focus = {
 		id = American_Military_State_defense_school
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_goal_generic_production
 		relative_position_id = American_Military_State_education_instructors
 		prerequisite = { focus =  American_Military_State_education_instructors}
 		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_defense_school}}}}
@@ -397,7 +397,7 @@ available = { if = { limit = { NOT={ has_completed_focus = American_Military_Sta
 		}
 	focus = {
 		id = American_Military_State_defense_school_2
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_goal_generic_production
 		relative_position_id = American_Military_State_defense_school
 		prerequisite = { focus =  American_Military_State_defense_school}
 		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_defense_school_2}}}}
@@ -415,7 +415,7 @@ available = { if = { limit = { NOT={ has_completed_focus = American_Military_Sta
 		}
 	focus = {
 		id = American_Military_State_recruitment_school
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_goal_generic_production
 		relative_position_id = American_Military_State_education_instructors
 		prerequisite = { focus =  American_Military_State_education_instructors}
 		available = { if = { limit = { NOT={ has_completed_focus = American_Military_State_recruitment_school}}}}
@@ -433,7 +433,7 @@ available = { if = { limit = { NOT={ has_completed_focus = American_Military_Sta
 		}
 	focus = {
 		id = American_Military_State_counter_partisan_school
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_goal_generic_production
 		relative_position_id = American_Military_State_education_instructors
 		prerequisite = { focus =  American_Military_State_education_instructors}
 		available = { if = { limit = { NOT={ has_completed_focus = american_warstate_elite_training_school_recruitment}}}}
@@ -451,7 +451,7 @@ available = { if = { limit = { NOT={ has_completed_focus = American_Military_Sta
 		}
 	focus = {
 		id = American_Military_State_military_industry_school
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_goal_generic_production
 		relative_position_id = American_Military_State_education_instructors
 		prerequisite = { 
 				focus = American_Military_State_education_instructors
