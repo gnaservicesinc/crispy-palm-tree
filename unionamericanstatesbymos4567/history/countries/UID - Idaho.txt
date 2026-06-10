@@ -1,4 +1,4 @@
-﻿capital = 387
+capital = 387
 
 oob = "UID"
 if = {

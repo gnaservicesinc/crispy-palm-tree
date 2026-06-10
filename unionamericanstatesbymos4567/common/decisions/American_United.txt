@@ -1,4 +1,4 @@
-﻿american_usa_united= {
+american_usa_united= {
 
 unite_the_american_states_enforce_the_results = {
           cost = 25

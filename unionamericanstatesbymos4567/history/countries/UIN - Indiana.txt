@@ -1,4 +1,4 @@
-﻿capital = 396
+capital = 396
 oob = "UIN"
 if = {
 	limit = { has_dlc = "Man the Guns" }

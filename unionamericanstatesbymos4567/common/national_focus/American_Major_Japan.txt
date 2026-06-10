@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
  id = American_Major_Japan_focus
 country = {
 		factor = 0	

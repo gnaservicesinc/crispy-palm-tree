@@ -1,4 +1,4 @@
-﻿American_USA_New_Union= {
+American_USA_New_Union= {
 
 
 unite_the_american_states_accept_the_results = {

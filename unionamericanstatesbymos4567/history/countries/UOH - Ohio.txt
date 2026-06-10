@@ -1,4 +1,4 @@
-﻿capital = 261
+capital = 261
 
 oob = "UOH"
 if = {

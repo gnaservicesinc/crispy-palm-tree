@@ -1,4 +1,4 @@
-﻿capital = 388
+capital = 388
 
 oob = "UMO"
 if = {

@@ -1,4 +1,4 @@
-﻿american_states_wilson ={
+american_states_wilson ={
 
 	american_states_meryland_wilson_to_power ={
 		icon = GFX_decision_generic_army_support

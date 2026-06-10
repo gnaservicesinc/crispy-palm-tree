@@ -1,4 +1,4 @@
-﻿capital = 361
+capital = 361
 
 oob = "UML"
 if = {

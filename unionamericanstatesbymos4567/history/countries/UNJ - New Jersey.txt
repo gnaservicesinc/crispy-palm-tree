@@ -1,4 +1,4 @@
-﻿capital = 359
+capital = 359
 
 oob = "UNJ"
 if = {

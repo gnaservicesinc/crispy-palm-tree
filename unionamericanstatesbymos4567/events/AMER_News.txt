@@ -1,4 +1,4 @@
-﻿add_namespace = amer_news
+add_namespace = amer_news
 
 news_event = {
 	id = amer_news.1

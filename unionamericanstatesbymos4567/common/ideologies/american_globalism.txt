@@ -1,4 +1,4 @@
-﻿ideologies = {
+ideologies = {
 
 	american_globalism = {
 		types = {

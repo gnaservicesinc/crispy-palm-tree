@@ -1,4 +1,4 @@
-﻿capital = 380
+capital = 380
 
 oob = "UUT"
 if = {

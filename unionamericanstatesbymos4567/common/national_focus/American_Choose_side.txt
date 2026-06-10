@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
  id = American_choose_side_focus
 country = {
 		factor = 0

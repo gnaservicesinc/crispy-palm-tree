@@ -1,4 +1,4 @@
-﻿capital = 372
+capital = 372
 oob = "UAR"
 if = {
 	limit = { has_dlc = "Man the Guns" }

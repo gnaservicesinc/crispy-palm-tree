@@ -1,4 +1,4 @@
-﻿capital = 788
+capital = 788
 
 oob = "USA_1936"
 if = {

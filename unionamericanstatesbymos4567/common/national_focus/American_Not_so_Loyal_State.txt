@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
  id = American_Not_So_Loyal_State
 country = {
 		factor = 0

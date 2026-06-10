@@ -1,4 +1,4 @@
-﻿capital = 360
+capital = 360
 
 oob = "UPE"
 if = {

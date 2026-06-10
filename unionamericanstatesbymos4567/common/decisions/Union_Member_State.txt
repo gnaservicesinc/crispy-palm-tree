@@ -1,4 +1,4 @@
-﻿union_member_state = {
+union_member_state = {
 
 
 union_member_state_support_democracy = {

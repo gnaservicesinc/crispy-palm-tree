@@ -1,4 +1,4 @@
-﻿UCA = {
+UCA = {
 	male = {
 		names = { 
 		
