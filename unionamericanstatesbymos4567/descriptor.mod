@@ -14,4 +14,4 @@ tags={
 }
 picture="UnionofAmericanStates.jpg"
 remote_file_id="1712173861"
-supported_version="1.*.*"
+supported_version="1.19.0"

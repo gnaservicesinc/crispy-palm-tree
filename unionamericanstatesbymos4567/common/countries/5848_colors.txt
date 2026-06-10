@@ -1,66 +1,66 @@
 #reload countrycolors
 USM = {
 	color = { 12 0 249 }
-	color_ui = rgb { 2 31 66 }
+	color_ui = { 2 31 66 }
 }
 UMI = {
 	color = { 12 0 249 }
-	color_ui = rgb { 2 31 66 }
+	color_ui = { 2 31 66 }
 }
 
 UOH= {
 	color = { 128 128 128 }
-	color_ui = rgb { 255 36 0 }
+	color_ui = { 255 36 0 }
 }
 
 UIL = {
 	color = { 225 0 0 }
-	color_ui = rgb { 225 225 225 }
+	color_ui = { 225 225 225 }
 }
 
 UNY = {
 	color = { 0 0 128 }
-	color_ui = rgb { 255 215 0  }
+	color_ui = { 255 215 0  }
 }
 
 UAL = {
 	color = { 255 0 0 }
-	color_ui = rgb { 255 3 5 }
+	color_ui = { 255 3 5 }
 }
 
 UCA = {
 	color = { 255 215 0 }
-	color_ui = rgb { 0 0 128 }
+	color_ui = { 0 0 128 }
 }
 UTX = {
 	color = { 255 0 0 }
-	color_ui = rgb { 0 0 255 }
+	color_ui = { 0 0 255 }
 }
 
 UTX = {
 	color = { 255 0 0 }
-	color_ui = rgb { 0 0 255 }
+	color_ui = { 0 0 255 }
 }
 
 
 UNJ = {
 	color = { 53 2 223 }
-	color_ui = rgb { 43 0 25 }
+	color_ui = { 43 0 25 }
 }
 
 
 UML = {
 	color = { 200 100 100 }
-	color_ui = rgb { 150 57 55 }
+	color_ui = { 150 57 55 }
 }
 
 
 UPE = {
 	color = { 25 40 20 }
-	color_ui = rgb { 15 55 25 }
+	color_ui = { 15 55 25 }
 }
 
 UOH = {
 	color = { 50 255 54 }
-	color_ui = rgb { 45 200 45 }
+	color_ui = { 45 200 45 }
 }
