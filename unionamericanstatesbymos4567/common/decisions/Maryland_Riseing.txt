@@ -94,8 +94,8 @@ leave_faction = yes
 				}} } 
 		}
 if={limit={has_variable =var_Maryland_rising_civil_war}
-			transfer_state=817
-			set_capital=817
+			transfer_state=1057
+			set_capital=1057
 			#add_ideas = { american_states_mass_backlash_to_failed_coup  }
 			start_civil_war = {
     				 ideology = ROOT
@@ -119,32 +119,22 @@ else_if={limit={has_variable =var_Maryland_rising_usa_annex}
 else_if={ limit={has_variable =var_Maryland_rising_success}
 			inherit_technology = USA
 			leave_faction = yes
-			set_capital=817
+			set_capital=1057
 			set_politics = {ruling_party = american_wilsonianism
 				elections_allowed = no
-
-				parties = {
-
-					democratic = { popularity = 0 }
-
-					neutrality = { popularity = 0 }
-
-					fascism = { popularity = 0 }
-
-					communism = { popularity = 0 }
-
-					american_wilsonianism = { popularity = 100 }
-
-					american_isolationism = { popularity = 0 }
-
-					american_globalism = { popularity = 0 }
-
-				}
-
-			}
+		}
+		set_popularities = {
+		democratic = 0
+		neutrality = 0
+		fascism = 0
+		communism = 0
+		american_wilsonianism = 100
+		american_isolationism = 0
+		american_globalism = 0
+		}
 	if={ limit={ NOT={ is_major = yes}} set_major = yes}
-	transfer_state=817
-	transfer_state=827
+	transfer_state=1057
+	transfer_state=1067
 add_state_core=126
 add_state_core=261
 add_state_core=354
@@ -194,28 +184,28 @@ add_state_core=463
 add_state_core=471
 add_state_core=629
 add_state_core=683
-add_state_core=807
-add_state_core=808
-add_state_core=809
-add_state_core=810
-add_state_core=811
-add_state_core=812
-add_state_core=813
-add_state_core=814
-add_state_core=815
-add_state_core=816
-add_state_core=817
-add_state_core=818
-add_state_core=819
-add_state_core=820
-add_state_core=821
-add_state_core=822
-add_state_core=823
-add_state_core=824
-add_state_core=825
-add_state_core=826
-add_state_core=827
-			for_each_scope = {
+add_state_core=1047
+add_state_core=1048
+add_state_core=1049
+add_state_core=1050
+add_state_core=1051
+add_state_core=1052
+add_state_core=1053
+add_state_core=1054
+add_state_core=1055
+add_state_core=1056
+add_state_core=1057
+add_state_core=1058
+add_state_core=1059
+add_state_core=1060
+add_state_core=1061
+add_state_core=1062
+add_state_core=1063
+add_state_core=1064
+add_state_core=1065
+add_state_core=1066
+add_state_core=1067
+			for_each_loop = {
 	array = USA.Loyal_American_States
 	value = v
 			add_to_array = { UML.Loyal_American_States = THIS
@@ -228,7 +218,7 @@ add_state_core=827
 				}
 			}
 			}}
-	for_each_scope = {
+	for_each_loop = {
 	array = USA.American_States
 	value = v
 
@@ -268,7 +258,7 @@ set_cosmetic_tag = USA
 
 else_if={limit={has_variable =var_Maryland_rising_war_with_usa}
 		leave_faction = yes
-		for_each_scope = {
+		for_each_loop = {
 	array = USA.Loyal_American_States
 	value = v
 			declare_war_on = {

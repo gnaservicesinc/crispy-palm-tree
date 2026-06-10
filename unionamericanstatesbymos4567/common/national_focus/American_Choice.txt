@@ -136,7 +136,7 @@ if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	
 
 		completion_reward = {
 		ENG={inherit_technology = USA}
-		for_each_scope = {
+		for_each_loop = {
 	array = American_States
 	value = v
 			
@@ -156,7 +156,7 @@ if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	
                      keep_completed = yes }
 
 		}
-		for_each_scope = {
+		for_each_loop = {
 	array = USA.Loyal_American_States
 	value = v
 		
@@ -239,7 +239,7 @@ if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	
 		USA={add_to_array = { USA.Loyal_American_States = UMI  }}
 		USA={
 
-				for_each_scope = {
+				for_each_loop = {
 	array = UMI.Michigan_States
 	value = v
 			add_to_array = { USA.Loyal_American_States = v  }
@@ -1288,28 +1288,18 @@ ROOT = { add_to_tech_sharing_group = japanese_research}
 	ROOT={
 			set_politics = {ruling_party =american_globalism 
 		elections_allowed = no
-
-				parties = {
-
-					democratic = { popularity = 0 }
-
-					communism = { popularity = 0 }
-
-					fascism = { popularity = 0 }
-
-					american_isolationism = { popularity = 0 }
-
-					american_globalism = { popularity = 100 }
-
-				}
-
-			}
+		}
+		set_popularities = {
+		democratic = 0
+		communism = 0
+		fascism = 0
+		american_isolationism = 0
+		american_globalism = 100
+		}
 		load_focus_tree = { tree = American_Major_Japan_focus
                      keep_completed = yes }
 
 		}
-		}
-	}
 	}
 
 	focus = {

@@ -1,0 +1,35 @@
+
+state={
+	id=1055
+	name="STATE_815"
+	resources={
+		oil=2581.000
+		aluminium=97.000
+		steel=60.000
+		tungsten=50.000
+		rubber=47.000
+		chromium=38.000
+		oil=15.000
+	}
+
+	history={
+		owner = UTX
+		buildings = {
+			infrastructure = 10
+			industrial_complex = 5
+			air_base = 10
+
+		}
+		add_core_of = UTX
+		add_core_of = USA
+		add_core_of = MEX
+
+	}
+
+	provinces={
+		1927 2019 2042 5038 5061 6785 6798 6987 8064 12369 12728 12782
+	}
+	manpower=471204
+	buildings_max_level_factor=16.000
+	state_category=metropolis
+}

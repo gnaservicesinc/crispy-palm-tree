@@ -640,7 +640,7 @@ add_to_array = { Targeted_By_Bib = VEN  }
 add_to_array = { Targeted_By_Bib = COL  }
 add_to_array = { Targeted_By_Bib = ARG  }
 
-for_each_scope = {
+for_each_loop = {
 	array = Targeted_By_Bib
 	value = v
 if={limit={ OR={
@@ -656,22 +656,14 @@ set_rule = {
 	set_politics = {ruling_party =american_globalism
 		election_frequency = 48
 		elections_allowed = yes
-
-		parties = {
-
-			democratic = { popularity = 0 }
-
-			communism = { popularity = 0 }
-
-			fascism = { popularity = 0 }
-
-			american_isolationism = { popularity = 0 }
-
-			american_globalism = { popularity = 100 }
-
 		}
-
-	}
+		set_popularities = {
+		democratic = 0
+		communism = 0
+		fascism = 0
+		american_isolationism = 0
+		american_globalism = 100
+		}
 ROOT={
 give_guarantee = PREV
 add_to_faction = PREV

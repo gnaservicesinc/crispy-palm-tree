@@ -97,7 +97,7 @@ NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 available = {
 
 AND={
-controls_state= 817
+controls_state=1057
 controls_state= 393
 controls_state= 367
 controls_state= 378
@@ -140,8 +140,8 @@ remove_effect = {
 if={limit={has_variable =var_American_Homeland_Victory_Flag_Won}
 	add_ideas = usa_liberty
 	if={ limit={ NOT={ is_major = yes}} set_major = yes}
-	transfer_state=817
-	transfer_state=827
+	transfer_state=1057
+	transfer_state=1067
 add_state_core=126
 add_state_core=261
 add_state_core=354
@@ -191,27 +191,27 @@ add_state_core=463
 add_state_core=471
 add_state_core=629
 add_state_core=683
-add_state_core=807
-add_state_core=808
-add_state_core=809
-add_state_core=810
-add_state_core=811
-add_state_core=812
-add_state_core=813
-add_state_core=814
-add_state_core=815
-add_state_core=816
-add_state_core=817
-add_state_core=818
-add_state_core=819
-add_state_core=820
-add_state_core=821
-add_state_core=822
-add_state_core=823
-add_state_core=824
-add_state_core=825
-add_state_core=826
-add_state_core=827
+add_state_core=1047
+add_state_core=1048
+add_state_core=1049
+add_state_core=1050
+add_state_core=1051
+add_state_core=1052
+add_state_core=1053
+add_state_core=1054
+add_state_core=1055
+add_state_core=1056
+add_state_core=1057
+add_state_core=1058
+add_state_core=1059
+add_state_core=1060
+add_state_core=1061
+add_state_core=1062
+add_state_core=1063
+add_state_core=1064
+add_state_core=1065
+add_state_core=1066
+add_state_core=1067
 set_variable = { senators_support = 96  }
 set_variable = { senators_total = 96  }
 set_variable = { representatives_support = 435  }

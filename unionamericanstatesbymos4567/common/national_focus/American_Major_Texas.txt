@@ -282,7 +282,7 @@ ai_will_do = {
 		available_if_capitulated = yes
 		 completion_reward = {
 			
-for_each_scope = {
+for_each_loop = {
 	array = USA.Texan_States
 	value = v
  if ={ limit = { is_ai = yes}	
@@ -312,7 +312,7 @@ ai_will_do = {
 		available_if_capitulated = yes
 		 completion_reward = {
 			
-for_each_scope = {
+for_each_loop = {
 	array = USA.American_States
 	value = v
  if ={ limit = { is_ai = yes}

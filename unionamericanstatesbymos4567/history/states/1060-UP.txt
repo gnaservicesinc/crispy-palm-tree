@@ -1,25 +1,25 @@
 state = {
-    id = 821
-    name = "STATE_821"
-    manpower = 393244
+    id = 1060
+    name = "STATE_820"
+    manpower = 432440
     state_category = rural
    buildings_max_level_factor=1.000
     provinces = {
-       10233 7420 11731 10303
+        10599 4854 709
     }
     
     resources = {
   
-		steel=6 # was: 24.000
-		aluminium = 5.000
-		oil = 50.000
-		chromium = 98.000
-		rubber = 187.000
+		steel=46 # was: 824.000
+		aluminium = 615.000
+		oil = 950.000
+		
 	
     }
     
     history = {
      		owner = UMI
+
 	add_core_of = UMI        
 	add_core_of = USA
         }

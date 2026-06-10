@@ -1430,25 +1430,16 @@ ROOT = { add_to_tech_sharing_group = comintern_research}
 			set_politics = {ruling_party =communism
 		election_frequency = 48
 		elections_allowed = yes
-
-				parties = {
-
-					democratic = { popularity = 0 }
-
-					communism = { popularity = 100 }
-
-					fascism = { popularity = 0 }
-
-					american_isolationism = { popularity = 0 }
-
-					american_globalism = { popularity = 0 }
-
-				}
-
-			}
+		}
+		set_popularities = {
+		democratic = 0
+		communism = 100
+		fascism = 0
+		american_isolationism = 0
+		american_globalism = 0
+		}
 load_focus_tree = { tree = generic_focus
                      keep_completed = yes }
-	}
 	}
 }}
 ####################################################################
@@ -2009,25 +2000,16 @@ ROOT = { add_to_tech_sharing_group = axis_research}
 	ROOT={
 			set_politics = {ruling_party =fascism
 		elections_allowed = no
-
-				parties = {
-
-					democratic = { popularity = 0 }
-
-					communism = { popularity = 0 }
-
-					fascism = { popularity = 100 }
-
-					american_isolationism = { popularity = 0 }
-
-					american_globalism = { popularity = 0 }
-
-				}
-
-			}
+		}
+		set_popularities = {
+		democratic = 0
+		communism = 0
+		fascism = 100
+		american_isolationism = 0
+		american_globalism = 0
+		}
 	load_focus_tree = { tree = generic_focus
                      keep_completed = yes }
-	}
 	}
 }}
 ####################################################################
@@ -2585,25 +2567,16 @@ ROOT = { add_to_tech_sharing_group = commonwealth_research}
 			set_politics = {ruling_party =democratic
 		election_frequency = 48
 		elections_allowed = yes
-
-				parties = {
-
-					democratic = { popularity = 100 }
-
-					communism = { popularity = 0 }
-
-					fascism = { popularity = 0 }
-
-					american_isolationism = { popularity = 0 }
-
-					american_globalism = { popularity = 0 }
-
-				}
-
-			}
+		}
+		set_popularities = {
+		democratic = 100
+		communism = 0
+		fascism = 0
+		american_isolationism = 0
+		american_globalism = 0
+		}
 	load_focus_tree = { tree = generic_focus
                      keep_completed = yes }
-	}
 	}
 }}
 ####################################################################
@@ -3156,25 +3129,16 @@ ROOT = { add_to_tech_sharing_group = japanese_research}
 	ROOT={
 			set_politics = {ruling_party =democratic
 		elections_allowed = no
-
-				parties = {
-
-					democratic = { popularity = 0 }
-
-					communism = { popularity = 0 }
-
-					fascism = { popularity = 100 }
-
-					american_isolationism = { popularity = 0 }
-
-					american_globalism = { popularity = 0 }
-
-				}
-
-			}
+		}
+		set_popularities = {
+		democratic = 0
+		communism = 0
+		fascism = 100
+		american_isolationism = 0
+		american_globalism = 0
+		}
 	load_focus_tree = { tree = generic_focus
                      keep_completed = yes }
-	}
 	}
 }}
 ####################################################################

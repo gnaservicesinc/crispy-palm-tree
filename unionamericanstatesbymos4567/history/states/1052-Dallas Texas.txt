@@ -1,0 +1,66 @@
+
+state={
+	id=1052
+	name="STATE_812"
+	resources={
+		oil=1024.000
+		aluminium=550.000
+		steel=560.000
+		tungsten=450.000
+		rubber=487.000
+		chromium=498.000
+	}
+
+	history={
+		owner = UTX
+		buildings = {
+			3960 = {
+				infrastructure = 10
+				air_base = 10
+
+			}
+			10861 = {
+				infrastructure = 10
+				air_base = 10
+
+			}
+			5022 = {
+				infrastructure = 10
+				air_base = 10
+
+			}
+			7981 = {
+				infrastructure = 10
+				air_base = 10
+
+			}
+			9920 = {
+				infrastructure = 10
+				air_base = 10
+
+			}
+			2082 = {
+				infrastructure = 10
+				air_base = 10
+
+			}
+
+		}
+		victory_points = {
+			5022 200 
+		}
+
+		add_core_of = UTX
+		add_core_of = USA
+		add_core_of = MEX
+
+
+	}
+
+	provinces={
+		2082 3960 5022 7981 9920 10861 
+	}
+	manpower=7223549
+	buildings_max_level_factor=8.000
+	state_category=metropolis
+}

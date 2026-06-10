@@ -1,0 +1,41 @@
+
+state={
+	id=1066
+	name="STATE_826"
+	manpower = 2267748
+	
+	state_category = rural
+	
+	resources={
+		oil=980 # was: 35.000
+		steel=270 # was: 24.000
+		aluminium = 90.000
+		tungsten = 90.000
+		rubber = 87.000
+		chromium = 98.000
+	}
+
+	history={
+		owner = UCA
+		add_core_of = USA
+		add_core_of = UCA
+		add_core_of = SOV
+			buildings = {
+			infrastructure = 1
+			industrial_complex = 5
+			air_base = 10
+		
+
+		}
+		victory_points = {
+			3644 50 
+		}
+
+
+		}
+	
+
+	provinces={
+		3644 6482 6665 4331 610 781 3588 10159 11698 766 9697 768 6772 9730
+	}
+}
