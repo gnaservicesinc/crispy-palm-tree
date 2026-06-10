@@ -21,7 +21,7 @@ focus = {
 		available_if_capitulated = yes
 	allow_branch ={
 	has_variable =var_American_Homeland_Victory_Flag_Won
-	NOT{original_tag = USA}
+	NOT = {original_tag = USA}
 			}
 
 completion_reward = {				

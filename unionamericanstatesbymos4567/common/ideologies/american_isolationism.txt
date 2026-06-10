@@ -44,10 +44,6 @@ ideologies = {
 
 
 		}
-		can_be_boosted = yes
-
-		can_collaborate = yes
-
 		ai_democratic = yes 
 		
 	}

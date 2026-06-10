@@ -102,24 +102,24 @@ prerequisite = {focus = American_Major_Japan_focus_for_economy}
 			if = { limit = { country_exists	= JAP }
 			JAP = { 
 			if = { limit = { has_dlc = "Together for Victory"}
-			set_autonomy = { target = ROOT autonomy_state = autonomy_united_states_state } 
+			set_autonomy = {target = ROOT autonomy_state = autonomy_united_states_state } 
 			} else = { puppet =ROOT }	
 
      			}
 			ROOT = { load_focus_tree = { tree = generic_focus
                      keep_completed = yes }}
 					ROOT={
-			set_politics = {ruling_party =american_globalism 
+			set_politics = {
+		ruling_party =american_globalism 
 		elections_allowed = no
-		}
-		set_popularities = {
-		democratic = 0
-		communism = 0
-		fascism = 0
-		american_isolationism = 0
-		american_globalism = 100
-		}
-		}}
+	}
+	set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 100
+	}}
 		}
 		hidden_effect = { 
 		if = { limit ={ USA={ NOT = { has_war_with= JAP}}} 

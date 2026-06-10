@@ -1,4 +1,4 @@
-capital = 282
+﻿capital = 282
 
 oob = "JAP_1936"
 
@@ -108,6 +108,8 @@ set_technology = {
 	early_bomber = 1
 	CAS1 = 1
 	
+	trench_warfare = 1
+	base_strike = 1
 	fuel_silos = 1
 	synth_oil_experiments = 1
 	fuel_refining = 1
@@ -123,6 +125,7 @@ if = {
 		basic_battery = 1
 		basic_light_battery = 1
 		basic_heavy_battery = 1
+		basic_medium_battery = 1
 		improved_ship_torpedo_launcher = 1
 		early_ship_hull_submarine = 1
 		basic_ship_hull_submarine = 1
@@ -135,6 +138,7 @@ if = {
 		basic_ship_hull_carrier = 1
 		mtg_transport = 1
 		coastal_defense_ships = 1
+		basic_secondary_battery = 1
 		basic_depth_charges = 1
 		basic_cruiser_armor_scheme = 1
 		cruiser_submarines = 1
@@ -253,7 +257,9 @@ create_import = {
 		dispersed_fighting = 1
 
 		grand_battle_plan = 1
+		prepared_defense = 1
 		grand_assault = 1
+		carrier_primacy = 1
 		carrier_task_forces = 1
 
 		#electronics
@@ -315,8 +321,14 @@ if = {
 		has_dlc = "Together for Victory"
 		not = { has_dlc = "Waking the Tiger" }
 	}
-	set_autonomy = { target = MEN autonomy_state = autonomy_integrated_puppet }
-	set_autonomy = { target = MAN autonomy_state = autonomy_integrated_puppet }
+	set_autonomy = {
+		target = MEN
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = MAN
+		autonomous_state = autonomy_integrated_puppet
+	}
 }
 if = {
 	limit = { 
@@ -325,32 +337,37 @@ if = {
 			has_dlc = "Together for Victory"
 		}
 	}
-	set_autonomy = { target = MEN autonomy_state = autonomy_puppet }
-	set_autonomy = { target = MAN autonomy_state = autonomy_puppet }
+	set_autonomy = {
+		target = MEN
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = MAN
+		autonomous_state = autonomy_puppet
+	}
 }
 if = {
 	limit = { 
 		has_dlc = "Waking the Tiger"
 	}
-	set_autonomy = { target = MEN autonomy_state = autonomy_wtt_imperial_protectorate }
-	set_autonomy = { target = MAN autonomy_state = autonomy_wtt_imperial_protectorate }
+	set_autonomy = {
+		target = MEN
+		autonomous_state = autonomy_wtt_imperial_protectorate
+	}
+	set_autonomy = {
+		target = MAN
+		autonomous_state = autonomy_wtt_imperial_protectorate
+	}
 }
 
-set_politics = {ruling_party = american_globalism
+set_politics = {
+	ruling_party = american_globalism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
-
-
-	parties = {
-
-
-		american_globalism = { popularity = 100 }
-
-
-	}
-
-
+}
+set_popularities = {
+	american_globalism = 100
 }
 
 create_country_leader = {

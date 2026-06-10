@@ -629,20 +629,19 @@ ai_will_do = {
 			
 completion_reward = { 
  
-add_to_array = { Targeted_By_Bib = MEX  }
-add_to_array = { Targeted_By_Bib = UMX  }
-add_to_array = { Targeted_By_Bib = BRA  }
-add_to_array = { Targeted_By_Bib = GER  }
-add_to_array = { Targeted_By_Bib = ITA  }
-add_to_array = { Targeted_By_Bib = JAP  }
-add_to_array = { Targeted_By_Bib = PRU  }
-add_to_array = { Targeted_By_Bib = VEN  }
-add_to_array = { Targeted_By_Bib = COL  }
-add_to_array = { Targeted_By_Bib = ARG  }
+add_to_array = { array = Targeted_By_Bib value= MEX }
+add_to_array = { array = Targeted_By_Bib value= UMX }
+add_to_array = { array = Targeted_By_Bib value= BRA }
+add_to_array = { array = Targeted_By_Bib value= GER }
+add_to_array = { array = Targeted_By_Bib value= ITA }
+add_to_array = { array = Targeted_By_Bib value= JAP }
+add_to_array = { array = Targeted_By_Bib value= PRU }
+add_to_array = { array = Targeted_By_Bib value= VEN }
+add_to_array = { array = Targeted_By_Bib value= COL }
+add_to_array = { array = Targeted_By_Bib value= ARG }
 
-for_each_loop = {
-	array = Targeted_By_Bib
-	value = v
+for_each_scope_loop = {
+array = Targeted_By_Bib
 if={limit={ OR={
  has_government = fascism
  has_government = american_globalism
@@ -653,23 +652,24 @@ set_rule = {
  can_generate_female_aces = yes
 
 }
-	set_politics = {ruling_party =american_globalism
+	set_politics = {
+		ruling_party =american_globalism
 		election_frequency = 48
 		elections_allowed = yes
-		}
-		set_popularities = {
-		democratic = 0
-		communism = 0
-		fascism = 0
-		american_isolationism = 0
-		american_globalism = 100
-		}
+	}
+	set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 100
+	}
 ROOT={
 give_guarantee = PREV
 add_to_faction = PREV
-add_to_array = { USA.American_States = PREV  }
+add_to_array = { array = USA.American_States value= PREV }
 if = { limit = { has_dlc = "Together for Victory"}
-set_autonomy = { target = PREV autonomy_state = autonomy_united_states_state }
+set_autonomy = {target = PREV autonomy_state = autonomy_united_states_state }
 else = {
 puppet =PREV
 } 

@@ -95,14 +95,14 @@ leave_faction = yes
 		}
 if={limit={has_variable =var_Maryland_rising_civil_war}
 			transfer_state=1057
-			set_capital=1057
+			set_capital = { state = 1057 }
 			#add_ideas = { american_states_mass_backlash_to_failed_coup  }
 			start_civil_war = {
     				 ideology = ROOT
    				 size = 0.5
     				capital = 361
    				 states = { 
-      				  361 817
+      				  361 1057
     				}
 
   			  keep_political_leader = yes
@@ -119,19 +119,20 @@ else_if={limit={has_variable =var_Maryland_rising_usa_annex}
 else_if={ limit={has_variable =var_Maryland_rising_success}
 			inherit_technology = USA
 			leave_faction = yes
-			set_capital=1057
-			set_politics = {ruling_party = american_wilsonianism
+			set_capital = { state = 1057 }
+			set_popularities = {
+				democratic = 0
+				neutrality = 0
+				fascism = 0
+				communism = 0
+				american_wilsonianism=100
+				american_isolationism=0
+				american_globalism = 0
+			}
+			set_politics = {
+				ruling_party = american_wilsonianism
 				elections_allowed = no
-		}
-		set_popularities = {
-		democratic = 0
-		neutrality = 0
-		fascism = 0
-		communism = 0
-		american_wilsonianism = 100
-		american_isolationism = 0
-		american_globalism = 0
-		}
+			}
 	if={ limit={ NOT={ is_major = yes}} set_major = yes}
 	transfer_state=1057
 	transfer_state=1067
@@ -205,11 +206,12 @@ add_state_core=1064
 add_state_core=1065
 add_state_core=1066
 add_state_core=1067
-			for_each_loop = {
-	array = USA.Loyal_American_States
-	value = v
-			add_to_array = { UML.Loyal_American_States = THIS
-				 }
+			for_each_scope_loop = {
+		array = USA.Loyal_American_States
+			add_to_array = {
+  				  array = UML.Loyal_American_States
+    				  value = THIS
+				}
 			if={ limit={is_ai = yes}
 			ROOT={
 			annex_country = {
@@ -218,9 +220,8 @@ add_state_core=1067
 				}
 			}
 			}}
-	for_each_loop = {
-	array = USA.American_States
-	value = v
+	for_each_scope_loop = {
+		array = USA.American_States
 
 		if={ limit={is_ai = yes}
 			ROOT={
@@ -239,13 +240,13 @@ add_state_core=1067
 				}}
 		
 
-set_variable = { senators_support = 96  }
-set_variable = { senators_total = 96  }
-set_variable = { representatives_support = 435  }
-set_variable = { representatives_total = 435  }
-set_variable = { quorum_low = 39  }
-set_variable = { quorum_medium = 49  }
-set_variable = { quorum_high = 58  }
+set_variable = { var = senators_support value = 96 }
+set_variable = { var = senators_total value = 96 }
+set_variable = { var = representatives_support value = 435 }
+set_variable = { var = representatives_total value = 435 }
+set_variable = { var = quorum_low value = 39 }
+set_variable = { var = quorum_medium value = 49 }
+set_variable = { var = quorum_high value = 58 }
 every_enemy_country = {
 white_peace = ROOT
 }
@@ -258,9 +259,8 @@ set_cosmetic_tag = USA
 
 else_if={limit={has_variable =var_Maryland_rising_war_with_usa}
 		leave_faction = yes
-		for_each_loop = {
-	array = USA.Loyal_American_States
-	value = v
+		for_each_scope_loop = {
+		array = USA.Loyal_American_States
 			declare_war_on = {
    			 target = ROOT
    			 type = annex_everything

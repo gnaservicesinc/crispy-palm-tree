@@ -96,23 +96,18 @@ modifier = {
 
 	remove_effect = {
 
-	ROOT = {
-
-
-		set_politics = {ruling_party = democratic
+	ROOT ={set_politics = {
+		ruling_party = democratic
 		election_frequency = 48
 		elections_allowed = yes
-		}
-		set_popularities = {
-		democratic = 100
-		communism = 0
-		fascism = 0
-		american_isolationism = 0
-		american_globalism = 0
-		}
-
-
-	}
+	}}
+	ROOT = {set_popularities = {
+	democratic = 100
+	communism = 0
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 0
+	}}
 		
 	}
 
@@ -170,23 +165,18 @@ modifier = {
 
 	remove_effect = {
 		
-	ROOT = {
-
-		
-		set_politics = {ruling_party =american_globalism
+	ROOT ={set_politics = {
+		ruling_party =american_globalism
 		election_frequency = 48
 		elections_allowed = yes
-		}
-		set_popularities = {
-		democratic = 0
-		communism = 0
-		fascism = 0
-		american_isolationism = 0
-		american_globalism = 100
-		}
-
-		
 	}}
+	ROOT = {set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 100
+	}}}
 	}
 
 			
@@ -241,23 +231,18 @@ modifier = {
 
 	remove_effect = {
 			
-	ROOT = {
-
-			
-		set_politics = {ruling_party =american_isolationism
+	ROOT ={set_politics = {
+		ruling_party =american_isolationism
 		election_frequency = 48
 		elections_allowed = yes
-		}
-		set_popularities = {
-		democratic = 0
-		communism = 0
-		fascism = 0
-		american_isolationism = 100
-		american_globalism = 0
-		}
-
-			
-	}
+	}}
+	ROOT = {set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 0
+	american_isolationism=100
+	american_globalism = 0
+	}}
 
 	} }		
 union_member_state_support_communism = {
@@ -311,23 +296,18 @@ modifier = {
 
 	remove_effect = {
 			
-	ROOT = {
-
-			
-		set_politics = {ruling_party =communism
+	ROOT ={set_politics = {
+		ruling_party =communism
 		election_frequency = 48
 		elections_allowed = yes
-		}
-		set_popularities = {
-		democratic = 0
-		communism = 100
-		fascism = 0
-		american_isolationism = 0
-		american_globalism = 0
-		}
-
-			
-	}
+	}}
+	ROOT = {set_popularities = {
+	democratic = 0
+	communism = 100
+	fascism = 0
+	american_isolationism=0
+	american_globalism = 0
+	}}
 
 		}}
 
@@ -414,22 +394,17 @@ modifier = {
 		
 	remove_effect = {
 	
-	ROOT = {
-
-	
-		set_politics = {ruling_party =fascism
+	ROOT ={set_politics = {
+		ruling_party =fascism
 		elections_allowed = no
-		}
-		set_popularities = {
-		democratic = 0
-		communism = 0
-		fascism = 100
-		american_isolationism = 0
-		american_globalism = 0
-		}
-
-	
-	}
+	}}
+	ROOT = {set_popularities = {
+	democratic = 0
+	communism = 0
+	fascism = 100
+	american_isolationism=0
+	american_globalism = 0
+	}}
 		
 
 hidden_effect = { 

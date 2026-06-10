@@ -9,7 +9,7 @@ focus_tree = {
 
 	focus = {
 		id = american_soviet_war_focus_post_war_refocus
-		icon = GFX_goal_generic_production
+		icon = GFX_goal_generic_more_territorial_claims
 		x = 5
 		y = -3
 
@@ -67,7 +67,7 @@ NOT={ has_war_with = SOV}
 	}
 	focus = {
 		id = american_soviet_war_focus
-		icon = GFX_goal_generic_production
+		icon = GFX_goal_generic_forceful_treaty
 		x = 0
 		y = 1
 		relative_position_id = american_soviet_war_focus_post_war_refocus
@@ -90,7 +90,7 @@ NOT={ has_war_with = SOV}
 
 	focus = {
 		id = american_soviet_war_focus_2
-		icon = GFX_goal_generic_production
+		icon = GFX_goal_generic_forceful_treaty
 		x = 0
 		y = 1
 		relative_position_id = american_soviet_war_focus
@@ -113,7 +113,7 @@ NOT={ has_war_with = SOV}
 	}
 	focus = {
 		id = american_soviet_war_focus_3
-		icon = GFX_goal_generic_production
+		icon = GFX_goal_generic_forceful_treaty
 		x = 0
 		y = 1
 		relative_position_id = american_soviet_war_focus_2
@@ -136,7 +136,7 @@ NOT={ has_war_with = SOV}
 	}
 	focus = {
 		id = american_soviet_war_focus_4
-		icon = GFX_goal_generic_production
+		icon = GFX_goal_generic_forceful_treaty
 		x = 0
 		y = 1
 		relative_position_id = american_soviet_war_focus_3
@@ -159,7 +159,7 @@ NOT={ has_war_with = SOV}
 	}
 		focus = {
 		id = american_soviet_war_focus_5
-		icon = GFX_goal_generic_production
+		icon = GFX_goal_generic_forceful_treaty
 		x = 0
 		y = 1
 		relative_position_id = american_soviet_war_focus_4
@@ -182,7 +182,7 @@ NOT={ has_war_with = SOV}
 	}
 	focus = {
 		id = american_soviet_war_focus_6
-		icon = GFX_goal_generic_production
+		icon = GFX_goal_generic_forceful_treaty
 		x = 0
 		y = 1
 		relative_position_id = american_soviet_war_focus_5
@@ -205,7 +205,7 @@ NOT={ has_war_with = SOV}
 	}	
 	focus = {
 		id = american_soviet_war_focus_7
-		icon = GFX_goal_generic_production
+		icon = GFX_goal_generic_forceful_treaty
 		x = 0
 		y = 1
 		relative_position_id = american_soviet_war_focus_6
@@ -228,7 +228,7 @@ NOT={ has_war_with = SOV}
 	}
 	focus = {
 		id = american_soviet_war_focus_8
-		icon = GFX_goal_generic_production
+		icon = GFX_goal_generic_forceful_treaty
 		x = 0
 		y = 1
 		relative_position_id = american_soviet_war_focus_7
@@ -251,7 +251,7 @@ NOT={ has_war_with = SOV}
 	}
 	focus = {
 		id = american_soviet_war_focus_9
-		icon = GFX_goal_generic_production
+		icon = GFX_goal_generic_forceful_treaty
 		x = 0
 		y = 1
 		relative_position_id = american_soviet_war_focus_8
@@ -274,7 +274,7 @@ NOT={ has_war_with = SOV}
 	}
 	focus = {
 		id = american_soviet_war_focus_10
-		icon = GFX_goal_generic_production
+		icon = GFX_goal_generic_forceful_treaty
 		x = 0
 		y = 1
 		relative_position_id = american_soviet_war_focus_9

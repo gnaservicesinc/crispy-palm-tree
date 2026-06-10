@@ -212,13 +212,13 @@ add_state_core=1064
 add_state_core=1065
 add_state_core=1066
 add_state_core=1067
-set_variable = { senators_support = 96  }
-set_variable = { senators_total = 96  }
-set_variable = { representatives_support = 435  }
-set_variable = { representatives_total = 435  }
-set_variable = { quorum_low = 39  }
-set_variable = { quorum_medium = 49  }
-set_variable = { quorum_high = 58  }
+set_variable = { var = senators_support value = 96 }
+set_variable = { var = senators_total value = 96 }
+set_variable = { var = representatives_support value = 435 }
+set_variable = { var = representatives_total value = 435 }
+set_variable = { var = quorum_low value = 39 }
+set_variable = { var = quorum_medium value = 49 }
+set_variable = { var = quorum_high value = 58 }
 every_enemy_country = {
 white_peace = ROOT
 }
@@ -228,12 +228,12 @@ white_peace = ROOT
 if = { limit = {is_historical_focus_on = no}
 
 if = { limit = { has_dlc = "Together for Victory"}
-set_autonomy = { target = JAP autonomy_state = autonomy_united_states_state }
+set_autonomy = {target = JAP autonomy_state = autonomy_united_states_state }
 else = {
 puppet =JAP
 } 
 }
-add_to_array = { ROOT.New_American_States = JAP  }
+add_to_array = { array = ROOT.New_American_States value= JAP }
 }
 
 if={ limit={ NOT={original_tag = USA}} 
@@ -242,13 +242,13 @@ USA={set_cosmetic_tag = ROOT}
 set_cosmetic_tag = USA 
 
 if = { limit = { has_dlc = "Together for Victory"}
-set_autonomy = { target = USA autonomy_state = autonomy_united_states_state }
+set_autonomy = {target = USA autonomy_state = autonomy_united_states_state }
 else = {
 puppet =USA
 } 
 }
 
-add_to_array = { ROOT.New_American_States = USA  }
+add_to_array = { array = ROOT.New_American_States value= USA }
 
 
 load_focus_tree = { tree = usa_focus
