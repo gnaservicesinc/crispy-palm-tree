@@ -622,10 +622,10 @@ create_field_marshal = {
 				traits = { naval_invader }
 
 			}
-			else {
+			else = {
 		
 create_field_marshal = {
-				name="[?[Root.GetLeader]]"
+				name="[Root.GetLeader]"
 				picture = GFX_amer_sw_generic_lead
 				skill = 8
 				attack_skill = 8

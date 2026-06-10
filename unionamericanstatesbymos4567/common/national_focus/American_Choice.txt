@@ -5,7 +5,7 @@ focus_tree = {
 		
 	modifier = {
 		add = 1000
-		OR={
+		OR = {
 		
 			tag  =  UIL
 			tag  =  UNY
@@ -123,11 +123,11 @@ mutually_exclusive = {
 available = {
 
 original_tag = USA
-if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}
 
 }
 allow_branch ={ original_tag = USA 
-if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}
 }
 
 		cancel_if_invalid = yes
@@ -212,7 +212,7 @@ available = {
 	NOT = { is_in_faction_with = UMI }
 	UMI ={ is_ai = yes}
 	USA ={ is_ai = yes}
-if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}
 		}
 
 	
@@ -221,7 +221,7 @@ original_tag = USA
 NOT = { is_in_faction_with = UMI }
 	UMI ={ is_ai = yes}
 	USA ={ is_ai = yes}
-if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}
 }		
 
 		cancel_if_invalid = yes
@@ -300,10 +300,10 @@ historical_ai = {
 original_tag =  USA
 }
 available = {
-if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}
 original_tag = USA}
 allow_branch ={
-if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}
  original_tag = USA }		
 
 		cancel_if_invalid = yes
@@ -346,21 +346,21 @@ focus = {
 			}
 		}
 available = {
-	NOT={is_ai = yes}
+	NOT = {is_ai = yes}
         original_tag = USA
 	 country_exists = UMI
 	NOT = { is_in_faction_with = UMI }
 	UMI ={ is_ai = yes}
-if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}
 		}
 
 	
 allow_branch ={ 
-NOT={is_ai = yes}
+NOT = {is_ai = yes}
 original_tag = USA 
 NOT = { is_in_faction_with = UMI }
 	UMI ={ is_ai = yes}
-if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}
 }
 
 historical_ai = {
@@ -404,15 +404,15 @@ focus = {
 		}
 
 historical_ai = {
-original_tag  USA
+original_tag = USA
 }
 available = {original_tag = USA
-if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}
 
 }
 
 allow_branch ={ original_tag = USA
-if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	} }		
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	} }		
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -441,9 +441,9 @@ historical_ai = {
 original_tag =  USA
 }
 available = {original_tag = USA
-if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}}
 allow_branch ={ original_tag = USA 
-if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}}		
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}}		
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -473,9 +473,9 @@ historical_ai = {
 original_tag =  USA
 }
 available = {original_tag = USA
-if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}}
 allow_branch ={ original_tag = USA 
-if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}}		
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}}		
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -506,9 +506,9 @@ historical_ai = {
 original_tag =  USA
 }
 available = {original_tag = USA
-if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}}
 allow_branch ={ original_tag = USA 
-if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}}		
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}}		
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -538,9 +538,9 @@ historical_ai = {
 original_tag  =  USA
 }
 available = {original_tag  = USA
-if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}}
 allow_branch ={ original_tag  = USA 
-if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}}		
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}}		
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -614,7 +614,7 @@ allow_branch ={ original_tag  = USA 	}
 		modifier = {
        			 add = -2
 				AND={
-				ROOT={NOT={has_government = democratic}}
+				ROOT={NOT = {has_government = democratic}}
 				USA ={ has_government = democratic }}
 				}
 
@@ -631,25 +631,25 @@ allow_branch ={ original_tag  = USA 	}
 		
 
 available = {
-NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+NOT = {any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 		ROOT = {   has_variable =var_American_States }
 		NOT = {has_war_with =USA}
-		NOT ={ tag = UMI }
-		NOT ={ tag = UCA }
-		NOT ={ tag = UAL }
-		NOT ={ tag = UTX }
-		if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+		NOT = { tag = UMI }
+		NOT = { tag = UCA }
+		NOT = { tag = UAL }
+		NOT = { tag = UTX }
+		if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}
     }
 
 allow_branch ={
-NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+NOT = {any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
  ROOT={ has_variable =var_American_States }
-		NOT ={ tag = UMI }
-		NOT ={ tag = UCA }
+		NOT = { tag = UMI }
+		NOT = { tag = UCA }
 		NOT = {has_war_with =USA}
-		NOT ={ tag = UAL }
-		NOT ={ tag = UTX } 
-		if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}}		
+		NOT = { tag = UAL }
+		NOT = { tag = UTX } 
+		if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}}		
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -692,30 +692,30 @@ focus = {
 			modifier = {
        			 add = 1
 				AND={
-				ROOT={NOT={has_government = democratic}}
+				ROOT={NOT = {has_government = democratic}}
 				USA ={ has_government = democratic }}
 				}
 		}
 		cost = 1
 available = {
 		ROOT = {   has_variable =var_American_States }
-		NOT ={ tag = UMI }
-		NOT ={ tag = UCA }
-		NOT ={ tag = UAL }
-NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
-		NOT ={ tag = UTX }
+		NOT = { tag = UMI }
+		NOT = { tag = UCA }
+		NOT = { tag = UAL }
+NOT = {any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+		NOT = { tag = UTX }
 		NOT = {has_war_with =USA}
-		if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+		if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}
     }
 
 allow_branch ={ ROOT={ has_variable =var_American_States }
-		NOT ={ tag = UMI }
-		NOT ={ tag = UCA }
-		NOT ={ tag = UAL }
-		NOT ={ tag = UTX }
-NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+		NOT = { tag = UMI }
+		NOT = { tag = UCA }
+		NOT = { tag = UAL }
+		NOT = { tag = UTX }
+NOT = {any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 		NOT = {has_war_with =USA} 
-		if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+		if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}
 		}
 cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -748,7 +748,7 @@ focus = {
 			modifier = {
        				 add = 1
 				
-				ROOT={NOT={has_government = democratic}}
+				ROOT={NOT = {has_government = democratic}}
 				
 				}
 			modifier = {
@@ -764,24 +764,24 @@ focus = {
 		}
 		cost = 0
 available = {
-NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+NOT = {any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 		ROOT = {   has_variable =var_American_States }
-		NOT ={ tag = UMI }
-		NOT ={ tag = UCA }
-		NOT ={ tag = UAL }
-		NOT ={ tag = UTX }
-		if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+		NOT = { tag = UMI }
+		NOT = { tag = UCA }
+		NOT = { tag = UAL }
+		NOT = { tag = UTX }
+		if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}
     }
 
 allow_branch ={ 
-NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+NOT = {any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
 
 ROOT={ has_variable =var_American_States }
-		NOT ={ tag = UMI }
-		NOT ={ tag = UCA }
-		NOT ={ tag = UAL }
-		NOT ={ tag = UTX } 
-		if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}}
+		NOT = { tag = UMI }
+		NOT = { tag = UCA }
+		NOT = { tag = UAL }
+		NOT = { tag = UTX } 
+		if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -818,19 +818,19 @@ focus = {
 		cost = 0
 available = {
 		ROOT = {   has_variable =var_American_States }
-		NOT ={ original_tag = UMI }
-		NOT ={ original_tag = UCA }
-		NOT ={ original_tag = UAL }
-		NOT ={ original_tag = UTX }
-		NOT ={ has_variable = var_militarize_union_states_refocused  }
+		NOT = { original_tag = UMI }
+		NOT = { original_tag = UCA }
+		NOT = { original_tag = UAL }
+		NOT = { original_tag = UTX }
+		NOT = { has_variable = var_militarize_union_states_refocused  }
 		
     }
 
 allow_branch ={ ROOT={ has_variable =var_American_States }
-		NOT ={ original_tag = UMI }
-		NOT ={ original_tag = UCA }
-		NOT ={ original_tag = UAL }
-		NOT ={ original_tag = UTX } 
+		NOT = { original_tag = UMI }
+		NOT = { original_tag = UCA }
+		NOT = { original_tag = UAL }
+		NOT = { original_tag = UTX } 
 		}
 
 		cancel_if_invalid = no
@@ -881,24 +881,24 @@ focus = {
 		modifier = {
        			 add = -1
 				AND={
-				ROOT={NOT={has_government = democratic}}
+				ROOT={NOT = {has_government = democratic}}
 				}
 			 }
 		}
 		cost = 1
 available = { AND = {
 		ROOT = {has_variable =var_American_States }
-		ROOT = {NOT ={ original_tag = UMI }}
+		ROOT = {NOT = { original_tag = UMI }}
 		ROOT = {is_in_faction_with = UMI}
-		if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+		if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}
 		
     }}
 
 allow_branch ={ AND = {		
 		ROOT = {has_variable =var_American_States }
-		ROOT = {NOT ={ original_tag = UMI }
+		ROOT = {NOT = { original_tag = UMI }
 		ROOT = {is_in_faction_with = UMI} }
-		if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+		if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}
 	}}
 cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -924,19 +924,19 @@ focus = {
 		cost = 1
 available = {
 		ROOT = {   has_variable =var_American_States }
-		NOT ={ tag = UMI }
-		NOT ={ tag = UCA }
-		NOT ={ tag = UAL }
-		NOT ={ tag = UTX }
+		NOT = { tag = UMI }
+		NOT = { tag = UCA }
+		NOT = { tag = UAL }
+		NOT = { tag = UTX }
 		SOV = { has_variable = SOV.var_Sov_Annexed_American_States }
 		ROOT={ has_war_with = SOV}	
     }
 
 allow_branch ={ ROOT={ has_variable =var_American_States }
-		NOT ={ tag = UMI }
-		NOT ={ tag = UCA }
-		NOT ={ tag = UAL }
-		NOT ={ tag = UTX } 
+		NOT = { tag = UMI }
+		NOT = { tag = UCA }
+		NOT = { tag = UAL }
+		NOT = { tag = UTX } 
 		SOV = { has_variable =SOV.var_Sov_Annexed_American_States }
 		ROOT={ has_war_with = SOV}
 		}
@@ -990,7 +990,7 @@ ROOT = {   has_variable =var_American_States }
 		ROOT = {tag = UAL }
 		ROOT = {tag = UTX }
 	}
-if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}
     }
 
  allow_branch = { ROOT = {   has_variable =var_American_States }
@@ -1000,7 +1000,7 @@ OR = {
 		ROOT = {tag = UAL }
 		ROOT = {tag = UTX }
 	}
-if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}
 		}
 
 		
@@ -1029,7 +1029,7 @@ if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	
 			factor = 500 
 			AND={
 				is_historical_focus_on = yes
-				NOT={original_tag = UAL}
+				NOT = {original_tag = UAL}
 				}
 			}
 			modifier = {
@@ -1056,7 +1056,7 @@ if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	
 
 		}
 historical_ai = {
-OR ={
+OR = {
 tag =  UCA
 tag =  UTX
 tag =  UAL
@@ -1065,7 +1065,7 @@ tag =  UAL
 
 available = {
 ROOT = {   has_variable =var_American_States }
-if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}
 	OR = {
 		ROOT = {tag = UMI }
 		ROOT = {tag = UCA }
@@ -1075,7 +1075,7 @@ if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	
     }
 
  allow_branch = { ROOT = {   has_variable =var_American_States }
-if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}
 OR = {
 		ROOT = {tag = UMI }
 		ROOT = {tag = UCA }
@@ -1124,7 +1124,7 @@ OR = {
 		}
 
 available = {
-if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}
 ROOT = {   has_variable =var_American_States }
 	OR = {
 		ROOT = {tag = UMI }
@@ -1135,7 +1135,7 @@ ROOT = {   has_variable =var_American_States }
     }
 
  allow_branch = { ROOT = {   has_variable =var_American_States }
-if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}
 OR = {
 		ROOT = {tag = UMI }
 		ROOT = {tag = UCA }
@@ -1169,7 +1169,7 @@ OR = {
 
 			modifier = {
 					add = 1
-					NOT={ has_government = democratic }
+					NOT = { has_government = democratic }
 				}
 			modifier = {
 					add = -1
@@ -1228,7 +1228,7 @@ modifier = {
 			add = -500
 			AND={
 				is_historical_focus_on = yes
-				NOT={original_tag = UAL}
+				NOT = {original_tag = UAL}
 				}
 			}
 			modifier = {
@@ -1242,7 +1242,7 @@ modifier = {
 			}
 		available = {
 		AND = {
-			if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+			if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}
 			ROOT = {   has_variable =var_American_States }
 			OR = {
 				ROOT = {original_tag = UMI }
@@ -1257,7 +1257,7 @@ modifier = {
     		}
 		allow_branch = {
 		AND = {
-			if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+			if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}
 			ROOT = {   has_variable =var_American_States }
 			OR = {
 				ROOT = {original_tag = UMI }
@@ -1321,13 +1321,13 @@ ROOT = { add_to_tech_sharing_group = japanese_research}
 			modifier = {
 			add = -500
 			is_historical_focus_on = yes
-			NOT={original_tag = UMI}
+			NOT = {original_tag = UMI}
 						}
 
 		}
 
 available = {
-	if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+	if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}
 ROOT = {   has_variable =var_American_States }
 	OR = {
 		ROOT = {original_tag = UMI }
@@ -1338,7 +1338,7 @@ ROOT = {   has_variable =var_American_States }
     }
 
  allow_branch = { ROOT = {   has_variable =var_American_States }
-if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}
 OR = {
 		ROOT = {original_tag = UMI }
 		ROOT = {original_tag = UCA }
@@ -1378,7 +1378,7 @@ OR = {
 			}
 			modifier = {
 			add = -5
-			NOT ={ ROOT = {original_tag = UMI }}
+			NOT = { ROOT = {original_tag = UMI }}
 			}
 			modifier = {
 			add = 500
@@ -1391,7 +1391,7 @@ available = {
 AND={
 ROOT = {   has_variable =var_American_States }
 ROOT = {is_ai = yes}
-if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}
 	OR = {
 		ROOT = {original_tag = UMI }
 		ROOT = {original_tag = UCA }
@@ -1405,7 +1405,7 @@ if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	
  allow_branch = { AND={
 ROOT = {   has_variable =var_American_States }
 ROOT = {is_ai = yes}
-if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT={ ROOT={ has_war_with = SOV}}	}
+if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	 NOT = { ROOT={ has_war_with = SOV}}	}
 	OR = {
 		ROOT = {original_tag = UMI }
 		ROOT = {original_tag = UCA }

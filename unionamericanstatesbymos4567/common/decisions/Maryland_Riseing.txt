@@ -72,10 +72,10 @@ set_variable = { var_Maryland_rising_war_with_usa =1}
 }
 	remove_effect = {
 log="Maryland_rising decision.remove_effect called with vars are as follows"
-log = "var_Maryland_rising_war_with_usa: [?var_Maryland_rising_war_with_usa]"
-log = "var_Maryland_rising_success: [?var_Maryland_rising_success]"
-log = "var_Maryland_rising_usa_annex: [?var_Maryland_rising_usa_annex]"
-log = "var_Maryland_rising_civil_war: [?var_Maryland_rising_civil_war]"
+log = "var_Maryland_rising_war_with_usa: [var_Maryland_rising_war_with_usa]"
+log = "var_Maryland_rising_success: [var_Maryland_rising_success]"
+log = "var_Maryland_rising_usa_annex: [var_Maryland_rising_usa_annex]"
+log = "var_Maryland_rising_civil_war: [var_Maryland_rising_civil_war]"
 log = "I am [Root.GetName]"
 
 leave_faction = yes
@@ -358,10 +358,10 @@ else_if={limit={has_variable =var_Maryland_rising_war_with_usa}
 
 else ={
 log="Error in Maryland_rising decision.remove_effect called with no matching. Vars are as follows"
-log = "var_Maryland_rising_war_with_usa: [?var_Maryland_rising_war_with_usa]"
-log = "var_Maryland_rising_success: [?var_Maryland_rising_success]"
-log = "var_Maryland_rising_usa_annex: [?var_Maryland_rising_usa_annex]"
-log = "var_Maryland_rising_civil_war: [?var_Maryland_rising_civil_war]"
+log = "var_Maryland_rising_war_with_usa: [var_Maryland_rising_war_with_usa]"
+log = "var_Maryland_rising_success: [var_Maryland_rising_success]"
+log = "var_Maryland_rising_usa_annex: [var_Maryland_rising_usa_annex]"
+log = "var_Maryland_rising_civil_war: [var_Maryland_rising_civil_war]"
 log = "I am [Root.GetName]"
 }
 

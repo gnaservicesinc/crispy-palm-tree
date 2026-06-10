@@ -149,10 +149,10 @@ if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	
 			name = "Führer Bibb Graves"
 			portrait_path = "gfx/leaders/UTX/Bibb_Graves.dds"
 			skill = 8
-			attack_skill = "[?var_attack_skill]"
-			defense_skill = "[?var_defense_skill]"
-			planning_skill = "[?var_planning_skill]"
-			logistics_skill = "[?var_logistics_skill]"
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
 			traits = { naval_invader logistics_wizard organizer offensive_doctrine brilliant_strategist career_officer media_personality politically_connected panzer_leader armor_officer trait_engineer harsh_leader }
 
 			}
@@ -161,10 +161,10 @@ if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	
 			name ="Fred W. Green"
 			portrait_path = "gfx/leaders/UMI/portrait_umi_fred_warren_green.dds"
 			skill = 8
-			attack_skill = "[?var_attack_skill]"
-			defense_skill = "[?var_defense_skill]"
-			planning_skill = "[?var_planning_skill]"
-			logistics_skill = "[?var_logistics_skill]"
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
 			traits = { naval_invader logistics_wizard organizer offensive_doctrine brilliant_strategist career_officer media_personality politically_connected panzer_leader armor_officer trait_engineer harsh_leader }
 			}
 	else ={ limit ={ tag=UCA}
@@ -172,10 +172,10 @@ if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	
 			name ="Chairperson Upton Beall Sinclair Jr."
 			portrait_path = "gfx/leaders/UCA/Upton_Beall_SinclairJr.dds"
 			skill = 8
-			attack_skill = "[?var_attack_skill]"
-			defense_skill = "[?var_defense_skill]"
-			planning_skill = "[?var_planning_skill]"
-			logistics_skill = "[?var_logistics_skill]"
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
 			traits = { naval_invader logistics_wizard organizer offensive_doctrine brilliant_strategist career_officer media_personality politically_connected panzer_leader armor_officer trait_engineer harsh_leader }
 			}
 	else ={ limit ={ tag=UAL}
@@ -183,22 +183,22 @@ if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	
 			name ="Governor Jim Folsom"
 			portrait_path ="gfx/leaders/UAL/Jim_Folsom.dds"
 			skill = 8
-			attack_skill = "[?var_attack_skill]"
-			defense_skill = "[?var_defense_skill]"
-			planning_skill = "[?var_planning_skill]"
-			logistics_skill = "[?var_logistics_skill]"
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
 			traits = { naval_invader logistics_wizard organizer offensive_doctrine brilliant_strategist career_officer media_personality politically_connected panzer_leader armor_officer trait_engineer harsh_leader }
 
 		}
 	else ={
 		create_field_marshal = {  
-			name="[?[Root.GetLeader]]"
+			name="[Root.GetLeader]]"
 			picture = GFX_amer_sw_generic_lead
 			skill = 8
-			attack_skill = "[?var_attack_skill]"
-			defense_skill = "[?var_defense_skill]"
-			planning_skill = "[?var_planning_skill]"
-			logistics_skill = "[?var_logistics_skill]"
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
 			traits = { naval_invader logistics_wizard organizer offensive_doctrine brilliant_strategist career_officer media_personality politically_connected panzer_leader armor_officer trait_engineer harsh_leader }
 			}
 
@@ -832,7 +832,7 @@ annex_country = {
 ROOT = {
 add_named_threat = { 
     threat = 100
-    name = "Soviet Union and [?[Root.GetName]] Merge"
+    name = "Soviet Union and [Root.GetName]] Merge"
 }
 }
 ROOT = { news_event = {

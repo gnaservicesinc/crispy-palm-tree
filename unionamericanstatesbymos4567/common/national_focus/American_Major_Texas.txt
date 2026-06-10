@@ -73,10 +73,10 @@ create_field_marshal = {
 				name = "Führer Bibb Graves"
 				picture = "gfx/leaders/UTX/Bibb_Graves.dds"
 				skill = 8
-			attack_skill = "[?var_attack_skill]"
-			defense_skill = "[?var_defense_skill]"
-			planning_skill = "[?var_planning_skill]"
-			logistics_skill = "[?var_logistics_skill]"
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
 				traits = { naval_invader logistics_wizard organizer offensive_doctrine brilliant_strategist career_officer media_personality politically_connected panzer_leader armor_officer trait_engineer harsh_leader }
 
 			}

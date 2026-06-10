@@ -840,7 +840,7 @@ focus = {
 		
 
 	create_field_marshal = {
-				name="[?[Root.Owner.GetName]]"
+				name="[Root.Owner.GetName]]"
 				picture = GFX_amer_sw_generic_lead
 				skill = 9
 				attack_skill = 9
