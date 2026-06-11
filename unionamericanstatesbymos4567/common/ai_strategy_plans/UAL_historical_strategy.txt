@@ -21,7 +21,6 @@ UAL_historical_plan = {
 		American_Major_Warpath_focus_focus_blackmarket_arms_deal_1 
 		American_Major_Warpath_focus_focus_blackmarket_arms_deal_2
 		American_Major_Warpath_focus_world_alab_wait
-		continuous_amer_war_prep
 	}
 research = {
 

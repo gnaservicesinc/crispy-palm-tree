@@ -1,4 +1,4 @@
-capital = 1057
+﻿capital = 1057
 
 oob = "USA_1936"
 starting_train_buffer = 5
@@ -112,7 +112,7 @@ recruit_character = USA_john_walter_christie
 recruit_character = USA_vannevar_bush
 set_research_slots = 16
 set_stability = 1.00
-set_war_support = 100
+set_war_support = 1.0
 add_to_tech_sharing_group = usa_investigators
 set_variable = { var = senators_support value = 96 }
 set_variable = { var = senators_total value = 96 }
@@ -141,6 +141,87 @@ set_technology = {
 	marines = 1
 	basic_train = 1
 	engine_tech_1 = 1
+}
+
+set_grand_doctrine = superior_firepower
+set_grand_doctrine = new_base_strike
+
+add_breakthrough_progress = {
+	specialization = specialization_land
+	value = 0.3
+}
+
+add_breakthrough_progress = {
+	specialization = specialization_naval
+	value = 0.8
+}
+
+add_breakthrough_progress = {
+	specialization = specialization_air
+	value = 0.4
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+	add_ideas = bureau_of_ordnance_spirit
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		basic_depth_charges = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		basic_dp_light_battery = 1
+	}
+	add_ideas = MTG_naval_treaty_adherent
 }
 
 	set_politics = {
@@ -305,128 +386,6 @@ if = {
 	}
 }
 
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "USA_1939_naval_mtg"
-		else = {
-			set_naval_oob = "USA_1939_naval_legacy"
-		}
-	}
-	if = {
-		limit = { has_dlc = "By Blood Alone" }
-			set_air_oob = "USA_1939_air_bba"
-			set_technology = {
-				iw_large_airframe = 1
-				basic_large_airframe = 1
-				improved_small_airframe = 1
-				aa_hmg = 1
-				air_torpedoe_1 = 1
-			}
-		else = {
-			set_air_oob = "USA_1939_air_legacy"
-			set_technology = {
-				fighter1 = 1
-				cv_fighter1 = 1
-				heavy_fighter1 = 1
-				tactical_bomber1 = 1
-				CAS2 = 1
-				strategic_bomber1 = 1
-			}
-		}
-	}
-
-	complete_special_project = {
-		project = sp:sp_naval_cruiser_submarine
-		scientist = USA_william_francis_gibbs
-		state = 361 
-	}
-
-	complete_special_project = {
-		project = sp:sp_air_radar
-		scientist = USA_vannevar_bush
-		state = 386
-	}
-
-	IF = {
-		limit = {
-			has_dlc = "Gotterdammerung"
-		}
-		complete_special_project = {
-			project = sp:sp_air_helicopter
-			scientist = USA_edward_curtis_wells
-			state = 386
-		}
-	}
-
-	complete_special_project = {
-		project = sp:sp_land_military_engineering_vehicles
-		scientist = USA_john_walter_christie
-		state = 393
-	}
-
-	set_technology = {
-		interwar_artillery = 1
-		interwar_antitank = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-		support_weapons2 = 1
-		marines = 1
-
-		#doctrines
-		#Air
-		#air_superiority = 1
-		#infrastructure_destruction = 1
-		#naval_strike_tactics = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_processing = 1
-		fuel_refining2 = 1
-		fuel_refining3 = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		dispersed_industry3 = 1
-	}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-			improved_submarine = 1
-			basic_destroyer = 1
-			basic_heavy_cruiser = 1
-			basic_battlecruiser = 1
-		}
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-			improved_ship_hull_light = 1
-			basic_ship_hull_heavy = 1
-			improved_ship_hull_heavy = 1
-			improved_sonar = 1
-			improved_ship_torpedo_launcher = 1
-			improved_heavy_battery = 1
-			advanced_dp_light_battery = 3
-		}
-	}
-}
-
-
-
-
 #Monroe Doctrine
 give_guarantee = CAN
 give_guarantee = MEX
@@ -528,13 +487,7 @@ give_guarantee = URG
 
 		#doctrines
 		#Air
-		air_superiority = 1
-		infrastructure_destruction = 1
-		naval_strike_tactics = 1
 
-		sup_delay = 1
-		submarine_operations_bs = 1
-		carrier_primacy = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1
@@ -560,6 +513,16 @@ give_guarantee = URG
 		dispersed_industry2 = 1
 		dispersed_industry3 = 1
 	}
+	# 1.18 doctrine migration for old research-based doctrine techs.
+	set_grand_doctrine = new_operational_integrity
+	set_sub_doctrine = air_subdoctrine_dogfighting_mastery
+	set_sub_doctrine = air_subdoctrine_theater_interdiction
+	set_sub_doctrine = air_subdoctrine_naval_strike_tactics
+	set_grand_doctrine = superior_firepower
+	set_sub_doctrine = fire_concentration
+	set_grand_doctrine = new_base_strike
+	set_sub_doctrine = submarine_fleet_operations
+	set_sub_doctrine = massed_carrier_fleet
 	if = {
 		limit = { not = { has_dlc = "Man the Guns" } }
 		set_technology = {
@@ -577,9 +540,7 @@ give_guarantee = URG
 			improved_ship_hull_heavy = 1
 			improved_sonar = 1
 			improved_ship_torpedo_launcher = 1
-			improved_cruiser_armor_scheme = 1
 			improved_heavy_battery = 1
-			dp_secondary_battery = 1
 		}
 	}
 	create_equipment_variant = {

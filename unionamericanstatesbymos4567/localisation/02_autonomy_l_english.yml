@@ -12,7 +12,4 @@
  UMI_autonomy_united_states_state:0 "Michigan Great Lakes Treaty State"
  autonomy_united_states_semi_autonomous_region:0 "Semi-Autonomous Region"
  autonomy_united_states_semi_autonomous_region_desc:0 "The Semi-Autonomous Region of [Root.GetName]"
- autonomy_united_states_state_DEF:0 "The Semi-Autonomous Region of [Root.GetName]"
- autonomy_united_states_semi_autonomous_region:0 "Semi-Autonomous Region"
- autonomy_united_states_semi_autonomous_region_desc:0 "The Semi-Autonomous Region of [Root.GetName]"
- autonomy_united_states_state_DEF:0 "The Semi-Autonomous Region of [Root.GetName]"
+ autonomy_united_states_semi_autonomous_region_DEF:0 "The Semi-Autonomous Region of [Root.GetName]"

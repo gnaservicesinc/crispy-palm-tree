@@ -1,8 +1,9 @@
 ##### Division Templates #####
 division_template = {
 	name = "Dakota State Infantry Division"
-	division_names_group = USA_INF_01
-	combat_unit = {
+	division_names_group = UAS_STATE_INF_01
+	template_counter = 3
+	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
@@ -25,15 +26,16 @@ division_template = {
 		infantry = { x = 3 y = 4 }
 
 	}
-	support_unit = {
+	support = {
 		artillery = { x = 0 y = 0 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
 		engineer = { x = 0 y = 1 }   # US Eng Rgt consisted of 2 Bns
 	}
 }
 division_template = {
 	name = "Dakota State National Guard Division"
-	division_names_group = USA_INF_01
-	combat_unit = {
+	division_names_group = UAS_STATE_MOT_01
+	template_counter = 5
+	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
 		motorized = { x = 0 y = 2 }
@@ -56,15 +58,16 @@ division_template = {
 		motorized = { x = 3 y = 4 }
 
 	}
-	support_unit = {
+	support = {
 		artillery = { x = 0 y = 0 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
 		engineer = { x = 0 y = 1 }   # US Eng Rgt consisted of 2 Bns
 	}
 }
 division_template = {
 	name = "Dakota's Homeland Shield Division"
-	division_names_group = USA_INF_01
-	combat_unit = {
+	division_names_group = UAS_STATE_MEC_01
+	template_counter = 6
+	regiments = {
 		mechanized = { x = 0 y = 0 }
 		mechanized = { x = 0 y = 1 }
 		mechanized = { x = 0 y = 2 }
@@ -86,15 +89,16 @@ division_template = {
 		mechanized = { x = 3 y = 3 }
 		mechanized = { x = 3 y = 4 }
 	}
-	support_unit = {
+	support = {
 		artillery = { x = 0 y = 0 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
 		engineer = { x = 0 y = 1 }   # US Eng Rgt consisted of 2 Bns
 	}
 }
 division_template = {
 	name = "Dakota State Police Division"
-	division_names_group = USA_CAV_01
-	combat_unit = {
+	division_names_group = UAS_STATE_CAV_01
+	template_counter = 7
+	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
 		cavalry = { x = 0 y = 2 }
@@ -116,11 +120,52 @@ division_template = {
 		cavalry = { x = 3 y = 3 }
 		cavalry = { x = 3 y = 4 }
 	}
-	support_unit = {
+	support = {
 		artillery = { x = 0 y = 0 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
 		engineer = { x = 0 y = 1 }   # US Eng Rgt consisted of 2 Bns
 	}
 }
+
+##### UAS Starting Army #####
+units = {
+	division = {
+		name = "1st Dakota State Infantry Division"
+		location = 1836
+		division_template = "Dakota State Infantry Division"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "2nd Dakota State Infantry Division"
+		location = 1836
+		division_template = "Dakota State Infantry Division"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "3rd Dakota State Infantry Division"
+		location = 1836
+		division_template = "Dakota State Infantry Division"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "4th Dakota State Infantry Division"
+		location = 1836
+		division_template = "Dakota State Infantry Division"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Dakota State Police Division"
+		location = 1836
+		division_template = "Dakota State Police Division"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.9
+	}
+}
+##### End UAS Starting Army #####
+
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

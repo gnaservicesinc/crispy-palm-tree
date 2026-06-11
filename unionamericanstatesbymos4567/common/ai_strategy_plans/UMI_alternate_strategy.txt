@@ -26,7 +26,6 @@ UMI_alternate_plan = {
 		American_Major_Warpath_focus_focus_border_security_4
 		American_Major_Warpath_focus_focus_bibb_consolidate_power
 		American_Major_Warpath_focus_focus_blackmarket_arms_deal_1 
-		continuous_amer_war_prep
 		
 		
 	}

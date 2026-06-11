@@ -1,7 +1,7 @@
 
 state={
 	id=1047
-	name="STATE_807"
+	name="STATE_1047"
 	manpower = 687748
 	
 	state_category = megalopolis
@@ -18,8 +18,11 @@ state={
 	history={
 		owner = UCA
 		buildings = {
-			infrastructure = 10
+			infrastructure = 5
 			air_base = 10
+			9814 = {
+				naval_base = 5
+			}
 		}
 		add_core_of = USA
 		add_core_of = UCA

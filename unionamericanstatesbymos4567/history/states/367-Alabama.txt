@@ -23,7 +23,7 @@ buildings_max_level_factor=8.000
 		add_core_of = UTX
 		add_core_of = UCA
 			buildings = {
-			infrastructure = 10
+			infrastructure = 5
 			industrial_complex = 10
 			air_base = 10
 		

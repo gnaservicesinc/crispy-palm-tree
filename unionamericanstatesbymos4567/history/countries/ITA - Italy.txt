@@ -6,21 +6,8 @@ set_research_slots = 6
 set_stability = 1
 set_war_support = 1
 
-create_country_leader = {
-	name = "Governor Jim Folsom"
-	desc = "POLITICS_JIM_FOLSOM_DESC"
-	picture = "gfx/leaders/UAL/Jim_Folsom.dds"
-	expire = "1985.1.1"
-	ideology = alabaman
-	traits = {
-		anti_communist 
-		socialite_connections 
-		staunch_constitutionalist
-		cornered_fox
-	}
-}
 add_ideas = {
-	victor_emmanuel
+	vittorio_emanuele
 	vittoria_mutilata
 	limited_exports
 	limited_conscription
@@ -51,6 +38,7 @@ set_technology = {
 	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
+	basic_train = 1
 	gwtank = 1
 	basic_light_tank = 1
 	#basic_heavy_tank = 1  # PLACEHOLDER
@@ -59,11 +47,12 @@ set_technology = {
 	early_bomber = 1
 	naval_bomber1 = 1
 	CAS1 = 1
-	trench_warfare = 1
-	fleet_in_being = 1
 	fuel_silos = 1
 	fuel_refining = 1
 }
+
+set_grand_doctrine = grand_battleplan
+set_grand_doctrine = new_fleet_in_being
 
 if = {
 	limit = {
@@ -93,12 +82,9 @@ if = {
 		basic_depth_charges = 1
 		basic_torpedo = 1
 		basic_battery = 1
-		basic_secondary_battery = 1
 		basic_cruiser_armor_scheme = 1
 		basic_heavy_battery = 1
-		basic_medium_battery = 1
 		basic_light_battery = 1
-		improved_secondary_battery = 1
 		basic_heavy_armor_scheme = 1
 		early_ship_hull_submarine = 1
 		basic_ship_hull_submarine = 1
@@ -110,7 +96,6 @@ if = {
 		basic_ship_hull_heavy = 1
 		mtg_transport = 1
 		coastal_defense_ships = 1
-		improved_airplane_launcher = 1
 	}
 	set_naval_oob = "ITA_1936_naval_mtg"
 }
@@ -185,16 +170,8 @@ if = {
 		tech_recon = 1
 
 		#doctrines
-		grand_battle_plan = 1
-		prepared_defense = 1
-		battlefleet_concentration = 1
-		submarine_operations = 1
 		
 		#Air
-		force_rotation = 1
-		fighter_baiting = 1
-		low_echelon_support = 1
-		dispersed_fighting = 1
 
 
 		#electronics
@@ -219,6 +196,14 @@ if = {
 		concentrated_industry2 = 1
 		concentrated_industry3 = 1
 	}
+	set_grand_doctrine = grand_battleplan
+	set_grand_doctrine = new_fleet_in_being
+	set_grand_doctrine = new_operational_integrity
+	set_sub_doctrine = defensive_postures
+	add_mastery = {
+		amount = 100
+		sub_doctrine = defensive_postures
+	}
 	if = {
 		limit = { not = { has_dlc = "Man the Guns" } }
 		set_technology = {
@@ -234,10 +219,6 @@ if = {
 	if = {
 		limit = {
 			has_dlc = "Man the Guns"
-		}
-		set_technology = {
-			improved_airplane_launcher = 1
-			
 		}
 		set_naval_oob = "ITA_1939_naval_mtg"
 	}
@@ -260,6 +241,10 @@ set_popularities = {
 	fascism = 76
 	communism = 2
 }
+
+recruit_character = ITA_benito_mussolini
+recruit_character = ITA_vittorio_emanuele_iii
+recruit_character = ITA_jim_folsom
 
 create_country_leader = {
 	name = "Benito Mussolini"
@@ -965,4 +950,73 @@ if = {
 			}
 		}
 	}
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# 1.18 compatibility aliases for current naval OOB variant names/types.
+	create_equipment_variant = {
+			name = "Aquila Class" 			#Represents the following WWI Aquila-Class Esploratori Leggeri
+			type = ship_hull_light_1
+			name_group = ITA_DD_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = empty
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = light_ship_engine_1
+				fixed_ship_torpedo_slot = ship_torpedo_1
+				mid_1_custom_slot = ship_mine_layer_1
+				rear_1_custom_slot = ship_depth_charge_1
+			}
+			obsolete = yes
+		}
+	create_equipment_variant = {
+			name = "Bolzano Class"
+			type = ship_hull_cruiser_2
+			name_group = ITA_CA_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_medium_battery_1
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_armor_slot = ship_armor_cruiser_1
+				fixed_ship_secondaries_slot = empty
+				mid_1_custom_slot = ship_medium_battery_1
+				mid_2_custom_slot = ship_airplane_launcher_1
+				rear_1_custom_slot = ship_anti_air_1
+			}
+		}
+	create_equipment_variant = {
+			name = "Curtatone Class" 		#Represents the following WWI/1920s DDs/DEs: Curtatone, Sauro/Sella, Turbine, Pilo, Audace, Siritori, La Masa, Palestro, Cantore
+			type = ship_hull_light_1
+			name_group = ITA_DD_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery_1
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = light_ship_engine_1
+				fixed_ship_torpedo_slot = ship_torpedo_1
+				mid_1_custom_slot = empty
+				rear_1_custom_slot = empty
+			}
+			obsolete = yes
+		}
+	create_equipment_variant = {
+			name = "Sirena Class"
+			type = ship_hull_submarine_1
+			name_group = ITA_SS_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_torpedo_slot = ship_torpedo_sub_1
+				fixed_ship_engine_slot = sub_ship_engine_1
+				rear_1_custom_slot = empty
+			}
+			obsolete = yes
+		}
 }

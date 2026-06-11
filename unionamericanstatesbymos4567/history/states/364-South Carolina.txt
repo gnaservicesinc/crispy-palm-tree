@@ -4,22 +4,23 @@ state={
 	name="STATE_364"
 	manpower = 9738764
 	
-	state_category = city
+	state_category = megalopolis
+	buildings_max_level_factor=2.000
 
 	history={
 		owner = UCI
 		buildings = {
-			infrastructure = 15
+			infrastructure = 5
 			industrial_complex = 12
 			7202 = {
-				naval_base = 12
+				naval_base = 10
 
 			}
 		}
 		add_core_of = USA
 		add_core_of = UCI
 		victory_points = {
-			9202 1 
+			7202 1 
 		}
 
 	}

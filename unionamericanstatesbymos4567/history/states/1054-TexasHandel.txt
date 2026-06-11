@@ -1,7 +1,7 @@
 
 state={
 	id=1054
-	name="STATE_814"
+	name="STATE_1054"
 	manpower = 3456237
 	
 	
@@ -21,9 +21,8 @@ state={
 	history={
 		owner = UTX
 		buildings = {
-		2055 = {	infrastructure = 10
+			infrastructure = 5
 			industrial_complex = 10
-			}
 		}
 
 		victory_points = {

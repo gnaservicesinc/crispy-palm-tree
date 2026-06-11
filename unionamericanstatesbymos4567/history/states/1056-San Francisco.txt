@@ -1,7 +1,7 @@
 
 state={
 	id=1056
-	name="STATE_816"
+	name="STATE_1056"
 	resources={
 		oil=919.000
 		steel=913.000
@@ -17,10 +17,12 @@ state={
 		add_core_of = UCA
 		add_core_of = SOV
 	buildings = {
-			infrastructure = 9
+			infrastructure = 5
 			industrial_complex = 12
 			air_base = 10
-		
+			9671 = {
+				naval_base = 4
+			}
 
 		}
 		victory_points = {

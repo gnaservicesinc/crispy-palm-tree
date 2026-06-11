@@ -1,0 +1,408 @@
+# Compatibility name pools for U-state generated characters.
+
+UAK = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+UAR = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+UAZ = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+UCI = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+UCO = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+UDK = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+UEN = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+UFL = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+UGO = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+UHW = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+UIA = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+UID = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+UIL = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+UIN = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+UKA = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+UKY = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+ULA = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+UME = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+UML = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+UMN = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+UMO = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+UMS = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+UMX = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+UNE = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+UNJ = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+UNV = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+UNY = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+UOH = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+UOK = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+UOR = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+UPE = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+UTN = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+UUT = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+UVA = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+UWA = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+UWI = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}
+
+UWY = {
+	male = {
+		names = { Abner Adam Albert Alexander Alfred Ambrose Benjamin Charles Chester Christopher Daniel Donald Edward Eugene Felix Francis Frank George Hamilton Henry Hiram Horace Howard Isaac James Jeffrey Jesse John Jonathan Joseph Joshua Lafayette Lawrence Lewis Louis Mark Matthew Michael Nathan Oscar Patrick Peter Randolph Richard Robert Russell Samuel Simon Sterling Steven Thomas Ulysses Wade Walter William Zach }
+	}
+	female = {
+		names = { Mary Jane Kate Eleanor Charlotte Lisa Isabel Carol Nancy Margaret Elizabeth Sarah Anna Rebecca Martha Alice Grace Julia Ruth Helen Laura Virginia Frances Rose Emily Clara Louise }
+	}
+	surnames = { Abbott Allen Anderson Andrews Armstrong Baker Banks Barnes Bates Baxter Blair Bowie Bradley Brown Butler Caldwell Campbell Carter Clark Clay Cooper Davis Edwards Evans Floyd Ford Foster Franklin Garcia Grant Green Harris Harrison Hayes Henderson Hill Howard Jackson Jenkins Johnson Johnston Jones Kelly King Lee Lewis Long Martin Miller Mitchell Moore Morgan Nelson Parker Perry Phillips Powell Price Reed Reynolds Robinson Rogers Ross Scott Smith Stewart Taylor Thomas Thompson Turner Walker Wallace Ward Washington Watson White Williams Wilson Wood Wright Young }
+	callsigns = { "Eagle" "Hawk" "Maverick" "Apollo" "Badger" "Brick" "Challenger" "Ghost" "Cajun" "Jaws" "Moses" "Mad Dog" "Ranger" "Shield" "Torch" "Union" }
+}

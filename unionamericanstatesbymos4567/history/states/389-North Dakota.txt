@@ -15,7 +15,7 @@ state={
 		add_core_of = UDK
 		
 		victory_points = {
-			836 1 
+			1836 1 
 		}
 
 	}

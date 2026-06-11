@@ -267,6 +267,10 @@ production_speed_infrastructure_factor = 0.25
 	ai_will_do = {
 			factor = 100
 		}
+
+		supports_ai_strategy = ai_focus_military_advancements
+		daily_cost = 1
+		available_if_capitulated = yes
 }
 	focus = {
 		id = continuous_tech_share_amer

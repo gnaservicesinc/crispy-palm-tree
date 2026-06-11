@@ -43,7 +43,6 @@ US_Texan_states_alternate_plan = {
 		American_Military_State_recruitment_school
 		American_Military_State_counter_partisan_school
 		American_Military_State_military_industry_school
-		continuous_amer_war_prep
 	}
 research = {
 

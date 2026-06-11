@@ -1,0 +1,5 @@
+# Compatibility placeholder for the legacy Iowa country history.
+#
+# UIA loads this OOB in addition to its tag-specific OOB. The original mod
+# no longer ships a State_Guard OOB, so keep the reference valid without
+# adding units or changing startup balance.

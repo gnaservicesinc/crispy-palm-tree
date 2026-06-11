@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_select_date_UnionofAmericanStates"
+		texturefile = "gfx/interface/UnionofAmericanStates_bookmark.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_UCA_Ernst_Lubitsch"
+		texturefile = "gfx/leaders/UCA/Ernst_Lubitsch.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_UMI_Alex"
+		texturefile = "gfx/leaders/UMI/portrait_umi_alex.dds"
+	}
+}

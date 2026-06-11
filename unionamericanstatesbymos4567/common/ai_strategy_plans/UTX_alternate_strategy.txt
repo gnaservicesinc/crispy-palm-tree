@@ -24,7 +24,6 @@ UTX_alternate_plan = {
 		American_Major_Warpath_focus_focus_blackmarket_arms_deal_3
 		American_Major_Warpath_focus_focus_blackmarket_arms_deal_4 
 		American_Major_Warpath_focus_focus_invade_mexico
-		continuous_amer_war_prep
 		 
 			
 	}

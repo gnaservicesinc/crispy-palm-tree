@@ -30,7 +30,6 @@ UCA_alternate_plan = {
 		American_Major_Japan_focus_security_expanded5
 		American_Major_Japan_focus_military_expanded4
 		American_Major_Japan_focus_shared_government_vision_fulfilled
-		continuous_amer_war_prep
 	}
 research = {
 

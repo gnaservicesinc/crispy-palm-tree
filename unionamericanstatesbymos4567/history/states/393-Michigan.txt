@@ -19,7 +19,7 @@ state={
 		add_core_of = UTX
 		add_core_of = UCA
 		buildings = {
-			infrastructure =10
+			infrastructure =5
 			industrial_complex=9
 			air_base = 10
 		}

@@ -1,7 +1,7 @@
 
 state={
 	id=1053
-	name="STATE_813"
+	name="STATE_1053"
 	resources={
 		oil=5024.000
 		aluminium=55.000
@@ -15,7 +15,7 @@ state={
 	history={
 		owner = UTX
 		buildings = {
-			infrastructure = 7
+			infrastructure = 5
 			industrial_complex = 3
 			air_base = 1
 		

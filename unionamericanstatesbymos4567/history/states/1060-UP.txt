@@ -1,6 +1,6 @@
 state = {
     id = 1060
-    name = "STATE_820"
+    name="STATE_1060"
     manpower = 432440
     state_category = rural
    buildings_max_level_factor=1.000

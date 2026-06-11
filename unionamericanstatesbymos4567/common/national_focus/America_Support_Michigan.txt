@@ -1,5 +1,5 @@
 focus_tree = {
- id = American_Support_Michigan
+ id = American_Support_Michigan_Claims
 country = {
 		factor = 0
 		
@@ -99,7 +99,7 @@ add_state_core=1067
 	}
 
 focus = {
-	id= American_Support_Michigan_Economic_Alliance
+	id= American_Support_Michigan_Claims_Economic_Alliance
 	icon = GFX_goal_generic_production
 	prerequisite = { focus =  American_Establish_Claims_and_governance }
 	relative_position_id =  American_Establish_Claims_and_governance
@@ -118,10 +118,10 @@ completion_reward = {
 }
 
 focus = {
-	id= American_Support_Michigan_Energy_Partnership
+	id= American_Support_Michigan_Claims_Energy_Partnership
 	icon = GFX_goal_generic_production
-	prerequisite = { focus = American_Support_Michigan_Economic_Alliance }
-	relative_position_id = American_Support_Michigan_Economic_Alliance
+	prerequisite = { focus = American_Support_Michigan_Claims_Economic_Alliance }
+	relative_position_id = American_Support_Michigan_Claims_Economic_Alliance
 	x = 1
 	y = -2
 	cost = 5	
@@ -137,10 +137,10 @@ completion_reward = {
 }
 
 focus = {
-	id= American_Support_Michigan_Maritime_Partnership
+	id= American_Support_Michigan_Claims_Maritime_Partnership
 	icon = GFX_goal_generic_production
-	prerequisite = { focus = American_Support_Michigan_Energy_Partnership }
-	relative_position_id = American_Support_Michigan_Energy_Partnership
+	prerequisite = { focus = American_Support_Michigan_Claims_Energy_Partnership }
+	relative_position_id = American_Support_Michigan_Claims_Energy_Partnership
 	x = 1
 	y = 2
 	cost = 5	
@@ -163,10 +163,10 @@ UMI={create_navy_leader = {
 	}}
 }
 focus = { 
-	id= American_Support_Michigan_State_Security_Partnership
+	id= American_Support_Michigan_Claims_State_Security_Partnership
 	icon = GFX_goal_generic_production
-	prerequisite = { focus = American_Support_Michigan_Maritime_Partnership }
-	relative_position_id = American_Support_Michigan_Maritime_Partnership
+	prerequisite = { focus = American_Support_Michigan_Claims_Maritime_Partnership }
+	relative_position_id = American_Support_Michigan_Claims_Maritime_Partnership
 	x = 1
 	y = -2
 	cost = 5	
@@ -181,10 +181,10 @@ completion_reward = {
 	}
 }
 focus = { 
-	id= American_Support_Michigan_Joint_Military_Training
+	id= American_Support_Michigan_Claims_Joint_Military_Training
 	icon = GFX_goal_generic_production
-	prerequisite = { focus = American_Support_Michigan_State_Security_Partnership }
-	relative_position_id = American_Support_Michigan_State_Security_Partnership
+	prerequisite = { focus = American_Support_Michigan_Claims_State_Security_Partnership }
+	relative_position_id = American_Support_Michigan_Claims_State_Security_Partnership
 	x = 1
 	y = 2
 	cost = 5	
@@ -199,10 +199,10 @@ completion_reward = {
 	}
 }
 focus = { 
-	id= American_Support_Michigan_Refocus__[?ROOT.GetName]_To_National_Focus
+	id= American_Support_Michigan_Claims_Refocus__[?ROOT.GetName]_To_National_Focus
 	icon = GFX_goal_generic_production
-	prerequisite = { focus = American_Support_Michigan_Joint_Military_Training }
-	relative_position_id = American_Support_Michigan_Joint_Military_Training
+	prerequisite = { focus = American_Support_Michigan_Claims_Joint_Military_Training }
+	relative_position_id = American_Support_Michigan_Claims_Joint_Military_Training
 	x = 1
 	y = -2
 	cost = 1	

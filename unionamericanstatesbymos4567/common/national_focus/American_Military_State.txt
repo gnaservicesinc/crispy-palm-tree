@@ -436,7 +436,7 @@ available = { if = { limit = { NOT={ has_completed_focus = American_Military_Sta
 		icon = GFX_goal_generic_more_territorial_claims
 		relative_position_id = American_Military_State_education_instructors
 		prerequisite = { focus =  American_Military_State_education_instructors}
-		available = { if = { limit = { NOT={ has_completed_focus = american_warstate_elite_training_school_recruitment}}}}
+		available = { if = { limit = { NOT={ has_idea = american_warstate_elite_training_school_recruitment}}}}
 		x=16
 		y=2
 		dynamic =  yes

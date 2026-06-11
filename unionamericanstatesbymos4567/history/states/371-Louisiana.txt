@@ -4,7 +4,8 @@ state={
 	name="STATE_371"
 	manpower = 8101592
 	
-	state_category = city
+	state_category = metropolis
+	buildings_max_level_factor=2.000
 	
 	resources={
 		oil=440 # was: 66
@@ -20,7 +21,7 @@ state={
 		add_core_of = UTX
 		add_core_of = UCA
 			buildings = {
-			infrastructure = 7
+			infrastructure = 5
 			industrial_complex = 10
 			air_base = 10
 		

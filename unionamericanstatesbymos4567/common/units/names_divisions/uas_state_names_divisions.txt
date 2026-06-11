@@ -1,0 +1,34 @@
+# Generic division name groups for Union of American States breakaway tags.
+# The old OOBs pointed these templates at USA-only groups; modern HOI4 rejects
+# those for U-state country tags, so keep shared mod-owned groups instead.
+UAS_STATE_INF_01 = {
+	name = "State Infantry Divisions"
+	for_countries = { UAK UAL UAR UAZ UCA UCI UCO UDK UEN UFL UGO UHW UIA UID UIL UIN UKA UKY ULA UME UMI UML UMN UMO UMS UMX UNE UNJ UNV UNY UOH UOK UOR UPE UTN UTX UUT UVA UWA UWI UWY }
+	can_use = { always = yes }
+	division_types = { "infantry" }
+	fallback_name = "%d State Infantry Division"
+}
+
+UAS_STATE_MOT_01 = {
+	name = "State National Guard Divisions"
+	for_countries = { UAK UAL UAR UAZ UCA UCI UCO UDK UEN UFL UGO UHW UIA UID UIL UIN UKA UKY ULA UME UMI UML UMN UMO UMS UMX UNE UNJ UNV UNY UOH UOK UOR UPE UTN UTX UUT UVA UWA UWI UWY }
+	can_use = { always = yes }
+	division_types = { "motorized" }
+	fallback_name = "%d State National Guard Division"
+}
+
+UAS_STATE_MEC_01 = {
+	name = "State Homeland Shield Divisions"
+	for_countries = { UAK UAL UAR UAZ UCA UCI UCO UDK UEN UFL UGO UHW UIA UID UIL UIN UKA UKY ULA UME UMI UML UMN UMO UMS UMX UNE UNJ UNV UNY UOH UOK UOR UPE UTN UTX UUT UVA UWA UWI UWY }
+	can_use = { always = yes }
+	division_types = { "mechanized" }
+	fallback_name = "%d Homeland Shield Division"
+}
+
+UAS_STATE_CAV_01 = {
+	name = "State Police Divisions"
+	for_countries = { UAK UAL UAR UAZ UCA UCI UCO UDK UEN UFL UGO UHW UIA UID UIL UIN UKA UKY ULA UME UMI UML UMN UMO UMS UMX UNE UNJ UNV UNY UOH UOK UOR UPE UTN UTX UUT UVA UWA UWI UWY }
+	can_use = { always = yes }
+	division_types = { "cavalry" }
+	fallback_name = "%d State Police Division"
+}

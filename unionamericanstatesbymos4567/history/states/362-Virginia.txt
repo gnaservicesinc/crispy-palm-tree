@@ -7,7 +7,7 @@ state={
 		owner = UVA
 
 		buildings = {
-			infrastructure = 7 #was: 6
+			infrastructure = 5 #was: 6
 			industrial_complex = 2
 			dockyard = 4
 			air_base = 6

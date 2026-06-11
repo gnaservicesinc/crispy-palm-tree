@@ -3,12 +3,13 @@ state={
 	id=390
 	name="STATE_390"
 	manpower = 692849
-	state_category = rural
+	state_category = metropolis
+	buildings_max_level_factor=5.000
 
 	history={
 		owner = UDK
 		buildings = {
-			infrastructure = 10
+			infrastructure = 5
 			industrial_complex = 10
 		}
 		add_core_of = USA

@@ -1,5 +1,4 @@
-﻿
-l_english:
+﻿l_english:
  usa_investigators_desc:0 "The USA Science Exchange"
  usa_investigators_name:0 "USA Science Exchange"
  utx_investigators_desc:0 "The Texas Science Exchange"
@@ -10,10 +9,6 @@ l_english:
  ual_investigators_name:0 "Southern Science Exchange"
  umi_investigators_desc:0 "The Great Lakes Science Exchange"
  umi_investigators_name:0 "Great Lakes Science Exchange"
- american_globalism:0 "US Globalist"
- american_globalism_noun:0 "US Globalism"
- american_isolationism_noun:0 "American Isolationism"
- american_globalism_desc:0 "All free men, wherever they may live, are citizens of Berlin, and therefore, as a free man, I take pride in the words, Ich bin ein Berliner."
  UMI_democratic:0 "State of Michigan"
  UMI_democratic_DEF:0 "The State of Michigan"
  UMI_fascism:0 "Free Republic of Michigan"
@@ -74,7 +69,7 @@ l_english:
  UCA_american_globalism:0 "Republic of California"
  UCA_american_globalism_DEF:0 "The Republic of California" 
  UCA_ADJ:0 "Californian"
- UCA:"California""
+ UCA:"California"
  UHW_democratic:0 "State of Hawaii"
  UHW_democratic_DEF:0 "The State of Hawaii"
  UHW_fascism:0 "Free Republic of Hawaii"
@@ -174,7 +169,7 @@ l_english:
  UGO_american_globalism:0 "Republic of Georgia"
  UGO_american_globalism_DEF:0 "The Republic of Georgia" 
  UGO_ADJ:0 "Georgian"
- UGA:"Georgia"
+ UGO:"Georgia"
  UMS_democratic:0 "State of Mississippi"
  UMS_democratic_DEF:0 "The State of Mississippi"
  UMS_fascism:0 "Free Republic of Mississippi"
@@ -512,7 +507,7 @@ l_english:
  UWY_american_globalism:0 "Republic of Wyoming"
  UWY_american_globalism_DEF:0 "The Republic of Wyoming"
  UWY_ADJ:0 "Wyomingite"
- UWY:"Wyoming
+ UWY:"Wyoming"
  UMI_neutrality:0 "Kingdom of [ROOT.GetName]"
  UNY_neutrality:0 "Kingdom of [ROOT.GetName]"
  UAL_neutrality:0 "Kingdom of [ROOT.GetName]"

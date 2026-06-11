@@ -1,6 +1,6 @@
 state = {
     id = 1057
-    name = "STATE_817"
+    name="STATE_1057"
     manpower = 713244
     state_category = megalopolis
    
@@ -67,7 +67,7 @@ state = {
 		add_core_of =  UMI
 		add_core_of =  UWY
 			buildings = {
-			infrastructure = 10
+			infrastructure = 5
 			industrial_complex = 10
 			air_base = 10
 		

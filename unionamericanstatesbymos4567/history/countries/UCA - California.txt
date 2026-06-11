@@ -1,13 +1,5 @@
 ﻿capital = 378
 oob = "UCA"
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "USA_1936_naval_mtg"
-	else = {
-		set_naval_oob = "USA_1936_naval_legacy"
-	}
-}
-
 create_country_leader = {
 	name = "Chairperson Upton Beall Sinclair Jr."
 	desc = "POLITICS_UPTON_BEALL_DESC"
@@ -23,7 +15,7 @@ create_country_leader = {
 }
 create_corps_commander = {
 	name = "Ernst Lubitsch"
-	portrait_path = "gfx/leaders/UCA/Ernst_Lubitsch.dds"
+	gfx = "GFX_Portrait_UCA_Ernst_Lubitsch"
 	traits = { panzer_leader fortress_buster }
 	skill = 8
 }
@@ -33,7 +25,7 @@ add_offsite_building = { type = industrial_complex level = 128 }
 set_major = yes
 set_research_slots = 6
 set_stability = 1
-set_war_support = 100
+set_war_support = 1.0
 add_to_tech_sharing_group = uca_investigators
 set_convoys = 9000
 	set_politics = {
@@ -138,13 +130,14 @@ set_technology = {
 	naval_bomber1 = 1
 	CAS1 = 1
 	early_bomber = 1
-	superior_firepower = 1
-	base_strike = 1
 	motorised_infantry = 1
 	fuel_silos = 1
 	fuel_refining = 1
 	marines = 1
 }
+# 1.18 doctrine migration for old research-based doctrine techs.
+set_grand_doctrine = superior_firepower
+set_grand_doctrine = new_base_strike
 
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -178,17 +171,13 @@ if = {
 		basic_ship_hull_carrier = 1
 		basic_battery = 1
 		basic_light_battery = 1
-		basic_medium_battery = 1
 		basic_heavy_battery = 1
 		basic_torpedo = 1
 		sonar = 1
 		basic_depth_charges = 1
-		basic_secondary_battery = 1
-		improved_secondary_battery = 1
 		basic_cruiser_armor_scheme = 1
 		basic_heavy_armor_scheme = 1
 		mtg_transport = 1
-		improved_airplane_launcher = 1
 	}
 }
 
@@ -209,13 +198,7 @@ if = {
 
 		#doctrines
 		#Air
-		air_superiority = 1
-		infrastructure_destruction = 1
-		naval_strike_tactics = 1
 
-		sup_delay = 1
-		submarine_operations_bs = 1
-		carrier_primacy = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1
@@ -241,6 +224,16 @@ if = {
 		dispersed_industry2 = 1
 		dispersed_industry3 = 1
 	}
+	# 1.18 doctrine migration for old research-based doctrine techs.
+	set_grand_doctrine = new_operational_integrity
+	set_sub_doctrine = air_subdoctrine_dogfighting_mastery
+	set_sub_doctrine = air_subdoctrine_theater_interdiction
+	set_sub_doctrine = air_subdoctrine_naval_strike_tactics
+	set_grand_doctrine = superior_firepower
+	set_sub_doctrine = fire_concentration
+	set_grand_doctrine = new_base_strike
+	set_sub_doctrine = submarine_fleet_operations
+	set_sub_doctrine = massed_carrier_fleet
 	if = {
 		limit = { not = { has_dlc = "Man the Guns" } }
 		set_technology = {
@@ -258,12 +251,8 @@ if = {
 			improved_ship_hull_heavy = 1
 			improved_sonar = 1
 			improved_ship_torpedo_launcher = 1
-			improved_cruiser_armor_scheme = 1
 			improved_heavy_battery = 1
-			dp_secondary_battery = 1
 		}
-		remove_ideas = MTG_naval_treaty_adherent
-		add_ideas = MTG_naval_treaty_adherent_reduced
 	}
 	create_equipment_variant = {
 		name = "Martin M166"

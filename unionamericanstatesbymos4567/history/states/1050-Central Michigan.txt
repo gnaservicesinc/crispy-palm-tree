@@ -1,7 +1,7 @@
 
 state={
 	id=1050
-	name="STATE_810"
+	name="STATE_1050"
 	resources={
 		steel=150.000
 		oil=160.000
@@ -17,7 +17,7 @@ state={
 		add_core_of = UMI
 		add_core_of = USA
 		buildings = {
-			infrastructure = 10
+			infrastructure = 5
 			industrial_complex = 9
 			air_base = 10
 		

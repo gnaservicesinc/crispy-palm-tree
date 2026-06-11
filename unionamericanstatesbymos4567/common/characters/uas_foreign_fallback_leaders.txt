@@ -1,0 +1,61 @@
+characters = {
+	GER_jim_folsom = {
+		name = "Governor Jim Folsom"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UAL/Jim_Folsom.dds"
+			}
+		}
+		country_leader = {
+			ideology = alabaman
+			traits = {
+				anti_communist
+				socialite_connections
+				staunch_constitutionalist
+				cornered_fox
+			}
+			expire = "1985.1.1.1"
+			id = -1
+		}
+	}
+
+	ITA_jim_folsom = {
+		name = "Governor Jim Folsom"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UAL/Jim_Folsom.dds"
+			}
+		}
+		country_leader = {
+			ideology = alabaman
+			traits = {
+				anti_communist
+				socialite_connections
+				staunch_constitutionalist
+				cornered_fox
+			}
+			expire = "1985.1.1.1"
+			id = -1
+		}
+	}
+
+	JAP_jim_folsom = {
+		name = "Governor Jim Folsom"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UAL/Jim_Folsom.dds"
+			}
+		}
+		country_leader = {
+			ideology = alabaman
+			traits = {
+				anti_communist
+				socialite_connections
+				staunch_constitutionalist
+				cornered_fox
+			}
+			expire = "1985.1.1.1"
+			id = -1
+		}
+	}
+}

@@ -4,12 +4,13 @@ state={
 	name="STATE_363"
 	manpower = 9170274
 	
-	state_category = city
+	state_category = metropolis
+	buildings_max_level_factor=2.000
 
 	history={
 		owner = UCI
 		buildings = {
-			infrastructure = 10
+			infrastructure = 5
 			industrial_complex = 10
 			air_base = 10
 			1132 = {

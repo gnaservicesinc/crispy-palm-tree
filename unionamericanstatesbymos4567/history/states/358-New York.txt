@@ -23,17 +23,19 @@ state={
 		add_core_of = UTX
 		add_core_of = UCA
 			buildings = {
-			infrastructure = 7
+			infrastructure = 5
 			industrial_complex = 10
 			air_base = 10
-		
+			3878 = {
+				naval_base = 6
+			}
 
 		}
 		victory_points = {
 			3878 30.0 
 		}
 		victory_points = {
-			1654 3 
+			11654 3 
 		}
 
 	}

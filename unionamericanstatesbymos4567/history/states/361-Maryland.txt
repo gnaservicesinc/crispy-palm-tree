@@ -4,13 +4,11 @@ state={
 	name="STATE_361"
 	manpower = 218394
 	
-	state_category = city
+	state_category = metropolis
+	buildings_max_level_factor=2.000
 
 	history={
 		owner = UML
-		victory_points = {
-			3957 40 
-		}
 		victory_points = {
 			6984 5 
 		}
@@ -21,7 +19,7 @@ state={
 		add_core_of = UTX
 		add_core_of = UCA
 			buildings = {
-			infrastructure = 7
+			infrastructure = 5
 			industrial_complex = 10
 			air_base = 10
 		
