@@ -2,8 +2,8 @@ state={
 	id=126
 	name="STATE_126"
 	manpower=9824296
-		buildings_max_level_factor=8.000
-	state_category = megalopolis
+    buildings_max_level_factor=8.000
+    state_category = megalopolis
 	resources={
 		oil=580.000
 		steel=913.000
@@ -11,7 +11,7 @@ state={
 		tungsten=455.000
 		rubber=475.000
 		chromium=485.000
-				coal = 975 
+        coal = 975
 	}
 
 	history={
@@ -21,11 +21,11 @@ state={
 		}
 		buildings = {
 			infrastructure = 5
-			arms_factory = 3
-			industrial_complex = 30
+			arms_factory = 5
+			industrial_complex = 5
 			dockyard = 10
-			anti_air_building = 5
-			radar_station = 1
+			anti_air_building = 10
+			radar_station = 10
 			air_base = 10
 			11374 = {
 				naval_base = 10
