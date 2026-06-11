@@ -20,6 +20,9 @@ state = {
     
     history = {
      		owner = UMI
+		buildings = {
+			arms_factory = 2
+		}
 	add_core_of = UMI        
 	add_core_of = USA
         }

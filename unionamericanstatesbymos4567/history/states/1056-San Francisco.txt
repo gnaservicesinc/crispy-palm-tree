@@ -18,6 +18,7 @@ state={
 		add_core_of = SOV
 	buildings = {
 			infrastructure = 5
+			arms_factory = 15
 			industrial_complex = 12
 			air_base = 10
 			9671 = {

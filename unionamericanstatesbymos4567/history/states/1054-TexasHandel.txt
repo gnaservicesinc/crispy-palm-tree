@@ -19,11 +19,12 @@ state={
 
 
 	history={
-		owner = UTX
-		buildings = {
-			infrastructure = 5
-			industrial_complex = 10
-		}
+			owner = UTX
+			buildings = {
+				infrastructure = 5
+				arms_factory = 15
+				industrial_complex = 10
+			}
 
 		victory_points = {
 			12893 200 

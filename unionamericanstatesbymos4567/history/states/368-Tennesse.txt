@@ -15,6 +15,7 @@ state={
 		owner = UTN
 		buildings = {
 			infrastructure = 5
+			arms_factory = 6
 			industrial_complex = 3
 		}
 		add_core_of = USA

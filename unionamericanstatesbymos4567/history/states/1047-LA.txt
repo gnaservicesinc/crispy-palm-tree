@@ -2,7 +2,7 @@
 state={
 	id=1047
 	name="STATE_1047"
-	manpower = 687748
+	manpower = 1687748
 	
 	state_category = megalopolis
 	
@@ -12,14 +12,17 @@ state={
 		aluminium = 500.000
 		tungsten = 500.000
 		rubber = 875.000
+		coal = 975 
 		chromium = 985.000
 	}
 
 	history={
 		owner = UCA
 		buildings = {
+			industrial_complex = 10
 			infrastructure = 5
-			air_base = 10
+			arms_factory = 15
+			air_base = 5
 			9814 = {
 				naval_base = 5
 			}

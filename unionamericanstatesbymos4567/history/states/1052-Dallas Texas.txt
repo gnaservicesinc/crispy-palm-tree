@@ -9,14 +9,16 @@ state={
 		tungsten=450.000
 		rubber=487.000
 		chromium=498.000
+		coal = 975.000
 	}
 
 	history={
-		owner = UTX
-		buildings = {
-			infrastructure = 5
-			air_base = 10
-		}
+			owner = UTX
+			buildings = {
+				infrastructure = 5
+				arms_factory = 12
+				air_base = 10
+			}
 		victory_points = {
 			5022 200 
 		}

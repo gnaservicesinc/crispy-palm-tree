@@ -10,6 +10,7 @@ state={
 		owner = UDK
 		buildings = {
 			infrastructure = 5
+			arms_factory = 10
 			industrial_complex = 10
 		}
 		add_core_of = USA

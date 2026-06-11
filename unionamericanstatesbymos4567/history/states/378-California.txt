@@ -9,6 +9,7 @@ state={
 		tungsten=500.000
 		rubber=875.000
 		chromium=985.000
+		coal = 1975 
 	}
 
 	history={
@@ -22,6 +23,7 @@ state={
 		add_core_of = SOV
 			buildings = {
 			infrastructure = 5
+			arms_factory = 15
 			industrial_complex = 10
 			air_base = 10
 			1562 = {

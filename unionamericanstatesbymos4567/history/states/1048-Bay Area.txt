@@ -9,6 +9,7 @@ state={
 		tungsten=455.000
 		rubber=475.000
 		chromium=485.000
+				coal = 975 
 	}
 
 	history={
@@ -16,7 +17,9 @@ state={
 		buildings = {
 			air_base = 5
 			infrastructure = 5
-			industrial_complex = 10
+			arms_factory = 15
+			industrial_complex = 5
+			naval_base = 3
 		}
 		add_core_of = USA
 		add_core_of = UCA
@@ -34,7 +37,7 @@ state={
 	provinces={
 		677 3678 6681 6699 6745 6757 9713 11658 
 	}
-	manpower=875248
-	buildings_max_level_factor=3.000
+	manpower=1875248
+	buildings_max_level_factor=8.000
 	state_category=megalopolis
 }

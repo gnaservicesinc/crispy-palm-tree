@@ -8,12 +8,21 @@ state={
 	}
 	
 	state_category = town
-
+	resources={
+		oil=580.000
+		steel=913.000
+		aluminium=750.000
+		tungsten=455.000
+		rubber=475.000
+		chromium=485.000
+				coal = 975 
+	}
 	history={
 		owner = UCO
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+			arms_factory = 4
+			industrial_complex = 10
 		}
 		add_core_of = USA
 		add_core_of = UCO

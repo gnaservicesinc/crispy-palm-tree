@@ -11,6 +11,9 @@ state={
 
 	history={
 		owner = UWI
+		buildings = {
+			arms_factory = 6
+		}
 	
 		add_core_of = UWI
 		add_core_of = UMI

@@ -10,6 +10,7 @@ state={
 		owner = UNE
 		buildings = {
 			infrastructure = 4
+			arms_factory = 5
 			industrial_complex = 1
 		}
 		add_core_of = USA

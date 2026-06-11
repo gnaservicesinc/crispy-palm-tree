@@ -8,6 +8,9 @@ state={
 
 	history={
 		owner = UIA
+		buildings = {
+			arms_factory = 6
+		}
 		add_core_of = UIA
 		add_core_of = USA
 		add_core_of = UMI

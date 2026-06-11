@@ -14,6 +14,9 @@ state={
 
 	history={
 		owner = UOK
+		buildings = {
+			arms_factory = 6
+		}
 		add_core_of = UOK
 		add_core_of = UMI
 		add_core_of = USA

@@ -2,7 +2,17 @@
 state={
 	id=385
 	name="STATE_385"
-	manpower = 953785
+	manpower = 13785
+	buildings_max_level_factor=8.000
+	resources={
+		steel=960.000
+		oil=960.000
+		aluminium=950.000
+		tungsten=950.000
+		rubber=987.000
+		chromium=918.000
+		coal = 1975 
+	}
 	
 	state_category = town
 
@@ -10,6 +20,7 @@ state={
 		owner = UOR
 		buildings = {
 			infrastructure = 5
+			arms_factory = 4
 			industrial_complex = 1
 			air_base = 6
 			12211 = {
@@ -27,4 +38,6 @@ state={
 	provinces={
 		505 528 1414 3471 3513 4274 4328 4347 4380 4826 7398 7721 7865 10151 10183 10305 10625 11495 11733 12183 12211 12281 12553 
 	}
+
+	buildings_max_level_factor=2.000
 }

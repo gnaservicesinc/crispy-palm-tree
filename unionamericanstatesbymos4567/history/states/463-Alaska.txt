@@ -13,6 +13,7 @@ state={
 		owner = UAK
 		buildings = {
 			infrastructure = 2
+			arms_factory = 6
 			air_base = 1
 			13091 = {
 				naval_base = 1
