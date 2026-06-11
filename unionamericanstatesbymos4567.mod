@@ -1,4 +1,6 @@
 name="Union of American States"
+version="604"
+remote_file_id="1712046389"
 path="mod/unionamericanstatesbymos4567/"
 tags={
 	"Alternative History"
@@ -12,5 +14,5 @@ tags={
 	"Technologies"
 	"Sound"
 }
-remote_file_id="1712173861"
+remote_file_id="1712046389"
 supported_version="1.18.3.0"
