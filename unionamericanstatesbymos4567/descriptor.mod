@@ -13,5 +13,5 @@ tags={
 	"Sound"
 }
 picture="UnionofAmericanStates.jpg"
-supported_version="1.18.3.0"
+supported_version="1.19.0.0"
 remote_file_id="1712046389"

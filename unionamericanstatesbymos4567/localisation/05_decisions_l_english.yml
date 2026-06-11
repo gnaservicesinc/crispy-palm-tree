@@ -119,3 +119,5 @@ american_major_state_assassinate_attempt:0 "Attempt to Assassinate [FROM.GetLead
 american_major_state_assassinate_attempt_desc:0 "[FROM.GetLeader] is a threat to us all that MUST be stopped at ANY costs! Its time we take direct action on this matter"
 american_major_state_build_intelligence_agency:0 "\"Enhance\" Intelligence Agency"
 american_major_state_build_intelligence_agency_desc:0 "We can only do so much and go so far with an entirely on the books intelligence agency. However, if we add and fund a second, off the books side, funded via the creation of a number of agencies that exist in title only but are well funded in the budget..."
+american_major_state:0 "Major State Operations"
+american_major_state_desc:0 "Direct intelligence and security operations for the major American successor states."

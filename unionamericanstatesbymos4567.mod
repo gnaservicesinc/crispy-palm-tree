@@ -15,4 +15,4 @@ tags={
 	"Sound"
 }
 remote_file_id="1712046389"
-supported_version="1.18.3.0"
+supported_version="1.19.0.0"

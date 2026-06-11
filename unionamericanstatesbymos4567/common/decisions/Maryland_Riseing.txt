@@ -94,18 +94,18 @@ leave_faction = yes
 				}} } 
 		}
 if={limit={has_variable =var_Maryland_rising_civil_war}
-			transfer_state=1057
-			set_capital = { state = 1057 }
+			transfer_state=1092
+			set_capital = { state = 1092 }
 			#add_ideas = { american_states_mass_backlash_to_failed_coup  }
 			start_civil_war = {
-    				 ideology = ROOT
-   				 size = 0.5
-    				capital = 361
-   				 states = { 
-      				  361 1057
-    				}
+				ideology = ROOT
+				size = 0.5
+				capital = 361
+				states = {
+					361 1092
+				}
 
-  			  keep_political_leader = yes
+				keep_political_leader = yes
 			}
 }
 		
@@ -119,7 +119,7 @@ else_if={limit={has_variable =var_Maryland_rising_usa_annex}
 else_if={ limit={has_variable =var_Maryland_rising_success}
 			inherit_technology = USA
 			leave_faction = yes
-			set_capital = { state = 1057 }
+			set_capital = { state = 1092 }
 			set_popularities = {
 				democratic = 0
 				neutrality = 0
@@ -134,8 +134,8 @@ else_if={ limit={has_variable =var_Maryland_rising_success}
 				elections_allowed = no
 			}
 	if={ limit={ NOT={ is_major = yes}} set_major = yes}
-	transfer_state=1057
-	transfer_state=1067
+	transfer_state=1092
+	transfer_state=1102
 add_state_core=126
 add_state_core=261
 add_state_core=354
@@ -185,27 +185,27 @@ add_state_core=463
 add_state_core=471
 add_state_core=629
 add_state_core=683
-add_state_core=1047
-add_state_core=1048
-add_state_core=1049
-add_state_core=1050
-add_state_core=1051
-add_state_core=1052
-add_state_core=1053
-add_state_core=1054
-add_state_core=1055
-add_state_core=1056
-add_state_core=1057
-add_state_core=1058
-add_state_core=1059
-add_state_core=1060
-add_state_core=1061
-add_state_core=1062
-add_state_core=1063
-add_state_core=1064
-add_state_core=1065
-add_state_core=1066
-add_state_core=1067
+add_state_core=1082
+add_state_core=1083
+add_state_core=1084
+add_state_core=1085
+add_state_core=1086
+add_state_core=1087
+add_state_core=1088
+add_state_core=1089
+add_state_core=1090
+add_state_core=1091
+add_state_core=1092
+add_state_core=1093
+add_state_core=1094
+add_state_core=1095
+add_state_core=1096
+add_state_core=1097
+add_state_core=1098
+add_state_core=1099
+add_state_core=1100
+add_state_core=1101
+add_state_core=1102
 			for_each_scope_loop = {
 		array = USA.Loyal_American_States
 			add_to_array = {

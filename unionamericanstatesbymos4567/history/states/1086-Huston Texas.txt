@@ -1,0 +1,42 @@
+
+state={
+	id=1086
+	name="STATE_1051"
+	manpower = 7824712
+	
+	
+	state_category = metropolis
+	
+	resources={
+		
+		aluminium=198.000
+		steel=160.000
+		tungsten=115.000
+		rubber=117.000
+		chromium=118.000
+		oil=150.000
+	}
+
+
+	history={
+			owner = UTX
+			buildings = {
+				infrastructure = 5
+				arms_factory = 10
+			}
+		victory_points = {
+			10337 200 
+		}
+
+		
+		add_core_of = UTX
+		add_core_of = USA
+		add_core_of = MEX
+	
+		
+		}
+
+	provinces={
+		10337
+	}
+}

@@ -1052,6 +1052,27 @@ if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	
         			add = -1	
 				ROOT = {has_war_support < 0.10 }
 			}
+			modifier = {
+				add = 1000
+				OR = {
+					AND = {
+						original_tag = UMI
+						has_game_rule = { rule = UMI_ai_behavior option = WARPATH }
+					}
+					AND = {
+						original_tag = UAL
+						has_game_rule = { rule = UAL_ai_behavior option = WARPATH }
+					}
+					AND = {
+						original_tag = UTX
+						has_game_rule = { rule = UTX_ai_behavior option = WARPATH }
+					}
+					AND = {
+						original_tag = UCA
+						has_game_rule = { rule = UCA_ai_behavior option = WARPATH }
+					}
+				}
+			}
 
 
 		}
@@ -1167,6 +1188,27 @@ OR = {
 			ai_will_do = {
 			factor = 0
 
+			modifier = {
+				add = 1000
+				OR = {
+					AND = {
+						original_tag = UMI
+						has_game_rule = { rule = UMI_ai_behavior option = JAPAN_PARTNERSHIP }
+					}
+					AND = {
+						original_tag = UAL
+						has_game_rule = { rule = UAL_ai_behavior option = JAPAN_PARTNERSHIP }
+					}
+					AND = {
+						original_tag = UTX
+						has_game_rule = { rule = UTX_ai_behavior option = JAPAN_PARTNERSHIP }
+					}
+					AND = {
+						original_tag = UCA
+						has_game_rule = { rule = UCA_ai_behavior option = JAPAN_PARTNERSHIP }
+					}
+				}
+			}
 			modifier = {
 					add = 1
 					NOT = { has_government = democratic }
@@ -1315,6 +1357,27 @@ ROOT = { add_to_tech_sharing_group = japanese_research}
 			factor = 2
 			
 			modifier = {
+				add = 1000
+				OR = {
+					AND = {
+						original_tag = UMI
+						has_game_rule = { rule = UMI_ai_behavior option = INTERNAL_DEVELOPMENT }
+					}
+					AND = {
+						original_tag = UAL
+						has_game_rule = { rule = UAL_ai_behavior option = INTERNAL_DEVELOPMENT }
+					}
+					AND = {
+						original_tag = UTX
+						has_game_rule = { rule = UTX_ai_behavior option = INTERNAL_DEVELOPMENT }
+					}
+					AND = {
+						original_tag = UCA
+						has_game_rule = { rule = UCA_ai_behavior option = INTERNAL_DEVELOPMENT }
+					}
+				}
+			}
+			modifier = {
         			add = -1	
 				ROOT = {has_war = yes }
 			}
@@ -1372,6 +1435,13 @@ OR = {
 			ai_will_do = {
 			factor = 0
 			
+			modifier = {
+				add = 1000
+				AND = {
+					original_tag = UMI
+					has_game_rule = { rule = UMI_ai_behavior option = CROUCHING_TIGER }
+				}
+			}
 			modifier = {
 			add = 5
 			ROOT = {original_tag = UMI }
