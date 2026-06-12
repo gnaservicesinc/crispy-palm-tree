@@ -68,5 +68,5 @@ Warranty void if using any other mods.
 Current Version
 -----------------------------------------------------------------
 Version 0.0.2.9.200 (Updated on Jun 11, 2026)
-*Update for 1.18.3.0
+*Update for 1.19.0.0
 -----------------------------------------------------------------

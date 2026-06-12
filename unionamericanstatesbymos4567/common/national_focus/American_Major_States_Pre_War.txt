@@ -21,18 +21,22 @@ focus = {
 		available_if_capitulated = yes
 completion_reward = {
 	if={limit={tag=UTX}
+		country_event = { id = texan.16 days = 1 random = 3 }
 		UTX ={load_focus_tree = { tree = American_Major_Texas_focus
                      keep_completed = yes }}}
 
 	 if={limit={tag=UMI}
+		country_event = { id = american_major.11 days = 1 random = 3 }
 		UMI ={load_focus_tree = { tree = American_Major_Michigan_focus
                      keep_completed = yes }}}
 
 	 if={limit={tag=UCA}
+			country_event = { id = american_major.13 days = 1 random = 3 }
 			ROOT ={load_focus_tree = { tree = generic_focus
                      keep_completed = no }}}
 
 	 if={limit={tag=UAL}
+			country_event = { id = american_major.12 days = 1 random = 3 }
 			ROOT ={load_focus_tree = { tree = generic_focus
                      keep_completed = no }}}
 	}
@@ -49,6 +53,23 @@ focus = {
  		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
+completion_reward = {
+	if = { limit = { has_dlc = "La Resistance" has_intelligence_agency = no } create_intelligence_agency = yes }
+	if = {
+		limit = {
+			NOT = { has_idea = american_states_intelligence_agency_level_1 }
+			NOT = { has_idea = american_states_intelligence_agency_level_2 }
+			NOT = { has_idea = american_states_intelligence_agency_level_3 }
+			NOT = { has_idea = american_states_intelligence_agency_level_4 }
+			NOT = { has_idea = american_states_intelligence_agency_level_5 }
+		}
+		add_ideas = { american_states_intelligence_agency_level_1 }
+	}
+	if = { limit = { tag = UTX } country_event = { id = texan.17 days = 1 random = 3 } }
+	if = { limit = { tag = UMI } country_event = { id = american_major.14 days = 1 random = 3 } }
+	if = { limit = { tag = UAL } country_event = { id = american_major.15 days = 1 random = 3 } }
+	if = { limit = { tag = UCA } country_event = { id = american_major.16 days = 1 random = 3 } }
+}
 		
 }
 

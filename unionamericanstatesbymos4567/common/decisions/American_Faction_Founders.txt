@@ -91,6 +91,7 @@ random_list = {
 			FROM = {set_variable = { var_bib_killed = 1 } }			
 			FROM = {load_focus_tree = { tree = American_Major_texas_post_bibb
                      keep_completed = no }}
+			FROM = {country_event = { id = texan.1 days = 1 random = 3 } }
 			}
 	FROM = {add_war_support = 1}
 			if ={ limit={ NOT={ROOT={has_war_with =FROM}} } FROM = {declare_war_on= { target = ROOT	 type = annex_everything }}}
@@ -103,10 +104,379 @@ random_list = {
 				}
 		add_war_support = -1
 		FROM = {add_war_support = 1}
+		if={limit={FROM={original_tag = UTX} }
+			FROM = {country_event = { id = texan.3 days = 1 random = 3 } }
+			}
 		if ={ limit={ NOT={ROOT={has_war_with =FROM}} } FROM = {declare_war_on= { target = ROOT	 type = annex_everything }}}
     }
 
 }
+}
+
+american_major_state_texas_open_bibb_files = {
+	visible = {
+		original_tag = UTX
+		has_variable = var_bib_killed
+	}
+	available = {
+		has_variable = var_bib_killed
+		NOT = { has_country_flag = UTX_bibb_files_opened }
+		NOT = { has_country_flag = UTX_bibb_files_sealed }
+	}
+	ai_will_do = { factor = 2 }
+	cost = 75
+	days_remove = 1
+	days_re_enable = 60
+	complete_effect = {
+		country_event = { id = texan.5 days = 1 random = 3 }
+	}
+}
+
+american_major_state_texas_send_alabama_delegation = {
+	visible = {
+		original_tag = UTX
+		has_variable = var_bib_killed
+	}
+	available = {
+		has_variable = var_bib_killed
+		NOT = { has_country_flag = UTX_alabama_delegation_sent }
+		NOT = { has_country_flag = UTX_alabama_blame_public }
+	}
+	ai_will_do = { factor = 1 }
+	cost = 50
+	days_remove = 1
+	days_re_enable = 90
+	complete_effect = {
+		country_event = { id = texan.6 days = 1 random = 3 }
+	}
+}
+
+american_major_state_texas_ranger_border_cordon = {
+	visible = {
+		original_tag = UTX
+		has_variable = var_bib_killed
+	}
+	available = {
+		has_variable = var_bib_killed
+		NOT = { has_country_flag = UTX_ranger_border_cordon }
+		NOT = { has_country_flag = UTX_ranger_border_watch }
+	}
+	ai_will_do = { factor = 2 }
+	cost = 100
+	days_remove = 1
+	days_re_enable = 60
+	complete_effect = {
+		country_event = { id = texan.7 days = 1 random = 3 }
+	}
+}
+
+american_major_state_texas_county_convention = {
+	visible = {
+		original_tag = UTX
+		has_variable = var_bib_killed
+	}
+	available = {
+		has_variable = var_bib_killed
+		NOT = { has_country_flag = UTX_county_convention }
+		NOT = { has_country_flag = UTX_county_convention_delayed }
+	}
+	ai_will_do = { factor = 1 }
+	cost = 75
+	days_remove = 1
+	days_re_enable = 90
+	complete_effect = {
+		country_event = { id = texan.8 days = 1 random = 3 }
+	}
+}
+
+american_major_state_texas_border_sermon = {
+	visible = {
+		original_tag = UTX
+		NOT = { has_variable = var_bib_killed }
+	}
+	available = {
+		has_country_leader = { ruling_only = yes name = "Führer Bibb Graves" }
+		NOT = { has_country_flag = UTX_border_sermon }
+		NOT = { has_country_flag = UTX_border_orders_quiet }
+	}
+	ai_will_do = { factor = 4 }
+	cost = 50
+	days_remove = 1
+	days_re_enable = 60
+	complete_effect = {
+		country_event = { id = texan.12 days = 1 random = 3 }
+	}
+}
+
+american_major_state_texas_blackmarket_pipeline = {
+	visible = {
+		original_tag = UTX
+		NOT = { has_variable = var_bib_killed }
+	}
+	available = {
+		has_country_leader = { ruling_only = yes name = "Führer Bibb Graves" }
+		NOT = { has_country_flag = UTX_blackmarket_pipeline }
+		NOT = { has_country_flag = UTX_blackmarket_audit }
+	}
+	ai_will_do = { factor = 3 }
+	cost = 75
+	days_remove = 1
+	days_re_enable = 60
+	complete_effect = {
+		country_event = { id = texan.13 days = 1 random = 3 }
+	}
+}
+
+american_major_state_texas_alabama_wire = {
+	visible = {
+		original_tag = UTX
+		NOT = { has_variable = var_bib_killed }
+	}
+	available = {
+		has_country_leader = { ruling_only = yes name = "Führer Bibb Graves" }
+		UAL = { exists = yes }
+		NOT = { has_country_flag = UTX_alabama_wire_open }
+		NOT = { has_country_flag = UTX_alabama_wire_warning }
+	}
+	ai_will_do = { factor = 2 }
+	cost = 50
+	days_remove = 1
+	days_re_enable = 90
+	complete_effect = {
+		country_event = { id = texan.14 days = 1 random = 3 }
+	}
+}
+
+american_major_state_texas_loyalty_broadcast = {
+	visible = {
+		original_tag = UTX
+		NOT = { has_variable = var_bib_killed }
+	}
+	available = {
+		has_country_leader = { ruling_only = yes name = "Führer Bibb Graves" }
+		NOT = { has_country_flag = UTX_loyalty_broadcast }
+		NOT = { has_country_flag = UTX_loyalty_broadcast_local }
+	}
+	ai_will_do = { factor = 3 }
+	cost = 50
+	days_remove = 1
+	days_re_enable = 60
+	complete_effect = {
+		country_event = { id = texan.15 days = 1 random = 3 }
+	}
+}
+
+american_major_state_texas_cabinet_loyalty_tour = {
+	visible = {
+		original_tag = UTX
+		has_country_flag = UTX_bibb_war_cabinet
+	}
+	available = {
+		NOT = { has_country_flag = UTX_cabinet_loyalty_tour }
+	}
+	ai_will_do = { factor = 2 }
+	cost = 35
+	days_remove = 1
+	days_re_enable = 45
+	complete_effect = {
+		add_political_power = 25
+		add_war_support = 0.02
+		set_country_flag = UTX_cabinet_loyalty_tour
+	}
+}
+
+american_major_state_michigan_lansing_summit = {
+	visible = { original_tag = UMI }
+	available = {
+		NOT = { has_country_flag = UMI_lansing_summit_called }
+		NOT = { has_country_flag = UMI_lansing_summit_quiet }
+	}
+	ai_will_do = { factor = 2 }
+	cost = 75
+	days_remove = 1
+	days_re_enable = 90
+	complete_effect = {
+		country_event = { id = american_major.1 days = 1 random = 3 }
+	}
+}
+
+american_major_state_michigan_safe_corridors = {
+	visible = { original_tag = UMI }
+	available = {
+		NOT = { has_country_flag = UMI_safe_corridors_open }
+		NOT = { has_country_flag = UMI_safe_corridors_restricted }
+	}
+	ai_will_do = { factor = 3 }
+	cost = 50
+	days_remove = 1
+	days_re_enable = 60
+	complete_effect = {
+		country_event = { id = american_major.2 days = 1 random = 3 }
+	}
+}
+
+american_major_state_michigan_arbitration_board = {
+	visible = { original_tag = UMI }
+	available = {
+		NOT = { has_country_flag = UMI_arbitration_board }
+		NOT = { has_country_flag = UMI_arbitration_rejected }
+	}
+	ai_will_do = { factor = 1 }
+	cost = 100
+	days_remove = 1
+	days_re_enable = 120
+	complete_effect = {
+		country_event = { id = american_major.3 days = 1 random = 3 }
+	}
+}
+
+american_major_state_michigan_dispatch_observers = {
+	visible = {
+		original_tag = UMI
+		has_country_flag = UMI_glto_staff_table
+	}
+	available = {
+		NOT = { has_country_flag = UMI_glto_observers_dispatched }
+	}
+	ai_will_do = { factor = 2 }
+	cost = 35
+	days_remove = 1
+	days_re_enable = 45
+	complete_effect = {
+		add_stability = 0.02
+		add_political_power = 25
+		set_country_flag = UMI_glto_observers_dispatched
+	}
+}
+
+american_major_state_alabama_southern_governors_council = {
+	visible = { original_tag = UAL }
+	available = {
+		NOT = { has_country_flag = UAL_southern_council_called }
+		NOT = { has_country_flag = UAL_southern_council_delayed }
+	}
+	ai_will_do = { factor = 2 }
+	cost = 75
+	days_remove = 1
+	days_re_enable = 90
+	complete_effect = {
+		country_event = { id = american_major.4 days = 1 random = 3 }
+	}
+}
+
+american_major_state_alabama_answer_texas_question = {
+	visible = { original_tag = UAL }
+	available = {
+		UTX = { has_variable = var_bib_killed }
+		NOT = { has_country_flag = UAL_texas_alliance_break }
+		NOT = { has_country_flag = UAL_texas_backchannel }
+	}
+	ai_will_do = { factor = 2 }
+	cost = 50
+	days_remove = 1
+	days_re_enable = 90
+	complete_effect = {
+		country_event = { id = american_major.5 days = 1 random = 3 }
+	}
+}
+
+american_major_state_alabama_guard_muster = {
+	visible = { original_tag = UAL }
+	available = {
+		NOT = { has_country_flag = UAL_guard_muster }
+		NOT = { has_country_flag = UAL_guard_stands_ready }
+	}
+	ai_will_do = { factor = 3 }
+	cost = 75
+	days_remove = 1
+	days_re_enable = 60
+	complete_effect = {
+		country_event = { id = american_major.6 days = 1 random = 3 }
+	}
+}
+
+american_major_state_alabama_inspect_warehouses = {
+	visible = {
+		original_tag = UAL
+		has_country_flag = UAL_agricultural_mobilization
+	}
+	available = {
+		NOT = { has_country_flag = UAL_county_warehouses_inspected }
+	}
+	ai_will_do = { factor = 2 }
+	cost = 35
+	days_remove = 1
+	days_re_enable = 45
+	complete_effect = {
+		add_stability = 0.02
+		add_war_support = 0.01
+		set_country_flag = UAL_county_warehouses_inspected
+	}
+}
+
+american_major_state_california_workers_congress = {
+	visible = { original_tag = UCA }
+	available = {
+		NOT = { has_country_flag = UCA_workers_congress }
+		NOT = { has_country_flag = UCA_workers_congress_radical }
+	}
+	ai_will_do = { factor = 3 }
+	cost = 75
+	days_remove = 1
+	days_re_enable = 90
+	complete_effect = {
+		country_event = { id = american_major.7 days = 1 random = 3 }
+	}
+}
+
+american_major_state_california_request_soviet_advisers = {
+	visible = { original_tag = UCA }
+	available = {
+		SOV = { exists = yes }
+		NOT = { has_country_flag = UCA_soviet_advisers_expanded }
+		NOT = { has_country_flag = UCA_soviet_advisers_limited }
+	}
+	ai_will_do = { factor = 2 }
+	cost = 100
+	days_remove = 1
+	days_re_enable = 90
+	complete_effect = {
+		country_event = { id = american_major.8 days = 1 random = 3 }
+	}
+}
+
+american_major_state_california_radio_front = {
+	visible = { original_tag = UCA }
+	available = {
+		NOT = { has_country_flag = UCA_radio_front }
+		NOT = { has_country_flag = UCA_radio_front_domestic }
+	}
+	ai_will_do = { factor = 2 }
+	cost = 50
+	days_remove = 1
+	days_re_enable = 60
+	complete_effect = {
+		country_event = { id = american_major.9 days = 1 random = 3 }
+	}
+}
+
+american_major_state_california_studio_victory_reels = {
+	visible = {
+		original_tag = UCA
+		has_country_flag = UCA_three_shift_revolution
+	}
+	available = {
+		NOT = { has_country_flag = UCA_studio_victory_reels }
+	}
+	ai_will_do = { factor = 2 }
+	cost = 35
+	days_remove = 1
+	days_re_enable = 45
+	complete_effect = {
+		add_political_power = 25
+		add_war_support = 0.02
+		set_country_flag = UCA_studio_victory_reels
+	}
 }
 
 

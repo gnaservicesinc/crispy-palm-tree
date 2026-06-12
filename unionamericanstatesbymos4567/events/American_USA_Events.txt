@@ -1,0 +1,294 @@
+add_namespace = american_usa
+
+country_event = {
+	id = american_usa.1
+	title = american_usa.1.t
+	desc = american_usa.1.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	trigger = {
+		original_tag = USA
+	}
+
+	option = {
+		name = american_usa.1.a
+		add_political_power = -25
+		add_stability = 0.04
+		add_ideas = american_usa_reclamation_courts
+		set_country_flag = USA_reclamation_courts
+		news_event = { id = amer_news.32 days = 1 random = 3 }
+	}
+	option = {
+		name = american_usa.1.b
+		add_political_power = 50
+		set_country_flag = USA_reclamation_courts_quiet
+	}
+}
+
+country_event = {
+	id = american_usa.2
+	title = american_usa.2.t
+	desc = american_usa.2.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	trigger = {
+		original_tag = USA
+	}
+
+	option = {
+		name = american_usa.2.a
+		add_political_power = -50
+		add_stability = 0.03
+		add_ideas = american_usa_state_contact_office
+		set_country_flag = USA_state_contact_office
+		news_event = { id = amer_news.33 days = 1 random = 3 }
+	}
+	option = {
+		name = american_usa.2.b
+		add_war_support = 0.04
+		add_political_power = 25
+		set_country_flag = USA_state_contact_blacklist
+	}
+}
+
+country_event = {
+	id = american_usa.3
+	title = american_usa.3.t
+	desc = american_usa.3.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	trigger = {
+		original_tag = USA
+	}
+
+	option = {
+		name = american_usa.3.a
+		add_political_power = 75
+		add_stability = 0.02
+		add_ideas = american_usa_return_bonds
+		set_country_flag = USA_return_bonds
+		news_event = { id = amer_news.34 days = 1 random = 3 }
+	}
+	option = {
+		name = american_usa.3.b
+		add_political_power = 50
+		add_war_support = 0.03
+		set_country_flag = USA_return_bonds_military
+	}
+}
+
+country_event = {
+	id = american_usa.4
+	title = american_usa.4.t
+	desc = american_usa.4.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	trigger = {
+		original_tag = USA
+	}
+
+	option = {
+		name = american_usa.4.a
+		add_war_support = 0.05
+		add_stability = -0.02
+		add_ideas = american_usa_restoration_briefing
+		set_country_flag = USA_restoration_briefing_public
+		news_event = { id = amer_news.35 days = 1 random = 3 }
+	}
+	option = {
+		name = american_usa.4.b
+		add_stability = 0.03
+		add_political_power = 25
+		set_country_flag = USA_restoration_briefing_classified
+	}
+}
+
+country_event = {
+	id = american_usa.5
+	title = american_usa.5.t
+	desc = american_usa.5.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	trigger = {
+		original_tag = USA
+	}
+
+	option = {
+		name = american_usa.5.a
+		add_war_support = 0.04
+		add_political_power = 35
+		add_ideas = american_usa_war_authorization_rooms
+		set_country_flag = USA_war_authorization_rooms
+		news_event = { id = amer_news.42 days = 1 random = 3 }
+	}
+	option = {
+		name = american_usa.5.b
+		add_stability = 0.04
+		set_country_flag = USA_war_authorization_orderly
+	}
+}
+
+country_event = {
+	id = american_usa.6
+	title = american_usa.6.t
+	desc = american_usa.6.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	trigger = {
+		original_tag = USA
+	}
+
+	option = {
+		name = american_usa.6.a
+		add_stability = 0.04
+		add_political_power = 25
+		add_ideas = american_usa_michigan_pact_office
+		set_country_flag = USA_michigan_pact_office
+		news_event = { id = amer_news.43 days = 1 random = 3 }
+	}
+	option = {
+		name = american_usa.6.b
+		add_war_support = 0.03
+		set_country_flag = USA_michigan_pact_military_first
+	}
+}
+
+country_event = {
+	id = american_usa.7
+	title = american_usa.7.t
+	desc = american_usa.7.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	trigger = {
+		original_tag = USA
+	}
+
+	option = {
+		name = american_usa.7.a
+		add_stability = 0.05
+		add_ideas = american_usa_orderly_standdown
+		set_country_flag = USA_orderly_standdown
+	}
+	option = {
+		name = american_usa.7.b
+		add_political_power = 50
+		set_country_flag = USA_standdown_records_saved
+	}
+}
+
+country_event = {
+	id = american_usa.8
+	title = american_usa.8.t
+	desc = american_usa.8.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	trigger = {
+		original_tag = USA
+	}
+
+	option = {
+		name = american_usa.8.a
+		add_war_support = 0.03
+		add_command_power = 20
+		set_country_flag = USA_first_winter_tables
+	}
+	option = {
+		name = american_usa.8.b
+		add_stability = 0.02
+		add_political_power = 25
+		set_country_flag = USA_first_winter_public_order
+	}
+}
+
+country_event = {
+	id = american_usa.9
+	title = american_usa.9.t
+	desc = american_usa.9.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	trigger = {
+		original_tag = USA
+	}
+
+	option = {
+		name = american_usa.9.a
+		add_war_support = 0.03
+		add_stability = -0.01
+		set_country_flag = USA_second_winter_estimate
+	}
+	option = {
+		name = american_usa.9.b
+		add_stability = 0.02
+		add_political_power = 25
+		set_country_flag = USA_second_winter_sober_copy
+	}
+}
+
+country_event = {
+	id = american_usa.10
+	title = american_usa.10.t
+	desc = american_usa.10.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	trigger = {
+		original_tag = USA
+	}
+
+	option = {
+		name = american_usa.10.a
+		add_political_power = 35
+		add_war_support = 0.02
+		set_country_flag = USA_round_the_clock_plants
+	}
+	option = {
+		name = american_usa.10.b
+		add_stability = 0.02
+		set_country_flag = USA_production_liaison_boards
+	}
+}
+
+country_event = {
+	id = american_usa.11
+	title = american_usa.11.t
+	desc = american_usa.11.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	trigger = {
+		original_tag = USA
+	}
+
+	option = {
+		name = american_usa.11.a
+		add_war_support = 0.04
+		add_political_power = 25
+		set_country_flag = USA_no_more_running
+	}
+	option = {
+		name = american_usa.11.b
+		add_stability = 0.03
+		add_command_power = 20
+		set_country_flag = USA_return_plans_locked
+	}
+}

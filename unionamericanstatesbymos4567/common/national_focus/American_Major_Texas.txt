@@ -82,6 +82,7 @@ create_field_marshal = {
 			}
 
 		add_ideas = {  american_states_military_high_command}
+		country_event = { id = texan.18 days = 1 random = 3 }
 
 
 	}
@@ -105,6 +106,7 @@ ai_will_do = {
 		add_offsite_building = { type = arms_factory level = 4 }
 
 		add_ideas = { american_states_sharing_is_careing }
+		country_event = { id = texan.20 days = 1 random = 3 }
 
 	}
 }
@@ -187,9 +189,10 @@ ai_will_do = {
 		available_if_capitulated = yes
 		available = { ROOT = {   if = { limit = { has_country_leader = { ruling_only = yes name = "Führer Bibb Graves" }} }}}
 			
-		completion_reward = { 
+		completion_reward = {
 add_manpower = 1000000
 add_ideas = { american_states_emergency_govement_industry_wartime_partnership }
+country_event = { id = texan.19 days = 1 random = 3 }
 
 	add_manpower = 1000000
 

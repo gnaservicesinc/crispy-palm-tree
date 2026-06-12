@@ -1,0 +1,448 @@
+add_namespace = american_major
+
+country_event = {
+	id = american_major.1
+	title = american_major.1.t
+	desc = american_major.1.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	trigger = {
+		original_tag = UMI
+	}
+
+	option = {
+		name = american_major.1.a
+		add_political_power = -25
+		add_stability = 0.05
+		add_ideas = american_michigan_lansing_summit
+		set_country_flag = UMI_lansing_summit_called
+		news_event = { id = amer_news.24 days = 1 random = 3 }
+	}
+	option = {
+		name = american_major.1.b
+		add_political_power = 50
+		add_war_support = 0.03
+		set_country_flag = UMI_lansing_summit_quiet
+	}
+}
+
+country_event = {
+	id = american_major.2
+	title = american_major.2.t
+	desc = american_major.2.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	trigger = {
+		original_tag = UMI
+	}
+
+	option = {
+		name = american_major.2.a
+		add_manpower = 25000
+		add_stability = 0.03
+		add_ideas = american_michigan_safe_corridors
+		set_country_flag = UMI_safe_corridors_open
+	}
+	option = {
+		name = american_major.2.b
+		add_political_power = 35
+		add_war_support = 0.03
+		set_country_flag = UMI_safe_corridors_restricted
+	}
+}
+
+country_event = {
+	id = american_major.3
+	title = american_major.3.t
+	desc = american_major.3.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	trigger = {
+		original_tag = UMI
+	}
+
+	option = {
+		name = american_major.3.a
+		add_political_power = -50
+		add_stability = 0.04
+		add_ideas = american_michigan_arbitration_board
+		set_country_flag = UMI_arbitration_board
+		news_event = { id = amer_news.30 days = 1 random = 3 }
+	}
+	option = {
+		name = american_major.3.b
+		add_war_support = 0.04
+		set_country_flag = UMI_arbitration_rejected
+	}
+}
+
+country_event = {
+	id = american_major.4
+	title = american_major.4.t
+	desc = american_major.4.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	trigger = {
+		original_tag = UAL
+	}
+
+	option = {
+		name = american_major.4.a
+		add_political_power = -35
+		add_stability = 0.05
+		add_ideas = american_alabama_southern_council
+		set_country_flag = UAL_southern_council_called
+		news_event = { id = amer_news.25 days = 1 random = 3 }
+	}
+	option = {
+		name = american_major.4.b
+		add_political_power = 35
+		add_war_support = 0.03
+		set_country_flag = UAL_southern_council_delayed
+	}
+}
+
+country_event = {
+	id = american_major.5
+	title = american_major.5.t
+	desc = american_major.5.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	trigger = {
+		original_tag = UAL
+	}
+
+	option = {
+		name = american_major.5.a
+		add_war_support = 0.05
+		add_stability = -0.02
+		add_ideas = american_alabama_texas_break
+		set_country_flag = UAL_texas_alliance_break
+		news_event = { id = amer_news.26 days = 1 random = 3 }
+	}
+	option = {
+		name = american_major.5.b
+		add_stability = 0.03
+		add_political_power = 40
+		set_country_flag = UAL_texas_backchannel
+	}
+}
+
+country_event = {
+	id = american_major.6
+	title = american_major.6.t
+	desc = american_major.6.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	trigger = {
+		original_tag = UAL
+	}
+
+	option = {
+		name = american_major.6.a
+		add_manpower = 50000
+		add_war_support = 0.04
+		add_ideas = american_alabama_guard_muster
+		set_country_flag = UAL_guard_muster
+	}
+	option = {
+		name = american_major.6.b
+		add_stability = 0.04
+		add_political_power = 25
+		set_country_flag = UAL_guard_stands_ready
+	}
+}
+
+country_event = {
+	id = american_major.7
+	title = american_major.7.t
+	desc = american_major.7.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	trigger = {
+		original_tag = UCA
+	}
+
+	option = {
+		name = american_major.7.a
+		add_political_power = 50
+		add_stability = 0.03
+		add_ideas = american_california_workers_congress
+		set_country_flag = UCA_workers_congress
+		news_event = { id = amer_news.27 days = 1 random = 3 }
+	}
+	option = {
+		name = american_major.7.b
+		add_war_support = 0.03
+		add_popularity = {
+			ideology = communism
+			popularity = 0.03
+		}
+		set_country_flag = UCA_workers_congress_radical
+	}
+}
+
+country_event = {
+	id = american_major.8
+	title = american_major.8.t
+	desc = american_major.8.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	trigger = {
+		original_tag = UCA
+	}
+
+	option = {
+		name = american_major.8.a
+		add_political_power = -50
+		add_war_support = 0.05
+		add_ideas = american_california_soviet_advisers
+		set_country_flag = UCA_soviet_advisers_expanded
+		news_event = { id = amer_news.28 days = 1 random = 3 }
+	}
+	option = {
+		name = american_major.8.b
+		add_stability = 0.04
+		add_political_power = 35
+		set_country_flag = UCA_soviet_advisers_limited
+	}
+}
+
+country_event = {
+	id = american_major.9
+	title = american_major.9.t
+	desc = american_major.9.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	trigger = {
+		original_tag = UCA
+	}
+
+	option = {
+		name = american_major.9.a
+		add_stability = 0.02
+		add_war_support = 0.03
+		add_ideas = american_california_radio_front
+		set_country_flag = UCA_radio_front
+		news_event = { id = amer_news.31 days = 1 random = 3 }
+	}
+	option = {
+		name = american_major.9.b
+		add_political_power = 45
+		add_popularity = {
+			ideology = communism
+			popularity = 0.02
+		}
+		set_country_flag = UCA_radio_front_domestic
+	}
+}
+
+country_event = {
+	id = american_major.10
+	title = american_major.10.t
+	desc = american_major.10.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	trigger = {
+		original_tag = UAL
+	}
+
+	option = {
+		name = american_major.10.a
+		add_stability = 0.03
+		add_political_power = 25
+		add_ideas = american_alabama_texas_wire
+		set_country_flag = UAL_texas_wire_open
+	}
+	option = {
+		name = american_major.10.b
+		add_war_support = 0.03
+		set_country_flag = UAL_texas_wire_suspicious
+	}
+}
+
+country_event = {
+	id = american_major.11
+	title = american_major.11.t
+	desc = american_major.11.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	trigger = {
+		original_tag = UMI
+	}
+
+	option = {
+		name = american_major.11.a
+		add_stability = 0.04
+		add_political_power = -25
+		add_ideas = american_michigan_glto_staff
+		set_country_flag = UMI_glto_staff_table
+		news_event = { id = amer_news.39 days = 1 random = 3 }
+	}
+	option = {
+		name = american_major.11.b
+		add_war_support = 0.03
+		add_political_power = 35
+		set_country_flag = UMI_glto_staff_quiet
+	}
+}
+
+country_event = {
+	id = american_major.12
+	title = american_major.12.t
+	desc = american_major.12.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	trigger = {
+		original_tag = UAL
+	}
+
+	option = {
+		name = american_major.12.a
+		add_stability = 0.03
+		add_war_support = 0.02
+		add_ideas = american_alabama_agricultural_mobilization
+		set_country_flag = UAL_agricultural_mobilization
+		news_event = { id = amer_news.40 days = 1 random = 3 }
+	}
+	option = {
+		name = american_major.12.b
+		add_political_power = 50
+		set_country_flag = UAL_agricultural_contracts_private
+	}
+}
+
+country_event = {
+	id = american_major.13
+	title = american_major.13.t
+	desc = american_major.13.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	trigger = {
+		original_tag = UCA
+	}
+
+	option = {
+		name = american_major.13.a
+		add_war_support = 0.03
+		add_stability = 0.02
+		add_ideas = american_california_three_shift_revolution
+		set_country_flag = UCA_three_shift_revolution
+		news_event = { id = amer_news.41 days = 1 random = 3 }
+	}
+	option = {
+		name = american_major.13.b
+		add_political_power = 50
+		add_popularity = {
+			ideology = communism
+			popularity = 0.02
+		}
+		set_country_flag = UCA_party_controls_shifts
+	}
+}
+
+country_event = {
+	id = american_major.14
+	title = american_major.14.t
+	desc = american_major.14.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	trigger = {
+		original_tag = UMI
+	}
+
+	option = {
+		name = american_major.14.a
+		add_stability = 0.03
+		add_political_power = -25
+		set_country_flag = UMI_plainclothes_peacekeepers
+	}
+	option = {
+		name = american_major.14.b
+		add_political_power = 35
+		add_war_support = 0.02
+		set_country_flag = UMI_county_informants
+	}
+}
+
+country_event = {
+	id = american_major.15
+	title = american_major.15.t
+	desc = american_major.15.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	trigger = {
+		original_tag = UAL
+	}
+
+	option = {
+		name = american_major.15.a
+		add_stability = 0.02
+		add_war_support = 0.02
+		set_country_flag = UAL_county_ledger_bureau
+	}
+	option = {
+		name = american_major.15.b
+		add_political_power = 30
+		set_country_flag = UAL_private_security_lists
+	}
+}
+
+country_event = {
+	id = american_major.16
+	title = american_major.16.t
+	desc = american_major.16.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	trigger = {
+		original_tag = UCA
+	}
+
+	option = {
+		name = american_major.16.a
+		add_war_support = 0.02
+		add_popularity = {
+			ideology = communism
+			popularity = 0.02
+		}
+		set_country_flag = UCA_studio_front_desk
+	}
+	option = {
+		name = american_major.16.b
+		add_stability = 0.02
+		add_political_power = 25
+		set_country_flag = UCA_harbor_files_first
+	}
+}

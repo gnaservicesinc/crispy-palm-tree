@@ -1,0 +1,319 @@
+ideas = {
+
+	country = {
+		american_texas_ranger_cordon = {
+			picture = generic_war_preparation
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				root_out_resistance_effectiveness_factor = 0.20
+				war_support_weekly = 0.02
+				stability_weekly = -0.01
+			}
+		}
+		american_texas_county_convention = {
+			picture = eng_imperial_conscription
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.02
+				drift_defence_factor = 0.10
+			}
+		}
+		american_texas_new_direction = {
+			picture = eng_imperial_conscription
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.03
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		american_texas_bibb_machine = {
+			picture = generic_war_preparation
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_weekly = 0.04
+				planning_speed = 0.10
+				stability_weekly = -0.02
+			}
+		}
+		american_texas_free_texas = {
+			picture = eng_imperial_conscription
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.02
+				war_support_weekly = 0.01
+				drift_defence_factor = 0.15
+			}
+		}
+		american_texas_border_sermons = {
+			picture = generic_war_preparation
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_weekly = 0.02
+				planning_speed = 0.05
+				stability_weekly = -0.01
+			}
+		}
+		american_texas_blackmarket_pipeline = {
+			picture = generic_war_preparation
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_arms_factory_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.05
+				stability_weekly = -0.01
+			}
+		}
+		american_texas_alabama_wire = {
+			picture = eng_imperial_conscription
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.01
+				opinion_gain_monthly_same_ideology_factor = 0.15
+			}
+		}
+		american_texas_loyalty_broadcast = {
+			picture = generic_war_preparation
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_weekly = 0.03
+				drift_defence_factor = 0.10
+			}
+		}
+		american_texas_war_cabinet = {
+			picture = generic_war_preparation
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_weekly = 0.02
+				planning_speed = 0.08
+				army_org = 3
+			}
+		}
+		american_michigan_lansing_summit = {
+			picture = eng_imperial_conscription
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.03
+				opinion_gain_monthly_same_ideology_factor = 0.25
+			}
+		}
+		american_michigan_safe_corridors = {
+			picture = usa_war_department
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.01
+				training_time_factor = -0.05
+				root_out_resistance_effectiveness_factor = 0.15
+			}
+		}
+		american_michigan_arbitration_board = {
+			picture = eng_imperial_conscription
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.02
+				drift_defence_factor = 0.20
+			}
+		}
+		american_michigan_glto_staff = {
+			picture = usa_war_department
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.02
+				planning_speed = 0.06
+				drift_defence_factor = 0.10
+			}
+		}
+		american_alabama_southern_council = {
+			picture = eng_imperial_conscription
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.02
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+		american_alabama_texas_break = {
+			picture = generic_war_preparation
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_weekly = 0.03
+				drift_defence_factor = 0.15
+			}
+		}
+		american_alabama_guard_muster = {
+			picture = usa_war_department
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				training_time_factor = -0.10
+				army_org = 5
+				war_support_weekly = 0.01
+			}
+		}
+		american_alabama_texas_wire = {
+			picture = eng_imperial_conscription
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.01
+				drift_defence_factor = 0.10
+			}
+		}
+		american_alabama_agricultural_mobilization = {
+			picture = eng_imperial_conscription
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.02
+				production_factory_efficiency_gain_factor = 0.04
+				war_support_weekly = 0.01
+			}
+		}
+		american_california_workers_congress = {
+			picture = usa_desegregation_1
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.02
+				communism_drift = 0.03
+			}
+		}
+		american_california_soviet_advisers = {
+			picture = generic_war_preparation
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				training_time_factor = -0.10
+				planning_speed = 0.15
+				war_support_weekly = 0.02
+			}
+		}
+		american_california_radio_front = {
+			picture = usa_desegregation_1
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.01
+				communism_drift = 0.02
+				drift_defence_factor = 0.10
+			}
+		}
+		american_california_three_shift_revolution = {
+			picture = generic_war_preparation
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.08
+				war_support_weekly = 0.02
+				stability_weekly = 0.01
+			}
+		}
+		american_usa_reclamation_courts = {
+			picture = eng_imperial_conscription
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.02
+				drift_defence_factor = 0.15
+			}
+		}
+		american_usa_state_contact_office = {
+			picture = eng_imperial_conscription
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.01
+				opinion_gain_monthly_same_ideology_factor = 0.20
+			}
+		}
+		american_usa_return_bonds = {
+			picture = usa_war_department
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				stability_weekly = 0.01
+			}
+		}
+		american_usa_restoration_briefing = {
+			picture = generic_war_preparation
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_weekly = 0.03
+				planning_speed = 0.10
+				stability_weekly = -0.01
+			}
+		}
+		american_usa_war_authorization_rooms = {
+			picture = usa_war_department
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_weekly = 0.02
+				planning_speed = 0.08
+			}
+		}
+		american_usa_michigan_pact_office = {
+			picture = eng_imperial_conscription
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.02
+				opinion_gain_monthly_same_ideology_factor = 0.20
+			}
+		}
+		american_usa_orderly_standdown = {
+			picture = eng_imperial_conscription
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.03
+				drift_defence_factor = 0.15
+			}
+		}
+	}
+}

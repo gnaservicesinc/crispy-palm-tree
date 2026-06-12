@@ -169,6 +169,7 @@ if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	
 			}
 		}
 		
+		country_event = { id = american_usa.7 days = 2 random = 3 }
 		ENG = {
  change_tag_from = ROOT 
 news_event = {
@@ -270,6 +271,7 @@ puppet =UMI
     days = 1
     random = 3
 }
+			country_event = { id = american_usa.6 days = 2 random = 3 }
 		
 		}
 }
@@ -318,6 +320,7 @@ news_event = {
     days = 1
     random = 3
 }
+		country_event = { id = american_usa.5 days = 2 random = 3 }
 		
 	}
 }
@@ -420,6 +423,7 @@ if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	
 		completion_reward = {
 		add_offsite_building = { type = arms_factory level = 16 }
 		add_manpower = 50000
+		country_event = { id = american_usa.8 days = 1 random = 3 }
 		
 	}
 }
@@ -452,6 +456,7 @@ if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	
 		add_offsite_building = { type = arms_factory level = 32 }
 		add_offsite_building = { type = industrial_complex level = 32 }
 		add_manpower = 250000
+		country_event = { id = american_usa.9 days = 1 random = 3 }
 		
 	}
 }
@@ -484,6 +489,7 @@ if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	
 		add_offsite_building = { type = arms_factory level = 64 }
 		add_offsite_building = { type = industrial_complex level = 64 }
 		add_manpower = 250000
+		country_event = { id = american_usa.10 days = 1 random = 3 }
 		
 	}
 }
@@ -517,6 +523,7 @@ if = { limit = { SOV = {   has_variable =SOV.var_Sov_Annexed_American_States }}	
 		add_offsite_building = { type = arms_factory level = 128 }
 		add_offsite_building = { type = industrial_complex level = 128 }
 		add_manpower = 500000
+		country_event = { id = american_usa.11 days = 1 random = 3 }
 		
 	}
 }

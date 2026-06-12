@@ -1,0 +1,361 @@
+add_namespace = amer_news
+
+news_event = {
+	id = amer_news.20
+	title = amer_news.20.t
+	desc = amer_news.20.desc
+	picture = GFX_news_event_generic_sign_treaty1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = amer_news.20.a
+	}
+}
+
+news_event = {
+	id = amer_news.21
+	title = amer_news.21.t
+	desc = amer_news.21.desc
+	picture = GFX_news_event_generic_sign_treaty1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = amer_news.21.a
+	}
+}
+
+news_event = {
+	id = amer_news.22
+	title = amer_news.22.t
+	desc = amer_news.22.desc
+	picture = GFX_news_event_generic_sign_treaty1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = amer_news.22.a
+	}
+}
+
+news_event = {
+	id = amer_news.23
+	title = amer_news.23.t
+	desc = amer_news.23.desc
+	picture = GFX_news_event_generic_sign_treaty1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = amer_news.23.a
+	}
+}
+
+news_event = {
+	id = amer_news.24
+	title = amer_news.24.t
+	desc = amer_news.24.desc
+	picture = GFX_news_event_generic_sign_treaty1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = amer_news.24.a
+	}
+}
+
+news_event = {
+	id = amer_news.25
+	title = amer_news.25.t
+	desc = amer_news.25.desc
+	picture = GFX_news_event_generic_sign_treaty1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = amer_news.25.a
+	}
+}
+
+news_event = {
+	id = amer_news.26
+	title = amer_news.26.t
+	desc = amer_news.26.desc
+	picture = GFX_news_event_generic_sign_treaty1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = amer_news.26.a
+	}
+}
+
+news_event = {
+	id = amer_news.27
+	title = amer_news.27.t
+	desc = amer_news.27.desc
+	picture = GFX_news_event_generic_sign_treaty1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = amer_news.27.a
+	}
+}
+
+news_event = {
+	id = amer_news.28
+	title = amer_news.28.t
+	desc = amer_news.28.desc
+	picture = GFX_news_event_generic_sign_treaty1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = amer_news.28.a
+	}
+}
+
+news_event = {
+	id = amer_news.29
+	title = amer_news.29.t
+	desc = amer_news.29.desc
+	picture = GFX_news_event_generic_sign_treaty1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = amer_news.29.a
+	}
+}
+
+news_event = {
+	id = amer_news.30
+	title = amer_news.30.t
+	desc = amer_news.30.desc
+	picture = GFX_news_event_generic_sign_treaty1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = amer_news.30.a
+	}
+}
+
+news_event = {
+	id = amer_news.31
+	title = amer_news.31.t
+	desc = amer_news.31.desc
+	picture = GFX_news_event_generic_sign_treaty1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = amer_news.31.a
+	}
+}
+
+news_event = {
+	id = amer_news.32
+	title = amer_news.32.t
+	desc = amer_news.32.desc
+	picture = GFX_news_event_generic_sign_treaty1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = amer_news.32.a
+	}
+}
+
+news_event = {
+	id = amer_news.33
+	title = amer_news.33.t
+	desc = amer_news.33.desc
+	picture = GFX_news_event_generic_sign_treaty1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = amer_news.33.a
+	}
+}
+
+news_event = {
+	id = amer_news.34
+	title = amer_news.34.t
+	desc = amer_news.34.desc
+	picture = GFX_news_event_generic_sign_treaty1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = amer_news.34.a
+	}
+}
+
+news_event = {
+	id = amer_news.35
+	title = amer_news.35.t
+	desc = amer_news.35.desc
+	picture = GFX_news_event_generic_sign_treaty1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = amer_news.35.a
+	}
+}
+
+news_event = {
+	id = amer_news.36
+	title = amer_news.36.t
+	desc = amer_news.36.desc
+	picture = GFX_news_event_generic_sign_treaty1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = amer_news.36.a
+	}
+}
+
+news_event = {
+	id = amer_news.37
+	title = amer_news.37.t
+	desc = amer_news.37.desc
+	picture = GFX_news_event_generic_sign_treaty1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = amer_news.37.a
+	}
+}
+
+news_event = {
+	id = amer_news.38
+	title = amer_news.38.t
+	desc = amer_news.38.desc
+	picture = GFX_news_event_generic_sign_treaty1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = amer_news.38.a
+	}
+}
+
+news_event = {
+	id = amer_news.39
+	title = amer_news.39.t
+	desc = amer_news.39.desc
+	picture = GFX_news_event_generic_sign_treaty1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = amer_news.39.a
+	}
+}
+
+news_event = {
+	id = amer_news.40
+	title = amer_news.40.t
+	desc = amer_news.40.desc
+	picture = GFX_news_event_generic_sign_treaty1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = amer_news.40.a
+	}
+}
+
+news_event = {
+	id = amer_news.41
+	title = amer_news.41.t
+	desc = amer_news.41.desc
+	picture = GFX_news_event_generic_sign_treaty1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = amer_news.41.a
+	}
+}
+
+news_event = {
+	id = amer_news.42
+	title = amer_news.42.t
+	desc = amer_news.42.desc
+	picture = GFX_news_event_generic_sign_treaty1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = amer_news.42.a
+	}
+}
+
+news_event = {
+	id = amer_news.43
+	title = amer_news.43.t
+	desc = amer_news.43.desc
+	picture = GFX_news_event_generic_sign_treaty1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = amer_news.43.a
+	}
+}

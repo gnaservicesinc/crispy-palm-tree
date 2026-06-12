@@ -1,7 +1,7 @@
 name="Union of American States"
-version="604"
+version="607"
 remote_file_id="1712046389"
-path="mod/unionamericanstatesbymos4567/"
+path="/opt/hoi4_mod/crispy-palm-tree/unionamericanstatesbymos4567"
 tags={
 	"Alternative History"
 	"Events"
@@ -14,5 +14,4 @@ tags={
 	"Technologies"
 	"Sound"
 }
-remote_file_id="1712046389"
 supported_version="1.19.0.0"

@@ -112,6 +112,140 @@ re_conquest_prepare_to_retake_the_homeland = {
 }
 	}	
 }
+
+	re_conquest_restore_federal_courts = {
+
+			visible = {
+				original_tag = USA
+				NOT = { has_country_flag = USA_reclamation_courts }
+				NOT = { has_country_flag = USA_reclamation_courts_quiet }
+			}
+		 cost = 75
+		days_remove = 1
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 2
+		modifier = {
+			add = 5
+			has_war = yes
+			}
+		}
+
+			remove_effect = {
+	country_event = { id = american_usa.1 days = 1 random = 3 }
+	}
+}
+
+	re_conquest_state_contact_office = {
+
+			visible = {
+				original_tag = USA
+				NOT = { has_country_flag = USA_state_contact_office }
+				NOT = { has_country_flag = USA_state_contact_blacklist }
+			}
+		 cost = 75
+		days_remove = 1
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 2
+		modifier = {
+			add = 5
+			NOT = { has_war = yes }
+			}
+		}
+
+			remove_effect = {
+	country_event = { id = american_usa.2 days = 1 random = 3 }
+	}
+}
+
+	re_conquest_return_bond_drive = {
+
+			visible = {
+				original_tag = USA
+				NOT = { has_country_flag = USA_return_bonds }
+				NOT = { has_country_flag = USA_return_bonds_military }
+			}
+		 cost = 50
+		days_remove = 1
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 2
+		modifier = {
+			add = 5
+			has_war = yes
+			}
+		}
+
+			remove_effect = {
+	country_event = { id = american_usa.3 days = 1 random = 3 }
+	}
+}
+
+	re_conquest_homeland_threat_briefing = {
+
+			visible = {
+				original_tag = USA
+				NOT = { has_country_flag = USA_restoration_briefing_public }
+				NOT = { has_country_flag = USA_restoration_briefing_classified }
+			}
+		 cost = 50
+		days_remove = 1
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 2
+		modifier = {
+			add = 10
+			has_war = yes
+			}
+		}
+
+			remove_effect = {
+	country_event = { id = american_usa.4 days = 1 random = 3 }
+	}
+}
+
+	re_conquest_route_federal_warrants = {
+
+			visible = {
+				original_tag = USA
+				has_country_flag = USA_war_authorization_rooms
+				NOT = { has_country_flag = USA_federal_warrants_routed }
+			}
+		 cost = 35
+		days_remove = 1
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 2
+		}
+
+			remove_effect = {
+	add_political_power = 25
+	add_war_support = 0.02
+	set_country_flag = USA_federal_warrants_routed
+	}
+}
+
+	re_conquest_staff_lansing_channel = {
+
+			visible = {
+				original_tag = USA
+				has_country_flag = USA_michigan_pact_office
+				NOT = { has_country_flag = USA_lansing_channel_staffed }
+			}
+		 cost = 35
+		days_remove = 1
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 2
+		}
+
+			remove_effect = {
+	add_stability = 0.02
+	add_political_power = 25
+	set_country_flag = USA_lansing_channel_staffed
+	}
+}
 		
           
 		

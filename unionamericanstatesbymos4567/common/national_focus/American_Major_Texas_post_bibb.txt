@@ -26,6 +26,7 @@ cancel_if_invalid = yes
 
 
 		completion_reward = {
+country_event = { id = texan.9 days = 1 random = 3 }
 load_focus_tree = { tree = generic_focus
                      keep_completed = no }
 
@@ -50,6 +51,7 @@ cancel_if_invalid = yes
 
 
 		completion_reward = {
+country_event = { id = texan.10 days = 1 random = 3 }
 load_focus_tree = { tree = generic_focus 
                      keep_completed = no }
 
@@ -73,6 +75,7 @@ cancel_if_invalid = yes
 
 
 		completion_reward = {
+country_event = { id = texan.11 days = 1 random = 3 }
 load_focus_tree = { tree = generic_focus
                      keep_completed = no }
 
@@ -85,4 +88,3 @@ load_focus_tree = { tree = generic_focus
 
 
 }##
-

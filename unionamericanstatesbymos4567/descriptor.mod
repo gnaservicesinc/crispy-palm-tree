@@ -1,5 +1,5 @@
-version="604"
 name="Union of American States"
+version="609"
 tags={
 	"Alternative History"
 	"Events"
@@ -13,5 +13,5 @@ tags={
 	"Sound"
 }
 picture="UnionofAmericanStates.jpg"
-supported_version="1.19.0.0"
+supported_version="1.19.0.1"
 remote_file_id="1712046389"
