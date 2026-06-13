@@ -1,5 +1,5 @@
 name="Union of American States"
-version="607"
+version="609"
 remote_file_id="1712046389"
 path="/opt/hoi4_mod/crispy-palm-tree/unionamericanstatesbymos4567"
 tags={
@@ -14,4 +14,4 @@ tags={
 	"Technologies"
 	"Sound"
 }
-supported_version="1.19.0.0"
+supported_version="1.19.0.1"

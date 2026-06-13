@@ -12,5 +12,6 @@ union_member_state = {
 
 	}
 
-}
+	}
+	}
 }
