@@ -102,7 +102,7 @@ else = {
 puppet =v
 }}
 }
-UTX = { add_to_array = { array = American_States value= UTX }}
+add_to_array = { array = USA.American_States value = UTX }
 GER ={ give_guarantee = USA }
 ITA ={ give_guarantee = USA }
 
@@ -258,4 +258,3 @@ if = {
 			plane_reliability_upgrade = 3
 		}
 	}
-

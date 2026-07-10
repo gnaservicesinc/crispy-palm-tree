@@ -242,7 +242,6 @@ UPE  = { set_variable = { var_Loyal_American_States = 1 }  }
 UML  = { set_variable = { var_Loyal_American_States = 1 }  }
 UEN  = { set_variable = { var_Loyal_American_States = 1 }  }
 UNY  = { set_variable = { var_Loyal_American_States = 1 }  }
-UML  = { set_variable = { var_Loyal_American_States = 1 }  }
 UNJ  = { set_variable = { var_Loyal_American_States = 1 }  }
 UVA  = { set_variable = { var_Loyal_American_States = 1 }  }
 UHW  = { set_variable = { var_Loyal_American_States = 1 }  }
@@ -254,7 +253,6 @@ add_to_array = { array = Loyal_American_States value= UPE }
 add_to_array = { array = Loyal_American_States value= UML }
 add_to_array = { array = Loyal_American_States value= UEN }
 add_to_array = { array = Loyal_American_States value= UNY }
-add_to_array = { array = Loyal_American_States value= UML }
 add_to_array = { array = Loyal_American_States value= UNJ }
 add_to_array = { array = Loyal_American_States value= UVA }
 add_to_array = { array = Loyal_American_States value= UAK }
@@ -267,7 +265,6 @@ UML  = { set_variable = { var_American_States = 1 }  }
 UEN  = { set_variable = { var_American_States = 1 }  }
 ENG  = { set_variable = { var_American_States = 1 }  }
 UNY  = { set_variable = { var_American_States = 1 }  }
-UML  = { set_variable = { var_American_States = 1 }  }
 UNJ  = { set_variable = { var_American_States = 1 }  }
 UVA  = { set_variable = { var_American_States = 1 }  }
 UAK  = { set_variable = { var_American_States = 1 }  }

@@ -114,6 +114,7 @@ else = {
 puppet =v
 }}
 }
+add_to_array = { array = USA.American_States value = UMI }
 
 # Starting tech
 set_technology = {

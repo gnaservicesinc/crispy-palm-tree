@@ -112,6 +112,7 @@ random_list = {
 
 }
 }
+}
 
 american_major_state_texas_open_bibb_files = {
 	visible = {
@@ -481,7 +482,3 @@ american_major_state_california_studio_victory_reels = {
 
 
 }
-
-
-		
-}#####################

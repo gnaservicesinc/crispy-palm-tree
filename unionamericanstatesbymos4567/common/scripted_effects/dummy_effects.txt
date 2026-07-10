@@ -1,3 +1,0 @@
-USA_recalc_congress_icon_frames = {
-	# Dummy effect for compatibility
-}
