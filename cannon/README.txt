@@ -1,0 +1,1 @@
+This folder contains/will contain cannon, objects, motivations, plot, notes, etc., for internal mode development to aid in development and ensure continuity and consistency of behavior and narrative. The info in this dir must be used to justify each feature choice, used as facts and history in news stories and popups, etc. It is where we will establish facts about the gameworld.

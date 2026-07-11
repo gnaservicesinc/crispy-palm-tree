@@ -1,0 +1,80 @@
+# Union of American States peace-conference policy for the exiled federal USA.
+#
+# Current peace AI scope (1.19.x):
+# ROOT = negotiator, FROM = taker, FROM.FROM = defeated giver,
+# FROM.FROM.FROM = state for state-based actions.
+
+peace_ai_desires = {
+	USA_restore_homeland_directly = {
+		peace_action_type = take_states
+		enable = {
+			ROOT = { original_tag = USA }
+			FROM = { original_tag = USA }
+			FROM.FROM = { UAS_is_american_state = yes }
+			FROM.FROM.FROM = { is_core_of = USA }
+		}
+		ai_desire = 5000
+	}
+
+	USA_subjugate_american_state = {
+		peace_action_type = puppet
+		enable = {
+			ROOT = { original_tag = USA }
+			FROM = {
+				UAS_is_american_state = yes
+				NOT = { original_tag = USA }
+			}
+		}
+		ai_desire = 2500
+	}
+
+	USA_do_not_partition_homeland_for_an_ally = {
+		peace_action_type = take_states
+		enable = {
+			ROOT = { original_tag = USA }
+			FROM = { NOT = { original_tag = USA } }
+			FROM.FROM = { UAS_is_american_state = yes }
+			FROM.FROM.FROM = { is_core_of = USA }
+		}
+		ai_desire = -10000
+	}
+
+	USA_reject_incomplete_homeland_settlement = {
+		peace_action_type = { liberate force_government }
+		enable = {
+			ROOT = { original_tag = USA }
+			FROM = { UAS_is_american_state = yes }
+		}
+		ai_desire = -10000
+	}
+
+	USA_allies_return_homeland_to_federal_control = {
+		peace_action_type = take_states
+		enable = {
+			ROOT = {
+				NOT = { original_tag = USA }
+				is_in_faction_with = USA
+			}
+			FROM = { original_tag = USA }
+			FROM.FROM = { UAS_is_american_state = yes }
+			FROM.FROM.FROM = { is_core_of = USA }
+		}
+		ai_desire = 5000
+	}
+
+	USA_allies_do_not_claim_american_settlements = {
+		peace_action_type = { take_states puppet liberate force_government }
+		enable = {
+			ROOT = {
+				NOT = { original_tag = USA }
+				is_in_faction_with = USA
+			}
+			FROM = { NOT = { original_tag = USA } }
+			OR = {
+				FROM = { UAS_is_american_state = yes }
+				FROM.FROM = { UAS_is_american_state = yes }
+			}
+		}
+		ai_desire = -10000
+	}
+}

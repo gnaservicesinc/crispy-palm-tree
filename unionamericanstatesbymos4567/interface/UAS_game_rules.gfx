@@ -1,0 +1,18 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_UAS_game_rule_UMI"
+		texturefile = "gfx/flags/small/UMI.tga"
+	}
+	SpriteType = {
+		name = "GFX_UAS_game_rule_UAL"
+		texturefile = "gfx/flags/small/UAL.tga"
+	}
+	SpriteType = {
+		name = "GFX_UAS_game_rule_UTX"
+		texturefile = "gfx/flags/small/UTX.tga"
+	}
+	SpriteType = {
+		name = "GFX_UAS_game_rule_UCA"
+		texturefile = "gfx/flags/small/UCA.tga"
+	}
+}

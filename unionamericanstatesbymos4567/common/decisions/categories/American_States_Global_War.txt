@@ -1,7 +1,15 @@
 American_States_Global_War = {
-		icon = GFX_decision_category_military_operation
+	icon = GFX_decision_category_military_operation
 	visible = {
-	has_variable =var_American_States
-	NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
-}
+		has_variable = var_American_States
+		OR = {
+			tag = UMI
+			tag = UCA
+			tag = UAL
+			tag = UTX
+		}
+		NOT = {
+			any_country = { has_variable = var_American_Homeland_Victory_Flag_Won }
+		}
+	}
 }

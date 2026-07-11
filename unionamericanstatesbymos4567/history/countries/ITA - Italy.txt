@@ -100,13 +100,6 @@ if = {
 	}
 	set_naval_oob = "ITA_1936_naval_mtg"
 }
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	add_ideas = MTG_naval_treaty_adherent
-}
-
 # DIPLOMACY / WAR 36
 if = {
 	limit = {
@@ -125,12 +118,6 @@ if = {
 	add_political_power = 1198
 	
 	#white_peace = ETH
-	if = {
-		limit = {
-			has_dlc = "Man the Guns"
-		}
-		remove_ideas = MTG_naval_treaty_adherent
-	}
 	#adding ministers
 	add_ideas = {
 		ITA_giovanni_marinelli

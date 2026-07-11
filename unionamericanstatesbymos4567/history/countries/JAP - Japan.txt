@@ -80,13 +80,6 @@ if = {
 		JAP_interservice_rivalry_balanced		
 	}
 }
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	add_ideas = MTG_naval_treaty_adherent
-}
-
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -201,12 +194,6 @@ create_import = {
 		tot_economic_mobilisation
 		service_by_requirement
 		closed_economy
-	}
-	if = {
-		limit = {
-			has_dlc = "Man the Guns"
-		}
-		remove_ideas = MTG_naval_treaty_adherent
 	}
 	complete_national_focus = JAP_purge_the_kodoha_faction
 	complete_national_focus = JAP_army_expansion_law

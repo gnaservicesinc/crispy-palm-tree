@@ -1,0 +1,85 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			# ENG and FRA still use their vanilla country histories. Remove the
+			# treaty after every history file has finished loading rather than
+			# replacing either country's history just for one national spirit.
+				every_country = {
+					limit = {
+						OR = {
+							has_idea = JAP_the_london_naval_treaty
+							has_idea = MTG_naval_treaty_adherent
+							has_idea = MTG_naval_treaty_cheating
+							has_idea = MTG_naval_treaty_adherent_reduced
+							has_idea = MTG_naval_treaty_cheating_reduced
+						}
+					}
+					if = {
+						limit = { has_idea = JAP_the_london_naval_treaty }
+						remove_ideas = JAP_the_london_naval_treaty
+					}
+					remove_naval_treaty_effect = yes
+			}
+			clr_global_flag = MTG_naval_treaty_signatories
+		}
+	}
+
+	# A surviving vanilla foreign focus can otherwise add the spirit later.
+	# This stays in the current country's normal weekly scope.
+	on_weekly = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						has_idea = JAP_the_london_naval_treaty
+						has_idea = MTG_naval_treaty_adherent
+						has_idea = MTG_naval_treaty_cheating
+						has_idea = MTG_naval_treaty_adherent_reduced
+						has_idea = MTG_naval_treaty_cheating_reduced
+					}
+				}
+				if = {
+					limit = { has_idea = JAP_the_london_naval_treaty }
+					remove_ideas = JAP_the_london_naval_treaty
+				}
+				remove_naval_treaty_effect = yes
+			}
+		}
+	}
+
+	# ROOT = new subject, FROM = overlord. Federal American settlements install
+	# an elected state government and use the UAS state-government autonomy tier.
+		on_puppet = {
+			effect = {
+				if = {
+					limit = {
+						UAS_is_american_state = yes
+						FROM = { original_tag = USA }
+				}
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = yes
+					election_frequency = 48
+				}
+				set_popularities = {
+					democratic = 100
+					communism = 0
+					fascism = 0
+					neutrality = 0
+					american_isolationism = 0
+					american_wilsonianism = 0
+					american_globalism = 0
+				}
+				if = {
+					limit = { has_dlc = "Together for Victory" }
+					FROM = {
+						set_autonomy = {
+							target = ROOT
+							autonomy_state = autonomy_united_states_state
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,6 +1,54 @@
 american_usa_united= {
+	USA_UAS_constitutional_convention = {
+		icon = GFX_decision_generic_form_nation # Temporary; see cannon/CONTENT_LEDGER.md.
+		cost = 200
+		fire_only_once = yes
+		days_remove = 30
 
-unite_the_american_states_enforce_the_results = {
+		visible = {
+			original_tag = USA
+			NOT = { has_country_flag = USA_UAS_constitutional_convention_held }
+		}
+
+		available = {
+			has_war = no
+			custom_trigger_tooltip = {
+				tooltip = USA_UAS_constitutional_convention_all_states_secured_tt
+				NOT = {
+					any_country = {
+						exists = yes
+						UAS_is_american_state = yes
+						NOT = { is_subject_of = USA }
+					}
+				}
+			}
+		}
+
+		ai_will_do = { factor = 100 }
+
+		complete_effect = {
+			custom_effect_tooltip = USA_UAS_constitutional_convention_effect_tt
+			hidden_effect = {
+				every_subject_country = {
+					limit = { UAS_is_american_state = yes }
+					ROOT = {
+						annex_country = {
+							target = PREV
+							transfer_troops = yes
+						}
+					}
+				}
+				every_owned_state = {
+					limit = { is_core_of = USA }
+					set_compliance = 100
+					set_occupation_law = autonomous_occupation
+				}
+				set_country_flag = USA_UAS_constitutional_convention_held
+			}
+		}
+	}
+
+	unite_the_american_states_enforce_the_results = {
           cost = 25
       fire_only_once = yes
 fixed_random_seed = no	
@@ -89,8 +137,9 @@ days_re_enable = 30
 days_remove = 7
 
 visible = { 	AND={
-NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
-			is_puppet=no
+	NOT = { original_tag = USA }
+	NOT={any_country = {has_variable =var_American_Homeland_Victory_Flag_Won}}
+				is_puppet=no
 			is_subject=no
 }
 }
@@ -212,13 +261,6 @@ add_state_core=1099
 add_state_core=1100
 add_state_core=1101
 add_state_core=1102
-set_variable = { var = senators_support value = 96 }
-set_variable = { var = senators_total value = 96 }
-set_variable = { var = representatives_support value = 435 }
-set_variable = { var = representatives_total value = 435 }
-set_variable = { var = quorum_low value = 39 }
-set_variable = { var = quorum_medium value = 49 }
-set_variable = { var = quorum_high value = 58 }
 every_enemy_country = {
 white_peace = ROOT
 }

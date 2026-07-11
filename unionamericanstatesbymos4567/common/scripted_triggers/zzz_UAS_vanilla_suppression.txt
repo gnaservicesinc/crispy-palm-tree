@@ -1,0 +1,6 @@
+# The London Naval Treaty does not exist in the UAS setting. Keeping the
+# vanilla trigger false also prevents its event chain from restarting after
+# initial country history has loaded.
+has_naval_treaty_trigger = {
+	always = no
+}

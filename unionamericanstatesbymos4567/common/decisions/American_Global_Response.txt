@@ -1,21 +1,49 @@
 American_States_Global_Response = {
 	American_States_Global_War_Response = {
 		icon = GFX_decision_generic_army_support
-		 target_trigger = { AND={
-		FROM = { 
-			has_variable =var_American_States_state_on_the_warpath
-			has_variable =var_American_States
-			NOT = { is_in_faction_with = ROOT }	
-			NOT = { has_war_together_with = ROOT }
-			NOT = { is_subject_of = ROOT }
-			NOT = { has_war_with = ROOT}
+		allowed = {
+			OR = {
+				original_tag = UMI
+				original_tag = UCA
+				original_tag = UAL
+				original_tag = UTX
 			}
-			ROOT={
-
-			NOT = { is_subject_of = FROM }
-				}
-				}
+		}
+		target_root_trigger = {
+			has_variable = var_American_States
+			NOT = {
+				any_country = { has_variable = var_American_Homeland_Victory_Flag_Won }
 			}
+			OR = {
+				tag = UMI
+				tag = UCA
+				tag = UAL
+				tag = UTX
+			}
+		}
+		targets = { UMI UCA UAL UTX }
+		target_trigger = {
+			FROM = {
+				exists = yes
+				NOT = { tag = ROOT }
+				OR = {
+					tag = UMI
+					tag = UCA
+					tag = UAL
+					tag = UTX
+				}
+				has_variable = var_American_States_state_on_the_warpath
+				has_variable = var_American_States
+				NOT = { has_government = ROOT }
+				NOT = { is_in_faction_with = ROOT }
+				NOT = { has_war_together_with = ROOT }
+				NOT = { is_subject_of = ROOT }
+				NOT = { has_war_with = ROOT }
+			}
+			ROOT = {
+				NOT = { is_subject_of = FROM }
+			}
+		}
 		days_remove = 1
 		days_re_enable = 30
 
@@ -64,8 +92,10 @@ American_States_Global_Response = {
 		}
 		cost = 1
 
-complete_effect = {
-	ROOT={
- 		declare_war_on= { target =     FROM	 type = annex_everything } }
+		complete_effect = {
+			ROOT = {
+				declare_war_on = { target = FROM type = annex_everything }
+			}
 		}
-}}
+	}
+}

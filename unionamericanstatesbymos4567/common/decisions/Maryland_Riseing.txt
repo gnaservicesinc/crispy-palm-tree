@@ -240,13 +240,6 @@ add_state_core=1102
 				}}
 		
 
-set_variable = { var = senators_support value = 96 }
-set_variable = { var = senators_total value = 96 }
-set_variable = { var = representatives_support value = 435 }
-set_variable = { var = representatives_total value = 435 }
-set_variable = { var = quorum_low value = 39 }
-set_variable = { var = quorum_medium value = 49 }
-set_variable = { var = quorum_high value = 58 }
 every_enemy_country = {
 white_peace = ROOT
 }

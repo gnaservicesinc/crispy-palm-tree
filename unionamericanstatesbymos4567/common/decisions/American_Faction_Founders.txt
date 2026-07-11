@@ -70,8 +70,10 @@ ai_will_do = {factor = 1
 	cost = 500
 fixed_random_seed = no	
 
-complete_effect = {
-random_list = {
+	complete_effect = {
+	ROOT = { save_event_target_as = american_assassination_attacker }
+	FROM = { save_event_target_as = american_assassination_target }
+	random_list = {
     10 = {
 	news_event={	
    				 id = amer_news.12

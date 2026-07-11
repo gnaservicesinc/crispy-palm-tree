@@ -1327,7 +1327,43 @@ paramilitarism_focus
 foreign_expeditions_focus
 }
 add_political_power = 750
-ROOT = { leave_faction	= yes}
+	hidden_effect = {
+		# Record the major's faction before its leader leaves. Changing the
+		# members after the faction transition loses the original member scope.
+		clear_array = uas_japanese_partnership_faction_members
+		every_other_country = {
+			limit = {
+				ROOT = { is_faction_leader = yes }
+				is_in_faction_with = ROOT
+			}
+			ROOT = {
+				add_to_array = {
+					array = uas_japanese_partnership_faction_members
+					value = PREV
+				}
+			}
+		}
+		for_each_loop = {
+			array = uas_japanese_partnership_faction_members
+			value = uas_japanese_partnership_faction_member
+			var:uas_japanese_partnership_faction_member = {
+				set_politics = {
+					ruling_party = american_globalism
+				}
+				set_popularities = {
+					democratic = 0
+					communism = 0
+					fascism = 0
+					neutrality = 0
+					american_isolationism = 0
+					american_wilsonianism = 0
+					american_globalism = 100
+				}
+			}
+		}
+		clear_array = uas_japanese_partnership_faction_members
+	}
+	ROOT = { leave_faction	= yes}
 	JAP = { add_to_faction	= ROOT }
 ROOT = { add_to_tech_sharing_group = japanese_research}
 
@@ -1340,7 +1376,9 @@ ROOT = { add_to_tech_sharing_group = japanese_research}
 	democratic = 0
 	communism = 0
 	fascism = 0
+	neutrality = 0
 	american_isolationism=0
+	american_wilsonianism = 0
 	american_globalism = 100
 	}
 		load_focus_tree = { tree = American_Major_Japan_focus
