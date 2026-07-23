@@ -57,6 +57,7 @@ On completion:
 
 UAS is a total-overhaul world, not a tool intended to coexist with vanilla narrative logic.
 
+- Existing UAS localisation is authored content, including intentional jokes and rough-edged phrasing. Do not rewrite legacy localisation unless the user explicitly identifies a specific key for change. Routine cleanup is limited to localisation added during the current restoration work.
 - Vanilla content is retained only after it is reviewed and found compatible.
 - The USA's vanilla Congress system is invalid here and must remain disabled until a UAS-specific federal legislature is designed.
 - The London Naval Treaty and its national spirits/events are not part of this setting.

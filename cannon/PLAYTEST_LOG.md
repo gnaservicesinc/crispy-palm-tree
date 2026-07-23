@@ -53,3 +53,10 @@ Save evaluation:
 
 - In `USA_1947_02_02_19.hoi4`, every surviving actual U-state is a USA subject, so the corrected convention has no remaining state blocker.
 - The convention effect remains runtime-untested until the updated scripts are loaded and the decision completes.
+
+## 2026-07-11 — custom-rules lobby verification
+
+- The first flag pass rendered all four major-state focus-path flags through the generic rule-icon box, leaving them top-left aligned. The explicit sprites were removed and the labels now use vanilla-style inline `@TAG` flag tokens.
+- Texas's strength setting is loaded as the twelfth slider, one row below California; it is available after scrolling rather than missing.
+- The fresh lobby logs contain no errors for the UAS rule sprites, difficulty settings, convention ID, or shared American-state trigger.
+- The German title embedded in Junius Marion Futrell's name and the Berlin quotation used by American globalism are intentional legacy jokes and must remain unchanged.
